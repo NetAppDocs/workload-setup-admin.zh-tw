@@ -1,0 +1,130 @@
+---
+sidebar: sidebar 
+permalink: workload-factory-overview.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: NetApp 工作負載工廠是功能強大的生命週期管理平台、可協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載。使用 Workload Factory 和適用於 ONTAP 的 FSX 可簡化的工作負載包括資料庫、 VMware 在 AWS 上移轉至 VMware Cloud 、 AI 聊天機器人程式等。 
+---
+= 瞭解 Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 工作負載工廠是功能強大的生命週期管理平台、可協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載。使用 Workload Factory 和適用於 ONTAP 的 FSX 可簡化的工作負載包括資料庫、 VMware 在 AWS 上移轉至 VMware Cloud 、 AI 聊天機器人程式等。
+
+Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 VMware Cloud 資料存放區和使用者檔案提供完全託管的 AWS 原生 NFS 、 SMB/CIFS 和 iSCSI 儲存磁碟區。您可以透過工作負載工廠及使用原生 AWS 管理工具來管理適用於 ONTAP 的 FSX 。
+
+
+
+== 功能
+
+Workload Factory 平台提供下列主要功能。
+
+靈活且低成本的儲存設備:: 探索、部署及管理適用於雲端 NetApp ONTAP 檔案系統的 Amazon FSX 。適用於 ONTAP 的 FSX 將 ONTAP 的完整功能帶給原生 AWS 託管服務、提供一致的混合雲體驗。
+將內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud:: VMware Cloud on AWS 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、產生將建議的 VM 配置部署至 AWS 上的 VMware Cloud 的計畫、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。
+最佳化的資料庫部署:: 部署 Microsoft SQL Server 、資料庫和資料庫複本、包括 AWS 資源配置、儲存資源配置、網路和作業系統組態、運用最佳化的部署組態、確保設定程序一致且無錯誤。
+AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 chatbot 來源和 AI Engine 資料庫。這可讓您將組織的非結構化資料內嵌到企業級聊天機器人應用程式中。
+儲存計算機可節省成本:: 分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。
+
+
+
+
+== 支援的雲端供應商
+
+Workload Factory 可讓您管理雲端儲存設備、並在 Amazon Web Services 中使用工作負載功能。
+
+
+
+== 成本
+
+工作負載工廠免費使用。您支付給 Amazon Web Services （ AWS ）的成本取決於您計畫部署的儲存設備和工作負載服務。這包括 Amazon FSX 在 NetApp ONTAP 檔案系統、 VMware Cloud on AWS 基礎架構、 AWS 服務等方面的成本。
+
+
+
+== 工作負載工廠的運作方式
+
+Workload Factory 包含透過 SaaS 層提供的網路型主控台、帳戶、可控制雲端資產存取的作業模式、可在 Workload Factory 和 AWS 帳戶之間提供隔離連線的連結等。
+
+
+
+=== 軟體即服務
+
+工作負載工廠可透過存取 https://console.workloads.netapp.com["網路型主控台"^]。 這項 SaaS 體驗可讓您在發佈時自動存取最新功能、並在 Workload Factory 帳戶和連結之間輕鬆切換。
+
+
+
+=== 帳戶
+
+第一次登入 Workload Factory 時、系統會提示您建立帳戶。此帳戶可讓您使用認證來組織組織資源、工作負載和工作負載存取。
+
+image:screenshot-account-selection.png["Workload Factory 設定精靈的螢幕擷取畫面、會提示您輸入 Workload Factory 帳戶。"]
+
+建立帳戶時、您是該帳戶的單一帳戶管理員使用者。
+
+如果您的組織需要額外的帳戶或使用者管理、請使用產品內的聊天室與我們聯絡。
+
+
+TIP: 如果您使用 NetApp BlueXP 、則因為 Workload Factory 採用 BlueXP 帳戶、所以您已經屬於帳戶。
+
+
+
+=== 作業模式
+
+Workload Factory 提供三種作業模式、可讓您根據 IT 原則、仔細控制對雲端環境的存取、並將遞增信任指派給 Workload Factory 。
+
+* * 基本模式 * 代表零信任關係、旨在早期探索工作負載工廠、並使用各種精靈來建立所需的基礎架構即程式碼。使用者可以手動複製及使用此程式碼、以及相關的 AWS 認證資料。
+* * 讀取模式 * 可協助使用者偵測各種資源和工具、進而協助完成相關精靈、進而提升基本模式的使用體驗。
+* * 自動執行模式 * 代表完全信任關係、其設計旨在代表使用者執行及自動化、以及指派的認證、這些認證具有執行所需且經過驗證的權限。
+
+
+link:operational-modes.html["深入瞭解 Workload Factory 作業模式"]。
+
+
+
+=== 連線連結
+
+Workload Factory 連結可在 Workload Factory 與 ONTAP 檔案系統的一或多個 FSX 之間建立信任關係和連線。這可讓您直接從 Amazon FSX for ONTAP API 無法使用的 ONTAP REST API 呼叫監控及管理特定檔案系統功能。
+
+您不需要連結即可開始使用 Workload Factory 、但在某些情況下、您需要建立連結來解除鎖定所有 Workload Factory 功能和工作負載功能。
+
+連結目前使用 AWS Lambda 。
+
+https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭解連結"^]
+
+
+
+=== CodeBox 自動化
+
+Codebox 是基礎架構即程式碼（ IAC ）聯合試驗、可協助開發人員和 DevOps 工程師產生執行任何由 Workload Factory 支援的作業所需的程式碼。程式碼格式包括 Workload Factory REST API 、 AWS CLI 和 AWS CloudForgation 。
+
+Codebox 與工作負載工廠作業模式（基本、讀取和自動化）一致、為執行準備工作設定明確的路徑、並設定自動化目錄、以供日後快速重複使用。
+
+Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。
+
+link:codebox-automation.html["深入瞭解 CodeBox"]。
+
+
+
+=== 儲存計算機
+
+Workload Factory 提供儲存計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。
+
+不同類型儲存系統之間的比較標準包括所需的總容量和總效能、包括所需的 IOPS 和所需的處理量。
+
+https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["瞭解如何使用儲存計算機來探索節約效益"^]
+
+
+
+=== REST API
+
+Workload Factory 可讓您針對特定工作負載、最佳化、自動化及操作適用於 ONTAP 檔案系統的 FSX 。每個工作負載都會公開相關的 REST API 。這些工作負載和 API 共同形成一個靈活且可擴充的開發平台、可用來管理 ONTAP 檔案系統的 FSX 。
+
+使用 Workload Factory REST API 有幾項優點：
+
+* API 的設計是以 REST 技術和目前最佳實務為基礎。核心技術包括 HTTP 和 JSON 。
+* 工作負載工廠驗證是以 OAuth2 標準為基礎。NetApp 仰賴驗證 0 服務實作。
+* Workload Factory 網路型主控台使用相同的核心 REST API 、因此兩個存取路徑之間的一致性。
+
+
+https://console.workloads.netapp.com/api-doc["檢視 Workload Factory REST API 文件"^]

@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: codebox-automation.html 
+keywords: codebox, automation 
+summary: CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗、可協助開發人員和 DevOps 產生執行任何由 Workload Factory 支援的作業所需的程式碼。Codebox 與工作負載工廠作業模式（基本、讀取、自動化）一致、可為執行準備工作設定明確的路徑、並提供自動化目錄以供日後快速重複使用。 
+---
+= 瞭解代號箱自動化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗、可協助開發人員和 DevOps 產生執行任何由 Workload Factory 支援的作業所需的程式碼。Codebox 與工作負載工廠作業模式（基本、讀取和自動化）一致、可為執行準備工作設定明確的路徑、並提供自動化目錄以供日後快速重複使用。
+
+
+
+== CodeBox 功能
+
+CodeBox 提供兩項重要的 IAC 功能：
+
+* _Codebox Viewer_ 顯示由特定工作流程作業所產生的 IAC 、方法是從圖形化精靈或對話式聊天介面中比對項目和選擇。雖然 CodeBox Viewer 支援彩色編碼、可輕鬆進行導覽和分析、但不允許編輯、只能將程式碼複製或儲存至自動化目錄。
+* _CodeBox Automation Catalog_ 顯示所有儲存的 IAC 工作、讓您輕鬆參考這些工作以供未來使用。自動化目錄工作會儲存為範本、並以套用至它們的資源內容顯示。
+
+
+此外、當設定 Workload Factory 認證時、 Codebox 會動態顯示建立 IAM 原則所需的 AWS 權限。系統會針對您計畫使用的每個工作負載工廠功能（資料庫、 AI 、 ONTAP 適用的 FSX 等）提供權限、並根據原則使用者是否取得唯讀權限或完整操作權限而自訂這些權限。您只要從 Codebox 複製權限、然後將其貼到 AWS 管理主控台、工作負載工廠就能擁有正確的權限來管理工作負載。
+
+
+
+== 支援的程式碼格式
+
+支援的程式碼格式包括：
+
+* 工作負載原廠 REST API
+* AWS CLI
+* AWS CloudForgation
+
+
+link:use-codebox.html["瞭解如何使用 CodeBox"]。

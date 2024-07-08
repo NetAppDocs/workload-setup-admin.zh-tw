@@ -1,0 +1,30 @@
+---
+indexpage:
+  title: Workload Factory 設定與管理文件
+  summary: 開始使用 Workload Factory 、讓您在使用 Amazon FSX for NetApp ONTAP 時、能充分發揮工作負載的效益。完成設定後、您可以針對工作負載建立、最佳化及管理適用於
+    ONTAP 檔案系統的 FSX 、探索適用於 ONTAP 的 FSX 成本節約效益、使用內建的基礎架構即程式碼聯合試驗、在跨平台進行自動化、以及在工作負載工廠中管理工作負載。
+  keywords: workload factory, fsx, account, credentials, users, permissions, log in,
+    calculator, codebox
+  lead: 開始使用 Workload Factory 、讓您在使用 Amazon FSX for NetApp ONTAP 時、能充分發揮工作負載的效益。完成設定後、您可以針對工作負載建立、最佳化及管理適用於
+    ONTAP 檔案系統的 FSX 、探索適用於 ONTAP 的 FSX 成本節約效益、使用內建的基礎架構即程式碼聯合試驗、在跨平台進行自動化、以及在工作負載工廠中管理工作負載。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 瞭解 Workload Factory
+      url: workload-factory-overview.html
+    - title: 註冊
+      url: sign-up-saas.html
+  - title: 作業模式和認證
+    links:
+    - title: 瞭解操作模式
+      url: operational-modes.html
+    - title: 新增 AWS 認證
+      url: add-credentials.html
+    - title: 移除認證資料
+      url: manage-credentials.html
+  - title: 使用 CodeBox 自動化
+    links:
+    - title: 瞭解 CodeBox
+      url: codebox-automation.html
+    - title: 使用 Codebox 進行自動化
+      url: use-codebox.html
