@@ -76,7 +76,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 .步驟
-. 使用 UI 定義您要執行的作業之後、請選取 image:button-copy-codebox.png["複製按鈕"] 以複製 Codebox 中的程式碼。
+. 使用 UI 定義您要執行的作業之後、請複製 Codebox 中的程式碼。
 . 選取 * 重新導向至 CloudForgied* 、隨即顯示重新導向至 CloudForgation 頁面。
 . 開啟另一個瀏覽器視窗、然後登入 AWS 管理主控台。
 . 從「重新導向至 CloudForgation 」頁面選取 * 繼續 * 。
@@ -97,7 +97,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 請注意、驗證權杖會隱藏在 Codebox 中、但會在您複製和貼上 API 呼叫時填入這些權杖。
 
 .步驟
-. 使用 UI 定義您要執行的作業之後、請選取 image:button-copy-codebox.png["複製按鈕"] 以複製 Codebox 中的 API 程式碼。
+. 在您使用 UI 定義要執行的作業之後、請複製 Codebox 中的 API 程式碼。
 . 貼上程式碼、然後在主機系統上執行。
 
 
@@ -108,7 +108,24 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 您可以使用從 Codebox 產生的 Amazon Web Services CLI 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
 
 .步驟
-. 使用 UI 來定義您要執行的作業之後、請在「代碼」方塊中選取 image:button-copy-codebox.png["複製按鈕"] 複製 AWS CLI 。
+. 使用 UI 定義您要執行的作業之後、請在 Codebox 中複製 AWS CLI 。
 . 開啟另一個瀏覽器視窗、然後登入 AWS 管理主控台。
+. 貼上程式碼並執行。
+
+
+
+
+== 使用 CodeBox 的 Terraform
+
+您可以使用 Terraform 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
+
+.開始之前
+* 您需要 Terraform 伺服器來執行的命令。
+* 您必須擁有認證才能登入 AWS 帳戶。
+
+
+.步驟
+. 使用 UI 定義您要執行的作業之後、請在 Codebox 中複製或下載 Terraform 程式碼。
+. 連線至伺服器。
 . 貼上程式碼並執行。
 
