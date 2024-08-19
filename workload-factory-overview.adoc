@@ -13,6 +13,8 @@ summary: NetApp 工作負載工廠是功能強大的生命週期管理平台、�
 [role="lead"]
 NetApp 工作負載工廠是功能強大的生命週期管理平台、可協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載。使用 Workload Factory 和適用於 ONTAP 的 FSX 可簡化的工作負載包括資料庫、 VMware 在 AWS 上移轉至 VMware Cloud 、 AI 聊天機器人程式等。
 
+工作負載包含資源、程式碼和服務或應用程式的組合、專為達成業務目標而設計。這可能是從面對客戶的應用程式到後端程序。工作負載可能涉及單一 AWS 帳戶內的資源子集、或跨越多個帳戶。
+
 Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 VMware Cloud 資料存放區和使用者檔案提供完全託管的 AWS 原生 NFS 、 SMB/CIFS 和 iSCSI 儲存磁碟區。您可以透過工作負載工廠及使用原生 AWS 管理工具來管理適用於 ONTAP 的 FSX 。
 
 
@@ -106,9 +108,9 @@ link:codebox-automation.html["深入瞭解 CodeBox"]。
 
 
 
-=== 儲存計算機
+=== 節省計算機
 
-Workload Factory 提供儲存計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。
+Workload Factory 提供節省計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。
 
 不同類型儲存系統之間的比較標準包括所需的總容量和總效能、包括所需的 IOPS 和所需的處理量。
 

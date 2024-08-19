@@ -463,8 +463,6 @@
   <block id="7c408fda146892c9e1c039f91fee3cd3" category="paragraph">Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。</block>
   <block id="ec6b8f7cd0c5cd9853d947bc13f72f4b" category="inline-link-macro">深入瞭解 CodeBox</block>
   <block id="7221d615997ca03d4480df5a43dae047" category="paragraph"><block ref="491e45ff3f847be901c7d8962829a3f8" category="inline-link-macro-rx"></block>。</block>
-  <block id="6495534fd654d5f36372a209ee27f0a4" category="section-title">儲存計算機</block>
-  <block id="8ab314706201f4dddfd4b45dee861f4a" category="paragraph">Workload Factory 提供儲存計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
   <block id="3d40a6fbdf1b779c8b032be37bcf95a4" category="paragraph">不同類型儲存系統之間的比較標準包括所需的總容量和總效能、包括所需的 IOPS 和所需的處理量。</block>
   <block id="c8d9b9f1a68d559ab984d4aa5efa4076" category="inline-link">瞭解如何使用儲存計算機來探索節約效益</block>
   <block id="62ee06e3888f5791ca82b765e4aa3773" category="paragraph"><block ref="62ee06e3888f5791ca82b765e4aa3773" category="inline-link-rx"></block></block>
@@ -507,4 +505,7 @@
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 支援</block>
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。</block>
   <block id="1a83a24f33c92a88ea922a23bd6cf4e5" category="paragraph"><block ref="1a83a24f33c92a88ea922a23bd6cf4e5" category="inline-link-macro-rx"></block></block>
+  <block id="462c14d3e045d4b0b69cee0781df3207" category="paragraph">工作負載包含資源、程式碼和服務或應用程式的組合、專為達成業務目標而設計。這可能是從面對客戶的應用程式到後端程序。工作負載可能涉及單一 AWS 帳戶內的資源子集、或跨越多個帳戶。</block>
+  <block id="fb44c12e7a424c0619764b1060434a74" category="section-title">節省計算機</block>
+  <block id="6904c85b1af908213d1642916b521739" category="paragraph">Workload Factory 提供節省計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
 </blocks>
