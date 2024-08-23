@@ -23,7 +23,7 @@ summary: 瞭解 Workload Factory 管理功能的新功能：雲端供應商認�
 
 Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。
 
-link:use-codebox.html["使用 CodeBox 的 Terraform"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"^]
 
 
 

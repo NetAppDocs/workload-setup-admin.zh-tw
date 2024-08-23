@@ -8,6 +8,8 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:

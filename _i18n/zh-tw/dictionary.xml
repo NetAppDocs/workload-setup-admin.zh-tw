@@ -504,8 +504,8 @@
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 支援</block>
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。</block>
-  <block id="1a83a24f33c92a88ea922a23bd6cf4e5" category="paragraph"><block ref="1a83a24f33c92a88ea922a23bd6cf4e5" category="inline-link-macro-rx"></block></block>
   <block id="462c14d3e045d4b0b69cee0781df3207" category="paragraph">工作負載包含資源、程式碼和服務或應用程式的組合、專為達成業務目標而設計。這可能是從面對客戶的應用程式到後端程序。工作負載可能涉及單一 AWS 帳戶內的資源子集、或跨越多個帳戶。</block>
   <block id="fb44c12e7a424c0619764b1060434a74" category="section-title">節省計算機</block>
   <block id="6904c85b1af908213d1642916b521739" category="paragraph">Workload Factory 提供節省計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
+  <block id="11cb17d1b990bbf37a24337d5692efa1" category="paragraph"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
 </blocks>
