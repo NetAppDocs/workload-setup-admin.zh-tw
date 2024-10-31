@@ -498,9 +498,6 @@
   <block id="1b2b6bf8e053a2f8088251c3a2cc65f9" category="list-text">使用 UI 定義您要執行的作業之後、請在 Codebox 中複製 AWS CLI 。</block>
   <block id="2532cd63354e6e99119077d45134b5ef" category="section-title">使用 CodeBox 的 Terraform</block>
   <block id="a5a1cedd11df4667bf63eec57c1622aa" category="paragraph">您可以使用 Terraform 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
-  <block id="372393cee3187826465089e7fa3db98e" category="list-text">您需要 Terraform 伺服器來執行的命令。</block>
-  <block id="90d8257298c061974c94790388e32bbd" category="list-text">使用 UI 定義您要執行的作業之後、請在 Codebox 中複製或下載 Terraform 程式碼。</block>
-  <block id="a2417f4d64bad3dff09f2bdbce4dc0e2" category="list-text">連線至伺服器。</block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 支援</block>
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。</block>
@@ -518,4 +515,8 @@
   <block id="fa5f572610383fbc01cbba40c0f535e2" category="paragraph"><block ref="fa5f572610383fbc01cbba40c0f535e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1db25aada4bff8233b24c1d7b39230cd" category="paragraph"><block ref="1db25aada4bff8233b24c1d7b39230cd" category="inline-link-macro-rx"></block></block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
+  <block id="6e9e8f336be02f99477adc019bfcd183" category="list-text">您需要安裝 Terraform 的系統（ Windows/Mac/Linux ）。</block>
+  <block id="613670bc7ca8a45f31728d87474749ac" category="list-text">使用使用者介面定義您要執行的作業之後、請從 Codebox 下載 Terraform 程式碼。</block>
+  <block id="53e9887aa73e6bb1fcf6b5b002e7f175" category="list-text">將下載的指令碼歸檔複製到安裝 Terraform 的系統。</block>
+  <block id="8db9de1de3844107194be0555d5ceb7c" category="list-text">解壓縮 zip 檔案、然後依照 README.MD 檔案中的步驟進行。</block>
 </blocks>
