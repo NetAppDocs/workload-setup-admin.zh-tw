@@ -23,7 +23,7 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 您現在可以從使用工作負載工廠link:https://console.bluexp.netapp.com["BlueXP主控台"^]。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。
 
-link:https://docs.netapp.com/workload-setup-admin/console-experiences.html["瞭解如何從 BlueXP  主控台存取工作負載工廠"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["瞭解如何從 BlueXP  主控台存取工作負載工廠"]
 
 
 

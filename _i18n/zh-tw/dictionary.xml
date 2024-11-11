@@ -415,7 +415,6 @@
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
   <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">您現在可以從使用工作負載工廠<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">瞭解如何從 BlueXP  主控台存取工作負載工廠</block>
-  <block id="df2137c00b08ad833b0954cdd4247de3" category="paragraph"><block ref="df2137c00b08ad833b0954cdd4247de3" category="inline-link-macro-rx"></block></block>
   <block id="4fa2f246a664251a157926c2e11e1eb3" category="summary">新增 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
   <block id="188c7f44ffe17186c8dcbc38640d54e1" category="paragraph">新增及管理 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署及管理雲端資源所需的權限。</block>
   <block id="ef76867d2d387a61f890c38a33b72db2" category="paragraph">除非您新增 AWS 帳戶認證，否則工作負載工廠將以 _basive_ 模式運作。您可以新增認證以啟用其他操作模式、例如讀取模式和自動模式。<block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block>。</block>
@@ -564,4 +563,5 @@
   <block id="280ab23085110ae96b1c8df197382d0b" category="sidebar">註冊至工作負載工廠</block>
   <block id="cb1411d161cdf3fea65b5b1351ffa45b" category="sidebar">管理工作負載工廠</block>
   <block id="2003c10ae1eaa96c8dd0c849f3e0b79e" category="sidebar">登入工作負載工廠</block>
+  <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
 </blocks>
