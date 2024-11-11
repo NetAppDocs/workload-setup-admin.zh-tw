@@ -6,16 +6,16 @@
 
 === RSS 訂閱
 
-您可以從link:https://console.workloads.netapp.com/["Workload Factory 主控台"^]取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方法、可以輕鬆使用 BlueXP  工作負載工廠、並瞭解其變更。
+您可以從link:https://console.workloads.netapp.com/["工作負載原廠主控台"^]取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。
 
-image:screenshot-rss-subscribe-button.png["Workload Factory 主控台說明下拉式功能表的螢幕擷取畫面。訂閱 RSS 的新按鈕會在下拉式功能表中顯示為選項。"]
+image:screenshot-rss-subscribe-button.png["工作負載原廠主控台說明下拉式功能表的快照。訂閱 RSS 的新按鈕會在下拉式功能表中顯示為選項。"]
 
 
 
 === 支援每個工作負載的單一權限原則
 
-在 Workload Factory 中新增 AWS 認證時、您現在可以針對每個工作負載和儲存管理、選取單一權限原則（讀取或自動化模式）。
+在工作負載工廠新增 AWS 認證時，您現在可以針對每個工作負載和儲存管理，選取單一權限原則，無論是讀取或自動化模式。
 
 image:screenshot-single-permission-policy-support.png["「認證」頁面上權限組態區段的螢幕擷取畫面、您可以在其中選取讀取或自動化儲存管理、 AI 工作負載、資料庫工作負載和 VMware 工作負載的權限原則。"]
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["將 AWS 認證新增至 Workload Factory"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["將 AWS 認證新增至工作負載工廠"^]

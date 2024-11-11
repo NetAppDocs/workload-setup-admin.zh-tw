@@ -2,33 +2,33 @@
 sidebar: sidebar 
 permalink: sign-up-saas.html 
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
-summary: 工作負載工廠可從網路型主控台存取。開始使用 Workload Factory 時、您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。 
+summary: 工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。 
 ---
-= 報名參加 Workload Factory
+= 註冊 BlueXP  工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-工作負載工廠可從網路型主控台存取。開始使用 Workload Factory 時、您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。
+BlueXP  工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。
 
 .關於這項工作
-您可以使用下列其中一個選項來註冊 Workload Factory ：
+您可以使用下列其中一個選項，註冊至工作負載工廠：
 
 * 您現有NetApp 支援網站 的功能驗證（NSS）認證
 * 指定您的電子郵件地址和密碼、即可登入NetApp雲端
 
 
 .步驟
-. 開啟網頁瀏覽器、然後前往 https://console.workloads.netapp.com["Workload Factory 主控台"^]
+. 開啟網頁瀏覽器、然後前往 https://console.workloads.netapp.com["工作負載原廠主控台"^]
 . 如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。
 +
-如果您有 NSS 帳戶、可以跳過註冊頁面。Workload Factory 將會在這次初始登入時註冊。
+如果您有 NSS 帳戶、可以跳過註冊頁面。工作負載工廠會在這次初次登入時註冊您。
 
 . 如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。
 +
-image:screenshot-sign-up1.png["登錄頁面的螢幕快照、您可以在其中新增使用者名稱和密碼、以存取 Workload Factory 。"]
+image:screenshot-sign-up1.png["「註冊」頁面的螢幕快照，您可以在其中新增使用者名稱和密碼，以存取工作負載工廠。"]
 
 . 在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊、然後選取 * 下一步 * 。
 +
@@ -47,8 +47,8 @@ image:screenshot-sign-up1.png["登錄頁面的螢幕快照、您可以在其中�
 +
 image:screenshot-account-selection.png["使用新帳戶登入時出現的「帳戶」頁面的螢幕擷取畫面。"]
 
-. 選取 * 建立 * 、隨即顯示 Workload Factory 首頁。
+. 選取 * 建立 * ，隨即顯示工作負載原廠首頁。
 
 
 .結果
-您現在可以登入 Workload Factory 、並擁有帳戶。您被視為帳戶管理員、可存取所有 Workload Factory 功能。
+您現在擁有工作負載原廠登入和帳戶。您被視為帳戶管理員，您可以存取所有工作負載工廠功能。

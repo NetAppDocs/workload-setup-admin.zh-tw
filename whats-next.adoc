@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: whats-next.html 
 keywords: what you can do 
-summary: 現在您已經登入並設定工作負載工廠、您可以建立和管理 ONTAP 檔案系統的 FSX 、並使用其他工作負載工廠功能。 
+summary: 現在您已經登入並設定工作負載工廠，您可以建立和管理 ONTAP 檔案系統的 FSX ，並使用其他工作負載工廠功能。 
 ---
-= 接下來您可以做什麼
+= BlueXP  工作負載工廠的後續行動
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-現在您已經登入並設定工作負載工廠、您可以開始使用數項工作負載工廠功能、例如為 ONTAP 檔案系統建立 Amazon FSX 、在適用於 ONTAP 檔案系統的 FSX 上部署資料庫、 並將虛擬機器組態移轉至 AWS 上的 VMware Cloud 、使用適用於 ONTAP 檔案系統的 FSX 做為外部資料存放區。
+現在您已登入並設定 BlueXP  工作負載工廠，您可以開始使用數項工作負載工廠功能，例如建立適用於 ONTAP 檔案系統的 Amazon FSX ，在適用於 ONTAP 檔案系統的 FSX 上部署資料庫，以及將虛擬機器組態移轉至使用適用於 ONTAP 檔案系統的 FSX 作為外部資料存放區的 VMware Cloud on AWS 。
 
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
 +

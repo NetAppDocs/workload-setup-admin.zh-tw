@@ -2,26 +2,26 @@
 sidebar: sidebar 
 permalink: log-in.html 
 keywords: logging in, log in, sign in, signing in, user account, login with netapp, log in with netapp, sign up, create account 
-summary: 登入 Workload Factory 之後、您可以隨時從網路型主控台登入、開始管理工作負載、並從 ONTAP 檔案系統開始使用 FSX 。 
+summary: 在您註冊工作負載工廠之後，您可以隨時從網路型主控台登入，開始管理工作負載，以及 ONTAP 檔案系統的 FSX 。 
 ---
-= 登入 Workload Factory
+= 登入 BlueXP  工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-登入 Workload Factory 之後、您可以隨時從網路型主控台登入、開始管理工作負載、並從 ONTAP 檔案系統開始使用 FSX 。
+註冊 BlueXP  工作負載工廠後，您可以隨時從網路型主控台登入，開始管理工作負載，並從 FSX 開始管理 ONTAP 檔案系統。
 
 .關於這項工作
-您可以使用下列其中一個選項、登入 Workload Factory 網路型主控台：
+您可以使用下列其中一個選項，登入工作負載原廠網路型主控台：
 
 * 您現有NetApp 支援網站 的功能驗證（NSS）認證
 * 使用您的電子郵件地址和密碼登入NetApp雲端
 
 
 .步驟
-. 開啟網頁瀏覽器並前往 https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 開啟網頁瀏覽器並前往 https://console.workloads.netapp.com["工作負載原廠主控台"^]。
 . 在*登入*頁面上、輸入與您登入相關的電子郵件地址。
 . 視您登入的相關驗證方法而定、系統會提示您輸入認證資料：
 +
@@ -32,7 +32,7 @@ summary: 登入 Workload Factory 之後、您可以隨時從網路型主控台�
 
 . 選取 * 登入 * 。
 +
-如果您過去成功登入、您會看到 Workload Factory 首頁、並使用預設帳戶。
+如果您過去成功登入，您會看到工作負載原廠首頁，並使用預設帳戶。
 
 +
 如果這是您第一次登入、系統會將您導向到 * 帳戶 * 頁面。
@@ -45,4 +45,4 @@ summary: 登入 Workload Factory 之後、您可以隨時從網路型主控台�
 
 
 .結果
-您現在已登入、可以開始使用 Workload Factory 來管理 ONTAP 檔案系統和工作負載的 FSX 。
+您現在已登入，可以開始使用工作負載工廠來管理 ONTAP 檔案系統和工作負載的 FSX 。

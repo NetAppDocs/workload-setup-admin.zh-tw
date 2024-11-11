@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="0204047d2332c588e7eb7d928e84f94a" category="summary">新增 AWS 認證、讓 Workload Factory 擁有在 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
-  <block id="287ae8bc216279a75c04344894e04b7f" category="doc">將 AWS 認證新增至 Workload Factory</block>
-  <block id="b4b980a506b01e8ee88c1658f64ff933" category="paragraph">新增及管理 AWS 認證、讓 Workload Factory 擁有在 AWS 帳戶中部署及管理雲端資源所需的權限。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">總覽</block>
   <block id="4dacf6e0adb6ed0f64acd514a486bf8a" category="inline-link-macro">深入瞭解操作模式</block>
-  <block id="8b7ed833b15fc4a24d7c01f4ff0473e3" category="paragraph">除非您新增 AWS 帳戶認證、否則 Workload Factory 將以 _basive_ 模式運作。您可以新增認證以啟用其他操作模式、例如讀取模式和自動模式。<block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block>。</block>
-  <block id="7f76e91e5513affc227459b415e2e1cf" category="paragraph">您可以從「認證」頁面、將 AWS 認證新增至現有的 Workload Factory 帳戶。這可讓 Workload Factory 擁有管理 AWS 雲端環境中資源和程序所需的權限。</block>
   <block id="df21e6f22445f7e313093546a4762e64" category="paragraph">您可以使用兩種方法新增認證：</block>
-  <block id="ebb29cdb5a9f5368e3f445c808c91552" category="list-text">* 手動 * ：在 Workload Factory 中新增認證時、您可以在 AWS 帳戶中建立 IAM 原則和 IAM 角色。</block>
   <block id="1a04b786edc8b8251d22307b11cb2a8d" category="list-text">* 自動 * ：您擷取的權限相關資訊量最少、然後使用 CloudForgation 堆疊來建立您認證的 IAM 原則和角色。</block>
   <block id="3e704746794b6c6da13402ca9df54660" category="section-title">手動新增認證至帳戶</block>
-  <block id="c3ba6c13344137feef1d3795c8b29466" category="paragraph">您可以手動將 AWS 認證新增至 Workload Factory 、讓您的 Workload Factory 帳戶擁有管理 AWS 資源所需的權限、以便執行您獨特的工作負載。您新增的每組認證都會根據您要使用的工作負載功能、包括一或多個 IAM 原則、以及指派給您帳戶的 IAM 角色。</block>
   <block id="ea106b6fa0504ddb53d4506dcd8e7755" category="paragraph">建立認證有三個部分：</block>
   <block id="b4968210d824a9808cbfac903e6a2461" category="list-text">選取您要使用的服務和權限層級、然後從 AWS 管理主控台建立 IAM 原則。</block>
   <block id="3b022a10e2c2436d37f59e86b18713f7" category="list-text">從 AWS 管理主控台建立 IAM 角色。</block>
-  <block id="875b761ddc794776aadfc56fc5a6fc34" category="list-text">從 Workload Factory 輸入名稱並新增認證。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
   <block id="36a8744ea109fc8ef18fd018d5d97aa0" category="paragraph">您必須擁有認證才能登入 AWS 帳戶。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
-  <block id="a8fab9cf1c5f1b2f874573a923af9503" category="list-text">在 Workload Factory 主控台中、選取 * 帳戶 * 圖示、然後選取 * 認證 * 。</block>
-  <block id="7bb5995fb8df55fef061908839bf8869" category="inline-image-macro">螢幕擷取畫面顯示 Workload Factory 主控台中的「帳戶設定」圖示。</block>
-  <block id="f1801c767f1fdb84cf89d4dc163ed814" category="paragraph"><block ref="f1801c767f1fdb84cf89d4dc163ed814" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dcad3915ef43cba7d550cad972fa348d" category="list-text">在 * 認證 * 頁面上、選取 * 新增認證 * 、隨即顯示新增認證頁面。</block>
   <block id="c8df78ded4cea0598f7679f11a3c3246" category="list-text">選取 * 手動新增 * 、然後依照下列步驟填寫 _ 權限組態 _ 下的三個區段。</block>
   <block id="ef7fe40c036b5b08d74837dcb702dc33" category="inline-image-macro">螢幕擷取畫面會顯示您需要手動定義每組認證的項目。</block>
@@ -40,27 +29,20 @@
   <block id="e8ea9480c70ef3b586604a914898eff0" category="list-text">輸入原則名稱、然後選取 * 建立原則 * 。</block>
   <block id="c240537b83fe8c59f5bb758e5c166662" category="list-text">如果您在步驟 1 中選取了多個工作負載功能、請重複這些步驟、為每組工作負載權限建立原則。</block>
   <block id="eca99ccb2e04bfcfc06a9cb5860e53a9" category="section-title">步驟 2 ：建立使用原則的 IAM 角色</block>
-  <block id="30551002ceb8abd5af0ee8907423b553" category="paragraph">在本節中、您將設定一個 IAM 角色、由 Workload Factory 假設其中包含您剛建立的權限和原則。</block>
   <block id="05e2d97b3b23a80afeb67390bad5f97c" category="inline-image-macro">顯示哪些權限將成為新角色一部分的螢幕擷取畫面。</block>
   <block id="bfc77a43a5b610654d7d0e7bbb9162a7" category="paragraph"><block ref="bfc77a43a5b610654d7d0e7bbb9162a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0a8070d8176ef21fdf6bc0d6b6833c9" category="list-text">在 AWS 管理主控台中、選取 * 角色 &gt; 建立角色 * 。</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在*信任的實體類型*下、選取* AWS帳戶*。</block>
-  <block id="f0497660975536e414a629b7d4f9f276" category="list-text">選取 * 另一個 AWS 帳戶 * 、然後從工作負載工廠 UI 複製並貼上適用於 ONTAP 工作負載管理的 FSX 帳戶 ID 。</block>
-  <block id="f97e7ca54bb60a402c14107162345b08" category="list-text">選取 * 必要的外部 ID* 、然後從 Workload Factory UI 複製並貼上外部 ID 。</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇*下一步*。</block>
   <block id="552a0f683211339f8f7517a1d4fc804d" category="list-text">在權限原則區段中、選擇您先前定義的所有原則、然後選取 * 下一步 * 。</block>
   <block id="eb940e2ee0ec63786b166a518db881df" category="list-text">輸入角色名稱、然後選取 * 建立角色 * 。</block>
   <block id="38743fa9100c2dfb5d984fc45fed3de7" category="list-text">複製角色 ARN 。</block>
-  <block id="3ef33e9c33bb03c549beb540233aef7a" category="list-text">返回工作負載工廠、展開 * 建立角色 * 區段、然後將 ARN 貼到 _ 角色 ARN_ 欄位。</block>
   <block id="c66b75fd4a0a3e3eff2094b970b0b897" category="section-title">步驟 3 ：輸入名稱並新增認證</block>
-  <block id="a9c4ed0c041add98b3c1c27e6191e29e" category="paragraph">最後一步是在 Workload Factory 中輸入認證的名稱。</block>
-  <block id="3d89a5fdb924680cf3d2a6757ec9707c" category="list-text">從 Workload Factory 展開 * 認證名稱 * 。</block>
   <block id="a961eea4fc631a6689d895b16be74287" category="list-text">輸入您要用於這些認證的名稱。</block>
   <block id="027a8d7e43e765637f8ef1ae06ce3700" category="list-text">選取 * 新增 * 以建立認證。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="47d8a5dd0796937c17e25e1cddfa4b0a" category="paragraph">隨即建立認證、並返回「認證」頁面。</block>
   <block id="5512d35e832df0796cf2e9bbfc4ef8e7" category="section-title">使用 CloudForgation 將認證新增至帳戶</block>
-  <block id="21f73823dc240b09e9b0a0896496f95d" category="paragraph">您可以使用 AWS CloudForgation 堆疊將 AWS 認證新增至 Workload Factory 、方法是選取您要使用的 Workload Factory 功能、然後在 AWS 帳戶中啟動 AWS CloudForgation 堆疊。CloudForgation 將根據您所選的工作負載功能、建立 IAM 原則和 IAM 角色。</block>
   <block id="f48f7e164b0415ad7634845f95eb03e1" category="list-text">使用 CloudForgation 堆疊新增認證時、您必須在 AWS 帳戶中擁有下列權限：</block>
   <block id="7f1a76d5b7da63bea7c6b448303e146a" category="list-text">在 * 認證 * 頁面上、選取 * 新增認證 * 。</block>
   <block id="4454b47599abbe986fcc1d78e9d5c3d5" category="list-text">選取 * 透過 AWS CloudForgium* 新增。</block>
@@ -70,30 +52,22 @@
   <block id="fa7fbda40357a3d9d2b6286d82c737a8" category="list-text">在 * 認證名稱 * 下、輸入您要用於這些認證的名稱。</block>
   <block id="55af5349296de9cc03eea75eb011b988" category="list-text">從 AWS CloudForgation 新增認證：</block>
   <block id="a83b560232f912e9085bc49e52b3b48b" category="list-text">選取 * 新增 * （或選取 * 重新導向至 CloudForgium* ）、隨即顯示重新導向至 CloudForgation 頁面。</block>
-  <block id="7b8b5df6726a1112cf43c1440a2b4def" category="inline-image-macro">螢幕快照顯示如何建立 CloudForgation 堆疊以新增原則和工作負載工廠認證角色。</block>
-  <block id="b0f8c37516e3eee761656df941264fa2" category="paragraph"><block ref="b0f8c37516e3eee761656df941264fa2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1ef06b747e151725861e376eb2fca2b" category="list-text">如果您將單一登入（ SSO ）與 AWS 搭配使用、請先開啟另一個瀏覽器索引標籤、然後登入 AWS 主控台、再選取 * 繼續 * 。</block>
   <block id="43bcb79a644c3cd71bfe3cb4635d97a0" category="paragraph">您應該登入 ONTAP 檔案系統的 FSX 所在的 AWS 帳戶。</block>
   <block id="3364e8fe52c54126e3d0ebbdc3ebe636" category="list-text">從「重新導向至 CloudForgation 」頁面選取 * 繼續 * 。</block>
   <block id="ab44f988398acb833af7b9b2bc6c26b9" category="list-text">在「快速建立堆疊」頁面的「功能」下、選取 * 我瞭解 AWS CloudForgation 可能會建立 IAM 資源 * 。</block>
   <block id="69831ef6721ecf7f184cdd4b29af8f45" category="list-text">選取 * 建立堆疊 * 。</block>
-  <block id="67a2aece01328bf00637fcc5391ba3ec" category="list-text">返回 Workload Factory 並監控「認證」頁面、以確認新認證正在進行中或已新增認證。</block>
-  <block id="33806546d5449616c234971d2aa7c18b" category="summary">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗、可協助開發人員和 DevOps 產生執行任何由 Workload Factory 支援的作業所需的程式碼。Codebox 與工作負載工廠作業模式（基本、讀取、自動化）一致、可為執行準備工作設定明確的路徑、並提供自動化目錄以供日後快速重複使用。</block>
   <block id="b9d92ff083cdd90473a495ae946507fa" category="doc">瞭解代號箱自動化</block>
-  <block id="86df170aaac2322b854dc499ffb2f681" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗、可協助開發人員和 DevOps 產生執行任何由 Workload Factory 支援的作業所需的程式碼。Codebox 與工作負載工廠作業模式（基本、讀取和自動化）一致、可為執行準備工作設定明確的路徑、並提供自動化目錄以供日後快速重複使用。</block>
   <block id="c20a9fb18c5ad24194fdd7ccde0a108d" category="section-title">CodeBox 功能</block>
   <block id="a60481064d733c1b8603777a0fed54b0" category="paragraph">CodeBox 提供兩項重要的 IAC 功能：</block>
   <block id="7b03b939d7a7886fee314498791450ce" category="list-text">_Codebox Viewer_ 顯示由特定工作流程作業所產生的 IAC 、方法是從圖形化精靈或對話式聊天介面中比對項目和選擇。雖然 CodeBox Viewer 支援彩色編碼、可輕鬆進行導覽和分析、但不允許編輯、只能將程式碼複製或儲存至自動化目錄。</block>
   <block id="e270244cb4311b8491d54c9d67c0622f" category="list-text">_CodeBox Automation Catalog_ 顯示所有儲存的 IAC 工作、讓您輕鬆參考這些工作以供未來使用。自動化目錄工作會儲存為範本、並以套用至它們的資源內容顯示。</block>
-  <block id="11c284cdfd9860e62b7f844adeae2037" category="paragraph">此外、當設定 Workload Factory 認證時、 Codebox 會動態顯示建立 IAM 原則所需的 AWS 權限。系統會針對您計畫使用的每個工作負載工廠功能（資料庫、 AI 、 ONTAP 適用的 FSX 等）提供權限、並根據原則使用者是否取得唯讀權限或完整操作權限而自訂這些權限。您只要從 Codebox 複製權限、然後將其貼到 AWS 管理主控台、工作負載工廠就能擁有正確的權限來管理工作負載。</block>
   <block id="83bc09f30d22b08aaed079135d400a58" category="section-title">支援的程式碼格式</block>
   <block id="a2d178a4422e96a4ba807df17805b391" category="paragraph">支援的程式碼格式包括：</block>
-  <block id="2a877c6ff8f47bb17f9e4d12f8a693bc" category="list-text">工作負載原廠 REST API</block>
   <block id="7820fdb5d8b3ebe0c69c86cf8bd2d0cf" category="list-text">AWS CLI</block>
   <block id="8679a1944db93938a65e47107be5d2b8" category="list-text">AWS CloudForgation</block>
   <block id="1767b6ef838f3d4774bc0f274ffd6680" category="inline-link-macro">瞭解如何使用 CodeBox</block>
   <block id="431b5bf36166f939706fd1cd6625e311" category="paragraph"><block ref="58039229c34145102d9497de13b6e7b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="243f4102d24e538f61072e19e53b373f" category="summary">NetApp 以多種方式支援工作負載工廠。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
@@ -197,43 +171,29 @@
   <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
   <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware 工作負載工廠</block>
   <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
-  <block id="dfccab35bc7005d989cb4561e9255ada" category="summary">登入 Workload Factory 之後、您可以隨時從網路型主控台登入、開始管理工作負載、並從 ONTAP 檔案系統開始使用 FSX 。</block>
-  <block id="7ffef60a0bb1e63a8505f9e4285dab5f" category="doc">登入 Workload Factory</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
-  <block id="4a82c28eaf9e486d9116434f89bacba7" category="paragraph">您可以使用下列其中一個選項、登入 Workload Factory 網路型主控台：</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您現有NetApp 支援網站 的功能驗證（NSS）認證</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">使用您的電子郵件地址和密碼登入NetApp雲端</block>
-  <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link">Workload Factory 主控台</block>
-  <block id="ba66ed28174cebd60e2e5bb8650d4aa1" category="list-text">開啟網頁瀏覽器並前往<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block>。</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">在*登入*頁面上、輸入與您登入相關的電子郵件地址。</block>
   <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">視您登入的相關驗證方法而定、系統會提示您輸入認證資料：</block>
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp雲端認證：輸入您的密碼</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">聯盟使用者：輸入您的聯盟身分認證資料</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">系統驗證：輸入您的資料不驗證資料NetApp 支援網站 NetApp 支援網站</block>
   <block id="c4d4e21d2a557d3c9be0ce8dc071f547" category="list-text">選取 * 登入 * 。</block>
-  <block id="1c883b8b402bae840152eb96ee53c8bf" category="paragraph">如果您過去成功登入、您會看到 Workload Factory 首頁、並使用預設帳戶。</block>
   <block id="817b94dd7f00f6dd33e23875e9f03368" category="paragraph">如果這是您第一次登入、系統會將您導向到 * 帳戶 * 頁面。</block>
   <block id="3b05fd0eeb02280c9e89c847477bc0fc" category="list-text">如果您是單一帳戶的成員、請選取 * 繼續 * 。</block>
   <block id="9dd8932847709b0a76c3786f584e1272" category="list-text">如果您是多個帳戶的成員、請選取帳戶、然後選取 * 繼續 * 。</block>
-  <block id="a67ab1c62f2a6164c719be422f163c0c" category="paragraph">您現在已登入、可以開始使用 Workload Factory 來管理 ONTAP 檔案系統和工作負載的 FSX 。</block>
-  <block id="2f13edc244ce3aa63a739bc5418cd67f" category="summary">如果您不再需要一組認證、可以從 Workload Factory 中刪除這些認證。您只能刪除與 ONTAP 檔案系統的 FSX 無關的認證。</block>
   <block id="25f033e226552b2f5ae002edb8e5fd2f" category="doc">移除認證資料</block>
   <block id="58eed24ee19ccccfe9a117084c2d03a6" category="list-text">在 * 認證 * 頁面上、選取一組認證的動作功能表、然後選取 * 移除 * 。</block>
   <block id="b7dd0331ad4ede9488c2fd01dda69e83" category="list-text">選取 * 移除 * 以確認。</block>
-  <block id="be43daf19814961c1c1f681b1719f65a" category="summary">Workload Factory 提供三種作業模式、可讓您根據 IT 原則、仔細控制 Workload Factory 與雲端環境之間的存取。您使用的作業模式取決於您提供給 Workload Factory 的 AWS 權限層級。</block>
   <block id="0261a8e2837bda78e3e9784459c8d346" category="doc">瞭解作業模式和 AWS 認證</block>
   <block id="3b39e22b0ceb822bf56d19eb7ec14f7f" category="section-title">作業模式</block>
-  <block id="bc63252869898532ad7c844d8447e358" category="paragraph">營運模式提供工作負載工廠所提供功能與功能的邏輯組織、與您指定的信任層級相關聯。營運模式的主要目標是清楚傳達工作負載工廠可以或無法在 AWS 帳戶內執行的工作。</block>
   <block id="dad76b021334eb3d63f98648f701f598" category="list-text">基本模式</block>
-  <block id="4d34e6e6a767b4ce93680aa48cb370d0" category="list-text">代表零信任關係、其中沒有 AWS 權限指派給 Workload Factory 。它旨在早期探索工作負載工廠、並使用各種精靈來建立所需的基礎架構即程式碼（ IAC ）。您可以手動輸入 AWS 認證、複製程式碼並在 AWS 中使用。</block>
   <block id="1aa9d894db1bbfc4f52d99a458da7ff9" category="list-text">讀取模式</block>
-  <block id="5198d3d3b16bbd8165878b42f177a30b" category="list-text">新增唯讀權限、讓 IAC 範本填入您的特定變數（例如 VPC 、安全性群組等）、以提升基本模式的使用體驗。這可讓您直接從 AWS 帳戶執行 IAC 、而無需提供任何工作負載工廠的修改權限。</block>
   <block id="8d350bc547891d480d771e3f371ccf36" category="list-text">自動化模式</block>
-  <block id="90e0e635e22e69ee097729d5734a7d9d" category="list-text">代表完全信任關係、以便指派完整權限給 Workload Factory 。這可讓 Workload Factory 代表您執行及自動化 AWS 中的作業、以及具有執行所需權限的指派認證。</block>
   <block id="ba15cdea72f76749ac3c4d115682e1d5" category="section-title">操作模式功能</block>
   <block id="98065f8fb54547b003b502647ed5da13" category="paragraph">使用每種模式的可用功能會隨著每種模式而增加。</block>
   <block id="650be61892bf690026089544abbd9d26" category="cell">模式</block>
-  <block id="b68bbc990631af9eef3fe553c0db51c2" category="cell">工作負載工廠自動化</block>
   <block id="8b9f82548e6c7bc4008b903cade408bd" category="cell">使用 IAC 在 AWS 內自動化</block>
   <block id="cb96700fed42790aca4b326c2ddf0ee1" category="cell">AWS 資源探索與自動完成</block>
   <block id="822fdc9d51edd3ea21167e6afc3133bb" category="cell">進度監控</block>
@@ -247,7 +207,6 @@
   <block id="3babc847b322c661049062334b9c76b2" category="cell">完全自動化</block>
   <block id="78ac103234082be5f5a4ea67a4551981" category="cell">完整的 IAC 範本、完全自動化</block>
   <block id="c1ae257d71f3632f9398109243cbfd70" category="section-title">作業模式需求</block>
-  <block id="97ad164404d252aefcb10ad97a940250" category="paragraph">您無需在 Workload Factory 中設定任何選取器、即可識別您打算使用的模式。此模式是根據您指派給 Workload Factory 帳戶的 AWS 認證和權限來決定。</block>
   <block id="38a12b37ae4221c5fda46c9430a61d47" category="cell">AWS 帳戶認證</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">連結</block>
   <block id="6fd5e95dc0bce8329da87e1152677b48" category="cell">不需要</block>
@@ -257,13 +216,10 @@
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">深入瞭解連結</block>
   <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
   <block id="7cc58201fa83275d07886281be81a758" category="section-title">作業模式範例</block>
-  <block id="e45b6aecc9afa1e709e8df27941fce38" category="paragraph">您可以設定認證、為一個工作負載元件提供一個模式、而為另一個元件提供另一個模式。例如、您可以針對部署和管理 ONTAP 檔案系統之 FSX 的作業、設定自動化模式、但只能設定讀取模式、使用 Workload Factory 來建立和部署資料庫工作負載。</block>
-  <block id="1e82623c909c729fd392237767a08bbd" category="paragraph">您可以在 Workload Factory 帳戶中的單一認證集內提供這些功能、或在每個認證提供獨特的工作負載部署功能時、建立多組認證。</block>
   <block id="5504977cb47d642da3d1264eefb7edda" category="section-title">範例1</block>
   <block id="38356e3b8f5e0e5ad2a7ff778c4e8d82" category="paragraph">使用下列權限認證的帳戶使用者將擁有完整控制權（自動化模式）、可為 ONTAP 檔案系統建立 FSX 、部署資料庫、以及檢視帳戶中使用的其他 AWS 儲存設備類型。</block>
   <block id="4cd751338620bbd6099bbf7dcff61879" category="inline-image-macro">螢幕擷取畫面顯示一組提供兩種工作負載權限的認證。</block>
   <block id="9d405f908b42d501e27391e88e96690c" category="paragraph"><block ref="9d405f908b42d501e27391e88e96690c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="142d2c6ddb5d16596bad6ce5f8e87fe3" category="paragraph">不過、他們將無法透過 Workload Factory 建立和部署 VMware 工作負載（基本模式）、如果他們想要建立 VMware 工作負載、就必須從 Codebox 複製程式碼、手動登入 AWS 帳戶、然後手動填入產生的程式碼中遺失的項目、才能使用此功能。</block>
   <block id="5f3a8aa007370d00f3fd3b293a6a1118" category="section-title">範例2</block>
   <block id="bad86c34eeb44e43315105ff00eb040b" category="paragraph">在此、使用者已建立兩組認證、根據所選的認證集、允許不同的操作功能。通常、每組認證都會與不同的 AWS 帳戶配對。</block>
   <block id="f043f48233d1d8f545991908ce06fc8f" category="paragraph">第一組認證包含權限、可讓使用者完全控制為 ONTAP 檔案系統建立 FSX （以及檢視帳戶中使用的其他 AWS 儲存設備類型）、但只有在使用 VMware 工作負載時才具有讀取權限。</block>
@@ -278,29 +234,17 @@
   <block id="ba3950fc801639789c6f2c3d00092cfb" category="list-text">使用 AWS CloudForgation 堆疊、為使用者提供自動化選項、以執行必要的 IAM 原則和角色建立、進而簡化認證登錄程序。</block>
   <block id="4a2be88868f600a45501fde04364bae7" category="list-text">對於強烈偏好將認證儲存在 AWS 雲端生態系統範圍內的 ONTAP 使用者、請在 AWS 型秘密管理後端儲存用於 ONTAP 服務認證的 FSX 、以更符合 FSX 。</block>
   <block id="f9e7dc895484b33db42d9ee0925e28e0" category="section-title">一或多個 AWS 認證</block>
-  <block id="9e4d021b600a18ca2bdc19e316e61a90" category="paragraph">當您使用第一項 Workload Factory 功能（或功能）時、您需要使用這些工作負載功能所需的權限來建立認證。您將會將認證新增至 Workload Factory 、但您必須存取 AWS 管理主控台才能建立 IAM 角色和原則。在 Workload Factory 中使用任何功能時、您的帳戶中都會提供這些認證。</block>
   <block id="2805984a9d1d71e7e662e187f6160808" category="paragraph">您最初的 AWS 認證集可以包含 IAM 原則、用於一項功能或多項功能。這取決於您的業務需求。</block>
-  <block id="b6cd757220290782ab371e620582ddcd" category="paragraph">將一組以上的 AWS 認證新增至工作負載工廠、可提供使用額外功能所需的額外權限、例如 ONTAP 檔案系統的 FSX 、在 ONTAP 的 FSX 上部署資料庫、移轉 VMware 工作負載等。</block>
-  <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link-macro">瞭解如何將 AWS 認證新增至工作負載工廠</block>
-  <block id="1350027224712371708c0a642ae2b919" category="paragraph"><block ref="bc58254869896d67e8e31b026259707a" category="inline-link-macro-rx"></block>。</block>
-  <block id="e322079c316096bc16e777a93da0a332" category="summary">從 Workload Factory 主控台準備網路、註冊及建立帳戶、以及新增認證、讓 Workload Factory 能夠直接管理 AWS 資源、開始使用 Workload Factory 。</block>
-  <block id="1441f501677899abf4972d9286b527e5" category="doc">工作負載工廠快速入門</block>
-  <block id="cb88f58f7496fb27698451feb9736c1d" category="paragraph">請先註冊並建立帳戶、新增認證、讓 Workload Factory 能夠直接管理 AWS 資源、然後使用 Amazon FSX for NetApp ONTAP 來最佳化您的工作負載、以開始使用 Workload Factory 。</block>
   <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link-macro">作業模式</block>
-  <block id="4c85eb71378362d162e4b7bd1c50c800" category="paragraph">使用者可從網路型主控台以雲端服務的形式存取 Workload Factory 。開始之前、您應該先瞭解 <block ref="fc500664a3cbaaa3aa46a84367805795" category="inline-link-macro-rx"></block> 和 <block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block>。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="0876e0a47d86eee44886009e6fdae6e5" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 註冊並建立帳戶</block>
-  <block id="58902cbb0adcf45cfe72ced7fa9d043a" category="paragraph">前往<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block>、註冊並建立帳戶。</block>
   <block id="996a84421252d4a7c2db622831369066" category="inline-link-macro">瞭解如何註冊及建立帳戶</block>
   <block id="84be2f973a02d5b8bf1736d6dc104aba" category="paragraph"><block ref="e4d5af2c826e0765566919d017f9cac9" category="inline-link-macro-rx"></block>。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="81fe43671919388bf418561882652f2a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 將 AWS 認證新增至 Workload Factory</block>
-  <block id="a96649d1a3b32786a74fc2de9529a00e" category="paragraph">此步驟為選用步驟。您可以在 _Basic_ 模式中使用 Workload Factory 、而無需新增認證即可存取 AWS 帳戶。在工作負載工廠中以 _read_ 模式或 _ 自動化 _ 模式新增 AWS 認證、可讓您的 Workload Factory 帳戶擁有為 ONTAP 檔案系統建立和管理 FSX 、以及部署和管理特定工作負載（例如資料庫和 GenAI ）所需的權限。</block>
   <block id="485569d333cc1d252d174152a87152ec" category="inline-link-macro">瞭解如何新增認證至您的帳戶</block>
   <block id="26779013e769dc74269c7261b62546d1" category="paragraph"><block ref="91f10e444bfec911e6e2bc237cc7d0c2" category="inline-link-macro-rx"></block>。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="5859940cb26aa023a0c3f7bc2abb0f66" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 使用適用於 ONTAP 的 FSX 最佳化您的工作負載</block>
-  <block id="ecf12e8c9cfc73f5d81a941356b2effd" category="paragraph">現在您已經註冊、建立帳戶、並選擇性新增 AWS 認證、您可以開始使用 Workload Factory 來使用適用於 ONTAP 的 FSX 最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link">Amazon FSX for NetApp ONTAP 產品</block>
   <block id="4d8d6f286ec4089532b442b9e29bdd84" category="list-text"><block ref="4d8d6f286ec4089532b442b9e29bdd84" category="inline-link-rx"></block></block>
   <block id="ad5615f8474eab297b35d0cbf8020dfc" category="paragraph">使用適用於 ONTAP 的 FSX 作為儲存基礎架構、根據最佳實務做法、為 ONTAP 部署配置和範圍化 FSX 、以及存取進階管理功能、以評估並分析目前的資料產業、以節省潛在成本。</block>
@@ -313,16 +257,9 @@
   <block id="a76e64a0fbf98a083080351e4cb67566" category="inline-link">VMware 工作負載</block>
   <block id="e555278247527c688d390729e5f7e123" category="list-text"><block ref="e555278247527c688d390729e5f7e123" category="inline-link-rx"></block></block>
   <block id="bc9eaabfc00230f2aa0ab1f9dfcfb994" category="paragraph">透過智慧建議和自動補救、簡化移轉與作業。部署高效備份與健全的災難恢復。監控及疑難排解 VM 。</block>
-  <block id="023c464fc92ec044e83176c4e57027c4" category="summary">工作負載工廠可從網路型主控台存取。開始使用 Workload Factory 時、您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。</block>
-  <block id="86dd1f2c1da07102d586b3d680ed37a3" category="doc">報名參加 Workload Factory</block>
-  <block id="9e9a0202d2a4a6551faca1e042e523e5" category="paragraph">您可以使用下列其中一個選項來註冊 Workload Factory ：</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">指定您的電子郵件地址和密碼、即可登入NetApp雲端</block>
-  <block id="dd8dfb2c954c59328d486f61112b7dc6" category="list-text">開啟網頁瀏覽器、然後前往<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block></block>
   <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">如果您有 NetApp 支援網站 帳戶、請在 * 登入 * 頁面上直接輸入與您的 NSS 帳戶相關的電子郵件地址。</block>
-  <block id="9afbcf749bbbaca180b483af3042470e" category="paragraph">如果您有 NSS 帳戶、可以跳過註冊頁面。Workload Factory 將會在這次初始登入時註冊。</block>
   <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">如果您沒有 NSS 帳戶、但想要建立 NetApp 雲端登入來註冊、請選取 * 註冊 * 。</block>
-  <block id="d3ec3db6c6205c0b2c9d4904d509b3ca" category="inline-image-macro">登錄頁面的螢幕快照、您可以在其中新增使用者名稱和密碼、以存取 Workload Factory 。</block>
-  <block id="f469d8f6e1958f36faad490b72b0ed6c" category="paragraph"><block ref="f469d8f6e1958f36faad490b72b0ed6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="871e895e179ae68a9381988dd33c133b" category="list-text">在 * 註冊 * 頁面上、輸入建立 NetApp 雲端登入所需的資訊、然後選取 * 下一步 * 。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">請注意、註冊表單中只允許英文字元。</block>
   <block id="ec0e398abc2c6f6a9f2afe38708291da" category="list-text">輸入貴公司的詳細資訊、然後選取 * 註冊 * 。</block>
@@ -333,8 +270,6 @@
   <block id="f54bc40f2305bb493aa6597d8c67d892" category="paragraph">帳戶是 NetApp 身分識別平台的頂層元素、可讓您新增及管理權限與認證。</block>
   <block id="2b7293baeca5711138792716543c991a" category="inline-image-macro">使用新帳戶登入時出現的「帳戶」頁面的螢幕擷取畫面。</block>
   <block id="28fc544db57c6f54a41eaa5c6ebc4a57" category="paragraph"><block ref="28fc544db57c6f54a41eaa5c6ebc4a57" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3ca580d5cb98bdcfa7834616d19d2eda" category="list-text">選取 * 建立 * 、隨即顯示 Workload Factory 首頁。</block>
-  <block id="0fa2d9e93d2ebe5dc084c22e852d5e0e" category="paragraph">您現在可以登入 Workload Factory 、並擁有帳戶。您被視為帳戶管理員、可存取所有 Workload Factory 功能。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在您透過NetApp技術支援開啟支援案例之前、您必須先在NetApp 支援網站 BlueXP中新增一個支援帳戶、然後註冊以取得支援。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">需要註冊支援、才能獲得工作負載工廠及其儲存解決方案與服務專屬的技術支援。您必須從 BlueXP 主控台註冊以取得支援、該主控台是與 Workload Factory 分開的網路型主控台。</block>
@@ -377,48 +312,30 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">擁有 NetApp 支援網站帳戶後、請完成下的步驟、將帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="5db41fd4421f19d93e5dd91c17ef6114" category="summary">您可以使用 Codebox 來產生執行 Workload Factory 支援的任何作業所需的程式碼。您可以使用 Workload Factory REST API 、 AWS CLI 和 AWS CloudForgation 來產生可以使用和執行的程式碼。</block>
   <block id="74e50aedf700596c6a3592a6d25fec74" category="doc">使用 Codebox 進行自動化</block>
-  <block id="04408b634d2d9206d79119d448664c52" category="paragraph">您可以使用 Codebox 來產生執行 Workload Factory 支援的任何作業所需的程式碼。您可以使用 Workload Factory REST API 、 AWS CLI 和 AWS CloudForgation 來產生可以使用和執行的程式碼。</block>
-  <block id="9e96cce41b7a764dc14629fa750c2747" category="paragraph">Codebox 會根據每位使用者在 Workload Factory 帳戶中所提供的 AWS 權限、在程式碼中填入適當的資料、以符合工作負載工廠作業模式（基本、讀取和自動化）。此程式碼可以像範本一樣使用、您可以在其中填入遺失的資訊（例如認證）、或在執行程式碼之前自訂特定資料。</block>
   <block id="3d60b94b36b55e7dd31bca9ed2ce46f8" category="section-title">如何使用 CodeBox</block>
   <block id="a064715cfe4e3e4a214bc84cf0551160" category="inline-image-macro">複製按鈕</block>
-  <block id="62835b251ca7e00f685a007f7c8b4941" category="paragraph">當您在 Workload Factory UI 精靈中輸入值時、您可以在完成每個欄位時、在 Codebox 中看到資料更新。完成精靈後、但在您選取頁面底部的 * 建立 * 按鈕之前、請在代碼方塊中選取 <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> 複製、以擷取建置組態所需的程式碼。例如、從建立新的 Microsoft SQL Server 所產生的這個螢幕擷取畫面、會顯示 VPC 和可用性區域的精靈項目、以及在 Codebox 中用於 REST API 實作的等效項目。</block>
   <block id="502f1d03f24f8a0cfa430dc69e3b0a81" category="inline-image-macro">顯示如何在 UI 中建立 Microsoft SQL Server 的螢幕擷取畫面、以及 Codebox 中 VPC 和可用性區域的對應項目。</block>
   <block id="5f52d0f5bc329ec0f8b2cfd9d5a45307" category="paragraph"><block ref="5f52d0f5bc329ec0f8b2cfd9d5a45307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e1e4d5313e88ce840e8cca3e7f84f01c" category="paragraph">有些程式碼格式也可以選取「下載」按鈕、將程式碼儲存在可帶到其他系統的檔案中。如有需要、您可以在下載程式碼之後編輯程式碼、以便將其調整為適合其他 AWS 帳戶。</block>
   <block id="309209712bce6112df6ef830b062c685" category="section-title">使用 Codebox 的 CloudForgation 程式碼</block>
-  <block id="ea91e366c1caa6817dd5fd6381bdcf91" category="paragraph">您可以複製從 Codebox 產生的 CloudForgation 程式碼、然後在 AWS 帳戶中啟動 Amazon Web Services CloudForgation 堆疊。CloudForgation 將執行您在 Workload Factory UI 中定義的動作。</block>
-  <block id="6b2932e540d5f7ea082e1ac798f02299" category="paragraph">使用 CLoudForation 程式碼的步驟可能會有所不同、視您是部署適用於 ONTAP 檔案系統的 FSX 、建立帳戶認證、還是執行其他工作負載工廠動作而定。</block>
   <block id="db45cb70284a7cbad935a33a0ef0b6dc" category="paragraph">請注意、 CloudForge-generated YAML 檔案中的程式碼會因安全理由在 7 天後過期。</block>
   <block id="f4beed69f4c72e3f9969d0e2daa8cc67" category="list-text">您必須擁有下列使用者權限、才能使用 CloudForgation 堆疊：</block>
   <block id="99ca7c9c85fef7c6ab0e44eb58675162" category="list-text">選取 * 重新導向至 CloudForgied* 、隨即顯示重新導向至 CloudForgation 頁面。</block>
   <block id="7463b18d69a514063d0f320bc1d16b0d" category="list-text">開啟另一個瀏覽器視窗、然後登入 AWS 管理主控台。</block>
   <block id="3bc22cebdcd7af89d94afadce527cc1d" category="list-text">登入執行程式碼的 AWS 帳戶。</block>
   <block id="594a7e880447342dea72f44c4dc53943" category="list-text">在「快速建立堆疊」頁面的「功能」下、選取 * 我瞭解 AWS CloudForemation 可能 ... * 。</block>
-  <block id="d097667109af7665e3dae788e8f5d9c6" category="list-text">監控 AWS 或 Workload Factory 的進度。</block>
   <block id="5f75111d3408d87431450df4c0043a74" category="section-title">使用 CodeBox 的 REST API 程式碼</block>
-  <block id="05c017ebdfb63b85bc91ed2748f0a19f" category="paragraph">您可以使用從 Codebox 產生的 Workload Factory REST API 來部署和管理 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="3c3f00270f1d36904ead2ac33f53a58f" category="paragraph">您可以從任何支援 Curl 且具備網際網路連線能力的主機執行 API 。</block>
   <block id="ed172ca8e9fe57859bcb8978982d2e0d" category="paragraph">請注意、驗證權杖會隱藏在 Codebox 中、但會在您複製和貼上 API 呼叫時填入這些權杖。</block>
   <block id="b68f0143fe964c9ac34ce1d33e961f82" category="list-text">貼上程式碼、然後在主機系統上執行。</block>
   <block id="b4c82b8569210de2a2777b454448b42e" category="section-title">使用 CodeBox 的 AWS CLI 代碼</block>
   <block id="8d03c4936e76f2455607364517b82e3e" category="paragraph">您可以使用從 Codebox 產生的 Amazon Web Services CLI 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="b28a0d67dfa6e54814b9650389eea71b" category="list-text">貼上程式碼並執行。</block>
-  <block id="3c9ee3abb878e5099cd76beeedcb2d04" category="summary">瞭解 Workload Factory 管理功能的新功能：雲端供應商認證、 Codebox 增強功能等。</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新功能</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024 年 7 月 7 日</block>
-  <block id="0cd06f0acd63988f29fda6d11297591b" category="section-title">Workload Factory 的初始版本</block>
-  <block id="40e01e3ae3c6f388cb88b96223a5b962" category="paragraph">BlueXP Workload Factory for AWS 是功能強大的生命週期管理平台、可協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載。使用 Workload Factory 和適用於 ONTAP 的 FSX 可簡化的工作負載包括資料庫、 VMware 在 AWS 上移轉至 VMware Cloud 、 AI 聊天機器人程式等。</block>
-  <block id="46e9fd42b97085e4579c13a072543d69" category="summary">現在您已經登入並設定工作負載工廠、您可以建立和管理 ONTAP 檔案系統的 FSX 、並使用其他工作負載工廠功能。</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="doc">接下來您可以做什麼</block>
-  <block id="fa9fb0312fb3b93323ee60f1cf0258b7" category="paragraph">現在您已經登入並設定工作負載工廠、您可以開始使用數項工作負載工廠功能、例如為 ONTAP 檔案系統建立 Amazon FSX 、在適用於 ONTAP 檔案系統的 FSX 上部署資料庫、 並將虛擬機器組態移轉至 AWS 上的 VMware Cloud 、使用適用於 ONTAP 檔案系統的 FSX 做為外部資料存放區。</block>
   <block id="452c8a300642b831148cf770baf1cd2f" category="paragraph">偵測 AWS 上現有的資料庫資產、移轉至 ONTAP 的 FSX 以評估潛在的成本節約效益、使用內建最佳化實務來部署端對端資料庫、以及自動化 CI/CD 管線的精簡複製。</block>
-  <block id="71c665ac24c583a0a9ad96a67210bac2" category="summary">NetApp 工作負載工廠是功能強大的生命週期管理平台、可協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載。使用 Workload Factory 和適用於 ONTAP 的 FSX 可簡化的工作負載包括資料庫、 VMware 在 AWS 上移轉至 VMware Cloud 、 AI 聊天機器人程式等。</block>
-  <block id="19954ae9949550c5366a9fb2b48def27" category="doc">瞭解 Workload Factory</block>
-  <block id="96298fa6d94ac6f49aa36e586e268f0f" category="paragraph">Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 VMware Cloud 資料存放區和使用者檔案提供完全託管的 AWS 原生 NFS 、 SMB/CIFS 和 iSCSI 儲存磁碟區。您可以透過工作負載工廠及使用原生 AWS 管理工具來管理適用於 ONTAP 的 FSX 。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
-  <block id="a0f53b5544ae2841af96b6a2c93a0849" category="paragraph">Workload Factory 平台提供下列主要功能。</block>
   <block id="6cfad4df5416db8db29bda4f011d3211" category="list-text">靈活且低成本的儲存設備</block>
   <block id="922bba58b532e71878d3d5858f7e8194" category="list-text">探索、部署及管理適用於雲端 NetApp ONTAP 檔案系統的 Amazon FSX 。適用於 ONTAP 的 FSX 將 ONTAP 的完整功能帶給原生 AWS 託管服務、提供一致的混合雲體驗。</block>
   <block id="6d46b033eabdea8f60b174a46dfcfb14" category="list-text">將內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud</block>
@@ -427,39 +344,21 @@
   <block id="65ebf27c56e124c006284c1cd9f06d3d" category="list-text">部署 Microsoft SQL Server 、資料庫和資料庫複本、包括 AWS 資源配置、儲存資源配置、網路和作業系統組態、運用最佳化的部署組態、確保設定程序一致且無錯誤。</block>
   <block id="c8556381857e2b130302cd1951b0b62c" category="list-text">AI chatbot 開發</block>
   <block id="b74c52466a8f67e18b547bf25d14844f" category="list-text">利用您的 FSX for ONTAP 檔案系統來儲存組織的 chatbot 來源和 AI Engine 資料庫。這可讓您將組織的非結構化資料內嵌到企業級聊天機器人應用程式中。</block>
-  <block id="d4dc097b509662a241b4f1d85924fdb4" category="list-text">儲存計算機可節省成本</block>
   <block id="1a78f887c27cbb9e00745a4c2bb056a1" category="list-text">分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。</block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">支援的雲端供應商</block>
-  <block id="f23d73684a524dc65f1c2ab55054ed6c" category="paragraph">Workload Factory 可讓您管理雲端儲存設備、並在 Amazon Web Services 中使用工作負載功能。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
-  <block id="6396fbe69c05e9a323cf53a0fbf0983d" category="paragraph">工作負載工廠免費使用。您支付給 Amazon Web Services （ AWS ）的成本取決於您計畫部署的儲存設備和工作負載服務。這包括 Amazon FSX 在 NetApp ONTAP 檔案系統、 VMware Cloud on AWS 基礎架構、 AWS 服務等方面的成本。</block>
-  <block id="d866a7eda949420ef136789c93a23ee9" category="section-title">工作負載工廠的運作方式</block>
-  <block id="20977d337d4e7d1aa80c7ebdb962f859" category="paragraph">Workload Factory 包含透過 SaaS 層提供的網路型主控台、帳戶、可控制雲端資產存取的作業模式、可在 Workload Factory 和 AWS 帳戶之間提供隔離連線的連結等。</block>
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">軟體即服務</block>
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">網路型主控台</block>
-  <block id="da89a2a4a0fe528ec46275a6250f3705" category="paragraph">工作負載工廠可透過存取<block ref="7c75ef957f9c2706e82e5fc687e49689" category="inline-link-rx"></block>。 這項 SaaS 體驗可讓您在發佈時自動存取最新功能、並在 Workload Factory 帳戶和連結之間輕鬆切換。</block>
   <block id="9b945efebb006547a94415eadaa12921" category="section-title">帳戶</block>
-  <block id="0c600280e89b5a618e533108344236d5" category="paragraph">第一次登入 Workload Factory 時、系統會提示您建立帳戶。此帳戶可讓您使用認證來組織組織資源、工作負載和工作負載存取。</block>
-  <block id="2edc1f0f1478d883c0d423d0d8ce8ba6" category="inline-image-macro">Workload Factory 設定精靈的螢幕擷取畫面、會提示您輸入 Workload Factory 帳戶。</block>
-  <block id="912befb3eaba2908b9f951f6483b77fd" category="paragraph"><block ref="912befb3eaba2908b9f951f6483b77fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6e1351546ad06187ed26aac56cc1d573" category="paragraph">建立帳戶時、您是該帳戶的單一帳戶管理員使用者。</block>
   <block id="41d28e7b29f45d4f63653993af041bc7" category="paragraph">如果您的組織需要額外的帳戶或使用者管理、請使用產品內的聊天室與我們聯絡。</block>
-  <block id="c8046b7d36a4a9672ff01fb0fdfd88bf" category="admonition">如果您使用 NetApp BlueXP 、則因為 Workload Factory 採用 BlueXP 帳戶、所以您已經屬於帳戶。</block>
-  <block id="aa9b9cc18c16d4ea10f38b25b835c5aa" category="paragraph">Workload Factory 提供三種作業模式、可讓您根據 IT 原則、仔細控制對雲端環境的存取、並將遞增信任指派給 Workload Factory 。</block>
-  <block id="d41adf884cb045d0ebe1b066d2b95a2b" category="list-text">* 基本模式 * 代表零信任關係、旨在早期探索工作負載工廠、並使用各種精靈來建立所需的基礎架構即程式碼。使用者可以手動複製及使用此程式碼、以及相關的 AWS 認證資料。</block>
   <block id="d81fee99e7fd276bb44ecddacfeba318" category="list-text">* 讀取模式 * 可協助使用者偵測各種資源和工具、進而協助完成相關精靈、進而提升基本模式的使用體驗。</block>
   <block id="e2cde95c1c68867f8b74113e5266c7e4" category="list-text">* 自動執行模式 * 代表完全信任關係、其設計旨在代表使用者執行及自動化、以及指派的認證、這些認證具有執行所需且經過驗證的權限。</block>
-  <block id="cc85ceb9ec5c575a9f6e41669887b58d" category="inline-link-macro">深入瞭解 Workload Factory 作業模式</block>
-  <block id="bc8c94f9b7d24148c98db964dcfdf4f4" category="paragraph"><block ref="122264b4ce030632c8f10e1e484f4776" category="inline-link-macro-rx"></block>。</block>
   <block id="e73298b79ea9408111cb3612bf336a0e" category="section-title">連線連結</block>
-  <block id="a74fb96e1eef90ea865f1878f02b4e15" category="paragraph">Workload Factory 連結可在 Workload Factory 與 ONTAP 檔案系統的一或多個 FSX 之間建立信任關係和連線。這可讓您直接從 Amazon FSX for ONTAP API 無法使用的 ONTAP REST API 呼叫監控及管理特定檔案系統功能。</block>
-  <block id="1e2cf39904eebcbddae0fe72e0186b8b" category="paragraph">您不需要連結即可開始使用 Workload Factory 、但在某些情況下、您需要建立連結來解除鎖定所有 Workload Factory 功能和工作負載功能。</block>
   <block id="e20e09752eeb59f7fee2ca964db1c848" category="paragraph">連結目前使用 AWS Lambda 。</block>
   <block id="e3bdd5798efebca8061760f610d98bcc" category="inline-link">深入瞭解連結</block>
   <block id="cee76762b1db025f50dc7b50c80548de" category="paragraph"><block ref="cee76762b1db025f50dc7b50c80548de" category="inline-link-rx"></block></block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="section-title">CodeBox 自動化</block>
-  <block id="528a4ef2f9c8bc3b67d3efa2374a45d4" category="paragraph">Codebox 是基礎架構即程式碼（ IAC ）聯合試驗、可協助開發人員和 DevOps 工程師產生執行任何由 Workload Factory 支援的作業所需的程式碼。程式碼格式包括 Workload Factory REST API 、 AWS CLI 和 AWS CloudForgation 。</block>
-  <block id="8a01a94fb083632bcf067deb51f9299b" category="paragraph">Codebox 與工作負載工廠作業模式（基本、讀取和自動化）一致、為執行準備工作設定明確的路徑、並設定自動化目錄、以供日後快速重複使用。</block>
   <block id="7c408fda146892c9e1c039f91fee3cd3" category="paragraph">Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。</block>
   <block id="ec6b8f7cd0c5cd9853d947bc13f72f4b" category="inline-link-macro">深入瞭解 CodeBox</block>
   <block id="7221d615997ca03d4480df5a43dae047" category="paragraph"><block ref="491e45ff3f847be901c7d8962829a3f8" category="inline-link-macro-rx"></block>。</block>
@@ -467,15 +366,7 @@
   <block id="c8d9b9f1a68d559ab984d4aa5efa4076" category="inline-link">瞭解如何使用儲存計算機來探索節約效益</block>
   <block id="62ee06e3888f5791ca82b765e4aa3773" category="paragraph"><block ref="62ee06e3888f5791ca82b765e4aa3773" category="inline-link-rx"></block></block>
   <block id="c257f5c852c12409e63afb17104f69c5" category="section-title">REST API</block>
-  <block id="cfcd02bc3ad349605f667b1db0164fe0" category="paragraph">Workload Factory 可讓您針對特定工作負載、最佳化、自動化及操作適用於 ONTAP 檔案系統的 FSX 。每個工作負載都會公開相關的 REST API 。這些工作負載和 API 共同形成一個靈活且可擴充的開發平台、可用來管理 ONTAP 檔案系統的 FSX 。</block>
-  <block id="49dac47ef61c863ab22404394b6c84e7" category="paragraph">使用 Workload Factory REST API 有幾項優點：</block>
   <block id="0fe398a436a33849be29455ed17d4185" category="list-text">API 的設計是以 REST 技術和目前最佳實務為基礎。核心技術包括 HTTP 和 JSON 。</block>
-  <block id="b5b61948785c8f81b44871382cf798d9" category="list-text">工作負載工廠驗證是以 OAuth2 標準為基礎。NetApp 仰賴驗證 0 服務實作。</block>
-  <block id="cbc4c63269886120ca8da87d6017c0ca" category="list-text">Workload Factory 網路型主控台使用相同的核心 REST API 、因此兩個存取路徑之間的一致性。</block>
-  <block id="7d4c208fb5531fb6f56eb2444364de9a" category="inline-link">檢視 Workload Factory REST API 文件</block>
-  <block id="855730139927264118c576e496933287" category="paragraph"><block ref="855730139927264118c576e496933287" category="inline-link-rx"></block></block>
-  <block id="cf95d3228718365c810531ae8c95e31a" category="sidebar">開始使用 Workload Factory 、讓您在使用 Amazon FSX for NetApp ONTAP 時、能充分發揮工作負載的效益。完成設定後、您可以針對工作負載建立、最佳化及管理適用於 ONTAP 檔案系統的 FSX 、探索適用於 ONTAP 的 FSX 成本節約效益、使用內建的基礎架構即程式碼聯合試驗、在跨平台進行自動化、以及在工作負載工廠中管理工作負載。</block>
-  <block id="88978255b949b7e0bfa9219676906cec" category="sidebar">Workload Factory 設定與管理文件</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="d9776f0775997b2e698c6975420b5c5d" category="sidebar">註冊</block>
   <block id="1c71023bf289bc297d09be71221ff819" category="sidebar">作業模式和認證</block>
@@ -487,9 +378,7 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">瞭解基礎知識</block>
-  <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="sidebar">工作負載工廠概覽</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入門</block>
-  <block id="bec1e3daee54f5a9410751eb03bd867e" category="sidebar">管理 Workload Factory</block>
   <block id="3700c3dfbf95d68b06191b4a4cbb7592" category="sidebar">使用 Codebox 自動化工作</block>
   <block id="733ae60890dc5503303e1f5780ac5c9b" category="sidebar">使用 Codebox 產生程式碼</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
@@ -503,20 +392,176 @@
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。</block>
   <block id="462c14d3e045d4b0b69cee0781df3207" category="paragraph">工作負載包含資源、程式碼和服務或應用程式的組合、專為達成業務目標而設計。這可能是從面對客戶的應用程式到後端程序。工作負載可能涉及單一 AWS 帳戶內的資源子集、或跨越多個帳戶。</block>
   <block id="fb44c12e7a424c0619764b1060434a74" category="section-title">節省計算機</block>
-  <block id="6904c85b1af908213d1642916b521739" category="paragraph">Workload Factory 提供節省計算機、可讓您將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ）、彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="paragraph"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="2fd1745cefcdce50d6467d96e693f6b7" category="doc">RSS 訂閱</block>
-  <block id="0fa776fabe30e41d70bd8d9c9e64c974" category="paragraph">您可以從<block ref="372504cb6bb48559009ff8f8cdb9a245" category="inline-link-macro-rx"></block>取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方法、可以輕鬆使用 BlueXP  工作負載工廠、並瞭解其變更。</block>
-  <block id="447fb3de7bec10468f55367375163603" category="inline-image-macro">Workload Factory 主控台說明下拉式功能表的螢幕擷取畫面。訂閱 RSS 的新按鈕會在下拉式功能表中顯示為選項。</block>
-  <block id="c508966f04ada556baaaa0b94e781209" category="paragraph"><block ref="c508966f04ada556baaaa0b94e781209" category="inline-image-macro-rx" type="image"></block></block>
   <block id="80f4b5aa553e3a44455088c83954a088" category="section-title">支援每個工作負載的單一權限原則</block>
-  <block id="c876ca70d1ae73b09cdc0004b328448e" category="paragraph">在 Workload Factory 中新增 AWS 認證時、您現在可以針對每個工作負載和儲存管理、選取單一權限原則（讀取或自動化模式）。</block>
   <block id="41b3a089d4fbacfb53e9a5634cfc6647" category="inline-image-macro">「認證」頁面上權限組態區段的螢幕擷取畫面、您可以在其中選取讀取或自動化儲存管理、 AI 工作負載、資料庫工作負載和 VMware 工作負載的權限原則。</block>
   <block id="fa5f572610383fbc01cbba40c0f535e2" category="paragraph"><block ref="fa5f572610383fbc01cbba40c0f535e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1db25aada4bff8233b24c1d7b39230cd" category="paragraph"><block ref="1db25aada4bff8233b24c1d7b39230cd" category="inline-link-macro-rx"></block></block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
   <block id="6e9e8f336be02f99477adc019bfcd183" category="list-text">您需要安裝 Terraform 的系統（ Windows/Mac/Linux ）。</block>
   <block id="613670bc7ca8a45f31728d87474749ac" category="list-text">使用使用者介面定義您要執行的作業之後、請從 Codebox 下載 Terraform 程式碼。</block>
   <block id="53e9887aa73e6bb1fcf6b5b002e7f175" category="list-text">將下載的指令碼歸檔複製到安裝 Terraform 的系統。</block>
   <block id="8db9de1de3844107194be0555d5ceb7c" category="list-text">解壓縮 zip 檔案、然後依照 README.MD 檔案中的步驟進行。</block>
+  <block id="ebcd96574a726227b2c1017e8efe81c1" category="doc">BlueXP  工作負載工廠初始版本</block>
+  <block id="d2587bb8ad424cee3050c3b7958dd388" category="paragraph">BlueXP  工作負載工廠是一款功能強大的生命週期管理平台，專為協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載而設計。使用工作負載工廠和 ONTAP 的 FSX 可簡化的工作負載包括資料庫， VMware 在 AWS 上移轉至 VMware Cloud ， AI 聊天機器人程式等。</block>
+  <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">工作負載原廠主控台</block>
+  <block id="3171014553de64cf509a3b587c8baeb3" category="paragraph">您可以從<block ref="9d5ad87a67c1830e37fdd19a7a179db6" category="inline-link-macro-rx"></block>取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。</block>
+  <block id="0796995437665af1d920169e03b4542b" category="inline-image-macro">工作負載原廠主控台說明下拉式功能表的快照。訂閱 RSS 的新按鈕會在下拉式功能表中顯示為選項。</block>
+  <block id="482a329f24c123c31a109c24729cb2cd" category="paragraph"><block ref="482a329f24c123c31a109c24729cb2cd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e47b743d0cc8e0b8906e37286d9b43b" category="paragraph">在工作負載工廠新增 AWS 認證時，您現在可以針對每個工作負載和儲存管理，選取單一權限原則，無論是讀取或自動化模式。</block>
+  <block id="9f46892803d8b6c63d3b7f51fd44a421" category="inline-link-macro">將 AWS 認證新增至工作負載工廠</block>
+  <block id="d9dd14fb1d1e7ca9c6da6770d9176783" category="paragraph"><block ref="d9dd14fb1d1e7ca9c6da6770d9176783" category="inline-link-macro-rx"></block></block>
+  <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="doc">BlueXP  主控台中的工作負載原廠整合</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
+  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">您現在可以從使用工作負載工廠<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
+  <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">瞭解如何從 BlueXP  主控台存取工作負載工廠</block>
+  <block id="df2137c00b08ad833b0954cdd4247de3" category="paragraph"><block ref="df2137c00b08ad833b0954cdd4247de3" category="inline-link-macro-rx"></block></block>
+  <block id="4fa2f246a664251a157926c2e11e1eb3" category="summary">新增 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
+  <block id="188c7f44ffe17186c8dcbc38640d54e1" category="paragraph">新增及管理 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署及管理雲端資源所需的權限。</block>
+  <block id="ef76867d2d387a61f890c38a33b72db2" category="paragraph">除非您新增 AWS 帳戶認證，否則工作負載工廠將以 _basive_ 模式運作。您可以新增認證以啟用其他操作模式、例如讀取模式和自動模式。<block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block>。</block>
+  <block id="46d8bcaa7ad323ed43d1470da9f4d8d4" category="paragraph">您可以從「認證」頁面，將 AWS 認證新增至現有的工作負載原廠帳戶。這可為工作負載工廠提供管理 AWS 雲端環境中資源和程序所需的權限。</block>
+  <block id="a8d22daacb593b2058549a21847e76f3" category="list-text">* 手動 * ：在工作負載工廠中新增認證時，您可以在 AWS 帳戶中建立 IAM 原則和 IAM 角色。</block>
+  <block id="d57580b6e425a294d78d2a742a402af8" category="paragraph">您可以手動將 AWS 認證新增至工作負載原廠，讓您的工作負載原廠帳戶擁有管理 AWS 資源所需的權限，以便執行您獨特的工作負載。您新增的每組認證都會根據您要使用的工作負載功能、包括一或多個 IAM 原則、以及指派給您帳戶的 IAM 角色。</block>
+  <block id="625ec9c719b27728c84599153e887088" category="list-text">從工作負載工廠輸入名稱並新增認證。</block>
+  <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">主控台體驗</block>
+  <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用其中一項登<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>入。</block>
+  <block id="8a0db8d4581d73dd589a7214626fbc3c" category="list-text">瀏覽至 * 認證 * 頁面。</block>
+  <block id="a86b019ae57f55a24eebb5f7f3df128e" category="list-text">在工作負載原廠主控台中，選取 * 帳戶 * 圖示，然後選取 * 認證 * 。</block>
+  <block id="76fef5e5c15c0ed8d42e23d725c9d527" category="inline-image-macro">顯示工作負載原廠主控台中「帳戶設定」圖示的螢幕擷取畫面。</block>
+  <block id="37df5d7e77818c56eadc8cbec8d0d401" category="paragraph"><block ref="37df5d7e77818c56eadc8cbec8d0d401" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a652e7f4d6556652c66fcd6fb384a25f" category="list-text">在 BlueXP  主控台中，選取 * 設定 * 圖示，然後選取 * 認證 * 。</block>
+  <block id="ee546f7b67f0aaf7b58aa8e33d340884" category="paragraph">在本節中，您將設定一個 IAM 角色，由工作負載工廠假設其中包含您剛建立的權限和原則。</block>
+  <block id="e800fe1fd4497defb18a46cf4f4adc41" category="list-text">選取 * 另一個 AWS 帳戶 * ，然後從工作負載原廠 UI 複製並貼上用於 ONTAP 工作負載管理的 FSX 帳戶 ID 。</block>
+  <block id="8cbe2466650b45ed0a6d3de87fc44528" category="list-text">選取 * 必要的外部 ID* ，然後從工作負載原廠 UI 複製並貼上外部 ID 。</block>
+  <block id="f81801c8f6fb0e4ef7e5de57374b3f51" category="list-text">返回工作負載工廠的 * 認證 * 頁面，展開 * 建立角色 * 區段，然後將 ARN 貼到 _ 角色 ARN_ 欄位。</block>
+  <block id="29e269691f5691e61e5293add93c09af" category="paragraph">最後一步是在工作負載工廠中輸入認證名稱。</block>
+  <block id="0107111c1a465e38cc0e3d2185b0968f" category="list-text">從工作負載工廠的 * 認證頁面 * ，展開 * 認證名稱 * 。</block>
+  <block id="a052e771d91628ded48f631957c81288" category="paragraph">您可以使用 AWS CloudForgation 堆疊將 AWS 認證新增至工作負載工廠，方法是選取您要使用的工作負載工廠功能，然後在 AWS 帳戶中啟動 AWS CloudForgation 堆疊。CloudForgation 將根據您所選的工作負載功能、建立 IAM 原則和 IAM 角色。</block>
+  <block id="766ad2b42f55a1ab17ded3bfa19c1b1c" category="inline-image-macro">螢幕快照顯示如何建立 CloudForgation 堆疊以新增原則，以及工作負載工廠認證的角色。</block>
+  <block id="bd8d6e5dfffb67199ddeb1c155bc6e48" category="paragraph"><block ref="bd8d6e5dfffb67199ddeb1c155bc6e48" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3aa9d8c5e3261007f739ce4fad58363e" category="list-text">返回工作負載工廠並監控「認證」頁面，以確認新認證正在進行中，或已新增認證。</block>
+  <block id="9e45a841cd3d04ddc3431cb5c2faefdc" category="summary">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生執行工作負載工廠所支援之任何作業所需的程式碼。Codebox 與工作負載原廠作業模式（基本，讀取，自動化）一致，為執行準備工作設定明確的路徑，並提供自動化目錄，供日後快速重複使用。</block>
+  <block id="1fa615fd351b087a76b1e2c3e58b88aa" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生執行工作負載工廠所支援之任何作業所需的程式碼。Codebox 與工作負載原廠作業模式（基本，讀取和自動化）一致，為執行準備工作設定了明確的路徑，並提供自動化目錄以供日後快速重複使用。</block>
+  <block id="43121d36d9075d72f302f224d3e42ae1" category="paragraph">此外，在設定工作負載原廠認證時， Codebox 會動態顯示建立 IAM 原則所需的 AWS 權限。系統會針對您計畫使用的每個工作負載原廠功能（資料庫， AI ， ONTAP 適用的 FSX 等）提供權限，並根據原則使用者是否取得唯讀權限或完整操作權限而自訂這些權限。您只要從 Codebox 複製權限，然後將其貼到 AWS 管理主控台，工作負載工廠就能擁有正確的權限來管理您的工作負載。</block>
+  <block id="4dbdfdd6a8563d138a057f5cd3bb0f0b" category="list-text">工作負載原廠 REST API</block>
+  <block id="7f13adabeed591303c3a10ee4980d5a1" category="summary">BlueXP  工作負載工廠可透過兩個網路型主控台存取。</block>
+  <block id="c938676b28ab6dd4d5cc28ebdf8c49b9" category="doc">主控台體驗</block>
+  <block id="d7be74faf3c0cd165206ec127f25dbfc" category="paragraph">BlueXP  工作負載工廠可透過兩個網路型主控台存取。瞭解如何使用 BlueXP  工作負載原廠主控台和 BlueXP  主控台來存取 BlueXP  工作負載工廠。</block>
+  <block id="48d2f36502eda7eb132ad321750c1d49" category="paragraph">您可以使用兩個主控台來存取 BlueXP  工作負載工廠。</block>
+  <block id="7c885f0d7689b3eaa27baf9e745bd117" category="list-text">* BlueXP  console* ：提供混合式體驗，讓您在同一個地方管理工作環境和工作負載。</block>
+  <block id="d6cbd5ec207032cc9ad715f4df3e1ee7" category="list-text">* 工作負載原廠主控台 * ：提供專屬的工作負載原廠體驗，專注於在 Amazon FSX for NetApp ONTAP 上執行的工作負載。</block>
+  <block id="bf8cfad5e1358abe0fd4e5fef21dd9f4" category="section-title">在 BlueXP  主控台中存取工作負載工廠</block>
+  <block id="3157f6c73ade7ecbbcac5d33056a5d8f" category="paragraph">您可以從 BlueXP  存取工作負載工廠。除了使用 BluXP Workload Factory 來提供 AWS 儲存和工作負載功能之外，您也可以存取其他 BlueXP  平台服務，例如複製與同步，數位錢包等。</block>
+  <block id="24ce5e66a7f3b6327369dda310753d6b" category="list-text">登入 <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block></block>
+  <block id="e9b538368b121a44c13005613e75a0bc" category="list-text">瀏覽至您要使用的工作負載，然後選取選項開始使用。</block>
+  <block id="61a543bd3a5368f0882b3ec3b11123da" category="section-title">在 Workload Factory 主控台中存取工作負載工廠</block>
+  <block id="3e17b2b248f83510c2368a4d20dddc41" category="paragraph">您可以從 Workload Factory 主控台存取工作負載工廠。</block>
+  <block id="a5d4e8da7b06fff401452c5df2871465" category="list-text">登入 <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block></block>
+  <block id="8f4910cf6ea086594183ea8e5bb4539b" category="list-text">從左側導覽中選取 * 工作負載 * 。</block>
+  <block id="08b9f59ea9ae19318566e44120b9fb3f" category="list-text">選取 * 首頁 * 以檢視所有工作負載，或選取一個工作負載，例如 * 儲存 * 或 * 資料庫 * 。</block>
+  <block id="cc8da163faea82ccff66b041eb816fa5" category="list-text">選取選項以開始處理工作負載。</block>
+  <block id="894106a56db6962222de989043e29e02" category="summary">NetApp 以多種方式支援工作負載工廠。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
+  <block id="1dde4a08beb94964c3432a2fc7fdc3fc" category="doc">BlueXP  工作負載工廠的法律聲明</block>
+  <block id="4cbbe0271dc27a292b5994c461d21ac9" category="summary">在您註冊工作負載工廠之後，您可以隨時從網路型主控台登入，開始管理工作負載，以及 ONTAP 檔案系統的 FSX 。</block>
+  <block id="86543024cef60b4c1a6134d3ade2b23f" category="doc">登入 BlueXP  工作負載工廠</block>
+  <block id="d3cdbbc7912f47cd795095a81b99d26e" category="paragraph">註冊 BlueXP  工作負載工廠後，您可以隨時從網路型主控台登入，開始管理工作負載，並從 FSX 開始管理 ONTAP 檔案系統。</block>
+  <block id="cbce38c9dbd03b5dbc65d7a7564a78cd" category="paragraph">您可以使用下列其中一個選項，登入工作負載原廠網路型主控台：</block>
+  <block id="b4d6601e48f8fc19ee57934be8644d7f" category="list-text">開啟網頁瀏覽器並前往<block ref="c88df82826d36e57e6bb9062bf07b8b2" category="inline-link-rx"></block>。</block>
+  <block id="5812b8aba14d804b938a8882380a3539" category="paragraph">如果您過去成功登入，您會看到工作負載原廠首頁，並使用預設帳戶。</block>
+  <block id="b0569829e7ad8e56c8ec82077fb2d070" category="paragraph">您現在已登入，可以開始使用工作負載工廠來管理 ONTAP 檔案系統和工作負載的 FSX 。</block>
+  <block id="c10ea4936b78c58d10ad52d651ab1b81" category="summary">如果您不再需要一組認證，您可以從 BlueXP  工作負載工廠刪除這些認證。您只能刪除與 ONTAP 檔案系統的 FSX 無關的認證。</block>
+  <block id="49836a38c5243f5726abfb5a8b95ac7b" category="doc">從 BlueXP  工作負載工廠移除認證</block>
+  <block id="9369e772c26e2cdfaafe3b142d172bbe" category="paragraph">如果您不再需要一組認證，您可以從工作負載工廠刪除這些認證。您只能刪除與 ONTAP 檔案系統的 FSX 無關的認證。</block>
+  <block id="d7d90d1ce8174a99f1ebf77537c7d533" category="summary">工作負載工廠提供三種作業模式，讓您根據 IT 原則，仔細控制工作負載工廠與雲端環境之間的存取。您使用的作業模式取決於您提供給工作負載工廠的 AWS 權限層級。</block>
+  <block id="e02d9a51503bcf62267395364d4b1f92" category="paragraph">工作負載工廠提供三種作業模式，讓您根據 IT 原則，仔細控制工作負載工廠與雲端環境之間的存取。您使用的作業模式取決於您提供給工作負載工廠的 AWS 權限層級。</block>
+  <block id="fb4bff09d4eb62ced2b03ad6ae3d8be4" category="paragraph">營運模式提供工作負載工廠所提供功能與功能的邏輯組織，與您指定的信任層級相關。營運模式的主要目標是清楚傳達工廠可以或無法在 AWS 帳戶內執行的工作負載。</block>
+  <block id="85776f584c3633cbff79b95327a8fd11" category="list-text">代表零信任關係，沒有 AWS 權限指派給工作負載工廠。它旨在早期探索工作負載工廠，並使用各種精靈來建立所需的基礎架構即程式碼（ IAC ）。您可以手動輸入 AWS 認證、複製程式碼並在 AWS 中使用。</block>
+  <block id="e2cef0f4569c69bf6900a6cb6135eb11" category="list-text">新增唯讀權限、讓 IAC 範本填入您的特定變數（例如 VPC 、安全性群組等）、以提升基本模式的使用體驗。這可讓您直接從 AWS 帳戶執行 IAC ，而無需提供任何工作負載工廠的修改權限。</block>
+  <block id="9317db7f25495b088f6318d86dfd14bf" category="list-text">代表完全信任關係，讓工作負載工廠獲得完整權限。這可讓工作負載工廠代表您執行及自動化 AWS 中的作業，以及具有執行所需權限的指派認證。</block>
+  <block id="c733eb78f31844c1e1433a374c901d1e" category="cell">從工作負載工廠自動化</block>
+  <block id="b1ac12ec9d4b511fa08a587be1be8b4d" category="paragraph">您無需在工作負載工廠中設定選取器，即可識別您打算使用的模式。此模式是根據您指派給工作負載原廠帳戶的 AWS 認證和權限來決定。</block>
+  <block id="64c0a6c81b6c3af3765c25256dcbf047" category="paragraph">您可以設定認證、為一個工作負載元件提供一個模式、而為另一個元件提供另一個模式。例如，您可以針對部署和管理 ONTAP 檔案系統之 FSX 的作業，設定自動化模式，但只能設定讀取模式，以便使用工作負載工廠建立和部署資料庫工作負載。</block>
+  <block id="20f75920053dcff627d860520f371b26" category="paragraph">您可以在工作負載原廠帳戶中的單一認證集內提供這些功能，或是在每個認證提供獨特的工作負載部署功能時，建立多組認證。</block>
+  <block id="ccff80abdf432e228d3c0d30a4a114de" category="paragraph">不過，他們將無法透過工作負載工廠的自動化控制功能來建立和部署 VMware 工作負載（基本模式）。如果他們想要建立 VMware 工作負載、就必須從 Codebox 複製程式碼、手動登入 AWS 帳戶、然後手動填入產生的程式碼中遺失的項目、才能使用此功能。</block>
+  <block id="2fb909c54550b56bac338e985277eb1a" category="paragraph">當您使用第一個工作負載原廠功能（或功能）時，您需要使用這些工作負載功能所需的權限來建立認證。您將會將認證新增至工作負載工廠，但您必須存取 AWS 管理主控台，才能建立 IAM 角色和原則。當您在工作負載工廠中使用任何功能時，這些認證將在您的帳戶中提供。</block>
+  <block id="929b839513dbfff16e7804628038a9a8" category="paragraph">將一組以上的 AWS 認證新增至工作負載工廠，可提供使用額外功能所需的額外權限，例如 ONTAP 檔案系統的 FSX ，在 ONTAP 的 FSX 上部署資料庫，移轉 VMware 工作負載等。</block>
+  <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link-macro">瞭解如何將 AWS 認證新增至工作負載工廠</block>
+  <block id="167d2e15f93d569365f0bf0ae85dd1ba" category="paragraph"><block ref="9e6c8cfa4c662b280d116964e6bc555f" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba880f09fd4b768ff6cbb97cba693444" category="summary">為工作負載原廠主控台準備網路，註冊及建立帳戶，以及新增認證，讓工作負載工廠能夠直接管理 AWS 資源，以開始使用工作負載原廠。</block>
+  <block id="5cf175aca70279859c2019fd1da4c1d0" category="doc">BlueXP  工作負載工廠快速入門</block>
+  <block id="042ff6eaa1559f4f4284f9b26edf9094" category="paragraph">註冊並建立帳戶，新增認證，讓工作負載工廠能夠直接管理 AWS 資源，然後使用 Amazon FSX for NetApp ONTAP 來最佳化工作負載，以開始使用工作負載工廠。</block>
+  <block id="4cfef3f1fa65f93ca910bf258e895f08" category="inline-link-macro">工作負載工廠</block>
+  <block id="70d0aaf5f480c6663d11cba807745150" category="paragraph">使用者可從網路型主控台，以雲端服務的形式存取工作負載工廠。開始之前、您應該先瞭解 <block ref="e8fd0c1fcb8ab0b007f06daaaaad1620" category="inline-link-macro-rx"></block> 和 <block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block>。</block>
+  <block id="5aef544885f83ccc840e539c33cb1025" category="paragraph">前往<block ref="c88df82826d36e57e6bb9062bf07b8b2" category="inline-link-rx"></block>、註冊並建立帳戶。</block>
+  <block id="60606490df41979dfeb5466c4c9f1288" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>將 AWS 認證新增至工作負載工廠</block>
+  <block id="8240cb8cdbe0ba3f858b0fda1bb07bfc" category="paragraph">此步驟為選用步驟。您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以 _read_ 或 _active_ 模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及部署和管理特定工作負載（例如資料庫和 GenAI ）所需的權限。</block>
+  <block id="51ff16c71246f19573efec76f8f088e4" category="paragraph">現在您已經註冊，建立帳戶，並選擇性地新增 AWS 認證，您可以開始使用工作負載工廠來使用適用於 ONTAP 的 FSX 來最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。</block>
+  <block id="9ec9485bf8174a52fd8f6a62564d8738" category="summary">工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。</block>
+  <block id="a51339d19908e6fdb3902e2656db64d1" category="doc">註冊 BlueXP  工作負載工廠</block>
+  <block id="b63dadbd087bac2ed3df3e51784c2a44" category="paragraph">BlueXP  工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。</block>
+  <block id="680e6430abd003e8b2da8b7092ae4265" category="paragraph">您可以使用下列其中一個選項，註冊至工作負載工廠：</block>
+  <block id="fd32f1bc8d0d6304d97ecd3dc72ee72d" category="list-text">開啟網頁瀏覽器、然後前往<block ref="c88df82826d36e57e6bb9062bf07b8b2" category="inline-link-rx"></block></block>
+  <block id="55ff5fce32ee35f8ae4ba7e758c5ad99" category="paragraph">如果您有 NSS 帳戶、可以跳過註冊頁面。工作負載工廠會在這次初次登入時註冊您。</block>
+  <block id="00bfab4fdca97d5d5a36bdd219209a74" category="inline-image-macro">「註冊」頁面的螢幕快照，您可以在其中新增使用者名稱和密碼，以存取工作負載工廠。</block>
+  <block id="acdf31ddaab7e18a06f077634f3c4f61" category="paragraph"><block ref="acdf31ddaab7e18a06f077634f3c4f61" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="699238a25cf0a1729ca7351e991db651" category="list-text">選取 * 建立 * ，隨即顯示工作負載原廠首頁。</block>
+  <block id="e0810985364d469baf5bb2ea0561bbeb" category="paragraph">您現在擁有工作負載原廠登入和帳戶。您被視為帳戶管理員，您可以存取所有工作負載工廠功能。</block>
+  <block id="3acdefd13933ae891b18dfca314c3ae8" category="summary">您可以使用 Codebox 產生執行 BlueXP  工作負載工廠所支援任何作業所需的程式碼。</block>
+  <block id="7a722a65def6075db353b70066e35707" category="doc">在 BlueXP  工作負載工廠中使用 Codebox 進行自動化</block>
+  <block id="a874d0883486fcca7aa1243ef9acc01d" category="paragraph">您可以使用 Codebox 產生執行 BlueXP  工作負載工廠所支援任何作業所需的程式碼。您可以使用工作負載原廠 REST API ， AWS CLI 和 AWS CloudForgation 來產生可以使用和執行的程式碼。</block>
+  <block id="3e529d693ad9e838d629617602ce7195" category="paragraph">Codebox 會根據每位使用者工作負載原廠帳戶所提供的 AWS 權限，在程式碼中填入適當的資料，以符合工作負載原廠作業模式（基本，讀取和自動化）。此程式碼可以像範本一樣使用、您可以在其中填入遺失的資訊（例如認證）、或在執行程式碼之前自訂特定資料。</block>
+  <block id="5a43715fb7078b4045756abce9da826e" category="paragraph">當您在工作負載原廠 UI 精靈中輸入值時，您可以在完成每個欄位時，在 Codebox 中看到資料更新。完成精靈後、但在您選取頁面底部的 * 建立 * 按鈕之前、請在代碼方塊中選取 <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> 複製、以擷取建置組態所需的程式碼。例如、從建立新的 Microsoft SQL Server 所產生的這個螢幕擷取畫面、會顯示 VPC 和可用性區域的精靈項目、以及在 Codebox 中用於 REST API 實作的等效項目。</block>
+  <block id="d10cc376cc863f01ec47fab56e956119" category="paragraph">您可以複製從 Codebox 產生的 CloudForgation 程式碼、然後在 AWS 帳戶中啟動 Amazon Web Services CloudForgation 堆疊。CloudForgation 將執行您在工作負載原廠 UI 中定義的動作。</block>
+  <block id="d4483cf5ec74c50b2bf5b0430ea00d3e" category="paragraph">使用 CLoudForation 程式碼的步驟可能會有所不同，視您是部署適用於 ONTAP 檔案系統的 FSX ，建立帳戶認證，還是執行其他工作負載工廠動作而定。</block>
+  <block id="e06383ee7ff4262601146f70998142f1" category="list-text">監控 AWS 或工作負載工廠的進度。</block>
+  <block id="34e5df6ac4c984fcfbc110aa4053257e" category="paragraph">您可以使用從 Codebox 產生的工作負載原廠 REST API 來部署和管理 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
+  <block id="2613fa59d7805a53043306264e81ba1a" category="summary">瞭解工作負載原廠管理功能的新功能：雲端供應商認證， Codebox 增強功能等。</block>
+  <block id="15653101633b93b4e086ba27efda4eae" category="doc">BlueXP  工作負載原廠管理功能的新功能</block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
+  <block id="442602a2c8f7770016d621549f7964c6" category="summary">現在您已經登入並設定工作負載工廠，您可以建立和管理 ONTAP 檔案系統的 FSX ，並使用其他工作負載工廠功能。</block>
+  <block id="a2f53a8457ed9acfd2f72c4ae30c45de" category="doc">BlueXP  工作負載工廠的後續行動</block>
+  <block id="d6753fe2bb46e06b1aa2e353e485eca7" category="paragraph">現在您已登入並設定 BlueXP  工作負載工廠，您可以開始使用數項工作負載工廠功能，例如建立適用於 ONTAP 檔案系統的 Amazon FSX ，在適用於 ONTAP 檔案系統的 FSX 上部署資料庫，以及將虛擬機器組態移轉至使用適用於 ONTAP 檔案系統的 FSX 作為外部資料存放區的 VMware Cloud on AWS 。</block>
+  <block id="008afcec5c1c0f2fb38f3e66b5aa4738" category="summary">BlueXP  工作負載工廠是一款功能強大的生命週期管理平台，專為協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載而設計。</block>
+  <block id="023c9a2badb62edd0fd5c78e596a5be9" category="doc">瞭解 BlueXP  工作負載工廠</block>
+  <block id="81b33a2e792e396aa73e06306a69815c" category="paragraph">Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 VMware Cloud 資料存放區和使用者檔案提供完全託管的 AWS 原生 NFS 、 SMB/CIFS 和 iSCSI 儲存磁碟區。您可以透過工作負載工廠及使用原生 AWS 管理工具來管理適用於 ONTAP 的 FSX 。</block>
+  <block id="d6c922494e4fda342b91bf56c2cb3f4c" category="paragraph">工作負載原廠平台提供下列主要功能。</block>
+  <block id="7b2ab109a7f028a1314cfd59fab7b820" category="list-text">節省計算機以節省成本</block>
+  <block id="85ba2adf75a5f35ad76fc25ad4d5dee4" category="paragraph">工作負載工廠可讓您管理雲端儲存設備，並在 Amazon Web Services 中使用工作負載功能。</block>
+  <block id="b0298cdc4bf45bc83e4aa78b2a7bede9" category="paragraph">工作負載工廠免費使用。您支付給 Amazon Web Services （ AWS ）的成本取決於您計畫部署的儲存設備和工作負載服務。這包括 Amazon FSX 在 NetApp ONTAP 檔案系統、 VMware Cloud on AWS 基礎架構、 AWS 服務等方面的成本。</block>
+  <block id="e28b1e5abaac14c973e4f4c752f93526" category="section-title">工作負載工廠運作方式</block>
+  <block id="e25f70250be12c534210f7c683cfba6a" category="paragraph">工作負載工廠包括透過 SaaS 層提供的網路型主控台，帳戶，控制雲端資產存取的作業模式，在工作負載工廠和 AWS 帳戶之間提供隔離連線的連結等。</block>
+  <block id="65e1ffc3c4a678670f98730a93dfe313" category="paragraph">工作負載工廠可通過 BlueXP  工作負載工廠和 BlueXP  <block ref="bb8e527b785e47b1a58f91dd9248bc28" category="inline-link-macro-rx"></block>進行訪問<block ref="7c75ef957f9c2706e82e5fc687e49689" category="inline-link-rx"></block>。這些 SaaS 體驗可讓您在發佈時自動存取最新功能，並可輕鬆在 Workload Factory 帳戶和連結之間切換。</block>
+  <block id="02161797e05b29a1a7b7b7f28b9e274a" category="paragraph">深入瞭解不同<block ref="307484147c616be6cc5c203f4bb58b5b" category="inline-link-macro-rx"></block>的。</block>
+  <block id="18eab519da5d984a633937e313df3bb6" category="paragraph">第一次登入工作負載工廠時，系統會提示您建立帳戶。此帳戶可讓您使用認證來組織組織資源、工作負載和工作負載存取。</block>
+  <block id="64445bd3e8f4458b8baf885112994e06" category="inline-image-macro">工作負載原廠設定精靈的螢幕擷取畫面，會提示您輸入工作負載原廠帳戶。</block>
+  <block id="bb0668c85c572b015fbc6555a4d780ab" category="paragraph"><block ref="bb0668c85c572b015fbc6555a4d780ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e97a2df025d5cd174e425be3d2371c69" category="admonition">如果您使用 NetApp BlueXP  ，則因為工作負載工廠採用 BlueXP  帳戶，所以您已經屬於帳戶。</block>
+  <block id="46d7bda8cb4dc1914a8a3ef0605ade4d" category="paragraph">工作負載工廠提供三種作業模式，可讓您仔細控制對雲端環境的存取，並根據您的 IT 原則，將遞增信任指派給工作負載工廠。</block>
+  <block id="cbd9eefa0ff8e57033b7a0acb96c4d47" category="list-text">* 基本模式 * 代表零信任關係，旨在早期探索工作負載工廠，並使用各種精靈來建立所需的基礎架構即程式碼。使用者可以手動複製及使用此程式碼、以及相關的 AWS 認證資料。</block>
+  <block id="c29b98058b41ec5ee4cb5ab18b099061" category="inline-link-macro">深入瞭解工作負載原廠作業模式</block>
+  <block id="854b3b91b9c4885598a38b66c543a2f1" category="paragraph"><block ref="f5f0c4b0bca5778af6406dec21dafbb4" category="inline-link-macro-rx"></block>。</block>
+  <block id="911f732fbf8786513e6e1431f0370d61" category="paragraph">工作負載原廠連結可在工作負載原廠與 ONTAP 檔案系統的一或多個 FSX 之間建立信任關係和連線。這可讓您直接從 Amazon FSX for ONTAP API 無法使用的 ONTAP REST API 呼叫監控及管理特定檔案系統功能。</block>
+  <block id="691199ddecf65c4783496c94612dd07f" category="paragraph">您不需要連結即可開始使用工作負載工廠，但在某些情況下，您需要建立連結來解除鎖定所有工作負載原廠功能和工作負載功能。</block>
+  <block id="977c73c0914e897973f4ba0be879711f" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 工程師產生執行工作負載工廠所支援任何作業所需的程式碼。程式碼格式包括工作負載原廠 REST API ， AWS CLI 和 AWS CloudForgation 。</block>
+  <block id="4d062c42aef687546a9198cf40695389" category="paragraph">Codebox 與工作負載原廠作業模式（基本，讀取和自動化）一致，並設定明確的執行準備路徑，以及自動化目錄，以供日後快速重複使用。</block>
+  <block id="4242d4bda912ada98fa8b7882d2419a1" category="paragraph">工作負載工廠提供節省計算機，讓您可以將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ），彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
+  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
+  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
+  <block id="d5688c5bf16d0126d5b27759385bd41e" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案</block>
+  <block id="38f4e563ea70a0c42a140783a152e82f" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用</block>
+  <block id="a3ee2d6d4606b21bc131c4389e63413b" category="list-text">* REST API* ：工作負載原廠 REST API 可讓您部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX</block>
+  <block id="35507c73673fd91f2b540f5ac22435e2" category="list-text">* CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源</block>
+  <block id="2b796a233d6b48fb3e49b8c71a2addb1" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ： Terraform 可讓您建置及管理在工作負載工廠主控台產生的基礎架構工作流程</block>
+  <block id="8ced11608886f669c92a28dad366c83f" category="paragraph">工作負載工廠可讓您針對特定工作負載最佳化，自動化及操作適用於 ONTAP 檔案系統的 FSX 。每個工作負載都會公開相關的 REST API 。這些工作負載和 API 共同形成一個靈活且可擴充的開發平台、可用來管理 ONTAP 檔案系統的 FSX 。</block>
+  <block id="0839f9866a5d09d079388954e0119ee3" category="paragraph">使用工作負載原廠 REST API 有幾項優點：</block>
+  <block id="ee784d1edaf22c0f803f2403be1903b8" category="list-text">工作負載原廠驗證是以 OAuth2 標準為基礎。NetApp 仰賴驗證 0 服務實作。</block>
+  <block id="ef280f644b37c73b7caff67b60044604" category="list-text">工作負載工廠網路型主控台使用相同的核心 REST API ，因此兩個存取路徑之間的一致性。</block>
+  <block id="896ad7a0684caeaae269c9ea1c3430cc" category="inline-link">檢視工作負載原廠 REST API 文件</block>
+  <block id="a6e871d2d7edd183ddc76f5c82f81c51" category="paragraph"><block ref="a6e871d2d7edd183ddc76f5c82f81c51" category="inline-link-rx"></block></block>
+  <block id="ad58fbedc89b687da72b83c65c94187c" category="sidebar">BlueXP  工作負載工廠入門，讓您在使用 Amazon FSX for NetApp ONTAP 時，能充分發揮工作負載的效益。完成設定後，您可以針對工作負載建立，最佳化及管理適用於 ONTAP 檔案系統的 FSX ，探索適用於 ONTAP 的 FSX 成本節約效益，使用內建的基礎架構即程式碼聯合試驗，在平台之間實現自動化，以及在工作負載工廠中管理工作負載。</block>
+  <block id="9d99dd80a147b3b1376d73b8b105b981" category="sidebar">BlueXP  工作負載原廠設定與管理文件</block>
+  <block id="b5be8d4327a5f5a8cb712336382b2c2c" category="sidebar">工作負載原廠總覽</block>
+  <block id="280ab23085110ae96b1c8df197382d0b" category="sidebar">註冊至工作負載工廠</block>
+  <block id="cb1411d161cdf3fea65b5b1351ffa45b" category="sidebar">管理工作負載工廠</block>
+  <block id="2003c10ae1eaa96c8dd0c849f3e0b79e" category="sidebar">登入工作負載工廠</block>
 </blocks>

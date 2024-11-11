@@ -23,21 +23,23 @@ sidebar:
     entries:
     - title: 瞭解基礎知識
       entries:
-      - title: 工作負載工廠概覽
+      - title: 工作負載原廠總覽
         url: "/workload-factory-overview.html"
       - title: 作業模式
         url: "/operational-modes.html"
+      - title: 主控台體驗
+        url: "/console-experiences.html"
     - title: 快速入門
       url: "/quick-start.html"
-    - title: 報名參加 Workload Factory
+    - title: 註冊至工作負載工廠
       url: "/sign-up-saas.html"
     - title: 新增 AWS 認證
       url: "/add-credentials.html"
     - title: 接下來您可以做什麼
       url: "/whats-next.html"
-  - title: 管理 Workload Factory
+  - title: 管理工作負載工廠
     entries:
-    - title: 登入 Workload Factory
+    - title: 登入工作負載工廠
       url: "/log-in.html"
     - title: 使用 Codebox 自動化工作
       entries:
@@ -56,5 +58,5 @@ sidebar:
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory
   repo: workload-family

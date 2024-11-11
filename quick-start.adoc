@@ -2,36 +2,36 @@
 sidebar: sidebar 
 permalink: quick-start.html 
 keywords: quick start 
-summary: 從 Workload Factory 主控台準備網路、註冊及建立帳戶、以及新增認證、讓 Workload Factory 能夠直接管理 AWS 資源、開始使用 Workload Factory 。 
+summary: 為工作負載原廠主控台準備網路，註冊及建立帳戶，以及新增認證，讓工作負載工廠能夠直接管理 AWS 資源，以開始使用工作負載原廠。 
 ---
-= 工作負載工廠快速入門
+= BlueXP  工作負載工廠快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-請先註冊並建立帳戶、新增認證、讓 Workload Factory 能夠直接管理 AWS 資源、然後使用 Amazon FSX for NetApp ONTAP 來最佳化您的工作負載、以開始使用 Workload Factory 。
+註冊並建立帳戶，新增認證，讓工作負載工廠能夠直接管理 AWS 資源，然後使用 Amazon FSX for NetApp ONTAP 來最佳化工作負載，以開始使用工作負載工廠。
 
-使用者可從網路型主控台以雲端服務的形式存取 Workload Factory 。開始之前、您應該先瞭解 link:workload-factory-overview.html["工作負載工廠"] 和 link:operational-modes.html["作業模式"]。
+使用者可從網路型主控台，以雲端服務的形式存取工作負載工廠。開始之前、您應該先瞭解 link:workload-factory-overview.html["工作負載工廠"] 和 link:operational-modes.html["作業模式"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 註冊並建立帳戶
 [role="quick-margin-para"]
-前往 https://console.workloads.netapp.com["Workload Factory 主控台"^]、註冊並建立帳戶。
+前往 https://console.workloads.netapp.com["工作負載原廠主控台"^]、註冊並建立帳戶。
 
 [role="quick-margin-para"]
 link:sign-up-saas.html["瞭解如何註冊及建立帳戶"]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 將 AWS 認證新增至 Workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]將 AWS 認證新增至工作負載工廠
 [role="quick-margin-para"]
-此步驟為選用步驟。您可以在 _Basic_ 模式中使用 Workload Factory 、而無需新增認證即可存取 AWS 帳戶。在工作負載工廠中以 _read_ 模式或 _ 自動化 _ 模式新增 AWS 認證、可讓您的 Workload Factory 帳戶擁有為 ONTAP 檔案系統建立和管理 FSX 、以及部署和管理特定工作負載（例如資料庫和 GenAI ）所需的權限。
+此步驟為選用步驟。您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以 _read_ 或 _active_ 模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及部署和管理特定工作負載（例如資料庫和 GenAI ）所需的權限。
 
 [role="quick-margin-para"]
 link:add-credentials.html["瞭解如何新增認證至您的帳戶"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 使用適用於 ONTAP 的 FSX 最佳化您的工作負載
 [role="quick-margin-para"]
-現在您已經註冊、建立帳戶、並選擇性新增 AWS 認證、您可以開始使用 Workload Factory 來使用適用於 ONTAP 的 FSX 最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。
+現在您已經註冊，建立帳戶，並選擇性地新增 AWS 認證，您可以開始使用工作負載工廠來使用適用於 ONTAP 的 FSX 來最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
