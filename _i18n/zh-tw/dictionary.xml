@@ -69,28 +69,21 @@
   <block id="1767b6ef838f3d4774bc0f274ffd6680" category="inline-link-macro">瞭解如何使用 CodeBox</block>
   <block id="431b5bf36166f939706fd1cd6625e311" category="paragraph"><block ref="58039229c34145102d9497de13b6e7b4" category="inline-link-macro-rx"></block>。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
-  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">如需與適用於 ONTAP 的 FSX 、其基礎架構或使用服務的任何解決方案相關的技術支援、請參閱該產品的工作負載工廠文件中的「取得說明」。</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">若要獲得工作負載工廠及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
-  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">您目前正在檢視的 Workload Factory 文件。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
   <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
-  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">搜尋 Workload Factory 知識庫、尋找有助於疑難排解問題的文章。</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社群</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">加入 Workload Factory 社群、追蹤後續的討論或建立新的討論。</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">利用NetApp支援建立案例</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
-  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">若要使用 * 建立案例 * 功能、您必須先註冊以取得支援。 將您的 NetApp 支援網站認證與工作負載工廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
-  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">在 Workload Factory 主控台的右上角、選取 * 說明 &gt; Support* 。</block>
   <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想與電話上的某人通話、請選取 * 致電 * 。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
@@ -264,8 +257,6 @@
   <block id="28fc544db57c6f54a41eaa5c6ebc4a57" category="paragraph"><block ref="28fc544db57c6f54a41eaa5c6ebc4a57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在您透過NetApp技術支援開啟支援案例之前、您必須先在NetApp 支援網站 BlueXP中新增一個支援帳戶、然後註冊以取得支援。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
-  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">需要註冊支援、才能獲得工作負載工廠及其儲存解決方案與服務專屬的技術支援。您必須從 BlueXP 主控台註冊以取得支援、該主控台是與 Workload Factory 分開的網路型主控台。</block>
-  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需有關雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的技術支援、請參閱該產品的 Workload Factory 文件中的「取得說明」。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">註冊您的帳戶 ID 支援訂閱（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP 的「支援資源」頁面）、即為您的單一支援訂閱 ID 。每個BlueXP帳戶層級的支援訂閱都必須註冊。</block>
   <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">註冊可提供開啟支援服務單和自動產生個案等功能。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
@@ -332,8 +323,6 @@
   <block id="922bba58b532e71878d3d5858f7e8194" category="list-text">探索、部署及管理適用於雲端 NetApp ONTAP 檔案系統的 Amazon FSX 。適用於 ONTAP 的 FSX 將 ONTAP 的完整功能帶給原生 AWS 託管服務、提供一致的混合雲體驗。</block>
   <block id="6d46b033eabdea8f60b174a46dfcfb14" category="list-text">將內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud</block>
   <block id="f760ee48ca0d5104a3c884c851536392" category="list-text">VMware Cloud on AWS 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、產生將建議的 VM 配置部署至 AWS 上的 VMware Cloud 的計畫、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。</block>
-  <block id="9a65d2a72eb8a959d799dda25fa053e1" category="list-text">最佳化的資料庫部署</block>
-  <block id="65ebf27c56e124c006284c1cd9f06d3d" category="list-text">部署 Microsoft SQL Server 、資料庫和資料庫複本、包括 AWS 資源配置、儲存資源配置、網路和作業系統組態、運用最佳化的部署組態、確保設定程序一致且無錯誤。</block>
   <block id="c8556381857e2b130302cd1951b0b62c" category="list-text">AI chatbot 開發</block>
   <block id="b74c52466a8f67e18b547bf25d14844f" category="list-text">利用您的 FSX for ONTAP 檔案系統來儲存組織的 chatbot 來源和 AI Engine 資料庫。這可讓您將組織的非結構化資料內嵌到企業級聊天機器人應用程式中。</block>
   <block id="1a78f887c27cbb9e00745a4c2bb056a1" category="list-text">分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。</block>
@@ -354,9 +343,6 @@
   <block id="7c408fda146892c9e1c039f91fee3cd3" category="paragraph">Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。</block>
   <block id="ec6b8f7cd0c5cd9853d947bc13f72f4b" category="inline-link-macro">深入瞭解 CodeBox</block>
   <block id="7221d615997ca03d4480df5a43dae047" category="paragraph"><block ref="491e45ff3f847be901c7d8962829a3f8" category="inline-link-macro-rx"></block>。</block>
-  <block id="3d40a6fbdf1b779c8b032be37bcf95a4" category="paragraph">不同類型儲存系統之間的比較標準包括所需的總容量和總效能、包括所需的 IOPS 和所需的處理量。</block>
-  <block id="c8d9b9f1a68d559ab984d4aa5efa4076" category="inline-link">瞭解如何使用儲存計算機來探索節約效益</block>
-  <block id="62ee06e3888f5791ca82b765e4aa3773" category="paragraph"><block ref="62ee06e3888f5791ca82b765e4aa3773" category="inline-link-rx"></block></block>
   <block id="c257f5c852c12409e63afb17104f69c5" category="section-title">REST API</block>
   <block id="0fe398a436a33849be29455ed17d4185" category="list-text">API 的設計是以 REST 技術和目前最佳實務為基礎。核心技術包括 HTTP 和 JSON 。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
@@ -535,7 +521,6 @@
   <block id="691199ddecf65c4783496c94612dd07f" category="paragraph">您不需要連結即可開始使用工作負載工廠，但在某些情況下，您需要建立連結來解除鎖定所有工作負載原廠功能和工作負載功能。</block>
   <block id="977c73c0914e897973f4ba0be879711f" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 工程師產生執行工作負載工廠所支援任何作業所需的程式碼。程式碼格式包括工作負載原廠 REST API ， AWS CLI 和 AWS CloudForgation 。</block>
   <block id="4d062c42aef687546a9198cf40695389" category="paragraph">Codebox 與工作負載原廠作業模式（基本，讀取和自動化）一致，並設定明確的執行準備路徑，以及自動化目錄，以供日後快速重複使用。</block>
-  <block id="4242d4bda912ada98fa8b7882d2419a1" category="paragraph">工作負載工廠提供節省計算機，讓您可以將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ），彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
   <block id="d5688c5bf16d0126d5b27759385bd41e" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案</block>
@@ -558,4 +543,20 @@
   <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作負載工廠</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp 以多種方式支援 BlueXP  工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
+  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">如需與適用於 ONTAP 的 FSX ，其基礎架構或使用服務的任何解決方案相關的技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
+  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您目前正在檢視的工作負載原廠文件。</block>
+  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">搜尋工作負載原廠知識庫，找出有助於疑難排解問題的文章。</block>
+  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作負載工廠社群，追蹤後續討論或建立新討論。</block>
+  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
+  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作負載原廠主控台的右上角，選取 * 說明 &gt; 支援 * 。</block>
+  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。</block>
+  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
+  <block id="fd1a283b46f9e16faf592b1eb5138a94" category="list-text">資料庫生命週期管理</block>
+  <block id="47b4ea23585c5454c4427e68acf95fc4" category="list-text">利用 Amazon FSX for NetApp ONTAP 探索資料庫工作負載並分析成本節約效益；將 SQL Server 資料庫移轉至適用於 ONTAP 儲存設備的 FSX 時，善用儲存與應用程式的效益；部署 SQL 伺服器，資料庫及資料庫複本以實作廠商最佳實務做法；使用基礎架構做為程式碼聯合試驗以自動化作業；持續監控及最佳化 SQL 伺服器環境，以改善效能，可用度，保護及成本效益。</block>
+  <block id="9c38730e32d53f3eda487d3abd1ce6e9" category="paragraph">工作負載工廠提供節約用計算機，讓您可以將適用於 ONTAP 檔案系統的 FSX 上儲存環境或資料庫工作負載的成本，與適用於 Windows 檔案伺服器的 Elastic Block Store （ EBS ）， Elastic File Systems （ EFS ）和 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。</block>
+  <block id="9f346a017efd92b537be153b5fc3b7d1" category="inline-link-macro">瞭解如何探索儲存環境的節約效益</block>
+  <block id="764ffbbd234e8c610462259cf8d50b5a" category="list-text"><block ref="764ffbbd234e8c610462259cf8d50b5a" category="inline-link-macro-rx"></block></block>
+  <block id="28926214529dd2082ee42d4efccc4f1e" category="inline-link-macro">瞭解如何探索資料庫工作負載的節約效益</block>
+  <block id="ec6c7e2795e3d76a80250e83f4a0055e" category="list-text"><block ref="ec6c7e2795e3d76a80250e83f4a0055e" category="inline-link-macro-rx"></block></block>
 </blocks>

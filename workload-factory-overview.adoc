@@ -25,7 +25,7 @@ Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 
 
 靈活且低成本的儲存設備:: 探索、部署及管理適用於雲端 NetApp ONTAP 檔案系統的 Amazon FSX 。適用於 ONTAP 的 FSX 將 ONTAP 的完整功能帶給原生 AWS 託管服務、提供一致的混合雲體驗。
 將內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud:: VMware Cloud on AWS 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、產生將建議的 VM 配置部署至 AWS 上的 VMware Cloud 的計畫、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。
-最佳化的資料庫部署:: 部署 Microsoft SQL Server 、資料庫和資料庫複本、包括 AWS 資源配置、儲存資源配置、網路和作業系統組態、運用最佳化的部署組態、確保設定程序一致且無錯誤。
+資料庫生命週期管理:: 利用 Amazon FSX for NetApp ONTAP 探索資料庫工作負載並分析成本節約效益；將 SQL Server 資料庫移轉至適用於 ONTAP 儲存設備的 FSX 時，善用儲存與應用程式的效益；部署 SQL 伺服器，資料庫及資料庫複本以實作廠商最佳實務做法；使用基礎架構做為程式碼聯合試驗以自動化作業；持續監控及最佳化 SQL 伺服器環境，以改善效能，可用度，保護及成本效益。
 AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 chatbot 來源和 AI Engine 資料庫。這可讓您將組織的非結構化資料內嵌到企業級聊天機器人應用程式中。
 節省計算機以節省成本:: 分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。
 
@@ -112,11 +112,11 @@ link:codebox-automation.html["深入瞭解 CodeBox"]。
 
 === 節省計算機
 
-工作負載工廠提供節省計算機，讓您可以將 ONTAP 檔案系統的 FSX 儲存成本與彈性區塊存放區（ EBS ），彈性檔案系統（ EFS ）和適用於 Windows 檔案伺服器的 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。
+工作負載工廠提供節約用計算機，讓您可以將適用於 ONTAP 檔案系統的 FSX 上儲存環境或資料庫工作負載的成本，與適用於 Windows 檔案伺服器的 Elastic Block Store （ EBS ）， Elastic File Systems （ EFS ）和 FSX 進行比較。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 是最具成本效益的選項。
 
-不同類型儲存系統之間的比較標準包括所需的總容量和總效能、包括所需的 IOPS 和所需的處理量。
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["瞭解如何探索儲存環境的節約效益"^]
+* link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["瞭解如何探索資料庫工作負載的節約效益"^]
 
-https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["瞭解如何使用儲存計算機來探索節約效益"^]
 
 
 
