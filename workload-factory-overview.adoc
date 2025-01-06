@@ -28,6 +28,7 @@ Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 
 資料庫生命週期管理:: 利用 Amazon FSX for NetApp ONTAP 探索資料庫工作負載並分析成本節約效益；將 SQL Server 資料庫移轉至適用於 ONTAP 儲存設備的 FSX 時，善用儲存與應用程式的效益；部署 SQL 伺服器，資料庫及資料庫複本以實作廠商最佳實務做法；使用基礎架構做為程式碼聯合試驗以自動化作業；持續監控及最佳化 SQL 伺服器環境，以改善效能，可用度，保護及成本效益。
 AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 chatbot 來源和 AI Engine 資料庫。這可讓您將組織的非結構化資料內嵌到企業級聊天機器人應用程式中。
 節省計算機以節省成本:: 分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。
+服務帳戶可促進自動化:: 使用服務帳戶來安全可靠地自動化 BlueXP  工作負載工廠作業。服務帳戶提供可靠，持久的自動化功能，不受任何使用者管理限制，而且更安全，因為它們只提供 API 存取。
 
 
 
@@ -64,12 +65,20 @@ AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 ch
 
 image:screenshot-account-selection.png["工作負載原廠設定精靈的螢幕擷取畫面，會提示您輸入工作負載原廠帳戶。"]
 
-建立帳戶時、您是該帳戶的單一帳戶管理員使用者。
+建立帳戶時，您是該帳戶的單一 _account admin_ 使用者。
 
 如果您的組織需要額外的帳戶或使用者管理、請使用產品內的聊天室與我們聯絡。
 
 
 TIP: 如果您使用 NetApp BlueXP  ，則因為工作負載工廠採用 BlueXP  帳戶，所以您已經屬於帳戶。
+
+
+
+==== 服務帳戶
+
+服務帳戶是「使用者」，可針對自動化目的，向 BlueXP  工作負載工廠撥打授權的 API 呼叫。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。Workload Factory 中的所有帳戶持有人都是帳戶管理員。帳戶管理員可以建立及刪除多個服務帳戶。
+
+link:manage-service-accounts.html["瞭解如何管理服務帳戶"]。
 
 
 

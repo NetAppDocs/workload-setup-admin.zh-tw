@@ -15,6 +15,18 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 
 
+== 2025 年 1 月 05 日
+
+
+
+=== 支援 BlueXP  工作負載工廠的服務帳戶
+
+BlueXP  工作負載工廠現在支援服務帳戶。您可以建立服務帳戶，做為自動化基礎架構作業的機器使用者。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["建立及管理服務帳戶"]
+
+
+
 == 2024 年 11 月 11 日
 
 

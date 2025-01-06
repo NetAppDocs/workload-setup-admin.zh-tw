@@ -41,6 +41,8 @@ sidebar:
     entries:
     - title: 登入工作負載工廠
       url: "/log-in.html"
+    - title: 管理服務帳戶
+      url: "/manage-service-accounts.html"
     - title: 使用 Codebox 自動化工作
       entries:
       - title: 瞭解 CodeBox

@@ -331,7 +331,6 @@
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">軟體即服務</block>
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">網路型主控台</block>
   <block id="9b945efebb006547a94415eadaa12921" category="section-title">帳戶</block>
-  <block id="6e1351546ad06187ed26aac56cc1d573" category="paragraph">建立帳戶時、您是該帳戶的單一帳戶管理員使用者。</block>
   <block id="41d28e7b29f45d4f63653993af041bc7" category="paragraph">如果您的組織需要額外的帳戶或使用者管理、請使用產品內的聊天室與我們聯絡。</block>
   <block id="d81fee99e7fd276bb44ecddacfeba318" category="list-text">* 讀取模式 * 可協助使用者偵測各種資源和工具、進而協助完成相關精靈、進而提升基本模式的使用體驗。</block>
   <block id="e2cde95c1c68867f8b74113e5266c7e4" category="list-text">* 自動執行模式 * 代表完全信任關係、其設計旨在代表使用者執行及自動化、以及指派的認證、這些認證具有執行所需且經過驗證的權限。</block>
@@ -559,4 +558,49 @@
   <block id="764ffbbd234e8c610462259cf8d50b5a" category="list-text"><block ref="764ffbbd234e8c610462259cf8d50b5a" category="inline-link-macro-rx"></block></block>
   <block id="28926214529dd2082ee42d4efccc4f1e" category="inline-link-macro">瞭解如何探索資料庫工作負載的節約效益</block>
   <block id="ec6c7e2795e3d76a80250e83f4a0055e" category="list-text"><block ref="ec6c7e2795e3d76a80250e83f4a0055e" category="inline-link-macro-rx"></block></block>
+  <block id="5baf4417d867f07ce7f16e7810f044d7" category="doc">支援 BlueXP  工作負載工廠的服務帳戶</block>
+  <block id="369af9c9eae8f9673850f588a7ed5272" category="paragraph">BlueXP  工作負載工廠現在支援服務帳戶。您可以建立服務帳戶，做為自動化基礎架構作業的機器使用者。</block>
+  <block id="f932d2619edea0dc69b40e9be53abdc4" category="inline-link-macro">建立及管理服務帳戶</block>
+  <block id="3d6080aa10267e8c67d5c76a2bc1a9f3" category="paragraph"><block ref="3d6080aa10267e8c67d5c76a2bc1a9f3" category="inline-link-macro-rx"></block></block>
+  <block id="932645866653570a60b05477eb9d244b" category="summary">您可以建立自動化服務帳戶來管理帳戶，以符合您的需求。</block>
+  <block id="7b05bdd67cf260b16b28715ae682b5db" category="doc">管理服務帳戶</block>
+  <block id="7e25e6f3444627cdd0a9518ea63a557b" category="paragraph">建立服務帳戶，作為自動化基礎架構作業的機器使用者。您可以隨時撤銷或變更服務帳戶的存取權。</block>
+  <block id="bb121f2e42609305e9a35e628d683a11" category="paragraph">服務帳戶是 BlueXP  提供的多租戶功能。帳戶管理員會建立服務帳戶，控制存取權，以及刪除服務帳戶。您可以在 BlueXP  主控台或 BlueXP  工作負載原廠主控台中管理服務帳戶。</block>
+  <block id="e6a44c030404947ef9ee349b021fc03d" category="inline-xref">刪除服務帳戶</block>
+  <block id="2d81d4fc8d386aa7db8bcac9b1d0b306" category="inline-xref">建立新的</block>
+  <block id="8a8feea1d87a91424b49ee757e409e8b" category="paragraph">與在 BlueXP  中管理服務帳戶（您可以在其中重新建立用戶端機密）不同，工作負載工廠僅支援建立和刪除服務帳戶。如果您想要在 BlueXP  工作負載原廠主控台中為特定服務帳戶重新建立用戶端密碼，您需要<block ref="f3841cd8a6d92483cb4b2a04ae8d7e16" category="inline-xref-macro-rx"></block>，然後<block ref="117d146838ec9f8b2a3508452b4bae51" category="inline-xref-macro-rx"></block>。</block>
+  <block id="de3df2812a77857f11a4d58813051825" category="paragraph">服務帳戶使用用戶端 ID 和密碼進行驗證，而非密碼。在帳戶管理員決定變更用戶端識別碼和機密之前，都是固定的。若要使用服務帳戶，您需要用戶端 ID 和密碼才能產生存取權杖，否則您將無法取得存取權。請記住，存取權杖的壽命很短，只能使用數小時。</block>
+  <block id="4297b1c4d208bcc93d459bd6c06031df" category="paragraph">決定您要在 BlueXP  主控台或 BlueXP  工作負載原廠主控台中建立服務帳戶。有一些小差異。下列指示說明如何在 BlueXP  工作負載原廠主控台中管理服務帳戶。</block>
+  <block id="3ae998467dc1449fb591d75901000406" category="inline-link-macro">瞭解 BlueXP  身分識別與存取管理</block>
+  <block id="97a3c660b50f6bf13e2dacbc15e9c830" category="inline-link-macro">瞭解如何新增 BlueXP  IAM 成員及管理其權限</block>
+  <block id="9c5579c348844cc1b850bd02a96ffe67" category="paragraph">管理 BlueXP  中的服務帳戶，<block ref="1d755ffa92795de859e3dba230e1f04d" category="inline-link-macro-rx"></block>以及<block ref="aa435623882bd3c92d8bd95e95dc35fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="41d9e1257b3e21add2e59d038938ea94" category="section-title">建立服務帳戶</block>
+  <block id="3f196be1bd5cfb3c4da4e6f58d7c33ed" category="paragraph">建立服務帳戶時， BlueXP  工作負載工廠可讓您複製或下載服務帳戶的用戶端 ID 和用戶端機密。此金鑰配對用於 BlueXP  工作負載工廠的驗證。</block>
+  <block id="7361ae18df6957cd233a2900fa56a3a3" category="list-text">在工作負載原廠主控台中，選取 * 帳戶 * 圖示，然後選取 * 服務帳戶 * 。</block>
+  <block id="c3408ec590d1e3b7e7f77d145b976fb6" category="inline-image-macro">顯示 BlueXP  工作負載原廠使用者介面帳戶功能表選項的螢幕擷取畫面。其中一個選項是服務帳戶。</block>
+  <block id="2bf662d0fe68884c8c6bfbf1c7e19b28" category="paragraph"><block ref="2bf662d0fe68884c8c6bfbf1c7e19b28" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ebbfd5cf39924ef59304d3b2d03bfad0" category="list-text">在 * 服務帳戶 * 頁面上，選取 * 建立服務帳戶 * 。</block>
+  <block id="0631e752a6ccf3310e9ff6b0aba74a38" category="list-text">在「建立服務帳戶」對話方塊的 * 服務帳戶名稱 * 欄位中，輸入服務帳戶的名稱。</block>
+  <block id="c151e8d990a5b1f7552461d4a7727f4a" category="paragraph">* 角色 * 已預先選取為 * 帳戶管理員 * 。</block>
+  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
+  <block id="a708a553b3abfac9aade748b9d27bc4e" category="list-text">複製或下載用戶端ID和用戶端密碼。</block>
+  <block id="8bfab18bdb5a0cbcfb26837e26880088" category="paragraph">用戶端機密只會顯示一次，而且不會依工作負載工廠儲存在任何地方。複製或下載機密、並安全地儲存。</block>
+  <block id="f487083f9c2db211b137935b7fc9dece" category="list-text">您也可以執行用戶端認證交換，取得驗證 0 管理 API 的存取權杖。cURL 範例說明如何取得用戶端 ID 和密碼，並使用 API 來產生時間有限的存取權杖。Token 提供數小時的 BlueXP  工作負載工廠 API 存取時間。</block>
+  <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">選擇*關閉*。</block>
+  <block id="80487d01b1c728a010d93038c1678fff" category="paragraph">新的服務帳戶隨即建立並列在「服務帳戶」頁面上。</block>
+  <block id="30b299e9cb0ca616520dfdc739caa685" category="section-title">刪除服務帳戶</block>
+  <block id="22afe6994929c83f3a017a74a15c514d" category="paragraph">如果您不再需要使用服務帳戶、請將其刪除。</block>
+  <block id="76eda590152f52e14b5333efced53ebe" category="list-text">在 Workload Factory 主控台中，選取 * 帳戶 * 圖示，然後選取 * 服務帳戶 * 。</block>
+  <block id="14c8c293bfd0a79761df78d64a7cdc09" category="list-text">在 * 服務帳戶 * 頁面上，選取三點功能表，然後選取 * 刪除 * 。</block>
+  <block id="897945ecf5c18d38834da2efd9b74699" category="list-text">在刪除服務帳戶對話方塊的文字方塊中輸入 * 刪除 * 。</block>
+  <block id="6b7a52834d577f2e4ac4d587036728f4" category="list-text">選擇 * 刪除 * 以確認刪除。</block>
+  <block id="0b296fc415fe75b2e0eb7ea5db103354" category="paragraph">服務帳戶即會刪除。</block>
+  <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025 年 1 月 05 日</block>
+  <block id="99b22223be957cc9c37eee0aecb2007b" category="list-text">服務帳戶可促進自動化</block>
+  <block id="cb62deea87371902deaeb1b0a009e387" category="list-text">使用服務帳戶來安全可靠地自動化 BlueXP  工作負載工廠作業。服務帳戶提供可靠，持久的自動化功能，不受任何使用者管理限制，而且更安全，因為它們只提供 API 存取。</block>
+  <block id="13b1a844b08d2d7b8144e4c0db6b5552" category="paragraph">建立帳戶時，您是該帳戶的單一 _account admin_ 使用者。</block>
+  <block id="c33f7c2cbeaca5f1462c1b3e1c276145" category="section-title">服務帳戶</block>
+  <block id="05cf180c93dd06147c24c610cae8dd96" category="paragraph">服務帳戶是「使用者」，可針對自動化目的，向 BlueXP  工作負載工廠撥打授權的 API 呼叫。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。Workload Factory 中的所有帳戶持有人都是帳戶管理員。帳戶管理員可以建立及刪除多個服務帳戶。</block>
+  <block id="25e9dc09fd109741b1c7237f825ab46e" category="inline-link-macro">瞭解如何管理服務帳戶</block>
+  <block id="09c9cabc1664a7683d1d411a37775b39" category="paragraph"><block ref="f09e11341fa2be3f754588bca37990f8" category="inline-link-macro-rx"></block>。</block>
 </blocks>
