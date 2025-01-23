@@ -29,6 +29,8 @@ sidebar:
         url: "/operational-modes.html"
       - title: 主控台體驗
         url: "/console-experiences.html"
+      - title: 權限
+        url: "/permissions-reference.html"
     - title: 快速入門
       url: "/quick-start.html"
     - title: 註冊至工作負載工廠

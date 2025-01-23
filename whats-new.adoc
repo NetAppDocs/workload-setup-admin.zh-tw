@@ -15,6 +15,18 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 
 
+== 2025 年 1 月 22 日
+
+
+
+=== BlueXP  工作負載原廠權限
+
+您現在可以檢視 BlueXP  工作負載工廠用來執行各種作業的權限，從探索儲存環境到部署 AWS 資源，例如儲存設備中的檔案系統，或是 GenAI 工作負載的知識庫。您可以檢視儲存，資料庫， VMware 和 GenAI 工作負載的 IAM 原則和權限。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["BlueXP  工作負載原廠權限"]
+
+
+
 == 2025 年 1 月 05 日
 
 

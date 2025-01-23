@@ -603,4 +603,364 @@
   <block id="05cf180c93dd06147c24c610cae8dd96" category="paragraph">服務帳戶是「使用者」，可針對自動化目的，向 BlueXP  工作負載工廠撥打授權的 API 呼叫。如此一來、您就不需要根據實際使用者帳戶建置自動化指令碼、也能隨時離開公司、因此更容易管理自動化作業。Workload Factory 中的所有帳戶持有人都是帳戶管理員。帳戶管理員可以建立及刪除多個服務帳戶。</block>
   <block id="25e9dc09fd109741b1c7237f825ab46e" category="inline-link-macro">瞭解如何管理服務帳戶</block>
   <block id="09c9cabc1664a7683d1d411a37775b39" category="paragraph"><block ref="f09e11341fa2be3f754588bca37990f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="ca475a2b63c70fedcf8f6650024d480b" category="doc">BlueXP  工作負載原廠權限</block>
+  <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">您現在可以檢視 BlueXP  工作負載工廠用來執行各種作業的權限，從探索儲存環境到部署 AWS 資源，例如儲存設備中的檔案系統，或是 GenAI 工作負載的知識庫。您可以檢視儲存，資料庫， VMware 和 GenAI 工作負載的 IAM 原則和權限。</block>
+  <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
+  <block id="43fcd221af337ae9a32718b7ef097cf2" category="summary">若要使用 BlueXP  工作負載原廠功能和服務，您必須提供權限，讓工作負載工廠能夠在您的雲端環境中執行作業。</block>
+  <block id="d6a57e4245c0b8a043004e7acd2a2bd9" category="doc">BlueXP  工作負載工廠的權限</block>
+  <block id="700a021d89dc2381c64a3ed9192ee53f" category="section-title">為何要使用權限</block>
+  <block id="65508cebd422d78a4b01b7d67145b61f" category="paragraph">當您提供讀取或自動化模式權限時，工作負載工廠會將原則附加至執行個體，並具有管理該 AWS 帳戶內資源和程序的權限。這讓工作負載工廠能夠執行各種作業，從探索儲存環境到部署 AWS 資源，例如儲存管理中的檔案系統，或是 GenAI 工作負載的知識庫。</block>
+  <block id="141fc03482c74c6707d4666e1b85c2cf" category="paragraph">例如，對於資料庫工作負載，當工作負載工廠獲得必要權限時，它會掃描指定帳戶和區域中的所有 EC2 執行個體，並篩選所有 Windows 型機器。如果已在主機上安裝並執行 AWS Systems Manager （ SSM ） Agent ，且系統管理員網路已正確設定，則工作負載工廠可以存取 Windows 機器，並確認是否已安裝 SQL Server 軟體。</block>
+  <block id="a6a12fe94711dfdea0fcf1676358e0b3" category="section-title">依工作負載的權限</block>
+  <block id="fc80f33c496e0821a5411de4d55a7eb7" category="paragraph">每個工作負載都會使用權限在工作負載工廠中執行特定工作。捲動至您用來檢視權限清單的工作負載，其用途，使用位置，以及支援這些權限的模式。</block>
+  <block id="c5e2d495fdb3c7efa71b3594d9c5e8bf" category="section-title">儲存設備的權限</block>
+  <block id="f7eb6493af2813019f9f502b72b049f3" category="paragraph">適用於儲存設備的 IAM 原則提供工作負載工廠根據您所用的作業模式，管理公有雲環境中的資源和程序所需的權限。</block>
+  <block id="ec62b38395e2480894e3e2f0bb55529d" category="paragraph">選取您的作業模式以檢視所需的 IAM 原則：</block>
+  <block id="4cb074a723eb3f4f31373c399c0f9a89" category="example-title">儲存設備的 IAM 原則</block>
+  <block id="2d7990698dcab7d7e2e7e63856e57c8b" category="paragraph">下表顯示儲存設備的權限。</block>
+  <block id="e4f70a809ce57daade77df6410353ec6" category="example-title">儲存設備權限表</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
+  <block id="04b49ffb43a2b12a51b5f955d8c9ca8b" category="cell">使用處</block>
+  <block id="2fdd0cbe402a8ae2149e0cdf4e1d9b9c" category="cell">為 ONTAP 檔案系統建立 FSX</block>
+  <block id="e672bad3c1c11e2c400555291158bf67" category="cell">fsx:CreateFileSystem*</block>
+  <block id="ea355214fd4bc7c57f471bd92918879b" category="cell">部署</block>
+  <block id="f6c2cf766221c709e41636c08b06f6c5" category="cell">為 ONTAP 檔案系統的 FSX 建立安全群組</block>
+  <block id="dfe69f2eb83bcef99d0bb464b50fbf34" category="cell">EC2：建立安全性群組</block>
+  <block id="a89174f2bab15ab90f1297749a2edcc1" category="cell">將標籤新增至適用於 ONTAP 檔案系統的 FSX 安全性群組</block>
+  <block id="693adfb773a054f1c9287da186e8ce5d" category="cell">EC2：建立標記</block>
+  <block id="2fc85f283cf88c3b96c232f5316a83b4" category="cell">授權 ONTAP 檔案系統的 FSX 安全性群組外傳和進入</block>
+  <block id="0c2207eca5bac43f82f2b5fedbd86541" category="cell">EC2：授權安全性群組出口</block>
+  <block id="4391a439092a7705738b377b8f7d9770" category="cell">EC2：授權安全性群組入口</block>
+  <block id="46b5df24db5cf9a80dffcb770ecff231" category="cell">管理適用於 ONTAP 檔案系統的 FSX 的安全性群組外傳和進入</block>
+  <block id="2a95c3248cb0dae5784981086f9b60e6" category="cell">EC2：RevokeSecurity GroupIngress</block>
+  <block id="5cb2b3f39804f9782fb453390eb33d73" category="cell">管理作業</block>
+  <block id="5c1d3b82016ca9ba106bc6c28ab8c44a" category="cell">EC2：刪除安全性群組</block>
+  <block id="27937326fc1b3f52b27fa58318958e6f" category="cell">建立，檢視及管理 ONTAP 檔案系統資源的 FSX</block>
+  <block id="881a77b57b4f54fcd2a9195295bb42d5" category="cell">fsx:CreateVolume*</block>
+  <block id="c6dfd035cfaef7f761feb4e3ff88059f" category="cell">FSX ： TagResource *</block>
+  <block id="303ed732501344f771eaa52c17b36e6a" category="cell">fsx:CreateStorageVirtualMachine*</block>
+  <block id="37187b644b74feecbd9d89072a07067c" category="cell">fsx:DeleteFileSystem*</block>
+  <block id="60db4cdd44bde68fdeca07c7efbb2e30" category="cell">fsx:DeleteStorageVirtualMachine*</block>
+  <block id="cebff248e50475eae32e0cc7bcea596d" category="cell">fsx:DescrubeFileSystem*</block>
+  <block id="4d604dd8f008145471dc845683399189" category="cell">庫存</block>
+  <block id="767187f66a86b52ca75d5f8aa6d8cb78" category="cell">fsx:DescrubeStorageVirtualMachines*</block>
+  <block id="e50c6ebd91bc975b1c106009dfe0f444" category="cell">fsx:UpdateFileSystem*</block>
+  <block id="3e65eafa8da1abd23d0a1caacc3c82aa" category="cell">fsx:UpdateStorageVirtualMachine*</block>
+  <block id="e16d8d43ea7152638b8769d9d49f0337" category="cell">fsx:DescribeVolumes *</block>
+  <block id="a670f6b6fdbba1cc43de3fd848e253fc" category="cell">fsx:UpdateVolume*</block>
+  <block id="0e4653ac375b6373e5d2a945f3e42eb3" category="cell">fsx:DeleteVolume *</block>
+  <block id="04a63a746b0e53d01ca6dad833e60d84" category="cell">FSX ： UntagResource *</block>
+  <block id="c780df6e64b345a10200e5ecd236b0b3" category="cell">fsx:DescrubeBackups*</block>
+  <block id="5e85e3158b474a632f6131f78bdd50ab" category="cell">fsx:CreateBackup*</block>
+  <block id="4ad5a3c34fcd3e62f6804bf2121fd6d4" category="cell">fsx:CreateVolume FromBackup*</block>
+  <block id="e3ff3d5e5ebfec893c7c7a1225d78b44" category="cell">列出適用於 ONTAP 資源的 FSX 標籤</block>
+  <block id="fefbafa74f5b8d278a3fe90b352b553b" category="cell">FSX ： ListTagsForResource</block>
+  <block id="02bc954bd55df1dce9bf4e4f244962d8" category="cell">取得詳細資料以填寫適用於 ONTAP 檔案系統部署的 FSX 表單</block>
+  <block id="1bf0cfdea85e9a3c3d97e1c6b8c7c7c1" category="cell">EC2：取消功能Vpcs</block>
+  <block id="cf48d7891f28d92c4308fb5debb574b0" category="list-text">探索節約效益</block>
+  <block id="fa70443be85a3feec8a5eb9d46413a96" category="cell">EC2：無資料子網路</block>
+  <block id="624105df248e28f049a2f58eb3552d40" category="cell">EC2：取消註冊</block>
+  <block id="f81c1800b5bdeba91c623d2a3d6cd80b" category="cell">EC2：取消安全性群組</block>
+  <block id="c01627c2648879b9ec55b1fca3cbeaf8" category="cell">EC2：取消功能表</block>
+  <block id="ce8fb0925b8abe52d5d90a64663ad1be" category="cell">EC2：網路介面</block>
+  <block id="86c80be5ce6a218c79003d4bf6404f2a" category="cell">EC2 ： DescribeVolume 狀態</block>
+  <block id="7cd3617714ec2533f7a42ab6481620b2" category="cell">取得 EC2 執行個體的 Volume 詳細資料</block>
+  <block id="776040484a8199155a9dc8b59d59a80e" category="cell">EC2：減量磁碟區</block>
+  <block id="9e1837538954215cc61829f83cd75dad" category="cell">取得 EC2 執行個體的詳細資料</block>
+  <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="cell">EC2：資料說明</block>
+  <block id="0e81995dec4fff4dd0c84bb67b74eacc" category="cell">取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX</block>
+  <block id="341d6f040d34917cbc708be689644fc5" category="cell">公里：建立授予</block>
+  <block id="2101c43af42db107614da3d2faadb4dc" category="cell">公里：描述*</block>
+  <block id="b18a2220ba0da795c31cbb6cd990fd49" category="cell">公里：清單*</block>
+  <block id="61a4afbabf94aa7f1ef765ee7e5cfd52" category="cell">在節約計算機中說明彈性檔案系統</block>
+  <block id="4a6bd396d94cca62c7831241093bd301" category="cell">彈性檔案系統：描述 *</block>
+  <block id="975fad57280d6c4bce9f0ebeb8c578e5" category="cell">回報 CloudWatch 指標</block>
+  <block id="fab89b1a8f625024ca157821a4972648" category="cell">cloudwatch ： PutMetricData</block>
+  <block id="9fd6274c053251e7fdd752215a510290" category="cell">取得檔案系統和 Volume 度量</block>
+  <block id="f63e0d20057299c9c16bd0c2c9e92a5c" category="cell">cloudswatch ： GetMetricData</block>
+  <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="cell">cloudwatch：GetMetricStatistics</block>
+  <block id="659cdc74d03020d9c8bbdcda0749ab88" category="section-title">資料庫工作負載的權限</block>
+  <block id="2ceb20f97dd8f727dfbba8dbbe9a3496" category="paragraph">適用於資料庫工作負載的 IAM 原則提供工作負載工廠根據您所用的作業模式，管理公有雲環境中的資源和程序所需的權限。</block>
+  <block id="6f652f163aedad876c63ce0e89417171" category="example-title">適用於資料庫工作負載的 IAM 原則</block>
+  <block id="685902496cc1b2431527838eb3dd51f8" category="paragraph">下表顯示資料庫工作負載的權限。</block>
+  <block id="0647b03c182e6a539e314bf5657eba2e" category="example-title">資料庫工作負載的權限表</block>
+  <block id="8fb4617a750c0b3b751013d02219f99b" category="cell">取得適用於 ONTAP ， EBS 和適用於 Windows 檔案伺服器的 FSX 的度量統計資料</block>
+  <block id="9d0f530f355f04b5462f43ae04528fde" category="cell">列出並設定事件觸發條件</block>
+  <block id="124f2c65b8b708241b7552a865ae2f29" category="cell">SnS:ListTopics</block>
+  <block id="b561747f1044749aaeab8082f02c0c2f" category="cell">EC2：評量會議</block>
+  <block id="46e796ba1859cbbd532aeef823cd3dd3" category="cell">EC2 ： DescribeInstanceTypes</block>
+  <block id="d728416eef1d439f64a4285bb4c2b78d" category="cell">取得詳細資料以填寫適用於 ONTAP 部署的 FSX 表單</block>
+  <block id="952195e7922a9dcf0a6d5068e747e85f" category="cell">EC2：取消影像</block>
+  <block id="72b9683d1fb0a42f875afd268d79e9c8" category="cell">取得任何現有的 VPC 端點，判斷是否需要在部署之前建立新的端點</block>
+  <block id="8258ac0fb8b015087851de720e92f796" category="cell">EC2：取消資料VpcEndpoints</block>
+  <block id="b1678462e10378585ba5ad1054d23c99" category="cell">取得適用於驗證節點的區域執行個體類型（ T2.micro/T3.micro ）</block>
+  <block id="bf6108518304bcc2b6a7c40a35da54f5" category="cell">EC2 ： DescrubeInstanceTypeOffing</block>
+  <block id="72713763fe323abdaffc464d3bc5e8d6" category="cell">取得每個附加 EBS 磁碟區的快照詳細資料，以瞭解價格與成本預估</block>
+  <block id="1b32c4c3d001e61965fb50f468ebf0fa" category="cell">EC2：取消快照</block>
+  <block id="d5f3f1ee5b0ea0aa8979fa7de176b7b8" category="cell">取得每個附加 EBS 磁碟區的詳細資料，以瞭解價格與預估節約效益</block>
+  <block id="c97918377aed5e955f4cdd0efc8e1038" category="cell">取得適用於 ONTAP 檔案系統加密之 FSX 的 KMS 金鑰詳細資料</block>
+  <block id="276e466538acff21910df6227231c79f" category="cell">kms：清單別名</block>
+  <block id="f135b7d7ed012bd98709eefe7430e01d" category="cell">kms ： ListKeys</block>
+  <block id="07b068a2b55029d6b44b340463f0d1d8" category="cell">KMS ： DescribeKey</block>
+  <block id="10fab2155c0ad8e0c88e2b318d28a2e3" category="cell">取得在環境中執行的 CloudForgation 堆疊清單，以檢查配額限制</block>
+  <block id="1bad3fa525f7b2c60b554cc8a36a911c" category="cell">雲端：清單堆疊</block>
+  <block id="8e93540f798de2b05e2e4f2e635b37dc" category="cell">取得區域中 AWS 管理的 Active Directory 清單</block>
+  <block id="246bc80d4f7b7a7b79729bc255f9b626" category="cell">DS:DescrubeDirectories</block>
+  <block id="5b2fd8e3b498b5bb9602f0d2d4c99d4e" category="cell">取得適用於 ONTAP 檔案系統的磁碟區，備份， SVM ， AZs 檔案系統和 FSX 標籤的清單和詳細資料</block>
+  <block id="24ca8966cf3ca7c9dc7c9de631b31ff0" category="cell">FSX ： DescribeVolumes</block>
+  <block id="304857d599b6ba4c4feb7be94e6b4be1" category="list-text">探索節約效益</block>
+  <block id="bb2a9796836e44fafa9324209d9b7feb" category="cell">FSX ： DescrubeBackups</block>
+  <block id="ed8ac7020751c46d1e6875d079c18a1e" category="cell">FSX ： DescrubeStorageVirtualMachines</block>
+  <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="list-text">管理營運</block>
+  <block id="0054238c3be20aab765346f029c558a4" category="cell">fsx:DescribeFileSystems</block>
+  <block id="5a3667523a928adc1e72c2d52d3c46da" category="cell">取得 CloudForquation 和 VPC 的服務配額限制</block>
+  <block id="5c2e89cc7d199bd993940299714f0d2a" category="cell">serviceEquotas ： ListServiceQuotas</block>
+  <block id="033e3df65a67c88a8d0c83e2ae6f082e" category="cell">使用 SSM) 查詢取得適用於 ONTAP 支援區域的 FSX 更新清單</block>
+  <block id="055e84613d0abc8db259dc0d1c353d05" category="cell">SSM) ： GetParametersByPath</block>
+  <block id="7f42f2c05a807e6dc1d65c9a2dba48b7" category="cell">在傳送命令以管理部署後的作業之後，輪詢 SSM 回應</block>
+  <block id="6b443d4e29789a97b7bf9117ac2091df" category="cell">SSM) ： GetCommandInvocation</block>
+  <block id="15970c4fdbca1fc48c5b412d94e798c0" category="list-text">最佳化</block>
+  <block id="5d58169dcd5950da6e86fc3c12deb7c8" category="cell">透過 SSM 傳送命令至 EC2 執行個體</block>
+  <block id="b187f8fa28bd381ca60b99c28941d5b5" category="cell">S10:SendCommand</block>
+  <block id="e194a3f487fc02c5fac0d10663dbac59" category="cell">取得部署後執行個體的 SSM 連線狀態</block>
+  <block id="3dbc1561f97a84c3dab7611b2a5964fb" category="cell">SSM) ： GetConnectionStatus</block>
+  <block id="b7ccab83bae54602afa443415b4b1aa3" category="cell">取得作業系統修補程式評估可用的修補程式基準清單</block>
+  <block id="6a8364cf492c1736926aae6504f7d262" category="cell">SSM) ： DescrubePatchBasines</block>
+  <block id="c108baa9269130d3b6a008e68976bf73" category="cell">取得 Windows EC2 執行個體的修補狀態，以進行作業系統修補程式評估</block>
+  <block id="39e834f8f5a47b060fdc898c40b69769" category="cell">SSM) ： DescribeInstancePatchStates</block>
+  <block id="4e077e923a9bfa2bde556ca3c6422d0f" category="cell">列出 AWS Patch Manager 在 EC2 執行個體上執行的命令，以進行作業系統修補程式管理</block>
+  <block id="74107a0e7ea956ebdaf25eab953e613f" category="cell">SSM/ListCommands</block>
+  <block id="20ae2e5c038b5af493af65143a45d3d7" category="cell">取得，列出，建立及刪除 AD 的 SSM 參數， ONTAP 的 FSX 參數，以及在 AWS 帳戶中部署或管理時所使用的 SQL 使用者認證</block>
+  <block id="d18f857d20db33332016e7c51a1589a5" category="cell">SSM) ： GetParameter ^1^</block>
+  <block id="9bf02739773445e4e65eaea235d120fe" category="cell">S10:GetParameters ^1^</block>
+  <block id="ec350aa2f042a62c6851dbe6bd9f7e95" category="cell">SSM) ：推桿參數 ^1^</block>
+  <block id="53d793b4da71c34453681024bcc48754" category="cell">S10:DeleteParameters ^1^</block>
+  <block id="9ce99600e624731c1fe31ce233f72a02" category="cell">將網路資源與 SQL 節點和驗證節點建立關聯，並將其他次要 IP 新增至 SQL 節點</block>
+  <block id="72e7cacb5136010b6cb0df05891c174f" category="cell">EC2 ： AllocateAddress ^1^</block>
+  <block id="57b0326f0ddbb990dd4703923c83fea4" category="cell">EC2 ： AllocateHos^1^</block>
+  <block id="ecb31d3a2e5274f7dbda568306e4320f" category="cell">EC2 ： AssignPrivate IpAddresses ^1^</block>
+  <block id="f9794d648f89cd329bf9633f96ffc8a1" category="cell">EC2 ： AssociateAddress ^1^</block>
+  <block id="fc3240754057fcecef7523e29febe772" category="cell">EC2 ： AssociateRouteTable ^1^</block>
+  <block id="22eb3235d1daf83e41b580e400e9e3ed" category="cell">EC2 ： AssociateSubnetCidrBlock ^1^</block>
+  <block id="46e45329a9d7160968df7e898e7b8f34" category="cell">EC2 ： AssociateVpcCidrBlock ^1^</block>
+  <block id="223552a350854036f9e1d0b3755b8e2a" category="cell">EC2 ： AttachInternetGateway ^1^</block>
+  <block id="a8f27e670bdd5b9f566be75d68eedf77" category="cell">EC2 ： AttachNetworkInterface ^1^</block>
+  <block id="a0a0d9c8f3b6cc4d01975a4ca2fbde6f" category="cell">將部署所需的 EBS 磁碟區附加至 SQL 節點</block>
+  <block id="a5ea263b5c1fc9d98e3502347db5f38a" category="cell">EC2：AttachVolume</block>
+  <block id="d11d025be74c9a5c5397d29af346ff64" category="cell">附加安全性群組並修改已佈建節點的規則</block>
+  <block id="ac0cf316818b873dea50dfc3ac4b82c5" category="cell">建立部署 SQL 節點所需的 EBS 磁碟區</block>
+  <block id="214856c145abfa33038f64154c203919" category="cell">EC2：建立磁碟區</block>
+  <block id="3d94b73327b9931d17145a4d576d56f3" category="cell">移除以 T2.micro 類型建立的暫存驗證節點，以及用於復原或重試失敗的 EC2 SQL 節點</block>
+  <block id="ff7f7be0cb6fd6d6bfa0e735a61fc8a8" category="cell">EC2：刪除網路介面</block>
+  <block id="3a2cbdfb7b022d729d851d5052148241" category="cell">EC2：刪除標記</block>
+  <block id="451d09025146b4c5f4b33a18aa0c4234" category="cell">EC2：刪除Volume</block>
+  <block id="40cddef714a97e49351a52b6ea08a8a4" category="cell">EC2 ： DetachNetwork Interface</block>
+  <block id="06622319fb198ee98832f726ac405c79" category="cell">EC2：分離Volume</block>
+  <block id="c6150c4a7a9939777182306e169d188b" category="cell">EC2 ： DiscassociateAddress</block>
+  <block id="d0946769aa3944c2e9e6feb1f6b23851" category="cell">EC2：中斷IamInstanceProfile</block>
+  <block id="be2536602d5c2c0ea6bd84eedd3e918d" category="cell">EC2 ： DiscassociateRouteTable</block>
+  <block id="0e216efd1ba03e6df4a92419ab68c7fe" category="cell">EC2 ： DiscassociateSubnetCidrBlock</block>
+  <block id="9e8cbde4ac59b26403c9c262e430c4f5" category="cell">EC2 ： DiscassociateVpcCidrBlock</block>
+  <block id="034b77199880961beb5daf2744d25cc0" category="cell">修改已建立 SQL 執行個體的屬性。僅適用於以 WLMDB 開頭的名稱。</block>
+  <block id="21d0110f8008b90efa11a26fa83b57c3" category="cell">EC2：修改實例屬性</block>
+  <block id="f8720a801d0e434f24c81a1c284fad98" category="cell">EC2 ： ModifyInstancePlacement</block>
+  <block id="c07c3c9fb58e5661267c1d69b19a4625" category="cell">EC2：修改網路互連屬性</block>
+  <block id="6649436df159fa1eb8b9217661737643" category="cell">EC2 ： ModifySubnetAttribute.</block>
+  <block id="a0343d4d10d8960a1347cc4819cae46b" category="cell">EC2：修改Volume</block>
+  <block id="41335cfc4c2fb5b48949f4e7610951ec" category="cell">EC2：修改Volume屬性</block>
+  <block id="566933463b548e32ff1dc4ec68af3986" category="cell">EC2 ： ModifyVpcAttribute</block>
+  <block id="c61e3209d2868dd8816ae43068f4064a" category="cell">解除關聯並銷毀驗證執行個體</block>
+  <block id="99ea1b727ced5d1433facf8b6f81cff9" category="cell">EC2 ： ReleaseAddress</block>
+  <block id="02b72e836bc742d4b7cab477b1c3a57d" category="cell">EC2 ：安慰劑 Route</block>
+  <block id="3db10e3ef0f6df2fb0e2a07e1456b2eb" category="cell">EC2 ： ReplaceRouteTableAssociation</block>
+  <block id="6b55ca61283cdb7482b6730fe7aa8ee7" category="cell">EC2：RevokeSecurity GroupEgress</block>
+  <block id="c7f6c71db21feb547e83d7f27c2966f2" category="cell">啟動部署的執行個體</block>
+  <block id="027d28fab935de1ef9181da062feac6b" category="cell">EC2：啟動安裝</block>
+  <block id="35aee9b156e0012e2cdd64caebcf7697" category="cell">停止部署的執行個體</block>
+  <block id="68d58bcae13312f57154b0dc5bd5bee5" category="cell">EC2：停止執行</block>
+  <block id="22771afc11ed532d64635da0865460e4" category="cell">為 NetApp ONTAP 資源標記 Amazon FSX 的自訂值，以在資源管理期間取得帳單詳細資料</block>
+  <block id="881fc185c774c83e41aedeed316c8793" category="cell">fsx:TagResource ^1^</block>
+  <block id="238baf45cfb7cd42e582747bf28cae2b" category="cell">建立並驗證 CloudForgation 範本以進行部署</block>
+  <block id="6ccfab5404f73a6b0bacb222665e72d7" category="cell">雲端：建立堆疊</block>
+  <block id="da044dbe1821a39f63f98e823344b062" category="cell">雲端：取消功能堆疊事件</block>
+  <block id="f404fc6d0850472807e4fcd86203a313" category="cell">雲端：無標準堆疊</block>
+  <block id="6f25bb2faea408ecb06dc30a96791ac2" category="cell">cloudformation：驗證範本</block>
+  <block id="039c0d5ce3b1eaded6c4634f95b0978c" category="cell">擷取運算最佳化建議的度量</block>
+  <block id="6ecc76cab2e7449f332b847599e62d5f" category="cell">擷取區域中可用的目錄</block>
+  <block id="f4e46229f95e1a17f96ebacbac65751b" category="cell">新增附加至已佈建 EC2 執行個體的安全性群組規則</block>
+  <block id="1f4dd9a69501cc464524fc5da8bcd1b7" category="cell">建立巢狀堆疊範本以重試及復原</block>
+  <block id="8d9ddfab0a610d7966bf4e6cea787cd0" category="cell">EC2 ： CreateLaunchTemplate</block>
+  <block id="2d90329adcb7267ed4f810f58b55ff72" category="cell">EC2 ： CreateLaunchTemplateVersion</block>
+  <block id="e1e15e9a22b701bee4ca34f3b6e309c0" category="cell">管理已建立執行個體的標記和網路安全性</block>
+  <block id="6d284e37c36390a37443cf46fd082a1b" category="cell">EC2：建立網路介面</block>
+  <block id="d94d61de08721d1da00b1d5006f35977" category="cell">刪除為驗證節點暫時建立的安全性群組</block>
+  <block id="7f9122ce0935681e0e135088ba86059c" category="cell">取得資源配置的執行個體詳細資料</block>
+  <block id="8e4c74245e24cdd4dade7298ed548b64" category="cell">EC2 ：說明 *</block>
+  <block id="5f145d52954bd10262d984880ba32ae7" category="cell">EC2 ：取得 *</block>
+  <block id="c1e2ff64a681f515f3bae376c9a2850d" category="cell">啟動建立的執行個體</block>
+  <block id="392b3d4b5b32ec7fec96c348ecef2c2a" category="cell">EC2：RunInstances</block>
+  <block id="267c89392dc5a1252f4802ac098be7b2" category="cell">Systems Manager 使用 AWS 訊息傳遞服務端點來執行 API 作業</block>
+  <block id="c7d63774f211e9040ac15f807966ac19" category="cell">電子訊息： *</block>
+  <block id="d63690da8c50c3f90d863aef3bb9fdf2" category="list-text">部署 * 庫存</block>
+  <block id="b5c1b2fb67ad44bad7c65c2b1539f3ac" category="cell">為佈建所需的 ONTAP 資源建立 FSX 。對於現有的適用於 ONTAP 系統的 FSX ，系統會建立新的 SVM 來裝載 SQL Volume 。</block>
+  <block id="ac49e7eb83cca55da7651e3f6374a031" category="cell">fsx:CreateFileSystem</block>
+  <block id="d5df17014c12ec1054b41925d934d6c2" category="cell">fsx:CreateStorageVirtualMachine</block>
+  <block id="0128e66e7260cacda28baf033acff6a2" category="cell">fsx:CreateVolume</block>
+  <block id="31db2f17979c481c49517c603fc07a30" category="cell">取得 ONTAP 詳細資料的 FSX</block>
+  <block id="096f855751ca8a251f3a90595e899592" category="cell">FSX：說明*</block>
+  <block id="32e6bcbc3ba209ad50015d597c501851" category="cell">FSX：清單*</block>
+  <block id="e01b866b9f0a245f6f37489680f0f641" category="cell">調整 ONTAP 檔案系統的 FSX 大小，以修正檔案系統保留空間</block>
+  <block id="c1a13ef5beb00f5acf9f569314c39eaf" category="cell">fsx:UpdateFilesystem</block>
+  <block id="1ff0f8e677172fe2cbd267c5ae490ab5" category="cell">調整磁碟區大小以修正記錄和 TempDB 磁碟機大小</block>
+  <block id="f20b23123ef087da065e884b9867a089" category="cell">fsx:UpdateVolume</block>
+  <block id="367a389a2e52a25adf73b415c74d9a3c" category="cell">KMS ： GenerateDataKey</block>
+  <block id="46d371d3b43dbd883691541a05f3109a" category="cell">建立 CloudWatch 記錄檔，用於在 EC2 執行個體上執行驗證和資源配置指令碼</block>
+  <block id="4011ea392d4bd2f3136eea1bbb00683d" category="cell">記錄檔： CreateLogGroup</block>
+  <block id="9294f7e303ba3ddc420e24b7e47eab2c" category="cell">記錄： CreateLogStream</block>
+  <block id="2a7da4b7c2c1489f2df06bf5dc418bb0" category="cell">記錄： DescribeLog*</block>
+  <block id="8bbdc24b096b09dbeb2728b9faf4bd02" category="cell">記錄檔： GetLog*</block>
+  <block id="e471f866d2e101796e014fff06474675" category="cell">記錄： ListLogDeliverys</block>
+  <block id="3ba3376e55a3bdd26ed9c2519b4b9e6a" category="cell">記錄： PutLogEvents</block>
+  <block id="dc344e1b51ae9e5aff7a5efaf286df5a" category="cell">記錄： TagResource</block>
+  <block id="855ba8396836c2071e5e96753509966d" category="cell">在使用者帳戶中建立 ONTAP SQL ，網域和 FSX 所提供認證的機密</block>
+  <block id="ed9cb1f5c288bc89df419f89bcf3242b" category="cell">列出客戶 SNS 主題，並在選取時發佈至 WLMDB 後端 SNS 和客戶 SNS</block>
+  <block id="79b450f031f5478d5e79ee9957707c72" category="cell">SnS ：發佈</block>
+  <block id="8d9eb93100874b1ad35f7c114e99b237" category="cell">必要的 SSM 權限，可在已佈建的 SQL 執行個體上執行探索指令碼，並擷取 ONTAP 支援的 AWS 區域的最新 FSX 清單。</block>
+  <block id="bf01418252185a7db1a4af263ef6e9ff" category="cell">SSM) ：說明 *</block>
+  <block id="13be5cbb4abfbddc54737b7623c133ff" category="cell">SSM) ：取得 *</block>
+  <block id="367e0b4d64ee773708e8dcf8290b1b8b" category="cell">SSM) ：清單 *</block>
+  <block id="c7c7e420402662bb51829df1e0943c12" category="cell">SSM) ： PuttinianceItem</block>
+  <block id="89fbad9b36c97bf54eb493988a0f0123" category="cell">S10:PutConfigurePackageResult</block>
+  <block id="9fd52b354e3e9f908281162e612f8481" category="cell">SSM) ： PuttInventory</block>
+  <block id="ee12464a75d4bfd31f45d23a41eb32f4" category="cell">SSM) ：更新關聯狀態</block>
+  <block id="3a0d45848bef93e542aab0d32de3c7fa" category="cell">SSM) ： UpdateInstanceAssociationStatus</block>
+  <block id="12490ad4c4c5d81ea6938b26360309d6" category="cell">SSM) ： UpdateInstanceInformation</block>
+  <block id="4eb98430eee7e3043517e6b44aae507d" category="cell">SsmMessages ： *</block>
+  <block id="56588fd23388c72518cf101c6fd03860" category="cell">儲存適用於 ONTAP ， Active Directory 和 SQL 使用者的 FSX 認證（僅適用於 SQL 使用者驗證）</block>
+  <block id="a2fd11b449a7d2e5203810fdaa498c7a" category="cell">在成功或失敗時發出 CloudForgation 堆疊訊號。</block>
+  <block id="1416cbe9db91fd81dc63c1829887b539" category="cell">雲端： SignalResource ^1^</block>
+  <block id="f7009d0c5cdab5611fde5f9414c37a0e" category="cell">將範本建立的 EC2 角色新增至 EC2 的執行個體設定檔，以允許 EC2 上的指令碼存取部署所需的資源。</block>
+  <block id="d734a02593a16de307a6ba72b9e0a84f" category="cell">IAM：AddRoleToInstanceProfile</block>
+  <block id="ce91a00f6cef165d609e486730182902" category="cell">為 EC2 建立執行個體設定檔，並附加建立的 EC2 角色。</block>
+  <block id="b099faa86e7e0f5f378356dee887478b" category="cell">IAM：CreatanceProfile</block>
+  <block id="bad5de799b0b2f309745a01fa7b6189c" category="cell">透過下列權限範本建立 EC2 角色</block>
+  <block id="3b8d1aa9f2727ee5948e48b70e7ea00b" category="cell">IAM：建立角色</block>
+  <block id="89e7b4be47aaa54d276d1ad366fc1b70" category="cell">建立連結至 EC2 服務的角色</block>
+  <block id="7e3c807aa4b373b66dd470960c2e9f71" category="cell">IAM ： CreateServiceLinkedIn 角色 ^2^</block>
+  <block id="e3533c93974bb2b94bee38079eb37f95" category="cell">刪除部署期間為驗證節點所建立的執行個體設定檔</block>
+  <block id="c23cf794dff78b49a2406145038d63f5" category="cell">IAM：刪除InstanceProfile</block>
+  <block id="184acb4bd7b37bac551f64e72c698e40" category="cell">取得角色和原則詳細資料，以判斷權限的任何落差，並驗證部署</block>
+  <block id="1b72ea42268df79e8b8c58a6c28ab91d" category="cell">IAM ： GetPolicy</block>
+  <block id="a6c634a4e99b80a9f2c937d0885d7d43" category="cell">IAM ： GetPolicyVersion</block>
+  <block id="9dcf380856979ca5b723d30e996e1f95" category="cell">IAM：GetRole</block>
+  <block id="2ad5269d2180ed393f607533a742dcc2" category="cell">IAM ： GetRolePolicy</block>
+  <block id="fd6d0a592ebf56adcc6719ff9c41ea19" category="cell">IAM ： GetUser</block>
+  <block id="1300bb0b2d5337dd80d8130e10aee777" category="cell">將建立的角色傳遞給 EC2 執行個體</block>
+  <block id="eff488019d67772cc4bfc3a5c12062ba" category="cell">IAM ： PassRole ^3^</block>
+  <block id="e75b4c8e7c0d0c2ee68e411f4fb56cf4" category="cell">將具有必要權限的原則新增至所建立的 EC2 角色</block>
+  <block id="a6e64d0684dcf803ad58d40684383bb9" category="cell">IAM：Putt角色 原則</block>
+  <block id="09ff084e5cc884cadc645fe74ab08f47" category="cell">從已配置的 EC2 執行個體設定檔中分離角色</block>
+  <block id="b5a94c08b69b4b7f78637d9e9362ee11" category="cell">IAM：RemoveRoleFromInstanceProfile</block>
+  <block id="ae7064637293927badfc083eaa1afe44" category="cell">驗證角色中可用的權限，並與所需的權限進行比較</block>
+  <block id="19f5de89e4c667692a153296018e225f" category="cell">IAM ： SimulatePrincipalPolicy</block>
+  <block id="291798398943ff81aecb072ccb31136f" category="list-text">權限僅限於從 WLMDB 開始的資源。</block>
+  <block id="8871e7455cbf17c8190fb2c27de4cb92" category="list-text">"IAM:CreateServiceLinkedIn Role" 受 "iam:AWSServiceName" 限制： "ec2.amazonaws.com"*</block>
+  <block id="a7170e00216d426ffa1b5c8b1ad8faf2" category="list-text">"IAM:PassRole" 受 "iAM:PassedToService" 限制： "ec2.amazonaws.com"*</block>
+  <block id="be5d4fafcc5fc8ef08ec4bd4f076e815" category="section-title">GenAI 工作負載的權限</block>
+  <block id="c01e6e48c9dd3d58f56addc8ddd893e8" category="paragraph">VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限，可根據您所在的作業模式，在公有雲環境中管理資源和程序。</block>
+  <block id="bc3cde15ee34ad6f9b8ff7079275d49d" category="paragraph">GenAI IAM 原則僅適用於操作模式：</block>
+  <block id="fc52d9d99561c2b721d43bdd4d36b615" category="example-title">GenAI 工作負載的 IAM 原則</block>
+  <block id="2d8cf1aba2af04b1b4fd9bd3d7d6905f" category="paragraph">下表提供 GenAI 工作負載權限的詳細資料。</block>
+  <block id="64f5bb9f44fff01f3adc6fad9e6240f7" category="example-title">GenAI 工作負載的權限表</block>
+  <block id="2da64493d99b5866c2a1571539ca109c" category="cell">在部署和重建作業期間建立 AI 引擎雲端堆疊</block>
+  <block id="97abe2026f8952be2f4f064f2d5ed867" category="cell">建立 AI 引擎雲端堆疊</block>
+  <block id="d8ebc3cad3265793548294b79abf1ac6" category="cell">列出 AI 引擎部署精靈的區域</block>
+  <block id="6f82cd163096069b261bdc23e2bfec17" category="cell">顯示 AI 引擎標籤</block>
+  <block id="684a1bfe5fbc91f18d96de978a7df58a" category="cell">EC2：取消標示</block>
+  <block id="35fed029b904597b41d06fba8d15299d" category="cell">在建立 AI 引擎堆疊之前列出 VPC 端點</block>
+  <block id="d26a873905a02242e94cfda68db0c843" category="cell">EC2 ： CreateVpcEndpoint</block>
+  <block id="4f6009e4cc9f9d0249a22b9e3c5ab9f0" category="cell">在部署和重建作業期間，在 AI 引擎堆疊建立期間建立 AI 引擎安全性群組</block>
+  <block id="c44890ed155f5fc1b7589d1d6c12785a" category="cell">在部署和重建作業期間，標記由 AI 引擎堆疊建立所建立的資源</block>
+  <block id="071c42384a4bff95d3acc47d90766c9b" category="cell">在 AI 引擎部署精靈期間列出 VPC</block>
+  <block id="4f919096830cc8f8b86b770de27e4573" category="cell">列出在 ai 引擎部署精靈上的子網路</block>
+  <block id="7ba2aa86177ae5f0d7e3b4e5766bad67" category="cell">在 AI 引擎部署和重建期間取得路由表</block>
+  <block id="7245f0c5139bb046010a68b69a264eca" category="cell">在 AI 引擎部署精靈期間列出金鑰配對</block>
+  <block id="b28eb58d1a1db0c0afa78fe12cf5fb01" category="cell">在 AI 引擎堆疊建立期間列出安全性群組（以在私有端點上尋找安全性群組）</block>
+  <block id="cadead4b7ef1e118402cbe1b8d9567ab" category="cell">取得 VPC 端點，判斷是否應在 AI 引擎部署期間建立任何端點</block>
+  <block id="f8022dadecc2f9ce9937bc1108cb6290" category="cell">列出執行個體以瞭解 AI 引擎狀態</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="cell">疑難排解</block>
+  <block id="66225a6c05fbef258e73728898744db8" category="cell">在部署和重建作業期間，列出 AI 引擎堆疊建立期間的映像</block>
+  <block id="51af837b20896f9dfb54da2ae0062d73" category="cell">在部署和重建作業期間建立 AI 執行個體堆疊期間，建立和更新 AI 執行個體和私有端點安全群組</block>
+  <block id="effc62a026ed8a4a114329bdc528d625" category="cell">在部署和重建作業期間，在雲端堆疊建立期間執行 AI 引擎</block>
+  <block id="8db0f3adf91a39cebe582faf96db2426" category="cell">在部署和重建作業期間，在堆疊建立期間附加安全群組並修改 AI 引擎的規則</block>
+  <block id="70d1598e70f9b135b09469bea7b082e5" category="cell">在 AI 引擎部署期間查詢 Amazon bedrock / Amazon CloudWatch 記錄狀態</block>
+  <block id="e8a46aee8aa47b78b90b155b227afbc9" category="cell">Bedrock:GetModelInvocationLoggingConfiguration</block>
+  <block id="499f8014a8d4d99806abf03c9dd3a314" category="cell">以初始化對其中一個基礎模式的聊天要求</block>
+  <block id="00fe52afa6e3b9a0d389f529a2b88242" category="cell">Bedrock ： InvokeModelWithResponseStream</block>
+  <block id="d3514773d1692fd740afde54cdaaa7b0" category="cell">開始對基礎模型進行聊天 / 嵌入要求</block>
+  <block id="93804e96d3f417a0088c564647dd28e9" category="cell">Bedrock ： InvokeModel</block>
+  <block id="65294ced72c6aa8f05b632194559e081" category="cell">顯示區域中可用的基礎模型</block>
+  <block id="66613086b6208ec265a60220a21ff40a" category="cell">Bedrock:ListFoundationModels</block>
+  <block id="8a71d22cd00a39460a071b070099b8d6" category="cell">驗證對基礎模型的存取</block>
+  <block id="c812f1cb829c6d16da192b12e04d78ff" category="cell">Bedrock:GetFoundationModelAvailability</block>
+  <block id="77771f1732da043133eab422a7e43291" category="cell">在 AI 引擎精靈期間取得支援 FSX 和 Bedrock 的區域</block>
+  <block id="d4f0fee980f03c8a663dda4a1d3623de" category="cell">在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像</block>
+  <block id="302112cb321a929a6d9830e917817acb" category="cell">S10:GetParameters</block>
+  <block id="37cc48b6baed18a8130ec18d97544390" category="cell">從傳送至 AI 引擎的命令取得 SSM 回應</block>
+  <block id="97128676550f404369a4900a6b92a6a7" category="cell">檢查與 AI 引擎的 SSM 連線</block>
+  <block id="98c5cc885360f80a84c57ec1044622dc" category="cell">在部署和重建作業期間，於堆疊建立期間建立 AI 引擎執行個體設定檔</block>
+  <block id="7f862a4b8fc22b0af5dda5c9ababa346" category="cell">IAM ： TagRole</block>
+  <block id="f6ae0a8a1321975a6474722dcafe1322" category="cell">IAM：密碼</block>
+  <block id="8c9e5ebe3c2f413a71e0fdc004587e34" category="cell">驗證角色中可用的權限，並在部署和重新建置作業期間，與所需的權限進行比較</block>
+  <block id="759ffbd9c30a98856442b965585a3d8b" category="cell">在「建立知識庫」精靈中列出 FSX 檔案系統</block>
+  <block id="11d11aa8dbaf1d4106e7ae01b6868bba" category="cell">知識庫建立</block>
+  <block id="004bee7d3b6c6b82f20b73d6e431ab0d" category="cell">在「建立知識庫」精靈中列出 FSX 檔案系統磁碟區</block>
+  <block id="8b4d32b772896acf285601d5cb629206" category="cell">在重建作業期間，管理 AI 引擎的知識庫</block>
+  <block id="80b6c276377dba072ef8005fb1d28449" category="cell">在「建立知識庫」精靈中列出 FSX 檔案系統儲存虛擬機器</block>
+  <block id="50ed17d5232c875f8ad42bc76592a63c" category="cell">將知識庫移至新執行個體</block>
+  <block id="a25a265c7f4f2cde7c7a15838d3f1021" category="cell">FSX ： UntagResource</block>
+  <block id="9f4a3990e86e58c629dd4042743dc489" category="cell">在重建期間管理 AI 引擎上的知識庫</block>
+  <block id="2df687d3aa85502af55f4a9cf17b5b8d" category="cell">FSX ： TagResource</block>
+  <block id="58cce26ec46dea767f28067a2aadecbf" category="cell">以安全的方式儲存 SSM 機密（ ECR 權杖， CIFS 認證，租賃服務帳戶金鑰）</block>
+  <block id="6cdfe2c5f0e0f28290eadae29ccbb913" category="cell">SSM) ： GetParameter</block>
+  <block id="5df0bb9577b967295f5ff5c94274a01c" category="cell">SSM) ： Puttarameter</block>
+  <block id="75b38f707a1d195e422d6e573dc005ec" category="cell">確認在部署和重建作業期間需要建立 CloudWatch 記錄群組</block>
+  <block id="99a70cb6d5b807589a0a1aa9bbcfea7d" category="cell">記錄： DescribeLogGroups</block>
+  <block id="8e31dab0a6f4117f41c0112b93f0f77d" category="cell">在部署和重建作業期間，將 AI 引擎記錄傳送至 CloudWatch 記錄群組</block>
+  <block id="9c72603737d6e2074ae7fab048b5d3d1" category="cell">記錄： PutRetentionPolicy</block>
+  <block id="bece71a215bda1e5c99fabe57fe47c24" category="cell">將 AI 引擎記錄傳送至 CloudWatch 記錄群組</block>
+  <block id="154706d25e6c48e7a1675266f50bca88" category="cell">從 CloudWatch 取得 SSM 回應（當回應時間過長時）</block>
+  <block id="b9f69a856f0b78c0908e042e6d0fda54" category="cell">記錄： DescribeLogStreams</block>
+  <block id="ff841e88d97bf6f5d4734b33cfac01ac" category="cell">從 CloudWatch 取得 SSM 回應</block>
+  <block id="6d952035baa97bd601f4d280f10fcc53" category="cell">記錄檔： GetLogEvents</block>
+  <block id="8dbffbc5258110d76ccbf445f1d44774" category="cell">在部署和重建作業期間，建立 CloudWatch 記錄群組，以供堆疊重新整理期間的基礎記錄檔使用</block>
+  <block id="3332885fc7b64062d9405bcdf57a9334" category="section-title">VMware 工作負載的權限</block>
+  <block id="1d33843eea5e12818124076de04b4a65" category="example-title">適用於 VMware 工作負載的 IAM 原則</block>
+  <block id="9e7d53cad3dc8e62b48821ac33e69a99" category="open-title">操作模式</block>
+  <block id="e87b88b1ae053b847cb60dcd1d96e6ee" category="paragraph">下表提供 VMware 工作負載權限的詳細資料。</block>
+  <block id="e0df1a71ae70fb0909b9e26f9400e56e" category="example-title">VMware 工作負載的權限表</block>
+  <block id="f82dcfe0928b7d309053f8e9481fd1c3" category="cell">取得所選環境中的 VPC 以完成部署表單</block>
+  <block id="bae51bed797803e412f1bd866a7c3e35" category="cell">取得所選環境中的子網路以完成部署表單</block>
+  <block id="32d15d23524570399aa6475eee91fc97" category="cell">取得所選環境中的安全性群組，以完成部署表單</block>
+  <block id="25be283f9030ec46c0c159d1ba212759" category="cell">取得所選環境中的可用性區域</block>
+  <block id="33e595f0fd43192e3f1d28a291860881" category="cell">EC2 ：去除可用性區域</block>
+  <block id="c185b1c97f56da1a37001d7d59a23323" category="cell">透過 Amazon FSX for NetApp ONTAP 支援取得地區資訊</block>
+  <block id="664a21c3d3b14b815d9e2f22f54ea96d" category="cell">取得 KMS 金鑰的別名，以用於 Amazon FSX 進行 NetApp ONTAP 加密</block>
+  <block id="3836c2d0cbf1328a19f9fd800197a908" category="cell">取得 KMS 金鑰以用於 Amazon FSX 的 NetApp ONTAP 加密</block>
+  <block id="124cb22dd64f00d25ba53e9ce97e284c" category="cell">取得 KMS 金鑰到期詳細資料，以用於 Amazon FSX 進行 NetApp ONTAP 加密</block>
+  <block id="97816c12e4ea86e2c8f19bd90f6b0eef" category="cell">以 SSM 為基礎的查詢可用來取得適用於 NetApp ONTAP 支援地區的 Amazon FSX 更新清單</block>
+  <block id="fbb8286b1a1851ed2896cad2716702ce" category="cell">為資源配置所需的 NetApp ONTAP 資源建立 Amazon FSX</block>
+  <block id="3e22fa65415dc7b385d6f07e6468153d" category="cell">取得 Amazon FSX 以取得 NetApp ONTAP 詳細資料</block>
+  <block id="f40779c61ae21b6fbb5c6964620d50db" category="cell">取得 KMS 金鑰詳細資料，並使用 Amazon FSX 進行 NetApp ONTAP 加密</block>
+  <block id="5df883e5adda577f2fbed8edd98a6052" category="cell">列出客戶 SNS 主題，並在選取的情況下發佈至 WLMVMC 後端 SNS 和客戶 SNS</block>
+  <block id="51faf18a49599aa5875c9cc5ecd0c156" category="cell">用於擷取適用於 NetApp ONTAP 支援 AWS 區域的 Amazon FSX 最新清單</block>
+  <block id="1e40105dab96dd2107f838271dd1c482" category="cell">需要 SimulatePrincipalPolicy 來驗證角色中可用的權限，並與所需的權限進行比較</block>
+  <block id="22ebc59c28ff9c2a08d716ded9c8e998" category="cell">SSM 參數儲存區可用來儲存 Amazon FSX for NetApp ONTAP 的認證資料</block>
+  <block id="766060a05aed7395a628048f6e5d8152" category="cell">SSM) ： PuttParameters</block>
+  <block id="f5ad3adfdd57e7f67f8a97e4699177e7" category="cell">SSM/DeleteParameters</block>
+  <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">變更記錄</block>
+  <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">新增和移除權限時、我們會在下方各節中加以註記。</block>
+  <block id="009d2060a609114df262eff04e83f241" category="section-title">2025 年 1 月 22 日</block>
+  <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="sidebar">權限</block>
 </blocks>
