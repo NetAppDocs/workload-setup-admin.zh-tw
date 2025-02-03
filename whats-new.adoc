@@ -17,7 +17,21 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 == 2025 年 02 月 2 日
 
-包括： _whatsnew/2025-02-02.adoc []
+
+
+=== CloudShell 可在 BlueXP  工作負載原廠主控台取得
+
+CloudShell 可從 BlueXP  工作負載原廠主控台的任何位置取得。CloudShell 可讓您使用 BlueXP  帳戶提供的 AWS 和 ONTAP 認證，並在類似 Shell 的環境中執行 AWS CLI 命令或 ONTAP CLI 命令。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["使用 CloudShell"]
+
+
+
+=== 資料庫的權限更新
+
+現在，下列權限可在 _read_ 模式下用於資料庫： `iam:SimulatePrincipalPolicy`。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["權限參考變更記錄"]
 
 
 
