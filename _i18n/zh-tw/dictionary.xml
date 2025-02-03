@@ -595,7 +595,6 @@
   <block id="897945ecf5c18d38834da2efd9b74699" category="list-text">在刪除服務帳戶對話方塊的文字方塊中輸入 * 刪除 * 。</block>
   <block id="6b7a52834d577f2e4ac4d587036728f4" category="list-text">選擇 * 刪除 * 以確認刪除。</block>
   <block id="0b296fc415fe75b2e0eb7ea5db103354" category="paragraph">服務帳戶即會刪除。</block>
-  <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">2025 年 1 月 05 日</block>
   <block id="99b22223be957cc9c37eee0aecb2007b" category="list-text">服務帳戶可促進自動化</block>
   <block id="cb62deea87371902deaeb1b0a009e387" category="list-text">使用服務帳戶來安全可靠地自動化 BlueXP  工作負載工廠作業。服務帳戶提供可靠，持久的自動化功能，不受任何使用者管理限制，而且更安全，因為它們只提供 API 存取。</block>
   <block id="13b1a844b08d2d7b8144e4c0db6b5552" category="paragraph">建立帳戶時，您是該帳戶的單一 _account admin_ 使用者。</block>
@@ -963,4 +962,86 @@
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">新增和移除權限時、我們會在下方各節中加以註記。</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025 年 1 月 22 日</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="sidebar">權限</block>
+  <block id="e2cc7d8ef2a865dce7c7e225dd72d92c" category="doc">CloudShell 可在 BlueXP  工作負載原廠主控台取得</block>
+  <block id="7f1ab9d2ad99562dfd8cff4cb4c70b29" category="paragraph">CloudShell 可從 BlueXP  工作負載原廠主控台的任何位置取得。CloudShell 可讓您使用 BlueXP  帳戶提供的 AWS 和 ONTAP 認證，並在類似 Shell 的環境中執行 AWS CLI 命令或 ONTAP CLI 命令。</block>
+  <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">使用 CloudShell</block>
+  <block id="2004b4ad1feb57e1e4505f5888cfbb60" category="paragraph"><block ref="2004b4ad1feb57e1e4505f5888cfbb60" category="inline-link-macro-rx"></block></block>
+  <block id="f3a98886e89c22ab1a8df16ff87d5b3c" category="section-title">資料庫的權限更新</block>
+  <block id="0d8e78270e3796caacf42c07616b7e32" category="paragraph">現在，下列權限可在 _read_ 模式下用於資料庫：<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>。</block>
+  <block id="6cff628e35cc5d429a57e4a125a0bf6b" category="inline-link-macro">權限參考變更記錄</block>
+  <block id="86fbb6c90e401f3291e15bdc1398509c" category="paragraph"><block ref="86fbb6c90e401f3291e15bdc1398509c" category="inline-link-macro-rx"></block></block>
+  <block id="3528b115bbe0e91f700d310d0ea17581" category="section-title">2025 年 3 月 2 日</block>
+  <block id="f178e0fd9fcc4b5a6fc2d338458b6cd3" category="summary">您可以從 BlueXP  工作負載原廠使用者介面的任何位置使用 CloudShell 來發出 AWS 或 ONTAP CLI 命令。</block>
+  <block id="922fc3bba93bebc201e0899daa104cdf" category="doc">在 BlueXP  工作負載工廠中使用 CloudShell</block>
+  <block id="d59a89cea13e89eca14a0cc511502b8f" category="paragraph">開啟 CloudShell ，從 BlueXP  工作負載原廠使用者介面的任何位置執行 AWS 或 ONTAP CLI 命令。</block>
+  <block id="04c6abdf6dfbe761a16c8603f6d0f6f2" category="paragraph">CloudShell 可讓您在類似 Shell 的環境中，從 BlueXP  工作負載工廠使用者介面中執行 AWS CLI 命令或 ONTAP CLI 命令。它模擬瀏覽器中的終端工作階段，透過工作負載工廠的後端提供終端機功能和代理訊息。它可讓您使用 BlueXP  帳戶中提供的 AWS 認證和 ONTAP 認證。</block>
+  <block id="65b336958c485c86a0de553a015bdd0d" category="paragraph">CloudShell 的功能包括：</block>
+  <block id="a7a0775c1947243b3a6c24c48bdea382" category="list-text">多個 CloudShell 工作階段：一次部署多個 CloudShell 工作階段，同時發出多個命令序列，</block>
+  <block id="d62fc5a6d3868c32bb1ab00a844b9d65" category="list-text">多重檢視：分割 CloudShell 標籤工作階段，讓您可以同時水平或垂直檢視兩個或多個標籤</block>
+  <block id="cc086be288b80495cadf609c200395fd" category="list-text">工作階段重新命名：視需要重新命名工作階段</block>
+  <block id="8971c7670b135c8f559b79a967c153d7" category="list-text">上次工作階段內容持續性：如果您錯誤地關閉上次工作階段，請重新開啟</block>
+  <block id="063f6a4e6ec0e1b2436c14b2b5aec12a" category="list-text">設定偏好設定：變更字型大小和輸出類型</block>
+  <block id="7ecafb2a126ddd20e4af39475aaaa9e2" category="paragraph">CloudShell 可在 AWS 認證的內容中運作。若要使用 CloudShell ，您必須提供至少一個 AWS 認證。</block>
+  <block id="3fd37cbd3ed011cecdd18aadab5eafb3" category="admonition">CloudShell 可讓您執行任何 AWS 或 ONTAP CLI 命令。不過，如果您想要在適用於 ONTAP 檔案系統的 FSX 內容中工作，請確定您發出下列命令<block ref="c984027e1f41d301c7393346780a9c16" prefix=" " category="inline-code"></block>：。</block>
+  <block id="29c424808b1ff1c13d6bb81e6a7b5b05" category="section-title">部署 CloudShell</block>
+  <block id="0fdd6dc99919df7360b4ae27d37e8f3e" category="paragraph">您可以從 BlueXP  工作負載原廠主控台的任何位置部署 CloudShell 。您也可以從適用於 ONTAP 檔案系統的 FSX 中，從儲存設備部署 CloudShell 。</block>
+  <block id="323c6e4cf955d16e1bbc9adae1670cc3" category="open-title">從工作負載原廠主控台部署</block>
+  <block id="09ce4b6ae45502f8fa436097be0ef8b5" category="list-text">從上方導覽列開啟 CloudShell 。</block>
+  <block id="cad3d7ac91ea604173406c363b1c63e6" category="inline-image-macro">螢幕擷取畫面顯示上方導覽列中的 CloudShell 圖示。</block>
+  <block id="f2aa98d11c37bcff3a3e0de6af22abc7" category="paragraph"><block ref="f2aa98d11c37bcff3a3e0de6af22abc7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="22d4fda2b81cb432d82aec18ba8a3c56" category="list-text">選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。</block>
+  <block id="646a59dbe0b61f54c34bfd556c65da3b" category="inline-image-macro">顯示新 CloudShell 工作階段的螢幕擷取畫面。</block>
+  <block id="700a03c5329ddd167df74b66d20ca912" category="paragraph"><block ref="700a03c5329ddd167df74b66d20ca912" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3435647271a6f955b1a9177ac9e55baf" category="list-text">輸入<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>以檢視可用的 CloudShell 命令和指示，或參閱下列 CLI 參考文件以取得可用的命令：</block>
+  <block id="ad66291ec1106821b643e94161ce6191" category="inline-link-macro">AWS CLI 參考</block>
+  <block id="46f635b4cd68f38d7206ff7454204e70" category="list-text"><block ref="2f97a9fa9f38cdeb484a5dd5f6b91a96" category="inline-link-macro-rx"></block>：對於與 ONTAP 的 FSX 相關的命令，請選擇 *fsx* 。</block>
+  <block id="37888f4436a67135b7af33cedc29e2a9" category="inline-link-macro">ONTAP CLI 參考</block>
+  <block id="007f7ecbc75b3fc0bafefe8712e42e55" category="list-text"><block ref="007f7ecbc75b3fc0bafefe8712e42e55" category="inline-link-macro-rx"></block></block>
+  <block id="c344cbcae2dab0cb8147a60d8f43f903" category="list-text">在 CloudShell 工作階段中發出命令。</block>
+  <block id="2103942a2c420bdeb15390d88e350838" category="open-title">從儲存設備部署</block>
+  <block id="b8613e46a68d4b177aeb2fe1cdab9b07" category="list-text">在 * 儲存 * 中、選取 * 移至儲存設備詳細目錄 * 。</block>
+  <block id="a1c8ad0ac4339ad1c44f047ff8456c56" category="list-text">在 * 適用於 ONTAP * 的 FSX 標籤中，選取檔案系統的三點功能表，然後選取 * 開啟 CloudShell* 。</block>
+  <block id="b15f76b63a4ca4ca1577f8fc396e80d3" category="paragraph">CloudShell 工作階段會在所選檔案系統的內容中開啟。</block>
+  <block id="207a95a0a302452a35a77c4fbbf38905" category="paragraph">您可以選取開啟的 CloudShell 工作階段索引標籤的三點功能表，來完成此螢幕擷取畫面中顯示的 CloudShell 工作。這些工作的指示如下。</block>
+  <block id="54fb61e4e09baa57bff32158fe5c05cb" category="inline-image-macro">螢幕擷取畫面會顯示 CloudShell 索引標籤的三點功能表，其中包含重新命名，複製，關閉其他索引標籤，以及全部關閉等選項。</block>
+  <block id="81a9e8038945d6142798001db5770332" category="paragraph"><block ref="81a9e8038945d6142798001db5770332" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3efc66df7492b3ffcca7a9721a7b5bcc" category="section-title">重新命名 CloudShell 工作階段索引標籤</block>
+  <block id="633842af0eac9ec747edc78eddad128c" category="paragraph">您可以重新命名 CloudShell 工作階段索引標籤，以協助識別工作階段。</block>
+  <block id="cfd31b2e21a02f206d5c236d2b9cddf2" category="list-text">選取 CloudShell 工作階段索引標籤的三點功能表。</block>
+  <block id="6f8614f1580cf2c6afb8b45a067936bf" category="list-text">選取*重新命名*。</block>
+  <block id="9cf2d3245c37df3eca3de9544c3be83f" category="list-text">輸入工作階段索引標籤的新名稱，然後在索引標籤名稱外按一下以設定新名稱。</block>
+  <block id="85a4b155e3f69dff8dc321d64a863777" category="paragraph">新名稱會出現在 CloudShell 工作階段索引標籤中。</block>
+  <block id="6f5df5463043b5950f21e2038f72f759" category="section-title">複製 CloudShell 工作階段索引標籤</block>
+  <block id="4430066cba5e021308c2bf62f61c68fb" category="paragraph">您可以複製 CloudShell 工作階段索引標籤，以建立具有相同名稱，認證和區域的新工作階段。原始標籤中的程式碼不會複製到複製標籤中。</block>
+  <block id="3cf3a984f792c68d00d0ddbaa1549d75" category="list-text">選擇 * 複製 * 。</block>
+  <block id="ef0a97806db7327ef0ffc41183dfb3ff" category="paragraph">新索引標籤會出現，其名稱與原始索引標籤相同。</block>
+  <block id="b5e93baec9c74e7bd6b5a08deee3472e" category="section-title">關閉 CloudShell 工作階段索引標籤</block>
+  <block id="f7dad63311508db89de89b4d4c87204f" category="paragraph">您可以一次關閉一個 CloudShell 索引標籤，關閉其他您不使用的索引標籤，或一次關閉所有索引標籤。</block>
+  <block id="36ddaebda56a8c215a8dfff5eb57566d" category="list-text">選取下列其中一項：</block>
+  <block id="e94cd98358b7ef706b5e6a1eb425d7a4" category="list-text">在 CloudShell 索引標籤視窗中選取「 X 」，一次關閉一個索引標籤。</block>
+  <block id="20bd292386015ab9bbf9bdc545a29f61" category="list-text">選取 * 關閉其他索引標籤 * 以關閉所有其他開啟的索引標籤，但您正在使用的索引標籤除外。</block>
+  <block id="a821da3cfb5781e50da687cb8168975d" category="list-text">選取 * 關閉所有索引標籤 * 以關閉所有索引標籤。</block>
+  <block id="11d45033000825cfe02455065881779c" category="paragraph">選取的 CloudShell 工作階段索引標籤會關閉。</block>
+  <block id="eb36a9996d7071d8a3bc88081958259f" category="section-title">分割 CloudShell 工作階段索引標籤</block>
+  <block id="2abf2b468b90d47cd40da1682f6e0bc4" category="paragraph">您可以分割 CloudShell 工作階段索引標籤，同時檢視兩個或多個索引標籤。</block>
+  <block id="48c7c41b72e1d678923ce3571aa65b2d" category="paragraph-title">步驟</block>
+  <block id="f70a8087804334c46314b7b22718eba7" category="paragraph">將 CloudShell 工作階段索引標籤拖放到 CloudShell 視窗的頂端，底部，左側或右側，即可分割檢視。</block>
+  <block id="b4473fd670e2ec43e4f656fe655a4c35" category="inline-image-macro">顯示兩個 CloudShell 標籤水平分割的螢幕擷取畫面。索引標籤會並排顯示。</block>
+  <block id="541a26908a416cf0911d9e5231d0ef74" category="paragraph"><block ref="541a26908a416cf0911d9e5231d0ef74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15bbc14ab214ce8d22cbbdfdf319d828" category="section-title">重新開啟您上次的 CloudShell 工作階段</block>
+  <block id="240c3daa75057ab498529c248f565139" category="paragraph">如果您意外關閉 CloudShell 工作階段，您可以重新開啟。</block>
+  <block id="470f69d1d15931435b3d98ec0fa93480" category="paragraph">選取頂端導覽列中的 CloudShell 圖示。</block>
+  <block id="d6bae394f1010742fdae7b1244f45c40" category="paragraph">最新的 CloudShell 工作階段隨即開啟。</block>
+  <block id="dfaeb18551197bed5eec6a2801accd3b" category="section-title">更新 CloudShell 工作階段的設定</block>
+  <block id="433acad846fd0b916086af8f4f657288" category="paragraph">您可以更新 CloudShell 工作階段的字型和輸出類型設定。</block>
+  <block id="7e043e4b9a91037ca7facea7bf7d8146" category="list-text">部署 CloudShell 工作階段。</block>
+  <block id="50cb43a7d46bd9c81dad143a5e033ab1" category="list-text">在 CloudShell 索引標籤中，選取設定圖示。</block>
+  <block id="6269d6cf5220cae8555012542cd08042" category="paragraph">設定對話方塊隨即出現。</block>
+  <block id="42298888a13205e4322dcd9225293f7d" category="list-text">視需要更新字型大小和輸出類型。</block>
+  <block id="8fe373598a4f9c7a1934291e23665c0d" category="admonition">豐富輸出適用於 JSON 物件和表格格式。所有其他輸出都會以純文字顯示。</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">選擇*應用*。</block>
+  <block id="e266fd38895bd2f3c549295f4bc59641" category="paragraph">CloudShell 設定已更新。</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025 年 02 月 2 日</block>
+  <block id="3bc27c585525ff1458c1330314a77ebb" category="paragraph">包括： _whatsnew/2025-02-02.adoc []</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
 </blocks>

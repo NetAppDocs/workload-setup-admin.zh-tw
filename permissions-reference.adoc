@@ -1373,7 +1373,11 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 | 從已配置的 EC2 執行個體設定檔中分離角色 | IAM：RemoveRoleFromInstanceProfile | 部署 | 自動化 
 
 
-| 驗證角色中可用的權限，並與所需的權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
+| 驗證角色中可用的權限，並與所需的權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署  a| 
+* 讀取
+* 自動化
+
+
 |===
 . 權限僅限於從 WLMDB 開始的資源。
 . "IAM:CreateServiceLinkedIn Role" 受 "iam:AWSServiceName" 限制： "ec2.amazonaws.com"*
@@ -2073,3 +2077,9 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2025 年 3 月 2 日
+
+現在，下列權限可在 _read_ 模式下用於資料庫： `iam:SimulatePrincipalPolicy`。

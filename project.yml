@@ -51,6 +51,8 @@ sidebar:
         url: "/codebox-automation.html"
       - title: 使用 Codebox 產生程式碼
         url: "/use-codebox.html"
+    - title: 使用 CloudShell
+      url: "/use-cloudshell.html"
     - title: 移除認證資料
       url: "/manage-credentials.html"
   - title: 知識與支援

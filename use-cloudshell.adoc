@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: use-cloudshell.html 
+keywords: cloudshell, command line, aws cli, ontap cli, bluexp workload factory, workload factory 
+summary: 您可以從 BlueXP  工作負載原廠使用者介面的任何位置使用 CloudShell 來發出 AWS 或 ONTAP CLI 命令。 
+---
+= 在 BlueXP  工作負載工廠中使用 CloudShell
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+開啟 CloudShell ，從 BlueXP  工作負載原廠使用者介面的任何位置執行 AWS 或 ONTAP CLI 命令。
+
+
+
+== 關於這項工作
+
+CloudShell 可讓您在類似 Shell 的環境中，從 BlueXP  工作負載工廠使用者介面中執行 AWS CLI 命令或 ONTAP CLI 命令。它模擬瀏覽器中的終端工作階段，透過工作負載工廠的後端提供終端機功能和代理訊息。它可讓您使用 BlueXP  帳戶中提供的 AWS 認證和 ONTAP 認證。
+
+CloudShell 的功能包括：
+
+* 多個 CloudShell 工作階段：一次部署多個 CloudShell 工作階段，同時發出多個命令序列，
+* 多重檢視：分割 CloudShell 標籤工作階段，讓您可以同時水平或垂直檢視兩個或多個標籤
+* 工作階段重新命名：視需要重新命名工作階段
+* 上次工作階段內容持續性：如果您錯誤地關閉上次工作階段，請重新開啟
+* 設定偏好設定：變更字型大小和輸出類型
+
+
+
+
+== 開始之前
+
+CloudShell 可在 AWS 認證的內容中運作。若要使用 CloudShell ，您必須提供至少一個 AWS 認證。
+
+
+NOTE: CloudShell 可讓您執行任何 AWS 或 ONTAP CLI 命令。不過，如果您想要在適用於 ONTAP 檔案系統的 FSX 內容中工作，請確定您發出下列命令 `using fsx <file-system-name>`：。
+
+
+
+== 部署 CloudShell
+
+您可以從 BlueXP  工作負載原廠主控台的任何位置部署 CloudShell 。您也可以從適用於 ONTAP 檔案系統的 FSX 中，從儲存設備部署 CloudShell 。
+
+[role="tabbed-block"]
+====
+.從工作負載原廠主控台部署
+--
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 從上方導覽列開啟 CloudShell 。
++
+image:screenshot-select-cloudshell-icon.png["螢幕擷取畫面顯示上方導覽列中的 CloudShell 圖示。"]
+
+. 選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。
++
+image:screenshot-deploy-cloudshell-session.png["顯示新 CloudShell 工作階段的螢幕擷取畫面。"]
+
+. 輸入 `help`以檢視可用的 CloudShell 命令和指示，或參閱下列 CLI 參考文件以取得可用的命令：
++
+** link:https://docs.aws.amazon.com/cli/latest/reference/["AWS CLI 參考"^]：對於與 ONTAP 的 FSX 相關的命令，請選擇 *fsx* 。
+** link:https://docs.netapp.com/us-en/ontap-cli/["ONTAP CLI 參考"^]
+
+
+. 在 CloudShell 工作階段中發出命令。
+
+
+--
+.從儲存設備部署
+--
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 在 * 儲存 * 中、選取 * 移至儲存設備詳細目錄 * 。
+. 在 * 適用於 ONTAP * 的 FSX 標籤中，選取檔案系統的三點功能表，然後選取 * 開啟 CloudShell* 。
++
+CloudShell 工作階段會在所選檔案系統的內容中開啟。
+
+. 輸入 `help`以檢視可用的 CloudShell 命令和指示，或參閱下列 CLI 參考文件以取得可用的命令：
++
+** link:https://docs.aws.amazon.com/cli/latest/reference/["AWS CLI 參考"^]：對於與 ONTAP 的 FSX 相關的命令，請選擇 *fsx* 。
+** link:https://docs.netapp.com/us-en/ontap-cli/["ONTAP CLI 參考"^]
+
+
+. 在 CloudShell 工作階段中發出命令。
+
+
+--
+====
+您可以選取開啟的 CloudShell 工作階段索引標籤的三點功能表，來完成此螢幕擷取畫面中顯示的 CloudShell 工作。這些工作的指示如下。
+
+image:screenshot-cloudshell-tab-menu.png["螢幕擷取畫面會顯示 CloudShell 索引標籤的三點功能表，其中包含重新命名，複製，關閉其他索引標籤，以及全部關閉等選項。"]
+
+
+
+== 重新命名 CloudShell 工作階段索引標籤
+
+您可以重新命名 CloudShell 工作階段索引標籤，以協助識別工作階段。
+
+.步驟
+. 選取 CloudShell 工作階段索引標籤的三點功能表。
+. 選取*重新命名*。
+. 輸入工作階段索引標籤的新名稱，然後在索引標籤名稱外按一下以設定新名稱。
+
+
+.結果
+新名稱會出現在 CloudShell 工作階段索引標籤中。
+
+
+
+== 複製 CloudShell 工作階段索引標籤
+
+您可以複製 CloudShell 工作階段索引標籤，以建立具有相同名稱，認證和區域的新工作階段。原始標籤中的程式碼不會複製到複製標籤中。
+
+.步驟
+. 選取 CloudShell 工作階段索引標籤的三點功能表。
+. 選擇 * 複製 * 。
+
+
+.結果
+新索引標籤會出現，其名稱與原始索引標籤相同。
+
+
+
+== 關閉 CloudShell 工作階段索引標籤
+
+您可以一次關閉一個 CloudShell 索引標籤，關閉其他您不使用的索引標籤，或一次關閉所有索引標籤。
+
+.步驟
+. 選取 CloudShell 工作階段索引標籤的三點功能表。
+. 選取下列其中一項：
++
+** 在 CloudShell 索引標籤視窗中選取「 X 」，一次關閉一個索引標籤。
+** 選取 * 關閉其他索引標籤 * 以關閉所有其他開啟的索引標籤，但您正在使用的索引標籤除外。
+** 選取 * 關閉所有索引標籤 * 以關閉所有索引標籤。
+
+
+
+
+.結果
+選取的 CloudShell 工作階段索引標籤會關閉。
+
+
+
+== 分割 CloudShell 工作階段索引標籤
+
+您可以分割 CloudShell 工作階段索引標籤，同時檢視兩個或多個索引標籤。
+
+.步驟
+將 CloudShell 工作階段索引標籤拖放到 CloudShell 視窗的頂端，底部，左側或右側，即可分割檢視。
+
+image:screenshot-cloudshell-split-view.png["顯示兩個 CloudShell 標籤水平分割的螢幕擷取畫面。索引標籤會並排顯示。"]
+
+
+
+== 重新開啟您上次的 CloudShell 工作階段
+
+如果您意外關閉 CloudShell 工作階段，您可以重新開啟。
+
+.步驟
+選取頂端導覽列中的 CloudShell 圖示。
+
+image:screenshot-select-cloudshell-icon.png["螢幕擷取畫面顯示上方導覽列中的 CloudShell 圖示。"]
+
+.結果
+最新的 CloudShell 工作階段隨即開啟。
+
+
+
+== 更新 CloudShell 工作階段的設定
+
+您可以更新 CloudShell 工作階段的字型和輸出類型設定。
+
+.步驟
+. 部署 CloudShell 工作階段。
+. 在 CloudShell 索引標籤中，選取設定圖示。
++
+設定對話方塊隨即出現。
+
+. 視需要更新字型大小和輸出類型。
++
+
+NOTE: 豐富輸出適用於 JSON 物件和表格格式。所有其他輸出都會以純文字顯示。
+
+. 選擇*應用*。
+
+
+.結果
+CloudShell 設定已更新。
