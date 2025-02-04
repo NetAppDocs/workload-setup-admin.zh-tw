@@ -49,11 +49,8 @@ NOTE: CloudShell 可讓您執行任何 AWS 或 ONTAP CLI 命令。不過，如�
 --
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 從上方導覽列開啟 CloudShell 。
-+
-image:screenshot-select-cloudshell-icon.png["螢幕擷取畫面顯示上方導覽列中的 CloudShell 圖示。"]
-
-. 選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。
+. 從上方導覽列開啟 CloudShell image:cloudshell-icon.png["cloudshell 圖示的螢幕擷取畫面"]。
+. 在 CloudShell 視窗中，選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。
 +
 image:screenshot-deploy-cloudshell-session.png["顯示新 CloudShell 工作階段的螢幕擷取畫面。"]
 
