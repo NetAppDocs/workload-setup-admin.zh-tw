@@ -983,8 +983,6 @@
   <block id="29c424808b1ff1c13d6bb81e6a7b5b05" category="section-title">部署 CloudShell</block>
   <block id="0fdd6dc99919df7360b4ae27d37e8f3e" category="paragraph">您可以從 BlueXP  工作負載原廠主控台的任何位置部署 CloudShell 。您也可以從適用於 ONTAP 檔案系統的 FSX 中，從儲存設備部署 CloudShell 。</block>
   <block id="323c6e4cf955d16e1bbc9adae1670cc3" category="open-title">從工作負載原廠主控台部署</block>
-  <block id="cad3d7ac91ea604173406c363b1c63e6" category="inline-image-macro">螢幕擷取畫面顯示上方導覽列中的 CloudShell 圖示。</block>
-  <block id="f2aa98d11c37bcff3a3e0de6af22abc7" category="paragraph"><block ref="f2aa98d11c37bcff3a3e0de6af22abc7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="646a59dbe0b61f54c34bfd556c65da3b" category="inline-image-macro">顯示新 CloudShell 工作階段的螢幕擷取畫面。</block>
   <block id="700a03c5329ddd167df74b66d20ca912" category="paragraph"><block ref="700a03c5329ddd167df74b66d20ca912" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3435647271a6f955b1a9177ac9e55baf" category="list-text">輸入<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>以檢視可用的 CloudShell 命令和指示，或參閱下列 CLI 參考文件以取得可用的命令：</block>
@@ -1025,7 +1023,6 @@
   <block id="541a26908a416cf0911d9e5231d0ef74" category="paragraph"><block ref="541a26908a416cf0911d9e5231d0ef74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="15bbc14ab214ce8d22cbbdfdf319d828" category="section-title">重新開啟您上次的 CloudShell 工作階段</block>
   <block id="240c3daa75057ab498529c248f565139" category="paragraph">如果您意外關閉 CloudShell 工作階段，您可以重新開啟。</block>
-  <block id="470f69d1d15931435b3d98ec0fa93480" category="paragraph">選取頂端導覽列中的 CloudShell 圖示。</block>
   <block id="d6bae394f1010742fdae7b1244f45c40" category="paragraph">最新的 CloudShell 工作階段隨即開啟。</block>
   <block id="dfaeb18551197bed5eec6a2801accd3b" category="section-title">更新 CloudShell 工作階段的設定</block>
   <block id="433acad846fd0b916086af8f4f657288" category="paragraph">您可以更新 CloudShell 工作階段的字型和輸出類型設定。</block>
@@ -1046,4 +1043,5 @@
   <block id="e2a4b0fd7ab7976168ed787ae67353e6" category="inline-image-macro">cloudshell 圖示的螢幕擷取畫面</block>
   <block id="4feffbc31d63b39c2011fe3b05c6175b" category="list-text">從上方導覽列開啟 CloudShell <block ref="22292d13795e0e4de9ba364021c92eab" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="4b44bad00f91b8450a836bfa54b0306e" category="list-text">在 CloudShell 視窗中，選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。</block>
+  <block id="7413e05cafe498b54ab1b5640cc3ba82" category="paragraph">選取 CloudShell 圖示<block ref="22292d13795e0e4de9ba364021c92eab" category="inline-image-macro-rx" type="image"></block>從上方導覽列。</block>
 </blocks>

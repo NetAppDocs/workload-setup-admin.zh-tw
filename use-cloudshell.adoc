@@ -155,9 +155,7 @@ image:screenshot-cloudshell-split-view.png["顯示兩個 CloudShell 標籤水平
 如果您意外關閉 CloudShell 工作階段，您可以重新開啟。
 
 .步驟
-選取頂端導覽列中的 CloudShell 圖示。
-
-image:screenshot-select-cloudshell-icon.png["螢幕擷取畫面顯示上方導覽列中的 CloudShell 圖示。"]
+選取 CloudShell 圖示image:cloudshell-icon.png["cloudshell 圖示的螢幕擷取畫面"]從上方導覽列。
 
 .結果
 最新的 CloudShell 工作階段隨即開啟。
