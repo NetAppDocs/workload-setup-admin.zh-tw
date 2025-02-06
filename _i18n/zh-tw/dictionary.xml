@@ -1046,4 +1046,12 @@
   <block id="7413e05cafe498b54ab1b5640cc3ba82" category="paragraph">選取 CloudShell 圖示<block ref="22292d13795e0e4de9ba364021c92eab" category="inline-image-macro-rx" type="image"></block>從上方導覽列。</block>
   <block id="a5fab0062142f5ef0615c361259b0b89" category="cell">授與角色可在適用於 ONTAP 的 FSX 與其他 AWS 服務之間提供通訊</block>
   <block id="8832fb7d0699d4878c8449616cd47613" category="cell">IAM ： CreateServiceLinkedIn 角色</block>
+  <block id="f018d84c71280c7c2350ecdc41af9036" category="cell">從 ai 引擎堆疊將加密事件發佈至 WLMAI 後端</block>
+  <block id="e3fee6f099023b5f4b39c1c744c6ea99" category="cell">kms ：解密</block>
+  <block id="5407beb6c8285b66530a423f5e1a1c44" category="cell">將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端</block>
+  <block id="85f90a8db0a64c1052007e6603c729f3" category="cell">建立 EBS 磁碟區</block>
+  <block id="9b72805c27ddeb5ac656bcddaa415cb8" category="cell">為 VMware 工作負載所建立的 NetApp ONTAP 資源標記 FSX 的自訂值</block>
+  <block id="043622d556b2884b98fb152bcf740dcd" category="cell">建立並驗證 CloudForgation 範本</block>
+  <block id="7396fdf6f4dfc93451cc96093ccbe43e" category="cell">取得 EC2 執行個體詳細資料</block>
+  <block id="1be679c04c8e52e60ad090d4b7848d64" category="cell">在部署和重建作業期間，列出堆疊建立期間的映像</block>
 </blocks>
