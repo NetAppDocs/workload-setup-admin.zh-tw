@@ -1054,4 +1054,18 @@
   <block id="043622d556b2884b98fb152bcf740dcd" category="cell">建立並驗證 CloudForgation 範本</block>
   <block id="7396fdf6f4dfc93451cc96093ccbe43e" category="cell">取得 EC2 執行個體詳細資料</block>
   <block id="1be679c04c8e52e60ad090d4b7848d64" category="cell">在部署和重建作業期間，列出堆疊建立期間的映像</block>
+  <block id="4dcec483cf1f239f85db3400f495b54a" category="cell">如果在 EC2 執行個體上的公用網路連線不存在所需服務的 VPC 端點，請建立這些端點</block>
+  <block id="5e5a90d60662f7306336a047b5b3b7f6" category="cell">在觸發部署之前，請先檢查資源的帳戶限制</block>
+  <block id="da7dbf1119bff3389296d7d9a38be487" category="cell">雲端： DescrubeAccountLimits</block>
+  <block id="e0db06144a611c9dacbb1cbdc47398a2" category="cell">檢查帳戶是否已註冊 AWS 運算最佳化工具</block>
+  <block id="68f6ffe8302b37908ab1031d603a8537" category="cell">運算最佳化工具： GetEnrollmentStatus</block>
+  <block id="e1b0fb1c7834e30cc2855e9e5978a6b2" category="cell">更新 AWS 運算最佳化工具中現有的建議偏好選項，針對 SQL Server 工作負載量提供量身打造的建議</block>
+  <block id="e7878b5da7a61064cc75fec0ae2842c4" category="cell">運算最佳化工具：推桿建議偏好設定</block>
+  <block id="e1faa0bf56d94349eb5128478fc9e6c9" category="cell">從 AWS 運算最佳化工具取得對指定資源有效的建議偏好選項</block>
+  <block id="f4003017b8bd9e7024276d1eae7c252d" category="cell">運算最佳化工具： GetEffectiveRecompendationPreferences</block>
+  <block id="bb90c212b52ea746f2de78f88fd32dfa" category="cell">取得 AWS 運算最佳化工具為 Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體所產生的建議</block>
+  <block id="1b9183fc54789ff2117d927730975ee9" category="cell">運算最佳化工具： GetEC2InstanceRecompendations</block>
+  <block id="38b28dd168a209df2daf8eaf5b0fc216" category="cell">檢查執行個體與自動縮放群組的關聯</block>
+  <block id="841ea3d3891ce9dc21992730680d4dac" category="cell">自動縮放：去除自動縮放群組</block>
+  <block id="9d85d66bd60c64faffe2799f428cd8b3" category="cell">自動縮放：去除自動縮放的實例</block>
 </blocks>

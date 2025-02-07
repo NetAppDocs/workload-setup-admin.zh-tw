@@ -763,6 +763,9 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 
 
+| 如果在 EC2 執行個體上的公用網路連線不存在所需服務的 VPC 端點，請建立這些端點 | EC2 ： CreateVpcEndpoint | 部署 | 自動化 
+
+
 | 取得適用於驗證節點的區域執行個體類型（ T2.micro/T3.micro ） | EC2 ： DescrubeInstanceTypeOffing | 部署  a| 
 * 讀取
 * 自動化
@@ -810,6 +813,13 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 
 | 取得在環境中執行的 CloudForgation 堆疊清單，以檢查配額限制 | 雲端：清單堆疊 | 部署  a| 
+* 讀取
+* 自動化
+
+
+
+
+| 在觸發部署之前，請先檢查資源的帳戶限制 | 雲端： DescrubeAccountLimits | 部署  a| 
 * 讀取
 * 自動化
 
@@ -948,6 +958,48 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 自動化
 
 
+
+
+| 檢查帳戶是否已註冊 AWS 運算最佳化工具 | 運算最佳化工具： GetEnrollmentStatus  a| 
+* 探索節約效益
+* 最佳化
+
+| 自動化 
+
+
+| 更新 AWS 運算最佳化工具中現有的建議偏好選項，針對 SQL Server 工作負載量提供量身打造的建議 | 運算最佳化工具：推桿建議偏好設定  a| 
+* 探索節約效益
+* 最佳化
+
+| 自動化 
+
+
+| 從 AWS 運算最佳化工具取得對指定資源有效的建議偏好選項 | 運算最佳化工具： GetEffectiveRecompendationPreferences  a| 
+* 探索節約效益
+* 最佳化
+
+| 自動化 
+
+
+| 取得 AWS 運算最佳化工具為 Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體所產生的建議 | 運算最佳化工具： GetEC2InstanceRecompendations  a| 
+* 探索節約效益
+* 最佳化
+
+| 自動化 
+
+
+.2+| 檢查執行個體與自動縮放群組的關聯 | 自動縮放：去除自動縮放群組  a| 
+* 探索節約效益
+* 最佳化
+
+| 自動化 
+
+
+| 自動縮放：去除自動縮放的實例  a| 
+* 探索節約效益
+* 最佳化
+
+| 自動化 
 
 
 .4+| 取得，列出，建立及刪除 AD 的 SSM 參數， ONTAP 的 FSX 參數，以及在 AWS 帳戶中部署或管理時所使用的 SQL 使用者認證 | SSM) ： GetParameter ^1^  a| 
