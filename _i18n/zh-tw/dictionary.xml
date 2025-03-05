@@ -366,7 +366,6 @@
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。</block>
   <block id="462c14d3e045d4b0b69cee0781df3207" category="paragraph">工作負載包含資源、程式碼和服務或應用程式的組合、專為達成業務目標而設計。這可能是從面對客戶的應用程式到後端程序。工作負載可能涉及單一 AWS 帳戶內的資源子集、或跨越多個帳戶。</block>
   <block id="fb44c12e7a424c0619764b1060434a74" category="section-title">節省計算機</block>
-  <block id="11cb17d1b990bbf37a24337d5692efa1" category="paragraph"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="2fd1745cefcdce50d6467d96e693f6b7" category="doc">RSS 訂閱</block>
   <block id="80f4b5aa553e3a44455088c83954a088" category="section-title">支援每個工作負載的單一權限原則</block>
   <block id="41b3a089d4fbacfb53e9a5634cfc6647" category="inline-image-macro">「認證」頁面上權限組態區段的螢幕擷取畫面、您可以在其中選取讀取或自動化儲存管理、 AI 工作負載、資料庫工作負載和 VMware 工作負載的權限原則。</block>
@@ -379,15 +378,12 @@
   <block id="ebcd96574a726227b2c1017e8efe81c1" category="doc">BlueXP  工作負載工廠初始版本</block>
   <block id="d2587bb8ad424cee3050c3b7958dd388" category="paragraph">BlueXP  工作負載工廠是一款功能強大的生命週期管理平台，專為協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載而設計。使用工作負載工廠和 ONTAP 的 FSX 可簡化的工作負載包括資料庫， VMware 在 AWS 上移轉至 VMware Cloud ， AI 聊天機器人程式等。</block>
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">工作負載原廠主控台</block>
-  <block id="3171014553de64cf509a3b587c8baeb3" category="paragraph">您可以從<block ref="9d5ad87a67c1830e37fdd19a7a179db6" category="inline-link-macro-rx"></block>取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。</block>
   <block id="0796995437665af1d920169e03b4542b" category="inline-image-macro">工作負載原廠主控台說明下拉式功能表的快照。訂閱 RSS 的新按鈕會在下拉式功能表中顯示為選項。</block>
   <block id="482a329f24c123c31a109c24729cb2cd" category="paragraph"><block ref="482a329f24c123c31a109c24729cb2cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e47b743d0cc8e0b8906e37286d9b43b" category="paragraph">在工作負載工廠新增 AWS 認證時，您現在可以針對每個工作負載和儲存管理，選取單一權限原則，無論是讀取或自動化模式。</block>
   <block id="9f46892803d8b6c63d3b7f51fd44a421" category="inline-link-macro">將 AWS 認證新增至工作負載工廠</block>
-  <block id="d9dd14fb1d1e7ca9c6da6770d9176783" category="paragraph"><block ref="d9dd14fb1d1e7ca9c6da6770d9176783" category="inline-link-macro-rx"></block></block>
   <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="doc">BlueXP  主控台中的工作負載原廠整合</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
-  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">您現在可以從使用工作負載工廠<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">瞭解如何從 BlueXP  主控台存取工作負載工廠</block>
   <block id="4fa2f246a664251a157926c2e11e1eb3" category="summary">新增 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
   <block id="188c7f44ffe17186c8dcbc38640d54e1" category="paragraph">新增及管理 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署及管理雲端資源所需的權限。</block>
@@ -1068,4 +1064,8 @@
   <block id="38b28dd168a209df2daf8eaf5b0fc216" category="cell">檢查執行個體與自動縮放群組的關聯</block>
   <block id="841ea3d3891ce9dc21992730680d4dac" category="cell">自動縮放：去除自動縮放群組</block>
   <block id="9d85d66bd60c64faffe2799f428cd8b3" category="cell">自動縮放：去除自動縮放的實例</block>
+  <block id="7115d78353263dbb2dbe063624f9f601" category="paragraph"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
+  <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">您可以從<block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。</block>
+  <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
+  <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">您現在可以從使用工作負載工廠<block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
 </blocks>

@@ -65,7 +65,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.
 
 === BlueXP  主控台中的工作負載原廠整合
 
-您現在可以從使用工作負載工廠link:https://console.bluexp.netapp.com["BlueXP主控台"^]。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。
+您現在可以從使用工作負載工廠link:https://console.bluexp.netapp.com["BlueXP主控台"]。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["瞭解如何從 BlueXP  主控台存取工作負載工廠"]
 
@@ -77,7 +77,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html
 
 === RSS 訂閱
 
-您可以從link:https://console.workloads.netapp.com/["工作負載原廠主控台"^]取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。
+您可以從link:https://console.workloads.netapp.com/["工作負載原廠主控台"]取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。
 
 image:screenshot-rss-subscribe-button.png["工作負載原廠主控台說明下拉式功能表的快照。訂閱 RSS 的新按鈕會在下拉式功能表中顯示為選項。"]
 
@@ -89,7 +89,7 @@ image:screenshot-rss-subscribe-button.png["工作負載原廠主控台說明下�
 
 image:screenshot-single-permission-policy-support.png["「認證」頁面上權限組態區段的螢幕擷取畫面、您可以在其中選取讀取或自動化儲存管理、 AI 工作負載、資料庫工作負載和 VMware 工作負載的權限原則。"]
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["將 AWS 認證新增至工作負載工廠"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["將 AWS 認證新增至工作負載工廠"]
 
 
 
@@ -101,7 +101,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["�
 
 Amazon FSX 支援 Terraform 、可用於 NetApp ONTAP 檔案系統部署和儲存 VM 建立。安裝與管理指南現在提供如何從 Codebox 使用 Terraform 的說明。
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"]
 
 
 
