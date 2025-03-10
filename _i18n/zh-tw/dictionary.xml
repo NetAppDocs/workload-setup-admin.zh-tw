@@ -897,7 +897,6 @@
   <block id="8a71d22cd00a39460a071b070099b8d6" category="cell">驗證對基礎模型的存取</block>
   <block id="c812f1cb829c6d16da192b12e04d78ff" category="cell">Bedrock:GetFoundationModelAvailability</block>
   <block id="77771f1732da043133eab422a7e43291" category="cell">在 AI 引擎精靈期間取得支援 FSX 和 Bedrock 的區域</block>
-  <block id="d4f0fee980f03c8a663dda4a1d3623de" category="cell">在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像</block>
   <block id="302112cb321a929a6d9830e917817acb" category="cell">S10:GetParameters</block>
   <block id="37cc48b6baed18a8130ec18d97544390" category="cell">從傳送至 AI 引擎的命令取得 SSM 回應</block>
   <block id="97128676550f404369a4900a6b92a6a7" category="cell">檢查與 AI 引擎的 SSM 連線</block>
@@ -1068,4 +1067,8 @@
   <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">您可以從<block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。</block>
   <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
   <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">您現在可以從使用工作負載工廠<block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
+  <block id="fb2b74ed81679192134e9c2c07019b42" category="cell">取得基礎模型的相關資訊</block>
+  <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
+  <block id="dec23cffbd0de1b8096bc26072eb0b7d" category="cell">在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025 年 3 月 2 日</block>
 </blocks>

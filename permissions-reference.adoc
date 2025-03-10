@@ -1558,6 +1558,7 @@ GenAI IAM 原則僅適用於操作模式：
         "bedrock:InvokeModelWithResponseStream",
         "bedrock:InvokeModel",
         "bedrock:ListFoundationModels",
+        "bedrock:GetFoundationModel",
         "bedrock:GetFoundationModelAvailability",
         "bedrock:GetModelInvocationLoggingConfiguration"
       ],
@@ -1762,6 +1763,9 @@ GenAI IAM 原則僅適用於操作模式：
 
 
 | 顯示區域中可用的基礎模型 | Bedrock:ListFoundationModels | 部署 | 自動化 
+
+
+| 取得基礎模型的相關資訊 | Bedrock:GetFoundationModel | 部署 | 自動化 
 
 
 | 驗證對基礎模型的存取 | Bedrock:GetFoundationModelAvailability | 部署 | 自動化 
@@ -2165,6 +2169,12 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2025 年 3 月 2 日
+
+現在，下列權限可在 _read_ 模式下用於資料庫： `iam:SimulatePrincipalPolicy`。
 
 
 
