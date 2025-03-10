@@ -2174,7 +2174,7 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 
 === 2025 年 3 月 2 日
 
-現在，下列權限可在 _read_ 模式下用於資料庫： `iam:SimulatePrincipalPolicy`。
+現在，下列權限可在 _read_ 模式下用於資料庫： `iam:SimulatePrincipalPolicy`。GenAI 的 _ 自動 _ 模式現在提供下列權限 `bedrock:GetFoundationModel`：。
 
 
 
