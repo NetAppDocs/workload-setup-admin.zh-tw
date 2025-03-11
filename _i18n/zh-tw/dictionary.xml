@@ -1071,5 +1071,5 @@
   <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
   <block id="dec23cffbd0de1b8096bc26072eb0b7d" category="cell">在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025 年 3 月 2 日</block>
-  <block id="be728667d7e3ba95278ef62ba5d75639" category="paragraph">現在，下列權限可在 _read_ 模式下用於資料庫：<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>。GenAI 的 _ 自動 _ 模式現在提供下列權限<block ref="1311c4cbbe5b925c15d25fe5ff7b022b" prefix=" " category="inline-code"></block>：。</block>
+  <block id="d783298edb81a604dd8765a5040ef52e" category="paragraph">GenAI 的 _ 自動 _ 模式現在提供下列權限<block ref="1311c4cbbe5b925c15d25fe5ff7b022b" prefix=" " category="inline-code"></block>：。</block>
 </blocks>
