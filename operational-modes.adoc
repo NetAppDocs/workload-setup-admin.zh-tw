@@ -24,6 +24,8 @@ summary: 工作負載工廠提供三種作業模式，讓您根據 IT 原則，�
 自動化模式:: 代表完全信任關係，讓工作負載工廠獲得完整權限。這可讓工作負載工廠代表您執行及自動化 AWS 中的作業，以及具有執行所需權限的指派認證。
 
 
+深入瞭解 link:https://review.docs.netapp.com/us-en/workload-setup-admin_simulation-permission-update/permissions-reference.html["BlueXP  工作負載工廠的權限"]。
+
 
 
 === 操作模式功能

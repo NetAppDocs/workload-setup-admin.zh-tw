@@ -15,6 +15,26 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 
 
+== 2025 年 3 月 30 日
+
+
+
+=== CloudShell 針對 ONTAP CLI 命令回報 AI 產生的錯誤
+
+使用 CloudShell 時，每次您發出 ONTAP CLI 命令並發生錯誤時，您都可以取得 AI 產生的錯誤回應，包括故障說明，故障原因及詳細解決方法。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["使用 CloudShell"]
+
+
+
+=== IAM ： SimulatePermissionPolicy 權限更新
+
+現在您可以在工作負載原廠主控台管理 `iam:SimulatePrincipalPolicy`權限，只要新增額外的 AWS 帳戶認證，或新增 GenAI 工作負載等新工作負載功能即可。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["權限參考變更記錄"]
+
+
+
 == 2025 年 02 月 2 日
 
 

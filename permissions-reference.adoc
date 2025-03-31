@@ -63,6 +63,13 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "cloudwatch:GetMetricStatistics"
       ],
       "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
     }
   ]
 }
@@ -89,6 +96,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "kms:CreateGrant",
         "cloudwatch:PutMetricData",
         "cloudwatch:GetMetricData",
+        "iam:SimulatePrincipalPolicy",
         "cloudwatch:GetMetricStatistics"
       ],
       "Resource": "*"
@@ -407,6 +415,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "ssm:GetParametersByPath",
         "ssm:GetCommandInvocation",
         "ssm:SendCommand",
+        "ssm:GetConnectionStatus",
         "ssm:DescribePatchBaselines",
         "ssm:DescribeInstancePatchStates",
         "ssm:ListCommands",
@@ -426,6 +435,14 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "ssm:DeleteParameters"
       ],
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
+    },
+    {
+      "Sid": "IAMGroup",
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
     }
   ]
 }
@@ -1428,7 +1445,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 | 從已配置的 EC2 執行個體設定檔中分離角色 | IAM：RemoveRoleFromInstanceProfile | 部署 | 自動化 
 
 
-| 驗證角色中可用的權限，並與所需的權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署  a| 
+| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署  a| 
 * 讀取
 * 自動化
 
@@ -1507,10 +1524,10 @@ GenAI IAM 原則僅適用於操作模式：
       "Effect": "Allow",
       "Action": [
         "iam:CreateRole",
+        "iam:CreatePolicy",
         "iam:CreateInstanceProfile",
         "iam:AddRoleToInstanceProfile",
         "iam:PutRolePolicy",
-        "iam:SimulatePrincipalPolicy",
         "iam:GetRolePolicy",
         "iam:GetRole",
         "iam:TagRole"
@@ -1550,19 +1567,6 @@ GenAI IAM 原則僅適用於操作模式：
         "arn:aws:fsx:*:*:volume/*/*",
         "arn:aws:fsx:*:*:storage-virtual-machine/*/*"
       ]
-    },
-    {
-      "Sid": "BedrockGroup",
-      "Effect": "Allow",
-      "Action": [
-        "bedrock:InvokeModelWithResponseStream",
-        "bedrock:InvokeModel",
-        "bedrock:ListFoundationModels",
-        "bedrock:GetFoundationModel",
-        "bedrock:GetFoundationModelAvailability",
-        "bedrock:GetModelInvocationLoggingConfiguration"
-      ],
-      "Resource": "*"
     },
     {
       "Sid": "SSMParameterStore",
@@ -1661,7 +1665,21 @@ GenAI IAM 原則僅適用於操作模式：
       "Resource": "arn:aws:logs:*:*:log-group:/netapp/wlmai*:*"
     },
     {
-      "Sid": "CloudWatch2",
+      "Sid": "BedrockGroup",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModelWithResponseStream",
+        "bedrock:InvokeModel",
+        "bedrock:ListFoundationModels",
+        "bedrock:GetFoundationModelAvailability",
+        "bedrock:GetModelInvocationLoggingConfiguration",
+        "bedrock:PutModelInvocationLoggingConfiguration",
+        "bedrock:ListInferenceProfiles"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchBedrock",
       "Effect": "Allow",
       "Action": [
         "logs:CreateLogGroup",
@@ -1669,6 +1687,22 @@ GenAI IAM 原則僅適用於操作模式：
         "logs:TagResource"
       ],
       "Resource": "arn:aws:logs:*:*:log-group:/aws/bedrock*"
+    },
+    {
+      "Sid": "BedrockLoggingAttachRole",
+      "Effect": "Allow",
+      "Action": [
+        "iam:AttachRolePolicy",
+        "iam:PassRole"
+      ],
+      "Resource": "arn:aws:iam::*:role/NetApp_AI_Bedrock*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
     }
   ]
 }
@@ -1705,7 +1739,7 @@ GenAI IAM 原則僅適用於操作模式：
 | 在部署和重建作業期間，標記由 AI 引擎堆疊建立所建立的資源 | EC2：建立標記 | 部署 | 自動化 
 
 
-.2+| 從 ai 引擎堆疊將加密事件發佈至 WLMAI 後端 | KMS ： GenerateDataKey | 部署 | 自動化 
+.2+| 從 AI 引擎堆疊將加密事件發佈至 WLMAI 後端 | KMS ： GenerateDataKey | 部署 | 自動化 
 
 
 | kms ：解密 | 部署 | 自動化 
@@ -1717,7 +1751,7 @@ GenAI IAM 原則僅適用於操作模式：
 | 在 AI 引擎部署精靈期間列出 VPC | EC2：取消功能Vpcs | 部署 | 自動化 
 
 
-| 列出在 ai 引擎部署精靈上的子網路 | EC2：無資料子網路 | 部署 | 自動化 
+| 在「 AI 引擎部署精靈」中列出子網路 | EC2：無資料子網路 | 部署 | 自動化 
 
 
 | 在 AI 引擎部署和重建期間取得路由表 | EC2：取消功能表 | 部署 | 自動化 
@@ -1738,7 +1772,7 @@ GenAI IAM 原則僅適用於操作模式：
 | 在部署和重建作業期間，列出 AI 引擎堆疊建立期間的映像 | EC2：取消影像 | 部署 | 自動化 
 
 
-.2+| 在部署和重建作業期間建立 AI 執行個體堆疊期間，建立和更新 AI 執行個體和私有端點安全群組 | EC2：RevokeSecurity GroupEgress | 部署 | 自動化 
+.2+| 在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組 | EC2：RevokeSecurity GroupEgress | 部署 | 自動化 
 
 
 | EC2：RevokeSecurity GroupIngress | 部署 | 自動化 
@@ -1756,7 +1790,7 @@ GenAI IAM 原則僅適用於操作模式：
 | 在 AI 引擎部署期間查詢 Amazon bedrock / Amazon CloudWatch 記錄狀態 | Bedrock:GetModelInvocationLoggingConfiguration | 部署 | 自動化 
 
 
-| 以初始化對其中一個基礎模式的聊天要求 | Bedrock ： InvokeModelWithResponseStream | 部署 | 自動化 
+| 向其中一個基礎模式提出聊天要求 | Bedrock ： InvokeModelWithResponseStream | 部署 | 自動化 
 
 
 | 開始對基礎模型進行聊天 / 嵌入要求 | Bedrock ： InvokeModel | 部署 | 自動化 
@@ -1765,16 +1799,13 @@ GenAI IAM 原則僅適用於操作模式：
 | 顯示區域中可用的基礎模型 | Bedrock:ListFoundationModels | 部署 | 自動化 
 
 
-| 取得基礎模型的相關資訊 | Bedrock:GetFoundationModel | 部署 | 自動化 
-
-
 | 驗證對基礎模型的存取 | Bedrock:GetFoundationModelAvailability | 部署 | 自動化 
 
 
-| 確認在部署和重建作業期間需要建立 CloudWatch 記錄群組 | 記錄： DescribeLogGroups | 部署 | 自動化 
+| 確認在部署和重建作業期間需要建立 Amazon CloudWatch 記錄群組 | 記錄： DescribeLogGroups | 部署 | 自動化 
 
 
-| 在 AI 引擎精靈期間取得支援 FSX 和 Bedrock 的區域 | SSM) ： GetParametersByPath | 部署 | 自動化 
+| 在 AI 引擎精靈期間取得支援 FSX 和 Amazon bedrock 的區域 | SSM) ： GetParametersByPath | 部署 | 自動化 
 
 
 | 在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像 | S10:GetParameters | 部署 | 自動化 
@@ -1813,19 +1844,19 @@ GenAI IAM 原則僅適用於操作模式：
 | IAM：密碼 | 部署 | 自動化 
 
 
-| 驗證角色中可用的權限，並在部署和重新建置作業期間，與所需的權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
+| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
 
 
-| 在「建立知識庫」精靈中列出 FSX 檔案系統 | FSX ： DescribeVolumes | 知識庫建立 | 自動化 
+| 在「建立知識庫」精靈中列出 ONTAP 檔案系統的 FSX | FSX ： DescribeVolumes | 知識庫建立 | 自動化 
 
 
-| 在「建立知識庫」精靈中列出 FSX 檔案系統磁碟區 | fsx:DescribeFileSystems | 知識庫建立 | 自動化 
+| 在「建立知識庫」精靈中列出 ONTAP 檔案系統磁碟區的 FSX | fsx:DescribeFileSystems | 知識庫建立 | 自動化 
 
 
-| 在重建作業期間，管理 AI 引擎的知識庫 | FSX ： ListTagsForResource | 疑難排解 | 自動化 
+| 在重建作業期間，管理 AI 引擎上的知識庫 | FSX ： ListTagsForResource | 疑難排解 | 自動化 
 
 
-| 在「建立知識庫」精靈中列出 FSX 檔案系統儲存虛擬機器 | FSX ： DescrubeStorageVirtualMachines | 部署 | 自動化 
+| 在「建立知識庫」精靈中，列出適用於 ONTAP 檔案系統儲存虛擬機器的 FSX | FSX ： DescrubeStorageVirtualMachines | 部署 | 自動化 
 
 
 | 將知識庫移至新執行個體 | FSX ： UntagResource | 疑難排解 | 自動化 
@@ -1840,28 +1871,43 @@ GenAI IAM 原則僅適用於操作模式：
 | SSM) ： Puttarameter | 部署 | 自動化 
 
 
-.2+| 在部署和重建作業期間，將 AI 引擎記錄傳送至 CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 自動化 
+.2+| 在部署和重建作業期間，將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 自動化 
 
 
 | 記錄： PutRetentionPolicy | 部署 | 自動化 
 
 
-| 將 AI 引擎記錄傳送至 CloudWatch 記錄群組 | 記錄： TagResource | 疑難排解 | 自動化 
+| 將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組 | 記錄： TagResource | 疑難排解 | 自動化 
 
 
-| 從 CloudWatch 取得 SSM 回應（當回應時間過長時） | 記錄： DescribeLogStreams | 疑難排解 | 自動化 
+| 從 Amazon CloudWatch 取得 SSM 回應（回應時間過長時） | 記錄： DescribeLogStreams | 疑難排解 | 自動化 
 
 
-| 從 CloudWatch 取得 SSM 回應 | 記錄檔： GetLogEvents | 疑難排解 | 自動化 
+| 取得 Amazon CloudWatch 的 SSM 回應 | 記錄檔： GetLogEvents | 疑難排解 | 自動化 
 
 
-.3+| 在部署和重建作業期間，建立 CloudWatch 記錄群組，以供堆疊重新整理期間的基礎記錄檔使用 | 記錄檔： CreateLogGroup | 部署 | 自動化 
+.3+| 在部署和重建作業期間的堆疊重新部署期間，為 Amazon 基礎記錄建立 Amazon CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 自動化 
 
 
 | 記錄： PutRetentionPolicy | 部署 | 自動化 
 
 
 | 記錄： TagResource | 部署 | 自動化 
+
+
+| 將基礎記錄傳送至 Amazon CloudWatch | Bedrock ： PutModelInvocationLoggingConfiguration | 疑難排解 | 自動化 
+
+
+| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM ： AttachRolePolicy | 疑難排解 | 自動化 
+
+
+| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM：密碼 | 疑難排解 | 自動化 
+
+
+| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM ： createPolicy | 疑難排解 | 自動化 
+
+
+| 列出模型的推斷輪廓 | Bedrock ： ListInferenceProfiles | 疑難排解 | 自動化 
 |===
 ====
 
@@ -1882,23 +1928,35 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 [source, json]
 ----
 {
-  "Effect": "Allow",
-  "Action": [
-    "ec2:DescribeRegions",
-    "ec2:DescribeAvailabilityZones",
-    "ec2:DescribeVpcs",
-    "ec2:DescribeSecurityGroups",
-    "ec2:DescribeSubnets",
-    "ssm:GetParametersByPath",
-    "kms:DescribeKey",
-    "kms:ListKeys",
-    "kms:ListAliases"
-  ],
-  "Resource": "*"
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeRegions",
+        "ec2:DescribeAvailabilityZones",
+        "ec2:DescribeVpcs",
+        "ec2:DescribeSecurityGroups",
+        "ec2:DescribeSubnets",
+        "ssm:GetParametersByPath",
+        "kms:DescribeKey",
+        "kms:ListKeys",
+        "kms:ListAliases"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ----
 --
-.操作模式
+.自動化模式
 --
 [source, json]
 ----
@@ -2132,7 +2190,7 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 | 自動化 
 
 
-| 需要 SimulatePrincipalPolicy 來驗證角色中可用的權限，並與所需的權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
+| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
 
 
 .4+| SSM 參數儲存區可用來儲存 Amazon FSX for NetApp ONTAP 的認證資料 | SSM) ： GetParameter  a| 
@@ -2169,6 +2227,31 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2025 年 3 月 30 日
+
+
+
+==== GenAI 工作負載權限更新
+
+GenAI 的 _ 自動化模式 _ 現在提供下列權限：
+
+* `bedrock:PutModelInvocationLoggingConfiguration`
+* `iam:AttachRolePolicy`
+* `iam:PassRole`
+* `iam:createPolicy`
+* `bedrock:ListInferenceProfiles`
+
+
+下列權限已從 GenAI 的 _ 自動化模式 _ 中移除 `Bedrock:GetFoundationModel`：。
+
+
+
+==== IAM ： SimulatePrincipalPolicy 權限更新
+
+ `iam:SimulatePrincipalPolicy`如果您在新增額外的 AWS 帳戶認證或從工作負載原廠主控台新增新的工作負載功能時，啟用自動權限檢查，則權限是所有工作負載權限原則的一部分。此權限會模擬工作負載作業，並在從工作負載工廠部署資源之前，檢查您是否具有必要的 AWS 帳戶權限。啟用此檢查可減少清理失敗作業中的資源，以及新增遺失權限所需的時間和精力。
 
 
 

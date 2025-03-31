@@ -16,10 +16,8 @@
   <block id="d11861b4e2dfc9ac3d86245926aa2785" category="section-title">步驟 1 ：選取工作負載功能並建立 IAM 原則</block>
   <block id="530d81548274a062436af51b8c3e829f" category="paragraph">在本節中、您將選擇哪些類型的工作負載功能可作為這些認證的一部分進行管理、以及為每個工作負載啟用的權限。您需要從 Codebox 複製每個選取工作負載的原則權限、並將其新增至 AWS 帳戶內的 AWS 管理主控台、以建立原則。</block>
   <block id="445f4ba50fbc8e7b285aedb4396412bb" category="inline-image-macro">螢幕擷取畫面顯示哪些類型的工作負載功能可在這些認證中作為原則的一部分進行管理。</block>
-  <block id="0edc9a25423073fcc768405f6aeda88b" category="paragraph"><block ref="0edc9a25423073fcc768405f6aeda88b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c1ab1d79c6a7c98f384377942001e718" category="list-text">在 * 建立原則 * 區段中、啟用您要納入這些認證的每項工作負載功能。</block>
   <block id="3b9b789374908017040d97f81eb4008d" category="paragraph">您可以稍後新增其他功能、只要選取您目前想要部署及管理的工作負載即可。</block>
-  <block id="5366a51a090d4b12810a9a8050f2fec4" category="list-text">對於提供權限等級選擇（操作、檢視等）的工作負載功能、請選取這些認證可用的權限類型。</block>
   <block id="6d45b51df5e4b4d742aed3a012be7ece" category="list-text">在 Codebox 視窗中、複製第一個 IAM 原則的權限。</block>
   <block id="d9951e6a22fb7f7d403d017e5b8ef9c6" category="list-text">開啟另一個瀏覽器視窗、然後在 AWS 管理主控台登入 AWS 帳戶。</block>
   <block id="0545945650ae73f856cfac5d203df5f5" category="list-text">開啟 IAM 服務、然後選取 * 原則 * &gt; * 建立原則 * 。</block>
@@ -442,7 +440,6 @@
   <block id="49836a38c5243f5726abfb5a8b95ac7b" category="doc">從 BlueXP  工作負載工廠移除認證</block>
   <block id="9369e772c26e2cdfaafe3b142d172bbe" category="paragraph">如果您不再需要一組認證，您可以從工作負載工廠刪除這些認證。您只能刪除與 ONTAP 檔案系統的 FSX 無關的認證。</block>
   <block id="d7d90d1ce8174a99f1ebf77537c7d533" category="summary">工作負載工廠提供三種作業模式，讓您根據 IT 原則，仔細控制工作負載工廠與雲端環境之間的存取。您使用的作業模式取決於您提供給工作負載工廠的 AWS 權限層級。</block>
-  <block id="e02d9a51503bcf62267395364d4b1f92" category="paragraph">工作負載工廠提供三種作業模式，讓您根據 IT 原則，仔細控制工作負載工廠與雲端環境之間的存取。您使用的作業模式取決於您提供給工作負載工廠的 AWS 權限層級。</block>
   <block id="fb4bff09d4eb62ced2b03ad6ae3d8be4" category="paragraph">營運模式提供工作負載工廠所提供功能與功能的邏輯組織，與您指定的信任層級相關。營運模式的主要目標是清楚傳達工廠可以或無法在 AWS 帳戶內執行的工作負載。</block>
   <block id="85776f584c3633cbff79b95327a8fd11" category="list-text">代表零信任關係，沒有 AWS 權限指派給工作負載工廠。它旨在早期探索工作負載工廠，並使用各種精靈來建立所需的基礎架構即程式碼（ IAC ）。您可以手動輸入 AWS 認證、複製程式碼並在 AWS 中使用。</block>
   <block id="e2cef0f4569c69bf6900a6cb6135eb11" category="list-text">新增唯讀權限、讓 IAC 範本填入您的特定變數（例如 VPC 、安全性群組等）、以提升基本模式的使用體驗。這可讓您直接從 AWS 帳戶執行 IAC ，而無需提供任何工作負載工廠的修改權限。</block>
@@ -854,7 +851,6 @@
   <block id="a6e64d0684dcf803ad58d40684383bb9" category="cell">IAM：Putt角色 原則</block>
   <block id="09ff084e5cc884cadc645fe74ab08f47" category="cell">從已配置的 EC2 執行個體設定檔中分離角色</block>
   <block id="b5a94c08b69b4b7f78637d9e9362ee11" category="cell">IAM：RemoveRoleFromInstanceProfile</block>
-  <block id="ae7064637293927badfc083eaa1afe44" category="cell">驗證角色中可用的權限，並與所需的權限進行比較</block>
   <block id="19f5de89e4c667692a153296018e225f" category="cell">IAM ： SimulatePrincipalPolicy</block>
   <block id="291798398943ff81aecb072ccb31136f" category="list-text">權限僅限於從 WLMDB 開始的資源。</block>
   <block id="8871e7455cbf17c8190fb2c27de4cb92" category="list-text">"IAM:CreateServiceLinkedIn Role" 受 "iam:AWSServiceName" 限制： "ec2.amazonaws.com"*</block>
@@ -875,7 +871,6 @@
   <block id="4f6009e4cc9f9d0249a22b9e3c5ab9f0" category="cell">在部署和重建作業期間，在 AI 引擎堆疊建立期間建立 AI 引擎安全性群組</block>
   <block id="c44890ed155f5fc1b7589d1d6c12785a" category="cell">在部署和重建作業期間，標記由 AI 引擎堆疊建立所建立的資源</block>
   <block id="071c42384a4bff95d3acc47d90766c9b" category="cell">在 AI 引擎部署精靈期間列出 VPC</block>
-  <block id="4f919096830cc8f8b86b770de27e4573" category="cell">列出在 ai 引擎部署精靈上的子網路</block>
   <block id="7ba2aa86177ae5f0d7e3b4e5766bad67" category="cell">在 AI 引擎部署和重建期間取得路由表</block>
   <block id="7245f0c5139bb046010a68b69a264eca" category="cell">在 AI 引擎部署精靈期間列出金鑰配對</block>
   <block id="b28eb58d1a1db0c0afa78fe12cf5fb01" category="cell">在 AI 引擎堆疊建立期間列出安全性群組（以在私有端點上尋找安全性群組）</block>
@@ -883,12 +878,10 @@
   <block id="f8022dadecc2f9ce9937bc1108cb6290" category="cell">列出執行個體以瞭解 AI 引擎狀態</block>
   <block id="231cf4c70d866b616c21baddaeed0696" category="cell">疑難排解</block>
   <block id="66225a6c05fbef258e73728898744db8" category="cell">在部署和重建作業期間，列出 AI 引擎堆疊建立期間的映像</block>
-  <block id="51af837b20896f9dfb54da2ae0062d73" category="cell">在部署和重建作業期間建立 AI 執行個體堆疊期間，建立和更新 AI 執行個體和私有端點安全群組</block>
   <block id="effc62a026ed8a4a114329bdc528d625" category="cell">在部署和重建作業期間，在雲端堆疊建立期間執行 AI 引擎</block>
   <block id="8db0f3adf91a39cebe582faf96db2426" category="cell">在部署和重建作業期間，在堆疊建立期間附加安全群組並修改 AI 引擎的規則</block>
   <block id="70d1598e70f9b135b09469bea7b082e5" category="cell">在 AI 引擎部署期間查詢 Amazon bedrock / Amazon CloudWatch 記錄狀態</block>
   <block id="e8a46aee8aa47b78b90b155b227afbc9" category="cell">Bedrock:GetModelInvocationLoggingConfiguration</block>
-  <block id="499f8014a8d4d99806abf03c9dd3a314" category="cell">以初始化對其中一個基礎模式的聊天要求</block>
   <block id="00fe52afa6e3b9a0d389f529a2b88242" category="cell">Bedrock ： InvokeModelWithResponseStream</block>
   <block id="d3514773d1692fd740afde54cdaaa7b0" category="cell">開始對基礎模型進行聊天 / 嵌入要求</block>
   <block id="93804e96d3f417a0088c564647dd28e9" category="cell">Bedrock ： InvokeModel</block>
@@ -896,19 +889,13 @@
   <block id="66613086b6208ec265a60220a21ff40a" category="cell">Bedrock:ListFoundationModels</block>
   <block id="8a71d22cd00a39460a071b070099b8d6" category="cell">驗證對基礎模型的存取</block>
   <block id="c812f1cb829c6d16da192b12e04d78ff" category="cell">Bedrock:GetFoundationModelAvailability</block>
-  <block id="77771f1732da043133eab422a7e43291" category="cell">在 AI 引擎精靈期間取得支援 FSX 和 Bedrock 的區域</block>
   <block id="302112cb321a929a6d9830e917817acb" category="cell">S10:GetParameters</block>
   <block id="37cc48b6baed18a8130ec18d97544390" category="cell">從傳送至 AI 引擎的命令取得 SSM 回應</block>
   <block id="97128676550f404369a4900a6b92a6a7" category="cell">檢查與 AI 引擎的 SSM 連線</block>
   <block id="98c5cc885360f80a84c57ec1044622dc" category="cell">在部署和重建作業期間，於堆疊建立期間建立 AI 引擎執行個體設定檔</block>
   <block id="7f862a4b8fc22b0af5dda5c9ababa346" category="cell">IAM ： TagRole</block>
   <block id="f6ae0a8a1321975a6474722dcafe1322" category="cell">IAM：密碼</block>
-  <block id="8c9e5ebe3c2f413a71e0fdc004587e34" category="cell">驗證角色中可用的權限，並在部署和重新建置作業期間，與所需的權限進行比較</block>
-  <block id="759ffbd9c30a98856442b965585a3d8b" category="cell">在「建立知識庫」精靈中列出 FSX 檔案系統</block>
   <block id="11d11aa8dbaf1d4106e7ae01b6868bba" category="cell">知識庫建立</block>
-  <block id="004bee7d3b6c6b82f20b73d6e431ab0d" category="cell">在「建立知識庫」精靈中列出 FSX 檔案系統磁碟區</block>
-  <block id="8b4d32b772896acf285601d5cb629206" category="cell">在重建作業期間，管理 AI 引擎的知識庫</block>
-  <block id="80b6c276377dba072ef8005fb1d28449" category="cell">在「建立知識庫」精靈中列出 FSX 檔案系統儲存虛擬機器</block>
   <block id="50ed17d5232c875f8ad42bc76592a63c" category="cell">將知識庫移至新執行個體</block>
   <block id="a25a265c7f4f2cde7c7a15838d3f1021" category="cell">FSX ： UntagResource</block>
   <block id="9f4a3990e86e58c629dd4042743dc489" category="cell">在重建期間管理 AI 引擎上的知識庫</block>
@@ -916,19 +903,12 @@
   <block id="58cce26ec46dea767f28067a2aadecbf" category="cell">以安全的方式儲存 SSM 機密（ ECR 權杖， CIFS 認證，租賃服務帳戶金鑰）</block>
   <block id="6cdfe2c5f0e0f28290eadae29ccbb913" category="cell">SSM) ： GetParameter</block>
   <block id="5df0bb9577b967295f5ff5c94274a01c" category="cell">SSM) ： Puttarameter</block>
-  <block id="75b38f707a1d195e422d6e573dc005ec" category="cell">確認在部署和重建作業期間需要建立 CloudWatch 記錄群組</block>
   <block id="99a70cb6d5b807589a0a1aa9bbcfea7d" category="cell">記錄： DescribeLogGroups</block>
-  <block id="8e31dab0a6f4117f41c0112b93f0f77d" category="cell">在部署和重建作業期間，將 AI 引擎記錄傳送至 CloudWatch 記錄群組</block>
   <block id="9c72603737d6e2074ae7fab048b5d3d1" category="cell">記錄： PutRetentionPolicy</block>
-  <block id="bece71a215bda1e5c99fabe57fe47c24" category="cell">將 AI 引擎記錄傳送至 CloudWatch 記錄群組</block>
-  <block id="154706d25e6c48e7a1675266f50bca88" category="cell">從 CloudWatch 取得 SSM 回應（當回應時間過長時）</block>
   <block id="b9f69a856f0b78c0908e042e6d0fda54" category="cell">記錄： DescribeLogStreams</block>
-  <block id="ff841e88d97bf6f5d4734b33cfac01ac" category="cell">從 CloudWatch 取得 SSM 回應</block>
   <block id="6d952035baa97bd601f4d280f10fcc53" category="cell">記錄檔： GetLogEvents</block>
-  <block id="8dbffbc5258110d76ccbf445f1d44774" category="cell">在部署和重建作業期間，建立 CloudWatch 記錄群組，以供堆疊重新整理期間的基礎記錄檔使用</block>
   <block id="3332885fc7b64062d9405bcdf57a9334" category="section-title">VMware 工作負載的權限</block>
   <block id="1d33843eea5e12818124076de04b4a65" category="example-title">適用於 VMware 工作負載的 IAM 原則</block>
-  <block id="9e7d53cad3dc8e62b48821ac33e69a99" category="open-title">操作模式</block>
   <block id="e87b88b1ae053b847cb60dcd1d96e6ee" category="paragraph">下表提供 VMware 工作負載權限的詳細資料。</block>
   <block id="e0df1a71ae70fb0909b9e26f9400e56e" category="example-title">VMware 工作負載的權限表</block>
   <block id="f82dcfe0928b7d309053f8e9481fd1c3" category="cell">取得所選環境中的 VPC 以完成部署表單</block>
@@ -946,7 +926,6 @@
   <block id="f40779c61ae21b6fbb5c6964620d50db" category="cell">取得 KMS 金鑰詳細資料，並使用 Amazon FSX 進行 NetApp ONTAP 加密</block>
   <block id="5df883e5adda577f2fbed8edd98a6052" category="cell">列出客戶 SNS 主題，並在選取的情況下發佈至 WLMVMC 後端 SNS 和客戶 SNS</block>
   <block id="51faf18a49599aa5875c9cc5ecd0c156" category="cell">用於擷取適用於 NetApp ONTAP 支援 AWS 區域的 Amazon FSX 最新清單</block>
-  <block id="1e40105dab96dd2107f838271dd1c482" category="cell">需要 SimulatePrincipalPolicy 來驗證角色中可用的權限，並與所需的權限進行比較</block>
   <block id="22ebc59c28ff9c2a08d716ded9c8e998" category="cell">SSM 參數儲存區可用來儲存 Amazon FSX for NetApp ONTAP 的認證資料</block>
   <block id="766060a05aed7395a628048f6e5d8152" category="cell">SSM) ： PuttParameters</block>
   <block id="f5ad3adfdd57e7f67f8a97e4699177e7" category="cell">SSM/DeleteParameters</block>
@@ -1041,9 +1020,7 @@
   <block id="7413e05cafe498b54ab1b5640cc3ba82" category="paragraph">選取 CloudShell 圖示<block ref="22292d13795e0e4de9ba364021c92eab" category="inline-image-macro-rx" type="image"></block>從上方導覽列。</block>
   <block id="a5fab0062142f5ef0615c361259b0b89" category="cell">授與角色可在適用於 ONTAP 的 FSX 與其他 AWS 服務之間提供通訊</block>
   <block id="8832fb7d0699d4878c8449616cd47613" category="cell">IAM ： CreateServiceLinkedIn 角色</block>
-  <block id="f018d84c71280c7c2350ecdc41af9036" category="cell">從 ai 引擎堆疊將加密事件發佈至 WLMAI 後端</block>
   <block id="e3fee6f099023b5f4b39c1c744c6ea99" category="cell">kms ：解密</block>
-  <block id="5407beb6c8285b66530a423f5e1a1c44" category="cell">將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端</block>
   <block id="85f90a8db0a64c1052007e6603c729f3" category="cell">建立 EBS 磁碟區</block>
   <block id="9b72805c27ddeb5ac656bcddaa415cb8" category="cell">為 VMware 工作負載所建立的 NetApp ONTAP 資源標記 FSX 的自訂值</block>
   <block id="043622d556b2884b98fb152bcf740dcd" category="cell">建立並驗證 CloudForgation 範本</block>
@@ -1067,8 +1044,6 @@
   <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">您可以從<block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>取得 RSS 訂閱。使用 RSS 摘要是一種輕鬆的方式，可讓您瞭解 BlueXP  工作負載工廠的變更。</block>
   <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
   <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">您現在可以從使用工作負載工廠<block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
-  <block id="fb2b74ed81679192134e9c2c07019b42" category="cell">取得基礎模型的相關資訊</block>
-  <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
   <block id="dec23cffbd0de1b8096bc26072eb0b7d" category="cell">在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025 年 3 月 2 日</block>
   <block id="d783298edb81a604dd8765a5040ef52e" category="paragraph">GenAI 的 _ 自動 _ 模式現在提供下列權限<block ref="1311c4cbbe5b925c15d25fe5ff7b022b" prefix=" " category="inline-code"></block>：。</block>
@@ -1076,4 +1051,79 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="42bc8432872c22cf4fdbb156ae58a17e" category="doc">CloudShell 針對 ONTAP CLI 命令回報 AI 產生的錯誤</block>
+  <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">使用 CloudShell 時，每次您發出 ONTAP CLI 命令並發生錯誤時，您都可以取得 AI 產生的錯誤回應，包括故障說明，故障原因及詳細解決方法。</block>
+  <block id="4ef50e373522b91f7df59d5cba69a8b7" category="section-title">IAM ： SimulatePermissionPolicy 權限更新</block>
+  <block id="906699741ebd9905a07af900abcfd438" category="paragraph">現在您可以在工作負載原廠主控台管理<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>權限，只要新增額外的 AWS 帳戶認證，或新增 GenAI 工作負載等新工作負載功能即可。</block>
+  <block id="c1bc5d8eeb872326cb512499f02befb5" category="paragraph"><block ref="c1bc5d8eeb872326cb512499f02befb5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7b9069b6f855261dc3e63baeaa5531f" category="list-text">對於提供權限等級選擇（讀取或自動化）的工作負載功能，請選取這些認證可用的權限類型。</block>
+  <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">選用：選取 * 啟用自動權限檢查 * ，檢查您是否擁有完成工作負載作業所需的 AWS 帳戶權限。啟用檢查會將新增<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block>至您的權限原則。此權限的目的只是確認權限。您可以在新增認證後移除權限，但我們建議保留權限，以防止資源建立部分成功的作業，並避免您執行任何必要的手動資源清理作業。</block>
+  <block id="c3c7c9c146408a0ee564eedba4821f52" category="list-text">選用：選取 * 啟用自動權限檢查 * ，檢查您是否擁有完成工作負載作業所需的 AWS 帳戶權限。啟用檢查會將權限新增<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>至您的權限原則。此權限的目的只是確認權限。您可以在新增認證後移除權限，但我們建議保留權限，以防止資源建立部分成功的作業，並避免您執行任何必要的手動資源清理作業。</block>
+  <block id="ad9001b544dade5536691ec3feee578f" category="inline-link-macro">BlueXP  工作負載工廠的權限</block>
+  <block id="4c1bf71f3b414847584faa395569aa99" category="paragraph">深入瞭解 <block ref="0ea8d4071df9710eb1c660a6314e7a7f" category="inline-link-macro-rx"></block>。</block>
+  <block id="2a358d687197b0311c68b4c8a7e35e1c" category="cell">模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較</block>
+  <block id="8c5e268f15aeebda6b5b234b3f7c7174" category="cell">從 AI 引擎堆疊將加密事件發佈至 WLMAI 後端</block>
+  <block id="9b1384398d4de5545bd0dad2106d6b0d" category="cell">將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端</block>
+  <block id="359cacd98d9742aded751741e70dce82" category="cell">在「 AI 引擎部署精靈」中列出子網路</block>
+  <block id="b2009fdc9170f9b13160d7da2fbab6aa" category="cell">在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組</block>
+  <block id="f0f0a4abc20f5a5e438ac1da53b231af" category="cell">向其中一個基礎模式提出聊天要求</block>
+  <block id="ffd1e194cd59f12c42768a9effd5aa2f" category="cell">確認在部署和重建作業期間需要建立 Amazon CloudWatch 記錄群組</block>
+  <block id="2887c4c92d65effaf012b7ca2f914958" category="cell">在 AI 引擎精靈期間取得支援 FSX 和 Amazon bedrock 的區域</block>
+  <block id="aaaceeee6185dfed5c284df5970707f3" category="cell">在「建立知識庫」精靈中列出 ONTAP 檔案系統的 FSX</block>
+  <block id="a2e54834745704983c3bbc9eb41ed0a1" category="cell">在「建立知識庫」精靈中列出 ONTAP 檔案系統磁碟區的 FSX</block>
+  <block id="2fac110cec869b1380662052556e21b4" category="cell">在重建作業期間，管理 AI 引擎上的知識庫</block>
+  <block id="22262aaf9e90060dfd5872961f2d20b9" category="cell">在「建立知識庫」精靈中，列出適用於 ONTAP 檔案系統儲存虛擬機器的 FSX</block>
+  <block id="e4276513c887d1d78315c446314f306e" category="cell">在部署和重建作業期間，將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組</block>
+  <block id="a89bcda1bd913f5d2c92bb3afd10848c" category="cell">將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組</block>
+  <block id="1ae2d90929ed009fb7cb0c3215e704ed" category="cell">從 Amazon CloudWatch 取得 SSM 回應（回應時間過長時）</block>
+  <block id="58401e538d76248fba41eb3d4b00ff5b" category="cell">取得 Amazon CloudWatch 的 SSM 回應</block>
+  <block id="79b580d74ffecaf0e2c1b9af0ac5f882" category="cell">在部署和重建作業期間的堆疊重新部署期間，為 Amazon 基礎記錄建立 Amazon CloudWatch 記錄群組</block>
+  <block id="4a5e33ece3615dac1032e841cde40447" category="cell">將基礎記錄傳送至 Amazon CloudWatch</block>
+  <block id="add4bf257ce9e3b25c497de343e52632" category="cell">Bedrock ： PutModelInvocationLoggingConfiguration</block>
+  <block id="60932b6084feefeacceacd749dcdedc9" category="cell">建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色</block>
+  <block id="b76a6c7392362eeb73fd252a4af062ca" category="cell">IAM ： AttachRolePolicy</block>
+  <block id="8de34002c35d0d4a13280a50047e76e4" category="cell">IAM ： createPolicy</block>
+  <block id="9f48be20e687484bbb74c66926ff62af" category="cell">列出模型的推斷輪廓</block>
+  <block id="9aa5a97dfe3f7608d8ee28e7db3c4e2c" category="cell">Bedrock ： ListInferenceProfiles</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025 年 3 月 30 日</block>
+  <block id="68ef824f4316a8546891ab93ee11d77f" category="section-title">GenAI 工作負載權限更新</block>
+  <block id="f587eed9c7dc8910227d7d906f2261fd" category="paragraph">GenAI 的 _ 自動化模式 _ 現在提供下列權限：</block>
+  <block id="8478b63212964b55320b9d61c0737e08" category="list-text"><block ref="add4bf257ce9e3b25c497de343e52632" prefix="" category="inline-code"></block></block>
+  <block id="d07fde30621d1890701e3ba8f6d492ad" category="list-text"><block ref="b76a6c7392362eeb73fd252a4af062ca" prefix="" category="inline-code"></block></block>
+  <block id="a39790181f1fd72ef9537ae34545ff02" category="list-text"><block ref="f6ae0a8a1321975a6474722dcafe1322" prefix="" category="inline-code"></block></block>
+  <block id="e1c6dba31ff47898c553f6707ccfbdb0" category="list-text"><block ref="8de34002c35d0d4a13280a50047e76e4" prefix="" category="inline-code"></block></block>
+  <block id="71d01806cd25e89067c25b4f03e9a607" category="list-text"><block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix="" category="inline-code"></block></block>
+  <block id="4d3f55c3707ec2803e7eaf6d7b978451" category="paragraph">下列權限已從 GenAI 的 _ 自動化模式 _ 中移除<block ref="8a44b1c8d2e06b1acd7404fbb70437cc" prefix=" " category="inline-code"></block>：。</block>
+  <block id="4e1a858f8ffb4228ac62fb2a65e14e11" category="section-title">IAM ： SimulatePrincipalPolicy 權限更新</block>
+  <block id="ebbd089f3b834616ea3613bf16e46cbf" category="paragraph"><block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>如果您在新增額外的 AWS 帳戶認證或從工作負載原廠主控台新增新的工作負載功能時，啟用自動權限檢查，則權限是所有工作負載權限原則的一部分。此權限會模擬工作負載作業，並在從工作負載工廠部署資源之前，檢查您是否具有必要的 AWS 帳戶權限。啟用此檢查可減少清理失敗作業中的資源，以及新增遺失權限所需的時間和精力。</block>
+  <block id="e81d623c1eabf7a990c647cdb9dc4de8" category="list-text">針對 ONTAP CLI 命令產生 AI 錯誤回應</block>
+  <block id="fecf8c04c92afcaa45ac22e74423f5cb" category="section-title">CloudShell 命令</block>
+  <block id="5c9c99b1013b0e43fb1314d83cc5242b" category="paragraph">在 CloudShell GUI 介面中，您可以輸入<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>來檢視可用的 CloudShell 命令。發出命令後<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>，會出現下列參考資料。</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="list-text">說明</block>
+  <block id="5a74855c30a89f18aabcae2686c1831f" category="list-text">NetApp CloudShell 是 BlueXP  工作負載工廠內建的 GUI 介面，可讓您在類似 Shell 的環境中執行 AWS CLI 命令或 ONTAP CLI 命令。它模擬瀏覽器中的終端工作階段，透過工作負載工廠的後端提供終端機功能和代理訊息。它可讓您使用 BlueXP  帳戶中提供的 AWS 認證和 ONTAP 認證。</block>
+  <block id="29349e534777eb74b3582eb552f6b76d" category="list-text">可用命令</block>
+  <block id="9408261c3775c6abe5ba6ef14faa8a1a" category="list-text"><block ref="01bc6f8efa4202821e95f4fdf6298b30" prefix="" category="inline-code"></block></block>
+  <block id="c6a354ad100a80a11b5358549fa08956" category="list-text"><block ref="657f8b8da628ef83cf69101b6817150a" prefix="" category="inline-code"></block></block>
+  <block id="e4a48e13b078ffed575db282e95cbf5d" category="list-text"><block ref="5696fba8dd789a13c2ceb24deaed74be" prefix="" category="inline-code"></block></block>
+  <block id="c4352d06a85db47c5f3caad2ce69d15e" category="list-text"><block ref="3b5b347787fd4fe1e38c522ff6637807" prefix="" category="inline-code"></block></block>
+  <block id="ad4e206408c1c59bfb8a057ba7857446" category="list-text">背景</block>
+  <block id="cb8b4c44a56d3dcbb2f832e3b29cd17d" category="list-text">每個終端機工作階段都會在特定的內容中執行：認證，區域，以及 ONTAP 檔案系統的可選 FSX 。</block>
+  <block id="7a702884b96a08a3907a8a471abf949b" category="paragraph">所有 AWS 命令都會在提供的內容中執行。AWS 命令只有在提供的認證具有指定區域的權限時才會成功。</block>
+  <block id="77d06b9ca965a3593dd7ce79688cc7e2" category="paragraph">您可以使用可選的指定 ONTAP 命令<block ref="44e80d43b9615befaf6b19e40990e329" prefix=" " category="inline-code"></block>。如果您提供<block ref="44e80d43b9615befaf6b19e40990e329" prefix=" " category="inline-code"></block>個別的 ONTAP 命令，則此 ID 會覆寫內容中的 ID 。如果終端機工作階段沒有適用於 ONTAP 檔案系統 ID 內容的 FSX ，則必須提供<block ref="44e80d43b9615befaf6b19e40990e329" prefix=" " category="inline-code"></block>每個 ONTAP 命令。</block>
+  <block id="709adb949ea5dacc37bbc5f28d0389a8" category="paragraph">若要更新不同的內容細節，請執行下列步驟： * 若要變更認證：「使用認證 &lt;credentialId&gt; 」 * 若要變更地區：「使用區域 &lt;regionCode&gt; 」 * 若要變更 ONTAP 檔案系統的 FSX ：「使用 FSX &lt;fileSystemId&gt; 」</block>
+  <block id="1edcef27d6d610b941bff34048672231" category="list-text">顯示項目</block>
+  <block id="e42980b3c0bd52fb14aaa9988655c033" category="list-text">若要顯示可用的認證：「顯示認證」</block>
+  <block id="78522635a5140c949c97294742094c1e" category="list-text">若要顯示可用區域：「顯示區域」</block>
+  <block id="3136fda9c147acfdf956c914baf5e65b" category="list-text">若要顯示命令歷程記錄：「顯示歷程記錄」</block>
+  <block id="03df896fc71cd516fdcf44aa699c4933" category="list-text">變數</block>
+  <block id="fcdc44920df6ae99e908733121b1ede8" category="list-text">以下是設定和使用變數的範例。如果變數值包含空格，您應該在引號內設定。</block>
+  <block id="fb6529d9f860f345fe33d504077c3098" category="list-text">若要設定變數： &lt;variable&gt; = &lt;value&gt;</block>
+  <block id="79455121e702185ae236d6d3ae86d769" category="list-text">若要使用變數： &lt;variable&gt;</block>
+  <block id="073561292daefe5d19eb6dc57fca2623" category="list-text">設定變數的範例： $svm1 = svm123</block>
+  <block id="7ee0990c4bd93aa182fedd32047faca4" category="list-text">使用變數的範例： --FSX filesystem-1 Volume show --vserver $svm1</block>
+  <block id="5dd42e8c4c677f0d9d2a7dfd5965fe45" category="list-text">設定字串值 $Comment1 = 「含空格的註解」的變數範例</block>
+  <block id="b3c5827f54218753bb2c3338236446c2" category="list-text">運算子</block>
+  <block id="da1654cced07f7b0be3ee4215ae83b0b" category="list-text">不支援 Shell 運算子，例如 pipe<block ref="b99834bc19bbad24580b3adfa04fb947" prefix=" " category="inline-code"></block>， background execution<block ref="c2249209343ab488c055da76368f04a0" prefix=" " category="inline-code"></block> 和 redirection<block ref="58ba3bb1a1772a74392e5e86bd2be4b7" prefix=" " category="inline-code"></block> 。如果您包含這些運算子，命令執行將會失敗。</block>
+  <block id="bc7864e70344eae19121f3e6408c5e04" category="list-text">輸入<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>以查看可用命令和說明，或參閱下列 CLI 參考文件以<block ref="0bdecf44265be755040a6284b4703b71" category="inline-xref-macro-rx"></block>取得可用命令：</block>
+  <block id="34b14d4981e88ee13798aea3eecf0674" category="paragraph">如果在發出 ONTAP CLI 命令後發生錯誤，請選取燈泡圖示，取得 AI 所產生的簡短錯誤回應，其中包含故障說明，故障原因及詳細解決方法。如需詳細資料，請選取 * 閱讀更多 * 。</block>
 </blocks>

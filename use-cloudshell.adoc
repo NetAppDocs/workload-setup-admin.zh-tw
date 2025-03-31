@@ -26,6 +26,57 @@ CloudShell 的功能包括：
 * 工作階段重新命名：視需要重新命名工作階段
 * 上次工作階段內容持續性：如果您錯誤地關閉上次工作階段，請重新開啟
 * 設定偏好設定：變更字型大小和輸出類型
+* 針對 ONTAP CLI 命令產生 AI 錯誤回應
+
+
+
+
+=== CloudShell 命令
+
+在 CloudShell GUI 介面中，您可以輸入 `help`來檢視可用的 CloudShell 命令。發出命令後 `help`，會出現下列參考資料。
+
+說明:: NetApp CloudShell 是 BlueXP  工作負載工廠內建的 GUI 介面，可讓您在類似 Shell 的環境中執行 AWS CLI 命令或 ONTAP CLI 命令。它模擬瀏覽器中的終端工作階段，透過工作負載工廠的後端提供終端機功能和代理訊息。它可讓您使用 BlueXP  帳戶中提供的 AWS 認證和 ONTAP 認證。
+可用命令::
++
+--
+* `clear`
+* `help`
+* `[--fsx <fsxId>] <ontap-command> [parameters]`
+* `aws <aws-command> <aws-sub-command> [parameters]`
+
+
+--
+背景:: 每個終端機工作階段都會在特定的內容中執行：認證，區域，以及 ONTAP 檔案系統的可選 FSX 。
++
+--
+所有 AWS 命令都會在提供的內容中執行。AWS 命令只有在提供的認證具有指定區域的權限時才會成功。
+
+您可以使用可選的指定 ONTAP 命令 `fsxId`。如果您提供 `fsxId`個別的 ONTAP 命令，則此 ID 會覆寫內容中的 ID 。如果終端機工作階段沒有適用於 ONTAP 檔案系統 ID 內容的 FSX ，則必須提供 `fsxId`每個 ONTAP 命令。
+
+若要更新不同的內容細節，請執行下列步驟： * 若要變更認證：「使用認證 <credentialId> 」 * 若要變更地區：「使用區域 <regionCode> 」 * 若要變更 ONTAP 檔案系統的 FSX ：「使用 FSX <fileSystemId> 」
+
+--
+顯示項目::
++
+--
+* 若要顯示可用的認證：「顯示認證」
+* 若要顯示可用區域：「顯示區域」
+* 若要顯示命令歷程記錄：「顯示歷程記錄」
+
+
+--
+變數:: 以下是設定和使用變數的範例。如果變數值包含空格，您應該在引號內設定。
++
+--
+* 若要設定變數： <variable> = <value>
+* 若要使用變數： <variable>
+* 設定變數的範例： $svm1 = svm123
+* 使用變數的範例： --FSX filesystem-1 Volume show --vserver $svm1
+* 設定字串值 $Comment1 = 「含空格的註解」的變數範例
+
+
+--
+運算子:: 不支援 Shell 運算子，例如 pipe `|`， background execution `&` 和 redirection `>` 。如果您包含這些運算子，命令執行將會失敗。
 
 
 
@@ -54,13 +105,16 @@ NOTE: CloudShell 可讓您執行任何 AWS 或 ONTAP CLI 命令。不過，如�
 +
 image:screenshot-deploy-cloudshell-session.png["顯示新 CloudShell 工作階段的螢幕擷取畫面。"]
 
-. 輸入 `help`以檢視可用的 CloudShell 命令和指示，或參閱下列 CLI 參考文件以取得可用的命令：
+. 輸入 `help`以查看可用命令和說明，或參閱下列 CLI 參考文件以<<CloudShell 命令,CloudShell 命令>>取得可用命令：
 +
 ** link:https://docs.aws.amazon.com/cli/latest/reference/["AWS CLI 參考"^]：對於與 ONTAP 的 FSX 相關的命令，請選擇 *fsx* 。
 ** link:https://docs.netapp.com/us-en/ontap-cli/["ONTAP CLI 參考"^]
 
 
 . 在 CloudShell 工作階段中發出命令。
++
+如果在發出 ONTAP CLI 命令後發生錯誤，請選取燈泡圖示，取得 AI 所產生的簡短錯誤回應，其中包含故障說明，故障原因及詳細解決方法。如需詳細資料，請選取 * 閱讀更多 * 。
+
 
 
 --
@@ -80,6 +134,9 @@ CloudShell 工作階段會在所選檔案系統的內容中開啟。
 
 
 . 在 CloudShell 工作階段中發出命令。
++
+如果在發出 ONTAP CLI 命令後發生錯誤，請選取燈泡圖示，取得 AI 所產生的簡短錯誤回應，其中包含故障說明，故障原因及詳細解決方法。如需詳細資料，請選取 * 閱讀更多 * 。
+
 
 
 --
