@@ -1051,7 +1051,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
-  <block id="42bc8432872c22cf4fdbb156ae58a17e" category="doc">CloudShell 針對 ONTAP CLI 命令回報 AI 產生的錯誤</block>
   <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">使用 CloudShell 時，每次您發出 ONTAP CLI 命令並發生錯誤時，您都可以取得 AI 產生的錯誤回應，包括故障說明，故障原因及詳細解決方法。</block>
   <block id="4ef50e373522b91f7df59d5cba69a8b7" category="section-title">IAM ： SimulatePermissionPolicy 權限更新</block>
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">現在您可以在工作負載原廠主控台管理<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>權限，只要新增額外的 AWS 帳戶認證，或新增 GenAI 工作負載等新工作負載功能即可。</block>
@@ -1126,4 +1125,5 @@
   <block id="da1654cced07f7b0be3ee4215ae83b0b" category="list-text">不支援 Shell 運算子，例如 pipe<block ref="b99834bc19bbad24580b3adfa04fb947" prefix=" " category="inline-code"></block>， background execution<block ref="c2249209343ab488c055da76368f04a0" prefix=" " category="inline-code"></block> 和 redirection<block ref="58ba3bb1a1772a74392e5e86bd2be4b7" prefix=" " category="inline-code"></block> 。如果您包含這些運算子，命令執行將會失敗。</block>
   <block id="bc7864e70344eae19121f3e6408c5e04" category="list-text">輸入<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>以查看可用命令和說明，或參閱下列 CLI 參考文件以<block ref="0bdecf44265be755040a6284b4703b71" category="inline-xref-macro-rx"></block>取得可用命令：</block>
   <block id="34b14d4981e88ee13798aea3eecf0674" category="paragraph">如果在發出 ONTAP CLI 命令後發生錯誤，請選取燈泡圖示，取得 AI 所產生的簡短錯誤回應，其中包含故障說明，故障原因及詳細解決方法。如需詳細資料，請選取 * 閱讀更多 * 。</block>
+  <block id="ef74d01649997b60252254da8a1573fd" category="doc">CloudShell 會針對 ONTAP CLI 命令回報 AI 產生的錯誤回應</block>
 </blocks>

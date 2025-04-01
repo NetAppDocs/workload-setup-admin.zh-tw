@@ -1,10 +1,10 @@
-= CloudShell 針對 ONTAP CLI 命令回報 AI 產生的錯誤
+= CloudShell 會針對 ONTAP CLI 命令回報 AI 產生的錯誤回應
 :allow-uri-read: 
 
 
 
 
-=== CloudShell 針對 ONTAP CLI 命令回報 AI 產生的錯誤
+=== CloudShell 會針對 ONTAP CLI 命令回報 AI 產生的錯誤回應
 
 使用 CloudShell 時，每次您發出 ONTAP CLI 命令並發生錯誤時，您都可以取得 AI 產生的錯誤回應，包括故障說明，故障原因及詳細解決方法。
 
