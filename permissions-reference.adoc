@@ -2235,7 +2235,7 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 
 === 2025 年 4 月 2 日
 
-下列權限現在可在資料庫的讀取模式中使用：「 sm ： DescribeInstanceInformation 」。
+現在，下列權限可在資料庫的讀取模式中使用 `ssm:DescribeInstanceInformation`：。
 
 
 
