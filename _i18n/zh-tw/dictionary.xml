@@ -1126,4 +1126,8 @@
   <block id="bc7864e70344eae19121f3e6408c5e04" category="list-text">輸入<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block>以查看可用命令和說明，或參閱下列 CLI 參考文件以<block ref="0bdecf44265be755040a6284b4703b71" category="inline-xref-macro-rx"></block>取得可用命令：</block>
   <block id="34b14d4981e88ee13798aea3eecf0674" category="paragraph">如果在發出 ONTAP CLI 命令後發生錯誤，請選取燈泡圖示，取得 AI 所產生的簡短錯誤回應，其中包含故障說明，故障原因及詳細解決方法。如需詳細資料，請選取 * 閱讀更多 * 。</block>
   <block id="ef74d01649997b60252254da8a1573fd" category="doc">CloudShell 會針對 ONTAP CLI 命令回報 AI 產生的錯誤回應</block>
+  <block id="e388026a0cea886de58a344e102aff29" category="cell">擷取一組受管理 EC2 執行個體（ SQL 節點）的 SSM 關聯狀態</block>
+  <block id="3320749a6854264e1889d72d7f41a0bf" category="cell">SSM) ： DescrubeInstanceInformation</block>
+  <block id="99e26a6b02df18a6d3fcaa201c832eff" category="section-title">2025 年 4 月 2 日</block>
+  <block id="3721724ce177d539f2733638cda0c562" category="paragraph">下列權限現在可在資料庫的讀取模式中使用：「 sm ： DescribeInstanceInformation 」。</block>
 </blocks>

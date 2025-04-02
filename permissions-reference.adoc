@@ -419,6 +419,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "ssm:DescribePatchBaselines",
         "ssm:DescribeInstancePatchStates",
         "ssm:ListCommands",
+        "ssm:DescribeInstanceInformation",
         "fsx:ListTagsForResource"
       ],
       "Resource": [
@@ -437,7 +438,6 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
     },
     {
-      "Sid": "IAMGroup",
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -954,6 +954,9 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 自動化
 
 
+
+
+| 擷取一組受管理 EC2 執行個體（ SQL 節點）的 SSM 關聯狀態 | SSM) ： DescrubeInstanceInformation | 庫存 | 讀取 
 
 
 | 取得作業系統修補程式評估可用的修補程式基準清單 | SSM) ： DescrubePatchBasines | 最佳化  a| 
@@ -2227,6 +2230,12 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2025 年 4 月 2 日
+
+下列權限現在可在資料庫的讀取模式中使用：「 sm ： DescribeInstanceInformation 」。
 
 
 
