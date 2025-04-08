@@ -1059,7 +1059,6 @@
   <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">選用：選取 * 啟用自動權限檢查 * ，檢查您是否擁有完成工作負載作業所需的 AWS 帳戶權限。啟用檢查會將新增<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block>至您的權限原則。此權限的目的只是確認權限。您可以在新增認證後移除權限，但我們建議保留權限，以防止資源建立部分成功的作業，並避免您執行任何必要的手動資源清理作業。</block>
   <block id="c3c7c9c146408a0ee564eedba4821f52" category="list-text">選用：選取 * 啟用自動權限檢查 * ，檢查您是否擁有完成工作負載作業所需的 AWS 帳戶權限。啟用檢查會將權限新增<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>至您的權限原則。此權限的目的只是確認權限。您可以在新增認證後移除權限，但我們建議保留權限，以防止資源建立部分成功的作業，並避免您執行任何必要的手動資源清理作業。</block>
   <block id="ad9001b544dade5536691ec3feee578f" category="inline-link-macro">BlueXP  工作負載工廠的權限</block>
-  <block id="4c1bf71f3b414847584faa395569aa99" category="paragraph">深入瞭解 <block ref="0ea8d4071df9710eb1c660a6314e7a7f" category="inline-link-macro-rx"></block>。</block>
   <block id="2a358d687197b0311c68b4c8a7e35e1c" category="cell">模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較</block>
   <block id="8c5e268f15aeebda6b5b234b3f7c7174" category="cell">從 AI 引擎堆疊將加密事件發佈至 WLMAI 後端</block>
   <block id="9b1384398d4de5545bd0dad2106d6b0d" category="cell">將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端</block>
@@ -1130,4 +1129,5 @@
   <block id="3320749a6854264e1889d72d7f41a0bf" category="cell">SSM) ： DescrubeInstanceInformation</block>
   <block id="99e26a6b02df18a6d3fcaa201c832eff" category="section-title">2025 年 4 月 2 日</block>
   <block id="ecffd7b63fa9fc5c65235a6db0f2a9b2" category="paragraph">現在，下列權限可在資料庫的讀取模式中使用<block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block>：。</block>
+  <block id="0c749cb02f361ac40b1f6fc23a0feaf9" category="paragraph">深入瞭解 <block ref="8b9a4f89ed6bf874edd6af12deea004c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
