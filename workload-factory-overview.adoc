@@ -87,8 +87,8 @@ link:manage-service-accounts.html["瞭解如何管理服務帳戶"]。
 工作負載工廠提供三種作業模式，可讓您仔細控制對雲端環境的存取，並根據您的 IT 原則，將遞增信任指派給工作負載工廠。
 
 * * 基本模式 * 代表零信任關係，旨在早期探索工作負載工廠，並使用各種精靈來建立所需的基礎架構即程式碼。使用者可以手動複製及使用此程式碼、以及相關的 AWS 認證資料。
-* * 讀取模式 * 可協助使用者偵測各種資源和工具、進而協助完成相關精靈、進而提升基本模式的使用體驗。
-* * 自動執行模式 * 代表完全信任關係、其設計旨在代表使用者執行及自動化、以及指派的認證、這些認證具有執行所需且經過驗證的權限。
+* * 唯讀模式 * 可協助使用者偵測各種資源和工具，進而協助完成相關精靈，進而提升基本模式的使用體驗。
+* * 讀取 / 寫入模式 * 代表完全信任關係，其設計旨在代表使用者執行及自動化，以及具有執行所需且已驗證權限的指派認證。
 
 
 link:operational-modes.html["深入瞭解工作負載原廠作業模式"]。
@@ -127,18 +127,7 @@ link:codebox-automation.html["深入瞭解 CodeBox"]。
 * link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["瞭解如何探索資料庫工作負載的節約效益"^]
 
 
-
-
-== 使用工作負載工廠的工具
-
-您可以搭配下列工具使用 BlueXP  工作負載工廠：
-
-* * 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案
-* * BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用
-* * REST API* ：工作負載原廠 REST API 可讓您部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX
-* * CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源
-* * Terraform BlueXP  工作負載工廠供應商 * ： Terraform 可讓您建置及管理在工作負載工廠主控台產生的基礎架構工作流程
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 

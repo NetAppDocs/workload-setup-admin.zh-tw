@@ -169,8 +169,6 @@
   <block id="0261a8e2837bda78e3e9784459c8d346" category="doc">瞭解作業模式和 AWS 認證</block>
   <block id="3b39e22b0ceb822bf56d19eb7ec14f7f" category="section-title">作業模式</block>
   <block id="dad76b021334eb3d63f98648f701f598" category="list-text">基本模式</block>
-  <block id="1aa9d894db1bbfc4f52d99a458da7ff9" category="list-text">讀取模式</block>
-  <block id="8d350bc547891d480d771e3f371ccf36" category="list-text">自動化模式</block>
   <block id="ba15cdea72f76749ac3c4d115682e1d5" category="section-title">操作模式功能</block>
   <block id="98065f8fb54547b003b502647ed5da13" category="paragraph">使用每種模式的可用功能會隨著每種模式而增加。</block>
   <block id="650be61892bf690026089544abbd9d26" category="cell">模式</block>
@@ -183,7 +181,6 @@
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="cell">讀取</block>
   <block id="dd5bf678cc7b441324b2d76ab8b6329d" category="cell">適度填寫 IAC 範本</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是的</block>
-  <block id="9ed56d4841dbb118ee9f4fc81ea82572" category="cell">自動化</block>
   <block id="3babc847b322c661049062334b9c76b2" category="cell">完全自動化</block>
   <block id="78ac103234082be5f5a4ea67a4551981" category="cell">完整的 IAC 範本、完全自動化</block>
   <block id="c1ae257d71f3632f9398109243cbfd70" category="section-title">作業模式需求</block>
@@ -197,7 +194,6 @@
   <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
   <block id="7cc58201fa83275d07886281be81a758" category="section-title">作業模式範例</block>
   <block id="5504977cb47d642da3d1264eefb7edda" category="section-title">範例1</block>
-  <block id="38356e3b8f5e0e5ad2a7ff778c4e8d82" category="paragraph">使用下列權限認證的帳戶使用者將擁有完整控制權（自動化模式）、可為 ONTAP 檔案系統建立 FSX 、部署資料庫、以及檢視帳戶中使用的其他 AWS 儲存設備類型。</block>
   <block id="4cd751338620bbd6099bbf7dcff61879" category="inline-image-macro">螢幕擷取畫面顯示一組提供兩種工作負載權限的認證。</block>
   <block id="9d405f908b42d501e27391e88e96690c" category="paragraph"><block ref="9d405f908b42d501e27391e88e96690c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f3a8aa007370d00f3fd3b293a6a1118" category="section-title">範例2</block>
@@ -327,8 +323,6 @@
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">網路型主控台</block>
   <block id="9b945efebb006547a94415eadaa12921" category="section-title">帳戶</block>
   <block id="41d28e7b29f45d4f63653993af041bc7" category="paragraph">如果您的組織需要額外的帳戶或使用者管理、請使用產品內的聊天室與我們聯絡。</block>
-  <block id="d81fee99e7fd276bb44ecddacfeba318" category="list-text">* 讀取模式 * 可協助使用者偵測各種資源和工具、進而協助完成相關精靈、進而提升基本模式的使用體驗。</block>
-  <block id="e2cde95c1c68867f8b74113e5266c7e4" category="list-text">* 自動執行模式 * 代表完全信任關係、其設計旨在代表使用者執行及自動化、以及指派的認證、這些認證具有執行所需且經過驗證的權限。</block>
   <block id="e73298b79ea9408111cb3612bf336a0e" category="section-title">連線連結</block>
   <block id="e20e09752eeb59f7fee2ca964db1c848" category="paragraph">連結目前使用 AWS Lambda 。</block>
   <block id="e3bdd5798efebca8061760f610d98bcc" category="inline-link">深入瞭解連結</block>
@@ -385,7 +379,6 @@
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">瞭解如何從 BlueXP  主控台存取工作負載工廠</block>
   <block id="4fa2f246a664251a157926c2e11e1eb3" category="summary">新增 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
   <block id="188c7f44ffe17186c8dcbc38640d54e1" category="paragraph">新增及管理 AWS 認證，讓工作負載工廠擁有在 AWS 帳戶中部署及管理雲端資源所需的權限。</block>
-  <block id="ef76867d2d387a61f890c38a33b72db2" category="paragraph">除非您新增 AWS 帳戶認證，否則工作負載工廠將以 _basive_ 模式運作。您可以新增認證以啟用其他操作模式、例如讀取模式和自動模式。<block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block>。</block>
   <block id="46d8bcaa7ad323ed43d1470da9f4d8d4" category="paragraph">您可以從「認證」頁面，將 AWS 認證新增至現有的工作負載原廠帳戶。這可為工作負載工廠提供管理 AWS 雲端環境中資源和程序所需的權限。</block>
   <block id="a8d22daacb593b2058549a21847e76f3" category="list-text">* 手動 * ：在工作負載工廠中新增認證時，您可以在 AWS 帳戶中建立 IAM 原則和 IAM 角色。</block>
   <block id="d57580b6e425a294d78d2a742a402af8" category="paragraph">您可以手動將 AWS 認證新增至工作負載原廠，讓您的工作負載原廠帳戶擁有管理 AWS 資源所需的權限，以便執行您獨特的工作負載。您新增的每組認證都會根據您要使用的工作負載功能、包括一或多個 IAM 原則、以及指派給您帳戶的 IAM 角色。</block>
@@ -408,8 +401,6 @@
   <block id="bd8d6e5dfffb67199ddeb1c155bc6e48" category="paragraph"><block ref="bd8d6e5dfffb67199ddeb1c155bc6e48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3aa9d8c5e3261007f739ce4fad58363e" category="list-text">返回工作負載工廠並監控「認證」頁面，以確認新認證正在進行中，或已新增認證。</block>
   <block id="9e45a841cd3d04ddc3431cb5c2faefdc" category="summary">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生執行工作負載工廠所支援之任何作業所需的程式碼。Codebox 與工作負載原廠作業模式（基本，讀取，自動化）一致，為執行準備工作設定明確的路徑，並提供自動化目錄，供日後快速重複使用。</block>
-  <block id="1fa615fd351b087a76b1e2c3e58b88aa" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生執行工作負載工廠所支援之任何作業所需的程式碼。Codebox 與工作負載原廠作業模式（基本，讀取和自動化）一致，為執行準備工作設定了明確的路徑，並提供自動化目錄以供日後快速重複使用。</block>
-  <block id="43121d36d9075d72f302f224d3e42ae1" category="paragraph">此外，在設定工作負載原廠認證時， Codebox 會動態顯示建立 IAM 原則所需的 AWS 權限。系統會針對您計畫使用的每個工作負載原廠功能（資料庫， AI ， ONTAP 適用的 FSX 等）提供權限，並根據原則使用者是否取得唯讀權限或完整操作權限而自訂這些權限。您只要從 Codebox 複製權限，然後將其貼到 AWS 管理主控台，工作負載工廠就能擁有正確的權限來管理您的工作負載。</block>
   <block id="4dbdfdd6a8563d138a057f5cd3bb0f0b" category="list-text">工作負載原廠 REST API</block>
   <block id="7f13adabeed591303c3a10ee4980d5a1" category="summary">BlueXP  工作負載工廠可透過兩個網路型主控台存取。</block>
   <block id="c938676b28ab6dd4d5cc28ebdf8c49b9" category="doc">主控台體驗</block>
@@ -446,9 +437,7 @@
   <block id="9317db7f25495b088f6318d86dfd14bf" category="list-text">代表完全信任關係，讓工作負載工廠獲得完整權限。這可讓工作負載工廠代表您執行及自動化 AWS 中的作業，以及具有執行所需權限的指派認證。</block>
   <block id="c733eb78f31844c1e1433a374c901d1e" category="cell">從工作負載工廠自動化</block>
   <block id="b1ac12ec9d4b511fa08a587be1be8b4d" category="paragraph">您無需在工作負載工廠中設定選取器，即可識別您打算使用的模式。此模式是根據您指派給工作負載原廠帳戶的 AWS 認證和權限來決定。</block>
-  <block id="64c0a6c81b6c3af3765c25256dcbf047" category="paragraph">您可以設定認證、為一個工作負載元件提供一個模式、而為另一個元件提供另一個模式。例如，您可以針對部署和管理 ONTAP 檔案系統之 FSX 的作業，設定自動化模式，但只能設定讀取模式，以便使用工作負載工廠建立和部署資料庫工作負載。</block>
   <block id="20f75920053dcff627d860520f371b26" category="paragraph">您可以在工作負載原廠帳戶中的單一認證集內提供這些功能，或是在每個認證提供獨特的工作負載部署功能時，建立多組認證。</block>
-  <block id="ccff80abdf432e228d3c0d30a4a114de" category="paragraph">不過，他們將無法透過工作負載工廠的自動化控制功能來建立和部署 VMware 工作負載（基本模式）。如果他們想要建立 VMware 工作負載、就必須從 Codebox 複製程式碼、手動登入 AWS 帳戶、然後手動填入產生的程式碼中遺失的項目、才能使用此功能。</block>
   <block id="2fb909c54550b56bac338e985277eb1a" category="paragraph">當您使用第一個工作負載原廠功能（或功能）時，您需要使用這些工作負載功能所需的權限來建立認證。您將會將認證新增至工作負載工廠，但您必須存取 AWS 管理主控台，才能建立 IAM 角色和原則。當您在工作負載工廠中使用任何功能時，這些認證將在您的帳戶中提供。</block>
   <block id="929b839513dbfff16e7804628038a9a8" category="paragraph">將一組以上的 AWS 認證新增至工作負載工廠，可提供使用額外功能所需的額外權限，例如 ONTAP 檔案系統的 FSX ，在 ONTAP 的 FSX 上部署資料庫，移轉 VMware 工作負載等。</block>
   <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link-macro">瞭解如何將 AWS 認證新增至工作負載工廠</block>
@@ -460,7 +449,6 @@
   <block id="70d0aaf5f480c6663d11cba807745150" category="paragraph">使用者可從網路型主控台，以雲端服務的形式存取工作負載工廠。開始之前、您應該先瞭解 <block ref="e8fd0c1fcb8ab0b007f06daaaaad1620" category="inline-link-macro-rx"></block> 和 <block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block>。</block>
   <block id="5aef544885f83ccc840e539c33cb1025" category="paragraph">前往<block ref="c88df82826d36e57e6bb9062bf07b8b2" category="inline-link-rx"></block>、註冊並建立帳戶。</block>
   <block id="60606490df41979dfeb5466c4c9f1288" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>將 AWS 認證新增至工作負載工廠</block>
-  <block id="8240cb8cdbe0ba3f858b0fda1bb07bfc" category="paragraph">此步驟為選用步驟。您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以 _read_ 或 _active_ 模式將 AWS 認證新增至工作負載工廠，讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及部署和管理特定工作負載（例如資料庫和 GenAI ）所需的權限。</block>
   <block id="51ff16c71246f19573efec76f8f088e4" category="paragraph">現在您已經註冊，建立帳戶，並選擇性地新增 AWS 認證，您可以開始使用工作負載工廠來使用適用於 ONTAP 的 FSX 來最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。</block>
   <block id="9ec9485bf8174a52fd8f6a62564d8738" category="summary">工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。</block>
   <block id="a51339d19908e6fdb3902e2656db64d1" category="doc">註冊 BlueXP  工作負載工廠</block>
@@ -475,7 +463,6 @@
   <block id="3acdefd13933ae891b18dfca314c3ae8" category="summary">您可以使用 Codebox 產生執行 BlueXP  工作負載工廠所支援任何作業所需的程式碼。</block>
   <block id="7a722a65def6075db353b70066e35707" category="doc">在 BlueXP  工作負載工廠中使用 Codebox 進行自動化</block>
   <block id="a874d0883486fcca7aa1243ef9acc01d" category="paragraph">您可以使用 Codebox 產生執行 BlueXP  工作負載工廠所支援任何作業所需的程式碼。您可以使用工作負載原廠 REST API ， AWS CLI 和 AWS CloudForgation 來產生可以使用和執行的程式碼。</block>
-  <block id="3e529d693ad9e838d629617602ce7195" category="paragraph">Codebox 會根據每位使用者工作負載原廠帳戶所提供的 AWS 權限，在程式碼中填入適當的資料，以符合工作負載原廠作業模式（基本，讀取和自動化）。此程式碼可以像範本一樣使用、您可以在其中填入遺失的資訊（例如認證）、或在執行程式碼之前自訂特定資料。</block>
   <block id="5a43715fb7078b4045756abce9da826e" category="paragraph">當您在工作負載原廠 UI 精靈中輸入值時，您可以在完成每個欄位時，在 Codebox 中看到資料更新。完成精靈後、但在您選取頁面底部的 * 建立 * 按鈕之前、請在代碼方塊中選取 <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> 複製、以擷取建置組態所需的程式碼。例如、從建立新的 Microsoft SQL Server 所產生的這個螢幕擷取畫面、會顯示 VPC 和可用性區域的精靈項目、以及在 Codebox 中用於 REST API 實作的等效項目。</block>
   <block id="d10cc376cc863f01ec47fab56e956119" category="paragraph">您可以複製從 Codebox 產生的 CloudForgation 程式碼、然後在 AWS 帳戶中啟動 Amazon Web Services CloudForgation 堆疊。CloudForgation 將執行您在工作負載原廠 UI 中定義的動作。</block>
   <block id="d4483cf5ec74c50b2bf5b0430ea00d3e" category="paragraph">使用 CLoudForation 程式碼的步驟可能會有所不同，視您是部署適用於 ONTAP 檔案系統的 FSX ，建立帳戶認證，還是執行其他工作負載工廠動作而定。</block>
@@ -510,13 +497,6 @@
   <block id="691199ddecf65c4783496c94612dd07f" category="paragraph">您不需要連結即可開始使用工作負載工廠，但在某些情況下，您需要建立連結來解除鎖定所有工作負載原廠功能和工作負載功能。</block>
   <block id="977c73c0914e897973f4ba0be879711f" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 工程師產生執行工作負載工廠所支援任何作業所需的程式碼。程式碼格式包括工作負載原廠 REST API ， AWS CLI 和 AWS CloudForgation 。</block>
   <block id="4d062c42aef687546a9198cf40695389" category="paragraph">Codebox 與工作負載原廠作業模式（基本，讀取和自動化）一致，並設定明確的執行準備路徑，以及自動化目錄，以供日後快速重複使用。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
-  <block id="d5688c5bf16d0126d5b27759385bd41e" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案</block>
-  <block id="38f4e563ea70a0c42a140783a152e82f" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用</block>
-  <block id="a3ee2d6d4606b21bc131c4389e63413b" category="list-text">* REST API* ：工作負載原廠 REST API 可讓您部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX</block>
-  <block id="35507c73673fd91f2b540f5ac22435e2" category="list-text">* CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源</block>
-  <block id="2b796a233d6b48fb3e49b8c71a2addb1" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ： Terraform 可讓您建置及管理在工作負載工廠主控台產生的基礎架構工作流程</block>
   <block id="8ced11608886f669c92a28dad366c83f" category="paragraph">工作負載工廠可讓您針對特定工作負載最佳化，自動化及操作適用於 ONTAP 檔案系統的 FSX 。每個工作負載都會公開相關的 REST API 。這些工作負載和 API 共同形成一個靈活且可擴充的開發平台、可用來管理 ONTAP 檔案系統的 FSX 。</block>
   <block id="0839f9866a5d09d079388954e0119ee3" category="paragraph">使用工作負載原廠 REST API 有幾項優點：</block>
   <block id="ee784d1edaf22c0f803f2403be1903b8" category="list-text">工作負載原廠驗證是以 OAuth2 標準為基礎。NetApp 仰賴驗證 0 服務實作。</block>
@@ -525,7 +505,6 @@
   <block id="a6e871d2d7edd183ddc76f5c82f81c51" category="paragraph"><block ref="a6e871d2d7edd183ddc76f5c82f81c51" category="inline-link-rx"></block></block>
   <block id="ad58fbedc89b687da72b83c65c94187c" category="sidebar">BlueXP  工作負載工廠入門，讓您在使用 Amazon FSX for NetApp ONTAP 時，能充分發揮工作負載的效益。完成設定後，您可以針對工作負載建立，最佳化及管理適用於 ONTAP 檔案系統的 FSX ，探索適用於 ONTAP 的 FSX 成本節約效益，使用內建的基礎架構即程式碼聯合試驗，在平台之間實現自動化，以及在工作負載工廠中管理工作負載。</block>
   <block id="9d99dd80a147b3b1376d73b8b105b981" category="sidebar">BlueXP  工作負載原廠設定與管理文件</block>
-  <block id="b5be8d4327a5f5a8cb712336382b2c2c" category="sidebar">工作負載原廠總覽</block>
   <block id="280ab23085110ae96b1c8df197382d0b" category="sidebar">註冊至工作負載工廠</block>
   <block id="cb1411d161cdf3fea65b5b1351ffa45b" category="sidebar">管理工作負載工廠</block>
   <block id="2003c10ae1eaa96c8dd0c849f3e0b79e" category="sidebar">登入工作負載工廠</block>
@@ -598,7 +577,6 @@
   <block id="43fcd221af337ae9a32718b7ef097cf2" category="summary">若要使用 BlueXP  工作負載原廠功能和服務，您必須提供權限，讓工作負載工廠能夠在您的雲端環境中執行作業。</block>
   <block id="d6a57e4245c0b8a043004e7acd2a2bd9" category="doc">BlueXP  工作負載工廠的權限</block>
   <block id="700a021d89dc2381c64a3ed9192ee53f" category="section-title">為何要使用權限</block>
-  <block id="65508cebd422d78a4b01b7d67145b61f" category="paragraph">當您提供讀取或自動化模式權限時，工作負載工廠會將原則附加至執行個體，並具有管理該 AWS 帳戶內資源和程序的權限。這讓工作負載工廠能夠執行各種作業，從探索儲存環境到部署 AWS 資源，例如儲存管理中的檔案系統，或是 GenAI 工作負載的知識庫。</block>
   <block id="141fc03482c74c6707d4666e1b85c2cf" category="paragraph">例如，對於資料庫工作負載，當工作負載工廠獲得必要權限時，它會掃描指定帳戶和區域中的所有 EC2 執行個體，並篩選所有 Windows 型機器。如果已在主機上安裝並執行 AWS Systems Manager （ SSM ） Agent ，且系統管理員網路已正確設定，則工作負載工廠可以存取 Windows 機器，並確認是否已安裝 SQL Server 軟體。</block>
   <block id="a6a12fe94711dfdea0fcf1676358e0b3" category="section-title">依工作負載的權限</block>
   <block id="fc80f33c496e0821a5411de4d55a7eb7" category="paragraph">每個工作負載都會使用權限在工作負載工廠中執行特定工作。捲動至您用來檢視權限清單的工作負載，其用途，使用位置，以及支援這些權限的模式。</block>
@@ -857,7 +835,6 @@
   <block id="a7170e00216d426ffa1b5c8b1ad8faf2" category="list-text">"IAM:PassRole" 受 "iAM:PassedToService" 限制： "ec2.amazonaws.com"*</block>
   <block id="be5d4fafcc5fc8ef08ec4bd4f076e815" category="section-title">GenAI 工作負載的權限</block>
   <block id="c01e6e48c9dd3d58f56addc8ddd893e8" category="paragraph">VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限，可根據您所在的作業模式，在公有雲環境中管理資源和程序。</block>
-  <block id="bc3cde15ee34ad6f9b8ff7079275d49d" category="paragraph">GenAI IAM 原則僅適用於操作模式：</block>
   <block id="fc52d9d99561c2b721d43bdd4d36b615" category="example-title">GenAI 工作負載的 IAM 原則</block>
   <block id="2d8cf1aba2af04b1b4fd9bd3d7d6905f" category="paragraph">下表提供 GenAI 工作負載權限的詳細資料。</block>
   <block id="64f5bb9f44fff01f3adc6fad9e6240f7" category="example-title">GenAI 工作負載的權限表</block>
@@ -1046,7 +1023,6 @@
   <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">您現在可以從使用工作負載工廠<block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>。BlueXP  主控台體驗提供與工作負載原廠主控台相同的功能。</block>
   <block id="dec23cffbd0de1b8096bc26072eb0b7d" category="cell">在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025 年 3 月 2 日</block>
-  <block id="d783298edb81a604dd8765a5040ef52e" category="paragraph">GenAI 的 _ 自動 _ 模式現在提供下列權限<block ref="1311c4cbbe5b925c15d25fe5ff7b022b" prefix=" " category="inline-code"></block>：。</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
@@ -1055,7 +1031,6 @@
   <block id="4ef50e373522b91f7df59d5cba69a8b7" category="section-title">IAM ： SimulatePermissionPolicy 權限更新</block>
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">現在您可以在工作負載原廠主控台管理<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>權限，只要新增額外的 AWS 帳戶認證，或新增 GenAI 工作負載等新工作負載功能即可。</block>
   <block id="c1bc5d8eeb872326cb512499f02befb5" category="paragraph"><block ref="c1bc5d8eeb872326cb512499f02befb5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f7b9069b6f855261dc3e63baeaa5531f" category="list-text">對於提供權限等級選擇（讀取或自動化）的工作負載功能，請選取這些認證可用的權限類型。</block>
   <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">選用：選取 * 啟用自動權限檢查 * ，檢查您是否擁有完成工作負載作業所需的 AWS 帳戶權限。啟用檢查會將新增<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block>至您的權限原則。此權限的目的只是確認權限。您可以在新增認證後移除權限，但我們建議保留權限，以防止資源建立部分成功的作業，並避免您執行任何必要的手動資源清理作業。</block>
   <block id="c3c7c9c146408a0ee564eedba4821f52" category="list-text">選用：選取 * 啟用自動權限檢查 * ，檢查您是否擁有完成工作負載作業所需的 AWS 帳戶權限。啟用檢查會將權限新增<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>至您的權限原則。此權限的目的只是確認權限。您可以在新增認證後移除權限，但我們建議保留權限，以防止資源建立部分成功的作業，並避免您執行任何必要的手動資源清理作業。</block>
   <block id="ad9001b544dade5536691ec3feee578f" category="inline-link-macro">BlueXP  工作負載工廠的權限</block>
@@ -1063,7 +1038,6 @@
   <block id="8c5e268f15aeebda6b5b234b3f7c7174" category="cell">從 AI 引擎堆疊將加密事件發佈至 WLMAI 後端</block>
   <block id="9b1384398d4de5545bd0dad2106d6b0d" category="cell">將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端</block>
   <block id="359cacd98d9742aded751741e70dce82" category="cell">在「 AI 引擎部署精靈」中列出子網路</block>
-  <block id="b2009fdc9170f9b13160d7da2fbab6aa" category="cell">在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組</block>
   <block id="f0f0a4abc20f5a5e438ac1da53b231af" category="cell">向其中一個基礎模式提出聊天要求</block>
   <block id="ffd1e194cd59f12c42768a9effd5aa2f" category="cell">確認在部署和重建作業期間需要建立 Amazon CloudWatch 記錄群組</block>
   <block id="2887c4c92d65effaf012b7ca2f914958" category="cell">在 AI 引擎精靈期間取得支援 FSX 和 Amazon bedrock 的區域</block>
@@ -1075,7 +1049,6 @@
   <block id="a89bcda1bd913f5d2c92bb3afd10848c" category="cell">將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組</block>
   <block id="1ae2d90929ed009fb7cb0c3215e704ed" category="cell">從 Amazon CloudWatch 取得 SSM 回應（回應時間過長時）</block>
   <block id="58401e538d76248fba41eb3d4b00ff5b" category="cell">取得 Amazon CloudWatch 的 SSM 回應</block>
-  <block id="79b580d74ffecaf0e2c1b9af0ac5f882" category="cell">在部署和重建作業期間的堆疊重新部署期間，為 Amazon 基礎記錄建立 Amazon CloudWatch 記錄群組</block>
   <block id="4a5e33ece3615dac1032e841cde40447" category="cell">將基礎記錄傳送至 Amazon CloudWatch</block>
   <block id="add4bf257ce9e3b25c497de343e52632" category="cell">Bedrock ： PutModelInvocationLoggingConfiguration</block>
   <block id="60932b6084feefeacceacd749dcdedc9" category="cell">建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色</block>
@@ -1085,13 +1058,11 @@
   <block id="9aa5a97dfe3f7608d8ee28e7db3c4e2c" category="cell">Bedrock ： ListInferenceProfiles</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025 年 3 月 30 日</block>
   <block id="68ef824f4316a8546891ab93ee11d77f" category="section-title">GenAI 工作負載權限更新</block>
-  <block id="f587eed9c7dc8910227d7d906f2261fd" category="paragraph">GenAI 的 _ 自動化模式 _ 現在提供下列權限：</block>
   <block id="8478b63212964b55320b9d61c0737e08" category="list-text"><block ref="add4bf257ce9e3b25c497de343e52632" prefix="" category="inline-code"></block></block>
   <block id="d07fde30621d1890701e3ba8f6d492ad" category="list-text"><block ref="b76a6c7392362eeb73fd252a4af062ca" prefix="" category="inline-code"></block></block>
   <block id="a39790181f1fd72ef9537ae34545ff02" category="list-text"><block ref="f6ae0a8a1321975a6474722dcafe1322" prefix="" category="inline-code"></block></block>
   <block id="e1c6dba31ff47898c553f6707ccfbdb0" category="list-text"><block ref="8de34002c35d0d4a13280a50047e76e4" prefix="" category="inline-code"></block></block>
   <block id="71d01806cd25e89067c25b4f03e9a607" category="list-text"><block ref="9aa5a97dfe3f7608d8ee28e7db3c4e2c" prefix="" category="inline-code"></block></block>
-  <block id="4d3f55c3707ec2803e7eaf6d7b978451" category="paragraph">下列權限已從 GenAI 的 _ 自動化模式 _ 中移除<block ref="8a44b1c8d2e06b1acd7404fbb70437cc" prefix=" " category="inline-code"></block>：。</block>
   <block id="4e1a858f8ffb4228ac62fb2a65e14e11" category="section-title">IAM ： SimulatePrincipalPolicy 權限更新</block>
   <block id="ebbd089f3b834616ea3613bf16e46cbf" category="paragraph"><block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>如果您在新增額外的 AWS 帳戶認證或從工作負載原廠主控台新增新的工作負載功能時，啟用自動權限檢查，則權限是所有工作負載權限原則的一部分。此權限會模擬工作負載作業，並在從工作負載工廠部署資源之前，檢查您是否具有必要的 AWS 帳戶權限。啟用此檢查可減少清理失敗作業中的資源，以及新增遺失權限所需的時間和精力。</block>
   <block id="e81d623c1eabf7a990c647cdb9dc4de8" category="list-text">針對 ONTAP CLI 命令產生 AI 錯誤回應</block>
@@ -1128,6 +1099,45 @@
   <block id="e388026a0cea886de58a344e102aff29" category="cell">擷取一組受管理 EC2 執行個體（ SQL 節點）的 SSM 關聯狀態</block>
   <block id="3320749a6854264e1889d72d7f41a0bf" category="cell">SSM) ： DescrubeInstanceInformation</block>
   <block id="99e26a6b02df18a6d3fcaa201c832eff" category="section-title">2025 年 4 月 2 日</block>
-  <block id="ecffd7b63fa9fc5c65235a6db0f2a9b2" category="paragraph">現在，下列權限可在資料庫的讀取模式中使用<block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block>：。</block>
   <block id="0c749cb02f361ac40b1f6fc23a0feaf9" category="paragraph">深入瞭解 <block ref="8b9a4f89ed6bf874edd6af12deea004c" category="inline-link-macro-rx"></block>。</block>
+  <block id="74d516ef8dfa098bb4cd92313c403475" category="doc">CloudShell 自動完整支援</block>
+  <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">使用 BlueXP  工作負載原廠 CloudShell 時，您可以開始輸入命令，然後按 Tab 鍵檢視可用選項。如果存在多種可能性， CLI 會顯示建議清單。此功能可將錯誤降至最低，並加速命令執行，進而提升生產力。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
+  <block id="5a92867eb042f7dcff91a1de74a2aa76" category="paragraph">除非您新增 AWS 帳戶認證，否則工作負載工廠將以 _Basic_ 模式運作。您可以新增認證以啟用其他作業模式，例如 _ 唯讀 _ 模式和 _ 讀取 / 寫入 _ 模式。<block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block>。</block>
+  <block id="015d402cdd34eee3e53cdd7bf1bde60e" category="list-text">對於提供權限等級選擇（唯讀，讀取 / 寫入等）的工作負載功能，請選取這些認證可用的權限類型。</block>
+  <block id="33690931e0014f506be3c7e723737562" category="paragraph">CodeBox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生執行工作負載工廠所支援之任何作業所需的程式碼。Codebox 與工作負載原廠作業模式（基本，唯讀和讀取 / 寫入）一致，可設定明確的執行準備路徑，並提供自動化目錄以供日後快速重複使用。</block>
+  <block id="fcb28ed33fed27ffbcd995263190fd03" category="paragraph">此外，在設定工作負載原廠認證時， Codebox 會動態顯示建立 IAM 原則所需的 AWS 權限。系統會針對您計畫使用的每個工作負載原廠功能（資料庫， AI ， ONTAP 適用的 FSX 等）提供權限，這些權限會根據原則使用者是否會取得唯讀權限或完整讀寫權限而自訂。您只要從 Codebox 複製權限，然後將其貼到 AWS 管理主控台，工作負載工廠就能擁有正確的權限來管理您的工作負載。</block>
+  <block id="ac811c471ef716f9c8a3865d7f14caa3" category="list-text">唯讀模式</block>
+  <block id="817855bb538dbbb63c56d38fc57684f5" category="list-text">讀取 / 寫入模式</block>
+  <block id="db3317ceb65be02e43db6f277e0ad94e" category="cell">讀取/寫入</block>
+  <block id="27026b2887f7523ec1293c67830e4430" category="paragraph">您可以設定認證、為一個工作負載元件提供一個模式、而為另一個元件提供另一個模式。例如，您可以針對部署和管理 ONTAP 檔案系統之 FSX 的作業，設定讀取 / 寫入模式，但只能設定讀取模式，以便使用工作負載原廠來建立和部署資料庫工作負載。</block>
+  <block id="e6cecb421f7b5203c2daf4f545364558" category="paragraph">使用下列權限認證的帳戶使用者將擁有完整控制權（讀取 / 寫入模式），可為 ONTAP 檔案系統建立 FSX ，部署資料庫，以及檢視帳戶中使用的其他 AWS 儲存設備類型。</block>
+  <block id="c0ee691320caa89b529bc0bcaf9cc696" category="paragraph">不過，他們將無法透過工作負載工廠的自動化控制功能來建立和部署 VMware 工作負載（基本模式）。如果他們想要建立 VMware 工作負載、就必須從 Codebox 複製程式碼、手動登入 AWS 帳戶、然後手動填入產生的程式碼中遺失的項目、才能使用此功能。</block>
+  <block id="b91c58f3e94e0488074053d96cd4bbec" category="paragraph">當您提供唯讀或讀取 / 寫入模式權限時，工作負載工廠會將原則附加至執行個體，並具有管理該 AWS 帳戶內資源和處理程序的權限。這讓工作負載工廠能夠執行各種作業，從探索儲存環境到部署 AWS 資源，例如儲存管理中的檔案系統，或是 GenAI 工作負載的知識庫。</block>
+  <block id="4d372922f30597b3e046274dbb3cecd2" category="list-text">唯讀</block>
+  <block id="d066bc059c61c75a41706f175a5b3f8b" category="cell">發生 SSM 輸出截斷時，工作負載工廠會切換至 SQL 執行個體的 Amazon CloudWatch 記錄檔。</block>
+  <block id="2e50818bd890a03b645105690ca2ee60" category="list-text">儲存評估</block>
+  <block id="38ef2c2517cd341233b9181c09ba8071" category="paragraph">GenAI IAM 原則僅適用於讀取 / 寫入模式：</block>
+  <block id="123ce9aa4e0770ecb435c005fa9b436c" category="cell">列出 Amazon Q Business 應用程式</block>
+  <block id="4f3c534c90392632c7d275f54d5b35a0" category="cell">qbusiness ： ListApplications</block>
+  <block id="ff49b9449e169eb2a6d647cdd5416940" category="cell">在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組</block>
+  <block id="fb2b74ed81679192134e9c2c07019b42" category="cell">取得基礎模型的相關資訊</block>
+  <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
+  <block id="9dd35b54afccc27a1cc96eab777dbc8e" category="cell">在部署和重建作業期間建立堆疊時，為 Amazon 基礎記錄建立 Amazon CloudWatch 記錄群組</block>
+  <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
+  <block id="b1351fb22e71d3c2b886e8e0819e632f" category="paragraph">下列權限現在可在 GenAI 的讀取 / 寫入模式中使用<block ref="4f3c534c90392632c7d275f54d5b35a0" prefix=" " category="inline-code"></block>：。</block>
+  <block id="17cf827d0ea669f390d3f954ed27424d" category="paragraph">下列權限現在可在資料庫的唯讀模式中使用<block ref="6d952035baa97bd601f4d280f10fcc53" prefix=" " category="inline-code"></block>：。</block>
+  <block id="83300e091c617144cede34b6c898e63b" category="paragraph">下列權限現在可在資料庫的唯讀模式中使用<block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block>：。</block>
+  <block id="be999711faeee231a254e996141ed09f" category="paragraph">GenAI 的讀取 / 寫入模式 _ 現在提供下列權限：</block>
+  <block id="9f4fc0ded0d1671253e5c8e38cd9464f" category="paragraph">下列權限已從 GenAI 的讀取 / 寫入模式中移除<block ref="8a44b1c8d2e06b1acd7404fbb70437cc" prefix=" " category="inline-code"></block>：。</block>
+  <block id="879d4518dddfda849555dedfa0344aba" category="paragraph">下列權限現在可在 GenAI 的讀取 / 寫入模式中使用<block ref="1311c4cbbe5b925c15d25fe5ff7b022b" prefix=" " category="inline-code"></block>：。</block>
+  <block id="3089e2c4b3d7f4a789cb18dfd97328e5" category="paragraph">下列權限現在可在資料庫的唯讀模式中使用<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>：。</block>
+  <block id="44e520fbea54c952ad648780f8fb60f3" category="paragraph">此步驟為選用步驟。您可以在 _Basic_ 模式下使用工作負載工廠，而無需新增認證即可存取 AWS 帳戶。以唯讀模式或讀取 / 寫入模式將 AWS 認證新增至工作負載工廠，可讓您的工作負載工廠帳戶擁有為 ONTAP 檔案系統建立和管理 FSX ，以及部署和管理特定工作負載（例如資料庫和 GenAI ）所需的權限。</block>
+  <block id="bf0dcc34b100cf0ff91c26bbd98029f7" category="list-text">自動完成支援：開始輸入命令，然後使用 *Tab* 鍵檢視可用選項</block>
+  <block id="d1d81e390c1cc90777aae9880935cf73" category="paragraph">Codebox 會根據每位使用者的工作負載原廠帳戶所提供的 AWS 權限，在程式碼中填入適當的資料，以符合工作負載原廠作業模式（基本，唯讀和讀寫）。此程式碼可以像範本一樣使用、您可以在其中填入遺失的資訊（例如認證）、或在執行程式碼之前自訂特定資料。</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
+  <block id="7a0e532396f167d85a7b425f941d0613" category="list-text">* 唯讀模式 * 可協助使用者偵測各種資源和工具，進而協助完成相關精靈，進而提升基本模式的使用體驗。</block>
+  <block id="4951a0172d4fd2c8116296e71073f31c" category="list-text">* 讀取 / 寫入模式 * 代表完全信任關係，其設計旨在代表使用者執行及自動化，以及具有執行所需且已驗證權限的指派認證。</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
 </blocks>

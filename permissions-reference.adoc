@@ -20,7 +20,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 == 為何要使用權限
 
-當您提供讀取或自動化模式權限時，工作負載工廠會將原則附加至執行個體，並具有管理該 AWS 帳戶內資源和程序的權限。這讓工作負載工廠能夠執行各種作業，從探索儲存環境到部署 AWS 資源，例如儲存管理中的檔案系統，或是 GenAI 工作負載的知識庫。
+當您提供唯讀或讀取 / 寫入模式權限時，工作負載工廠會將原則附加至執行個體，並具有管理該 AWS 帳戶內資源和處理程序的權限。這讓工作負載工廠能夠執行各種作業，從探索儲存環境到部署 AWS 資源，例如儲存管理中的檔案系統，或是 GenAI 工作負載的知識庫。
 
 例如，對於資料庫工作負載，當工作負載工廠獲得必要權限時，它會掃描指定帳戶和區域中的所有 EC2 執行個體，並篩選所有 Windows 型機器。如果已在主機上安裝並執行 AWS Systems Manager （ SSM ） Agent ，且系統管理員網路已正確設定，則工作負載工廠可以存取 Windows 機器，並確認是否已安裝 SQL Server 軟體。
 
@@ -43,7 +43,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 ====
 [role="tabbed-block"]
 =====
-.讀取模式
+.唯讀模式
 --
 [source, json]
 ----
@@ -75,7 +75,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 }
 ----
 --
-.自動化模式
+.讀取 / 寫入模式
 --
 [source, json]
 ----
@@ -133,22 +133,22 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 | 目的 | 行動 | 使用處 | 模式 
 
 
-| 為 ONTAP 檔案系統建立 FSX | fsx:CreateFileSystem* | 部署 | 自動化 
+| 為 ONTAP 檔案系統建立 FSX | fsx:CreateFileSystem* | 部署 | 讀取/寫入 
 
 
-| 為 ONTAP 檔案系統的 FSX 建立安全群組 | EC2：建立安全性群組 | 部署 | 自動化 
+| 為 ONTAP 檔案系統的 FSX 建立安全群組 | EC2：建立安全性群組 | 部署 | 讀取/寫入 
 
 
-| 將標籤新增至適用於 ONTAP 檔案系統的 FSX 安全性群組 | EC2：建立標記 | 部署 | 自動化 
+| 將標籤新增至適用於 ONTAP 檔案系統的 FSX 安全性群組 | EC2：建立標記 | 部署 | 讀取/寫入 
 
 
-.2+| 授權 ONTAP 檔案系統的 FSX 安全性群組外傳和進入 | EC2：授權安全性群組出口 | 部署 | 自動化 
+.2+| 授權 ONTAP 檔案系統的 FSX 安全性群組外傳和進入 | EC2：授權安全性群組出口 | 部署 | 讀取/寫入 
 
 
-| EC2：授權安全性群組入口 | 部署 | 自動化 
+| EC2：授權安全性群組入口 | 部署 | 讀取/寫入 
 
 
-| 授與角色可在適用於 ONTAP 的 FSX 與其他 AWS 服務之間提供通訊 | IAM ： CreateServiceLinkedIn 角色 | 部署 | 自動化 
+| 授與角色可在適用於 ONTAP 的 FSX 與其他 AWS 服務之間提供通訊 | IAM ： CreateServiceLinkedIn 角色 | 部署 | 讀取/寫入 
 
 
 .7+| 取得詳細資料以填寫適用於 ONTAP 檔案系統部署的 FSX 表單 | EC2：取消功能Vpcs  a| 
@@ -156,8 +156,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -167,8 +167,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -178,8 +178,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -189,8 +189,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -200,8 +200,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -211,8 +211,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -222,25 +222,25 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-.3+| 取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX | 公里：建立授予 | 部署 | 自動化 
+.3+| 取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX | 公里：建立授予 | 部署 | 讀取/寫入 
 
 
 | 公里：描述* | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 公里：清單* | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -250,112 +250,112 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得 EC2 執行個體的詳細資料 | EC2：資料說明 | 探索節約效益  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-| 在節約計算機中說明彈性檔案系統 | 彈性檔案系統：描述 * | 探索節約效益 | 讀取 
+| 在節約計算機中說明彈性檔案系統 | 彈性檔案系統：描述 * | 探索節約效益 | 唯讀 
 
 
 | 列出適用於 ONTAP 資源的 FSX 標籤 | FSX ： ListTagsForResource | 庫存  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-.2+| 管理適用於 ONTAP 檔案系統的 FSX 的安全性群組外傳和進入 | EC2：RevokeSecurity GroupIngress | 管理作業 | 自動化 
+.2+| 管理適用於 ONTAP 檔案系統的 FSX 的安全性群組外傳和進入 | EC2：RevokeSecurity GroupIngress | 管理作業 | 讀取/寫入 
 
 
-| EC2：刪除安全性群組 | 管理作業 | 自動化 
+| EC2：刪除安全性群組 | 管理作業 | 讀取/寫入 
 
 
-.16+| 建立，檢視及管理 ONTAP 檔案系統資源的 FSX | fsx:CreateVolume* | 管理作業 | 自動化 
+.16+| 建立，檢視及管理 ONTAP 檔案系統資源的 FSX | fsx:CreateVolume* | 管理作業 | 讀取/寫入 
 
 
-| FSX ： TagResource * | 管理作業 | 自動化 
+| FSX ： TagResource * | 管理作業 | 讀取/寫入 
 
 
-| fsx:CreateStorageVirtualMachine* | 管理作業 | 自動化 
+| fsx:CreateStorageVirtualMachine* | 管理作業 | 讀取/寫入 
 
 
-| fsx:DeleteFileSystem* | 管理作業 | 自動化 
+| fsx:DeleteFileSystem* | 管理作業 | 讀取/寫入 
 
 
-| fsx:DeleteStorageVirtualMachine* | 管理作業 | 自動化 
+| fsx:DeleteStorageVirtualMachine* | 管理作業 | 讀取/寫入 
 
 
 | fsx:DescrubeFileSystem* | 庫存  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | fsx:DescrubeStorageVirtualMachines* | 庫存  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-| fsx:UpdateFileSystem* | 管理作業 | 自動化 
+| fsx:UpdateFileSystem* | 管理作業 | 讀取/寫入 
 
 
-| fsx:UpdateStorageVirtualMachine* | 管理作業 | 自動化 
+| fsx:UpdateStorageVirtualMachine* | 管理作業 | 讀取/寫入 
 
 
 | fsx:DescribeVolumes * | 庫存  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-| fsx:UpdateVolume* | 管理作業 | 自動化 
+| fsx:UpdateVolume* | 管理作業 | 讀取/寫入 
 
 
-| fsx:DeleteVolume * | 管理作業 | 自動化 
+| fsx:DeleteVolume * | 管理作業 | 讀取/寫入 
 
 
-| FSX ： UntagResource * | 管理作業 | 自動化 
+| FSX ： UntagResource * | 管理作業 | 讀取/寫入 
 
 
 | fsx:DescrubeBackups* | 管理作業  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-| fsx:CreateBackup* | 管理作業 | 自動化 
+| fsx:CreateBackup* | 管理作業 | 讀取/寫入 
 
 
-| fsx:CreateVolume FromBackup* | 管理作業 | 自動化 
+| fsx:CreateVolume FromBackup* | 管理作業 | 讀取/寫入 
 
 
-| 回報 CloudWatch 指標 | cloudwatch ： PutMetricData | 管理作業 | 自動化 
+| 回報 CloudWatch 指標 | cloudwatch ： PutMetricData | 管理作業 | 讀取/寫入 
 
 
 .2+| 取得檔案系統和 Volume 度量 | cloudswatch ： GetMetricData | 管理作業  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | cloudwatch：GetMetricStatistics | 管理作業  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 |===
@@ -373,7 +373,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 ====
 [role="tabbed-block"]
 =====
-.讀取模式
+.唯讀模式
 --
 [source, json]
 ----
@@ -438,6 +438,15 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
     },
     {
+      "Sid": "SSMResponseCloudWatch",
+      "Effect": "Allow",
+      "Action": [
+        "logs:GetLogEvents",
+        "logs:PutRetentionPolicy"
+      ],
+      "Resource": "arn:aws:logs:*:*:log-group:netapp/wlmdb/*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -448,7 +457,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 }
 ----
 --
-.自動化模式
+.讀取 / 寫入模式
 --
 [source, json]
 ----
@@ -607,8 +616,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "iam:GetRolePolicy",
         "iam:GetUser",
         "iam:PutRolePolicy",
-        "iam:RemoveRoleFromInstanceProfile",
-        "iam:SimulatePrincipalPolicy"
+        "iam:RemoveRoleFromInstanceProfile"
       ],
       "Resource": "*"
     },
@@ -644,6 +652,13 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
         "ssm:DeleteParameters"
       ],
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
     }
   ]
 }
@@ -661,20 +676,31 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 | 目的 | 行動 | 使用處 | 模式 
 
 
+| 發生 SSM 輸出截斷時，工作負載工廠會切換至 SQL 執行個體的 Amazon CloudWatch 記錄檔。 | 記錄檔： GetLogEvents  a| 
+* 儲存評估
+* 庫存
+
+ a| 
+* 唯讀
+* 讀取/寫入
+
+
+
+
 | 取得適用於 ONTAP ， EBS 和適用於 Windows 檔案伺服器的 FSX 的度量統計資料 | cloudwatch：GetMetricStatistics  a| 
 * 庫存
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 列出並設定事件觸發條件 | SnS:ListTopics | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -684,22 +710,22 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | EC2：評量會議 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | EC2：網路介面 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -709,8 +735,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -720,8 +746,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -731,29 +757,29 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | EC2：取消安全性群組 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | EC2：取消影像 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | EC2：取消註冊 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -763,8 +789,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -774,25 +800,25 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-| 如果在 EC2 執行個體上的公用網路連線不存在所需服務的 VPC 端點，請建立這些端點 | EC2 ： CreateVpcEndpoint | 部署 | 自動化 
+| 如果在 EC2 執行個體上的公用網路連線不存在所需服務的 VPC 端點，請建立這些端點 | EC2 ： CreateVpcEndpoint | 部署 | 讀取/寫入 
 
 
 | 取得適用於驗證節點的區域執行個體類型（ T2.micro/T3.micro ） | EC2 ： DescrubeInstanceTypeOffing | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得每個附加 EBS 磁碟區的快照詳細資料，以瞭解價格與成本預估 | EC2：取消快照 | 探索節約效益  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -802,50 +828,50 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 .3+| 取得適用於 ONTAP 檔案系統加密之 FSX 的 KMS 金鑰詳細資料 | kms：清單別名 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | kms ： ListKeys | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | KMS ： DescribeKey | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得在環境中執行的 CloudForgation 堆疊清單，以檢查配額限制 | 雲端：清單堆疊 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 在觸發部署之前，請先檢查資源的帳戶限制 | 雲端： DescrubeAccountLimits | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得區域中 AWS 管理的 Active Directory 清單 | DS:DescrubeDirectories | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -855,8 +881,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -866,8 +892,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -878,8 +904,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -891,29 +917,29 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | FSX ： ListTagsForResource | 管理營運  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得 CloudForquation 和 VPC 的服務配額限制 | serviceEquotas ： ListServiceQuotas | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 使用 SSM) 查詢取得適用於 ONTAP 支援區域的 FSX 更新清單 | SSM) ： GetParametersByPath | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -925,8 +951,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 最佳化
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -938,8 +964,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 最佳化
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -950,8 +976,8 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 最佳化
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -960,22 +986,22 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 
 | 取得作業系統修補程式評估可用的修補程式基準清單 | SSM) ： DescrubePatchBasines | 最佳化  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得 Windows EC2 執行個體的修補狀態，以進行作業系統修補程式評估 | SSM) ： DescribeInstancePatchStates | 最佳化  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 列出 AWS Patch Manager 在 EC2 執行個體上執行的命令，以進行作業系統修補程式管理 | SSM/ListCommands | 最佳化  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -984,42 +1010,42 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 探索節約效益
 * 最佳化
 
-| 自動化 
+| 讀取/寫入 
 
 
 | 更新 AWS 運算最佳化工具中現有的建議偏好選項，針對 SQL Server 工作負載量提供量身打造的建議 | 運算最佳化工具：推桿建議偏好設定  a| 
 * 探索節約效益
 * 最佳化
 
-| 自動化 
+| 讀取/寫入 
 
 
 | 從 AWS 運算最佳化工具取得對指定資源有效的建議偏好選項 | 運算最佳化工具： GetEffectiveRecompendationPreferences  a| 
 * 探索節約效益
 * 最佳化
 
-| 自動化 
+| 讀取/寫入 
 
 
 | 取得 AWS 運算最佳化工具為 Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體所產生的建議 | 運算最佳化工具： GetEC2InstanceRecompendations  a| 
 * 探索節約效益
 * 最佳化
 
-| 自動化 
+| 讀取/寫入 
 
 
 .2+| 檢查執行個體與自動縮放群組的關聯 | 自動縮放：去除自動縮放群組  a| 
 * 探索節約效益
 * 最佳化
 
-| 自動化 
+| 讀取/寫入 
 
 
 | 自動縮放：去除自動縮放的實例  a| 
 * 探索節約效益
 * 最佳化
 
-| 自動化 
+| 讀取/寫入 
 
 
 .4+| 取得，列出，建立及刪除 AD 的 SSM 參數， ONTAP 的 FSX 參數，以及在 AWS 帳戶中部署或管理時所使用的 SQL 使用者認證 | SSM) ： GetParameter ^1^  a| 
@@ -1027,15 +1053,15 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 管理營運
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | S10:GetParameters ^1^ | 管理營運  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -1045,183 +1071,183 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 管理營運
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | S10:DeleteParameters ^1^ | 管理營運  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-.9+| 將網路資源與 SQL 節點和驗證節點建立關聯，並將其他次要 IP 新增至 SQL 節點 | EC2 ： AllocateAddress ^1^ | 部署 | 自動化 
+.9+| 將網路資源與 SQL 節點和驗證節點建立關聯，並將其他次要 IP 新增至 SQL 節點 | EC2 ： AllocateAddress ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AllocateHos^1^ | 部署 | 自動化 
+| EC2 ： AllocateHos^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AssignPrivate IpAddresses ^1^ | 部署 | 自動化 
+| EC2 ： AssignPrivate IpAddresses ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AssociateAddress ^1^ | 部署 | 自動化 
+| EC2 ： AssociateAddress ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AssociateRouteTable ^1^ | 部署 | 自動化 
+| EC2 ： AssociateRouteTable ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AssociateSubnetCidrBlock ^1^ | 部署 | 自動化 
+| EC2 ： AssociateSubnetCidrBlock ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AssociateVpcCidrBlock ^1^ | 部署 | 自動化 
+| EC2 ： AssociateVpcCidrBlock ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AttachInternetGateway ^1^ | 部署 | 自動化 
+| EC2 ： AttachInternetGateway ^1^ | 部署 | 讀取/寫入 
 
 
-| EC2 ： AttachNetworkInterface ^1^ | 部署 | 自動化 
+| EC2 ： AttachNetworkInterface ^1^ | 部署 | 讀取/寫入 
 
 
-| 將部署所需的 EBS 磁碟區附加至 SQL 節點 | EC2：AttachVolume | 部署 | 自動化 
+| 將部署所需的 EBS 磁碟區附加至 SQL 節點 | EC2：AttachVolume | 部署 | 讀取/寫入 
 
 
-.2+| 附加安全性群組並修改已佈建節點的規則 | EC2：授權安全性群組出口 | 部署 | 自動化 
+.2+| 附加安全性群組並修改已佈建節點的規則 | EC2：授權安全性群組出口 | 部署 | 讀取/寫入 
 
 
-| EC2：授權安全性群組入口 | 部署 | 自動化 
+| EC2：授權安全性群組入口 | 部署 | 讀取/寫入 
 
 
-| 建立部署 SQL 節點所需的 EBS 磁碟區 | EC2：建立磁碟區 | 部署 | 自動化 
+| 建立部署 SQL 節點所需的 EBS 磁碟區 | EC2：建立磁碟區 | 部署 | 讀取/寫入 
 
 
-.11+| 移除以 T2.micro 類型建立的暫存驗證節點，以及用於復原或重試失敗的 EC2 SQL 節點 | EC2：刪除網路介面 | 部署 | 自動化 
+.11+| 移除以 T2.micro 類型建立的暫存驗證節點，以及用於復原或重試失敗的 EC2 SQL 節點 | EC2：刪除網路介面 | 部署 | 讀取/寫入 
 
 
-| EC2：刪除安全性群組 | 部署 | 自動化 
+| EC2：刪除安全性群組 | 部署 | 讀取/寫入 
 
 
-| EC2：刪除標記 | 部署 | 自動化 
+| EC2：刪除標記 | 部署 | 讀取/寫入 
 
 
-| EC2：刪除Volume | 部署 | 自動化 
+| EC2：刪除Volume | 部署 | 讀取/寫入 
 
 
-| EC2 ： DetachNetwork Interface | 部署 | 自動化 
+| EC2 ： DetachNetwork Interface | 部署 | 讀取/寫入 
 
 
-| EC2：分離Volume | 部署 | 自動化 
+| EC2：分離Volume | 部署 | 讀取/寫入 
 
 
-| EC2 ： DiscassociateAddress | 部署 | 自動化 
+| EC2 ： DiscassociateAddress | 部署 | 讀取/寫入 
 
 
-| EC2：中斷IamInstanceProfile | 部署 | 自動化 
+| EC2：中斷IamInstanceProfile | 部署 | 讀取/寫入 
 
 
-| EC2 ： DiscassociateRouteTable | 部署 | 自動化 
+| EC2 ： DiscassociateRouteTable | 部署 | 讀取/寫入 
 
 
-| EC2 ： DiscassociateSubnetCidrBlock | 部署 | 自動化 
+| EC2 ： DiscassociateSubnetCidrBlock | 部署 | 讀取/寫入 
 
 
-| EC2 ： DiscassociateVpcCidrBlock | 部署 | 自動化 
+| EC2 ： DiscassociateVpcCidrBlock | 部署 | 讀取/寫入 
 
 
-.7+| 修改已建立 SQL 執行個體的屬性。僅適用於以 WLMDB 開頭的名稱。 | EC2：修改實例屬性 | 部署 | 自動化 
+.7+| 修改已建立 SQL 執行個體的屬性。僅適用於以 WLMDB 開頭的名稱。 | EC2：修改實例屬性 | 部署 | 讀取/寫入 
 
 
-| EC2 ： ModifyInstancePlacement | 部署 | 自動化 
+| EC2 ： ModifyInstancePlacement | 部署 | 讀取/寫入 
 
 
-| EC2：修改網路互連屬性 | 部署 | 自動化 
+| EC2：修改網路互連屬性 | 部署 | 讀取/寫入 
 
 
-| EC2 ： ModifySubnetAttribute. | 部署 | 自動化 
+| EC2 ： ModifySubnetAttribute. | 部署 | 讀取/寫入 
 
 
-| EC2：修改Volume | 部署 | 自動化 
+| EC2：修改Volume | 部署 | 讀取/寫入 
 
 
-| EC2：修改Volume屬性 | 部署 | 自動化 
+| EC2：修改Volume屬性 | 部署 | 讀取/寫入 
 
 
-| EC2 ： ModifyVpcAttribute | 部署 | 自動化 
+| EC2 ： ModifyVpcAttribute | 部署 | 讀取/寫入 
 
 
-.5+| 解除關聯並銷毀驗證執行個體 | EC2 ： ReleaseAddress | 部署 | 自動化 
+.5+| 解除關聯並銷毀驗證執行個體 | EC2 ： ReleaseAddress | 部署 | 讀取/寫入 
 
 
-| EC2 ：安慰劑 Route | 部署 | 自動化 
+| EC2 ：安慰劑 Route | 部署 | 讀取/寫入 
 
 
-| EC2 ： ReplaceRouteTableAssociation | 部署 | 自動化 
+| EC2 ： ReplaceRouteTableAssociation | 部署 | 讀取/寫入 
 
 
-| EC2：RevokeSecurity GroupEgress | 部署 | 自動化 
+| EC2：RevokeSecurity GroupEgress | 部署 | 讀取/寫入 
 
 
-| EC2：RevokeSecurity GroupIngress | 部署 | 自動化 
+| EC2：RevokeSecurity GroupIngress | 部署 | 讀取/寫入 
 
 
-| 啟動部署的執行個體 | EC2：啟動安裝 | 部署 | 自動化 
+| 啟動部署的執行個體 | EC2：啟動安裝 | 部署 | 讀取/寫入 
 
 
-| 停止部署的執行個體 | EC2：停止執行 | 部署 | 自動化 
+| 停止部署的執行個體 | EC2：停止執行 | 部署 | 讀取/寫入 
 
 
 | 為 NetApp ONTAP 資源標記 Amazon FSX 的自訂值，以在資源管理期間取得帳單詳細資料 | fsx:TagResource ^1^  a| 
 * 部署
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
-.5+| 建立並驗證 CloudForgation 範本以進行部署 | 雲端：建立堆疊 | 部署 | 自動化 
+.5+| 建立並驗證 CloudForgation 範本以進行部署 | 雲端：建立堆疊 | 部署 | 讀取/寫入 
 
 
-| 雲端：取消功能堆疊事件 | 部署 | 自動化 
+| 雲端：取消功能堆疊事件 | 部署 | 讀取/寫入 
 
 
-| 雲端：無標準堆疊 | 部署 | 自動化 
+| 雲端：無標準堆疊 | 部署 | 讀取/寫入 
 
 
-| 雲端：清單堆疊 | 部署 | 自動化 
+| 雲端：清單堆疊 | 部署 | 讀取/寫入 
 
 
-| cloudformation：驗證範本 | 部署 | 自動化 
+| cloudformation：驗證範本 | 部署 | 讀取/寫入 
 
 
-| 擷取運算最佳化建議的度量 | cloudwatch：GetMetricStatistics | 探索節約效益 | 自動化 
+| 擷取運算最佳化建議的度量 | cloudwatch：GetMetricStatistics | 探索節約效益 | 讀取/寫入 
 
 
-| 擷取區域中可用的目錄 | DS:DescrubeDirectories | 部署 | 自動化 
+| 擷取區域中可用的目錄 | DS:DescrubeDirectories | 部署 | 讀取/寫入 
 
 
-.2+| 新增附加至已佈建 EC2 執行個體的安全性群組規則 | EC2：授權安全性群組出口 | 部署 | 自動化 
+.2+| 新增附加至已佈建 EC2 執行個體的安全性群組規則 | EC2：授權安全性群組出口 | 部署 | 讀取/寫入 
 
 
-| EC2：授權安全性群組入口 | 部署 | 自動化 
+| EC2：授權安全性群組入口 | 部署 | 讀取/寫入 
 
 
-.2+| 建立巢狀堆疊範本以重試及復原 | EC2 ： CreateLaunchTemplate | 部署 | 自動化 
+.2+| 建立巢狀堆疊範本以重試及復原 | EC2 ： CreateLaunchTemplate | 部署 | 讀取/寫入 
 
 
-| EC2 ： CreateLaunchTemplateVersion | 部署 | 自動化 
+| EC2 ： CreateLaunchTemplateVersion | 部署 | 讀取/寫入 
 
 
-.3+| 管理已建立執行個體的標記和網路安全性 | EC2：建立網路介面 | 部署 | 自動化 
+.3+| 管理已建立執行個體的標記和網路安全性 | EC2：建立網路介面 | 部署 | 讀取/寫入 
 
 
-| EC2：建立安全性群組 | 部署 | 自動化 
+| EC2：建立安全性群組 | 部署 | 讀取/寫入 
 
 
-| EC2：建立標記 | 部署 | 自動化 
+| EC2：建立標記 | 部署 | 讀取/寫入 
 
 
-| 刪除為驗證節點暫時建立的安全性群組 | EC2：刪除安全性群組 | 部署 | 自動化 
+| 刪除為驗證節點暫時建立的安全性群組 | EC2：刪除安全性群組 | 部署 | 讀取/寫入 
 
 
 .2+| 取得資源配置的執行個體詳細資料 | EC2 ：說明 *  a| 
@@ -1229,7 +1255,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 * 探索節約效益
 
-| 自動化 
+| 讀取/寫入 
 
 
 | EC2 ：取得 *  a| 
@@ -1237,29 +1263,29 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 * 探索節約效益
 
-| 自動化 
+| 讀取/寫入 
 
 
-| 啟動建立的執行個體 | EC2：RunInstances | 部署 | 自動化 
+| 啟動建立的執行個體 | EC2：RunInstances | 部署 | 讀取/寫入 
 
 
 | Systems Manager 使用 AWS 訊息傳遞服務端點來執行 API 作業 | 電子訊息： *  a| 
 * 部署 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
-.3+| 為佈建所需的 ONTAP 資源建立 FSX 。對於現有的適用於 ONTAP 系統的 FSX ，系統會建立新的 SVM 來裝載 SQL Volume 。 | fsx:CreateFileSystem | 部署 | 自動化 
+.3+| 為佈建所需的 ONTAP 資源建立 FSX 。對於現有的適用於 ONTAP 系統的 FSX ，系統會建立新的 SVM 來裝載 SQL Volume 。 | fsx:CreateFileSystem | 部署 | 讀取/寫入 
 
 
-| fsx:CreateStorageVirtualMachine | 部署 | 自動化 
+| fsx:CreateStorageVirtualMachine | 部署 | 讀取/寫入 
 
 
 | fsx:CreateVolume  a| 
 * 部署
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
 .2+| 取得 ONTAP 詳細資料的 FSX | FSX：說明*  a| 
@@ -1268,88 +1294,88 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 管理營運
 * 探索節約效益
 
-| 自動化 
+| 讀取/寫入 
 
 
 | FSX：清單*  a| 
 * 部署
 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
-| 調整 ONTAP 檔案系統的 FSX 大小，以修正檔案系統保留空間 | fsx:UpdateFilesystem | 最佳化 | 自動化 
+| 調整 ONTAP 檔案系統的 FSX 大小，以修正檔案系統保留空間 | fsx:UpdateFilesystem | 最佳化 | 讀取/寫入 
 
 
-| 調整磁碟區大小以修正記錄和 TempDB 磁碟機大小 | fsx:UpdateVolume | 最佳化 | 自動化 
+| 調整磁碟區大小以修正記錄和 TempDB 磁碟機大小 | fsx:UpdateVolume | 最佳化 | 讀取/寫入 
 
 
-.4+| 取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX | 公里：建立授予 | 部署 | 自動化 
+.4+| 取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX | 公里：建立授予 | 部署 | 讀取/寫入 
 
 
-| 公里：描述* | 部署 | 自動化 
+| 公里：描述* | 部署 | 讀取/寫入 
 
 
-| 公里：清單* | 部署 | 自動化 
+| 公里：清單* | 部署 | 讀取/寫入 
 
 
-| KMS ： GenerateDataKey | 部署 | 自動化 
+| KMS ： GenerateDataKey | 部署 | 讀取/寫入 
 
 
-.7+| 建立 CloudWatch 記錄檔，用於在 EC2 執行個體上執行驗證和資源配置指令碼 | 記錄檔： CreateLogGroup | 部署 | 自動化 
+.7+| 建立 CloudWatch 記錄檔，用於在 EC2 執行個體上執行驗證和資源配置指令碼 | 記錄檔： CreateLogGroup | 部署 | 讀取/寫入 
 
 
-| 記錄： CreateLogStream | 部署 | 自動化 
+| 記錄： CreateLogStream | 部署 | 讀取/寫入 
 
 
-| 記錄： DescribeLog* | 部署 | 自動化 
+| 記錄： DescribeLog* | 部署 | 讀取/寫入 
 
 
-| 記錄檔： GetLog* | 部署 | 自動化 
+| 記錄檔： GetLog* | 部署 | 讀取/寫入 
 
 
-| 記錄： ListLogDeliverys | 部署 | 自動化 
+| 記錄： ListLogDeliverys | 部署 | 讀取/寫入 
 
 
 | 記錄： PutLogEvents  a| 
 * 部署
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
-| 記錄： TagResource | 部署 | 自動化 
+| 記錄： TagResource | 部署 | 讀取/寫入 
 
 
-| 在使用者帳戶中建立 ONTAP SQL ，網域和 FSX 所提供認證的機密 | serviceEquotas ： ListServiceQuotas | 部署 | 自動化 
+| 在使用者帳戶中建立 ONTAP SQL ，網域和 FSX 所提供認證的機密 | serviceEquotas ： ListServiceQuotas | 部署 | 讀取/寫入 
 
 
-.2+| 列出客戶 SNS 主題，並在選取時發佈至 WLMDB 後端 SNS 和客戶 SNS | SnS:ListTopics | 部署 | 自動化 
+.2+| 列出客戶 SNS 主題，並在選取時發佈至 WLMDB 後端 SNS 和客戶 SNS | SnS:ListTopics | 部署 | 讀取/寫入 
 
 
-| SnS ：發佈 | 部署 | 自動化 
+| SnS ：發佈 | 部署 | 讀取/寫入 
 
 
-.11+| 必要的 SSM 權限，可在已佈建的 SQL 執行個體上執行探索指令碼，並擷取 ONTAP 支援的 AWS 區域的最新 FSX 清單。 | SSM) ：說明 * | 部署 | 自動化 
+.11+| 必要的 SSM 權限，可在已佈建的 SQL 執行個體上執行探索指令碼，並擷取 ONTAP 支援的 AWS 區域的最新 FSX 清單。 | SSM) ：說明 * | 部署 | 讀取/寫入 
 
 
 | SSM) ：取得 *  a| 
 * 部署
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
-| SSM) ：清單 * | 部署 | 自動化 
+| SSM) ：清單 * | 部署 | 讀取/寫入 
 
 
-| SSM) ： PuttinianceItem | 部署 | 自動化 
+| SSM) ： PuttinianceItem | 部署 | 讀取/寫入 
 
 
-| S10:PutConfigurePackageResult | 部署 | 自動化 
+| S10:PutConfigurePackageResult | 部署 | 讀取/寫入 
 
 
-| SSM) ： PuttInventory | 部署 | 自動化 
+| SSM) ： PuttInventory | 部署 | 讀取/寫入 
 
 
 | S10:SendCommand  a| 
@@ -1357,16 +1383,16 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
-| SSM) ：更新關聯狀態 | 部署 | 自動化 
+| SSM) ：更新關聯狀態 | 部署 | 讀取/寫入 
 
 
-| SSM) ： UpdateInstanceAssociationStatus | 部署 | 自動化 
+| SSM) ： UpdateInstanceAssociationStatus | 部署 | 讀取/寫入 
 
 
-| SSM) ： UpdateInstanceInformation | 部署 | 自動化 
+| SSM) ： UpdateInstanceInformation | 部署 | 讀取/寫入 
 
 
 | SsmMessages ： *  a| 
@@ -1374,7 +1400,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 庫存
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
 .4+| 儲存適用於 ONTAP ， Active Directory 和 SQL 使用者的 FSX 認證（僅適用於 SQL 使用者驗證） | SSM) ： GetParameter ^1^  a| 
@@ -1382,75 +1408,75 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 管理營運
 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
 | S10:GetParameters ^1^  a| 
 * 部署
 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
 | SSM) ：推桿參數 ^1^  a| 
 * 部署
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
 | S10:DeleteParameters ^1^  a| 
 * 部署
 * 管理營運
 
-| 自動化 
+| 讀取/寫入 
 
 
-| 在成功或失敗時發出 CloudForgation 堆疊訊號。 | 雲端： SignalResource ^1^ | 部署 | 自動化 
+| 在成功或失敗時發出 CloudForgation 堆疊訊號。 | 雲端： SignalResource ^1^ | 部署 | 讀取/寫入 
 
 
-| 將範本建立的 EC2 角色新增至 EC2 的執行個體設定檔，以允許 EC2 上的指令碼存取部署所需的資源。 | IAM：AddRoleToInstanceProfile | 部署 | 自動化 
+| 將範本建立的 EC2 角色新增至 EC2 的執行個體設定檔，以允許 EC2 上的指令碼存取部署所需的資源。 | IAM：AddRoleToInstanceProfile | 部署 | 讀取/寫入 
 
 
-| 為 EC2 建立執行個體設定檔，並附加建立的 EC2 角色。 | IAM：CreatanceProfile | 部署 | 自動化 
+| 為 EC2 建立執行個體設定檔，並附加建立的 EC2 角色。 | IAM：CreatanceProfile | 部署 | 讀取/寫入 
 
 
-| 透過下列權限範本建立 EC2 角色 | IAM：建立角色 | 部署 | 自動化 
+| 透過下列權限範本建立 EC2 角色 | IAM：建立角色 | 部署 | 讀取/寫入 
 
 
-| 建立連結至 EC2 服務的角色 | IAM ： CreateServiceLinkedIn 角色 ^2^ | 部署 | 自動化 
+| 建立連結至 EC2 服務的角色 | IAM ： CreateServiceLinkedIn 角色 ^2^ | 部署 | 讀取/寫入 
 
 
-| 刪除部署期間為驗證節點所建立的執行個體設定檔 | IAM：刪除InstanceProfile | 部署 | 自動化 
+| 刪除部署期間為驗證節點所建立的執行個體設定檔 | IAM：刪除InstanceProfile | 部署 | 讀取/寫入 
 
 
-.5+| 取得角色和原則詳細資料，以判斷權限的任何落差，並驗證部署 | IAM ： GetPolicy | 部署 | 自動化 
+.5+| 取得角色和原則詳細資料，以判斷權限的任何落差，並驗證部署 | IAM ： GetPolicy | 部署 | 讀取/寫入 
 
 
-| IAM ： GetPolicyVersion | 部署 | 自動化 
+| IAM ： GetPolicyVersion | 部署 | 讀取/寫入 
 
 
-| IAM：GetRole | 部署 | 自動化 
+| IAM：GetRole | 部署 | 讀取/寫入 
 
 
-| IAM ： GetRolePolicy | 部署 | 自動化 
+| IAM ： GetRolePolicy | 部署 | 讀取/寫入 
 
 
-| IAM ： GetUser | 部署 | 自動化 
+| IAM ： GetUser | 部署 | 讀取/寫入 
 
 
-| 將建立的角色傳遞給 EC2 執行個體 | IAM ： PassRole ^3^ | 部署 | 自動化 
+| 將建立的角色傳遞給 EC2 執行個體 | IAM ： PassRole ^3^ | 部署 | 讀取/寫入 
 
 
-| 將具有必要權限的原則新增至所建立的 EC2 角色 | IAM：Putt角色 原則 | 部署 | 自動化 
+| 將具有必要權限的原則新增至所建立的 EC2 角色 | IAM：Putt角色 原則 | 部署 | 讀取/寫入 
 
 
-| 從已配置的 EC2 執行個體設定檔中分離角色 | IAM：RemoveRoleFromInstanceProfile | 部署 | 自動化 
+| 從已配置的 EC2 執行個體設定檔中分離角色 | IAM：RemoveRoleFromInstanceProfile | 部署 | 讀取/寫入 
 
 
 | 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 |===
@@ -1466,7 +1492,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限，可根據您所在的作業模式，在公有雲環境中管理資源和程序。
 
-GenAI IAM 原則僅適用於操作模式：
+GenAI IAM 原則僅適用於讀取 / 寫入模式：
 
 .GenAI 工作負載的 IAM 原則
 [%collapsible]
@@ -1527,7 +1553,6 @@ GenAI IAM 原則僅適用於操作模式：
       "Effect": "Allow",
       "Action": [
         "iam:CreateRole",
-        "iam:CreatePolicy",
         "iam:CreateInstanceProfile",
         "iam:AddRoleToInstanceProfile",
         "iam:PutRolePolicy",
@@ -1701,6 +1726,22 @@ GenAI IAM 原則僅適用於操作模式：
       "Resource": "arn:aws:iam::*:role/NetApp_AI_Bedrock*"
     },
     {
+      "Sid": "BedrockLoggingIamOperations",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreatePolicy"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "QBusiness",
+      "Effect": "Allow",
+      "Action": [
+        "qbusiness:ListApplications"
+      ],
+      "Resource": "*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -1721,196 +1762,202 @@ GenAI IAM 原則僅適用於操作模式：
 | 目的 | 行動 | 使用處 | 模式 
 
 
-| 在部署和重建作業期間建立 AI 引擎雲端堆疊 | 雲端：建立堆疊 | 部署 | 自動化 
+| 在部署和重建作業期間建立 AI 引擎雲端堆疊 | 雲端：建立堆疊 | 部署 | 讀取/寫入 
 
 
-| 建立 AI 引擎雲端堆疊 | 雲端：無標準堆疊 | 部署 | 自動化 
+| 建立 AI 引擎雲端堆疊 | 雲端：無標準堆疊 | 部署 | 讀取/寫入 
 
 
-| 列出 AI 引擎部署精靈的區域 | EC2：取消註冊 | 部署 | 自動化 
+| 列出 AI 引擎部署精靈的區域 | EC2：取消註冊 | 部署 | 讀取/寫入 
 
 
-| 顯示 AI 引擎標籤 | EC2：取消標示 | 部署 | 自動化 
+| 顯示 AI 引擎標籤 | EC2：取消標示 | 部署 | 讀取/寫入 
 
 
-| 在建立 AI 引擎堆疊之前列出 VPC 端點 | EC2 ： CreateVpcEndpoint | 部署 | 自動化 
+| 在建立 AI 引擎堆疊之前列出 VPC 端點 | EC2 ： CreateVpcEndpoint | 部署 | 讀取/寫入 
 
 
-| 在部署和重建作業期間，在 AI 引擎堆疊建立期間建立 AI 引擎安全性群組 | EC2：建立安全性群組 | 部署 | 自動化 
+| 在部署和重建作業期間，在 AI 引擎堆疊建立期間建立 AI 引擎安全性群組 | EC2：建立安全性群組 | 部署 | 讀取/寫入 
 
 
-| 在部署和重建作業期間，標記由 AI 引擎堆疊建立所建立的資源 | EC2：建立標記 | 部署 | 自動化 
+| 在部署和重建作業期間，標記由 AI 引擎堆疊建立所建立的資源 | EC2：建立標記 | 部署 | 讀取/寫入 
 
 
-.2+| 從 AI 引擎堆疊將加密事件發佈至 WLMAI 後端 | KMS ： GenerateDataKey | 部署 | 自動化 
+.2+| 從 AI 引擎堆疊將加密事件發佈至 WLMAI 後端 | KMS ： GenerateDataKey | 部署 | 讀取/寫入 
 
 
-| kms ：解密 | 部署 | 自動化 
+| kms ：解密 | 部署 | 讀取/寫入 
 
 
-| 將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端 | SnS ：發佈 | 部署 | 自動化 
+| 將事件和自訂資源從 AI 引擎堆疊發佈至 WLMAI 後端 | SnS ：發佈 | 部署 | 讀取/寫入 
 
 
-| 在 AI 引擎部署精靈期間列出 VPC | EC2：取消功能Vpcs | 部署 | 自動化 
+| 在 AI 引擎部署精靈期間列出 VPC | EC2：取消功能Vpcs | 部署 | 讀取/寫入 
 
 
-| 在「 AI 引擎部署精靈」中列出子網路 | EC2：無資料子網路 | 部署 | 自動化 
+| 在「 AI 引擎部署精靈」中列出子網路 | EC2：無資料子網路 | 部署 | 讀取/寫入 
 
 
-| 在 AI 引擎部署和重建期間取得路由表 | EC2：取消功能表 | 部署 | 自動化 
+| 在 AI 引擎部署和重建期間取得路由表 | EC2：取消功能表 | 部署 | 讀取/寫入 
 
 
-| 在 AI 引擎部署精靈期間列出金鑰配對 | EC2：評量會議 | 部署 | 自動化 
+| 在 AI 引擎部署精靈期間列出金鑰配對 | EC2：評量會議 | 部署 | 讀取/寫入 
 
 
-| 在 AI 引擎堆疊建立期間列出安全性群組（以在私有端點上尋找安全性群組） | EC2：取消安全性群組 | 部署 | 自動化 
+| 在 AI 引擎堆疊建立期間列出安全性群組（以在私有端點上尋找安全性群組） | EC2：取消安全性群組 | 部署 | 讀取/寫入 
 
 
-| 取得 VPC 端點，判斷是否應在 AI 引擎部署期間建立任何端點 | EC2：取消資料VpcEndpoints | 部署 | 自動化 
+| 取得 VPC 端點，判斷是否應在 AI 引擎部署期間建立任何端點 | EC2：取消資料VpcEndpoints | 部署 | 讀取/寫入 
 
 
-| 列出執行個體以瞭解 AI 引擎狀態 | EC2：資料說明 | 疑難排解 | 自動化 
+| 列出 Amazon Q Business 應用程式 | qbusiness ： ListApplications | 部署 | 讀取/寫入 
 
 
-| 在部署和重建作業期間，列出 AI 引擎堆疊建立期間的映像 | EC2：取消影像 | 部署 | 自動化 
+| 列出執行個體以瞭解 AI 引擎狀態 | EC2：資料說明 | 疑難排解 | 讀取/寫入 
 
 
-.2+| 在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組 | EC2：RevokeSecurity GroupEgress | 部署 | 自動化 
+| 在部署和重建作業期間，列出 AI 引擎堆疊建立期間的映像 | EC2：取消影像 | 部署 | 讀取/寫入 
 
 
-| EC2：RevokeSecurity GroupIngress | 部署 | 自動化 
+.2+| 在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組 | EC2：RevokeSecurity GroupEgress | 部署 | 讀取/寫入 
 
 
-| 在部署和重建作業期間，在雲端堆疊建立期間執行 AI 引擎 | EC2：RunInstances | 部署 | 自動化 
+| EC2：RevokeSecurity GroupIngress | 部署 | 讀取/寫入 
 
 
-.2+| 在部署和重建作業期間，在堆疊建立期間附加安全群組並修改 AI 引擎的規則 | EC2：授權安全性群組出口 | 部署 | 自動化 
+| 在部署和重建作業期間，在雲端堆疊建立期間執行 AI 引擎 | EC2：RunInstances | 部署 | 讀取/寫入 
 
 
-| EC2：授權安全性群組入口 | 部署 | 自動化 
+.2+| 在部署和重建作業期間，在堆疊建立期間附加安全群組並修改 AI 引擎的規則 | EC2：授權安全性群組出口 | 部署 | 讀取/寫入 
 
 
-| 在 AI 引擎部署期間查詢 Amazon bedrock / Amazon CloudWatch 記錄狀態 | Bedrock:GetModelInvocationLoggingConfiguration | 部署 | 自動化 
+| EC2：授權安全性群組入口 | 部署 | 讀取/寫入 
 
 
-| 向其中一個基礎模式提出聊天要求 | Bedrock ： InvokeModelWithResponseStream | 部署 | 自動化 
+| 在 AI 引擎部署期間查詢 Amazon bedrock / Amazon CloudWatch 記錄狀態 | Bedrock:GetModelInvocationLoggingConfiguration | 部署 | 讀取/寫入 
 
 
-| 開始對基礎模型進行聊天 / 嵌入要求 | Bedrock ： InvokeModel | 部署 | 自動化 
+| 向其中一個基礎模式提出聊天要求 | Bedrock ： InvokeModelWithResponseStream | 部署 | 讀取/寫入 
 
 
-| 顯示區域中可用的基礎模型 | Bedrock:ListFoundationModels | 部署 | 自動化 
+| 開始對基礎模型進行聊天 / 嵌入要求 | Bedrock ： InvokeModel | 部署 | 讀取/寫入 
 
 
-| 驗證對基礎模型的存取 | Bedrock:GetFoundationModelAvailability | 部署 | 自動化 
+| 顯示區域中可用的基礎模型 | Bedrock:ListFoundationModels | 部署 | 讀取/寫入 
 
 
-| 確認在部署和重建作業期間需要建立 Amazon CloudWatch 記錄群組 | 記錄： DescribeLogGroups | 部署 | 自動化 
+| 取得基礎模型的相關資訊 | Bedrock:GetFoundationModel | 部署 | 讀取/寫入 
 
 
-| 在 AI 引擎精靈期間取得支援 FSX 和 Amazon bedrock 的區域 | SSM) ： GetParametersByPath | 部署 | 自動化 
+| 驗證對基礎模型的存取 | Bedrock:GetFoundationModelAvailability | 部署 | 讀取/寫入 
 
 
-| 在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像 | S10:GetParameters | 部署 | 自動化 
+| 確認在部署和重建作業期間需要建立 Amazon CloudWatch 記錄群組 | 記錄： DescribeLogGroups | 部署 | 讀取/寫入 
 
 
-| 從傳送至 AI 引擎的命令取得 SSM 回應 | SSM) ： GetCommandInvocation | 部署 | 自動化 
+| 在 AI 引擎精靈期間取得支援 FSX 和 Amazon bedrock 的區域 | SSM) ： GetParametersByPath | 部署 | 讀取/寫入 
 
 
-.2+| 檢查與 AI 引擎的 SSM 連線 | S10:SendCommand | 部署 | 自動化 
+| 在部署和重建作業期間，取得 AI 引擎部署的最新 Amazon Linux 映像 | S10:GetParameters | 部署 | 讀取/寫入 
 
 
-| SSM) ： GetConnectionStatus | 部署 | 自動化 
+| 從傳送至 AI 引擎的命令取得 SSM 回應 | SSM) ： GetCommandInvocation | 部署 | 讀取/寫入 
 
 
-.8+| 在部署和重建作業期間，於堆疊建立期間建立 AI 引擎執行個體設定檔 | IAM：建立角色 | 部署 | 自動化 
+.2+| 檢查與 AI 引擎的 SSM 連線 | S10:SendCommand | 部署 | 讀取/寫入 
 
 
-| IAM：CreatanceProfile | 部署 | 自動化 
+| SSM) ： GetConnectionStatus | 部署 | 讀取/寫入 
 
 
-| IAM：AddRoleToInstanceProfile | 部署 | 自動化 
+.8+| 在部署和重建作業期間，於堆疊建立期間建立 AI 引擎執行個體設定檔 | IAM：建立角色 | 部署 | 讀取/寫入 
 
 
-| IAM：Putt角色 原則 | 部署 | 自動化 
+| IAM：CreatanceProfile | 部署 | 讀取/寫入 
 
 
-| IAM ： GetRolePolicy | 部署 | 自動化 
+| IAM：AddRoleToInstanceProfile | 部署 | 讀取/寫入 
 
 
-| IAM：GetRole | 部署 | 自動化 
+| IAM：Putt角色 原則 | 部署 | 讀取/寫入 
 
 
-| IAM ： TagRole | 部署 | 自動化 
+| IAM ： GetRolePolicy | 部署 | 讀取/寫入 
 
 
-| IAM：密碼 | 部署 | 自動化 
+| IAM：GetRole | 部署 | 讀取/寫入 
 
 
-| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
+| IAM ： TagRole | 部署 | 讀取/寫入 
 
 
-| 在「建立知識庫」精靈中列出 ONTAP 檔案系統的 FSX | FSX ： DescribeVolumes | 知識庫建立 | 自動化 
+| IAM：密碼 | 部署 | 讀取/寫入 
 
 
-| 在「建立知識庫」精靈中列出 ONTAP 檔案系統磁碟區的 FSX | fsx:DescribeFileSystems | 知識庫建立 | 自動化 
+| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 讀取/寫入 
 
 
-| 在重建作業期間，管理 AI 引擎上的知識庫 | FSX ： ListTagsForResource | 疑難排解 | 自動化 
+| 在「建立知識庫」精靈中列出 ONTAP 檔案系統的 FSX | FSX ： DescribeVolumes | 知識庫建立 | 讀取/寫入 
 
 
-| 在「建立知識庫」精靈中，列出適用於 ONTAP 檔案系統儲存虛擬機器的 FSX | FSX ： DescrubeStorageVirtualMachines | 部署 | 自動化 
+| 在「建立知識庫」精靈中列出 ONTAP 檔案系統磁碟區的 FSX | fsx:DescribeFileSystems | 知識庫建立 | 讀取/寫入 
 
 
-| 將知識庫移至新執行個體 | FSX ： UntagResource | 疑難排解 | 自動化 
+| 在重建作業期間，管理 AI 引擎上的知識庫 | FSX ： ListTagsForResource | 疑難排解 | 讀取/寫入 
 
 
-| 在重建期間管理 AI 引擎上的知識庫 | FSX ： TagResource | 疑難排解 | 自動化 
+| 在「建立知識庫」精靈中，列出適用於 ONTAP 檔案系統儲存虛擬機器的 FSX | FSX ： DescrubeStorageVirtualMachines | 部署 | 讀取/寫入 
 
 
-.2+| 以安全的方式儲存 SSM 機密（ ECR 權杖， CIFS 認證，租賃服務帳戶金鑰） | SSM) ： GetParameter | 部署 | 自動化 
+| 將知識庫移至新執行個體 | FSX ： UntagResource | 疑難排解 | 讀取/寫入 
 
 
-| SSM) ： Puttarameter | 部署 | 自動化 
+| 在重建期間管理 AI 引擎上的知識庫 | FSX ： TagResource | 疑難排解 | 讀取/寫入 
 
 
-.2+| 在部署和重建作業期間，將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 自動化 
+.2+| 以安全的方式儲存 SSM 機密（ ECR 權杖， CIFS 認證，租賃服務帳戶金鑰） | SSM) ： GetParameter | 部署 | 讀取/寫入 
 
 
-| 記錄： PutRetentionPolicy | 部署 | 自動化 
+| SSM) ： Puttarameter | 部署 | 讀取/寫入 
 
 
-| 將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組 | 記錄： TagResource | 疑難排解 | 自動化 
+.2+| 在部署和重建作業期間，將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 讀取/寫入 
 
 
-| 從 Amazon CloudWatch 取得 SSM 回應（回應時間過長時） | 記錄： DescribeLogStreams | 疑難排解 | 自動化 
+| 記錄： PutRetentionPolicy | 部署 | 讀取/寫入 
 
 
-| 取得 Amazon CloudWatch 的 SSM 回應 | 記錄檔： GetLogEvents | 疑難排解 | 自動化 
+| 將 AI 引擎記錄傳送至 Amazon CloudWatch 記錄群組 | 記錄： TagResource | 疑難排解 | 讀取/寫入 
 
 
-.3+| 在部署和重建作業期間的堆疊重新部署期間，為 Amazon 基礎記錄建立 Amazon CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 自動化 
+| 從 Amazon CloudWatch 取得 SSM 回應（回應時間過長時） | 記錄： DescribeLogStreams | 疑難排解 | 讀取/寫入 
 
 
-| 記錄： PutRetentionPolicy | 部署 | 自動化 
+| 取得 Amazon CloudWatch 的 SSM 回應 | 記錄檔： GetLogEvents | 疑難排解 | 讀取/寫入 
 
 
-| 記錄： TagResource | 部署 | 自動化 
+.3+| 在部署和重建作業期間建立堆疊時，為 Amazon 基礎記錄建立 Amazon CloudWatch 記錄群組 | 記錄檔： CreateLogGroup | 部署 | 讀取/寫入 
 
 
-| 將基礎記錄傳送至 Amazon CloudWatch | Bedrock ： PutModelInvocationLoggingConfiguration | 疑難排解 | 自動化 
+| 記錄： PutRetentionPolicy | 部署 | 讀取/寫入 
 
 
-| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM ： AttachRolePolicy | 疑難排解 | 自動化 
+| 記錄： TagResource | 部署 | 讀取/寫入 
 
 
-| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM：密碼 | 疑難排解 | 自動化 
+| 將基礎記錄傳送至 Amazon CloudWatch | Bedrock ： PutModelInvocationLoggingConfiguration | 疑難排解 | 讀取/寫入 
 
 
-| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM ： createPolicy | 疑難排解 | 自動化 
+| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM ： AttachRolePolicy | 疑難排解 | 讀取/寫入 
 
 
-| 列出模型的推斷輪廓 | Bedrock ： ListInferenceProfiles | 疑難排解 | 自動化 
+| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM：密碼 | 疑難排解 | 讀取/寫入 
+
+
+| 建立可將 Amazon 基礎記錄傳送至 Amazon CloudWatch 的角色 | IAM ： createPolicy | 疑難排解 | 讀取/寫入 
+
+
+| 列出模型的推斷輪廓 | Bedrock ： ListInferenceProfiles | 疑難排解 | 讀取/寫入 
 |===
 ====
 
@@ -1926,7 +1973,7 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 ====
 [role="tabbed-block"]
 =====
-.讀取模式
+.唯讀模式
 --
 [source, json]
 ----
@@ -1959,7 +2006,7 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 }
 ----
 --
-.自動化模式
+.讀取 / 寫入模式
 --
 [source, json]
 ----
@@ -2040,28 +2087,28 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 | 目的 | 行動 | 使用處 | 模式 
 
 
-| 附加安全性群組並修改已佈建節點的規則 | EC2：授權安全性群組入口 | 部署 | 自動化 
+| 附加安全性群組並修改已佈建節點的規則 | EC2：授權安全性群組入口 | 部署 | 讀取/寫入 
 
 
-| 建立 EBS 磁碟區 | EC2：建立磁碟區 | 部署 | 自動化 
+| 建立 EBS 磁碟區 | EC2：建立磁碟區 | 部署 | 讀取/寫入 
 
 
-| 為 VMware 工作負載所建立的 NetApp ONTAP 資源標記 FSX 的自訂值 | FSX ： TagResource | 部署 | 自動化 
+| 為 VMware 工作負載所建立的 NetApp ONTAP 資源標記 FSX 的自訂值 | FSX ： TagResource | 部署 | 讀取/寫入 
 
 
-| 建立並驗證 CloudForgation 範本 | 雲端：建立堆疊 | 部署 | 自動化 
+| 建立並驗證 CloudForgation 範本 | 雲端：建立堆疊 | 部署 | 讀取/寫入 
 
 
-| 管理已建立執行個體的標記和網路安全性 | EC2：建立安全性群組 | 部署 | 自動化 
+| 管理已建立執行個體的標記和網路安全性 | EC2：建立安全性群組 | 部署 | 讀取/寫入 
 
 
-| 啟動建立的執行個體 | EC2：RunInstances | 部署 | 自動化 
+| 啟動建立的執行個體 | EC2：RunInstances | 部署 | 讀取/寫入 
 
 
-| 取得 EC2 執行個體詳細資料 | EC2：資料說明 | 部署 | 自動化 
+| 取得 EC2 執行個體詳細資料 | EC2：資料說明 | 部署 | 讀取/寫入 
 
 
-| 在部署和重建作業期間，列出堆疊建立期間的映像 | EC2：取消影像 | 部署 | 自動化 
+| 在部署和重建作業期間，列出堆疊建立期間的映像 | EC2：取消影像 | 部署 | 讀取/寫入 
 
 
 | 取得所選環境中的 VPC 以完成部署表單 | EC2：取消功能Vpcs  a| 
@@ -2069,8 +2116,8 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -2080,15 +2127,15 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得所選環境中的安全性群組，以完成部署表單 | EC2：取消安全性群組 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
@@ -2098,58 +2145,58 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 * 庫存
 
  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 透過 Amazon FSX for NetApp ONTAP 支援取得地區資訊 | EC2：取消註冊 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得 KMS 金鑰的別名，以用於 Amazon FSX 進行 NetApp ONTAP 加密 | kms：清單別名 | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得 KMS 金鑰以用於 Amazon FSX 的 NetApp ONTAP 加密 | kms ： ListKeys | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 取得 KMS 金鑰到期詳細資料，以用於 Amazon FSX 進行 NetApp ONTAP 加密 | KMS ： DescribeKey | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
 | 以 SSM 為基礎的查詢可用來取得適用於 NetApp ONTAP 支援地區的 Amazon FSX 更新清單 | SSM) ： GetParametersByPath | 部署  a| 
-* 讀取
-* 自動化
+* 唯讀
+* 讀取/寫入
 
 
 
 
-.3+| 為資源配置所需的 NetApp ONTAP 資源建立 Amazon FSX | fsx:CreateFileSystem | 部署 | 自動化 
+.3+| 為資源配置所需的 NetApp ONTAP 資源建立 Amazon FSX | fsx:CreateFileSystem | 部署 | 讀取/寫入 
 
 
-| fsx:CreateStorageVirtualMachine | 部署 | 自動化 
+| fsx:CreateStorageVirtualMachine | 部署 | 讀取/寫入 
 
 
 | fsx:CreateVolume  a| 
 * 部署
 * 管理作業
 
-| 自動化 
+| 讀取/寫入 
 
 
 .2+| 取得 Amazon FSX 以取得 NetApp ONTAP 詳細資料 | FSX：說明*  a| 
@@ -2158,42 +2205,42 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 * 管理作業
 * 探索節約效益
 
-| 自動化 
+| 讀取/寫入 
 
 
 | FSX：清單*  a| 
 * 部署
 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
-.5+| 取得 KMS 金鑰詳細資料，並使用 Amazon FSX 進行 NetApp ONTAP 加密 | 公里：建立授予 | 部署 | 自動化 
+.5+| 取得 KMS 金鑰詳細資料，並使用 Amazon FSX 進行 NetApp ONTAP 加密 | 公里：建立授予 | 部署 | 讀取/寫入 
 
 
-| 公里：描述* | 部署 | 自動化 
+| 公里：描述* | 部署 | 讀取/寫入 
 
 
-| 公里：清單* | 部署 | 自動化 
+| 公里：清單* | 部署 | 讀取/寫入 
 
 
-| kms ：解密 | 部署 | 自動化 
+| kms ：解密 | 部署 | 讀取/寫入 
 
 
-| KMS ： GenerateDataKey | 部署 | 自動化 
+| KMS ： GenerateDataKey | 部署 | 讀取/寫入 
 
 
-| 列出客戶 SNS 主題，並在選取的情況下發佈至 WLMVMC 後端 SNS 和客戶 SNS | SnS ：發佈 | 部署 | 自動化 
+| 列出客戶 SNS 主題，並在選取的情況下發佈至 WLMVMC 後端 SNS 和客戶 SNS | SnS ：發佈 | 部署 | 讀取/寫入 
 
 
 | 用於擷取適用於 NetApp ONTAP 支援 AWS 區域的 Amazon FSX 最新清單 | SSM) ：取得 *  a| 
 * 部署
 * 管理作業
 
-| 自動化 
+| 讀取/寫入 
 
 
-| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 自動化 
+| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 讀取/寫入 
 
 
 .4+| SSM 參數儲存區可用來儲存 Amazon FSX for NetApp ONTAP 的認證資料 | SSM) ： GetParameter  a| 
@@ -2201,28 +2248,28 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 * 管理作業
 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
 | SSM) ： PuttParameters  a| 
 * 部署
 * 庫存
 
-| 自動化 
+| 讀取/寫入 
 
 
 | SSM) ： Puttarameter  a| 
 * 部署
 * 管理作業
 
-| 自動化 
+| 讀取/寫入 
 
 
 | SSM/DeleteParameters  a| 
 * 部署
 * 管理作業
 
-| 自動化 
+| 讀取/寫入 
 |===
 ====
 
@@ -2233,9 +2280,17 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 
 
 
+=== 2025 年 4 月 5 日
+
+下列權限現在可在 GenAI 的讀取 / 寫入模式中使用 `qbusiness:ListApplications`：。
+
+下列權限現在可在資料庫的唯讀模式中使用 `logs:GetLogEvents`：。
+
+
+
 === 2025 年 4 月 2 日
 
-現在，下列權限可在資料庫的讀取模式中使用 `ssm:DescribeInstanceInformation`：。
+下列權限現在可在資料庫的唯讀模式中使用 `ssm:DescribeInstanceInformation`：。
 
 
 
@@ -2245,7 +2300,7 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 
 ==== GenAI 工作負載權限更新
 
-GenAI 的 _ 自動化模式 _ 現在提供下列權限：
+GenAI 的讀取 / 寫入模式 _ 現在提供下列權限：
 
 * `bedrock:PutModelInvocationLoggingConfiguration`
 * `iam:AttachRolePolicy`
@@ -2254,7 +2309,7 @@ GenAI 的 _ 自動化模式 _ 現在提供下列權限：
 * `bedrock:ListInferenceProfiles`
 
 
-下列權限已從 GenAI 的 _ 自動化模式 _ 中移除 `Bedrock:GetFoundationModel`：。
+下列權限已從 GenAI 的讀取 / 寫入模式中移除 `Bedrock:GetFoundationModel`：。
 
 
 
@@ -2266,10 +2321,10 @@ GenAI 的 _ 自動化模式 _ 現在提供下列權限：
 
 === 2025 年 3 月 2 日
 
-GenAI 的 _ 自動 _ 模式現在提供下列權限 `bedrock:GetFoundationModel`：。
+下列權限現在可在 GenAI 的讀取 / 寫入模式中使用 `bedrock:GetFoundationModel`：。
 
 
 
 === 2025 年 3 月 2 日
 
-現在，下列權限可在 _read_ 模式下用於資料庫： `iam:SimulatePrincipalPolicy`。
+下列權限現在可在資料庫的唯讀模式中使用 `iam:SimulatePrincipalPolicy`：。
