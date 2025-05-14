@@ -1136,7 +1136,6 @@
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
   <block id="7a0e532396f167d85a7b425f941d0613" category="list-text">* 唯讀模式 * 可協助使用者偵測各種資源和工具，進而協助完成相關精靈，進而提升基本模式的使用體驗。</block>
   <block id="4951a0172d4fd2c8116296e71073f31c" category="list-text">* 讀取 / 寫入模式 * 代表完全信任關係，其設計旨在代表使用者執行及自動化，以及具有執行所需且已驗證權限的指派認證。</block>
-  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
   <block id="5474924c6e07cdae5b2fb3dcc561d06d" category="cell">發生 SSM 輸出截斷時，工作負載工廠會切換至 SQL 執行個體的 Amazon CloudWatch 記錄檔</block>
   <block id="5d1d5ff6c3c427c682d491550e8f89b3" category="list-text">儲存評估（最佳化）</block>
   <block id="515b5649d13529809187e8bce4dca692" category="cell">允許工作負載工廠取得目前的記錄群組，並檢查是否已針對工作負載工廠所建立的記錄群組設定保留</block>
@@ -1145,4 +1144,13 @@
   <block id="c4a094604e7db845f5356b4563efc223" category="list-text"><block ref="99a70cb6d5b807589a0a1aa9bbcfea7d" prefix="" category="inline-code"></block></block>
   <block id="555669c70b999168141bdf48d9c2de24" category="paragraph">下列權限現在可在資料庫的讀取 / 寫入模式中使用<block ref="9c72603737d6e2074ae7fab048b5d3d1" prefix=" " category="inline-code"></block>：。</block>
   <block id="b29cc709bba52572eccdff0248448fed" category="cell">允許工作負載工廠為工作負載工廠所建立的記錄群組設定一天保留原則，以避免不必要地累積記錄串流以進行 SSM 命令輸出</block>
+  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
+  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
+  <block id="4b50901597179fa075617d96ccf51901" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台可提供應用程式與專案的視覺化整體檢視。</block>
+  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。</block>
+  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">* 詢問我 * ：使用「詢問我 AI 」助理來詢問問題，並深入瞭解工作負載工廠，而無需離開工作負載工廠的網路 UI 。從工作負載原廠說明功能表存取 Ask me 。</block>
+  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
+  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
+  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
+  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。</block>
 </blocks>
