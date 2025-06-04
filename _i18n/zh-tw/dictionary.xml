@@ -1152,5 +1152,9 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。</block>
+  <block id="beec07f99f03a1aa1948ba788ce7e6c1" category="cell">列出 S3 儲存桶</block>
+  <block id="e21c94a36c6dbf24001a64bddce9456f" category="cell">S3：ListAllMyb桶</block>
+  <block id="c34c5eed5692ab9466e57060b06ae6ae" category="section-title">2025 年 6 月 3 日</block>
+  <block id="c918d3e0e49fdadeab4e77e3905135bd" category="paragraph">下列權限現在可在 GenAI 的讀取 / 寫入模式中使用<block ref="e21c94a36c6dbf24001a64bddce9456f" prefix=" " category="inline-code"></block>：。</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
 </blocks>

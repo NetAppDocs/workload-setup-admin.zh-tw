@@ -1762,6 +1762,14 @@ GenAI IAM 原則僅適用於讀取 / 寫入模式：
       "Resource": "*"
     },
     {
+      "Sid": "S3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource": "*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -1792,6 +1800,9 @@ GenAI IAM 原則僅適用於讀取 / 寫入模式：
 
 
 | 顯示 AI 引擎標籤 | EC2：取消標示 | 部署 | 讀取/寫入 
+
+
+| 列出 S3 儲存桶 | S3：ListAllMyb桶 | 部署 | 讀取/寫入 
 
 
 | 在建立 AI 引擎堆疊之前列出 VPC 端點 | EC2 ： CreateVpcEndpoint | 部署 | 讀取/寫入 
@@ -2297,6 +2308,12 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2025 年 6 月 3 日
+
+下列權限現在可在 GenAI 的讀取 / 寫入模式中使用 `s3:ListAllMyBuckets`：。
 
 
 
