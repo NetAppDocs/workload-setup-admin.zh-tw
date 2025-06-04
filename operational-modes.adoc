@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: operational-modes.html 
-keywords: modes, zero-trust, full-trust, read, basic, automate, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: 工作負載工廠提供三種作業模式，讓您根據 IT 原則，仔細控制工作負載工廠與雲端環境之間的存取。您使用的作業模式取決於您提供給工作負載工廠的 AWS 權限層級。 
+keywords: modes, zero-trust, full-trust, read-only, basic, read/write, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
+summary: 工作負載工廠提供三種作業模式，讓您根據 IT 原則，仔細控制工作負載工廠與雲端環境之間的存取。 
 ---
 = 瞭解作業模式和 AWS 認證
 :allow-uri-read: 
@@ -62,7 +62,7 @@ summary: 工作負載工廠提供三種作業模式，讓您根據 IT 原則，�
 | 唯讀 | 唯讀 | 不需要 
 
 
-| 讀取/寫入 | 讀寫認證 | 必要 
+| 讀取/寫入 | 讀/寫憑證 | 必要 
 |===
 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭解連結"^]
 
@@ -70,7 +70,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭�
 
 === 作業模式範例
 
-您可以設定認證、為一個工作負載元件提供一個模式、而為另一個元件提供另一個模式。例如，您可以針對部署和管理 ONTAP 檔案系統之 FSX 的作業，設定讀取 / 寫入模式，但只能設定讀取模式，以便使用工作負載原廠來建立和部署資料庫工作負載。
+您可以設定認證、為一個工作負載元件提供一個模式、而為另一個元件提供另一個模式。例如，您可以為部署和管理 FSx for ONTAP 檔案系統的操作配置讀取/寫入模式，但僅使用工作負載工廠建立和部署資料庫工作負載配置唯讀模式。
 
 您可以在工作負載原廠帳戶中的單一認證集內提供這些功能，或是在每個認證提供獨特的工作負載部署功能時，建立多組認證。
 
@@ -78,7 +78,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭�
 
 ==== 範例1
 
-使用下列權限認證的帳戶使用者將擁有完整控制權（讀取 / 寫入模式），可為 ONTAP 檔案系統建立 FSX ，部署資料庫，以及檢視帳戶中使用的其他 AWS 儲存設備類型。
+使用已取得下列權限的憑證的帳戶使用者將擁有建立 FSx for ONTAP 檔案系統、部署資料庫和檢視帳戶中使用的其他類型的 AWS 儲存的完全控制權（讀取/寫入模式）。
 
 image:screenshot-credentials1.png["螢幕擷取畫面顯示一組提供兩種工作負載權限的認證。"]
 
@@ -90,7 +90,7 @@ image:screenshot-credentials1.png["螢幕擷取畫面顯示一組提供兩種工
 
 在此、使用者已建立兩組認證、根據所選的認證集、允許不同的操作功能。通常、每組認證都會與不同的 AWS 帳戶配對。
 
-第一組認證包含權限、可讓使用者完全控制為 ONTAP 檔案系統建立 FSX （以及檢視帳戶中使用的其他 AWS 儲存設備類型）、但只有在使用 VMware 工作負載時才具有讀取權限。
+第一組憑證包括授予使用者完全控制建立 FSx for ONTAP 檔案系統的權限（以及查看帳戶中使用的其他類型的 AWS 儲存的能力），但在使用 VMware 工作負載時僅有唯讀權限。
 
 image:screenshot-credentials-comparison-example-1.png["螢幕擷取畫面顯示一組提供兩種工作負載權限的認證。"]
 
