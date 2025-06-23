@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: configure-notifications.html 
+keywords: amazon, sns, notification, topic, notifications, notifications service, alerts 
+summary: 您可以設定 BlueXP 工作負載工廠，當某些類型的事件發生時向某個人或其他應用程式發送通知。 
+---
+= 配置 BlueXP 工作負載工廠通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以設定 BlueXP 工作負載工廠通知服務，將通知傳送至 BlueXP 警報服務或 Amazon SNS 主題。發送到 BlueXP 警報的通知會顯示在 BlueXP 警報面板中。當工作負載工廠向 Amazon SNS 主題發布通知時，該主題的訂閱者（例如人員或其他應用程式）會在為該主題配置的終端節點上收到通知（例如電子郵件或簡訊）。
+
+
+
+== 通知類型和訊息
+
+工作負載工廠針對以下事件發送通知：
+
+[cols="6*"]
+|===
+| 活動 | 說明 | 通知類型 | 嚴重性 | 工作負載 | 資源類型 
+
+
+| 您帳戶中的某些資料庫執行個體架構不佳 | 已針對您帳戶中的所有 Microsoft SQL Server 執行個體分析了架構完善的問題。此事件的描述提供了架構完善的實例和未最佳化的實例的數量。請在工作負載工廠控制台的資料庫清單中查看架構完善的狀態結果和建議。 | 架構完善 | 建議 | 資料庫 | Microsoft SQL Server 實例 
+
+
+| Microsoft SQL Server/PostgreSQL 伺服器部署成功 | Microsoft SQL Server 或 PostgreSQL 主機部署成功。更多信息，請參考作業監控。 | 部署 | 成功 | 資料庫 | FSx for ONTAP，資料庫主機 
+
+
+| Microsoft SQL Server/PostgreSQL 伺服器部署失敗 | Microsoft SQL Server 或 PostgreSQL 主機部署失敗。更多信息，請參考作業監控。 | 部署 | 錯誤 | 資料庫 | FSx for ONTAP，資料庫主機 
+|===
+
+
+== 配置工作負載工廠通知
+
+使用 BlueXP 控制台或工作負載工廠控制台設定工作負載工廠通知。如果您使用 BlueXP 控制台，則可以設定工作負載工廠以將通知傳送至 BlueXP 警報或 Amazon SNS 主題。您可以從 BlueXP 中的「警報和通知設定」區域設定 BlueXP 警報。
+
+.開始之前
+* 您需要使用 Amazon SNS 主控台或 AWS CLI 配置 Amazon SNS 並建立 Amazon SNS 主題。
+* 請注意，工作負載工廠支援“標準”主題類型。此類型的主題不會確保通知按照接收順序發送給訂閱者，因此如果您有關鍵或緊急通知，請考慮使用此功能。
+
+
+[role="tabbed-block"]
+====
+.從 BlueXP 控制台設定通知
+--
+.步驟
+. 登入 link:https://console.bluexp.netapp.com["BlueXP主控台"^]。
+. 從左側導覽中選取 * 工作負載 * 。
+. 選取 * 首頁 * 以檢視所有工作負載，或選取一個工作負載，例如 * 儲存 * 或 * 資料庫 * 。
+. 從工作負載工廠選單列中，選擇配置選單。
+. 在選單中，選擇*Workload Factory 通知設定*。
+. 選用：選擇*啟用 BlueXP 通知*以設定工作負載工廠向 BlueXP 警報發送通知。
+. 選擇*啟用 SNS 通知*。
+. 依照說明從 Amazon SNS 主控台配置 Amazon SNS。
++
+建立主題後，複製主題 ARN 並將其輸入到 *通知設定* 對話方塊中的 *SNS 主題 ARN* 欄位中。
+
+. 透過發送測試通知驗證配置後，選擇*套用*。
+
+
+.結果
+工作負載工廠配置為向您指定的 Amazon SNS 主題發送通知。
+
+--
+.從工作負載工廠控制台設定通知
+--
+.步驟
+. 登入 link:https://console.workloads.netapp.com["工作負載原廠主控台"^]。
+. 從頂部導覽列開啟帳戶選單。
+. 在選單中，選擇*通知設定*。
+. 選擇*啟用 SNS 通知*。
+. 依照說明從 Amazon SNS 主控台配置 Amazon SNS。
+. 透過發送測試通知驗證配置後，選擇*套用*。
+
+
+.結果
+工作負載工廠配置為向您指定的 Amazon SNS 主題發送通知。
+
+--
+====
+
+
+== 訂閱 Amazon SNS 主題
+
+配置工作負載工廠向主題發送通知後，請依照 https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html["說明"]在 Amazon SNS 文件中訂閱該主題，以便您可以接收來自工作負載工廠的通知。
+
+
+
+== 篩選通知
+
+您可以透過對通知套用篩選條件來減少不必要的通知流量，並針對特定使用者定向特定類型的通知。您可以使用 Amazon SNS 策略來設定 SNS 通知，並使用 BlueXP 通知設定來設定 BlueXP 通知。
+
+
+
+=== 篩選 Amazon SNS 通知
+
+訂閱 Amazon SNS 主題後，預設情況下，您會收到發佈到該主題的所有通知。如果您只想接收來自該主題的特定通知，可以使用篩選策略來控制接收哪些通知。
+
+有關創建過濾策略的更多信息，請參閱 https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Amazon SNS 文件"^] 。
+
+有關過濾策略的範例，請參閱 https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Amazon SNS 範例篩選策略"^] 。
+
+
+
+=== 過濾 BlueXP 通知
+
+您可以使用 BlueXP 警報和通知設定按嚴重性等級（例如「嚴重」、「訊息」或「警告」）過濾在 BlueXP 中收到的警報和通知。
+
+有關在 BlueXP 中過濾通知的更多信息，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#filter-notifications["BlueXP文件"^] 。
