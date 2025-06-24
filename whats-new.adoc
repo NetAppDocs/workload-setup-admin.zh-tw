@@ -15,18 +15,6 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 
 
-== 2025 年 6 月 03 日
-
-
-
-=== BlueXP 工作負載工廠通知服務支持
-
-BlueXP 工作負載工廠通知服務支援工作負載工廠向 BlueXP 警報服務或 Amazon SNS 主題發送通知。發送到 BlueXP 警報的通知會顯示在 BlueXP 警報面板中。當工作負載工廠向 Amazon SNS 主題發布通知時，該主題的訂閱者（例如人員或其他應用程式）會在為該主題配置的終端節點上收到通知（例如電子郵件或簡訊）。
-
-https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["配置 BlueXP 工作負載工廠通知"]
-
-
-
 == 2025 年 04 月 5 日
 
 
