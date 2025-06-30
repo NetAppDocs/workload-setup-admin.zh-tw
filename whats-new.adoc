@@ -19,6 +19,14 @@ summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認�
 
 
 
+=== 資料庫的權限更新
+
+現在，資料庫在唯讀模式下具有以下權限：  `cloudwatch:GetMetricData` 。
+
+https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["權限參考變更記錄"]
+
+
+
 === BlueXP 工作負載工廠通知服務支持
 
 BlueXP 工作負載工廠通知服務支援工作負載工廠向 BlueXP 警報服務或 Amazon SNS 主題發送通知。發送到 BlueXP 警報的通知會顯示在 BlueXP 警報面板中。當工作負載工廠向 Amazon SNS 主題發布通知時，該主題的訂閱者（例如人員或其他應用程式）會在為該主題配置的終端節點上收到通知（例如電子郵件或簡訊）。

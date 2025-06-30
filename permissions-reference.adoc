@@ -364,11 +364,11 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 === 資料庫工作負載的權限
 
-適用於資料庫工作負載的 IAM 原則提供工作負載工廠根據您所用的作業模式，管理公有雲環境中的資源和程序所需的權限。
+適用於資料庫工作負載的 IAM 策略根據您所處的運作模式，提供工作負載工廠管理公有雲環境中的資源和流程所需的權限。
 
 選取您的作業模式以檢視所需的 IAM 原則：
 
-.適用於資料庫工作負載的 IAM 原則
+.資料庫工作負載的 IAM 策略
 [%collapsible]
 ====
 [role="tabbed-block"]
@@ -385,6 +385,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
       "Effect": "Allow",
       "Action": [
         "cloudwatch:GetMetricStatistics",
+        "cloudwatch:GetMetricData",
         "sns:ListTopics",
         "ec2:DescribeInstances",
         "ec2:DescribeVpcs",
@@ -678,7 +679,7 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 | 目的 | 行動 | 使用處 | 模式 
 
 
-| 取得適用於 ONTAP ， EBS 和適用於 Windows 檔案伺服器的 FSX 的度量統計資料 | cloudwatch：GetMetricStatistics  a| 
+| 取得 FSx for ONTAP、EBS 和 FSx for Windows File Server 的指標統計資料以及計算最佳化建議 | cloudwatch：GetMetricStatistics  a| 
 * 庫存
 * 探索節約效益
 
@@ -687,6 +688,9 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 * 讀取/寫入
 
 
+
+
+| 從已註冊的 SQL 節點收集已儲存至 Amazon CloudWatch 的效能指標。資料將在已註冊 SQL 實例的管理實例畫面上產生效能趨勢圖。 | cloudswatch ： GetMetricData | 庫存 | 唯讀 
 
 
 | 列出並設定事件觸發條件 | SnS:ListTopics | 部署  a| 
@@ -1209,9 +1213,6 @@ summary: 若要使用 BlueXP  工作負載原廠功能和服務，您必須提�
 
 
 | cloudformation：驗證範本 | 部署 | 讀取/寫入 
-
-
-| 擷取運算最佳化建議的度量 | cloudwatch：GetMetricStatistics | 探索節約效益 | 讀取/寫入 
 
 
 | 擷取區域中可用的目錄 | DS:DescrubeDirectories | 部署 | 讀取/寫入 
@@ -2311,17 +2312,23 @@ VMware 工作負載的 IAM 原則提供 VMware 工作負載原廠所需的權限
 
 
 
+=== 2025 年 6 月 29 日
+
+現在，資料庫在唯讀模式下具有以下權限：  `cloudwatch:GetMetricData` 。
+
+
+
 === 2025 年 6 月 3 日
 
-下列權限現在可在 GenAI 的讀取 / 寫入模式中使用 `s3:ListAllMyBuckets`：。
+現在，GenAI 在讀取/寫入模式下具有以下權限：  `s3:ListAllMyBuckets` 。
 
 
 
 === 2025 年 4 月 5 日
 
-下列權限現在可在 GenAI 的讀取 / 寫入模式中使用 `qbusiness:ListApplications`：。
+現在，GenAI 在讀取/寫入模式下具有以下權限：  `qbusiness:ListApplications` 。
 
-下列權限現在可在資料庫的唯讀模式中使用：
+現在，資料庫在唯讀模式下具有以下權限：
 
 * `logs:GetLogEvents`
 * `logs:DescribeLogGroups`
