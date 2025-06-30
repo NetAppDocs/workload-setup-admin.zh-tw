@@ -1165,4 +1165,57 @@
   <block id="bf8eef80d28e69579638cd56629c94fb" category="paragraph">現在，GenAI 在讀取/寫入模式下具有以下權限： <block ref="e21c94a36c6dbf24001a64bddce9456f" prefix=" " category="inline-code"></block> 。</block>
   <block id="b8be7a72d02de0cfb42fb93375981cdb" category="paragraph">現在，GenAI 在讀取/寫入模式下具有以下權限： <block ref="4f3c534c90392632c7d275f54d5b35a0" prefix=" " category="inline-code"></block> 。</block>
   <block id="bebb3c7ec8a634b68ad1060e27e7dc42" category="paragraph">現在，資料庫在唯讀模式下具有以下權限：</block>
+  <block id="2dda35be60147096ab6dcce42dede6b8" category="summary">您可以設定 BlueXP 工作負載工廠，當某些類型的事件發生時向某個人或其他應用程式發送通知。</block>
+  <block id="72d9710675d7970263ff88acdf0fcb66" category="paragraph">您可以設定 BlueXP 工作負載工廠通知服務，將通知傳送至 BlueXP 警報服務或 Amazon SNS 主題。發送到 BlueXP 警報的通知會顯示在 BlueXP 警報面板中。當工作負載工廠向 Amazon SNS 主題發布通知時，該主題的訂閱者（例如人員或其他應用程式）會在為該主題配置的終端節點上收到通知（例如電子郵件或簡訊）。</block>
+  <block id="0a7323d1562ccdc63a56a3101b1dfc69" category="section-title">通知類型和訊息</block>
+  <block id="5a7513075d19cc4be93d3cf73f88603e" category="paragraph">工作負載工廠針對以下事件發送通知：</block>
+  <block id="a4ecfc70574394990cf17bd83df499f7" category="cell">活動</block>
+  <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知類型</block>
+  <block id="007cc9547ae8884ad597cd92ba505422" category="cell">嚴重性</block>
+  <block id="68eaabb91b0d1c52be44217a24f27b91" category="cell">工作負載</block>
+  <block id="53a002434dc37d0a5f8e2aac58da6296" category="cell">資源類型</block>
+  <block id="05c77d02041a1213dcefbe713f2f79fc" category="cell">您帳戶中的某些資料庫執行個體架構不佳</block>
+  <block id="11091ad57516013f76674cb4ef3a9a6a" category="cell">已針對您帳戶中的所有 Microsoft SQL Server 執行個體分析了架構完善的問題。此事件的描述提供了架構完善的實例和未最佳化的實例的數量。請在工作負載工廠控制台的資料庫清單中查看架構完善的狀態結果和建議。</block>
+  <block id="64096d5dd63fb80716eda8d7d149213d" category="cell">架構完善</block>
+  <block id="c76e3867213cff8946148c6510af0736" category="cell">建議</block>
+  <block id="ea2ef9b0d095bf991f4973633b485340" category="cell">資料庫</block>
+  <block id="49e4c802abd20d6ed77d1f0421411716" category="cell">Microsoft SQL Server 實例</block>
+  <block id="434aae113a8df34dcafb760acae04817" category="cell">Microsoft SQL Server/PostgreSQL 伺服器部署成功</block>
+  <block id="9f65a8622771b19d6c80a1fea621d39f" category="cell">Microsoft SQL Server 或 PostgreSQL 主機部署成功。更多信息，請參考作業監控。</block>
+  <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">成功</block>
+  <block id="a2e86ce39492ca1b92893ce168dc6fbb" category="cell">FSx for ONTAP，資料庫主機</block>
+  <block id="1ec0c15b651e4cd44325912e997a204c" category="cell">Microsoft SQL Server/PostgreSQL 伺服器部署失敗</block>
+  <block id="3a966eb1052bbc81baf1db313011eddf" category="cell">Microsoft SQL Server 或 PostgreSQL 主機部署失敗。更多信息，請參考作業監控。</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="cell">錯誤</block>
+  <block id="237aaa83425818925b08506a76908e10" category="section-title">配置工作負載工廠通知</block>
+  <block id="cd052ec21a26111d70b96d3c1780fed2" category="paragraph">使用 BlueXP 控制台或工作負載工廠控制台設定工作負載工廠通知。如果您使用 BlueXP 控制台，則可以設定工作負載工廠以將通知傳送至 BlueXP 警報或 Amazon SNS 主題。您可以從 BlueXP 中的「警報和通知設定」區域設定 BlueXP 警報。</block>
+  <block id="9ccebe6954a81c5c1f9a57ddc658596a" category="list-text">您需要使用 Amazon SNS 主控台或 AWS CLI 配置 Amazon SNS 並建立 Amazon SNS 主題。</block>
+  <block id="b5dff08e1a7f13984de22b0326ba3d57" category="list-text">請注意，工作負載工廠支援“標準”主題類型。此類型的主題不會確保通知按照接收順序發送給訂閱者，因此如果您有關鍵或緊急通知，請考慮使用此功能。</block>
+  <block id="5d146607ad7e1a4c8178f137a935e71b" category="open-title">從 BlueXP 控制台設定通知</block>
+  <block id="7330391de12fa6f64dbbe05f2bf2943a" category="list-text">從工作負載工廠選單列中，選擇配置選單。</block>
+  <block id="ebb0c20a2883844bf338eec0442bd3d9" category="list-text">在選單中，選擇*Workload Factory 通知設定*。</block>
+  <block id="c1f26547e61b3cf682eb671f8d31e7ea" category="list-text">選用：選擇*啟用 BlueXP 通知*以設定工作負載工廠向 BlueXP 警報發送通知。</block>
+  <block id="9bc635b321d7a10ffec6283dfaa84aa0" category="list-text">選擇*啟用 SNS 通知*。</block>
+  <block id="677c7dc689b0afdcb0633b635edd3a87" category="list-text">依照說明從 Amazon SNS 主控台配置 Amazon SNS。</block>
+  <block id="5fda11ac3857aaeb1a1a9e3bb6aedef5" category="paragraph">建立主題後，複製主題 ARN 並將其輸入到 *通知設定* 對話方塊中的 *SNS 主題 ARN* 欄位中。</block>
+  <block id="2339afaee28d73e91f81e490b67a4b5c" category="list-text">透過發送測試通知驗證配置後，選擇*套用*。</block>
+  <block id="a596c719a1239c601cd009ed03cda388" category="paragraph">工作負載工廠配置為向您指定的 Amazon SNS 主題發送通知。</block>
+  <block id="99405553b799dda5850e27264cbad120" category="open-title">從工作負載工廠控制台設定通知</block>
+  <block id="bbb5c9d7fd1535e42e50af70cae99495" category="list-text">從頂部導覽列開啟帳戶選單。</block>
+  <block id="5bbc9d3e1cf8f1e46acf248093877f06" category="list-text">在選單中，選擇*通知設定*。</block>
+  <block id="5e5392f4dcdf5502f0937be76da274d0" category="section-title">訂閱 Amazon SNS 主題</block>
+  <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link">說明</block>
+  <block id="f796ddcb3cbbbd6b219cbc54c800ab86" category="paragraph">配置工作負載工廠向主題發送通知後，請依照<block ref="88c7b6108316e02c36e39863bedc2019" category="inline-link-rx"></block>在 Amazon SNS 文件中訂閱該主題，以便您可以接收來自工作負載工廠的通知。</block>
+  <block id="e457faf451b04c78c6b2c6bc25491ad1" category="section-title">篩選通知</block>
+  <block id="3180a00483bf6ffa5db8c6178c4eb67a" category="paragraph">您可以透過對通知套用篩選條件來減少不必要的通知流量，並針對特定使用者定向特定類型的通知。您可以使用 Amazon SNS 策略來設定 SNS 通知，並使用 BlueXP 通知設定來設定 BlueXP 通知。</block>
+  <block id="4ccc3070ee3f76f6afb040d5f99b3bdd" category="section-title">篩選 Amazon SNS 通知</block>
+  <block id="103130451f8943db9cb57de31a66dc79" category="paragraph">訂閱 Amazon SNS 主題後，預設情況下，您會收到發佈到該主題的所有通知。如果您只想接收來自該主題的特定通知，可以使用篩選策略來控制接收哪些通知。</block>
+  <block id="3f6971d458153040675cf8e95795f3b0" category="inline-link">Amazon SNS 文件</block>
+  <block id="c7fbd94f814dfe1f2c13e1ea015a39d7" category="paragraph">有關創建過濾策略的更多信息，請參閱<block ref="c589c7fc86bb393dc58d099c6c8ea47e" category="inline-link-rx"></block> 。</block>
+  <block id="aacb2329b4899fc1a4b8f0f2f67b0398" category="inline-link">Amazon SNS 範例篩選策略</block>
+  <block id="0ef8ad02e6dcecafa6e5e696fe553279" category="paragraph">有關過濾策略的範例，請參閱<block ref="7c3f3bfbc0dabec1aca15cb9aeb0e326" category="inline-link-rx"></block> 。</block>
+  <block id="92bb95ca7ce65dc7bedcbf84528f75fd" category="section-title">過濾 BlueXP 通知</block>
+  <block id="ac6e44b462d88f56828f381faa7907ca" category="paragraph">您可以使用 BlueXP 警報和通知設定按嚴重性等級（例如「嚴重」、「訊息」或「警告」）過濾在 BlueXP 中收到的警報和通知。</block>
+  <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文件</block>
+  <block id="7572b4e37ed025014a17bc1ae86c60a9" category="paragraph">有關在 BlueXP 中過濾通知的更多信息，請參閱<block ref="f8c744992c7f60894906e0753601fc52" category="inline-link-rx"></block> 。</block>
 </blocks>
