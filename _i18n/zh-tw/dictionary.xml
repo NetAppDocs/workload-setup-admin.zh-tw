@@ -1218,4 +1218,5 @@
   <block id="ac6e44b462d88f56828f381faa7907ca" category="paragraph">您可以使用 BlueXP 警報和通知設定按嚴重性等級（例如「嚴重」、「訊息」或「警告」）過濾在 BlueXP 中收到的警報和通知。</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文件</block>
   <block id="7572b4e37ed025014a17bc1ae86c60a9" category="paragraph">有關在 BlueXP 中過濾通知的更多信息，請參閱<block ref="f8c744992c7f60894906e0753601fc52" category="inline-link-rx"></block> 。</block>
+  <block id="19a5158f1235c29843008925adb7baf8" category="sidebar">設定通知</block>
 </blocks>
