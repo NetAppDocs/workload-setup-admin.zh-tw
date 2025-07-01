@@ -26,8 +26,10 @@ BlueXP  工作負載工廠可透過兩個網路型主控台存取。瞭解如�
 您可以從 BlueXP  存取工作負載工廠。除了使用 BlueXP Workload Factory 實現 AWS 儲存和工作負載功能之外，您還可以存取其他 BlueXP 平台服務，例如複製和同步、數位錢包等。
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["工作負載原廠主控台"^]。
-. 瀏覽至您要使用的工作負載，然後選取選項開始使用。
+. 登入 link:https://console.bluexp.netapp.com["BlueXP主控台"^]。
+. 從左側導覽中選取 * 工作負載 * 。
+. 選取 * 首頁 * 以檢視所有工作負載，或選取一個工作負載，例如 * 儲存 * 或 * 資料庫 * 。
+. 選取選項以開始處理工作負載。
 
 
 
@@ -37,8 +39,6 @@ BlueXP  工作負載工廠可透過兩個網路型主控台存取。瞭解如�
 您可以從 Workload Factory 主控台存取工作負載工廠。
 
 .步驟
-. 登入 link:https://console.bluexp.netapp.com["BlueXP主控台"^]。
-. 從左側導覽中選取 * 工作負載 * 。
-. 選取 * 首頁 * 以檢視所有工作負載，或選取一個工作負載，例如 * 儲存 * 或 * 資料庫 * 。
-. 選取選項以開始處理工作負載。
+. 登入 link:https://console.workloads.netapp.com["工作負載原廠主控台"^]。
+. 瀏覽至您要使用的工作負載，然後選取選項開始使用。
 
