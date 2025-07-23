@@ -39,6 +39,14 @@ AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 ch
 
 
 
+== 安全性
+
+BlueXP workload factory的安全性是NetApp的首要任務。工作負載工廠中的所有工作負載都在Amazon FSx for NetApp ONTAP上運作。此外，所有link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security.html["AWS 安全功能"^] ， BlueXP workload factory已收到link:https://netapp-security.trustshare.com/certifications/soc2type_1?documentId=84d4110a-3fc7-4d0c-9c65-b9f0d034c058["SOC2 類型 1 合規性"^] 。
+
+Amazon FSx for NetApp ONTAP for BlueXP workload factory是link:https://aws.amazon.com/solutions/guidance/deploying-enterprise-apps-with-netapp-bluexp-workload-factory-for-aws-and-amazon-fsx-for-netapp-ontap/["用於部署企業應用程式的 AWS 解決方案"^]它是根據精心設計的最佳實踐而創建的。
+
+
+
 == 成本
 
 工作負載工廠免費使用。您支付給 Amazon Web Services （ AWS ）的成本取決於您計畫部署的儲存設備和工作負載服務。這包括 Amazon FSX 在 NetApp ONTAP 檔案系統、 VMware Cloud on AWS 基礎架構、 AWS 服務等方面的成本。

@@ -1219,4 +1219,10 @@
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文件</block>
   <block id="7572b4e37ed025014a17bc1ae86c60a9" category="paragraph">有關在 BlueXP 中過濾通知的更多信息，請參閱<block ref="f8c744992c7f60894906e0753601fc52" category="inline-link-rx"></block> 。</block>
   <block id="19a5158f1235c29843008925adb7baf8" category="sidebar">設定通知</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">安全性</block>
+  <block id="de7642ec23585171e85481d37460d1b2" category="inline-link-macro">AWS 安全功能</block>
+  <block id="6ff7732866355a577fee1c91a01a3561" category="inline-link-macro">SOC2 類型 1 合規性</block>
+  <block id="eece9c219f85d9ffb785cea21dafab78" category="paragraph">BlueXP workload factory的安全性是NetApp的首要任務。工作負載工廠中的所有工作負載都在Amazon FSx for NetApp ONTAP上運作。此外，所有<block ref="ccc35ad3502dffbee7f06fd01d3728f9" category="inline-link-macro-rx"></block> ， BlueXP workload factory已收到<block ref="87b5f9f30f065d1ad679fca208226814" category="inline-link-macro-rx"></block> 。</block>
+  <block id="5bc45c9bf327952786de480d68cc107d" category="inline-link-macro">用於部署企業應用程式的 AWS 解決方案</block>
+  <block id="8097660ab0d3d7b21c8c1e1937f57a7a" category="paragraph">Amazon FSx for NetApp ONTAP for BlueXP workload factory是<block ref="eada645bedd6ca3d760173ba22baf6b0" category="inline-link-macro-rx"></block>它是根據精心設計的最佳實踐而創建的。</block>
 </blocks>
