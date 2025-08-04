@@ -98,11 +98,79 @@ summary: 您可以設定 BlueXP 工作負載工廠，當某些類型的事件發
 
 === 篩選 Amazon SNS 通知
 
-訂閱 Amazon SNS 主題後，預設情況下，您會收到發佈到該主題的所有通知。如果您只想接收來自該主題的特定通知，可以使用篩選策略來控制接收哪些通知。
+當您訂閱 Amazon SNS 主題時，您會在預設情況下收到發佈到該主題的所有通知。如果您只想接收主題的特定通知，則可以使用篩選策略來控制接收哪些通知。過濾策略使 Amazon SNS 僅向訂閱者發送符合過濾策略的通知。
 
-有關創建過濾策略的更多信息，請參閱 https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Amazon SNS 文件"^] 。
+您可以依照以下條件篩選 Amazon SNS 通知：
 
-有關過濾策略的範例，請參閱 https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Amazon SNS 範例篩選策略"^] 。
+[cols="3*"]
+|===
+| 說明 | 過濾策略欄位名稱 | 可能值 
+
+
+| 資源類型 | `resourceType`  a| 
+* `DB`
+* `Microsoft SQL Server host`
+* `PostgreSQL Server host`
+
+
+
+
+| 工作負載 | `workload` | `WLMDB` 
+
+
+| 優先事項 | `priority`  a| 
+* `Success`
+* `Info`
+* `Recommendation`
+* `Warning`
+* `Error`
+* `Critical`
+
+
+
+
+| 通知類型 | `notificationType`  a| 
+* `Deployment`
+* `Well-architected`
+
+
+|===
+.步驟
+. 在 Amazon SNS 控制台中，編輯 SNS 主題的訂閱詳細資訊。
+. 在*訂閱過濾策略*區域，選擇按*訊息屬性*進行過濾。
+. 啟用*訂閱過濾策略*選項。
+. 在 *JSON 編輯器* 框中輸入 JSON 過濾策略。
++
+例如，以下 JSON 過濾策略接受來自 Microsoft SQL Server 資源的與 WLMDB 工作負載相關的通知，優先順序為成功或錯誤，並提供有關 Well-architected 狀態的詳細資訊：
+
++
+[source, json]
+----
+{
+  "accountId": [
+    "account-a"
+  ],
+  "resourceType": [
+    "Microsoft SQL Server host"
+  ],
+  "workload": [
+    "WLMDB"
+  ],
+  "priority": [
+    "Success",
+    "Error"
+  ],
+  "notificationType": [
+    "Well-architected"
+  ]
+}
+----
+. 選擇“儲存變更”。
+
+
+有關過濾策略的其他範例，請參閱 https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Amazon SNS 範例篩選策略"^]。
+
+有關創建過濾策略的更多信息，請參閱 https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Amazon SNS 文件"^]。
 
 
 

@@ -1209,11 +1209,8 @@
   <block id="e457faf451b04c78c6b2c6bc25491ad1" category="section-title">篩選通知</block>
   <block id="3180a00483bf6ffa5db8c6178c4eb67a" category="paragraph">您可以透過對通知套用篩選條件來減少不必要的通知流量，並針對特定使用者定向特定類型的通知。您可以使用 Amazon SNS 策略來設定 SNS 通知，並使用 BlueXP 通知設定來設定 BlueXP 通知。</block>
   <block id="4ccc3070ee3f76f6afb040d5f99b3bdd" category="section-title">篩選 Amazon SNS 通知</block>
-  <block id="103130451f8943db9cb57de31a66dc79" category="paragraph">訂閱 Amazon SNS 主題後，預設情況下，您會收到發佈到該主題的所有通知。如果您只想接收來自該主題的特定通知，可以使用篩選策略來控制接收哪些通知。</block>
   <block id="3f6971d458153040675cf8e95795f3b0" category="inline-link">Amazon SNS 文件</block>
-  <block id="c7fbd94f814dfe1f2c13e1ea015a39d7" category="paragraph">有關創建過濾策略的更多信息，請參閱<block ref="c589c7fc86bb393dc58d099c6c8ea47e" category="inline-link-rx"></block> 。</block>
   <block id="aacb2329b4899fc1a4b8f0f2f67b0398" category="inline-link">Amazon SNS 範例篩選策略</block>
-  <block id="0ef8ad02e6dcecafa6e5e696fe553279" category="paragraph">有關過濾策略的範例，請參閱<block ref="7c3f3bfbc0dabec1aca15cb9aeb0e326" category="inline-link-rx"></block> 。</block>
   <block id="92bb95ca7ce65dc7bedcbf84528f75fd" category="section-title">過濾 BlueXP 通知</block>
   <block id="ac6e44b462d88f56828f381faa7907ca" category="paragraph">您可以使用 BlueXP 警報和通知設定按嚴重性等級（例如「嚴重」、「訊息」或「警告」）過濾在 BlueXP 中收到的警報和通知。</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文件</block>
@@ -1225,4 +1222,33 @@
   <block id="eece9c219f85d9ffb785cea21dafab78" category="paragraph">BlueXP workload factory的安全性是NetApp的首要任務。工作負載工廠中的所有工作負載都在Amazon FSx for NetApp ONTAP上運作。此外，所有<block ref="ccc35ad3502dffbee7f06fd01d3728f9" category="inline-link-macro-rx"></block> ， BlueXP workload factory已收到<block ref="87b5f9f30f065d1ad679fca208226814" category="inline-link-macro-rx"></block> 。</block>
   <block id="5bc45c9bf327952786de480d68cc107d" category="inline-link-macro">用於部署企業應用程式的 AWS 解決方案</block>
   <block id="8097660ab0d3d7b21c8c1e1937f57a7a" category="paragraph">Amazon FSx for NetApp ONTAP for BlueXP workload factory是<block ref="eada645bedd6ca3d760173ba22baf6b0" category="inline-link-macro-rx"></block>它是根據精心設計的最佳實踐而創建的。</block>
+  <block id="29281e8d047885f5a1eb2289174ea81b" category="paragraph">當您訂閱 Amazon SNS 主題時，您會在預設情況下收到發佈到該主題的所有通知。如果您只想接收主題的特定通知，則可以使用篩選策略來控制接收哪些通知。過濾策略使 Amazon SNS 僅向訂閱者發送符合過濾策略的通知。</block>
+  <block id="3cf5ea90b43a94f968c221cb35825fc3" category="paragraph">您可以依照以下條件篩選 Amazon SNS 通知：</block>
+  <block id="f371924f658239435c3c02b060070903" category="cell">過濾策略欄位名稱</block>
+  <block id="e5a4fea3be20093aed1158f2955f3df4" category="cell">可能值</block>
+  <block id="8372260cbe8cea7a79534ca84168f5c0" category="cell"><block ref="6f4747111234dff4c7bcdf083b346a94" prefix="" category="inline-code"></block></block>
+  <block id="548c05b614fd845ec14b1bf066a0359a" category="list-text"><block ref="0a5a4d7386065c6c6ac19c303768c7e1" prefix="" category="inline-code"></block></block>
+  <block id="1a9b9aa12f6070dd31084dd22a2812a5" category="list-text"><block ref="e835d924dbed210507b4890fa87226cc" prefix="" category="inline-code"></block></block>
+  <block id="33c939ce687916c112fecadb39b53890" category="list-text"><block ref="9e6273da219351fd1bcd2dc6910acaf3" prefix="" category="inline-code"></block></block>
+  <block id="860a9c42987aebce0c8da0540c5a84f2" category="cell"><block ref="a1c25bfa5aa64d28b6eeb6ccfab62a2b" prefix="" category="inline-code"></block></block>
+  <block id="fdfea20d870634468185f5980bb76cf6" category="cell"><block ref="1b039aabfeae7361177bf028a8a1f6ce" prefix="" category="inline-code"></block></block>
+  <block id="502996d9790340c5fd7b86a5b93b1c9f" category="cell">優先事項</block>
+  <block id="6dd9cfc9dd7efe6460008e181811c4a0" category="cell"><block ref="b988295c268025b49dfb3df26171ddc3" prefix="" category="inline-code"></block></block>
+  <block id="fbe75968bd07c8022a510a9eb171f5ac" category="list-text"><block ref="505a83f220c02df2f85c3810cd9ceb38" prefix="" category="inline-code"></block></block>
+  <block id="e8e3ca76fb86257b3cc96203366fa277" category="list-text"><block ref="4059b0251f66a18cb56f544728796875" prefix="" category="inline-code"></block></block>
+  <block id="c64d5eb9dc14f012f24968850e94aa1d" category="list-text"><block ref="c76e3867213cff8946148c6510af0736" prefix="" category="inline-code"></block></block>
+  <block id="ef925ecc7a0f852e4cc42d5b5925caa4" category="list-text"><block ref="0eaadb4fcb48a0a0ed7bc9868be9fbaa" prefix="" category="inline-code"></block></block>
+  <block id="f892aecb309efd2eb00bf81d0da7e2d3" category="list-text"><block ref="902b0d55fddef6f8d651fe1035b7d4bd" prefix="" category="inline-code"></block></block>
+  <block id="ae988fdad1245dfcc2f6cd9b316f8a3a" category="list-text"><block ref="278d01e5af56273bae1bb99a98b370cd" prefix="" category="inline-code"></block></block>
+  <block id="12872cc0e76936a8938cd15fccb4c868" category="cell"><block ref="2c4033243bcb1298d8fc9ed74dc33162" prefix="" category="inline-code"></block></block>
+  <block id="705efd3635abaaf44ee75b810cdff54c" category="list-text"><block ref="ea355214fd4bc7c57f471bd92918879b" prefix="" category="inline-code"></block></block>
+  <block id="720b4ee1679e3fd7a1c3ea6320dc37af" category="list-text"><block ref="64096d5dd63fb80716eda8d7d149213d" prefix="" category="inline-code"></block></block>
+  <block id="cf213a8c125f78fbb8341b43ed68ce68" category="list-text">在 Amazon SNS 控制台中，編輯 SNS 主題的訂閱詳細資訊。</block>
+  <block id="b08ee187ef6fa7757182e5e859d9b459" category="list-text">在*訂閱過濾策略*區域，選擇按*訊息屬性*進行過濾。</block>
+  <block id="68c18f90be4f6f573214f60e5f17c2c0" category="list-text">啟用*訂閱過濾策略*選項。</block>
+  <block id="c30414ebd52e1f91206e36d5447fe193" category="list-text">在 *JSON 編輯器* 框中輸入 JSON 過濾策略。</block>
+  <block id="f1c903d40dc21b2881decd70039432bf" category="paragraph">例如，以下 JSON 過濾策略接受來自 Microsoft SQL Server 資源的與 WLMDB 工作負載相關的通知，優先順序為成功或錯誤，並提供有關 Well-architected 狀態的詳細資訊：</block>
+  <block id="302ef561e28f7d7cd13d1042cece78e1" category="list-text">選擇“儲存變更”。</block>
+  <block id="179469fcde96eae5af1f559799d08b2a" category="paragraph">有關過濾策略的其他範例，請參閱<block ref="7c3f3bfbc0dabec1aca15cb9aeb0e326" category="inline-link-rx"></block>。</block>
+  <block id="b52828f726867aaf1bf7b2a16b29e5e2" category="paragraph">有關創建過濾策略的更多信息，請參閱<block ref="c589c7fc86bb393dc58d099c6c8ea47e" category="inline-link-rx"></block>。</block>
 </blocks>
