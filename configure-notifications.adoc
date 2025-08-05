@@ -31,6 +31,12 @@ summary: 您可以設定 BlueXP 工作負載工廠，當某些類型的事件發
 
 
 | Microsoft SQL Server/PostgreSQL 伺服器部署失敗 | Microsoft SQL Server 或 PostgreSQL 主機部署失敗。更多信息，請參考作業監控。 | 部署 | 錯誤 | 資料庫 | FSx for ONTAP，資料庫主機 
+
+
+| 複製關係創建失敗 | SnapMirror複製關係建立失敗。欲了解更多信息，請訪問 Tracker。 | 複製 | 批判的 | 常規存儲 | 適用於ONTAP的 FSx 
+
+
+| FSx for ONTAP建立失敗 | FSx for ONTAP檔案系統建立過程失敗。欲了解更多信息，請訪問 Tracker。 | FSx for ONTAP檔案系統操作 | 批判的 | 常規存儲 | 適用於ONTAP的 FSx 
 |===
 
 

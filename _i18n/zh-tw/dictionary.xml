@@ -1251,4 +1251,13 @@
   <block id="302ef561e28f7d7cd13d1042cece78e1" category="list-text">選擇“儲存變更”。</block>
   <block id="179469fcde96eae5af1f559799d08b2a" category="paragraph">有關過濾策略的其他範例，請參閱<block ref="7c3f3bfbc0dabec1aca15cb9aeb0e326" category="inline-link-rx"></block>。</block>
   <block id="b52828f726867aaf1bf7b2a16b29e5e2" category="paragraph">有關創建過濾策略的更多信息，請參閱<block ref="c589c7fc86bb393dc58d099c6c8ea47e" category="inline-link-rx"></block>。</block>
+  <block id="f06afead014f9779fefbb6d2a2224bfd" category="cell">複製關係創建失敗</block>
+  <block id="4d99e7fabf8a3228a9ae1e670f61053c" category="cell">SnapMirror複製關係建立失敗。欲了解更多信息，請訪問 Tracker。</block>
+  <block id="8c340dc334134096f68b880b42a8692c" category="cell">複製</block>
+  <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">批判的</block>
+  <block id="c31576c9f98b33a8fa810835cefa86d2" category="cell">常規存儲</block>
+  <block id="36df1b975561708b246ef1801ea416e5" category="cell">適用於ONTAP的 FSx</block>
+  <block id="521987edc4d9059fc32abee2d3f5d6ae" category="cell">FSx for ONTAP建立失敗</block>
+  <block id="dd34477f0a88e199c56ea0813db3e18d" category="cell">FSx for ONTAP檔案系統建立過程失敗。欲了解更多信息，請訪問 Tracker。</block>
+  <block id="dfe4f4248d3875aa3b31ac02e60b0e87" category="cell">FSx for ONTAP檔案系統操作</block>
 </blocks>
