@@ -2,28 +2,28 @@
 sidebar: sidebar 
 permalink: whats-next.html 
 keywords: what you can do 
-summary: 現在您已經登入並設定工作負載工廠，您可以建立和管理 ONTAP 檔案系統的 FSX ，並使用其他工作負載工廠功能。 
+summary: 登入並設定工作負載工廠後，您可以建立和管理 FSx for ONTAP檔案系統，並使用其他工作負載工廠功能。 
 ---
-= BlueXP  工作負載工廠的後續行動
+= 使用工作負載工廠優化工作負載
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-現在您已登入並設定 BlueXP  工作負載工廠，您可以開始使用數項工作負載工廠功能，例如建立適用於 ONTAP 檔案系統的 Amazon FSX ，在適用於 ONTAP 檔案系統的 FSX 上部署資料庫，以及將虛擬機器組態移轉至使用適用於 ONTAP 檔案系統的 FSX 作為外部資料存放區的 VMware Cloud on AWS 。
+登入並設定工作負載工廠後，您可以開始使用多種工作負載工廠功能，例如建立Amazon FSx for ONTAP檔案系統、在 FSx for ONTAP檔案系統上部署資料庫以及使用 FSx for ONTAP檔案系統作為外部資料儲存將虛擬機器配置遷移到 VMware Cloud on AWS。
 
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
 +
 使用適用於 ONTAP 的 FSX 作為儲存基礎架構、根據最佳實務做法、為 ONTAP 部署配置和範圍化 FSX 、以及存取進階管理功能、以評估並分析目前的資料產業、以節省潛在成本。
 
-* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
-+
-部署並管理擷取擴增（ RAG ）基礎架構、以提升 AI 應用程式的準確度和獨特性。利用內建的資料安全性與法規遵循功能、在適用於 ONTAP 的 FSX 上建立 RAG 知識庫。
-
 * https://docs.netapp.com/us-en/workload-databases/index.html["資料庫工作負載"^]
 +
 偵測 AWS 上現有的資料庫資產、移轉至 ONTAP 的 FSX 以評估潛在的成本節約效益、使用內建最佳化實務來部署端對端資料庫、以及自動化 CI/CD 管線的精簡複製。
+
+* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
++
+部署並管理擷取擴增（ RAG ）基礎架構、以提升 AI 應用程式的準確度和獨特性。利用內建的資料安全性與法規遵循功能、在適用於 ONTAP 的 FSX 上建立 RAG 知識庫。
 
 * https://docs.netapp.com/us-en/workload-vmware/index.html["VMware 工作負載"^]
 +

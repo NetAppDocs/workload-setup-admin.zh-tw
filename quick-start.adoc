@@ -31,23 +31,7 @@ link:add-credentials.html["瞭解如何新增認證至您的帳戶"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 使用適用於 ONTAP 的 FSX 最佳化您的工作負載
 [role="quick-margin-para"]
-現在您已經註冊，建立帳戶，並選擇性地新增 AWS 認證，您可以開始使用工作負載工廠來使用適用於 ONTAP 的 FSX 來最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。
+註冊、建立帳戶並選擇性地新增 AWS 憑證後，您可以開始使用工作負載工廠透過 FSx for ONTAP最佳化工作負載。
 
-[role="quick-margin-list"]
-* https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
-+
-使用適用於 ONTAP 的 FSX 作為儲存基礎架構、根據最佳實務做法、為 ONTAP 部署配置和範圍化 FSX 、以及存取進階管理功能、以評估並分析目前的資料產業、以節省潛在成本。
-
-* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
-+
-部署並管理擷取擴增（ RAG ）基礎架構、以提升 AI 應用程式的準確度和獨特性。利用內建的資料安全性與法規遵循功能、在適用於 ONTAP 的 FSX 上建立 RAG 知識庫。
-
-* https://docs.netapp.com/us-en/workload-databases/index.html["資料庫工作負載"^]
-+
-在 AWS 上偵測現有的資料庫資產、使用適用於 ONTAP 的 FSX 評估潛在成本節約效益、使用內建最佳化實務來部署資料庫端對端、以及自動化 CI/CD 管線的精簡複製。
-
-* https://docs.netapp.com/us-en/workload-vmware/index.html["VMware 工作負載"^]
-+
-透過智慧建議和自動補救、簡化移轉與作業。部署高效備份與健全的災難恢復。監控及疑難排解 VM 。
-
-
+[role="quick-margin-para"]
+link:whats-next.html["使用 FSx for ONTAP優化您的工作負載"] 。

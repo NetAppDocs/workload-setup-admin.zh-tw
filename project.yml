@@ -36,7 +36,7 @@ sidebar:
       url: "/sign-up-saas.html"
     - title: 新增 AWS 認證
       url: "/add-credentials.html"
-    - title: 接下來您可以做什麼
+    - title: 使用工作負載工廠優化工作負載
       url: "/whats-next.html"
   - title: 管理工作負載工廠
     entries:

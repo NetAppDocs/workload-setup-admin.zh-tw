@@ -227,7 +227,6 @@
   <block id="1ab964190acf4217fadb080cfcbe361f" category="paragraph">部署並管理擷取擴增（ RAG ）基礎架構、以提升 AI 應用程式的準確度和獨特性。利用內建的資料安全性與法規遵循功能、在適用於 ONTAP 的 FSX 上建立 RAG 知識庫。</block>
   <block id="38bd169945a371832b0b65c9086b1792" category="inline-link">資料庫工作負載</block>
   <block id="7c05124c7bff1277e0dd98967825f03a" category="list-text"><block ref="7c05124c7bff1277e0dd98967825f03a" category="inline-link-rx"></block></block>
-  <block id="0b65135cac08d591d73cff9785b28f30" category="paragraph">在 AWS 上偵測現有的資料庫資產、使用適用於 ONTAP 的 FSX 評估潛在成本節約效益、使用內建最佳化實務來部署資料庫端對端、以及自動化 CI/CD 管線的精簡複製。</block>
   <block id="a76e64a0fbf98a083080351e4cb67566" category="inline-link">VMware 工作負載</block>
   <block id="e555278247527c688d390729e5f7e123" category="list-text"><block ref="e555278247527c688d390729e5f7e123" category="inline-link-rx"></block></block>
   <block id="bc9eaabfc00230f2aa0ab1f9dfcfb994" category="paragraph">透過智慧建議和自動補救、簡化移轉與作業。部署高效備份與健全的災難恢復。監控及疑難排解 VM 。</block>
@@ -305,7 +304,6 @@
   <block id="8d03c4936e76f2455607364517b82e3e" category="paragraph">您可以使用從 Codebox 產生的 Amazon Web Services CLI 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="b28a0d67dfa6e54814b9650389eea71b" category="list-text">貼上程式碼並執行。</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024 年 7 月 7 日</block>
-  <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="doc">接下來您可以做什麼</block>
   <block id="452c8a300642b831148cf770baf1cd2f" category="paragraph">偵測 AWS 上現有的資料庫資產、移轉至 ONTAP 的 FSX 以評估潛在的成本節約效益、使用內建最佳化實務來部署端對端資料庫、以及自動化 CI/CD 管線的精簡複製。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="6cfad4df5416db8db29bda4f011d3211" category="list-text">靈活且低成本的儲存設備</block>
@@ -443,7 +441,6 @@
   <block id="70d0aaf5f480c6663d11cba807745150" category="paragraph">使用者可從網路型主控台，以雲端服務的形式存取工作負載工廠。開始之前、您應該先瞭解 <block ref="e8fd0c1fcb8ab0b007f06daaaaad1620" category="inline-link-macro-rx"></block> 和 <block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block>。</block>
   <block id="5aef544885f83ccc840e539c33cb1025" category="paragraph">前往<block ref="c88df82826d36e57e6bb9062bf07b8b2" category="inline-link-rx"></block>、註冊並建立帳戶。</block>
   <block id="60606490df41979dfeb5466c4c9f1288" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>將 AWS 認證新增至工作負載工廠</block>
-  <block id="51ff16c71246f19573efec76f8f088e4" category="paragraph">現在您已經註冊，建立帳戶，並選擇性地新增 AWS 認證，您可以開始使用工作負載工廠來使用適用於 ONTAP 的 FSX 來最佳化工作負載。請使用下列連結、針對每種類型的工作負載、遵循逐步指示。</block>
   <block id="9ec9485bf8174a52fd8f6a62564d8738" category="summary">工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。</block>
   <block id="a51339d19908e6fdb3902e2656db64d1" category="doc">註冊 BlueXP  工作負載工廠</block>
   <block id="b63dadbd087bac2ed3df3e51784c2a44" category="paragraph">BlueXP  工作負載工廠可從網路型主控台存取。開始使用工作負載工廠時，您的第一步是使用現有的 NetApp 支援網站認證或建立 NetApp 雲端登入。</block>
@@ -465,9 +462,6 @@
   <block id="2613fa59d7805a53043306264e81ba1a" category="summary">瞭解工作負載原廠管理功能的新功能：雲端供應商認證， Codebox 增強功能等。</block>
   <block id="15653101633b93b4e086ba27efda4eae" category="doc">BlueXP  工作負載原廠管理功能的新功能</block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
-  <block id="442602a2c8f7770016d621549f7964c6" category="summary">現在您已經登入並設定工作負載工廠，您可以建立和管理 ONTAP 檔案系統的 FSX ，並使用其他工作負載工廠功能。</block>
-  <block id="a2f53a8457ed9acfd2f72c4ae30c45de" category="doc">BlueXP  工作負載工廠的後續行動</block>
-  <block id="d6753fe2bb46e06b1aa2e353e485eca7" category="paragraph">現在您已登入並設定 BlueXP  工作負載工廠，您可以開始使用數項工作負載工廠功能，例如建立適用於 ONTAP 檔案系統的 Amazon FSX ，在適用於 ONTAP 檔案系統的 FSX 上部署資料庫，以及將虛擬機器組態移轉至使用適用於 ONTAP 檔案系統的 FSX 作為外部資料存放區的 VMware Cloud on AWS 。</block>
   <block id="008afcec5c1c0f2fb38f3e66b5aa4738" category="summary">BlueXP  工作負載工廠是一款功能強大的生命週期管理平台，專為協助您使用 Amazon FSX for NetApp ONTAP 檔案系統來最佳化工作負載而設計。</block>
   <block id="023c9a2badb62edd0fd5c78e596a5be9" category="doc">瞭解 BlueXP  工作負載工廠</block>
   <block id="81b33a2e792e396aa73e06306a69815c" category="paragraph">Amazon FSX for NetApp ONTAP 為關鍵任務應用程式、資料庫、容器、 VMware Cloud 資料存放區和使用者檔案提供完全託管的 AWS 原生 NFS 、 SMB/CIFS 和 iSCSI 儲存磁碟區。您可以透過工作負載工廠及使用原生 AWS 管理工具來管理適用於 ONTAP 的 FSX 。</block>
@@ -1260,4 +1254,10 @@
   <block id="521987edc4d9059fc32abee2d3f5d6ae" category="cell">FSx for ONTAP建立失敗</block>
   <block id="dd34477f0a88e199c56ea0813db3e18d" category="cell">FSx for ONTAP檔案系統建立過程失敗。欲了解更多信息，請訪問 Tracker。</block>
   <block id="dfe4f4248d3875aa3b31ac02e60b0e87" category="cell">FSx for ONTAP檔案系統操作</block>
+  <block id="a819fc88b2635577c915933ee456de25" category="paragraph">註冊、建立帳戶並選擇性地新增 AWS 憑證後，您可以開始使用工作負載工廠透過 FSx for ONTAP最佳化工作負載。</block>
+  <block id="6a636f3ce643c351748a032eeaaa11b0" category="inline-link-macro">使用 FSx for ONTAP優化您的工作負載</block>
+  <block id="9f2ac12605258d5b9c839500e3fc7770" category="paragraph"><block ref="efcfd21ad3a99d834cf77c9ab08b5664" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d579c4b11db5f291683e63ef986a0f5e" category="summary">登入並設定工作負載工廠後，您可以建立和管理 FSx for ONTAP檔案系統，並使用其他工作負載工廠功能。</block>
+  <block id="0a5d504d75a20cbec4103187ecd3e699" category="doc">使用工作負載工廠優化工作負載</block>
+  <block id="cc851373181948e2ac9056f188882266" category="paragraph">登入並設定工作負載工廠後，您可以開始使用多種工作負載工廠功能，例如建立Amazon FSx for ONTAP檔案系統、在 FSx for ONTAP檔案系統上部署資料庫以及使用 FSx for ONTAP檔案系統作為外部資料儲存將虛擬機器配置遷移到 VMware Cloud on AWS。</block>
 </blocks>
