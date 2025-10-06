@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: whats-next.html 
 keywords: what you can do 
-summary: 登入並設定工作負載工廠後，您可以建立和管理 FSx for ONTAP檔案系統，並使用其他工作負載工廠功能。 
+summary: 登入並設定NetApp Workload Factory 後，您可以建立和管理 FSx for ONTAP檔案系統，並使用其他 Workload Factory 功能。 
 ---
-= 使用工作負載工廠優化工作負載
+= 使用NetApp Workload Factory 優化工作負載
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-登入並設定工作負載工廠後，您可以開始使用多種工作負載工廠功能，例如建立Amazon FSx for ONTAP檔案系統、在 FSx for ONTAP檔案系統上部署資料庫以及使用 FSx for ONTAP檔案系統作為外部資料儲存將虛擬機器配置遷移到 VMware Cloud on AWS。
+登入並設定NetApp Workload Factory 後，您可以開始使用多種 Workload Factory 功能，例如建立Amazon FSx for ONTAP檔案系統、在 FSx for ONTAP檔案系統上部署資料庫以及使用 FSx for ONTAP檔案系統作為外部資料儲存將虛擬機器配置到 VMware Cloudon on。
 
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP 產品"^]
 +

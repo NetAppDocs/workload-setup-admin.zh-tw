@@ -2,16 +2,44 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 瞭解工作負載原廠管理功能的新功能：雲端供應商認證， Codebox 增強功能等。 
+summary: 了解 Workload Factory 管理功能的新功能：雲端提供者憑證、Codebox 增強功能等。 
 ---
-= BlueXP  工作負載原廠管理功能的新功能
+= NetApp Workload Factory 管理功能的新增功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-瞭解工作負載原廠管理功能的新功能：雲端供應商認證， Codebox 增強功能等。
+了解 Workload Factory 管理功能的新功能：雲端提供者憑證、Codebox 增強功能等。
+
+
+
+== 2025年10月6日
+
+
+
+=== BlueXP workload factory現為NetApp工作負載工廠
+
+BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp工作負載工廠。
+
+
+
+=== Ask Me 與 MCP 集成
+
+Workload Factory 的 AI 助理 Ask Me 與模型上下文協定 (MCP) 整合。使用 MCP，Ask Me 可以安全地與外部環境互動並查詢 API 工具，以提供適合您特定儲存環境的回應。
+
+
+
+== 2025年10月5日
+
+
+
+=== 儲存的新通知
+
+NetApp Workload Factory 通知服務包含針對儲存架構問題的通知。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["NetApp Workload Factory 通知"]
 
 
 

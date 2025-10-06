@@ -2,36 +2,36 @@
 sidebar: sidebar 
 permalink: use-codebox.html 
 keywords: codebox, automation, cloudformation, rest api, aws cli, permissions 
-summary: 您可以使用 Codebox 產生執行 BlueXP  工作負載工廠所支援任何作業所需的程式碼。 
+summary: 您可以使用 Codebox 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。 
 ---
-= 在 BlueXP  工作負載工廠中使用 Codebox 進行自動化
+= 使用 Codebox 實現NetApp Workload Factory 中的自動化
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-您可以使用 Codebox 產生執行 BlueXP  工作負載工廠所支援任何作業所需的程式碼。您可以使用工作負載原廠 REST API ， AWS CLI 和 AWS CloudForgation 來產生可以使用和執行的程式碼。
+您可以使用 Codebox 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。您可以產生可使用 Workload Factory REST API、AWS CLI 和 AWS CloudFormation 使用和執行的程式碼。
 
-Codebox 根據每個使用者的工作負載工廠帳戶中提供的 AWS 權限在程式碼中填入適當的數據，與工作負載工廠操作模式（基本、唯讀和讀取/寫入）保持一致。此程式碼可以像範本一樣使用、您可以在其中填入遺失的資訊（例如認證）、或在執行程式碼之前自訂特定資料。
+Codebox 與 Workload Factory 操作模式（基本、唯讀和讀/寫）保持一致，透過根據 Workload Factory 帳戶中為每個使用者提供的 AWS 權限在程式碼中填入適當的資料。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。
 
 
 
 == 如何使用 CodeBox
 
-當您在工作負載原廠 UI 精靈中輸入值時，您可以在完成每個欄位時，在 Codebox 中看到資料更新。完成精靈後、但在您選取頁面底部的 * 建立 * 按鈕之前、請在代碼方塊中選取 image:button-copy-codebox.png["複製按鈕"] 複製、以擷取建置組態所需的程式碼。例如、從建立新的 Microsoft SQL Server 所產生的這個螢幕擷取畫面、會顯示 VPC 和可用性區域的精靈項目、以及在 Codebox 中用於 REST API 實作的等效項目。
+當您在 Workload Factory UI 精靈中輸入值時，您可以在完成每個欄位時看到 Codebox 中的資料更新。完成精靈後，在選擇頁面底部的「建立」按鈕之前，請選擇image:button-copy-codebox.png["複製按鈕"]在 Codebox 中複製以擷取建置配置所需的程式碼。例如，此建立新 Microsoft SQL Server 的螢幕截圖顯示了 VPC 和可用區域的精靈項目以及 Codebox 中用於 REST API 實作的等效項目。
 
 image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQL Server 的螢幕擷取畫面、以及 Codebox 中 VPC 和可用性區域的對應項目。"]
 
-有些程式碼格式也可以選取「下載」按鈕、將程式碼儲存在可帶到其他系統的檔案中。如有需要、您可以在下載程式碼之後編輯程式碼、以便將其調整為適合其他 AWS 帳戶。
+對於某些程式碼格式，您也可以選擇下載按鈕將程式碼儲存在可以帶到另一個系統的檔案中。如果需要，您可以在下載程式碼後編輯它，以便使其適應其他 AWS 帳戶。
 
 
 
 == 使用 Codebox 的 CloudForgation 程式碼
 
-您可以複製從 Codebox 產生的 CloudForgation 程式碼、然後在 AWS 帳戶中啟動 Amazon Web Services CloudForgation 堆疊。CloudForgation 將執行您在工作負載原廠 UI 中定義的動作。
+您可以複製從 Codebox 產生的 CloudFormation 程式碼，然後在您的 AWS 帳戶中啟動 Amazon Web Services CloudFormation 堆疊。  CloudFormation 將執行您在 Workload Factory UI 中定義的操作。
 
-使用 CLoudForation 程式碼的步驟可能會有所不同，視您是部署適用於 ONTAP 檔案系統的 FSX ，建立帳戶認證，還是執行其他工作負載工廠動作而定。
+使用 CloudFormation 程式碼的步驟可能會有所不同，具體取決於您是部署 FSx for ONTAP檔案系統、建立帳戶憑證還是執行其他 Workload Factory 操作。
 
 請注意、 CloudForge-generated YAML 檔案中的程式碼會因安全理由在 7 天後過期。
 
@@ -76,28 +76,28 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 .步驟
-. 使用 UI 定義您要執行的作業之後、請複製 Codebox 中的程式碼。
+. 使用 Workload Factory 控制台定義要執行的操作後，複製 Codebox 中的程式碼。
 . 選取 * 重新導向至 CloudForgied* 、隨即顯示重新導向至 CloudForgation 頁面。
 . 開啟另一個瀏覽器視窗、然後登入 AWS 管理主控台。
 . 從「重新導向至 CloudForgation 」頁面選取 * 繼續 * 。
 . 登入執行程式碼的 AWS 帳戶。
 . 在「快速建立堆疊」頁面的「功能」下、選取 * 我瞭解 AWS CloudForemation 可能 ... * 。
 . 選取 * 建立堆疊 * 。
-. 監控 AWS 或工作負載工廠的進度。
+. 從 AWS 或 Workload Factory 監控進度。
 
 
 
 
 == 使用 CodeBox 的 REST API 程式碼
 
-您可以使用從 Codebox 產生的工作負載原廠 REST API 來部署和管理 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
+您可以使用 Codebox 產生的 Workload Factory REST API 來部署和管理 FSx for ONTAP檔案系統和其他 AWS 資源。
 
 您可以從任何支援 Curl 且具備網際網路連線能力的主機執行 API 。
 
 請注意、驗證權杖會隱藏在 Codebox 中、但會在您複製和貼上 API 呼叫時填入這些權杖。
 
 .步驟
-. 在您使用 UI 定義要執行的作業之後、請複製 Codebox 中的 API 程式碼。
+. 使用 Workload Factory 控制台定義要執行的操作後，複製 Codebox 中的 API 程式碼。
 . 貼上程式碼、然後在主機系統上執行。
 
 
@@ -108,7 +108,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 您可以使用從 Codebox 產生的 Amazon Web Services CLI 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
 
 .步驟
-. 使用 UI 定義您要執行的作業之後、請在 Codebox 中複製 AWS CLI 。
+. 使用 Workload Factory 控制台定義要執行的操作後，將 AWS CLI 複製到 Codebox 中。
 . 開啟另一個瀏覽器視窗、然後登入 AWS 管理主控台。
 . 貼上程式碼並執行。
 
@@ -125,7 +125,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 .步驟
-. 使用使用者介面定義您要執行的作業之後、請從 Codebox 下載 Terraform 程式碼。
+. 使用 Workload Factory 控制台定義要執行的操作後，從 Codebox 下載 Terraform 程式碼。
 . 將下載的指令碼歸檔複製到安裝 Terraform 的系統。
 . 解壓縮 zip 檔案、然後依照 README.MD 檔案中的步驟進行。
 

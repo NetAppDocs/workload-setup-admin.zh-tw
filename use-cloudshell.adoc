@@ -1,23 +1,23 @@
 ---
 sidebar: sidebar 
 permalink: use-cloudshell.html 
-keywords: cloudshell, command line, aws cli, ontap cli, bluexp workload factory, workload factory 
-summary: 您可以從 BlueXP  工作負載原廠使用者介面的任何位置使用 CloudShell 來發出 AWS 或 ONTAP CLI 命令。 
+keywords: cloudshell, command line, aws cli, ontap cli, NetApp Workload Factory, Workload Factory 
+summary: 您可以從NetApp Workload Factory 使用者介面中的任何位置使用 CloudShell 發出 AWS 或ONTAP CLI 指令。 
 ---
-= 在 BlueXP  工作負載工廠中使用 CloudShell
+= 在NetApp Workload Factory 中使用 CloudShell
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-開啟 CloudShell ，從 BlueXP  工作負載原廠使用者介面的任何位置執行 AWS 或 ONTAP CLI 命令。
+開啟 CloudShell 以從NetApp Workload Factory 控制台中的任何位置執行 AWS 或ONTAP CLI 命令。
 
 
 
 == 關於這項工作
 
-CloudShell 可讓您在類似 Shell 的環境中，從 BlueXP  工作負載工廠使用者介面中執行 AWS CLI 命令或 ONTAP CLI 命令。它模擬瀏覽器中的終端工作階段，透過工作負載工廠的後端提供終端機功能和代理訊息。它可讓您使用 BlueXP  帳戶中提供的 AWS 認證和 ONTAP 認證。
+CloudShell 可讓您在 Workload Factory 控制台內類似 shell 的環境中執行 AWS CLI 指令或ONTAP CLI 指令。它在瀏覽器中模擬終端會話，透過 Workload Factory 的後端提供終端功能和代理訊息。它允許您使用您在NetApp帳戶中提供的 AWS 憑證和ONTAP憑證。
 
 CloudShell 的功能包括：
 
@@ -32,53 +32,42 @@ CloudShell 的功能包括：
 
 
 
-=== CloudShell 命令
+== CloudShell 命令
 
 在 CloudShell GUI 介面中，您可以輸入 `help`來檢視可用的 CloudShell 命令。發出命令後 `help`，會出現下列參考資料。
 
-說明:: NetApp CloudShell 是 BlueXP  工作負載工廠內建的 GUI 介面，可讓您在類似 Shell 的環境中執行 AWS CLI 命令或 ONTAP CLI 命令。它模擬瀏覽器中的終端工作階段，透過工作負載工廠的後端提供終端機功能和代理訊息。它可讓您使用 BlueXP  帳戶中提供的 AWS 認證和 ONTAP 認證。
-可用命令::
-+
---
+.說明
+NetApp CloudShell 是NetApp Workload Factory 內建的 GUI 介面，可讓您在類似 shell 的環境中執行 AWS CLI 指令或ONTAP CLI 指令。它在瀏覽器中模擬終端會話，透過 Workload Factory 中的後端提供終端功能和代理訊息。它使您能夠使用您在NetApp帳戶中提供的 AWS 憑證和ONTAP憑證。
+
+.可用命令
 * `clear`
 * `help`
 * `[--fsx <fsxId>] <ontap-command> [parameters]`
 * `aws <aws-command> <aws-sub-command> [parameters]`
 
 
---
-背景:: 每個終端機工作階段都會在特定的內容中執行：認證，區域，以及 ONTAP 檔案系統的可選 FSX 。
-+
---
-所有 AWS 命令都會在提供的內容中執行。AWS 命令只有在提供的認證具有指定區域的權限時才會成功。
+.背景
+每個終端機工作階段都會在特定的內容中執行：認證，區域，以及 ONTAP 檔案系統的可選 FSX 。
 
-您可以使用可選的指定 ONTAP 命令 `fsxId`。如果您提供 `fsxId`個別的 ONTAP 命令，則此 ID 會覆寫內容中的 ID 。如果終端機工作階段沒有適用於 ONTAP 檔案系統 ID 內容的 FSX ，則必須提供 `fsxId`每個 ONTAP 命令。
++ 所有 AWS 指令都在提供的上下文中執行。只有當提供的憑證在指定區域具有權限時，AWS 命令​​才會成功。
 
-若要更新不同的內容細節，請執行下列步驟： * 若要變更認證：「使用認證 <credentialId> 」 * 若要變更地區：「使用區域 <regionCode> 」 * 若要變更 ONTAP 檔案系統的 FSX ：「使用 FSX <fileSystemId> 」
++ 您可以使用可選的ONTAP命令指定 `fsxId`。如果您提供 `fsxId`使用單獨的ONTAP命令，則此 ID 將覆寫上下文中的 ID。如果終端會話沒有 FSx for ONTAP檔案系統 ID 上下文，則必須提供 `fsxId`每個ONTAP指令。
 
---
-顯示項目::
-+
---
++ 若要更新不同的上下文細節，請執行下列操作：* 若要變更憑證：「使用憑證 <credentialId>」* 若要變更區域：「使用區域 <regionCode>」* 若要變更 FSx for ONTAP檔案系統：「使用 fsx <fileSystemId>」
+
+.顯示項目
 * 若要顯示可用的認證：「顯示認證」
 * 若要顯示可用區域：「顯示區域」
 * 若要顯示命令歷程記錄：「顯示歷程記錄」
 
 
---
-變數:: 以下是設定和使用變數的範例。如果變數值包含空格，您應該在引號內設定。
-+
---
-* 若要設定變數： <variable> = <value>
-* 若要使用變數： <variable>
-* 設定變數的範例： $svm1 = svm123
-* 使用變數的範例： --FSX filesystem-1 Volume show --vserver $svm1
-* 設定字串值 $Comment1 = 「含空格的註解」的變數範例
+.變數
+以下是設定和使用變數的範例。如果變數值包含空格，您應該在引號內設定。
 
++ * 設定變數：$<variable> = <value> * 使用變數：$<variable> * 設定變數的範例：$svm1 = svm123 * 使用變數的範例：--fsx FileSystem-1 volumes show --vserver $svm1 * 設定具有字串值的變數的範例 $comment1 = "空格空格的註解"
 
---
-運算子:: 不支援 Shell 運算子，例如 pipe `|`， background execution `&` 和 redirection `>` 。如果您包含這些運算子，命令執行將會失敗。
-
+.運算子
+不支援 Shell 運算子，例如 pipe `|`， background execution `&` 和 redirection `>` 。如果您包含這些運算子，命令執行將會失敗。
 
 
 
@@ -93,15 +82,15 @@ NOTE: CloudShell 可讓您執行任何 AWS 或 ONTAP CLI 命令。不過，如�
 
 == 部署 CloudShell
 
-您可以從 BlueXP  工作負載原廠主控台的任何位置部署 CloudShell 。您也可以從適用於 ONTAP 檔案系統的 FSX 中，從儲存設備部署 CloudShell 。
+您可以從NetApp Workload Factory 控制台中的任何位置部署 CloudShell。您也可以從NetApp控制台部署 CloudShell。
 
 [role="tabbed-block"]
 ====
-.從工作負載原廠主控台部署
+.從 Workload Factory 控制台部署
 --
 .步驟
-. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 從上方導覽列開啟 CloudShell image:cloudshell-icon.png["cloudshell 圖示的螢幕擷取畫面"]。
+. 登入 https://console.workloads.netapp.com["工作負載工廠控制台"^]。
+. 從選單中選擇“*管理*”，然後選擇“*CloudShell*”。
 . 在 CloudShell 視窗中，選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。
 +
 image:screenshot-deploy-cloudshell-session.png["顯示新 CloudShell 工作階段的螢幕擷取畫面。"]
@@ -119,14 +108,15 @@ image:screenshot-deploy-cloudshell-session.png["顯示新 CloudShell 工作階�
 
 
 --
-.從儲存設備部署
+.從NetApp控制台部署
 --
 .步驟
-. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在 * 儲存 * 中、選取 * 移至儲存設備詳細目錄 * 。
-. 在 * 適用於 ONTAP * 的 FSX 標籤中，選取檔案系統的三點功能表，然後選取 * 開啟 CloudShell* 。
+. 登入link:https://console.netapp.com["NetApp控制台"^]。
+. 從選單中選擇“*工作負載*”，然後選擇“*管理*”。
+. 從管理選單中，選擇 *CloudShell*。
+. 在 CloudShell 視窗中，選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。
 +
-CloudShell 工作階段會在所選檔案系統的內容中開啟。
+image:screenshot-deploy-cloudshell-session.png["顯示新 CloudShell 工作階段的螢幕擷取畫面。"]
 
 . 輸入 `help`以檢視可用的 CloudShell 命令和指示，或參閱下列 CLI 參考文件以取得可用的命令：
 +
@@ -142,9 +132,9 @@ CloudShell 工作階段會在所選檔案系統的內容中開啟。
 
 --
 ====
-您可以選取開啟的 CloudShell 工作階段索引標籤的三點功能表，來完成此螢幕擷取畫面中顯示的 CloudShell 工作。這些工作的指示如下。
+透過選擇開啟的 CloudShell 會話標籤的操作選單，可以完成此螢幕截圖中顯示的 CloudShell 任務。以下是每個任務的說明。
 
-image:screenshot-cloudshell-tab-menu.png["螢幕擷取畫面會顯示 CloudShell 索引標籤的三點功能表，其中包含重新命名，複製，關閉其他索引標籤，以及全部關閉等選項。"]
+image:screenshot-cloudshell-tab-menu.png["螢幕截圖顯示了 CloudShell 選項卡操作選單，其中包含重新命名、複製、關閉其他選項卡和全部關閉等選項。"]
 
 
 
@@ -153,7 +143,7 @@ image:screenshot-cloudshell-tab-menu.png["螢幕擷取畫面會顯示 CloudShell
 您可以重新命名 CloudShell 工作階段索引標籤，以協助識別工作階段。
 
 .步驟
-. 選取 CloudShell 工作階段索引標籤的三點功能表。
+. 選擇 CloudShell 會話標籤的操作選單。
 . 選取*重新命名*。
 . 輸入工作階段索引標籤的新名稱，然後在索引標籤名稱外按一下以設定新名稱。
 
@@ -168,7 +158,7 @@ image:screenshot-cloudshell-tab-menu.png["螢幕擷取畫面會顯示 CloudShell
 您可以複製 CloudShell 工作階段索引標籤，以建立具有相同名稱，認證和區域的新工作階段。原始標籤中的程式碼不會複製到複製標籤中。
 
 .步驟
-. 選取 CloudShell 工作階段索引標籤的三點功能表。
+. 選擇 CloudShell 會話標籤的操作選單。
 . 選擇 * 複製 * 。
 
 
@@ -182,7 +172,7 @@ image:screenshot-cloudshell-tab-menu.png["螢幕擷取畫面會顯示 CloudShell
 您可以一次關閉一個 CloudShell 索引標籤，關閉其他您不使用的索引標籤，或一次關閉所有索引標籤。
 
 .步驟
-. 選取 CloudShell 工作階段索引標籤的三點功能表。
+. 選擇 CloudShell 會話標籤的操作選單。
 . 選取下列其中一項：
 +
 ** 在 CloudShell 索引標籤視窗中選取「 X 」，一次關閉一個索引標籤。
@@ -205,18 +195,6 @@ image:screenshot-cloudshell-tab-menu.png["螢幕擷取畫面會顯示 CloudShell
 將 CloudShell 工作階段索引標籤拖放到 CloudShell 視窗的頂端，底部，左側或右側，即可分割檢視。
 
 image:screenshot-cloudshell-split-view.png["顯示兩個 CloudShell 標籤水平分割的螢幕擷取畫面。索引標籤會並排顯示。"]
-
-
-
-== 重新開啟您上次的 CloudShell 工作階段
-
-如果您意外關閉 CloudShell 工作階段，您可以重新開啟。
-
-.步驟
-選取 CloudShell 圖示image:cloudshell-icon.png["cloudshell 圖示的螢幕擷取畫面"]從上方導覽列。
-
-.結果
-最新的 CloudShell 工作階段隨即開啟。
 
 
 
