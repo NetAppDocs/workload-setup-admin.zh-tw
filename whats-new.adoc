@@ -43,6 +43,18 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+== 2025年9月9日
+
+
+
+=== 儲存的新通知
+
+NetApp Workload Factory通知服務包括儲存自動容量管理通知。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["NetApp Workload Factory 通知"]
+
+
+
 == 2025 年 6 月 29 日
 
 
