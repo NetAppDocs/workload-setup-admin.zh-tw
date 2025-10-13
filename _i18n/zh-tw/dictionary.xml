@@ -1261,7 +1261,6 @@
   <block id="a77641000b55773f3d4f4abfc8eaa6ac" category="sidebar">使用 Workload Factory 最佳化工作負載</block>
   <block id="bec1e3daee54f5a9410751eb03bd867e" category="sidebar">管理工作負載工廠</block>
   <block id="7ffef60a0bb1e63a8505f9e4285dab5f" category="sidebar">登入工作負載工廠</block>
-  <block id="9d4ab4efb1eff322f698ff725220f0c6" category="paragraph">NetApp Workload Factory通知服務包括儲存自動容量管理通知。</block>
   <block id="8880bf2394c75ebe6ed859ae103855bd" category="cell">自動增加 SSD 容量或 inode 成功</block>
   <block id="0f4ae4b5b0836264a3d9e9d0e29731c8" category="cell">在最近的自動容量管理更新期間，FSx for ONTAP檔案系統成功增加了 SSD 容量或磁碟區 inode。欲了解更多信息，請訪問 Tracker。</block>
   <block id="1d19e21de0f93b11f5ceb8b535a3afc2" category="cell">容量管理</block>
@@ -1269,4 +1268,7 @@
   <block id="8ae74df732197be5b987055e70bb307d" category="cell">自動增加 SSD 容量或 inode 失敗</block>
   <block id="564359bbc40d00ebaa88afdacbe218a7" category="cell">在最近的自動容量管理更新期間，FSx for ONTAP檔案系統未能增加 SSD 容量或磁碟區 inode。欲了解更多信息，請訪問 Tracker。</block>
   <block id="b271a75b2d121a8cb5f59ae458394323" category="section-title">2025年9月9日</block>
+  <block id="fd46c6801c12745a0b45c3f9e025fb2e" category="paragraph">BlueXP workload factory通知服務包括儲存自動容量管理通知。</block>
+  <block id="28a2c493e9a663d617e582302e1bcf28" category="inline-link-macro">BlueXP workload factory的通知</block>
+  <block id="a4bdb4b5125441fbfaec27ac4bb48be0" category="paragraph"><block ref="a4bdb4b5125441fbfaec27ac4bb48be0" category="inline-link-macro-rx"></block></block>
 </blocks>

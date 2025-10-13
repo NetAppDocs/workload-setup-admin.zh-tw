@@ -6,6 +6,6 @@
 
 === 儲存的新通知
 
-NetApp Workload Factory通知服務包括儲存自動容量管理通知。
+BlueXP workload factory通知服務包括儲存自動容量管理通知。
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["NetApp Workload Factory 通知"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["BlueXP workload factory的通知"]
