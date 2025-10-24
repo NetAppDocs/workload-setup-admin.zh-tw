@@ -1315,206 +1315,208 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 | 讀取/寫入 
 
 
-.2+| 取得 ONTAP 詳細資料的 FSX | fsx:描述檔案系統別名  a| 
-部署
-| 讀取/寫入 
+| 取得 ONTAP 詳細資料的 FSX | fsx:描述檔案系統別名 | 部署 | 讀取/寫入 
 
 
-| 調整 ONTAP 檔案系統的 FSX 大小，以修正檔案系統保留空間 | fsx:UpdateFilesystem | 最佳化 
+| 調整 ONTAP 檔案系統的 FSX 大小，以修正檔案系統保留空間 | fsx:UpdateFilesystem | 最佳化 | 讀取/寫入 
 
 
-| 讀取/寫入 | 調整磁碟區大小以修正記錄和 TempDB 磁碟機大小 | fsx:UpdateVolume | 最佳化 
+| 調整磁碟區大小以修正記錄和 TempDB 磁碟機大小 | fsx:UpdateVolume | 最佳化 | 讀取/寫入 
 
 
-| 讀取/寫入 .3+| 取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX | 公里：建立授予 | 部署 
+.3+| 取得 KMS 金鑰詳細資料，並使用適用於 ONTAP 加密的 FSX | 公里：建立授予 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | kms:描述自訂密鑰存儲 | 部署 
+| kms:描述自訂密鑰存儲 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | KMS ： GenerateDataKey | 部署 
+| KMS ： GenerateDataKey | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 .8+| 建立 CloudWatch 記錄檔，用於在 EC2 執行個體上執行驗證和資源配置指令碼 | 記錄檔： CreateLogGroup | 部署 
+.8+| 建立 CloudWatch 記錄檔，用於在 EC2 執行個體上執行驗證和資源配置指令碼 | 記錄檔： CreateLogGroup | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 記錄： CreateLogStream | 部署 
+| 記錄： CreateLogStream | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 記錄： DescribeLogStreams  a| 
+| 記錄： DescribeLogStreams  a| 
 * 部署
 * 評估
 
+| 讀取/寫入 
 
 
-
-| 讀取/寫入 | 日誌：取得日誌群組字段 | 部署 
-
-
-| 讀取/寫入 | 日誌：取得日誌記錄 | 部署 
+| 日誌：取得日誌群組字段 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 記錄： ListLogDeliverys | 部署 
+| 日誌：取得日誌記錄 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 記錄： PutLogEvents  a| 
+| 記錄： ListLogDeliverys | 部署 | 讀取/寫入 
+
+
+| 記錄： PutLogEvents  a| 
 * 部署
 * 管理營運
 
+| 讀取/寫入 
 
 
+| 記錄： TagResource | 部署 | 讀取/寫入 
 
-| 讀取/寫入 | 記錄： TagResource | 部署 
 
-
-| 讀取/寫入 | 遇到 SSM 輸出截斷時，Workload Factory 會切換到 SQL 執行個體的 Amazon CloudWatch 日誌 | 記錄檔： GetLogEvents  a| 
+| 遇到 SSM 輸出截斷時，Workload Factory 會切換到 SQL 執行個體的 Amazon CloudWatch 日誌 | 記錄檔： GetLogEvents  a| 
 * 儲存評估（最佳化）
 * 庫存
-
-
-
 
  a| 
 * 唯讀
 * 讀取/寫入
+
+
+
 
 | 允許 Workload Factory 取得目前日誌組並檢查 Workload Factory 建立的日誌組是否設定了保留 | 記錄： DescribeLogGroups  a| 
 * 儲存評估（最佳化）
 * 庫存
 
+| 唯讀 
 
 
-
-| 唯讀 | 允許 Workload Factory 為其建立的日誌組設定一天的保留策略，以避免 SSM 指令輸出的日誌流不必要地積累 | 記錄： PutRetentionPolicy  a| 
+| 允許 Workload Factory 為其建立的日誌組設定一天的保留策略，以避免 SSM 指令輸出的日誌流不必要地積累 | 記錄： PutRetentionPolicy  a| 
 * 儲存評估（最佳化）
 * 庫存
-
-
-
 
  a| 
 * 唯讀
 * 讀取/寫入
 
-| 在使用者帳戶中建立 ONTAP SQL ，網域和 FSX 所提供認證的機密 | serviceEquotas ： ListServiceQuotas | 部署 
 
 
-| 讀取/寫入 .2+| 列出客戶 SNS 主題，並在選取時發佈至 WLMDB 後端 SNS 和客戶 SNS | SnS:ListTopics | 部署 
+
+| 在使用者帳戶中建立 ONTAP SQL ，網域和 FSX 所提供認證的機密 | serviceEquotas ： ListServiceQuotas | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | SnS ：發佈 | 部署 
+.2+| 列出客戶 SNS 主題，並在選取時發佈至 WLMDB 後端 SNS 和客戶 SNS | SnS:ListTopics | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 .11+| 必要的 SSM 權限，可在已佈建的 SQL 執行個體上執行探索指令碼，並擷取 ONTAP 支援的 AWS 區域的最新 FSX 清單。 | SSM) ： PuttinianceItem | 部署 
+| SnS ：發佈 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | S10:PutConfigurePackageResult | 部署 
+.11+| 必要的 SSM 權限，可在已佈建的 SQL 執行個體上執行探索指令碼，並擷取 ONTAP 支援的 AWS 區域的最新 FSX 清單。 | SSM) ： PuttinianceItem | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | SSM) ： PuttInventory | 部署 
+| S10:PutConfigurePackageResult | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | S10:SendCommand  a| 
+| SSM) ： PuttInventory | 部署 | 讀取/寫入 
+
+
+| S10:SendCommand  a| 
 * 部署
 * 庫存
 * 管理營運
 
+| 讀取/寫入 
 
 
-
-| 讀取/寫入 | SSM) ：更新關聯狀態 | 部署 
-
-
-| 讀取/寫入 | SSM) ： UpdateInstanceAssociationStatus | 部署 
+| SSM) ：更新關聯狀態 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | SSM) ： UpdateInstanceInformation | 部署 
+| SSM) ： UpdateInstanceAssociationStatus | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | ssmmessages：建立控制通道 | 部署 
+| SSM) ： UpdateInstanceInformation | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | ssmmessages：建立資料通道 | 部署 
+| ssmmessages：建立控制通道 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | ssmmessages：開啟控制通道 | 部署 
+| ssmmessages：建立資料通道 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | ssmmessages：開放式資料通道 | 部署 
+| ssmmessages：開啟控制通道 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 .4+| 儲存適用於 ONTAP ， Active Directory 和 SQL 使用者的 FSX 認證（僅適用於 SQL 使用者驗證） | SSM) ： GetParameter ^1^  a| 
+| ssmmessages：開放式資料通道 | 部署 | 讀取/寫入 
+
+
+.4+| 儲存適用於 ONTAP ， Active Directory 和 SQL 使用者的 FSX 認證（僅適用於 SQL 使用者驗證） | SSM) ： GetParameter ^1^  a| 
 * 部署
 * 管理營運
 * 庫存
 
+| 讀取/寫入 
 
 
-
-| 讀取/寫入 | S10:GetParameters ^1^  a| 
+| S10:GetParameters ^1^  a| 
 * 部署
 * 庫存
 
+| 讀取/寫入 
 
 
-
-| 讀取/寫入 | SSM) ：推桿參數 ^1^  a| 
+| SSM) ：推桿參數 ^1^  a| 
 * 部署
 * 管理營運
 
+| 讀取/寫入 
 
 
-
-| 讀取/寫入 | S10:DeleteParameters ^1^  a| 
+| S10:DeleteParameters ^1^  a| 
 * 部署
 * 管理營運
 
+| 讀取/寫入 
 
 
-
-| 讀取/寫入 | 在成功或失敗時發出 CloudForgation 堆疊訊號。 | 雲端： SignalResource ^1^ | 部署 
-
-
-| 讀取/寫入 | 將範本建立的 EC2 角色新增至 EC2 的執行個體設定檔，以允許 EC2 上的指令碼存取部署所需的資源。 | IAM：AddRoleToInstanceProfile | 部署 
+| 在成功或失敗時發出 CloudForgation 堆疊訊號。 | 雲端： SignalResource ^1^ | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 為 EC2 建立執行個體設定檔，並附加建立的 EC2 角色。 | IAM：CreatanceProfile | 部署 
+| 將範本建立的 EC2 角色新增至 EC2 的執行個體設定檔，以允許 EC2 上的指令碼存取部署所需的資源。 | IAM：AddRoleToInstanceProfile | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 透過下列權限範本建立 EC2 角色 | IAM：建立角色 | 部署 
+| 為 EC2 建立執行個體設定檔，並附加建立的 EC2 角色。 | IAM：CreatanceProfile | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 建立連結至 EC2 服務的角色 | IAM ： CreateServiceLinkedIn 角色 ^2^ | 部署 
+| 透過下列權限範本建立 EC2 角色 | IAM：建立角色 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 刪除部署期間為驗證節點所建立的執行個體設定檔 | IAM：刪除InstanceProfile | 部署 
+| 建立連結至 EC2 服務的角色 | IAM ： CreateServiceLinkedIn 角色 ^2^ | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 .5+| 取得角色和原則詳細資料，以判斷權限的任何落差，並驗證部署 | IAM ： GetPolicy | 部署 
+| 刪除部署期間為驗證節點所建立的執行個體設定檔 | IAM：刪除InstanceProfile | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | IAM ： GetPolicyVersion | 部署 
+.5+| 取得角色和原則詳細資料，以判斷權限的任何落差，並驗證部署 | IAM ： GetPolicy | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | IAM：GetRole | 部署 
+| IAM ： GetPolicyVersion | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | IAM ： GetRolePolicy | 部署 
+| IAM：GetRole | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | IAM ： GetUser | 部署 
+| IAM ： GetRolePolicy | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 將建立的角色傳遞給 EC2 執行個體 | IAM ： PassRole ^3^ | 部署 
+| IAM ： GetUser | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 將具有必要權限的原則新增至所建立的 EC2 角色 | IAM：Putt角色 原則 | 部署 
+| 將建立的角色傳遞給 EC2 執行個體 | IAM ： PassRole ^3^ | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 從已配置的 EC2 執行個體設定檔中分離角色 | IAM：RemoveRoleFromInstanceProfile | 部署 
+| 將具有必要權限的原則新增至所建立的 EC2 角色 | IAM：Putt角色 原則 | 部署 | 讀取/寫入 
 
 
-| 讀取/寫入 | 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 
+| 從已配置的 EC2 執行個體設定檔中分離角色 | IAM：RemoveRoleFromInstanceProfile | 部署 | 讀取/寫入 
+
+
+| 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署  a| 
+* 唯讀
+* 讀取/寫入
+
+
 |===
 . 權限僅限於從 WLMDB 開始的資源。
 . "IAM:CreateServiceLinkedIn Role" 受 "iam:AWSServiceName" 限制： "ec2.amazonaws.com"*
