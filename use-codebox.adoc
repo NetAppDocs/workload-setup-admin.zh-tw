@@ -13,7 +13,7 @@ summary: 您可以使用 Codebox 產生執行NetApp Workload Factory 支援的�
 [role="lead"]
 您可以使用 Codebox 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。您可以產生可使用 Workload Factory REST API、AWS CLI 和 AWS CloudFormation 使用和執行的程式碼。
 
-Codebox 與 Workload Factory 操作模式（基本、唯讀和讀/寫）保持一致，透過根據 Workload Factory 帳戶中為每個使用者提供的 AWS 權限在程式碼中填入適當的資料。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。
+Codebox 與 Workload Factory 權限策略保持一致，根據 Workload Factory 帳戶中為每個使用者提供的 AWS 權限，在程式碼中填入相應的資料。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。
 
 
 

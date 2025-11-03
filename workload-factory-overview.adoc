@@ -91,16 +91,11 @@ link:manage-service-accounts.html["瞭解如何管理服務帳戶"]。
 
 
 
-=== 作業模式
+=== 權限
 
-Workload Factory 提供三種操作模式，使您能夠仔細控制對雲端資產的訪問，並根據您的 IT 策略為 Workload Factory 分配增量信任。
+Workload Factory 提供靈活的權限策略，使您能夠仔細控制對雲端環境的訪問，並根據您的 IT 策略為 Workload Factory 分配遞增的信任。
 
-* *基本模式*代表零信任關係，旨在早期探索工作負載工廠並使用各種嚮導來創建所需的基礎設施即程式碼。使用者可以複製此程式碼並將其與相關的 AWS 憑證一起手動使用。
-* * 唯讀模式 * 可協助使用者偵測各種資源和工具，進而協助完成相關精靈，進而提升基本模式的使用體驗。
-* * 讀取 / 寫入模式 * 代表完全信任關係，其設計旨在代表使用者執行及自動化，以及具有執行所需且已驗證權限的指派認證。
-
-
-link:operational-modes.html["了解有關 Workload Factory 營運模式的更多信息"] 。
+link:permissions-reference.html["了解更多關於工作負載工廠權限策略的信息"]。
 
 
 

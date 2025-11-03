@@ -16,14 +16,10 @@ indexpage:
       url: workload-factory-overview.html
     - title: 註冊
       url: sign-up-saas.html
-  - title: 作業模式和認證
-    links:
-    - title: 瞭解操作模式
-      url: operational-modes.html
     - title: 新增 AWS 認證
       url: add-credentials.html
-    - title: 移除認證資料
-      url: manage-credentials.html
+    - title: 工作負載工廠的權限
+      url: permissions-reference.html
   - title: 使用 CodeBox 自動化
     links:
     - title: 瞭解 CodeBox

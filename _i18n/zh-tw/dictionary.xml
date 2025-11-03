@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">總覽</block>
-  <block id="4dacf6e0adb6ed0f64acd514a486bf8a" category="inline-link-macro">深入瞭解操作模式</block>
   <block id="df21e6f22445f7e313093546a4762e64" category="paragraph">您可以使用兩種方法新增認證：</block>
   <block id="1a04b786edc8b8251d22307b11cb2a8d" category="list-text">* 自動 * ：您擷取的權限相關資訊量最少、然後使用 CloudForgation 堆疊來建立您認證的 IAM 原則和角色。</block>
   <block id="3e704746794b6c6da13402ca9df54660" category="section-title">手動新增認證至帳戶</block>
@@ -157,40 +156,6 @@
   <block id="3b05fd0eeb02280c9e89c847477bc0fc" category="list-text">如果您是單一帳戶的成員、請選取 * 繼續 * 。</block>
   <block id="9dd8932847709b0a76c3786f584e1272" category="list-text">如果您是多個帳戶的成員、請選取帳戶、然後選取 * 繼續 * 。</block>
   <block id="25f033e226552b2f5ae002edb8e5fd2f" category="doc">移除認證資料</block>
-  <block id="0261a8e2837bda78e3e9784459c8d346" category="doc">瞭解作業模式和 AWS 認證</block>
-  <block id="3b39e22b0ceb822bf56d19eb7ec14f7f" category="section-title">作業模式</block>
-  <block id="dad76b021334eb3d63f98648f701f598" category="list-text">基本模式</block>
-  <block id="ba15cdea72f76749ac3c4d115682e1d5" category="section-title">操作模式功能</block>
-  <block id="98065f8fb54547b003b502647ed5da13" category="paragraph">使用每種模式的可用功能會隨著每種模式而增加。</block>
-  <block id="650be61892bf690026089544abbd9d26" category="cell">模式</block>
-  <block id="8b9f82548e6c7bc4008b903cade408bd" category="cell">使用 IAC 在 AWS 內自動化</block>
-  <block id="cb96700fed42790aca4b326c2ddf0ee1" category="cell">AWS 資源探索與自動完成</block>
-  <block id="822fdc9d51edd3ea21167e6afc3133bb" category="cell">進度監控</block>
-  <block id="972e73b7a882d0802a4e3a16946a2f94" category="cell">基本</block>
-  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">否</block>
-  <block id="bc459ff156247ecdc2f450d6760864e0" category="cell">最少完整的 IAC 範本</block>
-  <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="cell">讀取</block>
-  <block id="dd5bf678cc7b441324b2d76ab8b6329d" category="cell">適度填寫 IAC 範本</block>
-  <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是的</block>
-  <block id="3babc847b322c661049062334b9c76b2" category="cell">完全自動化</block>
-  <block id="78ac103234082be5f5a4ea67a4551981" category="cell">完整的 IAC 範本、完全自動化</block>
-  <block id="c1ae257d71f3632f9398109243cbfd70" category="section-title">作業模式需求</block>
-  <block id="38a12b37ae4221c5fda46c9430a61d47" category="cell">AWS 帳戶認證</block>
-  <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">連結</block>
-  <block id="6fd5e95dc0bce8329da87e1152677b48" category="cell">不需要</block>
-  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="cell">唯讀</block>
-  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必要</block>
-  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">深入瞭解連結</block>
-  <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
-  <block id="7cc58201fa83275d07886281be81a758" category="section-title">作業模式範例</block>
-  <block id="5504977cb47d642da3d1264eefb7edda" category="section-title">範例1</block>
-  <block id="4cd751338620bbd6099bbf7dcff61879" category="inline-image-macro">螢幕擷取畫面顯示一組提供兩種工作負載權限的認證。</block>
-  <block id="9d405f908b42d501e27391e88e96690c" category="paragraph"><block ref="9d405f908b42d501e27391e88e96690c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5f3a8aa007370d00f3fd3b293a6a1118" category="section-title">範例2</block>
-  <block id="bad86c34eeb44e43315105ff00eb040b" category="paragraph">在此、使用者已建立兩組認證、根據所選的認證集、允許不同的操作功能。通常、每組認證都會與不同的 AWS 帳戶配對。</block>
-  <block id="13834b608e3eab1a58b1e60d8594b010" category="paragraph"><block ref="13834b608e3eab1a58b1e60d8594b010" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7b951488dcd4f24a1001cb4ce278841f" category="paragraph">第二組認證僅提供權限、可讓使用者完全控制為 ONTAP 檔案系統建立 FSX 、以及檢視帳戶中使用的其他 AWS 儲存設備類型。</block>
-  <block id="a1c7a646d9f617df5f4591d961591390" category="paragraph"><block ref="a1c7a646d9f617df5f4591d961591390" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="section-title">身分證明AWS</block>
   <block id="79c24ecd9f3b01018d8a2753b852b157" category="paragraph">我們設計了 AWS 假設角色認證登錄流程、可：</block>
   <block id="ea26385a0e9eb0b784d2878d8ad78cdc" category="list-text">可讓您指定要使用的工作負載功能、並根據這些選擇提供 IAM 原則需求、以支援更符合的 AWS 帳戶權限。</block>
@@ -199,8 +164,6 @@
   <block id="ba3950fc801639789c6f2c3d00092cfb" category="list-text">使用 AWS CloudForgation 堆疊、為使用者提供自動化選項、以執行必要的 IAM 原則和角色建立、進而簡化認證登錄程序。</block>
   <block id="4a2be88868f600a45501fde04364bae7" category="list-text">對於強烈偏好將認證儲存在 AWS 雲端生態系統範圍內的 ONTAP 使用者、請在 AWS 型秘密管理後端儲存用於 ONTAP 服務認證的 FSX 、以更符合 FSX 。</block>
   <block id="f9e7dc895484b33db42d9ee0925e28e0" category="section-title">一或多個 AWS 認證</block>
-  <block id="2805984a9d1d71e7e662e187f6160808" category="paragraph">您最初的 AWS 認證集可以包含 IAM 原則、用於一項功能或多項功能。這取決於您的業務需求。</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link-macro">作業模式</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="0876e0a47d86eee44886009e6fdae6e5" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 註冊並建立帳戶</block>
   <block id="996a84421252d4a7c2db622831369066" category="inline-link-macro">瞭解如何註冊及建立帳戶</block>
@@ -309,8 +272,6 @@
   <block id="0fe398a436a33849be29455ed17d4185" category="list-text">API 的設計是以 REST 技術和目前最佳實務為基礎。核心技術包括 HTTP 和 JSON 。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="d9776f0775997b2e698c6975420b5c5d" category="sidebar">註冊</block>
-  <block id="1c71023bf289bc297d09be71221ff819" category="sidebar">作業模式和認證</block>
-  <block id="65179615095fe42a8a47efc1a529ea2f" category="sidebar">瞭解操作模式</block>
   <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="sidebar">新增 AWS 認證</block>
   <block id="b60830c9ff5a76f323a283c0cae1b47a" category="sidebar">使用 CodeBox 自動化</block>
   <block id="6359b03a7ff6ac7a9c38c6edebcd1408" category="sidebar">瞭解 CodeBox</block>
@@ -402,7 +363,6 @@
   <block id="004bf6c9a40003140292e97330236c53" category="cell">行動</block>
   <block id="04b49ffb43a2b12a51b5f955d8c9ca8b" category="cell">使用處</block>
   <block id="2fdd0cbe402a8ae2149e0cdf4e1d9b9c" category="cell">為 ONTAP 檔案系統建立 FSX</block>
-  <block id="e672bad3c1c11e2c400555291158bf67" category="cell">fsx:CreateFileSystem*</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="cell">部署</block>
   <block id="f6c2cf766221c709e41636c08b06f6c5" category="cell">為 ONTAP 檔案系統的 FSX 建立安全群組</block>
   <block id="dfe69f2eb83bcef99d0bb464b50fbf34" category="cell">EC2：建立安全性群組</block>
@@ -416,23 +376,7 @@
   <block id="5cb2b3f39804f9782fb453390eb33d73" category="cell">管理作業</block>
   <block id="5c1d3b82016ca9ba106bc6c28ab8c44a" category="cell">EC2：刪除安全性群組</block>
   <block id="27937326fc1b3f52b27fa58318958e6f" category="cell">建立，檢視及管理 ONTAP 檔案系統資源的 FSX</block>
-  <block id="881a77b57b4f54fcd2a9195295bb42d5" category="cell">fsx:CreateVolume*</block>
-  <block id="c6dfd035cfaef7f761feb4e3ff88059f" category="cell">FSX ： TagResource *</block>
-  <block id="303ed732501344f771eaa52c17b36e6a" category="cell">fsx:CreateStorageVirtualMachine*</block>
-  <block id="37187b644b74feecbd9d89072a07067c" category="cell">fsx:DeleteFileSystem*</block>
-  <block id="60db4cdd44bde68fdeca07c7efbb2e30" category="cell">fsx:DeleteStorageVirtualMachine*</block>
-  <block id="cebff248e50475eae32e0cc7bcea596d" category="cell">fsx:DescrubeFileSystem*</block>
   <block id="4d604dd8f008145471dc845683399189" category="cell">庫存</block>
-  <block id="767187f66a86b52ca75d5f8aa6d8cb78" category="cell">fsx:DescrubeStorageVirtualMachines*</block>
-  <block id="e50c6ebd91bc975b1c106009dfe0f444" category="cell">fsx:UpdateFileSystem*</block>
-  <block id="3e65eafa8da1abd23d0a1caacc3c82aa" category="cell">fsx:UpdateStorageVirtualMachine*</block>
-  <block id="e16d8d43ea7152638b8769d9d49f0337" category="cell">fsx:DescribeVolumes *</block>
-  <block id="a670f6b6fdbba1cc43de3fd848e253fc" category="cell">fsx:UpdateVolume*</block>
-  <block id="0e4653ac375b6373e5d2a945f3e42eb3" category="cell">fsx:DeleteVolume *</block>
-  <block id="04a63a746b0e53d01ca6dad833e60d84" category="cell">FSX ： UntagResource *</block>
-  <block id="c780df6e64b345a10200e5ecd236b0b3" category="cell">fsx:DescrubeBackups*</block>
-  <block id="5e85e3158b474a632f6131f78bdd50ab" category="cell">fsx:CreateBackup*</block>
-  <block id="4ad5a3c34fcd3e62f6804bf2121fd6d4" category="cell">fsx:CreateVolume FromBackup*</block>
   <block id="e3ff3d5e5ebfec893c7c7a1225d78b44" category="cell">列出適用於 ONTAP 資源的 FSX 標籤</block>
   <block id="fefbafa74f5b8d278a3fe90b352b553b" category="cell">FSX ： ListTagsForResource</block>
   <block id="02bc954bd55df1dce9bf4e4f244962d8" category="cell">取得詳細資料以填寫適用於 ONTAP 檔案系統部署的 FSX 表單</block>
@@ -453,15 +397,11 @@
   <block id="2101c43af42db107614da3d2faadb4dc" category="cell">公里：描述*</block>
   <block id="b18a2220ba0da795c31cbb6cd990fd49" category="cell">公里：清單*</block>
   <block id="61a4afbabf94aa7f1ef765ee7e5cfd52" category="cell">在節約計算機中說明彈性檔案系統</block>
-  <block id="4a6bd396d94cca62c7831241093bd301" category="cell">彈性檔案系統：描述 *</block>
-  <block id="975fad57280d6c4bce9f0ebeb8c578e5" category="cell">回報 CloudWatch 指標</block>
-  <block id="fab89b1a8f625024ca157821a4972648" category="cell">cloudwatch ： PutMetricData</block>
   <block id="9fd6274c053251e7fdd752215a510290" category="cell">取得檔案系統和 Volume 度量</block>
   <block id="f63e0d20057299c9c16bd0c2c9e92a5c" category="cell">cloudswatch ： GetMetricData</block>
   <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="cell">cloudwatch：GetMetricStatistics</block>
   <block id="685902496cc1b2431527838eb3dd51f8" category="paragraph">下表顯示資料庫工作負載的權限。</block>
   <block id="0647b03c182e6a539e314bf5657eba2e" category="example-title">資料庫工作負載的權限表</block>
-  <block id="9d0f530f355f04b5462f43ae04528fde" category="cell">列出並設定事件觸發條件</block>
   <block id="124f2c65b8b708241b7552a865ae2f29" category="cell">SnS:ListTopics</block>
   <block id="b561747f1044749aaeab8082f02c0c2f" category="cell">EC2：評量會議</block>
   <block id="46e796ba1859cbbd532aeef823cd3dd3" category="cell">EC2 ： DescribeInstanceTypes</block>
@@ -489,14 +429,12 @@
   <block id="ed8ac7020751c46d1e6875d079c18a1e" category="cell">FSX ： DescrubeStorageVirtualMachines</block>
   <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="list-text">管理營運</block>
   <block id="0054238c3be20aab765346f029c558a4" category="cell">fsx:DescribeFileSystems</block>
-  <block id="5a3667523a928adc1e72c2d52d3c46da" category="cell">取得 CloudForquation 和 VPC 的服務配額限制</block>
   <block id="5c2e89cc7d199bd993940299714f0d2a" category="cell">serviceEquotas ： ListServiceQuotas</block>
   <block id="033e3df65a67c88a8d0c83e2ae6f082e" category="cell">使用 SSM) 查詢取得適用於 ONTAP 支援區域的 FSX 更新清單</block>
   <block id="055e84613d0abc8db259dc0d1c353d05" category="cell">SSM) ： GetParametersByPath</block>
   <block id="7f42f2c05a807e6dc1d65c9a2dba48b7" category="cell">在傳送命令以管理部署後的作業之後，輪詢 SSM 回應</block>
   <block id="6b443d4e29789a97b7bf9117ac2091df" category="cell">SSM) ： GetCommandInvocation</block>
   <block id="15970c4fdbca1fc48c5b412d94e798c0" category="list-text">最佳化</block>
-  <block id="5d58169dcd5950da6e86fc3c12deb7c8" category="cell">透過 SSM 傳送命令至 EC2 執行個體</block>
   <block id="b187f8fa28bd381ca60b99c28941d5b5" category="cell">S10:SendCommand</block>
   <block id="e194a3f487fc02c5fac0d10663dbac59" category="cell">取得部署後執行個體的 SSM 連線狀態</block>
   <block id="3dbc1561f97a84c3dab7611b2a5964fb" category="cell">SSM) ： GetConnectionStatus</block>
@@ -561,14 +499,11 @@
   <block id="da044dbe1821a39f63f98e823344b062" category="cell">雲端：取消功能堆疊事件</block>
   <block id="f404fc6d0850472807e4fcd86203a313" category="cell">雲端：無標準堆疊</block>
   <block id="6f25bb2faea408ecb06dc30a96791ac2" category="cell">cloudformation：驗證範本</block>
-  <block id="6ecc76cab2e7449f332b847599e62d5f" category="cell">擷取區域中可用的目錄</block>
-  <block id="f4e46229f95e1a17f96ebacbac65751b" category="cell">新增附加至已佈建 EC2 執行個體的安全性群組規則</block>
   <block id="1f4dd9a69501cc464524fc5da8bcd1b7" category="cell">建立巢狀堆疊範本以重試及復原</block>
   <block id="8d9ddfab0a610d7966bf4e6cea787cd0" category="cell">EC2 ： CreateLaunchTemplate</block>
   <block id="2d90329adcb7267ed4f810f58b55ff72" category="cell">EC2 ： CreateLaunchTemplateVersion</block>
   <block id="e1e15e9a22b701bee4ca34f3b6e309c0" category="cell">管理已建立執行個體的標記和網路安全性</block>
   <block id="6d284e37c36390a37443cf46fd082a1b" category="cell">EC2：建立網路介面</block>
-  <block id="d94d61de08721d1da00b1d5006f35977" category="cell">刪除為驗證節點暫時建立的安全性群組</block>
   <block id="7f9122ce0935681e0e135088ba86059c" category="cell">取得資源配置的執行個體詳細資料</block>
   <block id="c1e2ff64a681f515f3bae376c9a2850d" category="cell">啟動建立的執行個體</block>
   <block id="392b3d4b5b32ec7fec96c348ecef2c2a" category="cell">EC2：RunInstances</block>
@@ -578,7 +513,6 @@
   <block id="0128e66e7260cacda28baf033acff6a2" category="cell">fsx:CreateVolume</block>
   <block id="31db2f17979c481c49517c603fc07a30" category="cell">取得 ONTAP 詳細資料的 FSX</block>
   <block id="096f855751ca8a251f3a90595e899592" category="cell">FSX：說明*</block>
-  <block id="32e6bcbc3ba209ad50015d597c501851" category="cell">FSX：清單*</block>
   <block id="e01b866b9f0a245f6f37489680f0f641" category="cell">調整 ONTAP 檔案系統的 FSX 大小，以修正檔案系統保留空間</block>
   <block id="c1a13ef5beb00f5acf9f569314c39eaf" category="cell">fsx:UpdateFilesystem</block>
   <block id="1ff0f8e677172fe2cbd267c5ae490ab5" category="cell">調整磁碟區大小以修正記錄和 TempDB 磁碟機大小</block>
@@ -590,18 +524,15 @@
   <block id="e471f866d2e101796e014fff06474675" category="cell">記錄： ListLogDeliverys</block>
   <block id="3ba3376e55a3bdd26ed9c2519b4b9e6a" category="cell">記錄： PutLogEvents</block>
   <block id="dc344e1b51ae9e5aff7a5efaf286df5a" category="cell">記錄： TagResource</block>
-  <block id="855ba8396836c2071e5e96753509966d" category="cell">在使用者帳戶中建立 ONTAP SQL ，網域和 FSX 所提供認證的機密</block>
   <block id="ed9cb1f5c288bc89df419f89bcf3242b" category="cell">列出客戶 SNS 主題，並在選取時發佈至 WLMDB 後端 SNS 和客戶 SNS</block>
   <block id="79b450f031f5478d5e79ee9957707c72" category="cell">SnS ：發佈</block>
   <block id="8d9eb93100874b1ad35f7c114e99b237" category="cell">必要的 SSM 權限，可在已佈建的 SQL 執行個體上執行探索指令碼，並擷取 ONTAP 支援的 AWS 區域的最新 FSX 清單。</block>
-  <block id="13be5cbb4abfbddc54737b7623c133ff" category="cell">SSM) ：取得 *</block>
   <block id="c7c7e420402662bb51829df1e0943c12" category="cell">SSM) ： PuttinianceItem</block>
   <block id="89fbad9b36c97bf54eb493988a0f0123" category="cell">S10:PutConfigurePackageResult</block>
   <block id="9fd52b354e3e9f908281162e612f8481" category="cell">SSM) ： PuttInventory</block>
   <block id="ee12464a75d4bfd31f45d23a41eb32f4" category="cell">SSM) ：更新關聯狀態</block>
   <block id="3a0d45848bef93e542aab0d32de3c7fa" category="cell">SSM) ： UpdateInstanceAssociationStatus</block>
   <block id="12490ad4c4c5d81ea6938b26360309d6" category="cell">SSM) ： UpdateInstanceInformation</block>
-  <block id="56588fd23388c72518cf101c6fd03860" category="cell">儲存適用於 ONTAP ， Active Directory 和 SQL 使用者的 FSX 認證（僅適用於 SQL 使用者驗證）</block>
   <block id="a2fd11b449a7d2e5203810fdaa498c7a" category="cell">在成功或失敗時發出 CloudForgation 堆疊訊號。</block>
   <block id="1416cbe9db91fd81dc63c1829887b539" category="cell">雲端： SignalResource ^1^</block>
   <block id="f7009d0c5cdab5611fde5f9414c37a0e" category="cell">將範本建立的 EC2 角色新增至 EC2 的執行個體設定檔，以允許 EC2 上的指令碼存取部署所需的資源。</block>
@@ -691,15 +622,10 @@
   <block id="664a21c3d3b14b815d9e2f22f54ea96d" category="cell">取得 KMS 金鑰的別名，以用於 Amazon FSX 進行 NetApp ONTAP 加密</block>
   <block id="3836c2d0cbf1328a19f9fd800197a908" category="cell">取得 KMS 金鑰以用於 Amazon FSX 的 NetApp ONTAP 加密</block>
   <block id="124cb22dd64f00d25ba53e9ce97e284c" category="cell">取得 KMS 金鑰到期詳細資料，以用於 Amazon FSX 進行 NetApp ONTAP 加密</block>
-  <block id="97816c12e4ea86e2c8f19bd90f6b0eef" category="cell">以 SSM 為基礎的查詢可用來取得適用於 NetApp ONTAP 支援地區的 Amazon FSX 更新清單</block>
   <block id="fbb8286b1a1851ed2896cad2716702ce" category="cell">為資源配置所需的 NetApp ONTAP 資源建立 Amazon FSX</block>
   <block id="3e22fa65415dc7b385d6f07e6468153d" category="cell">取得 Amazon FSX 以取得 NetApp ONTAP 詳細資料</block>
   <block id="f40779c61ae21b6fbb5c6964620d50db" category="cell">取得 KMS 金鑰詳細資料，並使用 Amazon FSX 進行 NetApp ONTAP 加密</block>
   <block id="5df883e5adda577f2fbed8edd98a6052" category="cell">列出客戶 SNS 主題，並在選取的情況下發佈至 WLMVMC 後端 SNS 和客戶 SNS</block>
-  <block id="51faf18a49599aa5875c9cc5ecd0c156" category="cell">用於擷取適用於 NetApp ONTAP 支援 AWS 區域的 Amazon FSX 最新清單</block>
-  <block id="22ebc59c28ff9c2a08d716ded9c8e998" category="cell">SSM 參數儲存區可用來儲存 Amazon FSX for NetApp ONTAP 的認證資料</block>
-  <block id="766060a05aed7395a628048f6e5d8152" category="cell">SSM) ： PuttParameters</block>
-  <block id="f5ad3adfdd57e7f67f8a97e4699177e7" category="cell">SSM/DeleteParameters</block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">變更記錄</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">新增和移除權限時、我們會在下方各節中加以註記。</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025 年 1 月 22 日</block>
@@ -854,10 +780,7 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="doc">CloudShell 自動完整支援</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">使用 BlueXP  工作負載原廠 CloudShell 時，您可以開始輸入命令，然後按 Tab 鍵檢視可用選項。如果存在多種可能性， CLI 會顯示建議清單。此功能可將錯誤降至最低，並加速命令執行，進而提升生產力。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
-  <block id="ac811c471ef716f9c8a3865d7f14caa3" category="list-text">唯讀模式</block>
-  <block id="817855bb538dbbb63c56d38fc57684f5" category="list-text">讀取 / 寫入模式</block>
   <block id="db3317ceb65be02e43db6f277e0ad94e" category="cell">讀取/寫入</block>
-  <block id="4d372922f30597b3e046274dbb3cecd2" category="list-text">唯讀</block>
   <block id="123ce9aa4e0770ecb435c005fa9b436c" category="cell">列出 Amazon Q Business 應用程式</block>
   <block id="4f3c534c90392632c7d275f54d5b35a0" category="cell">qbusiness ： ListApplications</block>
   <block id="ff49b9449e169eb2a6d647cdd5416940" category="cell">在部署和重建作業期間建立 AI 執行個體堆疊期間，建立並更新 AI 執行個體和私有端點安全群組</block>
@@ -867,8 +790,6 @@
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025 年 4 月 5 日</block>
   <block id="bf0dcc34b100cf0ff91c26bbd98029f7" category="list-text">自動完成支援：開始輸入命令，然後使用 *Tab* 鍵檢視可用選項</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
-  <block id="7a0e532396f167d85a7b425f941d0613" category="list-text">* 唯讀模式 * 可協助使用者偵測各種資源和工具，進而協助完成相關精靈，進而提升基本模式的使用體驗。</block>
-  <block id="4951a0172d4fd2c8116296e71073f31c" category="list-text">* 讀取 / 寫入模式 * 代表完全信任關係，其設計旨在代表使用者執行及自動化，以及具有執行所需且已驗證權限的指派認證。</block>
   <block id="5d1d5ff6c3c427c682d491550e8f89b3" category="list-text">儲存評估（最佳化）</block>
   <block id="1636ccb01570c55081666deb02ddfb9c" category="list-text"><block ref="6d952035baa97bd601f4d280f10fcc53" prefix="" category="inline-code"></block></block>
   <block id="c4a094604e7db845f5356b4563efc223" category="list-text"><block ref="99a70cb6d5b807589a0a1aa9bbcfea7d" prefix="" category="inline-code"></block></block>
@@ -876,11 +797,6 @@
   <block id="e21c94a36c6dbf24001a64bddce9456f" category="cell">S3：ListAllMyb桶</block>
   <block id="c34c5eed5692ab9466e57060b06ae6ae" category="section-title">2025 年 6 月 3 日</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
-  <block id="6af87751c26792b59acdfae604197d5b" category="list-text">對於那些提供權限等級選擇（唯讀或讀取/寫入）的工作負載功能，請選擇這些憑證可用的權限類型。</block>
-  <block id="ce40030804ebf174cb97440fb6da4d13" category="cell">讀/寫憑證</block>
-  <block id="f5744b5c42cd92a298e78407d6b63d99" category="paragraph">使用已取得下列權限的憑證的帳戶使用者將擁有建立 FSx for ONTAP 檔案系統、部署資料庫和檢視帳戶中使用的其他類型的 AWS 儲存的完全控制權（讀取/寫入模式）。</block>
-  <block id="7e5ac274e4d71869c0e636c8c2f07dd0" category="paragraph">第一組憑證包括授予使用者完全控制建立 FSx for ONTAP 檔案系統的權限（以及查看帳戶中使用的其他類型的 AWS 儲存的能力），但在使用 VMware 工作負載時僅有唯讀權限。</block>
-  <block id="4924cab5d4a9a9111b0738ddbae7a866" category="paragraph">GenAI IAM 策略僅在讀取/寫入模式下可用：</block>
   <block id="3d040f48a98c22a0f4789c2496c06383" category="paragraph">現在，資料庫在讀取/寫入模式下具有以下權限： <block ref="9c72603737d6e2074ae7fab048b5d3d1" prefix=" " category="inline-code"></block> 。</block>
   <block id="a7bc7760b493d79ff53da3b2c0991f0a" category="paragraph">現在，資料庫在唯讀模式下具有以下權限： <block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block> 。</block>
   <block id="4a0d30bbc349e6300aaa6313a48ffd0a" category="paragraph">GenAI 的「讀取/寫入模式」下現在提供以下權限：</block>
@@ -985,7 +901,6 @@
   <block id="0204047d2332c588e7eb7d928e84f94a" category="summary">新增 AWS 憑證，以便 Workload Factory 擁有在您的 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
   <block id="287ae8bc216279a75c04344894e04b7f" category="doc">將 AWS 憑證新增至 Workload Factory</block>
   <block id="5adad9ce28422d9fe7825511e24aa601" category="paragraph">新增和管理 AWS 憑證，以便NetApp Workload Factory 擁有在您的 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
-  <block id="07c821fcc60a79f2d88585dbdf4c202a" category="paragraph">除非您新增 AWS 帳戶憑證，否則 Workload Factory 將以 _Basic_ 模式運作。您可以新增憑證以啟用其他操作模式，例如_唯讀_模式和_讀/寫_模式。<block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block> 。</block>
   <block id="7f76e91e5513affc227459b415e2e1cf" category="paragraph">您可以從「憑證」頁面將 AWS 憑證新增至現有的 Workload Factory 帳戶。這為 Workload Factory 提供了管理 AWS 雲端環境中的資源和流程所需的權限。</block>
   <block id="ebb29cdb5a9f5368e3f445c808c91552" category="list-text">*手動*：您在 Workload Factory 中新增憑證時在您的 AWS 帳戶中建立 IAM 原則和 IAM 角色。</block>
   <block id="c3ba6c13344137feef1d3795c8b29466" category="paragraph">您可以手動將 AWS 憑證新增至 Workload Factory，以授予您的 Workload Factory 帳戶管理用於執行獨特工作負載的 AWS 資源所需的權限。您新增的每組憑證都將包含一個或多個基於您要使用的工作負載功能的 IAM 策略，以及指派給您帳戶的 IAM 角色。</block>
@@ -1005,8 +920,6 @@
   <block id="b0f8c37516e3eee761656df941264fa2" category="paragraph"><block ref="b0f8c37516e3eee761656df941264fa2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67a2aece01328bf00637fcc5391ba3ec" category="list-text">返回 Workload Factory 並監視 Credentials 頁面以驗證新憑證是否正在進行中，或是否已新增。</block>
   <block id="32573b007d05a07e2a98478d5ce9f017" category="summary">Codebox 是一個基礎設施即程式碼 (IaC) 副駕駛，可協助開發人員和 DevOps 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。</block>
-  <block id="eef2f38ca3db1d82d50eebe72f4aaf3f" category="paragraph">Codebox 是一個基礎設施即程式碼 (IaC) 副駕駛，可協助開發人員和 DevOps 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。  Codebox 與 Workload Factory 操作模式（_basic_、_read-only_ 和 _read/write_）保持一致，它為執行準備設定了清晰的路徑，並提供了自動化目錄以供將來快速重複使用。</block>
-  <block id="814125fab2859fbd5a6d52cbd369b0fc" category="paragraph">此外，在設定 Workload Factory 憑證時，Codebox 會動態顯示建立 IAM 政策所需的 AWS 權限。為您計劃使用的每個 Workload Factory 功能（資料庫、AI、FSx for ONTAP等）提供權限，並且根據策略使用者是否獲得_只讀_權限或完全_讀/寫_權限進行自訂。您只需從 Codebox 複製權限，然後將其貼上到 AWS 管理控制台中，以便 Workload Factory 擁有正確的權限來管理您的工作負載。</block>
   <block id="2a877c6ff8f47bb17f9e4d12f8a693bc" category="list-text">工作負載工廠 REST API</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相關資訊</block>
   <block id="4386b64a64b0b63736692fad5b38e6e1" category="inline-link-macro">工作負載工廠 REST API 文檔</block>
@@ -1092,35 +1005,15 @@
   <block id="49f5ed0a90981c28c41567afa9022439" category="paragraph">用戶端金鑰僅可見一次，且不會被 Workload Factory 儲存在任何地方。複製或下載秘密並安全儲存。</block>
   <block id="cde2339a39bfe4d657d43be10594e1d0" category="list-text">或者，您可以透過執行客戶端憑證交換來取得 Auth0 管理 API 的存取權杖。 curl 範例展示如何取得客戶端 ID 和金鑰並使用 API 產生有時間限制的存取權杖。此令牌可提供數小時的NetApp Workload Factory API 存取權限。</block>
   <block id="6088e1e1d002a4c07aec5cec2ca41900" category="list-text">在*服務帳戶*頁面上，選擇操作選單，然後選擇*刪除*。</block>
-  <block id="b94b05a8d3b2fffca3c57aea1db9ffdb" category="summary">NetApp Workload Factory 提供三種操作模式，讓您能夠根據您的 IT 策略仔細控制 Workload Factory 和雲端資產之間的存取。</block>
-  <block id="8ab364b3c7368520184de39baa7327e3" category="paragraph">NetApp Workload Factory 提供三種操作模式，讓您能夠根據您的 IT 策略仔細控制 Workload Factory 和雲端資產之間的存取。您使用的操作模式取決於您向 Workload Factory 提供的 AWS 權限等級。</block>
-  <block id="bc63252869898532ad7c844d8447e358" category="paragraph">操作模式提供了工作負載工廠提供的功能和能力的邏輯組織，與您分配的信任等級相關。操作模式的主要目標是清楚傳達 Workload Factory 在您的 AWS 帳戶中可以或不能執行哪些任務。</block>
-  <block id="4d34e6e6a767b4ce93680aa48cb370d0" category="list-text">表示零信任關係，其中沒有為 Workload Factory 指派任何 AWS 權限。它旨在用於工作負載工廠的早期探索和使用各種嚮導來創建所需的基礎設施即代碼 (IaC)。您可以複製程式碼並透過手動輸入 AWS 憑證在 AWS 中使用它。</block>
-  <block id="5198d3d3b16bbd8165878b42f177a30b" category="list-text">透過新增唯讀權限來增強基本模式的體驗，以便 IaC 範本填入您的特定變數（例如，VPC、安全性群組等）。這使您能夠直接從您的 AWS 帳戶執行 IaC，而無需向 Workload Factory 提供任何修改權限。</block>
-  <block id="90e0e635e22e69ee097729d5734a7d9d" category="list-text">表示完全信任關係，以便 Workload Factory 獲得完全權限。這允許 Workload Factory 代表您在 AWS 中執行和自動執行操作，並提供具有執行所需權限的指派憑證。</block>
-  <block id="546393155194873f3731142e84a340fd" category="inline-link-macro">NetApp Workload Factory 的權限</block>
-  <block id="81c2957350a12620540cd26890390b33" category="paragraph">詳細了解<block ref="cabd746a8854284ee02379d38c8096f7" category="inline-link-macro-rx"></block> 。</block>
-  <block id="b68bbc990631af9eef3fe553c0db51c2" category="cell">工作負載工廠的自動化</block>
-  <block id="97ad164404d252aefcb10ad97a940250" category="paragraph">您無需在 Workload Factory 中設定選擇器來識別您計劃使用的模式。此模式根據您指派給 Workload Factory 帳戶的 AWS 憑證和權限來決定。</block>
-  <block id="c45e625ca22c6cf82bdbab201e8b7505" category="paragraph">您可以設定憑證來為一個工作負載組件提供一種模式，為另一個工作負載組件提供另一種模式。例如，您可以為部署和管理 FSx for ONTAP檔案系統的操作配置讀取/寫入模式，但僅使用 Workload Factory 建立和部署資料庫工作負載配置唯讀模式。</block>
-  <block id="1e82623c909c729fd392237767a08bbd" category="paragraph">您可以在 Workload Factory 帳戶中的一組憑證中提供這些功能，也可以建立多組憑證，每個憑證提供獨特的工作負載部署功能。</block>
-  <block id="b7539f1df600ed5d69ea48b7db1c268a" category="paragraph">但是，他們沒有從 Workload Factory 建立和部署 VMware 工作負載（基本模式）的自動化控制。如果他們想要建立 VMware 工作負載，他們需要從 Codebox 複製程式碼，手動登入他們的 AWS 帳戶，並手動填充生成的程式碼中缺少的條目以使用此功能。</block>
   <block id="9e4d021b600a18ca2bdc19e316e61a90" category="paragraph">當您使用第一個工作負載工廠功能（或多個功能）時，您需要使用這些工作負載功能所需的權限來建立憑證。您將把憑證新增至 Workload Factory，但您需要存取 AWS 管理主控台來建立 IAM 角色和原則。當使用 Workload Factory 中的任何功能時，這些憑證將在您的帳戶中可用。</block>
   <block id="b6cd757220290782ab371e620582ddcd" category="paragraph">在 Workload Factory 中新增多組 AWS 憑證可提供使用其他功能所需的額外權限，例如 FSx for ONTAP檔案系統、在 FSx for ONTAP上部署資料庫、遷移 VMware 工作負載等。</block>
-  <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link-macro">了解如何將 AWS 憑證新增至 Workload Factory</block>
-  <block id="1350027224712371708c0a642ae2b919" category="paragraph"><block ref="bc58254869896d67e8e31b026259707a" category="inline-link-macro-rx"></block> 。</block>
   <block id="afa8d8f6ad8b4dcb54715108a87420e8" category="summary">若要使用NetApp Workload Factory 功能和服務，您需要提供權限，以便 Workload Factory 可以在您的雲端環境中執行操作。</block>
   <block id="32acdb91b398fe68c473d385b28af9c3" category="doc">NetApp Workload Factory 的權限</block>
-  <block id="e75bcec41d02f72a4cc9d477ba804144" category="paragraph">當您提供_唯讀_或_讀/寫_模式權限時，Workload Factory 會將一項政策附加到實例，並授予其管理該 AWS 帳戶內的資源和流程的權限。這使得 Workload Factory 可以執行各種操作，從發現您的儲存環境到部署 AWS 資源（例如儲存管理中的檔案系統或 GenAI 工作負載的知識庫）。</block>
   <block id="d0ade4355c8ec6ed37983eb14916328c" category="paragraph">例如，對於資料庫工作負載，當 Workload Factory 被授予所需的權限時，它會掃描給定帳戶和區域中的所有 EC2 實例，並過濾所有基於 Windows 的機器。如果主機上安裝並執行了 AWS Systems Manager (SSM) Agent，且 System Manager 網路配置正確，則 Workload Factory 可以存取 Windows 機器並驗證是否安裝了 SQL Server 軟體。</block>
-  <block id="bec1f669d4b71b3094f80260331993ac" category="paragraph">每個工作負載都使用權限在工作負載工廠中執行某些任務。捲動至您使用的工作負載以查看權限清單、權限的用途、使用位置以及支援它們的模式。</block>
-  <block id="b99e184e3a2f6b2370d5380b1371796b" category="paragraph">可用於儲存的 IAM 政策會根據您所處的運作模式提供 Workload Factory 管理公有雲環境中的資源和流程所需的權限。</block>
-  <block id="90d438e965d4924a5cc9d21b0a11235d" category="paragraph">適用於資料庫工作負載的 IAM 策略根據您所處的操作模式，提供工作負載工廠管理公有雲環境中的資源和流程所需的權限。</block>
   <block id="77b951d8af5d2903fd338a5594bc2984" category="cell">ec2:描述地址</block>
   <block id="3dacbeba47b9f6346efabbbcba3e8f99" category="cell">ec2:描述啟動模板</block>
   <block id="a7832ac7716e329cbfb8be2af7718d13" category="cell">fsx:描述檔案系統別名</block>
   <block id="fc1339e69103622aaebd0a2344228761" category="cell">kms:描述自訂密鑰存儲</block>
-  <block id="29a99298952ddee2d199430a92076edd" category="list-text">評估</block>
   <block id="6196a6b6fbc92f775ff062249cbb6356" category="cell">日誌：取得日誌群組字段</block>
   <block id="db54752ff2c01d44c157e10dfa9f6950" category="cell">日誌：取得日誌記錄</block>
   <block id="2c052f83f4bc2f8c87925e18b83a9421" category="cell">遇到 SSM 輸出截斷時，Workload Factory 會切換到 SQL 執行個體的 Amazon CloudWatch 日誌</block>
@@ -1140,10 +1033,8 @@
   <block id="efaef01a8d4ed991197fd08168fbfd81" category="doc">NetApp Workload Factory 快速入門</block>
   <block id="43942595c7cf22990bdac7d19d61280a" category="paragraph">透過註冊並建立帳戶開始使用NetApp Workload Factory，新增憑證以便 Workload Factory 可以直接管理 AWS 資源，然後使用Amazon FSx for NetApp ONTAP最佳化您的工作負載。</block>
   <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link-macro">工作負載工廠</block>
-  <block id="8badb47ae4efde6548fd67d3204a1d4c" category="paragraph">使用者可以透過基於 Web 的控制台以雲端服務的形式存取NetApp Workload Factory。在開始之前，你應該了解<block ref="fc500664a3cbaaa3aa46a84367805795" category="inline-link-macro-rx"></block>和<block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block>。</block>
   <block id="58902cbb0adcf45cfe72ced7fa9d043a" category="paragraph">前往<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block>，註冊並建立帳戶。</block>
   <block id="81fe43671919388bf418561882652f2a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>將 AWS 憑證新增至 Workload Factory</block>
-  <block id="22829868ca33c0e8792bcdc315b4a329" category="paragraph">此步驟是可選的。您可以在_基本_模式下使用 Workload Factory，而無需新增憑證來存取您的 AWS 帳戶。以_唯讀_模式或_讀/寫_模式將 AWS 憑證新增至 Workload Factory，可為您的 Workload Factory 帳戶提供建立和管理 FSx for ONTAP檔案系統以及部署和管理特定工作負載（例如資料庫和 GenAI）所需的權限。</block>
   <block id="cfce110bce240e5d147991ff7290a456" category="paragraph">註冊、建立帳戶並選擇性新增 AWS 憑證後，您可以開始使用 Workload Factory 透過 FSx for ONTAP最佳化您的工作負載。</block>
   <block id="023c464fc92ec044e83176c4e57027c4" category="summary">可以透過基於 Web 的控制台存取 Workload Factory。當您開始使用 Workload Factory 時，您的第一步是使用現有的NetApp支援網站憑證進行註冊或建立NetApp雲端登入。</block>
   <block id="68502871f1dfe8846e132f5a8eb8bf26" category="doc">註冊NetApp Workload Factory</block>
@@ -1191,7 +1082,6 @@
   <block id="44da402ec36da01d015159883a9bf0a7" category="summary">您可以使用 Codebox 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。</block>
   <block id="1963e3c64fa43d78481e707973437ff9" category="doc">使用 Codebox 實現NetApp Workload Factory 中的自動化</block>
   <block id="a1886a788bd9ff50317839f01fa99d12" category="paragraph">您可以使用 Codebox 產生執行NetApp Workload Factory 支援的任何操作所需的程式碼。您可以產生可使用 Workload Factory REST API、AWS CLI 和 AWS CloudFormation 使用和執行的程式碼。</block>
-  <block id="cafb7ecf8a10df6df67b4c871c3b6eb0" category="paragraph">Codebox 與 Workload Factory 操作模式（基本、唯讀和讀/寫）保持一致，透過根據 Workload Factory 帳戶中為每個使用者提供的 AWS 權限在程式碼中填入適當的資料。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。</block>
   <block id="62835b251ca7e00f685a007f7c8b4941" category="paragraph">當您在 Workload Factory UI 精靈中輸入值時，您可以在完成每個欄位時看到 Codebox 中的資料更新。完成精靈後，在選擇頁面底部的「建立」按鈕之前，請選擇<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>在 Codebox 中複製以擷取建置配置所需的程式碼。例如，此建立新 Microsoft SQL Server 的螢幕截圖顯示了 VPC 和可用區域的精靈項目以及 Codebox 中用於 REST API 實作的等效項目。</block>
   <block id="e42247774bdce04c64e854945cc45288" category="paragraph">對於某些程式碼格式，您也可以選擇下載按鈕將程式碼儲存在可以帶到另一個系統的檔案中。如果需要，您可以在下載程式碼後編輯它，以便使其適應其他 AWS 帳戶。</block>
   <block id="ea91e366c1caa6817dd5fd6381bdcf91" category="paragraph">您可以複製從 Codebox 產生的 CloudFormation 程式碼，然後在您的 AWS 帳戶中啟動 Amazon Web Services CloudFormation 堆疊。  CloudFormation 將執行您在 Workload Factory UI 中定義的操作。</block>
@@ -1230,10 +1120,6 @@
   <block id="912befb3eaba2908b9f951f6483b77fd" category="paragraph"><block ref="912befb3eaba2908b9f951f6483b77fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5187db3b0ac1f92f3bcbfc83450784f" category="admonition">如果您使用NetApp控制台，那麼您已經屬於一個帳戶，因為 Workload Factory 利用NetApp帳戶。</block>
   <block id="12870a8b67ab987daca48b855ab4ceda" category="paragraph">服務帳戶可作為“使用者”，可以對NetApp Workload Factory 進行授權 API 呼叫以實現自動化目的。這使得管理自動化變得更加容易，因為您不需要基於可以隨時離開公司的真實人員的使用者帳戶來建立自動化腳本。 Workload Factory 中的所有帳戶持有者都被視為帳戶管理員。帳戶管理員可以建立和刪除多個服務帳戶。</block>
-  <block id="aa9b9cc18c16d4ea10f38b25b835c5aa" category="paragraph">Workload Factory 提供三種操作模式，使您能夠仔細控制對雲端資產的訪問，並根據您的 IT 策略為 Workload Factory 分配增量信任。</block>
-  <block id="d41adf884cb045d0ebe1b066d2b95a2b" category="list-text">*基本模式*代表零信任關係，旨在早期探索工作負載工廠並使用各種嚮導來創建所需的基礎設施即程式碼。使用者可以複製此程式碼並將其與相關的 AWS 憑證一起手動使用。</block>
-  <block id="cc85ceb9ec5c575a9f6e41669887b58d" category="inline-link-macro">了解有關 Workload Factory 營運模式的更多信息</block>
-  <block id="bc8c94f9b7d24148c98db964dcfdf4f4" category="paragraph"><block ref="122264b4ce030632c8f10e1e484f4776" category="inline-link-macro-rx"></block> 。</block>
   <block id="a74fb96e1eef90ea865f1878f02b4e15" category="paragraph">Workload Factory 連結在 Workload Factory 與一個或多個 FSx for ONTAP檔案系統之間建立信任關係和連線。這使您能夠直接從ONTAP REST API 呼叫監控和管理某些檔案系統功能，而這些功能無法透過Amazon FSx for ONTAP API 取得。</block>
   <block id="1e2cf39904eebcbddae0fe72e0186b8b" category="paragraph">您不需要連結即可開始使用 Workload Factory，但在某些情況下，您需要建立連結來解鎖所有 Workload Factory 功能和工作負載能力。</block>
   <block id="528a4ef2f9c8bc3b67d3efa2374a45d4" category="paragraph">Codebox 是一個基礎架構即代碼 (IaC) 副駕駛，可協助開發人員和 DevOps 工程師產生執行 Workload Factory 支援的任何操作所需的程式碼。程式碼格式包括 Workload Factory REST API、AWS CLI 和 AWS CloudFormation。</block>
@@ -1272,4 +1158,82 @@
   <block id="28a2c493e9a663d617e582302e1bcf28" category="inline-link-macro">BlueXP workload factory的通知</block>
   <block id="a4bdb4b5125441fbfaec27ac4bb48be0" category="paragraph"><block ref="a4bdb4b5125441fbfaec27ac4bb48be0" category="inline-link-macro-rx"></block></block>
   <block id="303e96f80576360d0c7b07ae7528fa4b" category="list-text">地形</block>
+  <block id="a8652a10fdfc1f87b6bf65a1067a7fd9" category="doc">權限更新</block>
+  <block id="27d373ed8bf1b1a511ec6680dde4e448" category="paragraph">在此版本中，我們對儲存、資料庫和 VMware 工作負載的權限策略進行了重大更新，以增強安全性和使用者控制。您可以更精細地自訂權限設置，根據需要新增或取消權限。</block>
+  <block id="6ab8e8b21fd457b68a33554bd8f64377" category="inline-link-macro">Workload Factory 的權限參考</block>
+  <block id="f5baf95dfead3e34e749c6d871873a72" category="paragraph"><block ref="f5baf95dfead3e34e749c6d871873a72" category="inline-link-macro-rx"></block></block>
+  <block id="7723c7d7d2f2eb53098d3c771a7b7854" category="paragraph">NetApp Workload Factory通知服務包含儲存自動 inode 管理的通知。</block>
+  <block id="ef97320a660fe1bab5cd9dea0fdf90c3" category="section-title">自動容量和 inode 管理的閾值警告</block>
+  <block id="84ecff705434b96ba77d72c40db81a43" category="paragraph">可以為儲存空間設定自動容量和 inode 管理，並設定警告閾值，該閾值會觸發 Workload Factory 通知服務的通知。若要使用此功能，必須先啟用工作負載工廠通知服務。</block>
+  <block id="c9222d8b9aefb8ef9111967299e54ea0" category="inline-link-macro">配置NetApp Workload Factory的通知</block>
+  <block id="ab64aae70d26185cca8d6c5afc54d185" category="paragraph"><block ref="ab64aae70d26185cca8d6c5afc54d185" category="inline-link-macro-rx"></block></block>
+  <block id="ad388627e092e98ac90a0c8aa1d56c93" category="paragraph">您的初始 AWS 憑證集可以包含針對一項功能或多項功能的 IAM 權限原則。這完全取決於您的業務需求。</block>
+  <block id="ab6377bc5402cd07b43fc38c03bebe62" category="list-text">對於那些提供權限策略選擇的工作負載功能，請選擇使用這些憑證可取得的權限類型。</block>
+  <block id="519d7390285bfffecc1ca7623e06f726" category="paragraph">Codebox 是一個基礎架構即程式碼 (IaC) 輔助工具，可協助開發人員和 DevOps 產生執行NetApp Workload Factory支援的任何操作所需的程式碼。  Codebox 與 Workload Factory 的權限策略保持一致，並為執行準備工作設定了清晰的路徑，同時也提供了一個自動化目錄，以便將來快速重複使用。</block>
+  <block id="04b6c562fc13f3eba6e466afc1dadc35" category="paragraph">此外，在設定 Workload Factory 憑證時，Codebox 會動態顯示建立 IAM 政策所需的 AWS 權限。每個 Workload Factory 功能（資料庫、AI、FSx for ONTAP等）都提供了相應的權限，而這些權限是可以自訂的。您只需從 Codebox 複製權限，然後將其貼上到 AWS 管理控制台中，以便 Workload Factory 擁有管理您的工作負載的正確權限。</block>
+  <block id="73b5a1614168f824b3fc43f82b51b3d2" category="cell">FSx for ONTAP的自動容量管理事件</block>
+  <block id="cda8141986edc4d59df6d7011f696299" category="cell">FSx for ONTAP檔案系統的 SSD 效能層級已達到警告閾值容量/百分比總和。</block>
+  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">警告</block>
+  <block id="cc1f56cb5cd6bdb7f1796048269b0097" category="cell">FSx for ONTAP的自動 inode 管理事件</block>
+  <block id="e4ddc61f041a4a950895b04a98fff07b" category="cell">ONTAP磁碟區的 FSx inode 計數達到警告閾值計數/百分比總數。</block>
+  <block id="4614f0f919f6357dc680afd47d32ad2b" category="paragraph">當您提供權限時，Workload Factory 會將政策附加到實例，該策略具有管理該 AWS 帳戶中資源和進程的權限。這使得 Workload Factory 能夠執行各種操作，從發現您的儲存環境到部署 AWS 資源，例如儲存管理中的檔案系統或 GenAI 工作負載的知識庫。</block>
+  <block id="09fbd7ce5485b032855da27056744715" category="paragraph">每個工作負載都使用權限在工作負載工廠中執行特定任務。權限被打包成一系列權限策略。捲動到您使用的工作負載，了解權限策略、權限策略的可複製 JSON 以及列出所有權限、其用途、使用位置以及支援它們的權限策略的表格。</block>
+  <block id="3c0158ae150bbe2d52d55d8a4897e28a" category="paragraph">儲存可用的 IAM 策略為 Workload Factory 提供了管理公有雲環境中的資源和進程所需的權限。</block>
+  <block id="d542facb88a1cb92fe741c179c25d51a" category="paragraph">儲存功能提供以下權限策略供您選擇：</block>
+  <block id="fffdcb31f17f871dc9c0d8984c5b82f4" category="list-text">*檢視、規劃與分析*：檢視 FSx for ONTAP檔案系統，了解系統運作狀況，取得系統架構完善的分析，並探索節省成本的方法。</block>
+  <block id="3bd06618c0c67b113e296a848c4bbbd4" category="list-text">*操作與修復*：執行操作任務，例如調整檔案系統容量和修復檔案系統設定問題。</block>
+  <block id="3e3b7379cc4513875ee5e4215fdca1da" category="list-text">*檔案系統建立和刪除*：建立和刪除ONTAP檔案系統和儲存虛擬機器的 FSx。</block>
+  <block id="6ccc894695eaf673649792343f0e575a" category="paragraph">查看所需的身分識別和存取管理 (IAM) 策略：</block>
+  <block id="a60fa84080eeff2169efe9e9ab706641" category="open-title">視圖、規劃與分析</block>
+  <block id="cc25205cdd6776f5368057fe36bb47f0" category="open-title">營運和補救</block>
+  <block id="5e089350e1f2af6ed6097e31f62344a1" category="open-title">檔案系統的建立和刪除</block>
+  <block id="ae0b858ed1f4faffec835c5b5de925d9" category="cell">權限政策</block>
+  <block id="d70a5e23a79e1ff69febc52099df6ccd" category="cell">Elasticfilesystem：描述檔案系統</block>
+  <block id="6af94c9aec46920bce23cea8ed26bdeb" category="cell">fsx：刪除檔案系統</block>
+  <block id="b9092661992c3da87d04e3f895a8d2c2" category="cell">fsx：刪除儲存虛擬機</block>
+  <block id="767fcd5d5394eaa7281ded93cf8d8c91" category="cell">fsx：描述共享虛擬PC配置</block>
+  <block id="3e40b45f1cb99550b37e4703a21f320f" category="cell">fsx：更新檔案系統</block>
+  <block id="ce09b230163a46ccb55f8e19ebd089bc" category="cell">fsx：更新儲存虛擬機</block>
+  <block id="2a9b2acb974fe13a772fc0500d379978" category="cell">fsx：刪除卷</block>
+  <block id="ba09e132c7032dec2254a747e6816017" category="cell">fsx:建立備份</block>
+  <block id="33708f681e75e5ad1fe803f7359ef105" category="cell">fsx：從備份建立磁碟區</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">全部</block>
+  <block id="51a013adbef58901545868ef26f09d7a" category="paragraph">資料庫工作負載可用的 IAM 策略提供了 Workload Factory 管理公有雲環境中的資源和進程所需的權限。</block>
+  <block id="2d91eea349dd2934a023a9c89a25a4ae" category="paragraph">資料庫提供以下權限策略供您選擇：</block>
+  <block id="abd0fc334cbbe6ce3b144ecdf917849b" category="list-text">*檢視、規劃與分析*：檢視資料庫資源清單，了解資源的運作狀況，檢視資料庫配置的良好架構分析，探索節省成本的方法，取得錯誤日誌分析，並探索節省成本的方法。</block>
+  <block id="516f58485558bb7df0c42bfdf10a650f" category="list-text">*操作與修復*：對資料庫資源執行操作任務，並修復資料庫配置和底層 FSx for ONTAP檔案系統儲存的問題。</block>
+  <block id="6ba3b68b57fd6ae3c84b2202720ff1c9" category="list-text">*資料庫主機建立*：根據最佳實務部署資料庫主機和底層 FSx for ONTAP檔案系統儲存。</block>
+  <block id="2df5c87e4b8d61414a47560bc03e428a" category="open-title">建立資料庫主機</block>
+  <block id="041381a9f940255508c93bc6e7320eb0" category="cell">取得 CloudFormation 和 VPC 的服務配額限制 / 在使用者帳戶中為提供的 SQL、網域和 FSx for ONTAP憑證建立金鑰</block>
+  <block id="470d137fe3767a52688a11d64f90ebb7" category="cell">透過 SSM 向 EC2 執行個體傳送命令以進行發現和管理</block>
+  <block id="730f2659cd6ec0b8ce478608733e1043" category="cell">將安全性群組附加到已配置的 EC2 執行個體並修改規則</block>
+  <block id="e6770209133e1a365baaabf29682707a" category="cell">取得可用於錯誤日誌分析的基礎模型</block>
+  <block id="9b5a66520940453b03f844cb38d72d2f" category="cell">錯誤日誌分析</block>
+  <block id="2b09ddddcb00f772b0397ca4fa2471b0" category="cell">列出 Amazon Bedrock 中可用於錯誤日誌分析的介面設定檔</block>
+  <block id="120558563578966d6e3e3204fb944fe8" category="paragraph">GenAI IAM 策略僅支援讀取/寫入權限：</block>
+  <block id="cced0416108aa0eed2d9fc1a929f501e" category="list-text">*讀取/寫入*：使用指派的憑證代表您在 AWS 中執行和自動執行操作，這些憑證具有執行所需的已驗證權限。</block>
+  <block id="6d1d444e31ba2e1e32454781c718d8bd" category="paragraph">VMware 工作負載有以下權限策略可供選擇：</block>
+  <block id="808b4a9b1106ed0f5257e607f992d39d" category="list-text">*檢視、規劃與分析*：檢視 EVS 虛擬化環境的清單，取得系統架構完善的分析，並探索節省成本的方法。</block>
+  <block id="db73d2d162f2b29ff8535b7ce22cf484" category="list-text">*資料儲存部署與連線*：將建議的 VM 版面配置部署至 Amazon EVS、Amazon EC2 或 VMware Cloud on AWS vSphere 叢集，並使用自訂的Amazon FSx for NetApp ONTAP檔案系統作為外部資料儲存。</block>
+  <block id="eb6ca2c4fcde955022dcf0fc1c5d6e15" category="paragraph">選擇權限策略以查看所需的 IAM 策略：</block>
+  <block id="f025fc3a059ba5231f532114be1507a2" category="open-title">資料儲存部署和連接</block>
+  <block id="60be652dd42dc93bdde7fd714361f850" category="cell">查看與 VPC 關聯的 DHCP 選項集的配置詳情</block>
+  <block id="10da10750f5abb2bffb583947f1ace05" category="cell">ec2:描述DHCP選項</block>
+  <block id="b4fc225dfcae6bac5e41b8bfa8487acd" category="cell">列出 AWS Secrets Manager 中的金鑰</block>
+  <block id="144b03b25408d0efd12f9963e51d2000" category="cell">secretsmanager:列出秘密</block>
+  <block id="40e8290937250ae72e54f945a684d9cc" category="cell">從 Amazon EVS 取得環境列表</block>
+  <block id="f2e61dc1e1ac703c33e93d5f9ad7951e" category="cell">evs:列出環境</block>
+  <block id="611e924fcb644d9bfb6615fc3743e7da" category="cell">獲取有關特定 Amazon EVS 環境的詳細信息</block>
+  <block id="1126815f1afba5786fde2082d9d37ff6" category="cell">evs:GetEnvironment</block>
+  <block id="8c9e40a4519c8e2dff339afe58654b8f" category="cell">列出與 Amazon EVS 環境關聯的 VLAN</block>
+  <block id="dbb9bb734f7ce753daf670385894fc6c" category="cell">evs:列出環境VLAN</block>
+  <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2025年11月2日</block>
+  <block id="8759d474306b7075634b38abde2a85cb" category="paragraph">儲存、資料庫工作負載和 VMware 工作負載中的「唯讀」和「讀取/寫入」權限策略已被替換，以便在分配權限時提供更精細的粒度和更大的靈活性。</block>
+  <block id="3adf0593d3d2d43754514ef0d597458d" category="paragraph">NetApp Workload Factory可透過基於 Web 的控制台以雲端服務的形式供使用者存取。在開始之前，你應該要了解…<block ref="fc500664a3cbaaa3aa46a84367805795" category="inline-link-macro-rx"></block> 。</block>
+  <block id="de8efeea4e5e2680a5800f121d271ee6" category="paragraph">此步驟是可選的。您無需新增憑證即可使用 Workload Factory 存取您的 AWS 帳戶。將 AWS 憑證新增至 Workload Factory，即可讓您的 Workload Factory 帳戶擁有建立和管理 FSx for ONTAP檔案系統以及部署和管理特定工作負載（例如資料庫和 GenAI）所需的權限。</block>
+  <block id="bf7bed6002efd423b3f090dfda4fb38c" category="paragraph">Codebox 與 Workload Factory 權限策略保持一致，根據 Workload Factory 帳戶中為每個使用者提供的 AWS 權限，在程式碼中填入相應的資料。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。</block>
+  <block id="fd7910c842c61985f2e90af78f1b304f" category="paragraph">Workload Factory 提供靈活的權限策略，使您能夠仔細控制對雲端環境的訪問，並根據您的 IT 策略為 Workload Factory 分配遞增的信任。</block>
+  <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">了解更多關於工作負載工廠權限策略的信息</block>
+  <block id="9de83ea21033a65a11f8b135f0dfca93" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block>。</block>
+  <block id="c51a57db8914c4d0002701f58f6f3d36" category="sidebar">工作負載工廠的權限</block>
 </blocks>
