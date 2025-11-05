@@ -29,4 +29,8 @@ summary: 登入並設定NetApp Workload Factory 後，您可以建立和管理 F
 +
 透過智慧建議和自動補救、簡化移轉與作業。部署高效備份與健全的災難恢復。監控及疑難排解 VM 。
 
+* https://docs.netapp.com/us-en/workload-builders/index.html["建構器工作負載"^]
++
+透過與版本控制系統和 CI/CD 流程實現即時克隆集成，簡化軟體版本的使用和訪問，從而節省時間和資源。
+
 

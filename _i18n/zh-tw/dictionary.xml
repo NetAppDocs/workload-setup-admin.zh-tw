@@ -1236,4 +1236,7 @@
   <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">了解更多關於工作負載工廠權限策略的信息</block>
   <block id="9de83ea21033a65a11f8b135f0dfca93" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block>。</block>
   <block id="c51a57db8914c4d0002701f58f6f3d36" category="sidebar">工作負載工廠的權限</block>
+  <block id="67cc1fa9f1a93753f08cfa64d81c9661" category="inline-link">建構器工作負載</block>
+  <block id="fadf0a6a0fc7dcefddc336cf580be28f" category="list-text"><block ref="fadf0a6a0fc7dcefddc336cf580be28f" category="inline-link-rx"></block></block>
+  <block id="4dbca6300d097acc1ed4450a1e0d70d7" category="paragraph">透過與版本控制系統和 CI/CD 流程實現即時克隆集成，簡化軟體版本的使用和訪問，從而節省時間和資源。</block>
 </blocks>
