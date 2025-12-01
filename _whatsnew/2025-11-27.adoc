@@ -1,0 +1,17 @@
+= 儲存權限更新
+:allow-uri-read: 
+
+
+
+
+=== 儲存權限更新
+
+FSx for ONTAP EMS 事件分析器使用 _operations and remediation_ 權限原則中的下列 Amazon Bedrock 權限來取得儲存工作負載的事件資料。
+
+* `bedrock:ListInferenceProfiles`
+* `bedrock:GetInferenceProfile`
+* `bedrock:InvokeModelWithResponseStream`
+* `bedrock:InvokeModel`
+
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["權限參考變更記錄"]

@@ -1255,4 +1255,6 @@
   <block id="f09e11341fa2be3f754588bca37990f8" category="paragraph"><block ref="f09e11341fa2be3f754588bca37990f8" category="inline-link-macro-rx"></block></block>
   <block id="14d3fbf26a974628349cadb25ac5954d" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block></block>
   <block id="491e45ff3f847be901c7d8962829a3f8" category="paragraph"><block ref="491e45ff3f847be901c7d8962829a3f8" category="inline-link-macro-rx"></block></block>
+  <block id="6fe4c05a9bf5207dceacd4fcc6fc1064" category="doc">儲存權限更新</block>
+  <block id="7d3f4d33aca7af4519cb87a63113caf9" category="paragraph">FSx for ONTAP EMS 事件分析器使用 _operations and remediation_ 權限原則中的下列 Amazon Bedrock 權限來取得儲存工作負載的事件資料。</block>
 </blocks>
