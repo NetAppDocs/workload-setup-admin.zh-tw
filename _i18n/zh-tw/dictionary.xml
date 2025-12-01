@@ -267,7 +267,6 @@
   <block id="bd282943a337f4287ca0d70f9a836261" category="section-title">CodeBox 自動化</block>
   <block id="7c408fda146892c9e1c039f91fee3cd3" category="paragraph">Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。</block>
   <block id="ec6b8f7cd0c5cd9853d947bc13f72f4b" category="inline-link-macro">深入瞭解 CodeBox</block>
-  <block id="7221d615997ca03d4480df5a43dae047" category="paragraph"><block ref="491e45ff3f847be901c7d8962829a3f8" category="inline-link-macro-rx"></block>。</block>
   <block id="c257f5c852c12409e63afb17104f69c5" category="section-title">REST API</block>
   <block id="0fe398a436a33849be29455ed17d4185" category="list-text">API 的設計是以 REST 技術和目前最佳實務為基礎。核心技術包括 HTTP 和 JSON 。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
@@ -313,7 +312,6 @@
   <block id="c938676b28ab6dd4d5cc28ebdf8c49b9" category="doc">主控台體驗</block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
   <block id="7b2ab109a7f028a1314cfd59fab7b820" category="list-text">節省計算機以節省成本</block>
-  <block id="02161797e05b29a1a7b7b7f28b9e274a" category="paragraph">深入瞭解不同<block ref="307484147c616be6cc5c203f4bb58b5b" category="inline-link-macro-rx"></block>的。</block>
   <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
   <block id="fd1a283b46f9e16faf592b1eb5138a94" category="list-text">資料庫生命週期管理</block>
   <block id="47b4ea23585c5454c4427e68acf95fc4" category="list-text">利用 Amazon FSX for NetApp ONTAP 探索資料庫工作負載並分析成本節約效益；將 SQL Server 資料庫移轉至適用於 ONTAP 儲存設備的 FSX 時，善用儲存與應用程式的效益；部署 SQL 伺服器，資料庫及資料庫複本以實作廠商最佳實務做法；使用基礎架構做為程式碼聯合試驗以自動化作業；持續監控及最佳化 SQL 伺服器環境，以改善效能，可用度，保護及成本效益。</block>
@@ -348,7 +346,6 @@
   <block id="13b1a844b08d2d7b8144e4c0db6b5552" category="paragraph">建立帳戶時，您是該帳戶的單一 _account admin_ 使用者。</block>
   <block id="c33f7c2cbeaca5f1462c1b3e1c276145" category="section-title">服務帳戶</block>
   <block id="25e9dc09fd109741b1c7237f825ab46e" category="inline-link-macro">瞭解如何管理服務帳戶</block>
-  <block id="09c9cabc1664a7683d1d411a37775b39" category="paragraph"><block ref="f09e11341fa2be3f754588bca37990f8" category="inline-link-macro-rx"></block>。</block>
   <block id="ca475a2b63c70fedcf8f6650024d480b" category="doc">BlueXP  工作負載原廠權限</block>
   <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">您現在可以檢視 BlueXP  工作負載工廠用來執行各種作業的權限，從探索儲存環境到部署 AWS 資源，例如儲存設備中的檔案系統，或是 GenAI 工作負載的知識庫。您可以檢視儲存，資料庫， VMware 和 GenAI 工作負載的 IAM 原則和權限。</block>
   <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
@@ -958,7 +955,6 @@
   <block id="3b06bcb45233697647a5a550960f8d05" category="list-text">* NetApp控制台*：提供混合體驗，您可以在相同位置管理 FSx for ONTAP檔案系統和在Amazon FSx for NetApp ONTAP上執行的工作負載。</block>
   <block id="3b94caaa5f175aae2e16887d7ce147da" category="list-text">*Workload Factory 控制台*：提供專用的 Workload Factory 體驗，專注於在Amazon FSx for NetApp ONTAP上執行的工作負載。</block>
   <block id="0fe6cec212fb1ba5af4d190a28fa03ba" category="section-title">在NetApp控制台中存取 Workload Factory</block>
-  <block id="4aebb3c6d2632b0a47717c897adea664" category="paragraph">您可以從NetApp控制台存取 Workload Factory。除了使用 Workload Factory 實現 AWS 儲存和工作負載功能之外，您還可以存取其他資料服務，例如NetApp Copy and Sync、 NetApp Digital Wallet 等。</block>
   <block id="e0cfef909774dee6f2988d39c62d2aa4" category="list-text">從NetApp控制台選單中，選擇 *Workloads*，然後選擇 *Overview*。</block>
   <block id="39d4b213cdbfaee4bf8255d21e45d7b3" category="section-title">在 Workload Factory 控制台中造訪 Workload Factory</block>
   <block id="a30f0e49926a18e020f6f949bd717e28" category="paragraph">您可以從 Workload Factory 控制台存取 Workload Factory。</block>
@@ -1234,9 +1230,29 @@
   <block id="bf7bed6002efd423b3f090dfda4fb38c" category="paragraph">Codebox 與 Workload Factory 權限策略保持一致，根據 Workload Factory 帳戶中為每個使用者提供的 AWS 權限，在程式碼中填入相應的資料。該程式碼可以像模板一樣使用，您可以在運行程式碼之前填寫缺少的資訊（例如，憑證）或自訂某些資料。</block>
   <block id="fd7910c842c61985f2e90af78f1b304f" category="paragraph">Workload Factory 提供靈活的權限策略，使您能夠仔細控制對雲端環境的訪問，並根據您的 IT 策略為 Workload Factory 分配遞增的信任。</block>
   <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">了解更多關於工作負載工廠權限策略的信息</block>
-  <block id="9de83ea21033a65a11f8b135f0dfca93" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block>。</block>
   <block id="c51a57db8914c4d0002701f58f6f3d36" category="sidebar">工作負載工廠的權限</block>
   <block id="67cc1fa9f1a93753f08cfa64d81c9661" category="inline-link">建構器工作負載</block>
   <block id="fadf0a6a0fc7dcefddc336cf580be28f" category="list-text"><block ref="fadf0a6a0fc7dcefddc336cf580be28f" category="inline-link-rx"></block></block>
   <block id="4dbca6300d097acc1ed4450a1e0d70d7" category="paragraph">透過與版本控制系統和 CI/CD 流程實現即時克隆集成，簡化軟體版本的使用和訪問，從而節省時間和資源。</block>
+  <block id="97364a76409afb35bcf8e78ca91dd72d" category="paragraph">您可以從NetApp Console存取 Workload Factory。除了使用 Workload Factory 來取得 AWS 儲存和工作負載功能外，您還可以存取其他資料服務，例如NetApp Copy and Sync等。</block>
+  <block id="01984b12c408bdab681895b084bd6c06" category="cell">ec2：撤銷安全群組出口</block>
+  <block id="c8f3ab0d5795ea54c17a7c0f85e22fbd" category="cell">fsx：刪除備份</block>
+  <block id="efd5fd045b2b5a8ad184072097e91070" category="cell">取得ONTAP EMS 事件的 FSx</block>
+  <block id="b2ebd142eb09c979a63764f09a9ebbd9" category="cell">FSx 用於ONTAP EMS 分析</block>
+  <block id="fdd997ab8b4252f76acdda855bb7b890" category="cell">基岩：取得推理配置文件</block>
+  <block id="b67afe892c78b2491b3d4ac0b4c2f0b0" category="cell">基岩：呼叫模型及其反應流</block>
+  <block id="101559ddc6f7b830adb3e15629c9d132" category="cell">從 AWS Cost Explorer 取得 FSx for ONTAP檔案系統的成本和使用量資料。</block>
+  <block id="bba6542a0e46014b21a818003b1e41d2" category="cell">ce:獲取成本和使用情況</block>
+  <block id="e740b3f6978df04ae224fdb7fe816cb4" category="cell">成本和使用分析</block>
+  <block id="f74e5982a82afd7d2755b24355dd08c6" category="cell">ce:GetTags</block>
+  <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025年11月27日</block>
+  <block id="43481cea67e4e51df745177b32433321" category="paragraph">以下權限已新增至儲存工作負載：</block>
+  <block id="4e736cb1760a43a4bf2b5d861b6deb96" category="list-text"><block ref="fdd997ab8b4252f76acdda855bb7b890" prefix="" category="inline-code"></block></block>
+  <block id="1ed1b1bc988715ea858abe38c168d87a" category="list-text"><block ref="00fe52afa6e3b9a0d389f529a2b88242" prefix="" category="inline-code"></block></block>
+  <block id="f80c2c54334d4ddca4016b89152c6684" category="list-text"><block ref="93804e96d3f417a0088c564647dd28e9" prefix="" category="inline-code"></block></block>
+  <block id="4ea213845e0e4bd9b85ae5f5095fef40" category="inline-link-macro">了解更多關於不同遊戲主機體驗的信息</block>
+  <block id="0452a6e2337cd59ec7a4e17bd80cc097" category="paragraph"><block ref="0452a6e2337cd59ec7a4e17bd80cc097" category="inline-link-macro-rx"></block></block>
+  <block id="f09e11341fa2be3f754588bca37990f8" category="paragraph"><block ref="f09e11341fa2be3f754588bca37990f8" category="inline-link-macro-rx"></block></block>
+  <block id="14d3fbf26a974628349cadb25ac5954d" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block></block>
+  <block id="491e45ff3f847be901c7d8962829a3f8" category="paragraph"><block ref="491e45ff3f847be901c7d8962829a3f8" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -64,7 +64,7 @@ Workload Factory 包括透過 SaaS 層提供的基於 Web 的控制台、帳戶�
 
 可透過以下方式存取 Workload Factorylink:https://console.workloads.netapp.com["NetApp Workload Factory 控制台"^]以及link:https://console.netapp.com["NetApp控制台"^]。這些 SaaS 體驗使您能夠在最新功能發佈時自動存取它們，並輕鬆地在 Workload Factory 帳戶和連結之間切換。
 
-深入瞭解不同link:console-experiences.html["主控台體驗"]的。
+link:console-experiences.html["了解更多關於不同遊戲主機體驗的信息"]
 
 
 
@@ -87,7 +87,7 @@ TIP: 如果您使用NetApp控制台，那麼您已經屬於一個帳戶，因為
 
 服務帳戶可作為“使用者”，可以對NetApp Workload Factory 進行授權 API 呼叫以實現自動化目的。這使得管理自動化變得更加容易，因為您不需要基於可以隨時離開公司的真實人員的使用者帳戶來建立自動化腳本。 Workload Factory 中的所有帳戶持有者都被視為帳戶管理員。帳戶管理員可以建立和刪除多個服務帳戶。
 
-link:manage-service-accounts.html["瞭解如何管理服務帳戶"]。
+link:manage-service-accounts.html["瞭解如何管理服務帳戶"]
 
 
 
@@ -95,7 +95,7 @@ link:manage-service-accounts.html["瞭解如何管理服務帳戶"]。
 
 Workload Factory 提供靈活的權限策略，使您能夠仔細控制對雲端環境的訪問，並根據您的 IT 策略為 Workload Factory 分配遞增的信任。
 
-link:permissions-reference.html["了解更多關於工作負載工廠權限策略的信息"]。
+link:permissions-reference.html["了解更多關於工作負載工廠權限策略的信息"]
 
 
 
@@ -119,7 +119,7 @@ Codebox 與 Workload Factory 操作模式（_basic_、_read-only_ 和 _read/writ
 
 Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。
 
-link:codebox-automation.html["深入瞭解 CodeBox"]。
+link:codebox-automation.html["深入瞭解 CodeBox"]
 
 
 
