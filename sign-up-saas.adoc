@@ -13,7 +13,12 @@ summary: 可以透過基於 Web 的控制台存取 Workload Factory。當您開�
 [role="lead"]
 NetApp Workload Factory 可透過基於 Web 的控制台存取。當您開始使用 Workload Factory 時，您的第一步是使用現有的NetApp支援網站憑證進行註冊或建立NetApp雲端登入。
 
-.關於這項工作
+您也可以邀請其他人加入您的 Workload Factory 帳戶，以便他們可以存取和使用 Workload Factory。
+
+
+
+== 註冊 Workload Factory
+
 您可以使用以下選項之一註冊 Workload Factory：
 
 * 您現有NetApp 支援網站 的功能驗證（NSS）認證
@@ -52,3 +57,14 @@ image:screenshot-account-selection.png["使用新帳戶登入時出現的「帳�
 
 .結果
 您現在擁有 Workload Factory 登入名稱和帳戶。您被視為帳戶管理員，並且有權存取所有 Workload Factory 功能。
+
+
+
+== 邀請其他人加入 Workload Factory 帳戶
+
+身為帳戶管理員，您可以邀請其他人加入您的 Workload Factory 帳戶，以便他們可以存取和使用 Workload Factory。帳戶管理只能透過NetApp Console進行。
+
+請參閱NetApp Console文件。 link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html["了解如何新增成員（使用者帳戶）"^]到您的 Workload Factory 帳戶。
+
+.結果
+受邀用戶將收到一封電子郵件，其中包含加入您的 Workload Factory 帳戶的說明。
