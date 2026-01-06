@@ -1231,9 +1231,6 @@
   <block id="fd7910c842c61985f2e90af78f1b304f" category="paragraph">Workload Factory 提供靈活的權限策略，使您能夠仔細控制對雲端環境的訪問，並根據您的 IT 策略為 Workload Factory 分配遞增的信任。</block>
   <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">了解更多關於工作負載工廠權限策略的信息</block>
   <block id="c51a57db8914c4d0002701f58f6f3d36" category="sidebar">工作負載工廠的權限</block>
-  <block id="67cc1fa9f1a93753f08cfa64d81c9661" category="inline-link">建構器工作負載</block>
-  <block id="fadf0a6a0fc7dcefddc336cf580be28f" category="list-text"><block ref="fadf0a6a0fc7dcefddc336cf580be28f" category="inline-link-rx"></block></block>
-  <block id="4dbca6300d097acc1ed4450a1e0d70d7" category="paragraph">透過與版本控制系統和 CI/CD 流程實現即時克隆集成，簡化軟體版本的使用和訪問，從而節省時間和資源。</block>
   <block id="97364a76409afb35bcf8e78ca91dd72d" category="paragraph">您可以從NetApp Console存取 Workload Factory。除了使用 Workload Factory 來取得 AWS 儲存和工作負載功能外，您還可以存取其他資料服務，例如NetApp Copy and Sync等。</block>
   <block id="01984b12c408bdab681895b084bd6c06" category="cell">ec2：撤銷安全群組出口</block>
   <block id="c8f3ab0d5795ea54c17a7c0f85e22fbd" category="cell">fsx：刪除備份</block>
@@ -1266,4 +1263,7 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">問我關於人工智慧助理首頁整合的問題</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 控制台主頁嵌入了 Ask me AI 助手，讓您可以詢問有關您自己的儲存環境的問題，直接從您的環境中獲取個人化見解，並參考先前的對話。您可以與「問我」進行交互，以了解您的工作負載、解決問題並了解更多關於工作負載工廠的資訊——所有這些都無需離開控制台。</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
+  <block id="2bc4b4a88d694b207aacb90573eb4b7f" category="inline-link">EDA工作負載</block>
+  <block id="f5051781c2f560348461adb9d928d406" category="list-text"><block ref="f5051781c2f560348461adb9d928d406" category="inline-link-rx"></block></block>
+  <block id="ce9f0edfab2350bf4aa1961cdca492ac" category="paragraph">透過自動化儲存參數管理，優化跨多個檔案系統的 FSx for ONTAP ，以提高效能並降低營運成本。</block>
 </blocks>
