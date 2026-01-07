@@ -1234,7 +1234,6 @@
   <block id="97364a76409afb35bcf8e78ca91dd72d" category="paragraph">您可以從NetApp Console存取 Workload Factory。除了使用 Workload Factory 來取得 AWS 儲存和工作負載功能外，您還可以存取其他資料服務，例如NetApp Copy and Sync等。</block>
   <block id="01984b12c408bdab681895b084bd6c06" category="cell">ec2：撤銷安全群組出口</block>
   <block id="c8f3ab0d5795ea54c17a7c0f85e22fbd" category="cell">fsx：刪除備份</block>
-  <block id="efd5fd045b2b5a8ad184072097e91070" category="cell">取得ONTAP EMS 事件的 FSx</block>
   <block id="b2ebd142eb09c979a63764f09a9ebbd9" category="cell">FSx 用於ONTAP EMS 分析</block>
   <block id="fdd997ab8b4252f76acdda855bb7b890" category="cell">基岩：取得推理配置文件</block>
   <block id="b67afe892c78b2491b3d4ac0b4c2f0b0" category="cell">基岩：呼叫模型及其反應流</block>
@@ -1266,4 +1265,5 @@
   <block id="2bc4b4a88d694b207aacb90573eb4b7f" category="inline-link">EDA工作負載</block>
   <block id="f5051781c2f560348461adb9d928d406" category="list-text"><block ref="f5051781c2f560348461adb9d928d406" category="inline-link-rx"></block></block>
   <block id="ce9f0edfab2350bf4aa1961cdca492ac" category="paragraph">透過自動化儲存參數管理，優化跨多個檔案系統的 FSx for ONTAP ，以提高效能並降低營運成本。</block>
+  <block id="27dd4ab95b0517b4bda67fc48ed886e9" category="cell">為ONTAP EMS 事件的 FSx 提供基於人工智慧的洞察</block>
 </blocks>

@@ -359,7 +359,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 | 模擬工作負載作業，以驗證可用權限，並與所需的 AWS 帳戶權限進行比較 | IAM ： SimulatePrincipalPolicy | 部署 | 全部 
 
 
-.4+| 取得ONTAP EMS 事件的 FSx | Bedrock ： ListInferenceProfiles | FSx 用於ONTAP EMS 分析 | 營運和補救 
+.4+| 為ONTAP EMS 事件的 FSx 提供基於人工智慧的洞察 | Bedrock ： ListInferenceProfiles | FSx 用於ONTAP EMS 分析 | 營運和補救 
 
 
 | 基岩：取得推理配置文件 | FSx 用於ONTAP EMS 分析 | 營運和補救 
