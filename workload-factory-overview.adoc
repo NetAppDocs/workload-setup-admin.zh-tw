@@ -125,10 +125,11 @@ link:codebox-automation.html["深入瞭解 CodeBox"]
 
 === 節省計算機
 
-Workload Factory 提供節省計算器，以便您可以將 FSx for ONTAP檔案系統上的儲存環境或資料庫工作負載的成本與彈性區塊儲存 (EBS)、彈性檔案系統 (EFS) 和 FSx for Windows File Server 的成本進行比較。根據您的儲存需求，您可能會發現 FSx for ONTAP檔案系統是最具成本效益的選擇。
+Workload Factory 提供節省計算器，以便您可以將儲存環境、資料庫或 VMware 工作負載在 FSx for ONTAP檔案系統上的成本與其他 Amazon 服務進行比較。根據您的儲存需求，您可能會發現 FSx for ONTAP檔案系統是最具成本效益的選擇。
 
 * link:https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["瞭解如何探索儲存環境的節約效益"^]
 * link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["瞭解如何探索資料庫工作負載的節約效益"^]
+* link:https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["了解如何為您的 VMware 工作負載節省成本"^]
 
 
 
