@@ -42,6 +42,8 @@ sidebar:
       url: "/log-in.html"
     - title: 管理服務帳戶
       url: "/manage-service-accounts.html"
+    - title: 建置和運行架構良好的工作負載
+      url: "/well-architected-workloads.html"
     - title: 設定通知
       url: "/configure-notifications.html"
     - title: 使用 Codebox 自動化工作
