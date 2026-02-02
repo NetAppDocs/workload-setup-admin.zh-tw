@@ -73,9 +73,6 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
         "elasticfilesystem:DescribeFileSystems",
         "ce:GetCostAndUsage",
         "ce:GetTags",
-        "ce:GetCostAndUsageWithResources",
-        "ce:GetCostForecast",
-        "ce:GetUsageForecast"
       ],
       "Resource": "*"
     },
@@ -110,10 +107,32 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
         "fsx:DeleteBackup",
         "fsx:TagResource",
         "fsx:UntagResource",
+        "fsx:CreateAndAttachS3AccessPoint",
+        "fsx:DetachAndDeleteS3AccessPoint",
+        "s3:CreateAccessPoint",
+        "s3:DeleteAccessPoint",
+        "s3:GetObjectTagging",
         "bedrock:InvokeModelWithResponseStream",
         "bedrock:InvokeModel",
         "bedrock:ListInferenceProfiles",
-        "bedrock:GetInferenceProfile"
+        "bedrock:GetInferenceProfile",
+        "s3tables:CreateTableBucket",
+        "s3tables:ListTables",
+        "s3tables:GetTable",
+        "s3tables:GetTableMetadataLocation",
+        "s3tables:CreateTable",
+        "s3tables:GetNamespace",
+        "s3tables:PutTableData",
+        "s3tables:CreateNamespace",
+        "s3tables:GetTableData",
+        "s3tables:ListNamespaces",
+        "s3tables:ListTableBuckets",
+        "s3tables:GetTableBucket",
+        "s3tables:UpdateTableMetadataLocation",
+        "s3tables:ListTagsForResource",
+        "s3tables:TagResource",
+        "s3:GetObjectTagging",
+        "s3:ListBucket"
       ],
       "Resource": "*"
     },
@@ -375,6 +394,60 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 
 | ce:GetTags | 成本和使用分析 | 視圖、規劃與分析 
+
+
+| 建立 S3 存取點並將其連接到 Amazon FSx for NetApp ONTAP 檔案系統 | fsx:CreateAndAttachS3AccessPoint | S3 存取點管理 | 營運和補救 
+
+
+| 從 FSx for ONTAP 檔案系統中分離 S3 存取點並將其刪除 | fsx:DetachAndDeleteS3AccessPoint | S3 存取點管理 | 營運和補救 
+
+
+| 建立 S3 存取點，以簡化儲存區存取管理 | s3：CreateAccessPoint | S3 存取點管理 | 營運和補救 
+
+
+| 刪除 S3 存取點 | s3：DeleteAccessPoint | S3 存取點管理 | 營運和補救 
+
+
+| 在 S3 存取點新增標籤 | s3：TagResource | S3 存取點管理 | 營運和補救 
+
+
+| 在 S3 存取點上列出並檢視標籤 | s3：ListTagsForResource | S3 存取點管理 | 營運和補救 
+
+
+| 從 S3 存取點移除標籤 | s3：UntagResource | S3 存取點管理 | 營運和補救 
+
+
+| 在 S3 存取點儲存貯體中探索物件 | s3：ListBucket | S3 儲存貯體作業 | 營運和補救 
+
+
+| 列出、建立和描述 S3 表儲存貯體 | s3tables：ListTableBuckets s3tables：CreateTableBucket s3tables：GetTableBucket | S3 表儲存貯體管理 | 營運和補救 
+
+
+| 列出、建立和擷取 S3 表 | s3tables：ListTables s3tables：CreateTable s3tables：GetTable | S3 表格操作 | 營運和補救 
+
+
+| 讀取表格中繼資料位置 | s3tables：GetTableMetadataLocation | S3 表格中繼資料操作 | 營運和補救 
+
+
+| 更新表中繼資料位置 | s3tables：UpdateTableMetadataLocation | S3 表格中繼資料操作 | 營運和補救 
+
+
+| 列出、建立和擷取表命名空間 | s3tables：ListNamespaces s3tables：CreateNamespace s3tables：GetNamespace | S3 命名空間作業 | 營運和補救 
+
+
+| 讀取表格資料（select、scan） | s3tables：GetTableData | S3 表格資料操作 | 營運和補救 
+
+
+| 寫入表格資料（插入） | s3tables：PutTableData | S3 表格資料操作 | 營運和補救 
+
+
+| 列出庫存表中的標籤（取得 FSx for ONTAP、儲存 VM、磁碟區 ID） | s3tables：ListTagsForResource | S3 表格標籤操作 | 營運和補救 
+
+
+| 為 Workload Factory 查詢標記庫存表 | s3tables：TagResource | S3 表格標籤操作 | 營運和補救 
+
+
+| 透過存取點擷取物件標記 | s3：GetObjectTagging | S3 物件操作 | 營運和補救 
 |===
 ====
 
@@ -827,7 +900,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | FSX ： DescrubeStorageVirtualMachines  a| 
 * 部署
-* 管理營運
+* 管理作業
 * 庫存
 
 | 視圖、規劃與分析 
@@ -835,14 +908,14 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | fsx:DescribeFileSystems  a| 
 * 部署
-* 管理營運
+* 管理作業
 * 庫存
 * 探索節約效益
 
 | 視圖、規劃與分析 
 
 
-| FSX ： ListTagsForResource | 管理營運 | 視圖、規劃與分析 
+| FSX ： ListTagsForResource | 管理作業 | 視圖、規劃與分析 
 
 
 | 取得 CloudFormation 和 VPC 的服務配額限制 / 在使用者帳戶中為提供的 SQL、網域和 FSx for ONTAP憑證建立金鑰 | serviceEquotas ： ListServiceQuotas | 部署 | 視圖、規劃與分析 
@@ -851,8 +924,8 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 | 使用 SSM) 查詢取得適用於 ONTAP 支援區域的 FSX 更新清單 | SSM) ： GetParametersByPath | 部署 | 視圖、規劃與分析 
 
 
-| 在傳送命令以管理部署後的作業之後，輪詢 SSM 回應 | SSM) ： GetCommandInvocation  a| 
-* 管理營運
+| 部署後發送管理操作命令後，輪詢 SSM 回應 | SSM) ： GetCommandInvocation  a| 
+* 管理作業
 * 庫存
 * 探索節約效益
 * 最佳化
@@ -861,7 +934,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 
 | 透過 SSM 向 EC2 執行個體傳送命令以進行發現和管理 | S10:SendCommand  a| 
-* 管理營運
+* 管理作業
 * 庫存
 * 探索節約效益
 * 最佳化
@@ -870,7 +943,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 
 | 取得部署後執行個體的 SSM 連線狀態 | SSM) ： GetConnectionStatus  a| 
-* 管理營運
+* 管理作業
 * 庫存
 * 最佳化
 
@@ -933,7 +1006,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 .4+| 取得，列出，建立及刪除 AD 的 SSM 參數， ONTAP 的 FSX 參數，以及在 AWS 帳戶中部署或管理時所使用的 SQL 使用者認證 | SSM) ： GetParameter ^1^  a| 
 * 部署
-* 管理營運
+* 管理作業
 * 庫存
 
 | 視圖、規劃與分析 
@@ -941,7 +1014,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | S10:GetParameters ^1^  a| 
 * 部署
-* 管理營運
+* 管理作業
 * 庫存
 
 | 視圖、規劃與分析 
@@ -949,14 +1022,14 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | SSM) ：推桿參數 ^1^  a| 
 * 部署
-* 管理營運
+* 管理作業
 
 | 視圖、規劃與分析 
 
 
 | S10:DeleteParameters ^1^  a| 
 * 部署
-* 管理營運
+* 管理作業
 
 | 視圖、規劃與分析 
 
@@ -1077,7 +1150,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | 為 NetApp ONTAP 資源標記 Amazon FSX 的自訂值，以在資源管理期間取得帳單詳細資料 | fsx:TagResource ^1^  a| 
 * 部署
-* 管理營運
+* 管理作業
 
 | 建立資料庫主機 
 
@@ -1129,7 +1202,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | fsx:CreateVolume  a| 
 * 部署
-* 管理營運
+* 管理作業
 
 | 建立資料庫主機 
 
@@ -1169,7 +1242,7 @@ summary: 若要使用NetApp Workload Factory 功能和服務，您需要提供�
 
 | 記錄： PutLogEvents  a| 
 * 部署
-* 管理營運
+* 管理作業
 
 | 建立資料庫主機 
 
@@ -2009,6 +2082,46 @@ VMware 工作負載有以下權限策略可供選擇：
 == 變更記錄
 
 新增和移除權限時、我們會在下方各節中加以註記。
+
+
+
+=== 2025 年 2 月 1 日
+
+以下權限已新增至儲存工作負載：
+
+* `s3:TagResource`
+* `s3:ListTagsForResource`
+* `s3:UntagResource`
+* `s3tables:CreateTableBucket`
+* `s3tables:ListTables`
+* `s3tables:GetTable`
+* `s3tables:GetTableMetadataLocation`
+* `s3tables:CreateTable`
+* `s3tables:GetNamespace`
+* `s3tables:PutTableData`
+* `s3tables:CreateNamespace`
+* `s3tables:GetTableData`
+* `s3tables:ListNamespaces`
+* `s3tables:ListTableBuckets`
+* `s3tables:GetTableBucket`
+* `s3tables:UpdateTableMetadataLocation`
+* `s3tables:ListTagsForResource`
+* `s3tables:TagResource`
+* `s3:GetObjectTagging`
+* `s3:ListBucket`
+
+
+
+
+=== 2025 年 12 月 4 日
+
+以下權限已新增至儲存工作負載：
+
+* `fsx:CreateAndAttachS3AccessPoint`
+* `fsx:DetachAndDeleteS3AccessPoint`
+* `s3:CreateAccessPoint`
+* `s3:DeleteAccessPoint`
+
 
 
 

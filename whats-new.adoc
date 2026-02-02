@@ -15,6 +15,51 @@ summary: 了解 Workload Factory 管理功能的新功能：雲端提供者憑�
 
 
 
+== 2026 年 2 月 1 日
+
+
+
+=== 架構完善的更新
+
+NetApp Workload Factory 包含針對 Elastic VMware Service （EVS） 工作負載的架構完善的評估，並新增了儲存和資料庫工作負載的配置。
+
+* *VMware 工作負載* NetApp Workload Factory 為運行架構良好的 Amazon Elastic VMware Service （EVS） 工作負載提供最佳實務和建議。
++
+link:https://docs.netapp.com/us-en/workload-vmware/view-evs-well-architected.html["實作架構良好的 EVS 配置"^]
+
+* *Storage workloads* Storage workload 中的架構完善功能新增了幾項配置，讓您更深入地了解儲存效能和成本。
++
+** 儲存 VM 邏輯報告
+** 優化快取磁碟區大小
+** 孤立的區塊裝置
++
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html["為 Storage 工作負載實施架構良好的檔案系統配置"^]
+
+
+
+* *資料庫工作負載* Workload Factory for Databases 包含 Oracle 的新儲存配置，用於啟用和設定 Direct NFS（dNFS），以提高 I/O 效能並降低主機和儲存系統的負載。
++
+** dNFS 啟用
+** dNFS 一致性 IP 解析
+** dNFS 設定檔
+** dNFS `nosharecache`
++
+link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["實作架構良好的資料庫工作負載"^]
+
+
+
+
+
+
+
+=== 儲存的新權限
+
+儲存工作負載新增了權限，以增強對 S3 存取點的管理。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["權限參考變更記錄"]
+
+
+
 == 2026年1月4日
 
 
