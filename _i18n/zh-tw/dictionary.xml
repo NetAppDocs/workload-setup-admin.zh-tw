@@ -1501,7 +1501,6 @@
   <block id="a49bf929860657a29ec7b321ff7a63ba" category="list-text">*Storage VM 邏輯報告*</block>
   <block id="7edda8ec9be79d47927f4aa7e27bd776" category="paragraph">Workload Factory 建議將儲存 VM 的預設報告設定設為邏輯報告，以便更了解磁碟區層級的儲存使用情況。</block>
   <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">成本優化可協助您在保持低成本的同時，為企業創造最大價值。</block>
-  <block id="6d281baa5967f3e1be000f071dda6d92" category="list-text">*孤立的區塊設備*</block>
   <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">如果區塊設備連續七天未使用、Workload Factory 建議歸檔區塊設備資料或刪除未使用的區塊設備以降低成本。</block>
   <block id="08e31d66d631ac235f15db15294a1bed" category="paragraph">為了獲得最佳儲存效能，請在主 SSD 層建立 FSx for ONTAP 磁碟區。使用容量池層可能會降低效能並增加延遲。</block>
   <block id="c882de88255b448709010276c1779e90" category="paragraph">為了優化儲存效能，請將檔案系統容量設定為磁碟區總大小的 1.35 倍。</block>
@@ -1518,4 +1517,5 @@
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">* 叢集節點管理 *</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">請確保您的 EVS 叢集節點已配置適當的 EC2 停止和終止保護。EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管理。如果沒有適當的 EC2 層級保護，節點可能會意外地從 EC2 主控台停止或終止，這可能導致虛擬機器資料無法使用或資料遺失。</block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026 年 2 月 1 日</block>
+  <block id="c359614024935abd3712075452782fa3" category="list-text">*非作用中區塊裝置*</block>
 </blocks>
