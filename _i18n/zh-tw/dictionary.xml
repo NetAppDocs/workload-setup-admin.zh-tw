@@ -995,7 +995,6 @@
   <block id="29ff7127ee20a064050f18e60ebefb52" category="inline-image-macro">顯示NetApp Workload Factory 使用者介面帳戶選單選項的螢幕截圖。其中一個選項是服務帳戶。</block>
   <block id="a9e0a4cc2ab34b88741d440069a23306" category="paragraph"><block ref="a9e0a4cc2ab34b88741d440069a23306" category="inline-image-macro-rx" type="image"></block></block>
   <block id="49f5ed0a90981c28c41567afa9022439" category="paragraph">用戶端金鑰僅可見一次，且不會被 Workload Factory 儲存在任何地方。複製或下載秘密並安全儲存。</block>
-  <block id="cde2339a39bfe4d657d43be10594e1d0" category="list-text">或者，您可以透過執行客戶端憑證交換來取得 Auth0 管理 API 的存取權杖。 curl 範例展示如何取得客戶端 ID 和金鑰並使用 API 產生有時間限制的存取權杖。此令牌可提供數小時的NetApp Workload Factory API 存取權限。</block>
   <block id="6088e1e1d002a4c07aec5cec2ca41900" category="list-text">在*服務帳戶*頁面上，選擇操作選單，然後選擇*刪除*。</block>
   <block id="9e4d021b600a18ca2bdc19e316e61a90" category="paragraph">當您使用第一個工作負載工廠功能（或多個功能）時，您需要使用這些工作負載功能所需的權限來建立憑證。您將把憑證新增至 Workload Factory，但您需要存取 AWS 管理主控台來建立 IAM 角色和原則。當使用 Workload Factory 中的任何功能時，這些憑證將在您的帳戶中可用。</block>
   <block id="b6cd757220290782ab371e620582ddcd" category="paragraph">在 Workload Factory 中新增多組 AWS 憑證可提供使用其他功能所需的額外權限，例如 FSx for ONTAP檔案系統、在 FSx for ONTAP上部署資料庫、遷移 VMware 工作負載等。</block>
@@ -1518,4 +1517,8 @@
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">請確保您的 EVS 叢集節點已配置適當的 EC2 停止和終止保護。EVS ESXi 節點應僅使用 vCenter 或其他 VMware 層級管理工具進行管理。如果沒有適當的 EC2 層級保護，節點可能會意外地從 EC2 主控台停止或終止，這可能導致虛擬機器資料無法使用或資料遺失。</block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026 年 2 月 1 日</block>
   <block id="c359614024935abd3712075452782fa3" category="list-text">*非作用中區塊裝置*</block>
+  <block id="7be2086f13a4f10a02431f16800fa81d" category="inline-link-macro">NetApp Console API 文件</block>
+  <block id="a245d89706ebe16fde36591a5e609a33" category="list-text">您也可以透過執行客戶端憑證交換來取得 Auth0 管理 API 的存取權杖。有關產生刷新令牌的資訊，請參閱 <block ref="3b56da8d0a374b6655d8f6eed0786ff9" category="inline-link-macro-rx"></block>。</block>
+  <block id="c24f8da0f82882bea0b6a996bf370a07" category="paragraph">curl 範例展示如何使用客戶端 ID 和金鑰，透過 API 產生有時效性的存取權杖。該令牌提供數小時的 NetApp Workload Factory API 存取權限。</block>
+  <block id="63c9444676abbb5883eb0d8ae98bc87a" category="paragraph">將輸出結果發佈到 \https://netapp-cloud-account.auth0.com/oauth/token 以取得存取權杖。</block>
 </blocks>
