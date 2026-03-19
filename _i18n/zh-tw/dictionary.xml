@@ -1391,4 +1391,5 @@
   <block id="23b296afc9efdc38bb284c5491538e2f" category="doc">使用 NetApp Workload Factory 建構和運行架構良好的工作負載</block>
   <block id="c3a8b5ec0adade5d633e6e6466b483a6" category="paragraph">Workload Factory 是 NetApp 管理套件，適用於 Amazon FSx for NetApp ONTAP，可協助您維護和執行符合 AWS Well-Architected Framework 的可靠、安全、高效且經濟的工作負載配置。Workload Factory 提供每日工作負載分析、建議和自動修復，以促進工作負載的健康運作。透過自動化此流程，Workload Factory 可最大限度地減少人為錯誤，並確保工作負載管理的一致性。</block>
   <block id="421a8570ce985526e7d5c4e54d3094e2" category="section-title">開始使用 Workload Factory 來偵測和修復工作負載配置錯誤</block>
+  <block id="7274d50d53fc920babacadb1439892ff" category="sidebar">實作架構良好的 Elastic VMware Service 組態</block>
 </blocks>
