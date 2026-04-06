@@ -1392,4 +1392,9 @@
   <block id="421a8570ce985526e7d5c4e54d3094e2" category="section-title">開始使用 Workload Factory 來偵測和修復工作負載配置錯誤</block>
   <block id="7274d50d53fc920babacadb1439892ff" category="sidebar">實作架構良好的 Elastic VMware Service 組態</block>
   <block id="8d2488f820b40da5c2d7dfd912588e9a" category="section-title">2026 年 2 月 1 日</block>
+  <block id="77633bb85f2dda716363da565416542c" category="paragraph">NetApp Workload Factory 通知服務包含針對儲存設備的 NetApp Autonomous Ransomware Protection with AI（ARP/AI）通知。</block>
+  <block id="88614adcb88ae7a8a2cbc6a00a38780b" category="cell">在 FSx for ONTAP 檔案系統中偵測到可疑磁碟區活動</block>
+  <block id="3577aeab8c1da0cce8c18c1a2ea9394e" category="cell">NetApp 具備人工智慧的自主勒索軟體防護（ARP/AI）偵測到可疑的磁碟區活動。</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">勒索軟體防護</block>
+  <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026 年 4 月 6 日</block>
 </blocks>

@@ -52,6 +52,9 @@ Workload Factory 針對下列事件發送通知：
 
 
 | FSx for ONTAP的自動 inode 管理事件 | ONTAP磁碟區的 FSx inode 計數達到警告閾值計數/百分比總數。 | 容量管理 | 警告 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| 在 FSx for ONTAP 檔案系統中偵測到可疑磁碟區活動 | NetApp 具備人工智慧的自主勒索軟體防護（ARP/AI）偵測到可疑的磁碟區活動。 | 勒索軟體防護 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
 |===
 
 
