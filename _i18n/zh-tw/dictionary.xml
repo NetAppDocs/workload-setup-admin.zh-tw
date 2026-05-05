@@ -830,8 +830,6 @@
   <block id="3a966eb1052bbc81baf1db313011eddf" category="cell">Microsoft SQL Server 或 PostgreSQL 主機部署失敗。更多信息，請參考作業監控。</block>
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="cell">錯誤</block>
   <block id="9ccebe6954a81c5c1f9a57ddc658596a" category="list-text">您需要使用 Amazon SNS 主控台或 AWS CLI 配置 Amazon SNS 並建立 Amazon SNS 主題。</block>
-  <block id="9bc635b321d7a10ffec6283dfaa84aa0" category="list-text">選擇*啟用 SNS 通知*。</block>
-  <block id="677c7dc689b0afdcb0633b635edd3a87" category="list-text">依照說明從 Amazon SNS 主控台配置 Amazon SNS。</block>
   <block id="2339afaee28d73e91f81e490b67a4b5c" category="list-text">透過發送測試通知驗證配置後，選擇*套用*。</block>
   <block id="5e5392f4dcdf5502f0937be76da274d0" category="section-title">訂閱 Amazon SNS 主題</block>
   <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link">說明</block>
@@ -919,7 +917,6 @@
   <block id="67c0397212edda6d32cfd64e83e5f8dc" category="paragraph"><block ref="2171d3ebe49d6b87e35ddf53dd80032d" category="inline-link-macro-rx"></block> 。</block>
   <block id="a59c5f15e65baf8d84c9f0e2d778cfc9" category="summary">您可以設定NetApp Workload Factory，在發生某些類型的事件時向某個人或其他應用程式發送通知。</block>
   <block id="5ba8acf00a9c87f3087344b902777a6e" category="doc">配置NetApp Workload Factory 通知</block>
-  <block id="f476688085fcfdcff7daf09d94971782" category="paragraph">您可以設定NetApp Workload Factory 通知服務，以將通知作為NetApp控制台中的警報或 Amazon SNS 主題發送。當您部署控制台代理程式或連結時，以警報形式發送的通知會出現在NetApp控制台中。當 Workload Factory 向 Amazon SNS 主題發布通知時，該主題的訂閱者（例如人員或其他應用程式）會在為該主題配置的端點接收通知（例如電子郵件或簡訊）。</block>
   <block id="ac41ca3061dfdb48a516c0388098eccd" category="paragraph">Workload Factory 針對下列事件發送通知：</block>
   <block id="e57a1a49b9af455c41d31e251929ebe5" category="cell">您的帳戶中的所有 Microsoft SQL Server 執行個體均已針對架構問題進行分析。此事件的描述給出了架構良好的實例和未最佳化的實例的數量。從工作負載工廠控制台查看資料庫清單中精心設計的狀態結果和建議。</block>
   <block id="8a139d1f9e892c3827baf8993b22e06f" category="cell">偵測到 FSx for ONTAP問題</block>
@@ -927,23 +924,16 @@
   <block id="2eff23d45d9eb3d8a7c0149407c6dcf8" category="cell">精心設計的分析</block>
   <block id="8da726c31c391e624ecc54fd7ed145d6" category="cell">FSx for ONTAP檔案系統</block>
   <block id="7c1a1feb7968ed15d338ae3e7284dd4e" category="section-title">配置工作負載工廠通知</block>
-  <block id="014e444433a1c7cbbdd9c8c1f4fefa4b" category="paragraph">使用NetApp控制台或 Workload Factory 控制台設定 Workload Factory 通知。如果您使用NetApp控制台，則可以設定 Workload Factory 以將通知作為NetApp控制台中的警報或 Amazon SNS 主題發送。您可以從NetApp控制台中的 *通知設定* 配置通知。</block>
   <block id="1a7d7414c3da7bd3d69c29c1c9dc74ad" category="list-text">請注意，Workload Factory 支援 *標準* 主題類型。這種類型的主題不能確保通知按照收到的順序發送給訂閱者，因此如果您有關鍵或緊急通知，請考慮這一點。</block>
   <block id="4be7ff4e16147ce765eb61308f73beda" category="open-title">從NetApp控制台配置通知</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link-macro">NetApp控制台</block>
   <block id="fe3e3ad90678611fd3fe6b4348fba6dc" category="list-text">登入<block ref="7532dfde8c533672ea63a5b546224a97" category="inline-link-macro-rx"></block>。</block>
   <block id="0a4d4130dbebdc7083cd7435e388797d" category="list-text">從NetApp控制台選單中，選擇 *Workloads*、*Administration*，然後選擇 *Notifications setup*。</block>
-  <block id="df93da47c0462e1ca9969b57c5b59331" category="list-text">在通知設定頁面上，執行以下操作：</block>
-  <block id="d993cd32e8e4b3f49b00361542cc4c2e" category="list-text">選用：選擇「啟用NetApp控制台通知」以設定 Workload Factory 在NetApp控制台中傳送通知。</block>
   <block id="a4caa02a925f9e2b61439b42ecfebb6f" category="paragraph">建立主題後，複製主題 ARN 並將其輸入到 *通知設定* 頁面上的 *SNS 主題 ARN* 欄位中。</block>
-  <block id="d055c503023d741dbaa19c65690c1ebd" category="paragraph">Workload Factory 已設定為傳送通知給您指定的 Amazon SNS 主題。</block>
   <block id="4bc45d22028e53a00f4de2c50839c911" category="open-title">從 Workload Factory 控制台設定通知</block>
   <block id="219bd6a410f8c490dbc0ffbcf504910f" category="list-text">登入<block ref="ed002915dbbbf90a20b3d8fdf4cc2390" category="inline-link-macro-rx"></block>。</block>
   <block id="99a1b22d5c08e1ea6e260730064a78c1" category="list-text">從 Workload Factory 控制台選單中，選擇 *Workloads*、*Administration*，然後選擇 *Notifications setup*。</block>
   <block id="48069e5c28c259c5ae7ab58ad98f2b42" category="paragraph">配置 Workload Factory 向主題發送通知後，請依照<block ref="88c7b6108316e02c36e39863bedc2019" category="inline-link-rx"></block>在 Amazon SNS 文件中訂閱主題，以便您可以接收來自 Workload Factory 的通知。</block>
-  <block id="c5fd377ea2f0481283c28906ff7fda82" category="paragraph">您可以透過對通知套用過濾器來減少不必要的通知流量，並為特定使用者提供特定的通知類型。您可以使用 Amazon SNS 策略來傳送 SNS 通知，並使用NetApp控制台中的通知設定來執行此操作。</block>
-  <block id="163b273913190cc19572b1888b07e784" category="section-title">NetApp控制台中的過濾通知</block>
-  <block id="05efbe0ae6892f06551778677d8a7b08" category="paragraph">您可以使用NetApp控制台通知設定按嚴重性等級（例如「嚴重」、「訊息」或「警告」）過濾控制台中收到的通知。</block>
   <block id="454bb1110d6093b9ef29fd01d063b03f" category="inline-link">NetApp控制台文檔</block>
   <block id="53dc504e1574e48bdd8e3e0657d1ae00" category="paragraph">有關在控制台中過濾通知的更多信息，請參閱<block ref="46a34f1df7f0cbab6b8d9cd707e12b7f" category="inline-link-rx"></block>。</block>
   <block id="6370c01a33f220ec64c0532b1236e695" category="summary">NetApp Workload Factory 可透過兩個基於 Web 的控制台存取。</block>
@@ -1397,4 +1387,35 @@
   <block id="3577aeab8c1da0cce8c18c1a2ea9394e" category="cell">NetApp 具備人工智慧的自主勒索軟體防護（ARP/AI）偵測到可疑的磁碟區活動。</block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">勒索軟體防護</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026 年 4 月 6 日</block>
+  <block id="15407be309823d0bd0fd1f09d53ccd89" category="doc">Workload Factory 的電子郵件通知</block>
+  <block id="a1ed0466beff73a72b5d95ef2b956e83" category="paragraph">現在，您無需設定 Amazon SNS 主題即可透過電子郵件接收 Workload Factory 通知。啟用電子郵件通知功能，即可傳送通知至與該帳戶關聯的任何電子郵件地址。</block>
+  <block id="1c6cc010b2ec0805e327534ebbfb3973" category="paragraph">您可以透過 Workload Factory 控制台或 NetApp Console 設定電子郵件通知。NetApp Console 還提供配置選項，可讓您設定顯示在鈴鐺圖示下的 NetApp Console 通知。</block>
+  <block id="f76fbee6bb24fc9289f051c59b4058b2" category="paragraph">如果在 NetApp Console 中配置通知，NetApp Console 將負責傳送通知。Workload Factory 主控台中的通知設定將變為唯讀，以防止重複通知。</block>
+  <block id="b2dfd446bf724d5a49ad6d34fffa8cd5" category="section-title">EDA 延遲的新通知</block>
+  <block id="72139a3373d3afc6254af7e39dc3cd2a" category="paragraph">NetApp Workload Factory 通知服務包含 EDA 延遲通知，當 EDA 操作的延遲超過一定閾值時，該通知會通知您。</block>
+  <block id="06c8d6de7277fbcb62791ed118b9bc96" category="paragraph"><block ref="06c8d6de7277fbcb62791ed118b9bc96" category="inline-link-macro-rx"></block></block>
+  <block id="ecfa38cbb07762f651b2d55730a9503d" category="paragraph">您可以設定 NetApp Workload Factory 通知服務，使其將通知以警報形式傳送至 NetApp Console、帳戶關聯的任何電子郵件地址或 Amazon SNS 主題。如果您已部署 Console 代理或鏈接，則以警報形式傳送的通知將顯示在 NetApp Console 中。當 Workload Factory 將通知發佈到 Amazon SNS 主題時，該主題的訂閱者（例如使用者或其他應用程式）將透過為該主題配置的端點（例如電子郵件或簡訊）接收通知。</block>
+  <block id="6a3ad7ac445ce4c1e599c439dfbb0b26" category="cell">偵測到延遲臨界值突破</block>
+  <block id="1bb95b7c12022ee051b8199049811a71" category="cell">FSx for ONTAP 叢集中的一個或多個磁碟區超過了延遲閾值。</block>
+  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="cell">效能監控</block>
+  <block id="81f1b99be9951f3725aa3dd62766099e" category="cell">EDA</block>
+  <block id="4bd55d131f0ae81cc60c9fe282068a64" category="paragraph">您可以使用 NetApp Console 或 Workload Factory 主控台來設定 Workload Factory 通知。</block>
+  <block id="d7dcef6f1d8c5c823f847fd4c7fa8fe9" category="paragraph">接收通知的選項包括：</block>
+  <block id="cce7bd3a3721067273866ec7f3ec7b7c" category="list-text">*通知*：設定 Workload Factory 以傳送顯示在 NetApp Console 鈴鐺圖示下的通知。</block>
+  <block id="a58c54927d168d58046b4ad29f5254fa" category="list-text">*電子郵件*：在 NetApp Console 啟用電子郵件通知，無需設定 Amazon SNS，即可將通知發送到與帳戶關聯的任何電子郵件地址。</block>
+  <block id="d7b2e59eb21ae19aa7b493f93fbcb35f" category="list-text">*Amazon SNS*：設定 Workload Factory 以傳送通知至 Amazon SNS 主題。</block>
+  <block id="e174fa0e05fb5c229301ef978773782d" category="list-text">*電子郵件*：在 Workload Factory Console 中啟用電子郵件通知，即可接收傳送至與該帳戶關聯的任何電子郵件地址的通知，而無需設定 Amazon SNS。</block>
+  <block id="7184b61f2058f394c7d6b104dc166242" category="list-text">*Amazon SNS*：使用 Workload Factory 主控台設定 Workload Factory 以向 Amazon SNS 主題發送通知。</block>
+  <block id="150b7425bee731f53d950cb07997d3a9" category="admonition">當你在 NetApp Console 中設定通知時，NetApp Console 會接管通知傳送的管理權限，並且 Workload Factory console 的通知選項會被停用並以唯讀模式顯示。工具提示會顯示通知是由 NetApp Console 管理。之後你只能從 NetApp Console 管理通知。</block>
+  <block id="719c05c1c99e00fa5e0edb33bb8190f6" category="paragraph">以下先決條件僅適用於設定 Amazon SNS 通知時：</block>
+  <block id="62ebe1005c43ca37dff7ddb9684484ac" category="list-text">在「通知」設定頁面上，啟用下列一或多種通知類型：</block>
+  <block id="3cffbdfd446e6b3ca39fc52d1b2a87ab" category="list-text">*NetApp Console 通知*：選擇*啟用 NetApp Console 通知*以設定 Workload Factory 在 NetApp Console 中傳送通知。</block>
+  <block id="4941b94ab67ffcf8b95fddca7b5ce770" category="list-text">*電子郵件通知*：選取 *啟用電子郵件通知*，將 Workload Factory 設定為傳送通知至與該帳戶相關聯的任何電子郵件地址。</block>
+  <block id="0d7adbc19c316fab18fa015b723496bd" category="list-text">*Amazon SNS 通知*：選取*啟用 SNS 通知*，然後依照指示從 Amazon SNS 主控台設定 Amazon SNS。</block>
+  <block id="458f208085c8b6ec69e163ddf2378427" category="list-text">啟用以下一種或多種通知類型：</block>
+  <block id="622901cf56fa55473d2f9550e6422faf" category="list-text">*電子郵件通知*：選取 *啟用電子郵件通知*。與該帳戶相關聯的任何電子郵件地址都會以唯讀模式顯示。</block>
+  <block id="3bf17ee9de6360f01456d2fe35c8ff4c" category="paragraph">您可以透過對通知套用篩選器，減少不必要的通知流量，並針對特定使用者推播特定類型的通知。您可以使用 Amazon SNS 策略來管理 SNS 通知，也可以在 NetApp Console 中使用通知設定來實現這一點。</block>
+  <block id="8749fce6a42b5cc208c97e090bbdf52e" category="section-title">在 NetApp Console 中篩選通知</block>
+  <block id="067205dc8475e129dc9d47a407ae631d" category="paragraph">您可以使用 NetApp Console 通知設定，依嚴重性層級（例如 Critical、Info 或 Warning）篩選您在 Console 中收到的通知。</block>
+  <block id="3be044b694628f6e958377c22febfacd" category="section-title">2026 年 5 月 3 日</block>
 </blocks>
