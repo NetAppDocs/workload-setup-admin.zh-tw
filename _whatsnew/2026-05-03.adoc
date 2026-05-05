@@ -19,3 +19,11 @@
 NetApp Workload Factory 通知服務包含 EDA 延遲通知，當 EDA 操作的延遲超過一定閾值時，該通知會通知您。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["配置工作負載工廠通知"]
+
+
+
+=== FSx for ONTAP 檔案系統的新通知
+
+NetApp Workload Factory 通知服務包括每月向您的帳戶發送成本摘要通知，其中顯示了支出趨勢、異常變化以及 FSx for ONTAP 檔案系統的最佳節省機會。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["配置工作負載工廠通知"]
