@@ -5,8 +5,6 @@
   <block id="1a04b786edc8b8251d22307b11cb2a8d" category="list-text">* 自動 * ：您擷取的權限相關資訊量最少、然後使用 CloudForgation 堆疊來建立您認證的 IAM 原則和角色。</block>
   <block id="3e704746794b6c6da13402ca9df54660" category="section-title">手動新增認證至帳戶</block>
   <block id="ea106b6fa0504ddb53d4506dcd8e7755" category="paragraph">建立認證有三個部分：</block>
-  <block id="b4968210d824a9808cbfac903e6a2461" category="list-text">選取您要使用的服務和權限層級、然後從 AWS 管理主控台建立 IAM 原則。</block>
-  <block id="3b022a10e2c2436d37f59e86b18713f7" category="list-text">從 AWS 管理主控台建立 IAM 角色。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始之前</block>
   <block id="36a8744ea109fc8ef18fd018d5d97aa0" category="paragraph">您必須擁有認證才能登入 AWS 帳戶。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
@@ -193,10 +191,7 @@
   <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">請查看您的收件匣、查看 NetApp 寄送的電子郵件、其中包含驗證電子郵件地址的指示。</block>
   <block id="94f38e991501c8594d502e52dd265abd" category="paragraph">您必須先執行此步驟、才能登入。</block>
   <block id="94d337ef5b62bd31ee54e5111cfec45f" category="list-text">出現提示時、請檢閱終端使用者授權合約並接受條款、然後選取 * 繼續 * 。</block>
-  <block id="b789a2d1c7228d0b2d7174302e2c6996" category="list-text">在 * 帳戶 * 頁面上、輸入您帳戶的名稱、並選擇性地選取您的工作說明。</block>
-  <block id="f54bc40f2305bb493aa6597d8c67d892" category="paragraph">帳戶是 NetApp 身分識別平台的頂層元素、可讓您新增及管理權限與認證。</block>
   <block id="2b7293baeca5711138792716543c991a" category="inline-image-macro">使用新帳戶登入時出現的「帳戶」頁面的螢幕擷取畫面。</block>
-  <block id="28fc544db57c6f54a41eaa5c6ebc4a57" category="paragraph"><block ref="28fc544db57c6f54a41eaa5c6ebc4a57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">註冊您的帳戶以取得 NetApp 支援</block>
@@ -893,10 +888,8 @@
   <block id="287ae8bc216279a75c04344894e04b7f" category="doc">將 AWS 憑證新增至 Workload Factory</block>
   <block id="5adad9ce28422d9fe7825511e24aa601" category="paragraph">新增和管理 AWS 憑證，以便NetApp Workload Factory 擁有在您的 AWS 帳戶中部署和管理雲端資源所需的權限。</block>
   <block id="7f76e91e5513affc227459b415e2e1cf" category="paragraph">您可以從「憑證」頁面將 AWS 憑證新增至現有的 Workload Factory 帳戶。這為 Workload Factory 提供了管理 AWS 雲端環境中的資源和流程所需的權限。</block>
-  <block id="ebb29cdb5a9f5368e3f445c808c91552" category="list-text">*手動*：您在 Workload Factory 中新增憑證時在您的 AWS 帳戶中建立 IAM 原則和 IAM 角色。</block>
   <block id="c3ba6c13344137feef1d3795c8b29466" category="paragraph">您可以手動將 AWS 憑證新增至 Workload Factory，以授予您的 Workload Factory 帳戶管理用於執行獨特工作負載的 AWS 資源所需的權限。您新增的每組憑證都將包含一個或多個基於您要使用的工作負載功能的 IAM 策略，以及指派給您帳戶的 IAM 角色。</block>
   <block id="9b311c0df60f3fcb1498372665b63e61" category="admonition">您可以從 Workload Factory 控制台或NetApp控制台將 AWS 憑證新增至帳戶。</block>
-  <block id="875b761ddc794776aadfc56fc5a6fc34" category="list-text">從 Workload Factory 中輸入名稱並新增憑證。</block>
   <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link">工作負載工廠控制台</block>
   <block id="6c8ca72a28d9651706405d888093910e" category="list-text">登入<block ref="04c72ef1cb137ba02eafcfdeb6fc7765" category="inline-link-rx"></block>。</block>
   <block id="6191b3848b93c4178f95391680ab2108" category="list-text">從選單中選擇“*管理*”，然後選擇“*憑證*”。</block>
@@ -1423,4 +1416,24 @@
   <block id="e3e28d348f2fd8f74a410b0565f54037" category="cell">每月帳戶費用匯總，顯示支出趨勢、異常變化以及適用於 FSx for ONTAP 檔案系統的最佳節省機會。</block>
   <block id="e298f728c751f07eb265d52e8b508cc2" category="cell">成本報告</block>
   <block id="f983e68b5fe658be13decdbe22777f19" category="summary">了解 Workload Factory 管理功能的最新動態，例如雲端供應商認證、Codebox 增強功能等等。</block>
+  <block id="3bb5ae684d139ecc39b584ffe9e6033b" category="paragraph">NetApp Workload Factory 通知服務包含複製延遲通知。</block>
+  <block id="bdd14b3b036670ed34f9ec4d3b52c70c" category="section-title">支援 AWS GovCloud（US）帳戶</block>
+  <block id="bc2438830b45cc61abad63e0b037a228" category="paragraph">現在您可以在 Workload Factory 中建立 AWS GovCloud（美國）帳戶。此帳戶類型僅使用 AWS 美國 GovCloud 終端節點和區域進行設定和操作。憑證和金鑰保留在 GovCloud 中。支援 GovCloud（美國）區域。</block>
+  <block id="b6d9ef2d00d295b73db4c150b66667c7" category="inline-link-macro">在 Workload Factory 中建立 AWS GovCloud（US）帳戶</block>
+  <block id="02235c7f58acbfe62b6b373b8f8ef557" category="paragraph"><block ref="02235c7f58acbfe62b6b373b8f8ef557" category="inline-link-macro-rx"></block></block>
+  <block id="79031a3594e961554e9c04f8abe20efa" category="list-text">*手動*：您需要在 Workload Factory 中新增憑證時，在您的 AWS 帳戶中建立 IAM 政策和 IAM 角色。AWS GovCloud（US）憑證必須手動新增。</block>
+  <block id="792c9140da9b146f94c73ec223b6fc51" category="paragraph">Workload Factory 不支援 GovCloud 帳戶自動化。</block>
+  <block id="60071fa639c31fcd4a70e99949388fc9" category="paragraph">AWS GovCloud（US）憑證必須手動新增。</block>
+  <block id="45bf4c80f61944fd3fcaad58870d0db3" category="list-text">步驟 1：選擇要使用的服務和權限級別，然後從 AWS Management Console 建立 IAM 原則。</block>
+  <block id="5fe86d852cf356c78e39b05d0e9745e8" category="list-text">步驟 2：從 AWS Management Console 建立 IAM 角色。</block>
+  <block id="e4d64fd268d05c9bc7e7e0c0300d69ba" category="list-text">步驟 3：從 Workload Factory 中，輸入名稱並新增認證資料。</block>
+  <block id="64faf5c72ad7f70350cc60a29e7ec76e" category="admonition">使用 CloudFormation 新增認證至 AWS GovCloud（US）帳戶不受支援。</block>
+  <block id="5038f398ec0b8521dc65bd49c565199c" category="cell">複製延遲</block>
+  <block id="7e3ba9b3dfe6a66c23b3a8d2e106e2dc" category="cell">複寫作業所需時間超出預期。</block>
+  <block id="6a34595811c59ce6c3f72924ac92f741" category="list-text">在 *Account* 頁面上，建立一個帳戶。帳戶是 NetApp 身分識別平台中的頂級元素，它允許您新增和管理權限和憑證。</block>
+  <block id="91cf9192d8e3e7c1c5d93a04ee02a619" category="paragraph"><block ref="91cf9192d8e3e7c1c5d93a04ee02a619" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c983ef2dda673a36e8455e61f88625fc" category="list-text">輸入帳戶名稱。</block>
+  <block id="d097d681103ac768d9ca87aa43096db9" category="list-text">您可以選擇將帳戶設定為 AWS GovCloud（US）帳戶。此帳戶類型僅使用 AWS GovCloud（US）端點和區域進行設定和操作。認證和機密資訊保留在 GovCloud 中。此選擇為永久性。</block>
+  <block id="5aa69fed46341f59b5dc6e550c082135" category="list-text">（選用）提供帳戶的工作說明。</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026 年 5 月 31 日</block>
 </blocks>
