@@ -169,3 +169,14 @@ Workload Factory 讓您能夠針對特定工作負載最佳化、自動化和操
 
 
 https://console.workloads.netapp.com/api-doc["查看 Workload Factory REST API 文檔"^]
+
+
+
+== 區域支援
+
+以下AWS區域不受支援：
+
+* 中國地區
+* Secret Cloud
+* Top Secret Cloud
+

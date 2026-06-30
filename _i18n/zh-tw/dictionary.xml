@@ -1436,4 +1436,13 @@
   <block id="d097d681103ac768d9ca87aa43096db9" category="list-text">您可以選擇將帳戶設定為 AWS GovCloud（US）帳戶。此帳戶類型僅使用 AWS GovCloud（US）端點和區域進行設定和操作。認證和機密資訊保留在 GovCloud 中。此選擇為永久性。</block>
   <block id="5aa69fed46341f59b5dc6e550c082135" category="list-text">（選用）提供帳戶的工作說明。</block>
   <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026 年 5 月 31 日</block>
+  <block id="b8646f09ea34b75c077cfea12f75617b" category="inline-link-macro">權限參考</block>
+  <block id="cd96cf7ebfb9b4a10268be38c383fa2e" category="paragraph">了解更多關於每個工作負載功能所需的權限的資訊，請參閱 <block ref="a5f4ae61e232cd6bd835f3c22c2ae14c" category="inline-link-macro-rx"></block>。</block>
+  <block id="d19d35e43d16db0ea1d21d81cb1ac01d" category="admonition">如果您已有 GovCloud 帳戶，則無需 Cost Explorer 權限<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block>或<block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>在「儲存」的「檢視、規劃和分析」原則中擁有這些權限。從程式碼方塊複製腳本後，請移除這些權限並刪除上一行結尾的逗號。</block>
+  <block id="cd9aa9a92963bccf53a18059deb4f182" category="admonition">AWS GovCloud 不支援 AWS Cost Explorer，因此您不需要這些權限：<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> 和<block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>。如果您包含這些權限，則該原則仍然有效。</block>
+  <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">區域支援</block>
+  <block id="468469fded9ecf5cf0e132a6daa62d32" category="paragraph">以下AWS區域不受支援：</block>
+  <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中國地區</block>
+  <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">Secret Cloud</block>
+  <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Top Secret Cloud</block>
 </blocks>
