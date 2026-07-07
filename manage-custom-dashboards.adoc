@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: manage-custom-dashboards.html 
+keywords: manage dashboards, edit dashboard, delete dashboard, refresh dashboard, dashboard catalog 
+summary: 存取您的儀表板目錄，以在 Workload Factory 中檢視、編輯、重新整理和刪除自訂儀表板。 
+---
+= 管理自訂儀表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以透過儀表板目錄管理您的自訂儀表板。您可以在這裡查看詳細資訊、重新整理資料、編輯儀表板設定或刪除不再需要的儀表板。
+
+.關於這項工作
+您 Workload Factory 帳戶中的所有使用者都可以存取所有自訂儀表板。每個儀表板都會顯示基本詳細資訊，例如建立者姓名、建立日期以及目前是否有人正在編輯。
+
+自訂儀表板為唯讀模式。無法變更儲存或工作負載設定。您可以編輯儀表板本身，但無法編輯其監控的資源。
+
+.開始之前
+您的 Workload Factory 帳戶中必須至少有一個自訂儀表板。
+
+
+
+== 存取儀表板目錄
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 從選單中選擇 *Workloads Overview*，然後選擇 *Custom dashboards*。
++
+儀表板目錄顯示您 Workload Factory 帳戶中的所有自訂儀表板。
+
+. 查看儀表板清單。
+
+
+
+
+== 重新整理儀表板資料
+
+開啟儀表板後，儀表板資料就會載入。您可以重新整理儀表板以查看最新資訊。
+
+儀表板會重新載入工作負載中的資料。上次更新時間將會變更，以顯示資料重新整理的時間。
+
+
+
+== 編輯儀表板
+
+您可以編輯儀表板來變更其顯示的內容，包括指標和圖表。
+
+.步驟
+. 在「自訂儀表板」頁面中，找到要編輯的儀表板。
+. 從該儀表板的 *Actions* 功能表中，選取 *Edit dashboard*。
++
+如果其他使用者正在編輯儀表板，您會看到類似「目前正由 [user name] 編輯」的訊息。請等待他們完成編輯或與他們協調。
+
+. 在 AI 對話方塊中，描述您想要進行的變更。
++
+此程序與建立新儀表板類似。您可以變更儀表板追蹤的工作負載、指標或時間範圍。
+
+. 查看更改並選擇**儲存**。
+
+
+.結果
+儀錶板會根據您的變更進行更新。最後修改日期也會更新。
+
+
+
+== 刪除儀表板
+
+刪除不再需要的儀表板。此操作為永久性操作，無法復原。
+
+.步驟
+. 在「自訂儀表板」頁面中，找到要刪除的儀表板。
+. 從該儀表板的 *Actions* 下拉式選單中，選擇 *Delete*。
+. 確認刪除。
+
+
+.結果
+儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。
+
+
+
+== 相關資訊
+
+* link:create-custom-dashboard.html["建立其他自訂儀表板"]
+* link:troubleshoot-custom-dashboards.html["疑難排解自訂儀表板"]
+

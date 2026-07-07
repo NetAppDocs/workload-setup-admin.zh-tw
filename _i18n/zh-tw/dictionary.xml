@@ -1450,4 +1450,152 @@
   <block id="dec4de109ea4eb3e3c42771a86f5377a" category="cell">S3 存取點日誌操作</block>
   <block id="dc0903fb248bd39e420d250bdf42edee" category="cell">透過啟用或停用 FSx for ONTAP S3 存取點與 CloudTrail 追蹤之間的關聯，設定或更新 AWS CloudTrail 事件選擇器</block>
   <block id="89aa68fffda7d587077f8069ae60e59f" category="cell">cloudtrail：PutEventSelectors</block>
+  <block id="992672ecff7fe59cf2782ddb79f58e1d" category="doc">自訂儀錶板</block>
+  <block id="2865e3ecb86dc9391d13f92e53f2a2ac" category="paragraph">建立與您的工作負載和優先順序相符的 AI 驅動儀表板，以便輕鬆了解營運狀況。自訂儀表板讓您擺脫固定檢視的束縛，專注於最重要的資訊。</block>
+  <block id="4ebed31793305164cd5e1b71336c2244" category="paragraph">只需用簡單易懂的語言描述您想要追蹤的內容，AI 就會根據您的要求建立儀表板。例如，您可以追蹤災難復原狀態、跨區域的容量和成本、儲存保護合規性以及其他營運指標。</block>
+  <block id="f2c8c03b6d33f0a06783ce6241b381a6" category="paragraph">自訂儀表板為唯讀模式，因此無法變更您的儲存空間或工作負載設定。您 Workload Factory 帳戶中的任何使用者都可以查看和管理這些儀表板，方便團隊共享見解並保持協作。</block>
+  <block id="7f7fdf6329959f984b3ff303ae5ac37f" category="inline-link-macro">深入瞭解自訂儀表板</block>
+  <block id="b95d6b8ad9f73321f9cc2385811deedb" category="paragraph"><block ref="b95d6b8ad9f73321f9cc2385811deedb" category="inline-link-macro-rx"></block></block>
+  <block id="b8aad264abc6ada71a68a9b5a701a58b" category="summary">使用 AI 引導提示建立自訂儀表板，以監控對您的工作負載和營運優先順序最重要的內容。</block>
+  <block id="dfc2a77d9b383cd28cba1a1e99f9a378" category="doc">建立自訂儀表板</block>
+  <block id="43d2bb31c641fd8b871b835572bc7441" category="paragraph">用簡單易懂的語言描述您想要監控的內容，即可建立自訂儀表板。AI 會引導您完成設定，確保您的儀表板與您的工作負載和優先順序相符。</block>
+  <block id="463a1f1058198f82800c115a2a913de5" category="paragraph">自訂儀錶板利用人工智慧引導的對話來理解您想要視覺化的內容。您可以用自然語言描述您的監控需求，系統會提出一些澄清問題，以確保儀錶板符合您的要求。</block>
+  <block id="5af1607522ddad534f7fc3e5976684e5" category="paragraph">建立完成後，您可以重新整理儀表板以查看更新後的資料。</block>
+  <block id="a8f8e9b8eb3f376a4b560c169094087e" category="paragraph">請記住，自訂儀表板在設計上為唯讀，無法變更您的儲存或工作負載組態。</block>
+  <block id="7f2caa1403d5a00e4abbc779c525c170" category="list-text">您需要取得權限才能存取儀表板上要監控的資源。</block>
+  <block id="aae9aa18bcac1ee780a470bdbbc81875" category="list-text">在建立用於監控工作負載的儀表板之前，請先在 Workload Factory 中設定好工作負載。</block>
+  <block id="1490f3908001d2cdf7587ba480973340" category="section-title">建立儀表板</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。</block>
+  <block id="2e73b76e7b232c5b1f77e0a5880d5ad5" category="list-text">選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>，然後選擇 *Workloads Overview* &gt; *Custom dashboards*。</block>
+  <block id="f1dcf9e30698fcfe356b412b3f1f523c" category="paragraph">如果這是您第一次使用控制面板，您將看到一個空白螢幕，其中包含一些範例提示，幫助您快速入門。您可以選擇 *Copy prompt* 將範例提示複製到 AI 對話方塊文字方塊中。</block>
+  <block id="2e752336fdbff2abb5e9bf262bd0dbdd" category="list-text">選擇 *Create new dashboard*。</block>
+  <block id="28d14a36109f19e020789b18ad010e52" category="list-text">在 AI 對話方塊中，描述您想要監控的內容。</block>
+  <block id="f81e522e43740650ace37b219a052164" category="paragraph">請用簡單易懂的語言描述您的需求。AI 會詢問幾個問題，以便更好地了解您的需求。</block>
+  <block id="61c97c990827d64adae42781eef7977a" category="inline-image-macro">選單圖示用於開始產生儀表板。, width=18</block>
+  <block id="9f955fab4eac0e2ec9405b5db65b1bbb" category="list-text">選擇 <block ref="1b0d31425e9262bd5e8bd047f083a392" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="32e95e9677f9ef2f50e204cf4b6401d7" category="list-text">回答人工智慧提出的澄清問題。</block>
+  <block id="7d84a0d9d14a5f050503a7b9b00b3435" category="paragraph">AI 可能會要求您從幾個選項中進行選擇，以便更清楚地了解您的需求。請回答每個問題並選取 *Continue*，或選取 *Skip* 以略過選用問題。</block>
+  <block id="90173ffd48ab0b65df8cc1496c811a5d" category="list-text">回答完所有問題後，選擇「繼續」以建立您的儀表板。</block>
+  <block id="9d1ec15b76f21503c345737dd1e6038c" category="paragraph">您的自訂儀表板現已新增至儀表板目錄。您 Workload Factory 帳戶中的所有使用者都可以存取和查看它。</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">接下來</block>
+  <block id="fb3b6f147b0a44a08f4c961dc053571e" category="paragraph">建立完成後，您可以：</block>
+  <block id="a5c04615d2baa4c3104d2afbb5b85c59" category="list-text">重新整理儀表板資料以查看最新資訊</block>
+  <block id="caace49efbd64662add845d2ed5e7042" category="list-text">編輯儀表板以變更其顯示內容</block>
+  <block id="7bff2130a08698224667671d85a34ed4" category="list-text">刪除不再需要的儀表板</block>
+  <block id="ed5184af3d39b3e314759db5b95ba675" category="list-text">檢視儀表板詳細資訊，包括建立者及上次更新時間。</block>
+  <block id="d10995cac5dfc264a5da7f4abec9025d" category="inline-link-macro">管理您的自訂儀表板</block>
+  <block id="1c028f2c092927e5beff0c52bcc2456a" category="list-text"><block ref="1c028f2c092927e5beff0c52bcc2456a" category="inline-link-macro-rx"></block></block>
+  <block id="1703fc0755f2533bd9d727fa0298c500" category="inline-link-macro">疑難排解自訂儀表板</block>
+  <block id="1cd847d256198f4e37b4ae35e7859286" category="list-text"><block ref="1cd847d256198f4e37b4ae35e7859286" category="inline-link-macro-rx"></block></block>
+  <block id="b765164d0d63341925efe41eda98a9b0" category="summary">建立由 AI 驅動的儀表板，根據您的工作負載和優先順序進行個人化設定，從而提升營運可見性，不受預定義檢視的限制。</block>
+  <block id="adf3d3abc197eec345a7ab721730806c" category="doc">了解自訂儀表板</block>
+  <block id="7eb72e0c632d43245022c759c6dabf4f" category="paragraph">身為雲端和儲存管理員，自訂儀表板能讓您清楚了解所管理的系統和工作負載。您可以根據自身的工作、優先順序和業務目標建立和個人化檢視，而無需局限於預設版面配置。</block>
+  <block id="959c71c7e92856ead7b3a708f6c721c2" category="paragraph">自訂儀錶板利用 AI 技術，建立個人化的 Workload Factory 環境視圖。您只需用簡單易懂的語言描述想要監控的內容，系統即可根據您的需求自動產生視覺化圖表。</block>
+  <block id="f1e11e6b7c8b037c77a4a7c91acba439" category="paragraph">Workload Factory 帳戶中的所有使用者都可以查看所有自訂儀表板。這種共享設定有助於團隊協作，並在整個組織內查看相同的營運資訊。</block>
+  <block id="0cc3ed3838a7ccb5f5454f9a9e965833" category="section-title">為什麼要使用自訂儀錶板</block>
+  <block id="a8c7717916af9efd32ed1f2556005cce" category="paragraph">Workload Factory 使用者需要管理大量的工作負載、環境和優先順序，但標準儀表板僅顯示預設視圖。自訂儀表板有助於解決以下幾個運維難題：</block>
+  <block id="135a1cf67f3c35c0d0e10abc8470699e" category="list-text">*快速回答關鍵問題*：專注於最重要的問題或理解上的不足，而不是一般的系統統計數據。</block>
+  <block id="0d21e6f539758fefdbea39962fd5b026" category="list-text">*Monitor what matters now*：追蹤與您目前優先事項相符的指標，而不是一組固定的健康指標。</block>
+  <block id="3f731afb8a0dffc068abffe76f1a5ca1" category="list-text">*將技術資料與業務成果連結*：展示系統效能如何影響營運和業務目標。</block>
+  <block id="093ecfd7b1330a7a804792cf2ad47249" category="list-text">*避免在工具之間切換*：在一個地方查看所有相關資訊－無需在工具、頁面或匯出之間切換。</block>
+  <block id="5473f92e1e9974588f523da6ec42d779" category="section-title">自訂儀表板的功能</block>
+  <block id="348467ce5b84d7d219767eb177529dcb" category="paragraph">在設定過程中，人工智慧引導的對話框可協助您定義：</block>
+  <block id="2c55ae63711161cbdec9fc0567dfa81d" category="list-text">需要監控的工作負載和資源</block>
+  <block id="a37eb4863cbc8ee3ac75cb1498fc8895" category="list-text">對您的工作至關重要的關鍵指標</block>
+  <block id="cdfa093abec6d3b3ed91c073ffda143a" category="list-text">要比較的時間範圍和時期</block>
+  <block id="efdf5eaa29e3c2930edbf6dc622b3b95" category="list-text">按地區、工作負載或其他類別查看</block>
+  <block id="0382db2b201586b16e5ed4d61af700ac" category="list-text">您需要追蹤和展示的規則或要求</block>
+  <block id="18b34a0dd090bb7f1f01f6f3d0d42c52" category="section-title">考慮因素和局限性</block>
+  <block id="6344c74fd8e5c3678a14327105887b61" category="paragraph">若要建立或檢視自訂儀表板，您需要擁有要監控的資源的正確 AWS IAM 權限。請確保 Workload Factory 帳戶對儀表板使用的資料來源具有讀取存取權限。</block>
+  <block id="b895786e376487f78816aa96581917ec" category="inline-link-macro">了解如何新增 AWS 憑證並設定 IAM 權限</block>
+  <block id="c61bed5a551c50bee3f870cc793e144b" category="paragraph"><block ref="10ed2be00615eb2c2386c703d91716ef" category="inline-link-macro-rx"></block>.</block>
+  <block id="edc83c82b6a6439e121df7b8dfc618e7" category="section-title">唯讀設計</block>
+  <block id="9596530d51115869eabe2f1148109fcb" category="paragraph">自訂儀表板為唯讀。無法變更您的儲存或工作負載設定。這可讓您監控系統，而不會意外變更任何內容。</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
+  <block id="9b7e15be2b250373f1f4204c0d8a313a" category="paragraph">目前自訂儀表板有以下限制：</block>
+  <block id="af58cbb6f48e75ca1858deb5b23d424e" category="list-text">您無法在 Workload Factory 帳戶之外共用儀表板</block>
+  <block id="8842d5599593f1c220f6f9c200222fdc" category="list-text">同一時間只能有一個使用者編輯儀表板。</block>
+  <block id="8031af406fb376c22555c37f323588ea" category="list-text">不支援並行編輯</block>
+  <block id="8fbadf27f5b9fe2779015430fdb5baac" category="section-title">示範環境</block>
+  <block id="372d2f979722e867e21cf5dc86365106" category="paragraph">如果您使用的是 Workload Factory 示範帳戶，則可以使用一些預建的儀表板。這些儀表板可協助您了解自訂儀表板的功能。每個儀表板都展示了一個常見的監控需求：災難復原狀態、跨區域的容量和成本，以及是否遵循儲存保護規則。</block>
+  <block id="79092ffcd78270a38b45ed11da4ef893" category="section-title">範例提示</block>
+  <block id="95ef60d56b458eae2c194d7ac8234f5c" category="paragraph">以下範例展示如何用簡單易懂的語言描述您的監控需求：</block>
+  <block id="bb4298b33c9efb59f5b7c959ca88fe4b" category="list-text">*災難復原監控*：「我正在 AWS 上為我的本地系統設定災難復原解決方案。我希望看到我的本地資源的完整清單，以及每個資源在美國東部區域災難復原站點的狀態，包括是否已設定、是否處於作用中狀態以及是否運作正常。」</block>
+  <block id="f3f66b82398c698a8891bc39cc80d3ec" category="list-text">*多區域容量和成本*：「我管理跨多個雲端區域和應用程式的儲存空間。我希望清楚了解已分配的儲存量、已使用的儲存量及其成本，並能查看每個區域和每個應用程式的詳細資訊。」</block>
+  <block id="86660547d3b01955cbe8ca32c03764d0" category="list-text">*儲存保護合規性*：「我正在根據組織的標準建立新的儲存保護策略。請向我展示所有檔案系統，並說明它們是否符合這些要求：</block>
+  <block id="da8c35a377d4789965b326d520c28223" category="list-text">資料庫工作負載：每個磁碟區每天 12 個快照，每週 2 個防篡改快照。</block>
+  <block id="c01a6403a6cfebc4ade27b2461b77ea8" category="list-text">NFS 和 SMB 共用：每個磁碟區每天 7 個快照，每週 1 個防竄改快照。</block>
+  <block id="489342efbcb2cab8832e0e763b340653" category="list-text">所有磁碟區都必須啟用 ARP。"</block>
+  <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">後續步驟</block>
+  <block id="817e038e8ee419f03c8a12275438f8d7" category="list-text"><block ref="817e038e8ee419f03c8a12275438f8d7" category="inline-link-macro-rx"></block></block>
+  <block id="62403e3fa28afe128e2c0e15bf0333f7" category="inline-link-macro">管理自訂儀表板</block>
+  <block id="09327b0cff12718fff46be13c240b39f" category="list-text"><block ref="09327b0cff12718fff46be13c240b39f" category="inline-link-macro-rx"></block></block>
+  <block id="c9d9548c92d24e0dc83c6a1818848b58" category="summary">存取您的儀表板目錄，以在 Workload Factory 中檢視、編輯、重新整理和刪除自訂儀表板。</block>
+  <block id="48f5d174a835c1fb6c38af1c4800bcdb" category="paragraph">您可以透過儀表板目錄管理您的自訂儀表板。您可以在這裡查看詳細資訊、重新整理資料、編輯儀表板設定或刪除不再需要的儀表板。</block>
+  <block id="426dd2be6d0917b0febd591b1f25bc0a" category="paragraph">您 Workload Factory 帳戶中的所有使用者都可以存取所有自訂儀表板。每個儀表板都會顯示基本詳細資訊，例如建立者姓名、建立日期以及目前是否有人正在編輯。</block>
+  <block id="8a57aae4a94bc002578416ca2a1f301a" category="paragraph">自訂儀表板為唯讀模式。無法變更儲存或工作負載設定。您可以編輯儀表板本身，但無法編輯其監控的資源。</block>
+  <block id="76fc0fde7a5041f5e2df3b114841202c" category="paragraph">您的 Workload Factory 帳戶中必須至少有一個自訂儀表板。</block>
+  <block id="19f40b5f5943ee4953075403d9783061" category="section-title">存取儀表板目錄</block>
+  <block id="94ab7238c8d6eb39314e6dc172cba073" category="list-text">從選單中選擇 *Workloads Overview*，然後選擇 *Custom dashboards*。</block>
+  <block id="04b69ec1d9e5301be209cb2b652a1602" category="paragraph">儀表板目錄顯示您 Workload Factory 帳戶中的所有自訂儀表板。</block>
+  <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">查看儀表板清單。</block>
+  <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">重新整理儀表板資料</block>
+  <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">開啟儀表板後，儀表板資料就會載入。您可以重新整理儀表板以查看最新資訊。</block>
+  <block id="6835e72df37e141c78401ea8d4bfcf90" category="paragraph">儀表板會重新載入工作負載中的資料。上次更新時間將會變更，以顯示資料重新整理的時間。</block>
+  <block id="ad322a64b7af5e88132bf6cb538fccd0" category="section-title">編輯儀表板</block>
+  <block id="ce7194dc740d6f8db1edf5435d1a57b4" category="paragraph">您可以編輯儀表板來變更其顯示的內容，包括指標和圖表。</block>
+  <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">在「自訂儀表板」頁面中，找到要編輯的儀表板。</block>
+  <block id="d431f68c965a7131bbc2f48128983c25" category="list-text">從該儀表板的 *Actions* 功能表中，選取 *Edit dashboard*。</block>
+  <block id="212f24e309c20769800e812e5d15c2e3" category="paragraph">如果其他使用者正在編輯儀表板，您會看到類似「目前正由 [user name] 編輯」的訊息。請等待他們完成編輯或與他們協調。</block>
+  <block id="63f40ecf20824ff6d561a306d3a25fd1" category="list-text">在 AI 對話方塊中，描述您想要進行的變更。</block>
+  <block id="3184c7e78934ef4b37ea845f1d56789a" category="paragraph">此程序與建立新儀表板類似。您可以變更儀表板追蹤的工作負載、指標或時間範圍。</block>
+  <block id="f66306510aaf399aef8bdf649739a15e" category="list-text">查看更改並選擇**儲存**。</block>
+  <block id="89806ea6a9ed9b0bb6cb322f912aff65" category="paragraph">儀錶板會根據您的變更進行更新。最後修改日期也會更新。</block>
+  <block id="74ee9feffcb1603b7eeb47c099c0e5a5" category="section-title">刪除儀表板</block>
+  <block id="e54360b7371199d6607f76cd1ae6ad17" category="paragraph">刪除不再需要的儀表板。此操作為永久性操作，無法復原。</block>
+  <block id="3325f3a5c13a73bb87ed2dabebb0b6a3" category="list-text">在「自訂儀表板」頁面中，找到要刪除的儀表板。</block>
+  <block id="0ce6306187e44bdf505a14f5d0676bb6" category="list-text">從該儀表板的 *Actions* 下拉式選單中，選擇 *Delete*。</block>
+  <block id="b26a5fa549c938ffb56d20623c3f69c0" category="list-text">確認刪除。</block>
+  <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。</block>
+  <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">建立其他自訂儀表板</block>
+  <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
+  <block id="87377124bfbafaf3a36cd9e53255e829" category="summary">解決自訂儀表板的常見問題，包括建立失敗、資料載入問題和存取問題。</block>
+  <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">利用這些資訊解決在建立或使用自訂儀表板時可能遇到的常見問題。</block>
+  <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">儀錶板建立失敗</block>
+  <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**問題：**建立儀表板時，您會看到錯誤訊息「Failed to understand request and generate code」。</block>
+  <block id="0687519296941b7aa068cbc5e70a1c22" category="paragraph">**原因：**系統無法理解您的要求或無法根據您的提示建立視覺化內容。</block>
+  <block id="83b9aaf1b6b5ef7884e24699dc7f7511" category="paragraph">**解決方法：** 請嘗試以下方法：</block>
+  <block id="894b21673f7a949e53a381985a55de87" category="list-text">請重新撰寫您的請求，更清楚說明您想要監控的內容。</block>
+  <block id="7bb45728b45872d1735d2db6f80d1aa8" category="list-text">從 <block ref="817e038e8ee419f03c8a12275438f8d7" category="inline-link-macro-rx"></block> 中的其中一個範例提示開始。</block>
+  <block id="6e8565abed03ed302a07467257865757" category="list-text">將複雜的監控需求分解成幾個更簡單的儀表板。</block>
+  <block id="28ceb1134c8420a708d78605ab459972" category="list-text">指定要追蹤的工作負載、指標、時間範圍或維度。</block>
+  <block id="7b0923a8ddaa6864688d6afeed5bde9f" category="section-title">儀錶板載入資料失敗</block>
+  <block id="6cf9da3bc18ab877793e971ea5fdf80d" category="paragraph">**問題：**儀表板已建立，但在載入資料時顯示錯誤。</block>
+  <block id="423c766e8a7076c3dd890fe7460b5785" category="paragraph">**原因：**這通常是由於權限問題或資料來源無法使用造成的。</block>
+  <block id="6342c16a39a9eb2f31fa733eb76963b7" category="paragraph">**解決方案：**</block>
+  <block id="fb7bac53b48882cef2221ea2bff55443" category="list-text">**檢查權限：** 請確保您的 Workload Factory 帳戶擁有對儀表板使用的工作負載和資源的讀取存取。請查看 <block ref="79e11e6e61bebfcf73bb53d91696114e" category="inline-link-macro-rx"></block> 中的權限要求。</block>
+  <block id="a92d27a2e307df461574cc29f2358257" category="list-text">**驗證憑證：**確認您的 AWS 憑證有效且未過期。如需詳細資訊，請參閱 <block ref="b2fa8f8bcb70f53fbee747df0674d6ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="fee56bf45b6270228ee20fa9d1d5d88a" category="list-text">**確認工作負載配置：** 確保您要監控的工作負載已在 Workload Factory 中正確配置，並且目前正在執行。</block>
+  <block id="a82708a710bdc7f66cc4d1b5721a359c" category="section-title">儀錶板無法載入或載入緩慢</block>
+  <block id="7b8a6ade8ac0e93d1993c6d3ee222a27" category="paragraph">**問題：**儀表板載入緩慢或某些小工具未顯示。</block>
+  <block id="c66f626cb62bfd00b1514c2f1a4ec699" category="paragraph">**原因：**載入速度慢可能是由於網路問題、資料量過大或臨時服務延遲造成的。</block>
+  <block id="d418125e12395b77bec7ee8f19845a54" category="list-text">**檢查您的網路連線：** 請確保您的網路連線穩定。</block>
+  <block id="e39625dee78ba95654668e1fce54e45f" category="list-text">**重新整理瀏覽器：** 請嘗試重新整理頁面，確認儀表板是否能正確載入。</block>
+  <block id="f86d0248af765f101ea3563fcc677a18" category="list-text">**清除瀏覽器快取和 cookie：** 這有助於解決因資料過期或損壞而導致的載入問題。</block>
+  <block id="e7347594ee6cffce40f1598054f4f163" category="list-text">**稍等片刻再試：**如果問題仍然存在，請稍等幾分鐘再試。</block>
+  <block id="7a2ffa8b9064d2842f2e8203776a80e0" category="section-title">無法編輯儀表板</block>
+  <block id="83e74e6ee1cf72780d556b5b56524b07" category="paragraph">**問題：**當您嘗試編輯儀表板時，會看到「目前正在由 [user name] 編輯」的訊息。</block>
+  <block id="89bb98bf1c9d56355ec74ce488a3f9f8" category="paragraph">**原因：**您 Workload Factory 帳戶中的另一個使用者正在編輯儀表板。同一時間只能有一個使用者編輯儀表板。</block>
+  <block id="21aa7960bf24b27392547adc57724345" category="list-text">等待其他使用者完成操作並儲存變更。</block>
+  <block id="3e99de69e606821e37746a29904f9fc6" category="list-text">請聯絡郵件中顯示的人員協調編輯事宜。</block>
+  <block id="0fced5615d0fc04d9397c731329e549e" category="list-text">如果使用者不再編輯但鎖定仍然存在，請他們關閉編輯視窗以釋放鎖定。</block>
+  <block id="318369ae5a2f25e9c7cb0b7b846d1775" category="section-title">缺少儀表板</block>
+  <block id="732976f9f9cc4b9938c0a1a9c2569828" category="paragraph">**問題：**您建立的儀表板不再列在儀表板目錄中。</block>
+  <block id="d0a35413e8843c3f263cb1fad4f4cb3e" category="paragraph">**原因：**您 Workload Factory 帳戶中的其他使用者可能已將其刪除。</block>
+  <block id="4d6f4bd604a33b7ae11eceb4c29146f9" category="list-text">請確保您已登入正確的 Workload Factory 帳戶。</block>
+  <block id="86d37fb397f8d1a33dc0e6cb1de913ae" category="list-text">詢問您帳戶中的其他使用者是否有人刪除了控制面板。</block>
+  <block id="62ad02c42e5e548dcaf80a64c2d0eefd" category="list-text">如有必要，請根據原始要求重新建立儀表板。</block>
+  <block id="1e2b52bc0d9b39d605af8ef1990be5ab" category="paragraph">Workload Factory 帳戶中的所有使用者都可以檢視和刪除自訂儀表板。管理共享儀表板時，請與您的團隊協調。</block>
+  <block id="e2a43aebbf3f114c3e1dfc54b469c13e" category="section-title">其他說明</block>
+  <block id="a56bacdffec3c1404856b40a1b27f955" category="paragraph">如果您在使用自訂儀表板時仍然遇到問題，請參閱 <block ref="c470f3409940cee13ddda9c09bf54b60" category="inline-link-macro-rx"></block> 以取得有關聯絡 NetApp 支援人員的資訊。</block>
 </blocks>

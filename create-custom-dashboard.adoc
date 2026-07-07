@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: create-custom-dashboard.html 
+keywords: create dashboard, custom dashboard, AI dashboard, dashboard creation, personalized dashboard 
+summary: 使用 AI 引導提示建立自訂儀表板，以監控對您的工作負載和營運優先順序最重要的內容。 
+---
+= 建立自訂儀表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+用簡單易懂的語言描述您想要監控的內容，即可建立自訂儀表板。AI 會引導您完成設定，確保您的儀表板與您的工作負載和優先順序相符。
+
+.關於這項工作
+自訂儀錶板利用人工智慧引導的對話來理解您想要視覺化的內容。您可以用自然語言描述您的監控需求，系統會提出一些澄清問題，以確保儀錶板符合您的要求。
+
+建立完成後，您可以重新整理儀表板以查看更新後的資料。
+
+請記住，自訂儀表板在設計上為唯讀，無法變更您的儲存或工作負載組態。
+
+.開始之前
+* 您需要取得權限才能存取儀表板上要監控的資源。
+* 在建立用於監控工作負載的儀表板之前，請先在 Workload Factory 中設定好工作負載。
+
+
+
+
+== 建立儀表板
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"]，然後選擇 *Workloads Overview* > *Custom dashboards*。
++
+如果這是您第一次使用控制面板，您將看到一個空白螢幕，其中包含一些範例提示，幫助您快速入門。您可以選擇 *Copy prompt* 將範例提示複製到 AI 對話方塊文字方塊中。
+
+. 選擇 *Create new dashboard*。
+. 在 AI 對話方塊中，描述您想要監控的內容。
++
+請用簡單易懂的語言描述您的需求。AI 會詢問幾個問題，以便更好地了解您的需求。
+
+. 選擇 image:arrow.png["選單圖示用於開始產生儀表板。, width=18"]。
+. 回答人工智慧提出的澄清問題。
++
+AI 可能會要求您從幾個選項中進行選擇，以便更清楚地了解您的需求。請回答每個問題並選取 *Continue*，或選取 *Skip* 以略過選用問題。
+
+. 回答完所有問題後，選擇「繼續」以建立您的儀表板。
+
+
+.結果
+您的自訂儀表板現已新增至儀表板目錄。您 Workload Factory 帳戶中的所有使用者都可以存取和查看它。
+
+.接下來
+建立完成後，您可以：
+
+* 重新整理儀表板資料以查看最新資訊
+* 編輯儀表板以變更其顯示內容
+* 刪除不再需要的儀表板
+* 檢視儀表板詳細資訊，包括建立者及上次更新時間。
+
+
+
+
+== 相關資訊
+
+* link:manage-custom-dashboards.html["管理您的自訂儀表板"]
+* link:troubleshoot-custom-dashboards.html["疑難排解自訂儀表板"]
+
