@@ -302,7 +302,6 @@
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">瞭解如何從 BlueXP  主控台存取工作負載工廠</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">主控台體驗</block>
-  <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用其中一項登<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>入。</block>
   <block id="c938676b28ab6dd4d5cc28ebdf8c49b9" category="doc">主控台體驗</block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024 年 11 月 11 日</block>
   <block id="7b2ab109a7f028a1314cfd59fab7b820" category="list-text">節省計算機以節省成本</block>
@@ -1598,4 +1597,5 @@
   <block id="1e2b52bc0d9b39d605af8ef1990be5ab" category="paragraph">Workload Factory 帳戶中的所有使用者都可以檢視和刪除自訂儀表板。管理共享儀表板時，請與您的團隊協調。</block>
   <block id="e2a43aebbf3f114c3e1dfc54b469c13e" category="section-title">其他說明</block>
   <block id="a56bacdffec3c1404856b40a1b27f955" category="paragraph">如果您在使用自訂儀表板時仍然遇到問題，請參閱 <block ref="c470f3409940cee13ddda9c09bf54b60" category="inline-link-macro-rx"></block> 以取得有關聯絡 NetApp 支援人員的資訊。</block>
+  <block id="708d52dc7d2f1cb4787bfd74e41bfab5" category="list-text">使用以下任一方式登入<block ref="730226d90433792895dc2ec640283d2d" category="inline-link-macro-rx"></block>。</block>
 </blocks>
