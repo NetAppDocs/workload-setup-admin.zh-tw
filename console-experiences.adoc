@@ -19,6 +19,7 @@ NetApp Workload Factory 可透過兩個基於 Web 的控制台存取。了解如
 
 
 
+[[access-workload-factory-in-the-netapp-console]]
 == 在NetApp控制台中存取 Workload Factory
 
 您可以從NetApp Console存取 Workload Factory。除了使用 Workload Factory 來取得 AWS 儲存和工作負載功能外，您還可以存取其他資料服務，例如NetApp Copy and Sync等。
@@ -30,6 +31,7 @@ NetApp Workload Factory 可透過兩個基於 Web 的控制台存取。了解如
 
 
 
+[[access-workload-factory-in-the-workload-factory-console]]
 == 在 Workload Factory 控制台中造訪 Workload Factory
 
 您可以從 Workload Factory 控制台存取 Workload Factory。

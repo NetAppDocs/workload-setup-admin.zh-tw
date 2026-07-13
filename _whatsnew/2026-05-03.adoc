@@ -4,6 +4,7 @@
 
 
 
+[[email-notifications-for-workload-factory]]
 === Workload Factory 的電子郵件通知
 
 現在，您無需設定 Amazon SNS 主題即可透過電子郵件接收 Workload Factory 通知。啟用電子郵件通知功能，即可傳送通知至與該帳戶關聯的任何電子郵件地址。
@@ -14,6 +15,7 @@
 
 
 
+[[new-notification-for-eda-latency]]
 === EDA 延遲的新通知
 
 NetApp Workload Factory 通知服務包含 EDA 延遲通知，當 EDA 操作的延遲超過一定閾值時，該通知會通知您。
@@ -22,6 +24,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[new-notification-for-fsx-for-ontap-file-systems]]
 === FSx for ONTAP 檔案系統的新通知
 
 NetApp Workload Factory 通知服務包括每月向您的帳戶發送成本摘要通知，其中顯示了支出趨勢、異常變化以及 FSx for ONTAP 檔案系統的最佳節省機會。

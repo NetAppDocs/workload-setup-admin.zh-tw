@@ -17,6 +17,7 @@ Codebox 與 Workload Factory 權限策略保持一致，根據 Workload Factory 
 
 
 
+[[how-to-use-codebox]]
 == 如何使用 CodeBox
 
 當您在 Workload Factory UI 精靈中輸入值時，您可以在完成每個欄位時看到 Codebox 中的資料更新。完成精靈後，在選擇頁面底部的「建立」按鈕之前，請選擇image:button-copy-codebox.png["複製按鈕"]在 Codebox 中複製以擷取建置配置所需的程式碼。例如，此建立新 Microsoft SQL Server 的螢幕截圖顯示了 VPC 和可用區域的精靈項目以及 Codebox 中用於 REST API 實作的等效項目。
@@ -27,6 +28,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 
+[[use-cloudformation-code-from-codebox]]
 == 使用 Codebox 的 CloudForgation 程式碼
 
 您可以複製從 Codebox 產生的 CloudFormation 程式碼，然後在您的 AWS 帳戶中啟動 Amazon Web Services CloudFormation 堆疊。  CloudFormation 將執行您在 Workload Factory UI 中定義的操作。
@@ -88,6 +90,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 
+[[use-rest-api-code-from-codebox]]
 == 使用 CodeBox 的 REST API 程式碼
 
 您可以使用 Codebox 產生的 Workload Factory REST API 來部署和管理 FSx for ONTAP檔案系統和其他 AWS 資源。
@@ -103,6 +106,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 
+[[use-aws-cli-code-from-codebox]]
 == 使用 CodeBox 的 AWS CLI 代碼
 
 您可以使用從 Codebox 產生的 Amazon Web Services CLI 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
@@ -115,6 +119,7 @@ image:screenshot-codebox-example1.png["顯示如何在 UI 中建立 Microsoft SQ
 
 
 
+[[use-terraform-from-codebox]]
 == 使用 CodeBox 的 Terraform
 
 您可以使用 Terraform 來部署和管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。

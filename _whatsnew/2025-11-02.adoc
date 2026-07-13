@@ -4,6 +4,7 @@
 
 
 
+[[permissions-update]]
 === 權限更新
 
 在此版本中，我們對儲存、資料庫和 VMware 工作負載的權限策略進行了重大更新，以增強安全性和使用者控制。您可以更精細地自訂權限設置，根據需要新增或取消權限。
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[new-notification-for-storage]]
 === 儲存的新通知
 
 NetApp Workload Factory通知服務包含儲存自動 inode 管理的通知。
@@ -20,6 +22,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[threshold-warnings-for-automatic-capacity-and-inode-management]]
 === 自動容量和 inode 管理的閾值警告
 
 可以為儲存空間設定自動容量和 inode 管理，並設定警告閾值，該閾值會觸發 Workload Factory 通知服務的通知。若要使用此功能，必須先啟用工作負載工廠通知服務。

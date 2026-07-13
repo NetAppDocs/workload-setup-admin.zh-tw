@@ -4,12 +4,14 @@
 
 
 
+[[cloudshell-autocomplete-support]]
 === CloudShell 自動完整支援
 
 使用 BlueXP  工作負載原廠 CloudShell 時，您可以開始輸入命令，然後按 Tab 鍵檢視可用選項。如果存在多種可能性， CLI 會顯示建議清單。此功能可將錯誤降至最低，並加速命令執行，進而提升生產力。
 
 
 
+[[updated-permissions-terminology]]
 === 更新的權限術語
 
 工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。

@@ -4,6 +4,7 @@
 
 
 
+[[new-notification-for-storage]]
 === 儲存的新通知
 
 NetApp Workload Factory 通知服務包含針對儲存架構問題的通知。

@@ -19,6 +19,7 @@ Workload Factory 帳戶中的所有使用者都可以查看所有自訂儀表板
 
 
 
+[[why-use-custom-dashboards]]
 == 為什麼要使用自訂儀錶板
 
 Workload Factory 使用者需要管理大量的工作負載、環境和優先順序，但標準儀表板僅顯示預設視圖。自訂儀表板有助於解決以下幾個運維難題：
@@ -31,6 +32,7 @@ Workload Factory 使用者需要管理大量的工作負載、環境和優先順
 
 
 
+[[what-you-can-do-with-custom-dashboards]]
 == 自訂儀表板的功能
 
 在設定過程中，人工智慧引導的對話框可協助您定義：
@@ -44,11 +46,13 @@ Workload Factory 使用者需要管理大量的工作負載、環境和優先順
 
 
 
+[[considerations-and-limitations]]
 == 考慮因素和局限性
 
 
 
-=== 權限
+[[aws-credentials-and-permissions]]
+=== AWS 憑證和權限
 
 若要建立或檢視自訂儀表板，您需要擁有要監控的資源的正確 AWS IAM 權限。請確保 Workload Factory 帳戶對儀表板使用的資料來源具有讀取存取權限。
 
@@ -56,29 +60,40 @@ link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 
 
 
+[[link-to-fsx-for-ontap]]
+=== 連結至 FSx for ONTAP
+
+Workload Factory 需要 Link 才能連接到 FSx for ONTAP 檔案系統。Link 在 Workload Factory 與一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。這可讓您直接透過 ONTAP REST API 呼叫來監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。
+
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["學習如何建立連結"^].
+
+
+
+[[read-only-design]]
 === 唯讀設計
 
 自訂儀表板為唯讀。無法變更您的儲存或工作負載設定。這可讓您監控系統，而不會意外變更任何內容。
 
 
 
+[[limitations]]
 === 限制
 
 目前自訂儀表板有以下限制：
 
 * 您無法在 Workload Factory 帳戶之外共用儀表板
-* 同一時間只能有一個使用者編輯儀表板。
-* 不支援並行編輯
 
 
 
 
+[[demo-environment]]
 === 示範環境
 
 如果您使用的是 Workload Factory 示範帳戶，則可以使用一些預建的儀表板。這些儀表板可協助您了解自訂儀表板的功能。每個儀表板都展示了一個常見的監控需求：災難復原狀態、跨區域的容量和成本，以及是否遵循儲存保護規則。
 
 
 
+[[sample-prompts]]
 === 範例提示
 
 以下範例展示如何用簡單易懂的語言描述您的監控需求：
@@ -96,6 +111,7 @@ link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 
 
 
+[[next-steps]]
 == 後續步驟
 
 * link:create-custom-dashboard.html["建立自訂儀表板"]
