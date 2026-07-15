@@ -14,3 +14,10 @@
 自訂儀表板為唯讀模式，因此無法變更您的儲存空間或工作負載設定。您 Workload Factory 帳戶中的任何使用者都可以查看和管理這些儀表板，方便團隊共享見解並保持協作。
 
 link:learn-custom-dashboards.html["深入瞭解自訂儀表板"]
+
+
+
+[[genai-workload-removal-from-workload-factory]]
+=== 從工作負載工廠移除 GenAI 工作負載
+
+GenAI 工作負載已從 Workload Factory 控制台中移除。

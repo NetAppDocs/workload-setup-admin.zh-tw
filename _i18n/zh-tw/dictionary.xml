@@ -1582,4 +1582,6 @@
   <block id="21984c4de187dab774a2262572d5c108" category="paragraph">您 Workload Factory 帳戶中的所有使用者都可以存取所有自訂儀表板。每個儀表板都會顯示基本訊息，例如建立者姓名和建立日期。</block>
   <block id="a83695a886882e5b4baf753ee607f66f" category="paragraph">自訂儀表板為唯讀模式。無法變更儲存或工作負載設定。</block>
   <block id="dc3bd384dcb2bc2324eb0b2de08dda55" category="list-text">**檢查權限：** 請確保您的 Workload Factory 帳戶擁有對儀表板使用的工作負載和資源的讀取存取。請查看 <block ref="7630a8b182c80d5ddb5d9ce1be672fef" category="inline-link-macro-rx"></block> 中的權限要求。</block>
+  <block id="cc661418365d138458bf55f936b73a47" category="section-title">從工作負載工廠移除 GenAI 工作負載</block>
+  <block id="ef18329e66f7a0f5b022b9a400dd74ed" category="paragraph">GenAI 工作負載已從 Workload Factory 控制台中移除。</block>
 </blocks>
