@@ -21,10 +21,6 @@ summary: 登入並設定NetApp Workload Factory 後，您可以建立和管理 F
 +
 偵測 AWS 上現有的資料庫資產、移轉至 ONTAP 的 FSX 以評估潛在的成本節約效益、使用內建最佳化實務來部署端對端資料庫、以及自動化 CI/CD 管線的精簡複製。
 
-* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
-+
-部署並管理擷取擴增（ RAG ）基礎架構、以提升 AI 應用程式的準確度和獨特性。利用內建的資料安全性與法規遵循功能、在適用於 ONTAP 的 FSX 上建立 RAG 知識庫。
-
 * https://docs.netapp.com/us-en/workload-vmware/index.html["VMware 工作負載"^]
 +
 透過智慧建議和自動補救、簡化移轉與作業。部署高效備份與健全的災難恢復。監控及疑難排解 VM 。

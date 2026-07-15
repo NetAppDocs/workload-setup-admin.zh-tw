@@ -24,7 +24,7 @@ link:sign-up-saas.html["瞭解如何註冊及建立帳戶"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]將 AWS 憑證新增至 Workload Factory
 [role="quick-margin-para"]
-此步驟是可選的。您無需新增憑證即可使用 Workload Factory 存取您的 AWS 帳戶。將 AWS 憑證新增至 Workload Factory，即可讓您的 Workload Factory 帳戶擁有建立和管理 FSx for ONTAP檔案系統以及部署和管理特定工作負載（例如資料庫和 GenAI）所需的權限。
+此步驟為可選步驟。您無需新增憑證即可使用 Workload Factory 存取您的 AWS 帳戶。將 AWS 憑證新增至 Workload Factory 後，您的 Workload Factory 帳戶將擁有建立和管理 FSx for ONTAP 檔案系統以及部署和管理特定工作負載（例如資料庫）所需的權限。
 
 [role="quick-margin-para"]
 link:add-credentials.html["瞭解如何新增認證至您的帳戶"]。
