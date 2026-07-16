@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: troubleshoot-custom-dashboards.html 
 keywords: troubleshooting, dashboard errors, dashboard issues, failed creation, failed to load, dashboard not loading 
-summary: 解決自訂儀表板的常見問題，包括建立失敗、資料載入問題和存取問題。 
+summary: 修復自訂儀表板的常見問題，包括設定失敗、資料載入問題和存取問題。 
 ---
 = 疑難排解自訂儀表板
 :allow-uri-read: 

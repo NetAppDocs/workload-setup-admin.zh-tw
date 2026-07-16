@@ -1467,7 +1467,6 @@
   <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。</block>
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">建立其他自訂儀表板</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
-  <block id="87377124bfbafaf3a36cd9e53255e829" category="summary">解決自訂儀表板的常見問題，包括建立失敗、資料載入問題和存取問題。</block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">利用這些資訊解決在建立或使用自訂儀表板時可能遇到的常見問題。</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">儀錶板建立失敗</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**問題：**建立儀表板時，您會看到錯誤訊息「Failed to understand request and generate code」。</block>
@@ -1491,7 +1490,6 @@
   <block id="e7347594ee6cffce40f1598054f4f163" category="list-text">**稍等片刻再試：**如果問題仍然存在，請稍等幾分鐘再試。</block>
   <block id="318369ae5a2f25e9c7cb0b7b846d1775" category="section-title">缺少儀表板</block>
   <block id="732976f9f9cc4b9938c0a1a9c2569828" category="paragraph">**問題：**您建立的儀表板不再列在儀表板目錄中。</block>
-  <block id="d0a35413e8843c3f263cb1fad4f4cb3e" category="paragraph">**原因：**您 Workload Factory 帳戶中的其他使用者可能已將其刪除。</block>
   <block id="4d6f4bd604a33b7ae11eceb4c29146f9" category="list-text">請確保您已登入正確的 Workload Factory 帳戶。</block>
   <block id="86d37fb397f8d1a33dc0e6cb1de913ae" category="list-text">詢問您帳戶中的其他使用者是否有人刪除了控制面板。</block>
   <block id="62ad02c42e5e548dcaf80a64c2d0eefd" category="list-text">如有必要，請根據原始要求重新建立儀表板。</block>
@@ -1513,4 +1511,7 @@
   <block id="ef18329e66f7a0f5b022b9a400dd74ed" category="paragraph">GenAI 工作負載已從 Workload Factory 控制台中移除。</block>
   <block id="7548d07d123f53ef8a847c6be983f3e5" category="paragraph">當您授予權限時，Workload Factory 會將政策附加到執行個體，賦予其管理該 AWS 帳戶內資源和程序的權限。這使得 Workload Factory 能夠執行各種操作，從探索您的儲存環境到部署 AWS 資源（例如儲存管理中的檔案系統）。</block>
   <block id="b0e0fd1b2977dcfd6e5719ca7a3a6e37" category="paragraph">此步驟為可選步驟。您無需新增憑證即可使用 Workload Factory 存取您的 AWS 帳戶。將 AWS 憑證新增至 Workload Factory 後，您的 Workload Factory 帳戶將擁有建立和管理 FSx for ONTAP 檔案系統以及部署和管理特定工作負載（例如資料庫）所需的權限。</block>
+  <block id="00436cf3153058a6cc1bda7834e2df46" category="paragraph">為了建立儀表板，Workload Factory 使用唯讀的 AWS 憑證。這些憑證僅允許對下列服務執行讀取操作，例如<block ref="24ca8966cf3ca7c9dc7c9de631b31ff0" prefix=" " category="inline-code"></block>和<block ref="0054238c3be20aab765346f029c558a4" prefix=" " category="inline-code"></block>：EC2、FSx、CloudWatch、Resource Groups Tagging API、備份、CloudWatch Logs、KMS 和 EFS。</block>
+  <block id="660503a3fa3804fff2a7f84301e40d4a" category="summary">修復自訂儀表板的常見問題，包括設定失敗、資料載入問題和存取問題。</block>
+  <block id="e3c8b96b5757e581b1d0e7900d690797" category="paragraph">**原因：**您 Workload Factory 帳戶中的其他使用者可能已將其刪除。</block>
 </blocks>

@@ -56,6 +56,8 @@ Workload Factory 使用者需要管理大量的工作負載、環境和優先順
 
 若要建立或檢視自訂儀表板，您需要擁有要監控的資源的正確 AWS IAM 權限。請確保 Workload Factory 帳戶對儀表板使用的資料來源具有讀取存取權限。
 
+為了建立儀表板，Workload Factory 使用唯讀的 AWS 憑證。這些憑證僅允許對下列服務執行讀取操作，例如 `fsx:DescribeVolumes`和 `fsx:DescribeFileSystems`：EC2、FSx、CloudWatch、Resource Groups Tagging API、備份、CloudWatch Logs、KMS 和 EFS。
+
 link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 
 
