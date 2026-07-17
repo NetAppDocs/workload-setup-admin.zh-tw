@@ -254,8 +254,6 @@
   <block id="41d28e7b29f45d4f63653993af041bc7" category="paragraph">如果您的組織需要額外的帳戶或使用者管理、請使用產品內的聊天室與我們聯絡。</block>
   <block id="e73298b79ea9408111cb3612bf336a0e" category="section-title">連線連結</block>
   <block id="e20e09752eeb59f7fee2ca964db1c848" category="paragraph">連結目前使用 AWS Lambda 。</block>
-  <block id="e3bdd5798efebca8061760f610d98bcc" category="inline-link">深入瞭解連結</block>
-  <block id="cee76762b1db025f50dc7b50c80548de" category="paragraph"><block ref="cee76762b1db025f50dc7b50c80548de" category="inline-link-rx"></block></block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="section-title">CodeBox 自動化</block>
   <block id="7c408fda146892c9e1c039f91fee3cd3" category="paragraph">Codebox 窗格會顯示由特定工作流程作業所產生的 IAC 、並由圖形化精靈或交談式聊天介面進行比對。雖然 Codebox 支援色彩編碼、並可搜尋簡單的導覽和分析、但不允許編輯。您只能複製或儲存到自動化目錄。</block>
   <block id="ec6b8f7cd0c5cd9853d947bc13f72f4b" category="inline-link-macro">深入瞭解 CodeBox</block>
@@ -1499,7 +1497,6 @@
   <block id="708d52dc7d2f1cb4787bfd74e41bfab5" category="list-text">使用以下任一方式登入<block ref="730226d90433792895dc2ec640283d2d" category="inline-link-macro-rx"></block>。</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="section-title">AWS 憑證和權限</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="section-title">連結至 FSx for ONTAP</block>
-  <block id="575660b25d9cb74a47a89172d359da91" category="paragraph">Workload Factory 需要 Link 才能連接到 FSx for ONTAP 檔案系統。Link 在 Workload Factory 與一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。這可讓您直接透過 ONTAP REST API 呼叫來監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。</block>
   <block id="68cd2ca9724f378c0a2815415eeecfbd" category="inline-link">學習如何建立連結</block>
   <block id="11a7b8f6e5b40124f50c5d30e3fedda3" category="paragraph"><block ref="35d312ad6c576252ccfa87842dc6e767" category="inline-link-rx"></block>.</block>
   <block id="90b29202abc7a1c38c887ae166296c46" category="summary">存取您的儀表板目錄，以在 Workload Factory 中檢視、重新整理和刪除自訂儀表板。</block>
@@ -1514,4 +1511,7 @@
   <block id="00436cf3153058a6cc1bda7834e2df46" category="paragraph">為了建立儀表板，Workload Factory 使用唯讀的 AWS 憑證。這些憑證僅允許對下列服務執行讀取操作，例如<block ref="24ca8966cf3ca7c9dc7c9de631b31ff0" prefix=" " category="inline-code"></block>和<block ref="0054238c3be20aab765346f029c558a4" prefix=" " category="inline-code"></block>：EC2、FSx、CloudWatch、Resource Groups Tagging API、備份、CloudWatch Logs、KMS 和 EFS。</block>
   <block id="660503a3fa3804fff2a7f84301e40d4a" category="summary">修復自訂儀表板的常見問題，包括設定失敗、資料載入問題和存取問題。</block>
   <block id="e3c8b96b5757e581b1d0e7900d690797" category="paragraph">**原因：**您 Workload Factory 帳戶中的其他使用者可能已將其刪除。</block>
+  <block id="ee01e7a77a5b8f6475723b4e66eca889" category="paragraph">Workload Factory 需要透過連結連接到 FSx for ONTAP 檔案系統。此連結會在 Workload Factory 與一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。這樣，您就可以直接透過 ONTAP REST API 呼叫來監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。</block>
+  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">深入瞭解連結</block>
+  <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
 </blocks>

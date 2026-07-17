@@ -65,7 +65,7 @@ link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 [[link-to-fsx-for-ontap]]
 === 連結至 FSx for ONTAP
 
-Workload Factory 需要 Link 才能連接到 FSx for ONTAP 檔案系統。Link 在 Workload Factory 與一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。這可讓您直接透過 ONTAP REST API 呼叫來監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。
+Workload Factory 需要透過連結連接到 FSx for ONTAP 檔案系統。此連結會在 Workload Factory 與一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。這樣，您就可以直接透過 ONTAP REST API 呼叫來監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。
 
 https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["學習如何建立連結"^].
 
