@@ -1,0 +1,63 @@
+= 更新了資料庫的 IAM 權限原則。
+:allow-uri-read: 
+
+
+
+
+[[updated-iam-permission-policies-for-databases]]
+=== 更新了資料庫的 IAM 權限原則。
+
+資料庫的權限已更新，以改善功能存取並限制不必要的 SSM 存取。
+
+檢視、規劃和分析權限僅限於 AWS SSM 文件。擁有這些權限，您可以檢視主機、執行個體和資料庫。您也可以對資源執行基本的隨需架構完善分析。
+
+操作和修復權限可讓您變更資源、分析錯誤日誌、取得資源的全面架構完善分析並修復組態問題。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["權限參考"] === 自訂儀表板
+
+
+
+==== 自訂儀表板的通知
+
+Workload Factory 現在會在您的自訂儀表板準備就緒或建立失敗時通知您。
+
+建立自訂儀表板後，您將收到一則通知，其中包含可直接檢視該儀表板的連結。如果建立失敗，您將收到一則通知，其中包含指向自訂儀表板清單的連結，以便重試。
+
+這可以幫助您了解儀表板何時準備就緒，並方便您審查或重新建立它。
+
+link:create-custom-dashboard.html["學習如何建立自訂儀表板"]
+
+link:configure-notifications.html["了解如何設定通知"]
+
+
+
+==== 私有和公用自訂儀表板
+
+自訂儀表板現在包含共享設定。您可以將儀表板設為私人，也可以與團隊成員共享。
+
+預設情況下，新建的儀表板是私有的，只有您自己可見。您可以隨時將儀表板設為公開，與 Workload Factory 帳戶中的所有人共享。
+
+每個儀表板卡片都會顯示「私人」或「公有」標籤，以便您快速查看哪些儀表板是共享的。
+
+link:learn-custom-dashboards.html#dashboard-visibility-and-sharing["了解儀表板的可見度和共享功能"]
+
+link:manage-custom-dashboards.html#change-dashboard-visibility["了解如何共享儀表板"]
+
+
+
+[[ai-features-administration]]
+=== AI 功能管理
+
+您可以透過 Workload Factory 管理中的以下設定來控制整個組織對 AI 功能的存取。
+
+* 使用 NetApp 代管的 Bedrock（建議使用，預設啟用，設有每月點數限制）
+* 關閉所有人工智慧功能
+
+
+新的管理頁面讓您可以集中管理這些設定。
+
+AI 功能包括「問我」、自訂儀表板、規則建構者以及 EMS、資料庫日誌和 Volume 延遲分析器。
+
+如果 AI 功能已關閉，使用者將會看到一則訊息，提示 AI 無法使用。
+
+link:manage-genai-features.html["了解如何管理人工智慧功能"]

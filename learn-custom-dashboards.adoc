@@ -18,6 +18,9 @@ summary: 建立由 AI 驅動的儀表板，根據您的工作負載和優先順�
 Workload Factory 帳戶中的所有使用者都可以查看所有自訂儀表板。這種共享設定有助於團隊協作，並在整個組織內查看相同的營運資訊。
 
 
+NOTE: 如果您的帳戶系統管理員已關閉 AI 功能，您將看到一則訊息，並且無法建立儀表板。請聯絡您的系統管理員或 link:manage-genai-features.html["了解 AI 管理"]。
+
+
 
 [[why-use-custom-dashboards]]
 == 為什麼要使用自訂儀錶板
@@ -43,6 +46,21 @@ Workload Factory 使用者需要管理大量的工作負載、環境和優先順
 * 按地區、工作負載或其他類別查看
 * 您需要追蹤和展示的規則或要求
 
+
+
+
+[[view-and-share-dashboards]]
+== 檢視並共享儀表板
+
+預設情況下，新建的儀表板是私有的，只有您自己才能看到。您可以隨時將儀表板設為公開，與您的團隊共享。
+
+* *私人儀表板*：只有您可以檢視這些儀表板。可用於個人監控、測試或進行中的工作。
+* *公開儀表板*：您 Workload Factory 帳戶中的所有使用者都可以檢視這些儀表板。使用它們可以共享監控檢視，並確保您的團隊在工作負載、優先順序和業務目標方面保持一致。
+
+
+每個儀表板卡片都會顯示儀表板是私有的還是公開的，因此您可以快速查看哪些儀表板是共享的。
+
+link:manage-custom-dashboards.html#change-dashboard-visibility["了解如何變更儀表板可見度"]。
 
 
 
@@ -83,7 +101,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["學習如何�
 
 目前自訂儀表板有以下限制：
 
-* 您無法在 Workload Factory 帳戶之外共用儀表板
+* 您無法在 Workload Factory 帳戶之外共享儀表板。所有儀表板共享僅限於同一 Workload Factory 帳戶內的使用者。
 
 
 

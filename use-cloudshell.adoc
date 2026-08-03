@@ -32,6 +32,9 @@ CloudShell 的功能包括：
 
 
 
+NOTE: 如果您的帳戶系統管理員已關閉 AI 功能，則將無法使用 AI 產生的錯誤回應。link:manage-genai-features.html["了解如何管理人工智慧功能"]。
+
+
 
 [[cloudshell-commands]]
 == CloudShell 命令

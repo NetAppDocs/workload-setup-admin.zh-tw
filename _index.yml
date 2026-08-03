@@ -16,6 +16,8 @@ indexpage:
       url: "/workload-factory-overview.html"
     - title: 註冊
       url: sign-up-saas.html
+    - title: 管理 AI 功能
+      url: "/manage-genai-features.html"
   - title: 憑證和權限
     links:
     - title: 新增 AWS 認證

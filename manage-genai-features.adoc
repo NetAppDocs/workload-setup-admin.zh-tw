@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: manage-genai-features.html 
+keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration 
+summary: 在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取。您可以關閉 AI 功能或使用 NetApp 代管的 AWS Bedrock。 
+---
+= 管理 AI 功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+控制對 Workload Factory 中 AI 功能的存取。您可以關閉 AI 功能，或使用由 NetApp 代管的 AWS Bedrock。
+
+
+
+[[about-ai-features]]
+== 關於 AI 功能
+
+Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如「問我」、自訂儀表板以及 EMS、資料庫日誌和延遲分析器。
+
+身為 Workload Factory 系統管理員，您可以在 AI 設定頁面上控制這些功能如何使用 AI。
+
+
+
+[[configuration-options]]
+== 組態選項
+
+請從以下設定選項中選擇：
+
+NetApp 代管的 Bedrock （建議）:: 使用 NetApp 代管的 AWS Bedrock 服務。建議大多數使用者選擇此選項。
++
+--
+* 您的資料不會用於訓練模型
+* 每月使用額度在您的組織內共享。
+* 無需額外的 AWS 設定
+
+
+--
+GenAI 功能關閉:: 關閉所有人工智慧功能。使用者將無法再使用「問我」、分析器、自訂儀表板、規則建構者或其他人工智慧驅動工具。
+
+
+
+
+[[before-you-begin]]
+== 開始之前
+
+* 我們建議帳戶系統管理員設定 AI 功能。
+
+
+
+
+[[configure-ai-features]]
+== 設定 AI 功能
+
+.步驟
+. 使用以下任一方式登入link:console-experiences.html["主控台體驗"^]。
+. 從選單中選擇 *管理*，然後選擇 *AI 設定*。
+. 在「AI 設定」頁面，選擇您偏好的組態：
++
+** *NetApp-代管的 Bedrock （建議）*：使用 NetApp-代管的 AWS Bedrock。
+** *Gen AI features off*：關閉所有 AI 功能。
+
+
+. 選擇 *Save preferences*。
+
+
+.結果
+您的設定已儲存並立即套用至 Workload Factory 中的所有 AI 功能。您可以在 Tracker 中檢視上次由誰更新了設定以及更新時間。
+
+如果 AI 功能已關閉，使用者嘗試使用 AI 驅動的功能時會看到一則訊息。介面仍然可見，並清楚顯示該功能無法使用。
+
+
+
+[[budget-controls-and-credit-limits]]
+== 預算控制和信用額度
+
+NetApp 在使用預設的 NetApp 代管組態時，會管理 AI 功能的預算控制。
+
+
+
+[[monthly-credit-limits]]
+=== 每月信用額度
+
+使用 NetApp 代管的 Bedrock 時，每個帳戶對每個 AI 功能都有每月消費限額。
+
+
+
+[[when-budget-is-reached]]
+=== 當達到預算時
+
+如果您的帳戶達到每月預算上限，Workload Factory 將：
+
+* 關閉 AI 功能並將介面相關部分灰顯
+* 將此訊息顯示為工具提示：「每月 AI 額度已用完。請聯絡 NetApp Support。」
+* 記錄用於追蹤目的的使用情況
+
+
+
+
+[[request-additional-credits]]
+=== 申請額外點數
+
+如果您需要更多 AI 積分，請聯絡您的 NetApp 客服代表。他們可以根據您的需求調整您的積分額度。
+
+[TIP]
+====
+如需聯絡您的 NetApp 客服代表諮詢信用額度，請使用產品內聊天功能或造訪 link:get-help.html["取得協助"] 頁面。
+
+====
+
+
+[[govcloud-considerations]]
+== GovCloud 考量事項
+
+如果您在 AWS GovCloud（US）中建立 Workload Factory 帳戶，請附註，AI 功能預設使用公共 AWS 區域中的 AWS Bedrock 服務。
+
+如果您的安全性需求不允許連線到公用 AWS 區域服務，您可以停用 AI 功能。
+
+link:sign-up-saas.html["了解如何建立 GovCloud 帳戶"]。
+
+
+
+[[impact-on-existing-sessions]]
+== 對現有工作階段的影響
+
+更改 AI 設定時，所有作用中的 AI 工作階段都會被軟終止。目前工作流程可以完成，但新的請求將使用更新的設定。
+
+終止行為可能因功能而異。詳情請參閱特定功能的文件。
+
+
+
+[[related-information]]
+== 相關資訊
+
+* link:workload-factory-overview.html["了解 Workload Factory 功能"]
+* link:learn-custom-dashboards.html["了解自訂儀表板"]
+* link:add-credentials.html["新增 AWS 認證"]
+* link:permissions-reference.html["權限參考"]
+

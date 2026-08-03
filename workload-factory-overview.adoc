@@ -34,6 +34,9 @@ AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 ch
 
 
 
+NOTE: 帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員停用這些功能，「Ask Me」AI 助理將無法使用。link:manage-genai-features.html["了解如何管理人工智慧功能"]。
+
+
 
 [[supported-cloud-providers]]
 == 支援的雲端供應商
@@ -116,7 +119,7 @@ Workload Factory 連結在 Workload Factory 與一個或多個 FSx for ONTAP檔�
 
 連結目前使用 AWS Lambda 。
 
-https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭解連結"^]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["深入瞭解連結"^]
 
 
 
