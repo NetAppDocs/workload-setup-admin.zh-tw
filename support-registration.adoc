@@ -11,4 +11,108 @@ summary: 在向NetApp技術支援提交支援案例之前，您需要將NetApp�
 
 
 [role="lead"]
-653d126dab2129219a760f2bd1daffba
+需要註冊支援才能獲得針對NetApp Workload Factory 及其儲存解決方案和服務的技術支援。您必須註冊NetApp Console 的支持，它是獨立於 Workload Factory 的基於 Web 的控制台。
+
+註冊支援並不能使NetApp獲得雲端提供者文件服務的支援。有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的 Workload Factory 文件中的「取得協助」。
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX for ONTAP Sf"^]
+
+
+
+[[support-registration-overview]]
+== 支援登錄總覽
+
+註冊您的帳戶 ID 支援訂閱（位於NetApp控制台中的「支援資源」頁面上的 20 位 960xxxxxxxxx 序號）作為您的單一支援訂閱 ID。每個NetApp帳號級支援訂閱都必須註冊。
+
+註冊後即可實現開立支援票和自動產生案例等功能。透過將NetApp支援網站 (NSS) 帳戶新增至NetApp控制台即可完成註冊，如下所述。
+
+
+
+[[register-your-account-for-netapp-support]]
+== 註冊您的帳戶以取得 NetApp 支援
+
+若要註冊支援並啟動支援權利，您帳戶中的使用者必須將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯。如何註冊NetApp支援取決於您是否已經擁有NetApp支援網站 (NSS) 帳號。
+
+
+
+[[existing-customer-with-an-nss-account]]
+=== 現有的客戶、擁有一個新服務客戶帳戶
+
+如果您是擁有 NSS 帳戶的NetApp客戶，只需透過NetApp控制台註冊即可獲得支援。
+
+.步驟
+. 在 Workload Factory 控制台的右上角，選擇 *幫助 > 支援*。
++
+選擇此選項將在新瀏覽器標籤中開啟NetApp控制台並載入支援儀表板。
+
+. 從NetApp控制台選單中，選擇 *管理*，然後選擇 *憑證*。
+. 選取 * 使用者認證 * 。
+. 選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。
+. 若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。
++
+「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。"]
+
++
+請注意，如果其他NetApp控制台使用者尚未將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯，則他們將看不到相同的支援註冊狀態。但是，這並不意味著您的NetApp帳戶未註冊支援。只要帳戶中有一位使用者遵循了這些步驟，那麼您的帳戶就註冊成功了。
+
+
+
+
+
+[[existing-customer-but-no-nss-account]]
+=== 現有客戶、但無NSS.帳戶
+
+如果您是現有NetApp客戶，擁有現有授權和序號但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的NetApp控制台登入關聯。
+
+.步驟
+. 完成建立 NetApp 支援網站帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
++
+.. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
+.. 請務必複製上面用於序號欄位的NetApp帳號序號 (960xxxx)。這將加快帳戶處理速度。
+
+
+. 完成以下步驟，將您的新 NSS 帳戶與您的NetApp控制台登入關聯<<現有的客戶、擁有一個新服務客戶帳戶>>。
+
+
+
+
+[[brand-new-to-netapp]]
+=== NetApp全新推出
+
+如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。
+
+.步驟
+. 在 Workload Factory 控制台的右上角，選擇 *幫助 > 支援*。
++
+選擇此選項將在新瀏覽器標籤中開啟NetApp控制台並載入支援儀表板。
+
+. 從「支援資源」頁面找到您的帳戶 ID 序號。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-serial-number.png["「說明」功能表的快照、其中「支援」是第一個列出的選項"]
+
+. 瀏覽 https://register.netapp.com["NetApp的支援註冊網站"^] 並選取 * 我不是 NetApp 的註冊客戶 * 。
+. 填寫必填欄位（紅色星號）。
+. 在*產品系列*欄位中、選取* Cloud Manager*、然後選取適用的帳單供應商。
+. 複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。
++
+系統會立即將電子郵件傳送至提供的信箱、以完成此安全交易。如果驗證電子郵件在幾分鐘內未送達、請務必檢查您的垃圾郵件資料夾。
+
+. 確認電子郵件中的行動。
++
+確認將您的申請提交給NetApp、並建議您建立NetApp 支援網站 一個申請表。
+
+. 完成建立 NetApp 支援網站帳戶 https://mysupport.netapp.com/site/user/registration["《使用者登錄表》NetApp 支援網站"^]
++
+.. 請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。
+.. 請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。
+
+
+
+
+.完成後
+在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。
+
+擁有NetApp支援網站帳號後，請依照下列步驟將帳號與您的NetApp控制台登入關聯<<現有的客戶、擁有一個新服務客戶帳戶>>。

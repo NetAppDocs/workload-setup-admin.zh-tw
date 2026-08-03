@@ -46,9 +46,9 @@ Workload Factory 現在會在您的自訂儀表板準備就緒或建立失敗時
 
 這可以幫助您了解儀表板何時準備就緒，並方便您審查或重新建立它。
 
-link:create-custom-dashboard.html["學習如何建立自訂儀表板"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["學習如何建立自訂儀表板"]
 
-link:configure-notifications.html["了解如何設定通知"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["了解如何設定通知"]
 
 
 
@@ -60,9 +60,9 @@ link:configure-notifications.html["了解如何設定通知"]
 
 每個儀表板卡片都會顯示「私人」或「公有」標籤，以便您快速查看哪些儀表板是共享的。
 
-link:learn-custom-dashboards.html#dashboard-visibility-and-sharing["了解儀表板的可見度和共享功能"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html#view-and-share-dashboards["了解儀表板的可見度和共享功能"]
 
-link:manage-custom-dashboards.html#change-dashboard-visibility["了解如何共享儀表板"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html#change-dashboard-visibility["了解如何共享儀表板"]
 
 
 
@@ -81,7 +81,7 @@ AI 功能包括「問我」、自訂儀表板、規則建構者以及 EMS、資�
 
 如果 AI 功能已關閉，使用者將會看到一則訊息，提示 AI 無法使用。
 
-link:manage-genai-features.html["了解如何管理人工智慧功能"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["了解如何管理人工智慧功能"]
 
 
 

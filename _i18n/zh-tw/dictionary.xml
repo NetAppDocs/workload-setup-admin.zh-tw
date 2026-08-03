@@ -1520,17 +1520,13 @@
   <block id="7a99102fbba6a5729480bc61967c8423" category="paragraph">建立自訂儀表板後，您將收到一則通知，其中包含可直接檢視該儀表板的連結。如果建立失敗，您將收到一則通知，其中包含指向自訂儀表板清單的連結，以便重試。</block>
   <block id="a9402b6e97b8b59ffa86012d5cfb7f9a" category="paragraph">這可以幫助您了解儀表板何時準備就緒，並方便您審查或重新建立它。</block>
   <block id="359ab637c5369e269d0e004308b6c089" category="inline-link-macro">學習如何建立自訂儀表板</block>
-  <block id="2b4fe8741ca59e9e85fecaff24736613" category="paragraph"><block ref="2b4fe8741ca59e9e85fecaff24736613" category="inline-link-macro-rx"></block></block>
   <block id="863d814c29385fa8ebfd13bc1c1c7e96" category="inline-link-macro">了解如何設定通知</block>
-  <block id="19fa6c73a4251f43a74dc700e68a79f1" category="paragraph"><block ref="19fa6c73a4251f43a74dc700e68a79f1" category="inline-link-macro-rx"></block></block>
   <block id="27a522e1e6e4d9921e08ab5e7ad99158" category="section-title">私有和公用自訂儀表板</block>
   <block id="add4e669fb22c004f4eef61607cc5df8" category="paragraph">自訂儀表板現在包含共享設定。您可以將儀表板設為私人，也可以與團隊成員共享。</block>
   <block id="1bdd40db25752f704baa9b254470fb9a" category="paragraph">預設情況下，新建的儀表板是私有的，只有您自己可見。您可以隨時將儀表板設為公開，與 Workload Factory 帳戶中的所有人共享。</block>
   <block id="26e05170ba3616166d4659e72d415450" category="paragraph">每個儀表板卡片都會顯示「私人」或「公有」標籤，以便您快速查看哪些儀表板是共享的。</block>
   <block id="29f897a53b188561913c2393050ce43a" category="inline-link-macro">了解儀表板的可見度和共享功能</block>
-  <block id="c5d5a7386c6c7c68f8d62de175cd235f" category="paragraph"><block ref="c5d5a7386c6c7c68f8d62de175cd235f" category="inline-link-macro-rx"></block></block>
   <block id="c0bb5d7518380c44f5710f0803f9b3f4" category="inline-link-macro">了解如何共享儀表板</block>
-  <block id="15bb464c4011a82a1976bc518af9f860" category="paragraph"><block ref="15bb464c4011a82a1976bc518af9f860" category="inline-link-macro-rx"></block></block>
   <block id="b6ea1239e82705b159df88578e6fb6f0" category="section-title">AI 功能管理</block>
   <block id="1c7ba82e26fc30a97a625aaad623e4f4" category="paragraph">您可以透過 Workload Factory 管理中的以下設定來控制整個組織對 AI 功能的存取。</block>
   <block id="e585625dd2a0a8e71ca8d8a269834ba9" category="list-text">使用 NetApp 代管的 Bedrock（建議使用，預設啟用，設有每月點數限制）</block>
@@ -1539,7 +1535,6 @@
   <block id="cd89624525aeeba4f9fce9dcfb6d9a91" category="paragraph">AI 功能包括「問我」、自訂儀表板、規則建構者以及 EMS、資料庫日誌和 Volume 延遲分析器。</block>
   <block id="dc363e90d503e57b6cddc555e2f96d5f" category="paragraph">如果 AI 功能已關閉，使用者將會看到一則訊息，提示 AI 無法使用。</block>
   <block id="48dc51848c127d267cdd7ab1bcd0fe5e" category="inline-link-macro">了解如何管理人工智慧功能</block>
-  <block id="56d2e09cbb0a828478db20ff2d11774d" category="paragraph"><block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block></block>
   <block id="30c96c6f4cd1002d6f485ca940c9a6e7" category="cell">自訂儀表板建立成功</block>
   <block id="0791611e19f18138ef88e9ec3b961a87" category="cell">您的自訂儀表板已成功建立，可供檢視。</block>
   <block id="8fef7542994100e60e95202e22600bf2" category="cell">自訂儀表板</block>
@@ -1641,4 +1636,9 @@
   <block id="8fb2a31345fc5c5e72c947d436b5077b" category="admonition">帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員停用這些功能，「Ask Me」AI 助理將無法使用。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
   <block id="959c1faca1dbb57f8dac1b5058bf9c58" category="paragraph"><block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block></block>
   <block id="167e20b67f84068555b3081057c696b8" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block></block>
+  <block id="0e23d2a91e2fd1a7eb141ceb8cd9ddcf" category="paragraph"><block ref="0e23d2a91e2fd1a7eb141ceb8cd9ddcf" category="inline-link-macro-rx"></block></block>
+  <block id="d972d2e4f90697cd9aea0ea06c6d65ea" category="paragraph"><block ref="d972d2e4f90697cd9aea0ea06c6d65ea" category="inline-link-macro-rx"></block></block>
+  <block id="5243974c66976ebd592df24b62b1b9bf" category="paragraph"><block ref="5243974c66976ebd592df24b62b1b9bf" category="inline-link-macro-rx"></block></block>
+  <block id="a8d7b4c293e04e8a879f9be70ed380ba" category="paragraph"><block ref="a8d7b4c293e04e8a879f9be70ed380ba" category="inline-link-macro-rx"></block></block>
+  <block id="8d20116cd01bc3ce31dae628497af0dc" category="paragraph"><block ref="8d20116cd01bc3ce31dae628497af0dc" category="inline-link-macro-rx"></block></block>
 </blocks>
