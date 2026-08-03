@@ -29,7 +29,12 @@ summary: 了解 Workload Factory 管理功能的最新動態，例如雲端供�
 
 操作和修復權限可讓您變更資源、分析錯誤日誌、取得資源的全面架構完善分析並修復組態問題。
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["權限參考"] === 自訂儀表板
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["權限參考"]
+
+
+
+[[custom-dashboards]]
+=== 自訂儀錶板
 
 
 

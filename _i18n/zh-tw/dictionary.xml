@@ -1515,7 +1515,6 @@
   <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">資料庫的權限已更新，以改善功能存取並限制不必要的 SSM 存取。</block>
   <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">檢視、規劃和分析權限僅限於 AWS SSM 文件。擁有這些權限，您可以檢視主機、執行個體和資料庫。您也可以對資源執行基本的隨需架構完善分析。</block>
   <block id="e9ad7ba5991717b52c215bd25e788b28" category="paragraph">操作和修復權限可讓您變更資源、分析錯誤日誌、取得資源的全面架構完善分析並修復組態問題。</block>
-  <block id="0c92fa03ad5e533f4ef42de9a2ae598f" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block> === 自訂儀表板</block>
   <block id="d5eb0f9120b28b557f3e367589adf4bb" category="section-title">自訂儀表板的通知</block>
   <block id="fb5e135dfdab99cdebbb946a22093655" category="paragraph">Workload Factory 現在會在您的自訂儀表板準備就緒或建立失敗時通知您。</block>
   <block id="7a99102fbba6a5729480bc61967c8423" category="paragraph">建立自訂儀表板後，您將收到一則通知，其中包含可直接檢視該儀表板的連結。如果建立失敗，您將收到一則通知，其中包含指向自訂儀表板清單的連結，以便重試。</block>
@@ -1641,4 +1640,5 @@
   <block id="1cdbc8bcb26cc8d5e894a97b9e7f269f" category="section-title">2026年7月5日</block>
   <block id="8fb2a31345fc5c5e72c947d436b5077b" category="admonition">帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員停用這些功能，「Ask Me」AI 助理將無法使用。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
   <block id="959c1faca1dbb57f8dac1b5058bf9c58" category="paragraph"><block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block></block>
+  <block id="167e20b67f84068555b3081057c696b8" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block></block>
 </blocks>
