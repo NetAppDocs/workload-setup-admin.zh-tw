@@ -24,7 +24,6 @@
   <block id="05e2d97b3b23a80afeb67390bad5f97c" category="inline-image-macro">顯示哪些權限將成為新角色一部分的螢幕擷取畫面。</block>
   <block id="bfc77a43a5b610654d7d0e7bbb9162a7" category="paragraph"><block ref="bfc77a43a5b610654d7d0e7bbb9162a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0a8070d8176ef21fdf6bc0d6b6833c9" category="list-text">在 AWS 管理主控台中、選取 * 角色 &gt; 建立角色 * 。</block>
-  <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在*信任的實體類型*下、選取* AWS帳戶*。</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">選擇*下一步*。</block>
   <block id="552a0f683211339f8f7517a1d4fc804d" category="list-text">在權限原則區段中、選擇您先前定義的所有原則、然後選取 * 下一步 * 。</block>
   <block id="eb940e2ee0ec63786b166a518db881df" category="list-text">輸入角色名稱、然後選取 * 建立角色 * 。</block>
@@ -633,7 +632,6 @@
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025 年 02 月 2 日</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025 年 1 月 5 日</block>
   <block id="5ff4c3f483396c894c51f91d47106ecf" category="list-text">在「認證」頁面上，選取 * 新增認證 * 。</block>
-  <block id="558847a01e0a9378a8c7b99a0e6af643" category="list-text">在「新增認證」頁面上，選取 * 手動新增 * ，然後使用下列步驟完成 _ 權限組態 _ 下的每個區段。</block>
   <block id="4b44bad00f91b8450a836bfa54b0306e" category="list-text">在 CloudShell 視窗中，選取 CloudShell 工作階段的認證和區域，然後選取箭頭繼續。</block>
   <block id="a5fab0062142f5ef0615c361259b0b89" category="cell">授與角色可在適用於 ONTAP 的 FSX 與其他 AWS 服務之間提供通訊</block>
   <block id="8832fb7d0699d4878c8449616cd47613" category="cell">IAM ： CreateServiceLinkedIn 角色</block>
@@ -823,9 +821,6 @@
   <block id="6c8ca72a28d9651706405d888093910e" category="list-text">登入<block ref="04c72ef1cb137ba02eafcfdeb6fc7765" category="inline-link-rx"></block>。</block>
   <block id="6191b3848b93c4178f95391680ab2108" category="list-text">從選單中選擇“*管理*”，然後選擇“*憑證*”。</block>
   <block id="30551002ceb8abd5af0ee8907423b553" category="paragraph">在本節中，您將設定 Workload Factory 將承擔的 IAM 角色，其中包含您剛剛建立的權限和政策。</block>
-  <block id="f0497660975536e414a629b7d4f9f276" category="list-text">選擇 *另一個 AWS 帳戶*，然後從 Workload Factory UI 複製並貼上 FSx for ONTAP工作負載管理的帳戶 ID。</block>
-  <block id="f97e7ca54bb60a402c14107162345b08" category="list-text">選擇*所需的外部 ID*並從 Workload Factory UI 複製並貼上外部 ID。</block>
-  <block id="fcf4437915eed569a9fd7691faf38a66" category="list-text">返回 Workload Factory 中的「新增憑證」頁面，展開「權限配置」下的「建立角色」部分，然後將 ARN 貼到「角色 ARN」欄位中。</block>
   <block id="a9c4ed0c041add98b3c1c27e6191e29e" category="paragraph">最後一步是在 Workload Factory 中輸入憑證的名稱。</block>
   <block id="5976d02d7cdfb004e841934d0a6bf1b5" category="list-text">在 Workload Factory 中的「新增憑證」頁面中，展開「權限配置」下的「憑證名稱」。</block>
   <block id="21f73823dc240b09e9b0a0896496f95d" category="paragraph">您可以使用 AWS CloudFormation 堆疊將 AWS 憑證新增至 Workload Factory，方法是選擇要使用的 Workload Factory 功能，然後在您的 AWS 帳戶中啟動 AWS CloudFormation 堆疊。  CloudFormation 將根據您選擇的工作負載功能建立 IAM 原則和 IAM 角色。</block>
@@ -1509,8 +1504,6 @@
   <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">您可以忽略不適用於您環境的組態分析。這樣可以避免不必要的警示和不準確的最佳化結果。</block>
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">深入瞭解自訂規則</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">您還可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。</block>
-  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
   <block id="da0c92072a1db7fee3208bcad3ad822b" category="doc">更新了資料庫的 IAM 權限原則。</block>
   <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">資料庫的權限已更新，以改善功能存取並限制不必要的 SSM 存取。</block>
   <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">檢視、規劃和分析權限僅限於 AWS SSM 文件。擁有這些權限，您可以檢視主機、執行個體和資料庫。您也可以對資源執行基本的隨需架構完善分析。</block>
@@ -1641,4 +1634,10 @@
   <block id="5243974c66976ebd592df24b62b1b9bf" category="paragraph"><block ref="5243974c66976ebd592df24b62b1b9bf" category="inline-link-macro-rx"></block></block>
   <block id="a8d7b4c293e04e8a879f9be70ed380ba" category="paragraph"><block ref="a8d7b4c293e04e8a879f9be70ed380ba" category="inline-link-macro-rx"></block></block>
   <block id="8d20116cd01bc3ce31dae628497af0dc" category="paragraph"><block ref="8d20116cd01bc3ce31dae628497af0dc" category="inline-link-macro-rx"></block></block>
+  <block id="e0d1a02b10ec781984ac246a7d6226fd" category="list-text">在「新增憑證」頁面上，選擇「手動新增」，然後按照下列步驟完成「權限組態」下的每個部分。</block>
+  <block id="4cba6cec5bdba739fed7cc1ed3ac5396" category="list-text">在 Workload Factory 的「新增憑證」頁面中，展開「權限組態」下的「建立角色」。</block>
+  <block id="288d704e69ec643a96254456480c3998" category="list-text">選擇 *JSON code* 以複製原則。</block>
+  <block id="e7a1d840ae4199cc1f76836535606345" category="list-text">在「受信任實體類型」下，選擇「自訂信任原則」。</block>
+  <block id="a2908f77e830d0a907f60038a03cc446" category="list-text">將文字方塊中的目前內容替換為您在步驟 2 中複製的 JSON 程式碼。</block>
+  <block id="0afa7405bb80320955bff5c5dafcba00" category="list-text">返回 Workload Factory 中的「新增憑證」頁面，然後將角色 ARN 貼到 _Role ARN_ 欄位中。</block>
 </blocks>

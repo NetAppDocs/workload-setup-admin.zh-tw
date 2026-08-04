@@ -15,10 +15,6 @@ Workload Factory 每日分析您在 Amazon FSx for NetApp ONTAP 檔案系統部�
 
 您還可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。link:https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["深入瞭解自訂規則"^].
 
-您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。
-
-link:https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["深入瞭解自訂規則"^]。
-
 
 
 [[why-it-matters]]
