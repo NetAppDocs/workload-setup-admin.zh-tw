@@ -1640,4 +1640,41 @@
   <block id="e7a1d840ae4199cc1f76836535606345" category="list-text">在「受信任實體類型」下，選擇「自訂信任原則」。</block>
   <block id="a2908f77e830d0a907f60038a03cc446" category="list-text">將文字方塊中的目前內容替換為您在步驟 2 中複製的 JSON 程式碼。</block>
   <block id="0afa7405bb80320955bff5c5dafcba00" category="list-text">返回 Workload Factory 中的「新增憑證」頁面，然後將角色 ARN 貼到 _Role ARN_ 欄位中。</block>
+  <block id="cfd98e00a6e308c04ab9f76a854b6989" category="doc">追蹤和監控作業</block>
+  <block id="674b84367e7a585d7eb4cb69538ab5be" category="paragraph">使用 NetApp Workload Factory 中的 Tracker 監控和追蹤 FSx for ONTAP 的執行情況、憑證和連結操作，並監控工作進度。</block>
+  <block id="8dbebb7d8525e0c16443f866feb41a02" category="paragraph">Workload Factory 提供 Tracker 監控功能，讓您可以監控和追蹤 FSx for ONTAP、憑證和連結作業的進度與狀態，審查作業任務和子任務的詳細資訊，並診斷任何問題或故障。</block>
+  <block id="6092aff2fd96382c8039bf4b05f69f42" category="paragraph">Tracker 提供多種操作。您可以按時間範圍（過去 24 小時、7 天、14 天或 30 天）、工作負載、狀態和使用者篩選工作；使用搜尋功能尋找工作；並將工作表下載為 CSV 檔案。您可以隨時重新整理 Tracker。此外，您還可以快速重試失敗的操作，或編輯失敗操作的參數並再次嘗試。</block>
+  <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">Tracker 根據操作類型支援兩級監控。每個工作（例如檔案系統部署）都會顯示工作執行摘要、狀態、開始時間、工作持續時間、使用者、區域、Proxy 資源、工作 ID 以及所有相關的子工作。您可以檢視 API 回應，以了解操作期間發生的情況。</block>
+  <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">含範例的 Tracker 工作層級</block>
+  <block id="21a1f3fb63f8e2b67d072b29080f89f9" category="list-text">等級 1（工作）：追蹤檔案系統部署。</block>
+  <block id="5517abda6821fee1e969e9d59498b33e" category="list-text">等級 2（子工作）：追蹤與檔案系統部署相關的子工作。</block>
+  <block id="88ebc1f479e6de47fd711c4be81c4d26" category="list-text">運作狀態</block>
+  <block id="afcc9733e2e2e0ce70f1ecee29c8f008" category="list-text">Tracker 中的操作狀態如下：_進行中_、_成功_和_失敗_。</block>
+  <block id="de32977622108a1960ab0fcf45adaf80" category="list-text">操作頻率</block>
+  <block id="a9853b6069302c4152781f48222c3541" category="list-text">作業頻率取決於作業類型和作業排程。</block>
+  <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">事件保留</block>
+  <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">事件會在使用者介面中保留 30 天。</block>
+  <block id="e80eb219e8472681a001172074028f46" category="paragraph">使用 Tracker 追蹤和監控 NetApp Console 中的作業。</block>
+  <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用以下任一方式登入<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
+  <block id="90f9c44ed80c8f4c833d62a795593434" category="list-text">選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>，然後選擇 *Administration*。</block>
+  <block id="31793001124176cff5a1e8aea00621a1" category="list-text">從管理選單中，選擇 *Tracker*。</block>
+  <block id="2ba65fb298b74a9b72d949d4fe3479b3" category="list-text">在 Tracker 中，您可以使用篩選器或搜尋功能來縮小工作結果範圍。您也可以下載工作報告。</block>
+  <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">檢視 API 請求</block>
+  <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">在 Tracker 中檢視工作的 Codebox 中的 API 請求。</block>
+  <block id="968877018213bf42962084001c210472" category="list-text">在 Tracker 中，選擇一個工作。</block>
+  <block id="bd56fc255ce900fc195c9bc0d7ed20c0" category="list-text">選擇動作選單，然後選擇*View API request*。</block>
+  <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">重試失敗的操作</block>
+  <block id="89f1070b2ef1ba678a8cb4823fa74cb2" category="paragraph">在 Tracker 中重試失敗的操作。您也可以複製失敗操作的錯誤訊息。</block>
+  <block id="2d7556f00012ad460e93441b51cce6ea" category="admonition">失敗的操作只允許重試 x 次。</block>
+  <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">在追蹤器中，選擇失敗的操作。</block>
+  <block id="9d506eb8fb5e05c2467a690e5e727cd8" category="list-text">選擇動作選單，然後選擇 *Retry*。</block>
+  <block id="121145d60db2324903b129ae74d6c0a9" category="paragraph">作業已重新啟動。</block>
+  <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">編輯並重試失敗的操作</block>
+  <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">編輯失敗操作的參數，然後在 Tracker 之外重試該操作。</block>
+  <block id="0270fd4391a6b334aa157faf0a6b7304" category="list-text">選擇操作選單，然後選擇 *Edit and retry*。</block>
+  <block id="a071e4310b0dbc18ec326c217f47692f" category="paragraph">您將被重新導向至操作頁面，您可以在該頁面編輯參數並重試操作。</block>
+  <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">操作已重新啟動。請前往「追蹤器」檢視操作狀態。</block>
+  <block id="ddfa0843a8d65e78d4c6e602bca78098" category="summary">使用 NetApp Workload Factory for Storage 中的 Tracker 追蹤 FSx for ONTAP、憑證和連結操作，並監控工作進度。</block>
+  <block id="367e536ee2f4e237a6e344129f6d1033" category="doc">使用 NetApp Workload Factory 中的 Tracker 監控作業</block>
+  <block id="00ae0cd12340f0b4bbba6b466e757a65" category="sidebar">監控作業</block>
 </blocks>

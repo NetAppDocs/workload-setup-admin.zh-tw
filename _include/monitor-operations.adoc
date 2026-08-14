@@ -1,0 +1,92 @@
+= 追蹤和監控作業
+:allow-uri-read: 
+
+
+使用 NetApp Workload Factory 中的 Tracker 監控和追蹤 FSx for ONTAP 的執行情況、憑證和連結操作，並監控工作進度。
+
+.關於這項工作
+Workload Factory 提供 Tracker 監控功能，讓您可以監控和追蹤 FSx for ONTAP、憑證和連結作業的進度與狀態，審查作業任務和子任務的詳細資訊，並診斷任何問題或故障。
+
+Tracker 提供多種操作。您可以按時間範圍（過去 24 小時、7 天、14 天或 30 天）、工作負載、狀態和使用者篩選工作；使用搜尋功能尋找工作；並將工作表下載為 CSV 檔案。您可以隨時重新整理 Tracker。此外，您還可以快速重試失敗的操作，或編輯失敗操作的參數並再次嘗試。
+
+Tracker 根據操作類型支援兩級監控。每個工作（例如檔案系統部署）都會顯示工作執行摘要、狀態、開始時間、工作持續時間、使用者、區域、Proxy 資源、工作 ID 以及所有相關的子工作。您可以檢視 API 回應，以了解操作期間發生的情況。
+
+含範例的 Tracker 工作層級::
++
+--
+* 等級 1（工作）：追蹤檔案系統部署。
+* 等級 2（子工作）：追蹤與檔案系統部署相關的子工作。
+
+
+--
+運作狀態:: Tracker 中的操作狀態如下：_進行中_、_成功_和_失敗_。
++
+--
+操作頻率:: 作業頻率取決於作業類型和作業排程。
+
+
+--
+事件保留:: 事件會在使用者介面中保留 30 天。
+
+
+
+
+[[track-and-monitor-operations]]
+== 追蹤和監控作業
+
+使用 Tracker 追蹤和監控 NetApp Console 中的作業。
+
+.步驟
+. 使用以下任一方式登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"]，然後選擇 *Administration*。
+. 從管理選單中，選擇 *Tracker*。
+. 在 Tracker 中，您可以使用篩選器或搜尋功能來縮小工作結果範圍。您也可以下載工作報告。
+
+
+
+
+[[view-api-request]]
+== 檢視 API 請求
+
+在 Tracker 中檢視工作的 Codebox 中的 API 請求。
+
+.步驟
+. 在 Tracker 中，選擇一個工作。
+. 選擇動作選單，然後選擇*View API request*。
+
+
+
+
+[[retry-a-failed-operation]]
+== 重試失敗的操作
+
+在 Tracker 中重試失敗的操作。您也可以複製失敗操作的錯誤訊息。
+
+
+NOTE: 失敗的操作只允許重試 x 次。
+
+.步驟
+. 在追蹤器中，選擇失敗的操作。
+. 選擇動作選單，然後選擇 *Retry*。
+
+
+.結果
+作業已重新啟動。
+
+
+
+[[edit-and-retry-a-failed-operation]]
+== 編輯並重試失敗的操作
+
+編輯失敗操作的參數，然後在 Tracker 之外重試該操作。
+
+.步驟
+. 在追蹤器中，選擇失敗的操作。
+. 選擇操作選單，然後選擇 *Edit and retry*。
++
+您將被重新導向至操作頁面，您可以在該頁面編輯參數並重試操作。
+
+
+
+.結果
+操作已重新啟動。請前往「追蹤器」檢視操作狀態。
