@@ -15,6 +15,18 @@ summary: 了解 Workload Factory 管理功能的最新動態，例如雲端供�
 
 
 
+[[30-august-2026]]
+== 2026年8月30日
+
+
+
+[[new-onboarding-experience-for-credentials-and-links]]
+=== 全新的憑證和連結註冊體驗
+
+Workload Factory 優化了憑證和連結的上線體驗，讓您更輕鬆地開始使用。建立帳戶並登入後，在任意工作負載圖格（例如 *Storage*）中選擇 *Get started*，下一頁將引導您逐步完成設定程序。
+
+
+
 [[03-august-2026]]
 == 2026年8月3日
 
