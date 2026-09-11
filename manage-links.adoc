@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: manage-links.html 
+keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
+summary: 您可以在 NetApp Workload Factory 中檢視與您的帳戶關聯的連結、更新連結驗證的密碼，以及移除連結。 
+---
+= 管理 NetApp Workload Factory 連結
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+管理與您 Workload Factory 帳戶關聯的連結。您可以檢視與 FSx for ONTAP 檔案系統關聯的連結，提供用於連結驗證的密碼，以及從 Workload Factory 主控台移除連結。
+
+link:links-overview.html["深入瞭解連結"] 或 link:create-link.html["建立並關聯連結"]。
+
+
+
+[[view-the-links-associated-with-your-account]]
+== 檢視與您的帳戶關聯的連結
+
+您可以檢視目前與您的帳戶關聯的連結。
+
+.步驟
+. 使用以下任一方式登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 從儲存設備功能表中，選擇 *管理*，然後選擇 *連結*。
++
+現有連結顯示在「連結」頁面上。
+
+. 若要檢視與連結關聯的 FSx for ONTAP 檔案系統，請在「關聯資源」區段中選擇 *檢視* 按鈕。
++
+image:screenshot-view-link-details.png["顯示使用特定連結的 FSx for ONTAP 檔案系統的快照。"]
+
+. 如果您需要連結的 Amazon Resource Name（ARN），您可以選擇 ARN 欄位旁邊的 _copy_ 圖示。
+
+
+
+
+[[edit-a-link]]
+== 編輯連結
+
+您無法從 Workload Factory 介面編輯連結。如果您需要變更連結，則需要建立一個新連結，然後將該連結關聯到您的檔案系統。
+
+
+NOTE: 您可以使用 AWS 主控台編輯 Lambda 網路組態（例如 VPC、子網路和安全性群組），變更將反映在連結管理 UI 中；但是，這些變更可能會導致 Lambda 和 ONTAP 之間的連線問題，因此不建議這樣做。
+
+
+
+[[authenticate-a-link]]
+== 驗證連結
+
+提供 Workload Factory 憑證的管理員使用者密碼或 AWS Secrets Manager 金鑰 ARN，以將連結連接至 FSx for ONTAP 檔案系統。
+
+使用 Console 代理程式時不支援 AWS Secrets Manager。
+
+
+NOTE: 每個連結僅支援一種身分驗證方法。例如，如果您選擇使用 AWS Secrets Manager 進行連結驗證，則之後無法變更身分驗證方法。
+
+.步驟
+. 使用以下任一方式登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"]，然後選擇 *Storage*。
+. 從儲存選單中選擇 *FSx for ONTAP* 。
+. 從 *FSx for ONTAP* 中，選取要關聯連結之檔案系統的動作選單，然後選取 *管理*。
+. 在檔案系統總覽中，選擇 *驗證連結*。
+. 在「驗證」連結頁面中，選擇一種驗證模式：
++
+** Workload Factory：請輸入兩次密碼。
+** AWS Secrets Manager：輸入金鑰 ARN。
+
+
+. 選擇*應用*。
+
+
+.結果
+連結已驗證，您可以執行進階 ONTAP 作業
+
+
+
+[[update-the-password-for-link-authentication]]
+== 更新連結驗證密碼
+
+當管理密碼無效時，更新密碼以將連結連接至 FSx for ONTAP 檔案系統。
+
+.步驟
+. 使用以下任一方式登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"]，然後選擇 *Storage*。
+. 從儲存選單中選擇 *FSx for ONTAP* 。
+. 從 *FSx for ONTAP* 中，選取要關聯連結之檔案系統的動作選單，然後選取 *管理*。
+. 在檔案系統總覽中，選擇 *更新密碼*。
+. 在驗證連結頁面中，輸入新密碼兩次。
+. 選擇*應用*。
+
+
+.結果
+密碼已更新，連結現已連接至 FSx for ONTAP 檔案系統。
+
+
+
+[[remove-a-link]]
+== 移除連結
+
+您可以移除環境中不再使用的連結。移除連結後，任何使用該連結的 FSx for ONTAP 檔案系統或其他資源都將無法使用某些功能。
+
+請注意，該連結僅從 Workload Factory 中刪除，並不會從您的 AWS 環境中刪除。您必須在 Workload Factory 中移除連結後，再從您的 AWS 帳戶中刪除 Lambda 函數。
+
+.步驟
+. 使用以下任一方式登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"]，然後選擇 *Storage*。
+. 從儲存設備功能表中，選擇 *管理*，然後選擇 *連結*。
++
+現有連結顯示在「連結」頁面上。
+
+. 在「連結」頁面中，選擇要移除之連結的操作選單，然後選擇 *移除*。
++
+image:screenshot-remove-link.png["顯示如何從 Workload Factory 移除連結的快照。"]
+
+. 如果您確定，請再次選擇 *移除*。
+
+
+請參閱 AWS 文件以link:https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html#with-userapp-walkthrough-custom-events-delete-function["刪除 Lambda 函數"]。

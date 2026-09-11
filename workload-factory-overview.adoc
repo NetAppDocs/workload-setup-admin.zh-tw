@@ -25,9 +25,10 @@ Amazon FSx for NetApp ONTAP為關鍵任務應用程式、資料庫、容器、VM
 Workload Factory平台提供以下主要功能。
 
 靈活且低成本的儲存設備:: 探索、部署及管理適用於雲端 NetApp ONTAP 檔案系統的 Amazon FSX 。適用於 ONTAP 的 FSX 將 ONTAP 的完整功能帶給原生 AWS 託管服務、提供一致的混合雲體驗。
+Lambda 連結連線:: 使用 Lambda 連結連線，可以在 Workload Factory 帳戶和一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。連結可讓您直接從 ONTAP REST API 呼叫監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。
 將內部部署 vSphere 環境移轉至 AWS 上的 VMware Cloud:: VMware Cloud on AWS 移轉顧問可讓您分析內部部署 vSphere 環境中目前的虛擬機器組態、產生將建議的 VM 配置部署至 AWS 上的 VMware Cloud 的計畫、並將 NetApp ONTAP 檔案系統的自訂 Amazon FSX 做為外部資料存放區。
 資料庫生命週期管理:: 利用 Amazon FSX for NetApp ONTAP 探索資料庫工作負載並分析成本節約效益；將 SQL Server 資料庫移轉至適用於 ONTAP 儲存設備的 FSX 時，善用儲存與應用程式的效益；部署 SQL 伺服器，資料庫及資料庫複本以實作廠商最佳實務做法；使用基礎架構做為程式碼聯合試驗以自動化作業；持續監控及最佳化 SQL 伺服器環境，以改善效能，可用度，保護及成本效益。
-AI chatbot 開發:: 利用您的 FSX for ONTAP 檔案系統來儲存組織的 chatbot 來源和 AI Engine 資料庫。這可讓您將組織的非結構化資料內嵌到企業級聊天機器人應用程式中。
+EDA 儲存設備操作:: 在 NetApp Workload Factory 中，透過最佳化效能、與 IaC 整合以自動化儲存設備參數，以及確保運作健全狀況，來簡化您的電子設計自動化（EDA）儲存設備操作。
 節省計算機以節省成本:: 分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。
 服務帳戶可促進自動化:: 使用服務帳戶安全可靠地自動化NetApp Workload Factory 操作。服務帳戶提供可靠、持久的自動化，不受任何用戶管理限制，並且由於它們僅提供 API 訪問，因此更加安全。
 問我人工智慧助手:: 向 AI 助理詢問有關管理和操作 FSx for ONTAP檔案系統的問題。使用模型上下文協定 (MCP)，Ask Me 可以安全地與外部環境互動並查詢 API 工具，以提供適合您特定儲存環境的回應。

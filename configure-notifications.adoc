@@ -15,65 +15,6 @@ summary: 您可以設定NetApp Workload Factory，在發生某些類型的事件
 
 
 
-[[notification-types-and-messages]]
-== 通知類型和訊息
-
-Workload Factory 針對下列事件發送通知：
-
-[cols="6*"]
-|===
-| 活動 | 說明 | 通知類型 | 嚴重性 | 工作負載 | 資源類型 
-
-
-| 您帳戶中的某些資料庫執行個體架構不佳 | 您的帳戶中的所有 Microsoft SQL Server 執行個體均已針對架構問題進行分析。此事件的描述給出了架構良好的實例和未最佳化的實例的數量。從工作負載工廠控制台查看資料庫清單中精心設計的狀態結果和建議。 | 架構完善 | 建議 | 資料庫 | Microsoft SQL Server 實例 
-
-
-| Microsoft SQL Server/PostgreSQL 伺服器部署成功 | Microsoft SQL Server 或 PostgreSQL 主機部署成功。更多信息，請參考作業監控。 | 部署 | 成功 | 資料庫 | FSx for ONTAP，資料庫主機 
-
-
-| Microsoft SQL Server/PostgreSQL 伺服器部署失敗 | Microsoft SQL Server 或 PostgreSQL 主機部署失敗。更多信息，請參考作業監控。 | 部署 | 錯誤 | 資料庫 | FSx for ONTAP，資料庫主機 
-
-
-| 複製關係創建失敗 | SnapMirror複製關係建立失敗。欲了解更多信息，請訪問 Tracker。 | 複製 | 批判的 | 常規存儲 | 適用於ONTAP的 FSx 
-
-
-| FSx for ONTAP建立失敗 | FSx for ONTAP檔案系統建立過程失敗。欲了解更多信息，請訪問 Tracker。 | FSx for ONTAP檔案系統操作 | 批判的 | 常規存儲 | 適用於ONTAP的 FSx 
-
-
-| 自動增加 SSD 容量或 inode 成功 | 在最近的自動容量管理更新期間，FSx for ONTAP檔案系統成功增加了 SSD 容量或磁碟區 inode。欲了解更多信息，請訪問 Tracker。 | 容量管理 | 成功 | 常規存儲 | FSx for ONTAP文件 
-
-
-| 自動增加 SSD 容量或 inode 失敗 | 在最近的自動容量管理更新期間，FSx for ONTAP檔案系統未能增加 SSD 容量或磁碟區 inode。欲了解更多信息，請訪問 Tracker。 | 容量管理 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| 偵測到 FSx for ONTAP問題 | 所有 FSx for ONTAP檔案系統均已針對架構問題進行了分析。掃描偵測到一個或多個問題。有關更多信息，請查看 Workload Factory 控制台中存儲儀表板的精心設計的分析。 | 精心設計的分析 | 建議 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| FSx for ONTAP的自動容量管理事件 | FSx for ONTAP檔案系統的 SSD 效能層級已達到警告閾值容量/百分比總和。 | 容量管理 | 警告 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| FSx for ONTAP的自動 inode 管理事件 | ONTAP磁碟區的 FSx inode 計數達到警告閾值計數/百分比總數。 | 容量管理 | 警告 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| 在 FSx for ONTAP 檔案系統中偵測到可疑磁碟區活動 | NetApp 具備人工智慧的自主勒索軟體防護（ARP/AI）偵測到可疑的磁碟區活動。 | 勒索軟體防護 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| 偵測到延遲臨界值突破 | FSx for ONTAP 叢集中的一個或多個磁碟區超過了延遲閾值。 | 效能監控 | 警告 | EDA | FSx for ONTAP檔案系統 
-
-
-| 每月成本報告 | 每月帳戶費用匯總，顯示支出趨勢、異常變化以及適用於 FSx for ONTAP 檔案系統的最佳節省機會。 | 成本報告 | 建議 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| 複製延遲 | 複寫作業所需時間超出預期。 | 複製 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
-
-
-| 自訂儀表板建立成功 | 您的自訂儀表板已成功建立，可供檢視。 | 自訂儀表板 | 成功 | 常規存儲 | Workload Factory 帳戶 
-
-
-| 建立自訂儀表板失敗 | Workload Factory 無法建立您的自訂儀表板。請嘗試重新建立儀表板。 | 自訂儀表板 | 錯誤 | 常規存儲 | Workload Factory 帳戶 
-|===
-
-
 [[configure-workload-factory-notifications]]
 == 配置工作負載工廠通知
 
@@ -251,3 +192,63 @@ IMPORTANT: 當你在 NetApp Console 中設定通知時，NetApp Console 會接�
 您可以使用 NetApp Console 通知設定，依嚴重性層級（例如 Critical、Info 或 Warning）篩選您在 Console 中收到的通知。
 
 有關在控制台中過濾通知的更多信息，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#filter-notifications["NetApp控制台文檔"^]。
+
+
+
+[[notification-types-and-messages]]
+== 通知類型和訊息
+
+Workload Factory 針對下列事件發送通知：
+
+[cols="6*"]
+|===
+| 活動 | 說明 | 通知類型 | 嚴重性 | 工作負載 | 資源類型 
+
+
+| 您帳戶中的某些資料庫執行個體架構不佳 | 您的帳戶中的所有 Microsoft SQL Server 執行個體均已針對架構問題進行分析。此事件的描述給出了架構良好的實例和未最佳化的實例的數量。從工作負載工廠控制台查看資料庫清單中精心設計的狀態結果和建議。 | 架構完善 | 建議 | 資料庫 | Microsoft SQL Server 實例 
+
+
+| Microsoft SQL Server/PostgreSQL 伺服器部署成功 | Microsoft SQL Server 或 PostgreSQL 主機部署成功。更多信息，請參考作業監控。 | 部署 | 成功 | 資料庫 | FSx for ONTAP，資料庫主機 
+
+
+| Microsoft SQL Server/PostgreSQL 伺服器部署失敗 | Microsoft SQL Server 或 PostgreSQL 主機部署失敗。更多信息，請參考作業監控。 | 部署 | 錯誤 | 資料庫 | FSx for ONTAP，資料庫主機 
+
+
+| 複製關係創建失敗 | SnapMirror複製關係建立失敗。欲了解更多信息，請訪問 Tracker。 | 複製 | 批判的 | 常規存儲 | 適用於ONTAP的 FSx 
+
+
+| FSx for ONTAP建立失敗 | FSx for ONTAP檔案系統建立過程失敗。欲了解更多信息，請訪問 Tracker。 | FSx for ONTAP檔案系統操作 | 批判的 | 常規存儲 | 適用於ONTAP的 FSx 
+
+
+| 自動增加 SSD 容量或 inode 成功 | 在最近的自動容量管理更新期間，FSx for ONTAP檔案系統成功增加了 SSD 容量或磁碟區 inode。欲了解更多信息，請訪問 Tracker。 | 容量管理 | 成功 | 常規存儲 | FSx for ONTAP文件 
+
+
+| 自動增加 SSD 容量或 inode 失敗 | 在最近的自動容量管理更新期間，FSx for ONTAP檔案系統未能增加 SSD 容量或磁碟區 inode。欲了解更多信息，請訪問 Tracker。 | 容量管理 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| 偵測到 FSx for ONTAP問題 | 所有 FSx for ONTAP檔案系統均已針對架構問題進行了分析。掃描偵測到一個或多個問題。有關更多信息，請查看 Workload Factory 控制台中存儲儀表板的精心設計的分析。 | 精心設計的分析 | 建議 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| FSx for ONTAP的自動容量管理事件 | FSx for ONTAP檔案系統的 SSD 效能層級已達到警告閾值容量/百分比總和。 | 容量管理 | 警告 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| FSx for ONTAP的自動 inode 管理事件 | ONTAP磁碟區的 FSx inode 計數達到警告閾值計數/百分比總數。 | 容量管理 | 警告 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| 在 FSx for ONTAP 檔案系統中偵測到可疑磁碟區活動 | NetApp 具備人工智慧的自主勒索軟體防護（ARP/AI）偵測到可疑的磁碟區活動。 | 勒索軟體防護 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| 偵測到延遲臨界值突破 | FSx for ONTAP 叢集中的一個或多個磁碟區超過了延遲閾值。 | 效能監控 | 警告 | EDA | FSx for ONTAP檔案系統 
+
+
+| 每月成本報告 | 每月帳戶費用匯總，顯示支出趨勢、異常變化以及適用於 FSx for ONTAP 檔案系統的最佳節省機會。 | 成本報告 | 建議 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| 複製延遲 | 複寫作業所需時間超出預期。 | 複製 | 批判的 | 常規存儲 | FSx for ONTAP檔案系統 
+
+
+| 自訂儀表板建立成功 | 您的自訂儀表板已成功建立，可供檢視。 | 自訂儀表板 | 成功 | 常規存儲 | Workload Factory 帳戶 
+
+
+| 建立自訂儀表板失敗 | Workload Factory 無法建立您的自訂儀表板。請嘗試重新建立儀表板。 | 自訂儀表板 | 錯誤 | 常規存儲 | Workload Factory 帳戶 
+|===

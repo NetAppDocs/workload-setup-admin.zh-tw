@@ -4,7 +4,7 @@ permalink: troubleshoot-custom-dashboards.html
 keywords: troubleshooting, dashboard errors, dashboard issues, failed creation, failed to load, dashboard not loading 
 summary: 修復自訂儀表板的常見問題，包括設定失敗、資料載入問題和存取問題。 
 ---
-= 疑難排解自訂儀表板
+= 在 NetApp Workload Factory 中疑難排解自訂儀表板
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

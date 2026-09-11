@@ -4,7 +4,7 @@ permalink: console-experiences.html
 keywords: console, consoles, access, saas, Workload Factory, NetApp Workload Factory, NetApp Console 
 summary: NetApp Workload Factory 可透過兩個基於 Web 的控制台存取。 
 ---
-= 主控台體驗
+= NetApp Workload Factory 的主控台體驗
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
