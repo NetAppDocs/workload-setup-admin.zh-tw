@@ -1,0 +1,70 @@
+= 連結為何有益
+:allow-uri-read: 
+
+
+NetApp Workload Factory 連結在 Workload Factory 帳戶與一個或多個 FSx for ONTAP 檔案系統之間建立信任關係和連線。這可讓您直接透過 ONTAP REST API 呼叫來監控和管理某些 Amazon FSx for ONTAP API 無法提供的檔案系統功能。
+
+您不需要連結即可開始使用 Workload Factory，但在某些情況下，您需要建立連結來解鎖所有 Workload Factory 功能和工作負載能力。
+
+
+
+[[why-links-are-beneficial]]
+== 連結為何有益
+
+連結之所以有益，是因為它們允許 Workload Factory 執行 Amazon FSx for ONTAP API 原本無法提供的作業。連結可啟用進階 ONTAP 功能與自動化，進而增強 FSx for ONTAP 檔案系統的管理。
+
+以下是使用連結的一些好處：
+
+* 此連結使 NetApp Console 能夠直接向您的 FSx for ONTAP 檔案系統傳送 ONTAP 命令，從而帶來 AWS 原生功能以外的高階 ONTAP 功能。
+* 連結運用 AWS Lambda 來執行程式碼以回應事件。這種無伺服器方法移除了對在 VPC 中執行的執行個體的依賴。
+
+
+
+
+[[how-links-work]]
+== 連結的工作原理
+
+連結運用 AWS Lambda。Lambda 會回應事件執行程式碼，並自動管理該程式碼所需的運算資源。您建立的連結是您 NetApp 帳戶的一部分，並且與 AWS 帳戶關聯。
+
+建立連結後，您可以將其關聯至一個或多個 FSx for ONTAP 檔案系統。每個檔案系統在同一個 NetApp 帳戶中只能關聯至一個連結。如果您有多個 NetApp 帳戶，則單一檔案系統可以在不同的 NetApp 帳戶下關聯至其他連結。
+
+您可以在 Workload Factory 中從儲存設備工作負載建立及關聯連結。
+
+您可以使用儲存在 Workload Factory 憑證服務中的憑證或儲存在 AWS Secrets Manager 中的憑證來驗證連結。Workload Factory 不支援變更驗證模式。
+
+GovCloud 帳戶的連結連線功能受到支援。Workload Factory 使用 GovCloud 驗證金鑰，允許透過 GovCloud 核准的機制，以安全、無代理程式的方式存取 FSx for ONTAP 作業。
+
+
+
+[[costs]]
+== 成本
+
+Lambda 執行的每筆交易都會產生費用。由於 Lambda 充當兩個系統之間的 Proxy，因此當 Lambda 向檔案系統上的 ONTAP REST API 發送請求以及將回應發送回 Workload Factory 時，都會產生費用。
+
+link:https://aws.amazon.com/lambda/pricing/["了解更多關於使用 AWS Lambda 的相關成本"^]
+
+
+
+[[when-a-link-is-required]]
+== 需要連結時
+
+Workload Factory 需要連結才能顯示某些資訊並執行某些任務。如果您嘗試執行需要連結的操作，但尚未將連結關聯到 FSx for ONTAP 檔案系統，Workload Factory 會通知您該操作需要連結。
+
+需要連結的功能包括：
+
+* FSx for ONTAP 檔案系統組態的架構完善狀態，用於主動式維護、可靠性及成本效能最佳化
+* ONTAP EMS 事件監控與警報
+* NetApp 自主勒索軟體防護（ARP/AI）
+* 增強對 FSx for ONTAP 檔案系統的整體容量可觀測性
+* 磁碟區和儲存設備虛擬機器資料複寫、管理和監控
+* SMB/CIFS 共用與 NFS 匯出原則資源配置與管理
+* 在 FSx for ONTAP 檔案系統上管理 iSCSI 磁碟區
+* 建立和管理自訂保護 SLA 的快照原則
+* 用於自動容量管理的 inode 管理增強功能
+* 彈性擴充的磁碟區自動成長
+* 複製建立與管理，用於即時、就地的資料複製
+* 直接從 ONTAP 顯示其他計量，例如 ONTAP 版本
+* 顯示儲存 VM 和叢集 LIF 詳細資訊，包括角色、端點、節點、IP 位址和狀態
+
+
+了解如何link:create-link.html["將連結連接至 FSx for ONTAP 檔案系統"]。
