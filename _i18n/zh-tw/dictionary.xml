@@ -1797,8 +1797,6 @@
   <block id="6cdde78d80d6fbbd8f3706a9bcac599e" category="list-text">複製建立與管理，用於即時、就地的資料複製</block>
   <block id="7cacd07dfdd5c4feadcbf23d19f9972d" category="list-text">直接從 ONTAP 顯示其他計量，例如 ONTAP 版本</block>
   <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">顯示儲存 VM 和叢集 LIF 詳細資訊，包括角色、端點、節點、IP 位址和狀態</block>
-  <block id="30f1ae8a88bc842cdf5e493350ae7eb1" category="inline-link-macro">將連結連接至 FSx for ONTAP 檔案系統</block>
-  <block id="f86bb6aab3a49998f4db8fa07a49d81a" category="paragraph">了解如何<block ref="e658cbfbd30fb261626bc7c82308a713" category="inline-link-macro-rx"></block>。</block>
   <block id="526aa50fb911c91291e959f7543639b0" category="doc">在 NetApp Workload Factory 中管理自訂儀表板</block>
   <block id="dbc831d32bec483a9698bd8ffbae773b" category="doc">在 NetApp Workload Factory 中管理 AI 功能</block>
   <block id="a1212a4e5f083322acc45c56b9938112" category="summary">您可以在 NetApp Workload Factory 中檢視與您的帳戶關聯的連結、更新連結驗證的密碼，以及移除連結。</block>
@@ -1853,4 +1851,7 @@
   <block id="78f8c00f462b0fbe742eab283e3fdf7a" category="sidebar">了解連結</block>
   <block id="c108a5680d95b024bcb3f456683c719c" category="sidebar">使用連結連接到檔案系統</block>
   <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="sidebar">管理連結</block>
+  <block id="bf7102668593cd82fd27a66594640387" category="inline-link-macro">將連結連接至 FSx for ONTAP 檔案系統</block>
+  <block id="f54caf9bcfff2cb7aa30ba073518e7db" category="list-text"><block ref="f54caf9bcfff2cb7aa30ba073518e7db" category="inline-link-macro-rx"></block></block>
+  <block id="364f26fd39f55f2137b4749b01da3565" category="list-text"><block ref="364f26fd39f55f2137b4749b01da3565" category="inline-link-macro-rx"></block></block>
 </blocks>

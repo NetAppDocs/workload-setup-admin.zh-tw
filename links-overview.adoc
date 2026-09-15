@@ -76,4 +76,11 @@ Workload Factory 需要連結才能顯示某些資訊並執行某些任務。如
 * 顯示儲存 VM 和叢集 LIF 詳細資訊，包括角色、端點、節點、IP 位址和狀態
 
 
-了解如何link:create-link.html["將連結連接至 FSx for ONTAP 檔案系統"]。
+
+
+[[related-information]]
+== 相關資訊
+
+* link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["將連結連接至 FSx for ONTAP 檔案系統"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/manage-links.html["管理連結"]
+
