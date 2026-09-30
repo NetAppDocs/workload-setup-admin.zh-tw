@@ -31,11 +31,21 @@ Lambda 連結連線:: 使用 Lambda 連結連線，可以在 Workload Factory �
 EDA 儲存設備操作:: 在 NetApp Workload Factory 中，透過最佳化效能、與 IaC 整合以自動化儲存設備參數，以及確保運作健全狀況，來簡化您的電子設計自動化（EDA）儲存設備操作。
 節省計算機以節省成本:: 分析您目前使用 Amazon Elastic Block Store （ EBS ）或 Elastic File System （ EFS ）儲存設備或 Amazon FSX for Windows File Server 的部署、瞭解移轉至 Amazon FSX for NetApp ONTAP 可節省多少成本。您也可以使用計算機來執行「假設」案例、以供您規劃未來的部署作業使用。
 服務帳戶可促進自動化:: 使用服務帳戶安全可靠地自動化NetApp Workload Factory 操作。服務帳戶提供可靠、持久的自動化，不受任何用戶管理限制，並且由於它們僅提供 API 訪問，因此更加安全。
-問我人工智慧助手:: 向 AI 助理詢問有關管理和操作 FSx for ONTAP檔案系統的問題。使用模型上下文協定 (MCP)，Ask Me 可以安全地與外部環境互動並查詢 API 工具，以提供適合您特定儲存環境的回應。
+問我人工智慧助手:: 向 AI 助理詢問有關管理與執行 FSx for ONTAP 和內部部署 ONTAP 檔案系統的問題。Ask Me 可安全地連線至您的環境，並使用 API 根據您的儲存設備設定提供解答。
++
+--
+範例提示：
+
+* 每小時檢查所有 FSx for NetApp ONTAP 檔案系統的健全狀況和生命週期狀態，以便及早發現問題。
+* 每小時列出所有可存取的 AWS FSx 檔案系統，以保持最新的清單。
+
+
+--
+AI 代理程式:: Workload Factory AIOps 利用 AI 分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的憑證和權限執行動作。AI 代理程式協助 Ask Me 使用您連結的帳戶為您提供深入見解。開啟 Ask Me 中的「探索代理程式」區段，即可快速獲得解答、識別風險與機會、對問題進行疑難排解，並接收建議。預設情況下，代理程式只能檢視資訊。在讀寫模式下，只有在您批准後，它們才能在 AWS 、 ONTAP 和支援的 API 中執行動作。您還可以使用來自多個 AWS 帳戶的憑證、新增自訂提示，並選擇在回應中包含多少詳細資訊，包括在 Slack 中的推論和工具活動link:learn-agent.html["了解 AI 代理程式"]。
 
 
 
-NOTE: 帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員停用這些功能，「Ask Me」AI 助理將無法使用。link:manage-genai-features.html["了解如何管理人工智慧功能"]。
+NOTE: 帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員將其停用，Ask Me AI 助理和 AI 代理程式將無法使用。link:manage-genai-features.html["了解如何管理人工智慧功能"]。
 
 
 

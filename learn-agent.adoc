@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: learn-agent.html 
+keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read-write, agents settings 
+summary: 了解 Workload Factory 的 AI 代理程式如何分析您的環境，識別風險和改善效能的方法，並在獲得您的批准後為您採取行動。 
+---
+= 了解 NetApp Workload Factory 中的 AI 代理程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory AIOps 利用人工智慧分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的認證資料和權限採取行動。
+
+
+NOTE: 如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息，並且將無法使用代理程式。請聯絡您的系統管理員或link:manage-genai-features.html["了解 AI 管理"]。
+
+
+
+[[before-you-begin]]
+== 開始之前
+
+請確保您的 Workload Factory 帳戶擁有 AWS 認證資料以及代理程式存取資源所需的 IAM 權限。如果您啟用讀寫模式，這些權限也必須允許進行受支援的變更。
+
+link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
+
+
+
+[[data-usage-and-privacy]]
+== 資料使用和隱私
+
+您的資料不會用於訓練 AI 模型。代理程式會使用您的認證資料透過標準的 AWS API 安全地存取 AWS 資源，並根據您的實際環境做出回應。所有代理程式活動均遵循 NetApp 隱私權政策和 AWS 安全性控制措施。
+
+
+
+[[why-use-ai-agents]]
+== 為何使用 AI 代理程式
+
+在 Workload Factory 中，AI 代理程式可以幫助您更有效率地工作：
+
+* 根據您的環境取得答案和建議。
+* 識別風險與最佳化機會。
+* 在一個工作流程中解決問題並執行已核准的行動。
+* 執行排程檢查並在聊天記錄中接收更新。
+* 跨 FSx for ONTAP 和內部部署 ONTAP 環境運作。
+
+
+
+
+[[access-the-ai-agents]]
+== 存取 AI 代理程式
+
+從 Ask Me 首頁:: 在 Ask Me 活動網頁上，選擇 *探索代理程式*。AI 代理程式側邊面板會開啟，並顯示歡迎訊息以介紹代理程式的功能。
+來自代理程式重新導向連結:: 使用 **Ask Me** 或其他功能時，您可能會看到將您重新導向至代理程式以取得更進階協助的連結。
+
+
+
+
+[[how-ai-agents-work]]
+== AI 代理程式的工作原理
+
+
+
+[[how-agents-access-your-environment]]
+=== 代理程式如何存取您的環境
+
+只有當資源包含在您目前的 Workload Factory 範圍內，並且受 link:manage-agent-settings.html["代理程式設定"] 中選取的認證資料支援時，代理程式才能存取資源。代理程式只能在兩種控制皆適用的情況下運作。它們可以存取的資源也取決於指派給其 AWS 認證資料的權限。預設情況下，會選取所有認證資料，但您可以將其縮減為已設定認證資料的子集。
+
+您目前的範圍包括：
+
+* *AWS 帳戶*：代理程式可以存取哪些 AWS 帳戶。
+* *認證資料*：代理程式可以使用的認證資料。
+* *區域*：代理程式可以存取哪些 AWS 區域。
+
+
+Workload Factory 中的篩選器設定目前頁面的範圍，例如檢視中的 AWS 帳戶和區域。代理程式設定控制代理程式在該範圍內允許使用哪些認證資料。對資源的存取也取決於指派給這些認證資料的 IAM 權限。
+
+
+NOTE: 在 *代理程式設定* 中選擇認證資料並不會授予額外的 AWS 權限。請確保認證資料擁有代理程式存取您希望其分析或管理的資源所需的 IAM 權限。
+
+
+
+[[read-only-mode-default]]
+=== 唯讀模式（預設）
+
+預設情況下，代理程式以唯讀模式運作。在此模式下，它們可以：
+
+* 回答有關您環境的問題。
+* 分析您的 FSx for ONTAP 檔案系統、資料庫和工作負載。
+* 識別風險、錯誤組態和最佳化機會。
+* 提出提高效能、可用度、保護和成本效益的建議。
+* 排除問題並提出補救措施。
+
+
+在唯讀模式下，他們無法更改資源。如果您要求的行動需要寫入存取，代理程式會解釋此限制並提供指向代理程式設定的連結。
+
+
+
+[[read-write-mode-opt-in]]
+=== 讀寫模式（可選）
+
+您可以在 link:manage-agent-settings.html["代理程式設定"] 中啟用讀寫功能。在此模式下，代理程式會解釋每個支援的行動，並在進行任何變更之前需要您的核准。
+
+此核准流程適用於所有代理程式體驗，包括 Slack 整合和 NetApp Console。
+
+
+
+[[what-users-see-when-ai-agents-have-no-data-or-activity]]
+== 當 AI 代理程式沒有資料或活動時，使用者會看到什麼
+
+如果代理程式沒有認證資料，它們仍然可以提供一般性指引。但是，它們無法審查您的資源或提供針對您環境的特定見解。

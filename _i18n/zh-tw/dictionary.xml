@@ -997,7 +997,6 @@
   <block id="a0f53b5544ae2841af96b6a2c93a0849" category="paragraph">Workload Factory平台提供以下主要功能。</block>
   <block id="5999715bf3ed9ba4ec9a80b7687fe818" category="list-text">使用服務帳戶安全可靠地自動化NetApp Workload Factory 操作。服務帳戶提供可靠、持久的自動化，不受任何用戶管理限制，並且由於它們僅提供 API 訪問，因此更加安全。</block>
   <block id="e89477f461ecef2d895595553cc0cfbf" category="list-text">問我人工智慧助手</block>
-  <block id="c0eadc4e4502d909eddd3b5b2d48b232" category="list-text">向 AI 助理詢問有關管理和操作 FSx for ONTAP檔案系統的問題。使用模型上下文協定 (MCP)，Ask Me 可以安全地與外部環境互動並查詢 API 工具，以提供適合您特定儲存環境的回應。</block>
   <block id="f23d73684a524dc65f1c2ab55054ed6c" category="paragraph">Workload Factory 可讓您管理雲端儲存並使用 Amazon Web Services 中的工作負載功能。</block>
   <block id="cc3487971ff751f7d4df80cbca84205b" category="paragraph">Amazon FSx for NetApp ONTAP for NetApp Workload Factory 是一款<block ref="eada645bedd6ca3d760173ba22baf6b0" category="inline-link-macro-rx"></block>它是在充分考慮了架構良好的最佳實踐的基礎上創建的。</block>
   <block id="6396fbe69c05e9a323cf53a0fbf0983d" category="paragraph">Workload Factory 可以免費使用。您向 Amazon Web Services (AWS) 支付的費用取決於您計劃部署的儲存和工作負載服務。這包括Amazon FSx for NetApp ONTAP 、AWS 基礎架構上的 VMware Cloud、AWS 服務等的成本。</block>
@@ -1304,7 +1303,6 @@
   <block id="cce7bd3a3721067273866ec7f3ec7b7c" category="list-text">*通知*：設定 Workload Factory 以傳送顯示在 NetApp Console 鈴鐺圖示下的通知。</block>
   <block id="a58c54927d168d58046b4ad29f5254fa" category="list-text">*電子郵件*：在 NetApp Console 啟用電子郵件通知，無需設定 Amazon SNS，即可將通知發送到與帳戶關聯的任何電子郵件地址。</block>
   <block id="d7b2e59eb21ae19aa7b493f93fbcb35f" category="list-text">*Amazon SNS*：設定 Workload Factory 以傳送通知至 Amazon SNS 主題。</block>
-  <block id="e174fa0e05fb5c229301ef978773782d" category="list-text">*電子郵件*：在 Workload Factory Console 中啟用電子郵件通知，即可接收傳送至與該帳戶關聯的任何電子郵件地址的通知，而無需設定 Amazon SNS。</block>
   <block id="7184b61f2058f394c7d6b104dc166242" category="list-text">*Amazon SNS*：使用 Workload Factory 主控台設定 Workload Factory 以向 Amazon SNS 主題發送通知。</block>
   <block id="150b7425bee731f53d950cb07997d3a9" category="admonition">當你在 NetApp Console 中設定通知時，NetApp Console 會接管通知傳送的管理權限，並且 Workload Factory console 的通知選項會被停用並以唯讀模式顯示。工具提示會顯示通知是由 NetApp Console 管理。之後你只能從 NetApp Console 管理通知。</block>
   <block id="719c05c1c99e00fa5e0edb33bb8190f6" category="paragraph">以下先決條件僅適用於設定 Amazon SNS 通知時：</block>
@@ -1312,8 +1310,6 @@
   <block id="3cffbdfd446e6b3ca39fc52d1b2a87ab" category="list-text">*NetApp Console 通知*：選擇*啟用 NetApp Console 通知*以設定 Workload Factory 在 NetApp Console 中傳送通知。</block>
   <block id="4941b94ab67ffcf8b95fddca7b5ce770" category="list-text">*電子郵件通知*：選取 *啟用電子郵件通知*，將 Workload Factory 設定為傳送通知至與該帳戶相關聯的任何電子郵件地址。</block>
   <block id="0d7adbc19c316fab18fa015b723496bd" category="list-text">*Amazon SNS 通知*：選取*啟用 SNS 通知*，然後依照指示從 Amazon SNS 主控台設定 Amazon SNS。</block>
-  <block id="458f208085c8b6ec69e163ddf2378427" category="list-text">啟用以下一種或多種通知類型：</block>
-  <block id="622901cf56fa55473d2f9550e6422faf" category="list-text">*電子郵件通知*：選取 *啟用電子郵件通知*。與該帳戶相關聯的任何電子郵件地址都會以唯讀模式顯示。</block>
   <block id="3bf17ee9de6360f01456d2fe35c8ff4c" category="paragraph">您可以透過對通知套用篩選器，減少不必要的通知流量，並針對特定使用者推播特定類型的通知。您可以使用 Amazon SNS 策略來管理 SNS 通知，也可以在 NetApp Console 中使用通知設定來實現這一點。</block>
   <block id="8749fce6a42b5cc208c97e090bbdf52e" category="section-title">在 NetApp Console 中篩選通知</block>
   <block id="067205dc8475e129dc9d47a407ae631d" category="paragraph">您可以使用 NetApp Console 通知設定，依嚴重性層級（例如 Critical、Info 或 Warning）篩選您在 Console 中收到的通知。</block>
@@ -1553,7 +1549,6 @@
   <block id="ebd4b28f0632a0dc47fff6d0e28857b1" category="doc">管理 AI 功能</block>
   <block id="13bb649429b18adc1dadc0ed391c5bc2" category="paragraph">控制對 Workload Factory 中 AI 功能的存取。您可以關閉 AI 功能，或使用由 NetApp 代管的 AWS Bedrock。</block>
   <block id="00e95115c994386ef85f1864db952bca" category="section-title">關於 AI 功能</block>
-  <block id="5a41793d075495dfb423bb395a189adf" category="paragraph">Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如「問我」、自訂儀表板以及 EMS、資料庫日誌和延遲分析器。</block>
   <block id="46918c8c585299e7a785eed266de3f97" category="paragraph">身為 Workload Factory 系統管理員，您可以在 AI 設定頁面上控制這些功能如何使用 AI。</block>
   <block id="50f33d14f129e4548c1c270fd6725a78" category="section-title">組態選項</block>
   <block id="5787d906b76d8323ff398ce17924ceda" category="paragraph">請從以下設定選項中選擇：</block>
@@ -1563,7 +1558,6 @@
   <block id="9a0258efc499c889c5f1af73bbaf4364" category="list-text">每月使用額度在您的組織內共享。</block>
   <block id="2c8b8060f9331f918beb8261403785ec" category="list-text">無需額外的 AWS 設定</block>
   <block id="1ee78c04d8b078adcb0fca6be60af5a2" category="list-text">GenAI 功能關閉</block>
-  <block id="8828805c938d7fc1a48fbf3585c37b14" category="list-text">關閉所有人工智慧功能。使用者將無法再使用「問我」、分析器、自訂儀表板、規則建構者或其他人工智慧驅動工具。</block>
   <block id="396640080b08108896efb48796063406" category="list-text">我們建議帳戶系統管理員設定 AI 功能。</block>
   <block id="6b7af6c72f84f0f7380106617c11be78" category="section-title">設定 AI 功能</block>
   <block id="3f0879fc8845a02f07ea71a0a584847e" category="list-text">從選單中選擇 *管理*，然後選擇 *AI 設定*。</block>
@@ -1617,7 +1611,6 @@
   <block id="255efce8fcb0ce70d6ca799d3f7fcce4" category="admonition">如果您的帳戶系統管理員已關閉 AI 功能，則將無法使用 AI 產生的錯誤回應。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
   <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
   <block id="1cdbc8bcb26cc8d5e894a97b9e7f269f" category="section-title">2026年7月5日</block>
-  <block id="8fb2a31345fc5c5e72c947d436b5077b" category="admonition">帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員停用這些功能，「Ask Me」AI 助理將無法使用。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
   <block id="959c1faca1dbb57f8dac1b5058bf9c58" category="paragraph"><block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block></block>
   <block id="167e20b67f84068555b3081057c696b8" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block></block>
   <block id="0e23d2a91e2fd1a7eb141ceb8cd9ddcf" category="paragraph"><block ref="0e23d2a91e2fd1a7eb141ceb8cd9ddcf" category="inline-link-macro-rx"></block></block>
@@ -1854,4 +1847,135 @@
   <block id="364f26fd39f55f2137b4749b01da3565" category="list-text"><block ref="364f26fd39f55f2137b4749b01da3565" category="inline-link-macro-rx"></block></block>
   <block id="dd6c12ecaee3143ccc7a7d85e16032ff" category="paragraph"><block ref="dd6c12ecaee3143ccc7a7d85e16032ff" category="inline-link-macro-rx"></block></block>
   <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 供應商*：使用 Terraform 建置和管理在 Workload Factory 主控台中產生的基礎架構工作流程。</block>
+  <block id="f1b1a4bfd4b138d7b7f910daf038bf87" category="doc">Workload Factory 的 AI 代理程式</block>
+  <block id="4f92226af9b21739ad4453bb92ea1a12" category="paragraph">Workload Factory AIOps 利用人工智慧分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的認證資料和權限採取行動。人工智慧代理程式會分析您的環境，幫助您發現風險、改善工作負載，並在 Workload Factory 和 Slack 中排解問題。</block>
+  <block id="d2887c33a251e8530157941bab73941d" category="paragraph">在 Ask Me 中新增的 *Explore Agents* 區段中存取 AI 代理程式。預設情況下，代理程式以唯讀模式執行，並提供建議和分析。</block>
+  <block id="13b9f07ec133fa8d4a2ca6cc3fdd50fd" category="paragraph">使用 *代理程式設定* 來控制代理程式的運作方式。您可以：</block>
+  <block id="51ac931b574bb48f344c39da84a32911" category="list-text">選擇唯讀模式或讀寫模式</block>
+  <block id="2eef1803f198e56db81b4062ea8cddf4" category="list-text">選擇代理程式可以使用的認證資料</block>
+  <block id="46a4cbdaf48bb2fb183d7572e3a8f6b7" category="list-text">新增自訂說明</block>
+  <block id="cbf940f0da0f9c2f02c84f568e2df3e3" category="list-text">調整回應的詳細程度</block>
+  <block id="72c9ca3fa9790aabd5a7a741dfe036e9" category="paragraph">這些額外的控制讓您擁有更高的可見度和監督權。在讀寫模式下，代理程式必須先獲得您的核准，才能對 AWS、ONTAP 或支援的 API 進行變更。您也可以選擇在回應中顯示多少詳細資訊，包括有關代理程式推理的資訊，以及在 Slack 中的工具活動。</block>
+  <block id="8b4711746b3adfa755ed575da3759c69" category="paragraph">代理程式還支援多帳戶環境，並簡化了設定。單一代理程式可以使用多個認證資料安全地跨多個 AWS 帳戶執行。</block>
+  <block id="ff2cb9e669640d8f287be7fc339c4d78" category="inline-link-macro">了解人工智慧代理程式</block>
+  <block id="fd0b6331664a65cf7a31ea72bbff0ad8" category="paragraph"><block ref="fd0b6331664a65cf7a31ea72bbff0ad8" category="inline-link-macro-rx"></block></block>
+  <block id="718a428bd3b2faadb3c143efe186c19c" category="inline-link-macro">管理代理程式設定</block>
+  <block id="f96519dcd31d8fc6ae26fb065d41298c" category="paragraph"><block ref="f96519dcd31d8fc6ae26fb065d41298c" category="inline-link-macro-rx"></block></block>
+  <block id="3cfde347b20875f3299e4bc85cde4012" category="section-title">Ask Me 中的排程工作</block>
+  <block id="ed6bda88b37dd9ee0232de291a362174" category="paragraph">現在，您可以在 Ask Me 聊天中自訂提示，以建立排程工作。使用排程工作來要求 Ask Me 執行定期檢查，並根據您定義的排程在聊天中傳送更新。</block>
+  <block id="ff51f1512e81cb44e19946405c4c3751" category="paragraph">範例提示：</block>
+  <block id="9c51276de03bc7f0cc89565810a9583c" category="list-text">每小時檢查所有 FSx for NetApp ONTAP 檔案系統的健全狀況和生命週期狀態，以便及早發現問題。</block>
+  <block id="7c232a692347d9efae9eafb444b454ef" category="list-text">每小時列出所有可存取的 AWS FSx 檔案系統，以保持最新的清單。</block>
+  <block id="21acc05c94ffdfe8d543fc22e8162a92" category="paragraph"><block ref="21acc05c94ffdfe8d543fc22e8162a92" category="inline-link-macro-rx"></block></block>
+  <block id="fcc3c37c09c2649e94509997e3e32ace" category="section-title">Ask Me 中的 ONTAP 支援</block>
+  <block id="5887518ab4bafe0e2cd30ee6d85ca830" category="paragraph">Ask Me 現在支援 FSx for ONTAP 和內部部署的 ONTAP 系統。您可以使用相同的聊天體驗，以獲得有關整個 ONTAP 基礎架構的答案和見解。</block>
+  <block id="61ac51994f4e558eb3be753f892d08aa" category="section-title">通知更新</block>
+  <block id="02796e8ea898eccf4fc1ec43b8c9a990" category="paragraph">NetApp Console 通知現已預設為啟用。NetApp Console 使用者無需額外組態即可自動接收 Workload Factory 通知。</block>
+  <block id="21342e11f90d32dc68b1110fcbb8adc2" category="inline-link-macro">Workload Factory 通知</block>
+  <block id="a70bc5a52e36d1d7057060329e076649" category="paragraph"><block ref="a70bc5a52e36d1d7057060329e076649" category="inline-link-macro-rx"></block></block>
+  <block id="5c944601b7f8744b2a84a9a8ea43d363" category="section-title">連結建立通知郵件</block>
+  <block id="19206cde68f30f89cddf386749d22382" category="paragraph">Workload Factory 現在會在您成功新增認證資料後提醒您完成連結關聯。雖然認證資料可用於資源探索，但進階的 ONTAP 功能需要與探索到的檔案系統進行連結關聯。您將在每週一收到電子郵件通知。完成連結關聯後，通知將停止。</block>
+  <block id="9ea7b6eb4bee9afd3cbcdda4cee6e9ca" category="section-title">Lambda 連結版本通知與升級指南</block>
+  <block id="44268d176d67be14130038589d76e779" category="paragraph">Workload Factory 現在會在 Lambda 連結未使用最新可用映像時發出警報。如果某個連結不支援自動升級，則會在有新版本可用時顯示通知。</block>
+  <block id="36be3d9219f21557e17dda1fb159e09d" category="paragraph">您可以在「連結」頁面上檢視升級說明。這些說明解釋如何手動更新 Lambda 連結映像，以及如何在可用時啟用自動升級。保持連結更新可讓您存取最新功能、修復已知問題並套用最新的安全性更新。</block>
+  <block id="14bda382780d759b676db8bd277841a9" category="paragraph">當不支援自動升級的連結有較新的連結版本可用時，您也會在 FSx for ONTAP 儀表板中收到警報。</block>
+  <block id="0354b0d97d0b0a9757874cd60afce03c" category="list-text">*電子郵件通知*：若要接收電子郵件通知，請在 <block ref="ee6417f6e84445088f5a293850cbcb2f" category="inline-link-macro-rx"></block> 通知設定中設定通知收件者與嚴重性偏好設定。</block>
+  <block id="2c8d2ace24ab724b2b9846dfbd1113fb" category="summary">了解 Workload Factory 的 AI 代理程式如何分析您的環境，識別風險和改善效能的方法，並在獲得您的批准後為您採取行動。</block>
+  <block id="a4988f1624f7fc0b4eaabf35a45c6593" category="doc">了解 NetApp Workload Factory 中的 AI 代理程式</block>
+  <block id="44930f32325dbab8392ff7743e877c7e" category="paragraph">Workload Factory AIOps 利用人工智慧分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的認證資料和權限採取行動。</block>
+  <block id="9b96c88a6583aa0e9a0e03809f482d9e" category="admonition">如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息，並且將無法使用代理程式。請聯絡您的系統管理員或<block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>。</block>
+  <block id="29e96b144158fa2cf3ed37b1696584a9" category="paragraph">請確保您的 Workload Factory 帳戶擁有 AWS 認證資料以及代理程式存取資源所需的 IAM 權限。如果您啟用讀寫模式，這些權限也必須允許進行受支援的變更。</block>
+  <block id="3b8e3eff2b9d5a25eecc8e879fab9225" category="section-title">資料使用和隱私</block>
+  <block id="823764ac349552585c033c832c9a9119" category="paragraph">您的資料不會用於訓練 AI 模型。代理程式會使用您的認證資料透過標準的 AWS API 安全地存取 AWS 資源，並根據您的實際環境做出回應。所有代理程式活動均遵循 NetApp 隱私權政策和 AWS 安全性控制措施。</block>
+  <block id="a9ad35f78cf699132ce97296208021d6" category="section-title">為何使用 AI 代理程式</block>
+  <block id="0dcc2bd50249549545f604062e32c8d1" category="paragraph">在 Workload Factory 中，AI 代理程式可以幫助您更有效率地工作：</block>
+  <block id="08b88087b00df48c7dcec290d2085d9d" category="list-text">根據您的環境取得答案和建議。</block>
+  <block id="f41dc5b513f7a5678f949fafbb672e71" category="list-text">識別風險與最佳化機會。</block>
+  <block id="45747fdf81b9f650b9ab26706866db24" category="list-text">在一個工作流程中解決問題並執行已核准的行動。</block>
+  <block id="6fd44b1c4edd80ad7b595f1fcb4c7483" category="list-text">執行排程檢查並在聊天記錄中接收更新。</block>
+  <block id="e974804a88a47e4bcdb4ff1c718951bc" category="list-text">跨 FSx for ONTAP 和內部部署 ONTAP 環境運作。</block>
+  <block id="4eeb2bca1dddd7a796d908c266d60075" category="section-title">存取 AI 代理程式</block>
+  <block id="e6478bab5c49062e219e1290c4442eed" category="list-text">從 Ask Me 首頁</block>
+  <block id="b3c72178808d9fa6e9c876b76d5d1928" category="list-text">在 Ask Me 活動網頁上，選擇 *探索代理程式*。AI 代理程式側邊面板會開啟，並顯示歡迎訊息以介紹代理程式的功能。</block>
+  <block id="99b503a5e4373b0bc3054a025797d268" category="list-text">來自代理程式重新導向連結</block>
+  <block id="54fd5f6787cd568e4b9880863150bb93" category="list-text">使用 **Ask Me** 或其他功能時，您可能會看到將您重新導向至代理程式以取得更進階協助的連結。</block>
+  <block id="98ff5af4adf0662fa0278d6e7332c116" category="section-title">AI 代理程式的工作原理</block>
+  <block id="31fe269c620fcf2562efe2871e4398f8" category="section-title">代理程式如何存取您的環境</block>
+  <block id="d6356702d2caa14ca196fe664fc1853e" category="inline-link-macro">代理程式設定</block>
+  <block id="dfee9e31025ca5f152cf22d64bfe765f" category="paragraph">只有當資源包含在您目前的 Workload Factory 範圍內，並且受 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中選取的認證資料支援時，代理程式才能存取資源。代理程式只能在兩種控制皆適用的情況下運作。它們可以存取的資源也取決於指派給其 AWS 認證資料的權限。預設情況下，會選取所有認證資料，但您可以將其縮減為已設定認證資料的子集。</block>
+  <block id="f19cfe1072c3d3c974b0cdafbcdde1ef" category="paragraph">您目前的範圍包括：</block>
+  <block id="676cd33769e7c44db0294ca1bdc4a818" category="list-text">*AWS 帳戶*：代理程式可以存取哪些 AWS 帳戶。</block>
+  <block id="8f7fd41f1486852019ec1e81297e4749" category="list-text">*認證資料*：代理程式可以使用的認證資料。</block>
+  <block id="db9be091d62e76416638fd7987fac0d3" category="list-text">*區域*：代理程式可以存取哪些 AWS 區域。</block>
+  <block id="9ea7586a1a950d81f272e8403a8f6cbe" category="paragraph">Workload Factory 中的篩選器設定目前頁面的範圍，例如檢視中的 AWS 帳戶和區域。代理程式設定控制代理程式在該範圍內允許使用哪些認證資料。對資源的存取也取決於指派給這些認證資料的 IAM 權限。</block>
+  <block id="28dec2f4988032196e5673d255d3c391" category="admonition">在 *代理程式設定* 中選擇認證資料並不會授予額外的 AWS 權限。請確保認證資料擁有代理程式存取您希望其分析或管理的資源所需的 IAM 權限。</block>
+  <block id="54a2d462b3304eb93c5cfe391a9e67bf" category="section-title">唯讀模式（預設）</block>
+  <block id="dd8585af3d55da47f5760a15f3d8be48" category="paragraph">預設情況下，代理程式以唯讀模式運作。在此模式下，它們可以：</block>
+  <block id="1b539d90e247bf7cc195a2d8096208d6" category="list-text">回答有關您環境的問題。</block>
+  <block id="0f896edbba7d346551c186acd1309a44" category="list-text">分析您的 FSx for ONTAP 檔案系統、資料庫和工作負載。</block>
+  <block id="6705aab6526bc219af2bdc50b636aa94" category="list-text">識別風險、錯誤組態和最佳化機會。</block>
+  <block id="e863933d9a2c33d982a9403853ef5c8f" category="list-text">提出提高效能、可用度、保護和成本效益的建議。</block>
+  <block id="0da32bbd416014e9a050dd9753a5f97c" category="list-text">排除問題並提出補救措施。</block>
+  <block id="5c5d131e2fde1dde32d484bb16b397d5" category="paragraph">在唯讀模式下，他們無法更改資源。如果您要求的行動需要寫入存取，代理程式會解釋此限制並提供指向代理程式設定的連結。</block>
+  <block id="c43e0775dbe854488f7416962d78486c" category="section-title">讀寫模式（可選）</block>
+  <block id="8403b77cf5ff251eac80eb3fa63780ad" category="paragraph">您可以在 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中啟用讀寫功能。在此模式下，代理程式會解釋每個支援的行動，並在進行任何變更之前需要您的核准。</block>
+  <block id="601c01875f07f976aec59310ce582da5" category="paragraph">此核准流程適用於所有代理程式體驗，包括 Slack 整合和 NetApp Console。</block>
+  <block id="dbe095e1cf28fb37bfc9bc65e6db07ec" category="section-title">當 AI 代理程式沒有資料或活動時，使用者會看到什麼</block>
+  <block id="02a1c40d157b16f6b4bb75e05fed5d20" category="paragraph">如果代理程式沒有認證資料，它們仍然可以提供一般性指引。但是，它們無法審查您的資源或提供針對您環境的特定見解。</block>
+  <block id="40b5b336cde586af18464c8514adcf84" category="summary">設定 AI 代理程式設定，例如運作模式、存取權限、自訂指示和回應詳細程度，以控制代理程式在您的 Workload Factory 環境中的運作方式。</block>
+  <block id="c97e3b8fd990844d5f1d9fbc0c4a1a58" category="doc">在 NetApp Workload Factory 中管理 AI 代理程式設定</block>
+  <block id="027abdce98c3533464664728631b1841" category="paragraph">設定 AI 代理程式在您的 Workload Factory 環境中的運作方式。您可以選擇代理程式的運作方式、決定其可使用的認證資料、新增自訂提示，以及調整回應詳細程度。</block>
+  <block id="9de8087bd8bdadfe4e3bb629bc47ce3b" category="list-text">我們建議帳戶管理員設定代理程式設定。</block>
+  <block id="127bc47c2c22a1c1b4353c48f309430d" category="list-text">在啟用讀寫模式之前，請確保您了解允許代理程式為您執行行動的安全性風險。</block>
+  <block id="caa093b0b5c5edc3c1513d77992a765a" category="admonition">如果您的帳戶系統管理員已關閉人工智慧功能，人工智慧代理程式將無法使用。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
+  <block id="a7f61a64f2ed965b18a4239b5377a37f" category="section-title">存取代理程式設定</block>
+  <block id="aa9106dd7dbce448bc6eb071ef2c9112" category="list-text">使用以下方法之一存取代理程式設定：</block>
+  <block id="d92f9415529b85cb7482af295b940c55" category="list-text">從選單中選擇 *管理*、*設定*，然後選擇 *代理程式*。</block>
+  <block id="4eff4baef0601b15c7b18727d2be80c1" category="list-text">從代理程式聊天體驗中，選擇前往 *代理程式設定* 的連結。</block>
+  <block id="cc565804a9c219fe2f3854136c730f29" category="section-title">設定代理程式操作模式</block>
+  <block id="44d28331c753ec749031ccccf1d70880" category="paragraph">選擇代理程式是以唯讀模式還是讀寫模式運作。</block>
+  <block id="c1754028c55cdf3e2e13a700bdd9f2ab" category="paragraph">代理程式的運作模式決定了代理程式可以執行哪些行動：</block>
+  <block id="a84826751ef0f28a9bca5de4cfd244cb" category="list-text">代理程式可以檢視和分析您的資料，但不能更改您的資源。它們可以回答問題、識別風險、提供建議並協助解決問題。</block>
+  <block id="7e6277284f05e2d4cf99020f4156281c" category="list-text">讀寫模式</block>
+  <block id="08805adb79ed6abfef5a9b183fdd826a" category="list-text">代理程式可以使用您選擇的認證資料為您執行行動。在執行任何行動之前，它們會向您顯示總結並等待您的批准。未經您的批准，它們不會執行任何行動。</block>
+  <block id="6092eef047a776cf1ae032fce2fe1ff0" category="list-text">在 *代理程式設定* 頁面上，前往 *代理程式模式* 區段。</block>
+  <block id="ae1c7cee2bb050e0f57e3431296b4490" category="list-text">選擇操作模式。</block>
+  <block id="9be8b23c1b30a5412be369acebac3129" category="section-title">選擇代理程式存取的認證資料</block>
+  <block id="bed4ed0551e8d0bd53e2940df4d0dd60" category="paragraph">選擇代理程式可以使用哪些 AWS 認證資料來存取您的雲端環境。預設情況下，所有認證資料均已選取，但您可以將其縮小為已設定認證資料的子集。</block>
+  <block id="ad7a6d84190cb018bcb20040ba7aa840" category="paragraph">您可以選擇不選取、選取一個、部分或全部已設定的認證資料。如果您選擇不選取任何認證資料，代理程式可以回答一般性問題，但無法分析您環境中的資源。</block>
+  <block id="04320da953584028ea1a9fef64f0a0ac" category="list-text">在 *代理程式設定* 頁面上，前往 *認證資料* 區段。</block>
+  <block id="a685a78df1473e416ec4f5dd1d5e55ca" category="list-text">從 *認證資料名稱* 下拉清單中，選擇代理程式可以使用的認證資料。</block>
+  <block id="4df13cb466a3becbc8b94f5c683e4d88" category="paragraph">如果沒有設定認證資料，您將看到一個選項，可以為您的 Workload Factory 帳戶新增認證資料。</block>
+  <block id="f2ab6dda5dcaf24c6ffbc9828ce53e7e" category="section-title">Slack 整合</block>
+  <block id="a83e309e3bc8e3235a652fcff10e1a49" category="paragraph">您可以將代理程式連接到 Slack，並在您的 Slack 工作區中直接與它們互動。</block>
+  <block id="47d254476d408dfbd41fb01b874a3e59" category="paragraph">如需設定 Slack 整合的相關資訊，請造訪 Slack 整合文件，或聯絡您的 NetApp 代表以了解代理程式的相關資訊。</block>
+  <block id="66e18fcdb18961698dac90fe1128ccaf" category="section-title">新增自訂提示</block>
+  <block id="944ca360f82b24c3e6cdba37ae9655ff" category="paragraph">新增自訂指南、偏好或規則，供代理程式在回應您的要求時遵循。</block>
+  <block id="2499325dea2f4195ca3a4812ba2de0a4" category="paragraph">自訂提示有助於指南代理程式如何回應，使其遵循貴組織的政策、語言和工作流程。它適用於每個代理程式的每一次互動。</block>
+  <block id="1d0aa8e6f1b6bf319e12bda616651aff" category="paragraph">自訂提示欄位預設為空。您可以隨時新增、修改或移除自訂提示。</block>
+  <block id="e72865f9318e142476270f1893312be0" category="list-text">在 *代理程式設定* 頁面上，前往 *自訂提示* 部分。</block>
+  <block id="7e9ec3a59392a9dc66594a6c8668926e" category="list-text">在文字方塊中，輸入您為代理程式制定的自訂準則。</block>
+  <block id="f1caaeb9dcd13d22145262ee4d9928c4" category="paragraph">例如，您可以定義命名規則、首選回應格式或代理程式應遵循的公司政策。</block>
+  <block id="f28546d1f8eb515bb452998faef01dd0" category="paragraph">代理程式在回應您的要求時，會使用您自訂的提示以及其內建功能。</block>
+  <block id="2f618527204802cdc7e0635d88da47f9" category="paragraph">若要變更或移除自訂提示，請返回此頁面，編輯文字方塊，然後選擇 *套用*。</block>
+  <block id="87856c473606410336b82bb7e93ec084" category="section-title">設定詳細程度選項</block>
+  <block id="52b5a4685cfb3e3d513b7d409b3f610c" category="paragraph">選擇代理程式共享其推理和工具使用細節的程度。</block>
+  <block id="fc1633b3da679875551048103029e4c3" category="paragraph">詳細程度選項可讓您查看更多關於代理程式如何得出回應，以及其使用哪些工具來收集資訊的相關資訊：</block>
+  <block id="f1a4ff7ec8fc7f3d10af7f489e6dcfbd" category="list-text">冗長的推理</block>
+  <block id="23d5becf46b121e67317963fda10fb1d" category="list-text">啟用後，代理程式會解釋它們如何得出答案並做出決策。這有助於您了解它們為何建議某些動作或得出特定結論。</block>
+  <block id="c4b6900e9ca5e303fc19fb9394ea3c86" category="list-text">詳細的工具說明</block>
+  <block id="806c4a6030ee5638bad868ac296edc46" category="list-text">啟用後，代理程式會顯示它們用於收集資料和執行分析的工具和 API。這有助於您了解它們如何與您的環境互動。</block>
+  <block id="ba309604a791da2fbf6b620fc085c387" category="paragraph">為保持回應簡潔，這兩個選項預設為關閉。當您需要更高的通透性或正在疑難排解代理程式行為時，請將其開啟。</block>
+  <block id="cd9b6d5e3d6f46f09890d134dcd76b6f" category="list-text">在 *代理程式設定* 頁面上，前往 *詳細層級* 部分。</block>
+  <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">選擇要啟用的詳細程度選項。</block>
+  <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如 Ask Me、AI 代理程式、自訂儀表板、Rule 建構者，以及 EMS、資料庫日誌和延遲分析器。</block>
+  <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">關閉所有 AI 功能。使用者將無法再使用 Ask Me、AI 代理程式、分析器、自訂儀表板、規則建構者或其他 AI 工具。</block>
+  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026 年 9 月 27 日</block>
+  <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">向 AI 助理詢問有關管理與執行 FSx for ONTAP 和內部部署 ONTAP 檔案系統的問題。Ask Me 可安全地連線至您的環境，並使用 API 根據您的儲存設備設定提供解答。</block>
+  <block id="c04236280596e42d063458cddb934506" category="list-text">AI 代理程式</block>
+  <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">了解 AI 代理程式</block>
+  <block id="b91ab34707ef60b3cb9e7b43383594ea" category="list-text">Workload Factory AIOps 利用 AI 分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的憑證和權限執行動作。AI 代理程式協助 Ask Me 使用您連結的帳戶為您提供深入見解。開啟 Ask Me 中的「探索代理程式」區段，即可快速獲得解答、識別風險與機會、對問題進行疑難排解，並接收建議。預設情況下，代理程式只能檢視資訊。在讀寫模式下，只有在您批准後，它們才能在 AWS 、 ONTAP 和支援的 API 中執行動作。您還可以使用來自多個 AWS 帳戶的憑證、新增自訂提示，並選擇在回應中包含多少詳細資訊，包括在 Slack 中的推論和工具活動<block ref="4688d09efacd50ccc7831795bcbb59e1" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b448c1a229bebc97e97cee06ea0fced" category="admonition">帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員將其停用，Ask Me AI 助理和 AI 代理程式將無法使用。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
+  <block id="64f2f595f7dd037774e1dbd99cb2ab7b" category="sidebar">管理 AI 代理程式設定</block>
+  <block id="737f86fc6a3bb3563670dac4c0b49585" category="sidebar">Workload Factory AIOps</block>
 </blocks>

@@ -56,6 +56,12 @@ sidebar:
       url: "/monitor-operations.html"
     - title: 管理 AI 功能
       url: "/manage-genai-features.html"
+    - title: Workload Factory AIOps
+      entries:
+      - title: 了解人工智慧代理程式
+        url: "/learn-agent.html"
+      - title: 管理 AI 代理程式設定
+        url: "/manage-agent-settings.html"
     - title: 自訂儀錶板
       entries:
       - title: 了解自訂儀表板

@@ -44,6 +44,12 @@ indexpage:
       url: https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html
     - title: 查看並分析儲存工作負載的EMS事件
       url: https://docs.netapp.com/us-en/workload-fsx-ontap/analyze-events.html
+  - title: AI 代理程式
+    links:
+    - title: 了解人工智慧代理程式
+      url: "/learn-agent.html"
+    - title: 管理 AI 代理程式設定
+      url: "/manage-agent-settings.html"
   - title: 自訂儀錶板
     links:
     - title: 了解自訂儀表板

@@ -21,7 +21,7 @@ summary: 在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取�
 [[about-ai-features]]
 == 關於 AI 功能
 
-Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如「問我」、自訂儀表板以及 EMS、資料庫日誌和延遲分析器。
+Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如 Ask Me、AI 代理程式、自訂儀表板、Rule 建構者，以及 EMS、資料庫日誌和延遲分析器。
 
 身為 Workload Factory 系統管理員，您可以在 AI 設定頁面上控制這些功能如何使用 AI。
 
@@ -41,7 +41,7 @@ NetApp 代管的 Bedrock （建議）:: 使用 NetApp 代管的 AWS Bedrock 服�
 
 
 --
-GenAI 功能關閉:: 關閉所有人工智慧功能。使用者將無法再使用「問我」、分析器、自訂儀表板、規則建構者或其他人工智慧驅動工具。
+GenAI 功能關閉:: 關閉所有 AI 功能。使用者將無法再使用 Ask Me、AI 代理程式、分析器、自訂儀表板、規則建構者或其他 AI 工具。
 
 
 

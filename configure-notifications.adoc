@@ -20,6 +20,9 @@ summary: 您可以設定NetApp Workload Factory，在發生某些類型的事件
 
 您可以使用 NetApp Console 或 Workload Factory 主控台來設定 Workload Factory 通知。
 
+
+IMPORTANT: 當你在 NetApp Console 中設定通知時，NetApp Console 會接管通知傳送的管理權限，並且 Workload Factory console 的通知選項會被停用並以唯讀模式顯示。工具提示會顯示通知是由 NetApp Console 管理。之後你只能從 NetApp Console 管理通知。
+
 接收通知的選項包括：
 
 
@@ -37,12 +40,7 @@ summary: 您可以設定NetApp Workload Factory，在發生某些類型的事件
 [[workload-factory-console]]
 === 工作負載工廠控制台
 
-* *電子郵件*：在 Workload Factory Console 中啟用電子郵件通知，即可接收傳送至與該帳戶關聯的任何電子郵件地址的通知，而無需設定 Amazon SNS。
-* *Amazon SNS*：使用 Workload Factory 主控台設定 Workload Factory 以向 Amazon SNS 主題發送通知。
-
-
-
-IMPORTANT: 當你在 NetApp Console 中設定通知時，NetApp Console 會接管通知傳送的管理權限，並且 Workload Factory console 的通知選項會被停用並以唯讀模式顯示。工具提示會顯示通知是由 NetApp Console 管理。之後你只能從 NetApp Console 管理通知。
+*Amazon SNS*：使用 Workload Factory 主控台設定 Workload Factory 以向 Amazon SNS 主題發送通知。
 
 .開始之前
 以下先決條件僅適用於設定 Amazon SNS 通知時：
@@ -78,9 +76,8 @@ IMPORTANT: 當你在 NetApp Console 中設定通知時，NetApp Console 會接�
 .步驟
 . 登入link:https://console.workloads.netapp.com["工作負載工廠控制台"^]。
 . 從 Workload Factory 控制台選單中，選擇 *Workloads*、*Administration*，然後選擇 *Notifications setup*。
-. 啟用以下一種或多種通知類型：
 +
-** *電子郵件通知*：選取 *啟用電子郵件通知*。與該帳戶相關聯的任何電子郵件地址都會以唯讀模式顯示。
+** *電子郵件通知*：若要接收電子郵件通知，請在 link:link:https://console.netapp.com["NetApp控制台"^] 通知設定中設定通知收件者與嚴重性偏好設定。
 ** *Amazon SNS 通知*：選取*啟用 SNS 通知*，然後依照指示從 Amazon SNS 主控台設定 Amazon SNS。
 +
 透過發送測試通知驗證配置後，選擇*套用*。
