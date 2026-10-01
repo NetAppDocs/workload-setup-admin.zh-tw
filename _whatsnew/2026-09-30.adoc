@@ -23,9 +23,9 @@ Workload Factory AIOps 利用人工智慧分析您的環境並提出改進建議
 
 代理程式還支援多帳戶環境，並簡化了設定。單一代理程式可以使用多個認證資料安全地跨多個 AWS 帳戶執行。
 
-link:learn-agent.html["了解人工智慧代理程式"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-agent.html["了解人工智慧代理程式"]
 
-link:manage-agent-settings.html["管理代理程式設定"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-agent-settings.html["管理代理程式設定"]
 
 
 
@@ -40,7 +40,7 @@ link:manage-agent-settings.html["管理代理程式設定"]
 * 每小時列出所有可存取的 AWS FSx 檔案系統，以保持最新的清單。
 
 
-link:workload-factory-overview.html#features["深入瞭解 Ask Me"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["深入瞭解 Ask Me"]
 
 
 
@@ -49,7 +49,7 @@ link:workload-factory-overview.html#features["深入瞭解 Ask Me"]
 
 Ask Me 現在支援 FSx for ONTAP 和內部部署的 ONTAP 系統。您可以使用相同的聊天體驗，以獲得有關整個 ONTAP 基礎架構的答案和見解。
 
-link:workload-factory-overview.html#features["深入瞭解 Ask Me"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["深入瞭解 Ask Me"]
 
 
 

@@ -77,7 +77,7 @@ IMPORTANT: 當你在 NetApp Console 中設定通知時，NetApp Console 會接�
 . 登入link:https://console.workloads.netapp.com["工作負載工廠控制台"^]。
 . 從 Workload Factory 控制台選單中，選擇 *Workloads*、*Administration*，然後選擇 *Notifications setup*。
 +
-** *電子郵件通知*：若要接收電子郵件通知，請在 link:link:https://console.netapp.com["NetApp控制台"^] 通知設定中設定通知收件者與嚴重性偏好設定。
+** *電子郵件通知*：若要接收電子郵件通知，請在 link:https://console.netapp.com["NetApp控制台"^] 通知設定中設定通知收件者與嚴重性偏好設定。
 ** *Amazon SNS 通知*：選取*啟用 SNS 通知*，然後依照指示從 Amazon SNS 主控台設定 Amazon SNS。
 +
 透過發送測試通知驗證配置後，選擇*套用*。
