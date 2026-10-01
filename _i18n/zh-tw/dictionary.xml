@@ -1970,7 +1970,6 @@
   <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">選擇要啟用的詳細程度選項。</block>
   <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如 Ask Me、AI 代理程式、自訂儀表板、Rule 建構者，以及 EMS、資料庫日誌和延遲分析器。</block>
   <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">關閉所有 AI 功能。使用者將無法再使用 Ask Me、AI 代理程式、分析器、自訂儀表板、規則建構者或其他 AI 工具。</block>
-  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026 年 9 月 27 日</block>
   <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">向 AI 助理詢問有關管理與執行 FSx for ONTAP 和內部部署 ONTAP 檔案系統的問題。Ask Me 可安全地連線至您的環境，並使用 API 根據您的儲存設備設定提供解答。</block>
   <block id="c04236280596e42d063458cddb934506" category="list-text">AI 代理程式</block>
   <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">了解 AI 代理程式</block>
@@ -1978,4 +1977,5 @@
   <block id="4b448c1a229bebc97e97cee06ea0fced" category="admonition">帳戶系統管理員可以啟用或停用 AI 功能。如果系統管理員將其停用，Ask Me AI 助理和 AI 代理程式將無法使用。<block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>。</block>
   <block id="64f2f595f7dd037774e1dbd99cb2ab7b" category="sidebar">管理 AI 代理程式設定</block>
   <block id="737f86fc6a3bb3563670dac4c0b49585" category="sidebar">Workload Factory AIOps</block>
+  <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026 年 9 月 30 日</block>
 </blocks>
