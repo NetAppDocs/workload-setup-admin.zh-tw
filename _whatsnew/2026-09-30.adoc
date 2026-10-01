@@ -44,10 +44,10 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
-[[ontap-support-in-ask-me]]
-=== Ask Me 中的 ONTAP 支援
+[[storage-support-in-ask-me]]
+=== Ask Me 中的儲存設備支援
 
-Ask Me 現在支援 FSx for ONTAP 和內部部署的 ONTAP 系統。您可以使用相同的聊天體驗，以獲得有關整個 ONTAP 基礎架構的答案和見解。
+Ask Me 現在支援 FSx for ONTAP 和 Google Cloud NetApp Volumes。使用相同的聊天體驗，在您支援的儲存設備環境中取得答案和見解。
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["深入瞭解 Ask Me"]
 

@@ -1864,8 +1864,6 @@
   <block id="ff51f1512e81cb44e19946405c4c3751" category="paragraph">範例提示：</block>
   <block id="9c51276de03bc7f0cc89565810a9583c" category="list-text">每小時檢查所有 FSx for NetApp ONTAP 檔案系統的健全狀況和生命週期狀態，以便及早發現問題。</block>
   <block id="7c232a692347d9efae9eafb444b454ef" category="list-text">每小時列出所有可存取的 AWS FSx 檔案系統，以保持最新的清單。</block>
-  <block id="fcc3c37c09c2649e94509997e3e32ace" category="section-title">Ask Me 中的 ONTAP 支援</block>
-  <block id="5887518ab4bafe0e2cd30ee6d85ca830" category="paragraph">Ask Me 現在支援 FSx for ONTAP 和內部部署的 ONTAP 系統。您可以使用相同的聊天體驗，以獲得有關整個 ONTAP 基礎架構的答案和見解。</block>
   <block id="61ac51994f4e558eb3be753f892d08aa" category="section-title">通知更新</block>
   <block id="02796e8ea898eccf4fc1ec43b8c9a990" category="paragraph">NetApp Console 通知現已預設為啟用。NetApp Console 使用者無需額外組態即可自動接收 Workload Factory 通知。</block>
   <block id="21342e11f90d32dc68b1110fcbb8adc2" category="inline-link-macro">Workload Factory 通知</block>
@@ -1889,7 +1887,6 @@
   <block id="f41dc5b513f7a5678f949fafbb672e71" category="list-text">識別風險與最佳化機會。</block>
   <block id="45747fdf81b9f650b9ab26706866db24" category="list-text">在一個工作流程中解決問題並執行已核准的行動。</block>
   <block id="6fd44b1c4edd80ad7b595f1fcb4c7483" category="list-text">執行排程檢查並在聊天記錄中接收更新。</block>
-  <block id="e974804a88a47e4bcdb4ff1c718951bc" category="list-text">跨 FSx for ONTAP 和內部部署 ONTAP 環境運作。</block>
   <block id="4eeb2bca1dddd7a796d908c266d60075" category="section-title">存取 AI 代理程式</block>
   <block id="e6478bab5c49062e219e1290c4442eed" category="list-text">從 Ask Me 首頁</block>
   <block id="b3c72178808d9fa6e9c876b76d5d1928" category="list-text">在 Ask Me 活動網頁上，選擇 *探索代理程式*。AI 代理程式側邊面板會開啟，並顯示歡迎訊息以介紹代理程式的功能。</block>
@@ -1966,7 +1963,6 @@
   <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">選擇要啟用的詳細程度選項。</block>
   <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">Workload Factory 包含多個 AI 驅動的功能，可增強您的體驗，例如 Ask Me、AI 代理程式、自訂儀表板、Rule 建構者，以及 EMS、資料庫日誌和延遲分析器。</block>
   <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">關閉所有 AI 功能。使用者將無法再使用 Ask Me、AI 代理程式、分析器、自訂儀表板、規則建構者或其他 AI 工具。</block>
-  <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">向 AI 助理詢問有關管理與執行 FSx for ONTAP 和內部部署 ONTAP 檔案系統的問題。Ask Me 可安全地連線至您的環境，並使用 API 根據您的儲存設備設定提供解答。</block>
   <block id="c04236280596e42d063458cddb934506" category="list-text">AI 代理程式</block>
   <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">了解 AI 代理程式</block>
   <block id="b91ab34707ef60b3cb9e7b43383594ea" category="list-text">Workload Factory AIOps 利用 AI 分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的憑證和權限執行動作。AI 代理程式協助 Ask Me 使用您連結的帳戶為您提供深入見解。開啟 Ask Me 中的「探索代理程式」區段，即可快速獲得解答、識別風險與機會、對問題進行疑難排解，並接收建議。預設情況下，代理程式只能檢視資訊。在讀寫模式下，只有在您批准後，它們才能在 AWS 、 ONTAP 和支援的 API 中執行動作。您還可以使用來自多個 AWS 帳戶的憑證、新增自訂提示，並選擇在回應中包含多少詳細資訊，包括在 Slack 中的推論和工具活動<block ref="4688d09efacd50ccc7831795bcbb59e1" category="inline-link-macro-rx"></block>。</block>
@@ -1977,4 +1973,8 @@
   <block id="92ef509d26c2f4b8f1eafc483dafc514" category="paragraph"><block ref="92ef509d26c2f4b8f1eafc483dafc514" category="inline-link-macro-rx"></block></block>
   <block id="ff60e6cb69fa35fc765fb6716dc86a1d" category="paragraph"><block ref="ff60e6cb69fa35fc765fb6716dc86a1d" category="inline-link-macro-rx"></block></block>
   <block id="5ff6cb415ca5edb6088a3bb92aadbf41" category="list-text">*電子郵件通知*：若要接收電子郵件通知，請在 <block ref="7532dfde8c533672ea63a5b546224a97" category="inline-link-macro-rx"></block> 通知設定中設定通知收件者與嚴重性偏好設定。</block>
+  <block id="d757afa220ac7f97f408903182fddee2" category="section-title">Ask Me 中的儲存設備支援</block>
+  <block id="541644294bd888a59c4f26e19102bfb2" category="paragraph">Ask Me 現在支援 FSx for ONTAP 和 Google Cloud NetApp Volumes。使用相同的聊天體驗，在您支援的儲存設備環境中取得答案和見解。</block>
+  <block id="54ba8fb885319acf274731794ecf9b35" category="list-text">跨 FSx for ONTAP 與 Google Cloud NetApp Volumes 環境運作。</block>
+  <block id="3ddb8c8ba0ebed85a3c1d3ddf7cc424c" category="list-text">向 AI 助理諮詢有關管理和運行 FSx for ONTAP 和 Google Cloud NetApp Volumes 的問題。「Ask Me」可安全地連線至您的環境，並使用 API 根據您的儲存設備設定提供答案。</block>
 </blocks>

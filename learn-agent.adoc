@@ -43,7 +43,7 @@ link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 * 識別風險與最佳化機會。
 * 在一個工作流程中解決問題並執行已核准的行動。
 * 執行排程檢查並在聊天記錄中接收更新。
-* 跨 FSx for ONTAP 和內部部署 ONTAP 環境運作。
+* 跨 FSx for ONTAP 與 Google Cloud NetApp Volumes 環境運作。
 
 
 
