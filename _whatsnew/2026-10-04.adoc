@@ -1,0 +1,28 @@
+= 自訂儀表板更新
+:allow-uri-read: 
+
+
+
+
+[[custom-dashboard-updates]]
+=== 自訂儀表板更新
+
+自訂儀表板現在讓您更輕鬆地管理工作。
+
+您可以直接從目錄編輯儀表板，包括計量、圖表和時間範圍。
+
+編輯儀表板時，Workload Factory 會重新開啟聊天，並顯示您先前的提示和訊息。接著您可以更新儀表板、儲存變更或還原先前的版本。
+
+只有儀表板建立者才能編輯儀表板。在您編輯時，其他使用者無法看到您的變更，直到您儲存為止。
+
+儀表板目錄現在包含更多篩選器，可協助您根據類別和狀態快速找到儀表板。
+
+如果您的系統管理員停用了 AI 功能或您的每月信用額度已達到上限，則儀表板的建立和編輯功能將被停用。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html["了解自訂儀表板"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["建立自訂儀表板"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html["管理自訂儀表板"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/troubleshoot-custom-dashboards.html["疑難排解自訂儀表板"]

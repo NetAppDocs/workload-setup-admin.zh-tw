@@ -1433,15 +1433,6 @@
   <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">查看儀表板清單。</block>
   <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">重新整理儀表板資料</block>
   <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">開啟儀表板後，儀表板資料就會載入。您可以重新整理儀表板以查看最新資訊。</block>
-  <block id="6835e72df37e141c78401ea8d4bfcf90" category="paragraph">儀表板會重新載入工作負載中的資料。上次更新時間將會變更，以顯示資料重新整理的時間。</block>
-  <block id="74ee9feffcb1603b7eeb47c099c0e5a5" category="section-title">刪除儀表板</block>
-  <block id="e54360b7371199d6607f76cd1ae6ad17" category="paragraph">刪除不再需要的儀表板。此操作為永久性操作，無法復原。</block>
-  <block id="3325f3a5c13a73bb87ed2dabebb0b6a3" category="list-text">在「自訂儀表板」頁面中，找到要刪除的儀表板。</block>
-  <block id="0ce6306187e44bdf505a14f5d0676bb6" category="list-text">從該儀表板的 *Actions* 下拉式選單中，選擇 *Delete*。</block>
-  <block id="b26a5fa549c938ffb56d20623c3f69c0" category="list-text">確認刪除。</block>
-  <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。</block>
-  <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">建立其他自訂儀表板</block>
-  <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">利用這些資訊解決在建立或使用自訂儀表板時可能遇到的常見問題。</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">儀錶板建立失敗</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**問題：**建立儀表板時，您會看到錯誤訊息「Failed to understand request and generate code」。</block>
@@ -1977,4 +1968,28 @@
   <block id="541644294bd888a59c4f26e19102bfb2" category="paragraph">Ask Me 現在支援 FSx for ONTAP 和 Google Cloud NetApp Volumes。使用相同的聊天體驗，在您支援的儲存設備環境中取得答案和見解。</block>
   <block id="54ba8fb885319acf274731794ecf9b35" category="list-text">跨 FSx for ONTAP 與 Google Cloud NetApp Volumes 環境運作。</block>
   <block id="3ddb8c8ba0ebed85a3c1d3ddf7cc424c" category="list-text">向 AI 助理諮詢有關管理和運行 FSx for ONTAP 和 Google Cloud NetApp Volumes 的問題。「Ask Me」可安全地連線至您的環境，並使用 API 根據您的儲存設備設定提供答案。</block>
+  <block id="77c39d029270c567ae2816d2c688ea3b" category="doc">自訂儀表板更新</block>
+  <block id="b4a3fedd52cfe46140994157b6fa12ec" category="paragraph">自訂儀表板現在讓您更輕鬆地管理工作。</block>
+  <block id="5d95426dd9834d03b33e051ae7f9fb5c" category="paragraph">您可以直接從目錄編輯儀表板，包括計量、圖表和時間範圍。</block>
+  <block id="e57137dc0ab44a9b0797700e3e8c851c" category="paragraph">編輯儀表板時，Workload Factory 會重新開啟聊天，並顯示您先前的提示和訊息。接著您可以更新儀表板、儲存變更或還原先前的版本。</block>
+  <block id="8f44990f66d79c05eb2b8e612e7e18b5" category="paragraph">只有儀表板建立者才能編輯儀表板。在您編輯時，其他使用者無法看到您的變更，直到您儲存為止。</block>
+  <block id="14dd0ad1c8f18e92cbbc77ecf3a2645b" category="paragraph">儀表板目錄現在包含更多篩選器，可協助您根據類別和狀態快速找到儀表板。</block>
+  <block id="fb1ecdb5253f537a735a53d5e9e2eba6" category="paragraph">如果您的系統管理員停用了 AI 功能或您的每月信用額度已達到上限，則儀表板的建立和編輯功能將被停用。</block>
+  <block id="f736e966e4394f88a05cee94fdba57ff" category="paragraph"><block ref="f736e966e4394f88a05cee94fdba57ff" category="inline-link-macro-rx"></block></block>
+  <block id="e703f5c9737234e07b6d50b473d03d31" category="paragraph"><block ref="e703f5c9737234e07b6d50b473d03d31" category="inline-link-macro-rx"></block></block>
+  <block id="a6624b6c8238a8d2fecbcab00748683a" category="paragraph"><block ref="a6624b6c8238a8d2fecbcab00748683a" category="inline-link-macro-rx"></block></block>
+  <block id="6690aacdf8125a25e4539caa3239e86f" category="paragraph"><block ref="6690aacdf8125a25e4539caa3239e86f" category="inline-link-macro-rx"></block></block>
+  <block id="b2174789d5314bb12b464a8d03a18be6" category="list-text">編輯儀表板以變更其顯示內容，包括計量、圖表和時間範圍</block>
+  <block id="0d4c6d4cadfc35e450177a6f124a12ce" category="admonition">如果您的帳戶系統管理員已關閉 AI 功能，您將看到一則訊息，並且將無法建立或編輯儀表板。請聯絡您的系統管理員或<block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>。</block>
+  <block id="3dacf374ca39e9d1e2ccd73b21e8d75a" category="paragraph">您可以從目錄中編輯儀表板，並在決定是否儲存修改後的版本之前更新儀表板名稱、執行摘要、類別或監控要求。</block>
+  <block id="09716803bbab78d4545cc7210ae61d90" category="paragraph">儀表板會重新載入工作負載中的資料。</block>
+  <block id="d2258a9653c6a977efeeb955b27c66e9" category="section-title">編輯儀表板</block>
+  <block id="4e2f12e496523d85bae4a969657d45aa" category="paragraph">您可以編輯儀表板來變更其顯示的內容，包括計量、圖表和時間範圍。</block>
+  <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">在「自訂儀表板」頁面中，找到要編輯的儀表板。</block>
+  <block id="d431f68c965a7131bbc2f48128983c25" category="list-text">從該儀表板的 *Actions* 功能表中，選取 *Edit dashboard*。</block>
+  <block id="63f40ecf20824ff6d561a306d3a25fd1" category="list-text">在 AI 對話方塊中，描述您想要進行的變更。</block>
+  <block id="3184c7e78934ef4b37ea845f1d56789a" category="paragraph">此程序與建立新儀表板類似。您可以變更儀表板追蹤的工作負載、指標或時間範圍。</block>
+  <block id="f66306510aaf399aef8bdf649739a15e" category="list-text">查看更改並選擇**儲存**。</block>
+  <block id="89806ea6a9ed9b0bb6cb322f912aff65" category="paragraph">儀錶板會根據您的變更進行更新。最後修改日期也會更新。</block>
+  <block id="6cd19393862a5a23e39bb63b43a86baa" category="section-title">2026年10月4日</block>
 </blocks>
