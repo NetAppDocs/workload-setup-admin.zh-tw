@@ -2000,4 +2000,5 @@
   <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。</block>
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">建立其他自訂儀表板</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
+  <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">延遲事件的元件細目</block>
 </blocks>
