@@ -86,3 +86,28 @@ NOTE: 只有儀表板建立者才能編輯儀表板。在您編輯時，其他�
 
 .結果
 儀錶板會根據您的變更進行更新。最後修改日期也會更新。
+
+
+
+[[delete-a-dashboard]]
+== 刪除儀表板
+
+刪除不再需要的儀表板。此操作為永久性操作，無法復原。
+
+.步驟
+. 在「自訂儀表板」頁面中，找到要刪除的儀表板。
+. 從該儀表板的 *Actions* 下拉式選單中，選擇 *Delete*。
+. 確認刪除。
+
+
+.結果
+儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。
+
+
+
+[[related-information]]
+== 相關資訊
+
+* link:create-custom-dashboard.html["建立其他自訂儀表板"]
+* link:troubleshoot-custom-dashboards.html["疑難排解自訂儀表板"]
+

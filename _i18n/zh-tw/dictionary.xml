@@ -1992,4 +1992,12 @@
   <block id="f66306510aaf399aef8bdf649739a15e" category="list-text">查看更改並選擇**儲存**。</block>
   <block id="89806ea6a9ed9b0bb6cb322f912aff65" category="paragraph">儀錶板會根據您的變更進行更新。最後修改日期也會更新。</block>
   <block id="6cd19393862a5a23e39bb63b43a86baa" category="section-title">2026年10月4日</block>
+  <block id="74ee9feffcb1603b7eeb47c099c0e5a5" category="section-title">刪除儀表板</block>
+  <block id="e54360b7371199d6607f76cd1ae6ad17" category="paragraph">刪除不再需要的儀表板。此操作為永久性操作，無法復原。</block>
+  <block id="3325f3a5c13a73bb87ed2dabebb0b6a3" category="list-text">在「自訂儀表板」頁面中，找到要刪除的儀表板。</block>
+  <block id="0ce6306187e44bdf505a14f5d0676bb6" category="list-text">從該儀表板的 *Actions* 下拉式選單中，選擇 *Delete*。</block>
+  <block id="b26a5fa549c938ffb56d20623c3f69c0" category="list-text">確認刪除。</block>
+  <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">儀表板已從您的 Workload Factory 帳戶中永久刪除，所有使用者都將失去對其的存取權限。</block>
+  <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">建立其他自訂儀表板</block>
+  <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
 </blocks>
