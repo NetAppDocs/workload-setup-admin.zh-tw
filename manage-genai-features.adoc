@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-genai-features.html 
 keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration 
-summary: 在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取。您可以關閉 AI 功能或使用 NetApp 代管的 AWS Bedrock。 
+summary: 在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取。您可以關閉 AI 功能，或使用 NetApp 代管或客戶代管的 Bedrock。 
 ---
 = 在 NetApp Workload Factory 中管理 AI 功能
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取�
 
 
 [role="lead"]
-控制對 Workload Factory 中 AI 功能的存取。您可以關閉 AI 功能，或使用由 NetApp 代管的 AWS Bedrock。
+在 Workload Factory 中控制對 AI 功能的存取。您可以關閉 AI 功能，或使用由 NetApp 或您的組織代管的 AWS Bedrock。
 
 
 
@@ -41,6 +41,13 @@ NetApp 代管的 Bedrock （建議）:: 使用 NetApp 代管的 AWS Bedrock 服�
 
 
 --
+客戶代管的 Bedrock:: 使用您自己的 AWS Bedrock 組態。
++
+--
+* 為獲得最佳效果，NetApp 建議將 Anthropic Claude Sonnet 4.5 或 4.6 與您的 Amazon Bedrock 組態一起使用
+
+
+--
 GenAI 功能關閉:: 關閉所有 AI 功能。使用者將無法再使用 Ask Me、AI 代理程式、分析器、自訂儀表板、規則建構者或其他 AI 工具。
 
 
@@ -50,7 +57,11 @@ GenAI 功能關閉:: 關閉所有 AI 功能。使用者將無法再使用 Ask Me
 == 開始之前
 
 * 我們建議帳戶系統管理員設定 AI 功能。
+* 如果您使用客戶代管的 Bedrock，請更新與 Workload Factory IAM 角色關聯的憑證的 AWS 原則。
 
+
+
+NOTE: 將所需權限新增至與 Workload Factory IAM 角色關聯之憑證的 AWS 原則中。
 
 
 
@@ -59,14 +70,24 @@ GenAI 功能關閉:: 關閉所有 AI 功能。使用者將無法再使用 Ask Me
 
 .步驟
 . 使用以下任一方式登入link:console-experiences.html["主控台體驗"^]。
-. 從選單中選擇 *管理*，然後選擇 *AI 設定*。
-. 在「AI 設定」頁面，選擇您偏好的組態：
+. 從選單中選擇 *管理* > *設定* > *AI 工具*。
+. 在「AI 工具」頁面上，選擇您偏好的組態：
 +
 ** *NetApp-代管的 Bedrock （建議）*：使用 NetApp-代管的 AWS Bedrock。
-** *Gen AI features off*：關閉所有 AI 功能。
+** *客戶代管的 Bedrock*：
++
+... 選擇與 Workload Factory IAM 角色關聯的 AWS 憑證和區域
+... 提供您要使用的推論設定檔
+... 選取 *驗證組態*。
++
+Workload Factory 會顯示通知，指示連線是否成功或失敗
 
 
-. 選擇 *Save preferences*。
+
+** *關閉 GenAI 功能*：關閉所有 AI 功能。
+
+
+. 選擇“儲存變更”。
 
 
 .結果
@@ -79,7 +100,7 @@ GenAI 功能關閉:: 關閉所有 AI 功能。使用者將無法再使用 Ask Me
 [[budget-controls-and-credit-limits]]
 == 預算控制和信用額度
 
-NetApp 在使用預設的 NetApp 代管組態時，會管理 AI 功能的預算控制。
+NetApp 只有在您使用預設的 NetApp 代管組態時，才會管理 AI 功能的預算控制。
 
 
 

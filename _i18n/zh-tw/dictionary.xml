@@ -1527,7 +1527,6 @@
   <block id="93abc3800cadb3c84e6ebb4f337cb663" category="paragraph"><block ref="fe356bc0877a3688c38625a5a5fa7c4e" category="inline-link-macro-rx"></block>。</block>
   <block id="c7084515fd41cf4b219b3c9bc1bf874a" category="list-text">您無法在 Workload Factory 帳戶之外共享儀表板。所有儀表板共享僅限於同一 Workload Factory 帳戶內的使用者。</block>
   <block id="3ba405e1d72777e360f3b281ce3ba5b9" category="paragraph">您可以透過儀表板目錄管理您的自訂儀表板。您可以在這裡檢視詳細資訊、共享儀表板、重新整理資料或刪除不再需要的儀表板。</block>
-  <block id="6ef261950960e68b5c274dbb2ad858c2" category="paragraph">您可以從儀表板目錄檢視和管理自訂儀表板。私人儀表板僅您可見，而公用儀表板對您 Workload Factory 帳戶中的所有使用者可見。每個儀表板都會顯示基本詳細資料，例如建立者姓名、建立日期和可見度標籤（私人或公用）。</block>
   <block id="8471f69a4146258ee48a6b85bff6fa31" category="section-title">更改儀表板可見度</block>
   <block id="434e902a308729311c26bf05cd3a3e42" category="paragraph">將儀表板設為公開即可與團隊成員共享。將其設為私有即可停止共享。</block>
   <block id="bccfa88da47be219216832061b161e9d" category="list-text">在「自訂儀表板」頁面中，找到要更新的儀表板。</block>
@@ -1536,9 +1535,7 @@
   <block id="d87198500f0d81b0ca147bc5b2a09622" category="list-text">*共享儀表板* - 使儀表板對您的 Workload Factory 帳戶中的所有使用者可見</block>
   <block id="939742a8d44add9f4ad62a0fc3824a6e" category="list-text">*Change to private dashboard* - 僅您可見儀表板</block>
   <block id="7e3cce2609a225eafd019dfc30a9437a" category="paragraph">儀表板會立即更新。儀表板卡片上的可見度標籤會顯示目前狀態。</block>
-  <block id="f7b22a19823cae9bc6664fece0b96115" category="summary">在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取。您可以關閉 AI 功能或使用 NetApp 代管的 AWS Bedrock。</block>
   <block id="ebd4b28f0632a0dc47fff6d0e28857b1" category="doc">管理 AI 功能</block>
-  <block id="13bb649429b18adc1dadc0ed391c5bc2" category="paragraph">控制對 Workload Factory 中 AI 功能的存取。您可以關閉 AI 功能，或使用由 NetApp 代管的 AWS Bedrock。</block>
   <block id="00e95115c994386ef85f1864db952bca" category="section-title">關於 AI 功能</block>
   <block id="46918c8c585299e7a785eed266de3f97" category="paragraph">身為 Workload Factory 系統管理員，您可以在 AI 設定頁面上控制這些功能如何使用 AI。</block>
   <block id="50f33d14f129e4548c1c270fd6725a78" category="section-title">組態選項</block>
@@ -1551,15 +1548,10 @@
   <block id="1ee78c04d8b078adcb0fca6be60af5a2" category="list-text">GenAI 功能關閉</block>
   <block id="396640080b08108896efb48796063406" category="list-text">我們建議帳戶系統管理員設定 AI 功能。</block>
   <block id="6b7af6c72f84f0f7380106617c11be78" category="section-title">設定 AI 功能</block>
-  <block id="3f0879fc8845a02f07ea71a0a584847e" category="list-text">從選單中選擇 *管理*，然後選擇 *AI 設定*。</block>
-  <block id="ef1f959eefc1f11cf2aec294261e066f" category="list-text">在「AI 設定」頁面，選擇您偏好的組態：</block>
   <block id="7530dc640ec2dd92a9e70b8484867369" category="list-text">*NetApp-代管的 Bedrock （建議）*：使用 NetApp-代管的 AWS Bedrock。</block>
-  <block id="053d266af64b45b2a2fbc0eeccc99297" category="list-text">*Gen AI features off*：關閉所有 AI 功能。</block>
-  <block id="cbab3ffec133396f2f907f9faa5a4337" category="list-text">選擇 *Save preferences*。</block>
   <block id="1f19237677d2459e3c32c18ad28d89c4" category="paragraph">您的設定已儲存並立即套用至 Workload Factory 中的所有 AI 功能。您可以在 Tracker 中檢視上次由誰更新了設定以及更新時間。</block>
   <block id="e8d0b42b043c438b67550c55202181fe" category="paragraph">如果 AI 功能已關閉，使用者嘗試使用 AI 驅動的功能時會看到一則訊息。介面仍然可見，並清楚顯示該功能無法使用。</block>
   <block id="c5a072ef0376df4bfe60ecf20f43c427" category="section-title">預算控制和信用額度</block>
-  <block id="e622f31b01cf42245970bf4f82c9e127" category="paragraph">NetApp 在使用預設的 NetApp 代管組態時，會管理 AI 功能的預算控制。</block>
   <block id="583513a0baae6b087a0f3c846b3f742a" category="section-title">每月信用額度</block>
   <block id="c9f9c41c2d00489aef5b70d1c80be3d1" category="paragraph">使用 NetApp 代管的 Bedrock 時，每個帳戶對每個 AI 功能都有每月消費限額。</block>
   <block id="dfc84788c4742cd3e802820d33f9aeca" category="section-title">當達到預算時</block>
@@ -2001,4 +1993,26 @@
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">建立其他自訂儀表板</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">延遲事件的元件細目</block>
+  <block id="b680b1a7fd35564d77eb715d3c89f5cb" category="doc">使用您自己的 Amazon Bedrock 執行個體來執行 AI 工具</block>
+  <block id="aefffefabafd2a723ba252259d49413b" category="paragraph">Workload Factory 現在在 AI 設定頁面中新增了另一個選項，讓客戶可以使用自己的 Amazon Bedrock 執行個體。</block>
+  <block id="59071a98cbd118cd70a7342fac20edee" category="paragraph">此選項適用於客戶管理的 Bedrock for AI 工具，並受 Workload Factory 所有 AI 服務的支援。</block>
+  <block id="723b7f36410bdffd1d79fc26537b0350" category="paragraph">連線後，Workload Factory 會告知您連線是否成功。</block>
+  <block id="4765f204e5de83ae87fec00c7c5b7589" category="paragraph">您可以從儀表板目錄檢視和管理自訂儀表板。私人儀表板僅您可見，而公用儀表板對您 Workload Factory 帳戶中的所有使用者可見。每個儀表板都會顯示基本詳細資料，例如建立者姓名、建立日期和可見度標籤（私人或公用）。</block>
+  <block id="55c9e8516766e9331175c24a58463351" category="summary">在 Workload Factory 中控制對基於 Bedrock 的 AI 功能的存取。您可以關閉 AI 功能，或使用 NetApp 代管或客戶代管的 Bedrock。</block>
+  <block id="fdb1959aef23285e43fe2cdcd4f28fee" category="paragraph">在 Workload Factory 中控制對 AI 功能的存取。您可以關閉 AI 功能，或使用由 NetApp 或您的組織代管的 AWS Bedrock。</block>
+  <block id="6f5403c75b81b8b52cd43cae97fcf772" category="list-text">客戶代管的 Bedrock</block>
+  <block id="c18ad30e2ef4050c256483f9a51ad2de" category="list-text">使用您自己的 AWS Bedrock 組態。</block>
+  <block id="edf60b9bc6b08bdb2aa52c67c9ff0924" category="list-text">為獲得最佳效果，NetApp 建議將 Anthropic Claude Sonnet 4.5 或 4.6 與您的 Amazon Bedrock 組態一起使用</block>
+  <block id="4580e55cbed2076f7b001c4793810627" category="list-text">如果您使用客戶代管的 Bedrock，請更新與 Workload Factory IAM 角色關聯的憑證的 AWS 原則。</block>
+  <block id="42f8e0cc53973b95fb8c5ab1b1940d45" category="admonition">將所需權限新增至與 Workload Factory IAM 角色關聯之憑證的 AWS 原則中。</block>
+  <block id="d8180f5e900b1f6f9e24a34bcc5df784" category="list-text">從選單中選擇 *管理* &gt; *設定* &gt; *AI 工具*。</block>
+  <block id="e63e52d33b8423358a13ed6f555c8f70" category="list-text">在「AI 工具」頁面上，選擇您偏好的組態：</block>
+  <block id="cd805e2fc37a5ef0e58d5bcce3784800" category="list-text">*客戶代管的 Bedrock*：</block>
+  <block id="21311647ca0330ee847f5cb2e10ea926" category="list-text">選擇與 Workload Factory IAM 角色關聯的 AWS 憑證和區域</block>
+  <block id="f531442bfdac6ffe5ebf928d9259db20" category="list-text">提供您要使用的推論設定檔</block>
+  <block id="ca232c88bdf38a766c6b82ced2c60df3" category="list-text">選取 *驗證組態*。</block>
+  <block id="5a79cccf92e71cd2b96cbbe67a02e898" category="paragraph">Workload Factory 會顯示通知，指示連線是否成功或失敗</block>
+  <block id="43d91f7086bfc8e0d64b9a83a049c1f0" category="list-text">*關閉 GenAI 功能*：關閉所有 AI 功能。</block>
+  <block id="94278b8c4b4aa1c1469e62f89ce7d460" category="paragraph">NetApp 只有在您使用預設的 NetApp 代管組態時，才會管理 AI 功能的預算控制。</block>
+  <block id="f535eb1278ad100b4d323539a7942781" category="section-title">2026年10月14日</block>
 </blocks>
