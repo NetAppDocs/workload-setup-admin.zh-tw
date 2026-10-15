@@ -82,6 +82,8 @@ sidebar:
       url: "/use-cloudshell.html"
     - title: 移除認證資料
       url: "/manage-credentials.html"
+  - title: 常見問題
+    url: "/faq-workload-factory.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
