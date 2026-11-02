@@ -69,6 +69,17 @@ link:manage-custom-dashboards.html#change-dashboard-visibility["了解如何變�
 
 
 
+[[check-if-the-data-is-up-to-date]]
+== 檢查資料是否為最新狀態
+
+您可以查看儀表板資料的最後更新時間，並隨時要求重新整理。工具提示會顯示最後更新的日期和時間。
+
+選擇 *重新整理資料* 來開始新的掃描。掃描進行期間，該按鈕無法使用。新資料準備就緒後，會出現一個橫幅，提供更新儀表板的選項。
+
+link:manage-custom-dashboards.html#refresh-dashboard-data["了解如何重新整理儀表板資料"]。
+
+
+
 [[considerations-and-limitations]]
 == 考慮因素和局限性
 

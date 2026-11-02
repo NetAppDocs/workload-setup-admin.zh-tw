@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: manage-custom-dashboards.html 
-keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog 
+keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog, refresh data, load data, last updated 
 summary: 存取您的儀表板目錄，以在 Workload Factory 中檢視、重新整理和刪除自訂儀表板。 
 ---
 = 在 NetApp Workload Factory 中管理自訂儀表板
@@ -60,9 +60,28 @@ summary: 存取您的儀表板目錄，以在 Workload Factory 中檢視、重�
 [[refresh-dashboard-data]]
 == 重新整理儀表板資料
 
-開啟儀表板後，儀表板資料就會載入。您可以重新整理儀表板以查看最新資訊。
+查看您的儀表板上次重新整理的時間，並在需要最新資料時要求隨選掃描。
 
-儀表板會重新載入工作負載中的資料。
+.關於這項工作
+*重新整理資料*工具提示會顯示*上次更新*時間戳記，其中包含儀表板上次重新整理的日期和時間。此時間戳記指的是收集的資料，而不是儀表板組態上次變更的時間。
+
+選擇 *重新整理資料* 將啟動新的掃描。掃描進行期間，該按鈕將處於停用狀態，其工具提示會指示掃描正在進行中。
+
+當您選擇 *重新整理資料* 或 *立即載入* 時，Workload Factory 會在 Tracker 中記錄事件link:monitor-operations.html["了解如何使用 Tracker 監控作業"]。
+
+.步驟
+. 從儀表板目錄中，開啟您想要檢視的儀表板。
+. 將滑鼠停留在 *重新整理資料* 上，即可查看 *上次更新* 日期和時間。
+. 若要要求更新的計量，請選擇 *重新整理資料*。
++
+橫幅顯示掃描已開始。請等待掃描完成。
+
+. 當有新資料可用時，橫幅會顯示此訊息：「有新資料可用。立即載入，或隨時按一下『重新整理資料』以更新檢視。」
+. 在橫幅中選擇 *立即載入* 以將可用資料載入到儀表板中。或者，選擇 *重新整理資料* 來更新檢視。
+
+
+.結果
+儀表板顯示更新後的計量。
 
 
 

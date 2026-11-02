@@ -228,6 +228,11 @@ link:monitor-operations.html["使用 Tracker 監控作業"]。
 
 link:manage-genai-features.html["管理 AI 功能"]。
 
+.稽核時，代理程式設定和操作會顯示在哪裡？
+追蹤器會記錄代理程式設定的變更，並且在讀寫模式下，也會記錄每個核准要求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更，會由執行該作業的 Workload Factory 服務來記錄。
+
+link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["了解代理程式操作的稽核和追蹤"]。
+
 .人工智慧的使用是否有限制？
 是的。使用 NetApp 代管的 Bedrock，每個帳戶的每項 AI 功能都有每月消費限額。當達到限額時，Workload Factory 會關閉 AI 功能，將介面的相關部分變灰，並顯示工具提示。若要取得更多額度，請聯絡您的 NetApp 代表。
 

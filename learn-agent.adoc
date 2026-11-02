@@ -106,6 +106,15 @@ NOTE: 在 *代理程式設定* 中選擇認證資料並不會授予額外的 AWS
 
 
 
+[[audit-and-tracking-for-agent-actions]]
+=== 代理程式動作的稽核與追蹤
+
+在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更由執行該操作的 Workload Factory 服務記錄。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。
+
+link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["了解代理程式操作的稽核和追蹤"]。
+
+
+
 [[what-users-see-when-ai-agents-have-no-data-or-activity]]
 == 當 AI 代理程式沒有資料或活動時，使用者會看到什麼
 

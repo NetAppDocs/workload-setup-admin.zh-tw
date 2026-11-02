@@ -1,0 +1,54 @@
+= 檢查並重新整理自訂儀表板資料
+:allow-uri-read: 
+
+
+
+
+[[check-and-refresh-custom-dashboard-data]]
+=== 檢查並重新整理自訂儀表板資料
+
+現在您可以查看自訂儀表板計量的最後更新時間，並手動重新整理它們。將滑鼠停留在 *重新整理資料* 上即可檢視最後更新的日期和時間。
+
+選取 *重新整理資料* 以開始新的掃描。橫幅會確認掃描已開始，且按鈕在掃描完成前將處於停用狀態。
+
+當有新資料可用時，請在通知橫幅中選取 *立即載入* 以更新儀表板。
+
+*重新整理資料* 和 *立即載入* 都會在 Tracker 中建立資料收集事件。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html#refresh-dashboard-data["了解如何重新整理自訂儀表板資料"]
+
+
+
+[[specify-regions-for-custom-dashboards]]
+=== 為自訂儀表板指定區域
+
+如果您的要求中未包含某些區域，自訂儀表板現在會要求您選擇一個或多個區域。儀表板資料僅限於您選擇的區域。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["了解如何建立自訂儀表板"]
+
+
+
+[[iam-policy-for-link-creation]]
+=== 建立連結的 IAM 原則
+
+用於建立連結的 CloudFormation 範本和 Terraform 程式碼現在使用 IAM 原則，而不是即時 Lambda 權限。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["學習如何建立連結"]
+
+
+
+[[audit-and-tracking-for-ai-agent-actions]]
+=== AI 代理程式行為的稽核與追蹤
+
+現在您可以使用 Tracker 審查 AI 代理程式設定的變更，並且在讀寫模式下，審查每個核准要求，包括代理程式的問題和使用者的答案。
+
+透過 Workload Factory API 進行的資源變更會由執行該操作的 Workload Factory 服務記錄。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-agent.html#audit-and-tracking-for-agent-actions["了解代理程式操作的稽核和追蹤"]
+
+
+
+[[link-creation-improvements]]
+=== 連結建立改進
+
+Workload Factory 已更新用於建立連結的 Codebox 輸出，將即時 Lambda 權限替換為 CloudFormation 範本與 Terraform 的 IAM 原則。

@@ -1363,7 +1363,6 @@
   <block id="dfc2a77d9b383cd28cba1a1e99f9a378" category="doc">建立自訂儀表板</block>
   <block id="43d2bb31c641fd8b871b835572bc7441" category="paragraph">用簡單易懂的語言描述您想要監控的內容，即可建立自訂儀表板。AI 會引導您完成設定，確保您的儀表板與您的工作負載和優先順序相符。</block>
   <block id="463a1f1058198f82800c115a2a913de5" category="paragraph">自訂儀錶板利用人工智慧引導的對話來理解您想要視覺化的內容。您可以用自然語言描述您的監控需求，系統會提出一些澄清問題，以確保儀錶板符合您的要求。</block>
-  <block id="5af1607522ddad534f7fc3e5976684e5" category="paragraph">建立完成後，您可以重新整理儀表板以查看更新後的資料。</block>
   <block id="a8f8e9b8eb3f376a4b560c169094087e" category="paragraph">請記住，自訂儀表板在設計上為唯讀，無法變更您的儲存或工作負載組態。</block>
   <block id="1490f3908001d2cdf7587ba480973340" category="section-title">建立儀表板</block>
   <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">漢堡選單圖示用於導覽至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。</block>
@@ -1381,7 +1380,6 @@
   <block id="fb3b6f147b0a44a08f4c961dc053571e" category="paragraph">建立完成後，您可以：</block>
   <block id="a5c04615d2baa4c3104d2afbb5b85c59" category="list-text">重新整理儀表板資料以查看最新資訊</block>
   <block id="7bff2130a08698224667671d85a34ed4" category="list-text">刪除不再需要的儀表板</block>
-  <block id="ed5184af3d39b3e314759db5b95ba675" category="list-text">檢視儀表板詳細資訊，包括建立者及上次更新時間。</block>
   <block id="d10995cac5dfc264a5da7f4abec9025d" category="inline-link-macro">管理您的自訂儀表板</block>
   <block id="1c028f2c092927e5beff0c52bcc2456a" category="list-text"><block ref="1c028f2c092927e5beff0c52bcc2456a" category="inline-link-macro-rx"></block></block>
   <block id="1703fc0755f2533bd9d727fa0298c500" category="inline-link-macro">疑難排解自訂儀表板</block>
@@ -1432,7 +1430,6 @@
   <block id="04b69ec1d9e5301be209cb2b652a1602" category="paragraph">儀表板目錄顯示您 Workload Factory 帳戶中的所有自訂儀表板。</block>
   <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">查看儀表板清單。</block>
   <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">重新整理儀表板資料</block>
-  <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">開啟儀表板後，儀表板資料就會載入。您可以重新整理儀表板以查看最新資訊。</block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">利用這些資訊解決在建立或使用自訂儀表板時可能遇到的常見問題。</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">儀錶板建立失敗</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**問題：**建立儀表板時，您會看到錯誤訊息「Failed to understand request and generate code」。</block>
@@ -1974,7 +1971,6 @@
   <block id="b2174789d5314bb12b464a8d03a18be6" category="list-text">編輯儀表板以變更其顯示內容，包括計量、圖表和時間範圍</block>
   <block id="0d4c6d4cadfc35e450177a6f124a12ce" category="admonition">如果您的帳戶系統管理員已關閉 AI 功能，您將看到一則訊息，並且將無法建立或編輯儀表板。請聯絡您的系統管理員或<block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>。</block>
   <block id="3dacf374ca39e9d1e2ccd73b21e8d75a" category="paragraph">您可以從目錄中編輯儀表板，並在決定是否儲存修改後的版本之前更新儀表板名稱、執行摘要、類別或監控要求。</block>
-  <block id="09716803bbab78d4545cc7210ae61d90" category="paragraph">儀表板會重新載入工作負載中的資料。</block>
   <block id="d2258a9653c6a977efeeb955b27c66e9" category="section-title">編輯儀表板</block>
   <block id="4e2f12e496523d85bae4a969657d45aa" category="paragraph">您可以編輯儀表板來變更其顯示的內容，包括計量、圖表和時間範圍。</block>
   <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">在「自訂儀表板」頁面中，找到要編輯的儀表板。</block>
@@ -2147,4 +2143,50 @@
   <block id="fb28d89a6b0c6ce8708edc67fed69652" category="paragraph-title">建立和使用自訂儀表板需要哪些準備工作？</block>
   <block id="548b72381df096d33b738a36b3370ab7" category="paragraph">您的帳戶管理員應啟用 AI 功能。您需要擁有對要監控的服務具備讀取存取權限的 AWS 憑證。您需要一個 Link 才能連接至 FSx for ONTAP 檔案系統。儀表板為唯讀，無法變更您的儲存設備或工作負載設定。</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常見問題</block>
+  <block id="d5700d6fbdfdaa11c8c6dcbd565d8446" category="doc">檢查並重新整理自訂儀表板資料</block>
+  <block id="a2ace9589bb1ff3e1b64e40ba9982721" category="paragraph">現在您可以查看自訂儀表板計量的最後更新時間，並手動重新整理它們。將滑鼠停留在 *重新整理資料* 上即可檢視最後更新的日期和時間。</block>
+  <block id="6497706c70a607634590a156941b4e50" category="paragraph">選取 *重新整理資料* 以開始新的掃描。橫幅會確認掃描已開始，且按鈕在掃描完成前將處於停用狀態。</block>
+  <block id="2895998bd3d7c5fdb39e7fddc2bd608a" category="paragraph">當有新資料可用時，請在通知橫幅中選取 *立即載入* 以更新儀表板。</block>
+  <block id="f418ba29e821ca3da1b907e6156d2db5" category="paragraph">*重新整理資料* 和 *立即載入* 都會在 Tracker 中建立資料收集事件。</block>
+  <block id="0b62b5947fe6e091e6c0c1e387e32e69" category="inline-link-macro">了解如何重新整理自訂儀表板資料</block>
+  <block id="348426e840eb5ae32d612438487c2065" category="paragraph"><block ref="348426e840eb5ae32d612438487c2065" category="inline-link-macro-rx"></block></block>
+  <block id="524f9b4ee818c419ee1585959e10855c" category="section-title">為自訂儀表板指定區域</block>
+  <block id="9aca8419896ce9b5d75b523be971bafb" category="paragraph">如果您的要求中未包含某些區域，自訂儀表板現在會要求您選擇一個或多個區域。儀表板資料僅限於您選擇的區域。</block>
+  <block id="35a63836682befdc98086e583b61298a" category="inline-link-macro">了解如何建立自訂儀表板</block>
+  <block id="c41b815c81909f8ff39eb5b52d29746d" category="paragraph"><block ref="c41b815c81909f8ff39eb5b52d29746d" category="inline-link-macro-rx"></block></block>
+  <block id="cc2d0ca75f186230ede0faa3f7692c06" category="section-title">建立連結的 IAM 原則</block>
+  <block id="20721709cc5df2882070722a30cc34c3" category="paragraph">用於建立連結的 CloudFormation 範本和 Terraform 程式碼現在使用 IAM 原則，而不是即時 Lambda 權限。</block>
+  <block id="38b63c1d391fa52af61b987953824171" category="paragraph"><block ref="38b63c1d391fa52af61b987953824171" category="inline-link-macro-rx"></block></block>
+  <block id="b3e7d6d7f8501adc86f1a7337ebfb531" category="section-title">AI 代理程式行為的稽核與追蹤</block>
+  <block id="fc5902f94dd3899ad0ce791954b6f521" category="paragraph">現在您可以使用 Tracker 審查 AI 代理程式設定的變更，並且在讀寫模式下，審查每個核准要求，包括代理程式的問題和使用者的答案。</block>
+  <block id="25d50a8630b3c335d684f59cca6d3ace" category="paragraph">透過 Workload Factory API 進行的資源變更會由執行該操作的 Workload Factory 服務記錄。</block>
+  <block id="db0781c4ffb5f26ba7ad4f2ffe3dfdbd" category="inline-link-macro">了解代理程式操作的稽核和追蹤</block>
+  <block id="9b06f95ad3e4fc8477f2ca89d854a603" category="paragraph"><block ref="9b06f95ad3e4fc8477f2ca89d854a603" category="inline-link-macro-rx"></block></block>
+  <block id="3714dde7378ac290c154f62d9c080369" category="section-title">連結建立改進</block>
+  <block id="73501dc89cd2fc3be142f43eaffe971b" category="paragraph">Workload Factory 已更新用於建立連結的 Codebox 輸出，將即時 Lambda 權限替換為 CloudFormation 範本與 Terraform 的 IAM 原則。</block>
+  <block id="0e43f192242267f4b6ae5962e9f5b38c" category="inline-link-macro">了解如何重新整理儀表板資料</block>
+  <block id="05aeb0d0c1502e57f980bbf322cf31a6" category="paragraph">建立完成後，您可以查看儀表板計量上次重新整理的時間，並要求依需求更新。<block ref="831e74ba37d5e8d2f1bf86cd0b468bf4" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0029b147e3a4c22ba57efcbb020c23e" category="list-text">檢查 *上次更新* 時間戳記，然後選取 *重新整理資料* 以要求更新的計量</block>
+  <block id="6d852ab3090e66a5f1f1a6d5675164cb" category="paragraph-title">稽核時，代理程式設定和操作會顯示在哪裡？</block>
+  <block id="0f679622d131d4b9f3abef96c35743be" category="paragraph">追蹤器會記錄代理程式設定的變更，並且在讀寫模式下，也會記錄每個核准要求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更，會由執行該作業的 Workload Factory 服務來記錄。</block>
+  <block id="4c1cd3a1bad23fecc0286da543614cd7" category="paragraph"><block ref="bc36590c397b325a073c2ae9b60e53fd" category="inline-link-macro-rx"></block>。</block>
+  <block id="b70a9e9de689b4f17365d6060076d3b8" category="section-title">代理程式動作的稽核與追蹤</block>
+  <block id="774a23889a059a060f089bac423f3b00" category="paragraph">在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更由執行該操作的 Workload Factory 服務記錄。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。</block>
+  <block id="1c25d10ad7fe7b9def7bd90be9bb63ac" category="section-title">檢查資料是否為最新狀態</block>
+  <block id="40d839f036c0870ce0f44a810dc01fd9" category="paragraph">您可以查看儀表板資料的最後更新時間，並隨時要求重新整理。工具提示會顯示最後更新的日期和時間。</block>
+  <block id="3943baa01d778cb77042aa99b8829491" category="paragraph">選擇 *重新整理資料* 來開始新的掃描。掃描進行期間，該按鈕無法使用。新資料準備就緒後，會出現一個橫幅，提供更新儀表板的選項。</block>
+  <block id="80aab7a96b15f6ce5d375faafb077b13" category="paragraph"><block ref="831e74ba37d5e8d2f1bf86cd0b468bf4" category="inline-link-macro-rx"></block>。</block>
+  <block id="4561b6d16c60561c7dfef3363842359b" category="paragraph">查看您的儀表板上次重新整理的時間，並在需要最新資料時要求隨選掃描。</block>
+  <block id="cb19e9f8b4fdf3bf166690f03f0888ff" category="paragraph">*重新整理資料*工具提示會顯示*上次更新*時間戳記，其中包含儀表板上次重新整理的日期和時間。此時間戳記指的是收集的資料，而不是儀表板組態上次變更的時間。</block>
+  <block id="34839e5b2cbe60267b78999786be488f" category="paragraph">選擇 *重新整理資料* 將啟動新的掃描。掃描進行期間，該按鈕將處於停用狀態，其工具提示會指示掃描正在進行中。</block>
+  <block id="13ab1a7b5cd6ff60fb50525984ba6258" category="inline-link-macro">了解如何使用 Tracker 監控作業</block>
+  <block id="b6b3389b8e77a02f15ea3aba7cce028e" category="paragraph">當您選擇 *重新整理資料* 或 *立即載入* 時，Workload Factory 會在 Tracker 中記錄事件<block ref="74993bbdd897b4c73c70c66a0dd88655" category="inline-link-macro-rx"></block>。</block>
+  <block id="b2f99e18989e76354ebba4fd4d399227" category="list-text">從儀表板目錄中，開啟您想要檢視的儀表板。</block>
+  <block id="b01e2768b9cf649d978bf4ea1879ea19" category="list-text">將滑鼠停留在 *重新整理資料* 上，即可查看 *上次更新* 日期和時間。</block>
+  <block id="669bf0e2d3a5223b736f207a1738dcea" category="list-text">若要要求更新的計量，請選擇 *重新整理資料*。</block>
+  <block id="2c40fb628cd47c18fe14a2939979ebf9" category="paragraph">橫幅顯示掃描已開始。請等待掃描完成。</block>
+  <block id="dd2142eca6bec99aaba2fbc5a1fef1f5" category="list-text">當有新資料可用時，橫幅會顯示此訊息：「有新資料可用。立即載入，或隨時按一下『重新整理資料』以更新檢視。」</block>
+  <block id="f5f7ef3c1692aa4447b9fb26ad98940c" category="list-text">在橫幅中選擇 *立即載入* 以將可用資料載入到儀表板中。或者，選擇 *重新整理資料* 來更新檢視。</block>
+  <block id="abff96b75117f320254f372b6518244b" category="paragraph">儀表板顯示更新後的計量。</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">2026年11月1日</block>
 </blocks>
