@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-agent.html 
-keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read-write, agents settings 
+keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read, write, agents settings 
 summary: 了解 Workload Factory 的 AI 代理程式如何分析您的環境，識別風險和改善效能的方法，並在獲得您的批准後為您採取行動。 
 ---
 = 了解 NetApp Workload Factory 中的 AI 代理程式
@@ -11,7 +11,7 @@ summary: 了解 Workload Factory 的 AI 代理程式如何分析您的環境，�
 
 
 [role="lead"]
-Workload Factory AIOps 利用人工智慧分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的認證資料和權限採取行動。
+Workload Factory AIOps 使用 AI 代理程式來分析您的環境、識別風險並提出改進建議。如果您批准，代理程式還可以使用您設定的憑證和權限採取行動。
 
 
 NOTE: 如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息，並且將無法使用代理程式。請聯絡您的系統管理員或link:manage-genai-features.html["了解 AI 管理"]。
@@ -21,7 +21,7 @@ NOTE: 如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息�
 [[before-you-begin]]
 == 開始之前
 
-請確保您的 Workload Factory 帳戶擁有 AWS 認證資料以及代理程式存取資源所需的 IAM 權限。如果您啟用讀寫模式，這些權限也必須允許進行受支援的變更。
+請確保您的 Workload Factory 帳戶擁有 AWS 憑證以及代理程式存取資源所需的 IAM 權限。如果您啟用讀寫模式，這些權限也必須允許進行受支援的變更。
 
 link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 
@@ -52,7 +52,7 @@ link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 == 存取 AI 代理程式
 
 從 Ask Me 首頁:: 在 Ask Me 活動網頁上，選擇 *探索代理程式*。AI 代理程式側邊面板會開啟，並顯示歡迎訊息以介紹代理程式的功能。
-來自代理程式重新導向連結:: 使用 **Ask Me** 或其他功能時，您可能會看到將您重新導向至代理程式以取得更進階協助的連結。
+來自代理程式重新導向連結:: 當您使用 **Ask Me** 或其他功能時，您可能會看到將您重新導向至代理程式以取得進階協助的連結。
 
 
 
@@ -65,7 +65,7 @@ link:add-credentials.html["了解如何新增 AWS 憑證並設定 IAM 權限"^].
 [[how-agents-access-your-environment]]
 === 代理程式如何存取您的環境
 
-只有當資源包含在您目前的 Workload Factory 範圍內，並且受 link:manage-agent-settings.html["代理程式設定"] 中選取的認證資料支援時，代理程式才能存取資源。代理程式只能在兩種控制皆適用的情況下運作。它們可以存取的資源也取決於指派給其 AWS 認證資料的權限。預設情況下，會選取所有認證資料，但您可以將其縮減為已設定認證資料的子集。
+只有當資源包含在您目前的 Workload Factory 範圍內，並且受 link:manage-agent-settings.html["代理程式設定"] 中選取的憑證支援時，代理程式才能存取這些資源。代理程式只能在滿足這兩個條件的情況下運作。它們可以存取的資源也取決於指派給其 AWS 憑證的權限。預設情況下，所有憑證均已選取，但您可以將選擇範圍限制為已設定憑證的子集。
 
 您目前的範圍包括：
 
@@ -97,7 +97,7 @@ NOTE: 在 *代理程式設定* 中選擇認證資料並不會授予額外的 AWS
 
 
 
-[[read-write-mode-opt-in]]
+[[readwrite-mode-opt-in]]
 === 讀寫模式（可選）
 
 您可以在 link:manage-agent-settings.html["代理程式設定"] 中啟用讀寫功能。在此模式下，代理程式會解釋每個支援的行動，並在進行任何變更之前需要您的核准。
@@ -109,9 +109,7 @@ NOTE: 在 *代理程式設定* 中選擇認證資料並不會授予額外的 AWS
 [[audit-and-tracking-for-agent-actions]]
 === 代理程式動作的稽核與追蹤
 
-在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更由執行該操作的 Workload Factory 服務記錄。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。
-
-link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["了解代理程式操作的稽核和追蹤"]。
+在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。執行操作的 Workload Factory 服務會記錄透過 Workload Factory API 進行的資源變更。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。
 
 
 

@@ -1856,9 +1856,7 @@
   <block id="14bda382780d759b676db8bd277841a9" category="paragraph">當不支援自動升級的連結有較新的連結版本可用時，您也會在 FSx for ONTAP 儀表板中收到警報。</block>
   <block id="2c8d2ace24ab724b2b9846dfbd1113fb" category="summary">了解 Workload Factory 的 AI 代理程式如何分析您的環境，識別風險和改善效能的方法，並在獲得您的批准後為您採取行動。</block>
   <block id="a4988f1624f7fc0b4eaabf35a45c6593" category="doc">了解 NetApp Workload Factory 中的 AI 代理程式</block>
-  <block id="44930f32325dbab8392ff7743e877c7e" category="paragraph">Workload Factory AIOps 利用人工智慧分析您的環境並提出改進建議。如果您批准，它還可以使用您設定的認證資料和權限採取行動。</block>
   <block id="9b96c88a6583aa0e9a0e03809f482d9e" category="admonition">如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息，並且將無法使用代理程式。請聯絡您的系統管理員或<block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="29e96b144158fa2cf3ed37b1696584a9" category="paragraph">請確保您的 Workload Factory 帳戶擁有 AWS 認證資料以及代理程式存取資源所需的 IAM 權限。如果您啟用讀寫模式，這些權限也必須允許進行受支援的變更。</block>
   <block id="3b8e3eff2b9d5a25eecc8e879fab9225" category="section-title">資料使用和隱私</block>
   <block id="823764ac349552585c033c832c9a9119" category="paragraph">您的資料不會用於訓練 AI 模型。代理程式會使用您的認證資料透過標準的 AWS API 安全地存取 AWS 資源，並根據您的實際環境做出回應。所有代理程式活動均遵循 NetApp 隱私權政策和 AWS 安全性控制措施。</block>
   <block id="a9ad35f78cf699132ce97296208021d6" category="section-title">為何使用 AI 代理程式</block>
@@ -1869,13 +1867,10 @@
   <block id="6fd44b1c4edd80ad7b595f1fcb4c7483" category="list-text">執行排程檢查並在聊天記錄中接收更新。</block>
   <block id="4eeb2bca1dddd7a796d908c266d60075" category="section-title">存取 AI 代理程式</block>
   <block id="e6478bab5c49062e219e1290c4442eed" category="list-text">從 Ask Me 首頁</block>
-  <block id="b3c72178808d9fa6e9c876b76d5d1928" category="list-text">在 Ask Me 活動網頁上，選擇 *探索代理程式*。AI 代理程式側邊面板會開啟，並顯示歡迎訊息以介紹代理程式的功能。</block>
   <block id="99b503a5e4373b0bc3054a025797d268" category="list-text">來自代理程式重新導向連結</block>
-  <block id="54fd5f6787cd568e4b9880863150bb93" category="list-text">使用 **Ask Me** 或其他功能時，您可能會看到將您重新導向至代理程式以取得更進階協助的連結。</block>
   <block id="98ff5af4adf0662fa0278d6e7332c116" category="section-title">AI 代理程式的工作原理</block>
   <block id="31fe269c620fcf2562efe2871e4398f8" category="section-title">代理程式如何存取您的環境</block>
   <block id="d6356702d2caa14ca196fe664fc1853e" category="inline-link-macro">代理程式設定</block>
-  <block id="dfee9e31025ca5f152cf22d64bfe765f" category="paragraph">只有當資源包含在您目前的 Workload Factory 範圍內，並且受 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中選取的認證資料支援時，代理程式才能存取資源。代理程式只能在兩種控制皆適用的情況下運作。它們可以存取的資源也取決於指派給其 AWS 認證資料的權限。預設情況下，會選取所有認證資料，但您可以將其縮減為已設定認證資料的子集。</block>
   <block id="f19cfe1072c3d3c974b0cdafbcdde1ef" category="paragraph">您目前的範圍包括：</block>
   <block id="676cd33769e7c44db0294ca1bdc4a818" category="list-text">*AWS 帳戶*：代理程式可以存取哪些 AWS 帳戶。</block>
   <block id="8f7fd41f1486852019ec1e81297e4749" category="list-text">*認證資料*：代理程式可以使用的認證資料。</block>
@@ -1890,8 +1885,6 @@
   <block id="e863933d9a2c33d982a9403853ef5c8f" category="list-text">提出提高效能、可用度、保護和成本效益的建議。</block>
   <block id="0da32bbd416014e9a050dd9753a5f97c" category="list-text">排除問題並提出補救措施。</block>
   <block id="5c5d131e2fde1dde32d484bb16b397d5" category="paragraph">在唯讀模式下，他們無法更改資源。如果您要求的行動需要寫入存取，代理程式會解釋此限制並提供指向代理程式設定的連結。</block>
-  <block id="c43e0775dbe854488f7416962d78486c" category="section-title">讀寫模式（可選）</block>
-  <block id="8403b77cf5ff251eac80eb3fa63780ad" category="paragraph">您可以在 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中啟用讀寫功能。在此模式下，代理程式會解釋每個支援的行動，並在進行任何變更之前需要您的核准。</block>
   <block id="601c01875f07f976aec59310ce582da5" category="paragraph">此核准流程適用於所有代理程式體驗，包括 Slack 整合和 NetApp Console。</block>
   <block id="dbe095e1cf28fb37bfc9bc65e6db07ec" category="section-title">當 AI 代理程式沒有資料或活動時，使用者會看到什麼</block>
   <block id="02a1c40d157b16f6b4bb75e05fed5d20" category="paragraph">如果代理程式沒有認證資料，它們仍然可以提供一般性指引。但是，它們無法審查您的資源或提供針對您環境的特定見解。</block>
@@ -2169,9 +2162,7 @@
   <block id="a0029b147e3a4c22ba57efcbb020c23e" category="list-text">檢查 *上次更新* 時間戳記，然後選取 *重新整理資料* 以要求更新的計量</block>
   <block id="6d852ab3090e66a5f1f1a6d5675164cb" category="paragraph-title">稽核時，代理程式設定和操作會顯示在哪裡？</block>
   <block id="0f679622d131d4b9f3abef96c35743be" category="paragraph">追蹤器會記錄代理程式設定的變更，並且在讀寫模式下，也會記錄每個核准要求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更，會由執行該作業的 Workload Factory 服務來記錄。</block>
-  <block id="4c1cd3a1bad23fecc0286da543614cd7" category="paragraph"><block ref="bc36590c397b325a073c2ae9b60e53fd" category="inline-link-macro-rx"></block>。</block>
   <block id="b70a9e9de689b4f17365d6060076d3b8" category="section-title">代理程式動作的稽核與追蹤</block>
-  <block id="774a23889a059a060f089bac423f3b00" category="paragraph">在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。透過 Workload Factory API 進行的資源變更由執行該操作的 Workload Factory 服務記錄。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。</block>
   <block id="1c25d10ad7fe7b9def7bd90be9bb63ac" category="section-title">檢查資料是否為最新狀態</block>
   <block id="40d839f036c0870ce0f44a810dc01fd9" category="paragraph">您可以查看儀表板資料的最後更新時間，並隨時要求重新整理。工具提示會顯示最後更新的日期和時間。</block>
   <block id="3943baa01d778cb77042aa99b8829491" category="paragraph">選擇 *重新整理資料* 來開始新的掃描。掃描進行期間，該按鈕無法使用。新資料準備就緒後，會出現一個橫幅，提供更新儀表板的選項。</block>
@@ -2189,4 +2180,13 @@
   <block id="f5f7ef3c1692aa4447b9fb26ad98940c" category="list-text">在橫幅中選擇 *立即載入* 以將可用資料載入到儀表板中。或者，選擇 *重新整理資料* 來更新檢視。</block>
   <block id="abff96b75117f320254f372b6518244b" category="paragraph">儀表板顯示更新後的計量。</block>
   <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">2026年11月1日</block>
+  <block id="4780834933836e351b4c7c10d2b7421d" category="paragraph"><block ref="4610b98b2d531ad484f454316d243393" category="inline-link-macro-rx"></block>。</block>
+  <block id="ca57c3b08717a8e00b194598500db7a2" category="paragraph">Workload Factory AIOps 使用 AI 代理程式來分析您的環境、識別風險並提出改進建議。如果您批准，代理程式還可以使用您設定的憑證和權限採取行動。</block>
+  <block id="b78358ce9ebcde7e5d73719acc321aae" category="paragraph">請確保您的 Workload Factory 帳戶擁有 AWS 憑證以及代理程式存取資源所需的 IAM 權限。如果您啟用讀寫模式，這些權限也必須允許進行受支援的變更。</block>
+  <block id="0ea09b17a33e26f5dee626af8a16d5e1" category="list-text">在 Ask Me 活動網頁上，選擇 *探索代理程式*。AI 代理程式側邊面板會開啟，並顯示歡迎訊息以介紹代理程式的功能。</block>
+  <block id="fda5768a6f47f136c2a35db55a5ac261" category="list-text">當您使用 **Ask Me** 或其他功能時，您可能會看到將您重新導向至代理程式以取得進階協助的連結。</block>
+  <block id="6c6bddc94913852eb6a669f3be45250b" category="paragraph">只有當資源包含在您目前的 Workload Factory 範圍內，並且受 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中選取的憑證支援時，代理程式才能存取這些資源。代理程式只能在滿足這兩個條件的情況下運作。它們可以存取的資源也取決於指派給其 AWS 憑證的權限。預設情況下，所有憑證均已選取，但您可以將選擇範圍限制為已設定憑證的子集。</block>
+  <block id="96cfa5d0ba0465e0823c0e513cf4c99e" category="section-title">讀寫模式（可選）</block>
+  <block id="d5d99b2701dfd466ab6b6fd722283931" category="paragraph">您可以在 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中啟用讀寫功能。在此模式下，代理程式會解釋每個支援的行動，並在進行任何變更之前需要您的核准。</block>
+  <block id="ab5a798de828a6dee38052f42293a03d" category="paragraph">在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。執行操作的 Workload Factory 服務會記錄透過 Workload Factory API 進行的資源變更。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。</block>
 </blocks>
