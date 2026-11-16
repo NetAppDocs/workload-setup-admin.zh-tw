@@ -2189,4 +2189,149 @@
   <block id="96cfa5d0ba0465e0823c0e513cf4c99e" category="section-title">讀寫模式（可選）</block>
   <block id="d5d99b2701dfd466ab6b6fd722283931" category="paragraph">您可以在 <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block> 中啟用讀寫功能。在此模式下，代理程式會解釋每個支援的行動，並在進行任何變更之前需要您的核准。</block>
   <block id="ab5a798de828a6dee38052f42293a03d" category="paragraph">在讀寫模式下，Tracker 會記錄每個審核請求，包括代理程式的問題和使用者的回答。執行操作的 Workload Factory 服務會記錄透過 Workload Factory API 進行的資源變更。例如，透過 Workload Factory 建立的 Volume 會出現在 *Storage* 服務標籤下，而不是 *Agent* 服務標籤下。</block>
+  <block id="1435394aa3265f9336e4c355ba1c6f91" category="section-title">從儲存設備 IAM 原則中移除權限的影響</block>
+  <block id="b8d5263f7edffcc848740c4d49dcbc85" category="paragraph">基於安全性考量，您可能想要從儲存設備 IAM 原則中移除某些權限。下表說明從每個原則中移除權限的影響。</block>
+  <block id="f918d1bc2d31c17bf3c8eb9f0707340c" category="example-title">查看、規劃和分析權限</block>
+  <block id="ed5dea09095f671b801bee34ea28a319" category="cell">權限</block>
+  <block id="2f78465faf6b35c158b3490812d27200" category="cell">移除的影響</block>
+  <block id="9349a794fa768e1599f8ace228e030c9" category="cell">探索並顯示檔案系統組態</block>
+  <block id="62d60e644ea4ce90ea930757d329034a" category="cell">沒有可見的檔案系統</block>
+  <block id="d142f9916e862d91d5813143ad2e09da" category="cell">列出 Volume 及其屬性</block>
+  <block id="0d136e1cccb806b03a884972006775bb" category="cell">未顯示 Volume</block>
+  <block id="1e363fd948b82d37a2d76b18812445fa" category="cell">列出儲存設備虛擬機器、協定、DNS 組態</block>
+  <block id="c1e73e49a746e89e78be011af6c2d6ad" category="cell">未顯示 SVM</block>
+  <block id="3f184c6ec7aa32fb415beea39c717036" category="cell">列出可用備份</block>
+  <block id="21c269d94f6e77117eb73640901cb47c" category="cell">備份資訊不可用</block>
+  <block id="b1760e333b811a87e36233dd6ec3de14" category="cell">顯示資源標籤</block>
+  <block id="339580788d2d270f9b6b39fca6855b1d" category="cell">標籤缺失</block>
+  <block id="9282617ce66e2af0270165613067ca35" category="cell">fsx:DescribeSharedVpcConfigurations</block>
+  <block id="c23a56854a0ef96353c03f6b810cbf81" category="cell">檢測共享的 VPC 部署</block>
+  <block id="d81cf9d5bf11b70cf465c37344171386" category="cell">共享的 VPC 資訊無法取得</block>
+  <block id="20baf1e597a706588b91fec0ae6fd718" category="cell">fsx:DescribeS3AccessPointAttachments</block>
+  <block id="afd55b5f4b148237b2b3f0c4249d478a" category="cell">列出 Volume 上的 S3 存取點</block>
+  <block id="0e0c16f585ce22f9921b88e758a0499f" category="cell">S3 存取點資訊缺失</block>
+  <block id="c9dc5418b2ecf1f813d94b9b15e2815f" category="cell">s3:GetAccessPoint</block>
+  <block id="b015e4aade9a81e18029d66b2a0ff823" category="cell">取得 S3 存取點詳細資料</block>
+  <block id="bf724374f02d304fb12fda34a912cfbc" category="cell">存取點詳細資料無法取得</block>
+  <block id="26ae99204d7fb6d48f58719cf89d3eb5" category="cell">取得效能和容量計量</block>
+  <block id="cc08be2cb8bbcbb6df598ca9c47b924d" category="cell">儀表板和圖表為空</block>
+  <block id="0bd29c054d4fcf6e456a095ddc5f4f3a" category="cell">容量使用率監控</block>
+  <block id="1f6250a67769ad721a3be8f887210174" category="cell">容量管理功能已停用</block>
+  <block id="05344dc15ca59599838482ee89ce1760" category="cell">探索使用 FSx 儲存設備的運算工作負載</block>
+  <block id="58d26d190713d3dfd7f70b6c8fae9ac8" category="cell">工作負載拓撲不完整</block>
+  <block id="6d43570de1d5d469e7f3bf943efaddcc" category="cell">用於儲存設備比較的 EBS Volume 探索</block>
+  <block id="ed16b74121dfb17633da8d07d7660714" category="cell">節省分析尚未完成</block>
+  <block id="c6bbfdc62326381fd0ae68d555a0b224" category="cell">網路情境的 VPC 列舉</block>
+  <block id="651c5416580716b479cd3842089d4176" category="cell">VPC 選擇無法使用</block>
+  <block id="8ff367027117223fa9ad68172913268c" category="cell">子網路列舉用於放置決策</block>
+  <block id="f3cfb60403e4d46e167772a3aa9110e1" category="cell">子網路選擇無法使用</block>
+  <block id="8b2ddc1a2c2ff92995c2a7f2e797caea" category="cell">安全群組探索與驗證</block>
+  <block id="bd2b9759638a449106f05f7b47fae387" category="cell">安全性群組資訊遺失</block>
+  <block id="6102b066491471ae2db4893bf763962a" category="cell">網路路由對應</block>
+  <block id="638775e83462e80726bcd4d316ebd6da" category="cell">路由資訊無法使用</block>
+  <block id="c9a7389016b9197e5d054eb3ded760f5" category="cell">網路介面探索</block>
+  <block id="a5be2eab467d8c18e2a186d4650ed0a7" category="cell">連線檢查降級</block>
+  <block id="3ad71d60b7900e9aa47b325d4a4237ed" category="cell">elasticfilesystem:DescribeFileSystems</block>
+  <block id="974323f679c4256140a19ea493a600c1" category="cell">EFS 探索以進行移轉與節省分析</block>
+  <block id="ac3bde40f86a23b1d00783b02d627dae" category="cell">EFS 不計入節省金額</block>
+  <block id="f4da089e5e70bd0a3dae4fd23d2abbec" category="cell">用於節省成本計算的成本資料</block>
+  <block id="d84a36711bf3e0fe05c4ec559a0fe79a" category="cell">成本分析無法使用</block>
+  <block id="f422c6e1c29092e175923bc3ae790d62" category="cell">成本分配標籤查詢</block>
+  <block id="90f16d107dd58491b34cd47f8c4327cc" category="cell">基於標籤的成本檢視失敗</block>
+  <block id="f3b855147f73c247b684a9d057868359" category="paragraph">資源範圍：所有資源<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>）。這些是唯讀的 Describe/Get/List 動作。</block>
+  <block id="b56355ff191ba375c264bc65836c6feb" category="example-title">作業與修復權限</block>
+  <block id="6c59c2bbdb0cb159609534e2e76648ce" category="paragraph">操作和修復權限支援 Volume 生命週期、備份管理、S3 存取點、中繼資料目錄和 AI 驅動的事件分析。</block>
+  <block id="887edbd46ccc8a2079ffac1d735cfd40" category="paragraph">資源範圍：所有資源<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>），但不包含 CloudTrail 基於標籤的操作<block ref="f170a53a18059c014b62d8f493919791" prefix=" " category="inline-code"></block>。</block>
+  <block id="21a0e93a539a78f748f2394924d25025" category="admonition">AI 推理在您的 AWS 帳戶中使用您的 Bedrock 推理設定檔執行。不會有任何資料傳送到您的帳戶之外以進行 AI 診斷。</block>
+  <block id="088758c5f1801338b7483d3a2cda15aa" category="cell">建立新 Volume</block>
+  <block id="fa3b5cb3ebb4984a72ac0f175e377869" category="cell">Volume 建立無法使用</block>
+  <block id="f91674f3b22216fc484532cd24dda908" category="cell">刪除 Volume</block>
+  <block id="6a86b9f15f03c4e25df7354fc53848a3" category="cell">Volume 刪除無法使用</block>
+  <block id="ea5cbd4d4ca7e99177668dafe74cdecb" category="cell">修改處理量和儲存容量</block>
+  <block id="0026c0277af733fa58b5bf5b56c4e265" category="cell">檔案系統更新和自動容量管理已停用</block>
+  <block id="3dff03a0108a146e5d7154a9412532a5" category="cell">修改 SVM 設定</block>
+  <block id="015f1b5e4ee18c67d546a973495094ff" category="cell">SVM 組態變更不可用</block>
+  <block id="0113c8f82c61f60bac546b96483a5960" category="cell">修改 Volume 大小、分層和 QoS</block>
+  <block id="fbec9af804af9f8cdb2c2e2ef488ae4d" category="cell">Volume 修改無法使用</block>
+  <block id="c91ff5b89781f9b20673d63d2fbc4481" category="cell">建立隨需備份</block>
+  <block id="65ab8b07001bb8f8b516a7e5eb550827" category="cell">無法手動建立備份</block>
+  <block id="51240a355c39cfd66a0dc4e3e8311430" category="cell">從備份還原 Volume</block>
+  <block id="c62c97ef77ae0db142dfb07dccc3e7a0" category="cell">無法從備份還原</block>
+  <block id="031c48368130399d783d057806883851" category="cell">移除備份</block>
+  <block id="3a780af44e8536909502bbf9e9e02c00" category="cell">備份刪除功能無法使用</block>
+  <block id="1a4bc448942085bf81642f5ba9a6e727" category="cell">fsx:TagResource / fsx:UntagResource</block>
+  <block id="bf3b22d9591f3b1d31c0103e827da7cd" category="cell">管理 FSx 資源標籤</block>
+  <block id="a55fbfcda3bd24df11266b58443ddc3d" category="cell">標籤操作失敗</block>
+  <block id="b79df2be7588aa32a38e03b1888992f6" category="cell">在 Volume 上建立 S3 存取點</block>
+  <block id="4d7db9d34f315ceb6bc5ee516b3a74d1" category="cell">S3 存取點建立不可用</block>
+  <block id="0cdc355d34ed398e9ae2c2154646189e" category="cell">從 Volume 中移除 S3 存取點</block>
+  <block id="2a8c0e99bf92338e0c9b10c92620864a" category="cell">S3 存取點移除功能無法使用</block>
+  <block id="3baeda83791b2f68c03a99f71a079535" category="cell">s3:CreateAccessPoint / s3:DeleteAccessPoint</block>
+  <block id="af24761a596ceceabee701dc0e1c8245" category="cell">S3 存取點生命週期</block>
+  <block id="954bbc1cc4345916892531a5bc5283ed" category="cell">S3 存取點操作失敗</block>
+  <block id="3117fb917dfb2476d00e378e0dde69b6" category="cell">s3:TagResource / s3:UntagResource / s3:ListTagsForResource</block>
+  <block id="31b604571bc5de88d264b18de4038cc3" category="cell">S3 資源標籤</block>
+  <block id="25e4e02c8161668fc14b96627068af2b" category="cell">S3 標籤操作失敗</block>
+  <block id="fc3ce0ffe9d7ccf3d0d6479c35ec1c4d" category="cell">s3:GetObjectTagging / s3:ListBucket</block>
+  <block id="494b2a25d3033a0b4f5de2b94792e2ee" category="cell">查詢中繼資料目錄內容</block>
+  <block id="94c03df3b871107621049af61a785a3f" category="cell">中繼資料目錄查詢降級</block>
+  <block id="e0dc40d5af80e57b143ff08a2fcce26d" category="cell">bedrock:InvokeModel / bedrock:InvokeModelWithResponseStream</block>
+  <block id="51dd2eb2b4db20f3cdb9ddc0b87ba5db" category="cell">人工智慧驅動的分析與診斷</block>
+  <block id="631cf95ad93ec9fd57dd9c5eb61d6127" category="cell">AI 分析功能不可用</block>
+  <block id="b77076d555e0b023ea73d0f161eab78c" category="cell">bedrock:ListInferenceProfiles / bedrock:GetInferenceProfile</block>
+  <block id="8dd2176fbb44f4139adb8fdece97b03e" category="cell">列舉可用的 AI 模型</block>
+  <block id="bf4c64fe2d90e193626b89daf73a739f" category="cell">無法設定 AI 功能</block>
+  <block id="90fe2d58743cddcc65e1d8e3e758b9e8" category="cell">s3tables:CreateTableBucket / s3tables:CreateTable / s3tables:CreateNamespace</block>
+  <block id="7fbbbd1670a5f39a9477bb85f3eb7e8a" category="cell">建立中繼資料目錄結構</block>
+  <block id="e5283afcc997fc2ec9f88b61a713f5a2" category="cell">中繼資料目錄建立失敗</block>
+  <block id="2c4952cb6325725129c69ac68f677912" category="cell">s3tables:GetTable / s3tables:GetTableBucket / s3tables:GetNamespace / s3tables:GetTableMetadataLocation</block>
+  <block id="0467b47e3228d90b8d834456ff16af46" category="cell">讀取中繼資料目錄組態</block>
+  <block id="f9e1f60bd1409074b891847bdf518602" category="cell">中繼資料目錄讀取失敗</block>
+  <block id="0c2803db512e334e32fc98dcd2eaee34" category="cell">s3tables:PutTableData / s3tables:GetTableData</block>
+  <block id="52706d77b4afd4a328e789a641721c64" category="cell">寫入和讀取中繼資料目錄條目</block>
+  <block id="c878418605a08d6767c8e14f791b78e4" category="cell">中繼資料目錄操作失敗</block>
+  <block id="a4117636cfc7c6353f5ca920356303a1" category="cell">s3tables:ListTables / s3tables:ListNamespaces / s3tables:ListTableBuckets</block>
+  <block id="ca91427d83081e1b24fe493470645a74" category="cell">列舉中繼資料目錄物件</block>
+  <block id="12942890e74425896c753a486d3c3f52" category="cell">中繼資料目錄導覽失敗</block>
+  <block id="6134c676616d96ebf74a26f3d96ca946" category="cell">更新目錄中繼資料指標</block>
+  <block id="3e803c28c81b5d228d093d7576c7f906" category="cell">目錄位置更新失敗</block>
+  <block id="5cc6b90b4c24e189563c6ffcffc1e11a" category="cell">s3tables:ListTagsForResource / s3tables:TagResource</block>
+  <block id="aa1e61f534734e88502defb09c9bef79" category="cell">中繼資料目錄標記</block>
+  <block id="068eb08210f9914b343b9655d2f75b56" category="cell">目錄標籤操作失敗</block>
+  <block id="aa6ff5a3cb85056a88da316b1d008d64" category="cell">cloudtrail:PutEventSelectors / cloudtrail:GetEventSelectors</block>
+  <block id="bede9cda144ea785638f340cb29690dc" category="cell">中繼資料目錄變更日誌記錄</block>
+  <block id="e573fb6c3e15dd1c0cecaa569db55cee" category="cell">目錄日誌記錄不可用</block>
+  <block id="5718ba980466f79bc709fc4be4130e2a" category="example-title">檔案系統建立權限</block>
+  <block id="8de260ceaa34ef074c48f6d89e713eca" category="paragraph">檔案系統建立權限允許配置與取消配置 FSx for ONTAP 檔案系統和儲存設備虛擬機器。</block>
+  <block id="81c5909b882cae4c4b6b321177bb8185" category="cell">配置新的 FSx for ONTAP 檔案系統</block>
+  <block id="cd044d577ec15a914900168bdbc15798" category="cell">檔案系統建立不可用</block>
+  <block id="3bde7ff5999ce728621d93fd54b590c2" category="cell">刪除檔案系統</block>
+  <block id="f85eec4522faaeb814f92f972069c711" category="cell">檔案系統刪除無法使用</block>
+  <block id="00310f2ddf48124910dd598ccd60ac9b" category="cell">建立儲存設備 VMs</block>
+  <block id="fb448a1ba6fb548e45d11c2ba8d90788" category="cell">SVM 建立不可用</block>
+  <block id="9393c776921e41141dd5017cc128f31f" category="cell">刪除儲存設備 VM</block>
+  <block id="9e16a199e6e5e3a788e086fa947ee5ab" category="cell">SVM 刪除功能無法使用</block>
+  <block id="3218ddc767a21d559cc078a9102f2bd2" category="cell">建立過程中標記資源</block>
+  <block id="7ced2dcc7533261162d7d75c0a562d3d" category="cell">已建立但未標記的資源</block>
+  <block id="0039975c150eb5aacb73e63dda42c7d8" category="cell">允許 FSx 使用您的 KMS 金鑰進行靜態加密</block>
+  <block id="cec50985cf3b3429d7f8846b9ab95324" category="cell">加密檔案系統建立失敗</block>
+  <block id="584110ac03ea059316953df05f8288bc" category="cell">kms:DescribeKey / kms:ListKeys / kms:ListAliases</block>
+  <block id="582a11f3a4d812bfc0a502125c20b72a" category="cell">列舉可供選擇的 KMS 金鑰</block>
+  <block id="51170b88c3e026cdb768bcbda4d7f7ad" category="cell">KMS 金鑰選擇器為空</block>
+  <block id="feaeaac2e35c4ff125e0472b2966f32b" category="cell">建立 FSx 服務相關角色（一次性）</block>
+  <block id="7936bd9fe06e71969c73e7d44a9f5835" category="cell">如果角色不存在，則首次檔案系統建立失敗</block>
+  <block id="60a4cb5647a6fe7c5fa2b4530ed22536" category="cell">ec2:CreateSecurityGroup / ec2:CreateTags</block>
+  <block id="de37761a04065672d4ee465d0ceb7a6a" category="cell">為新檔案系統建立安全性群組</block>
+  <block id="b89940bc45125055d0e9a289c04d000f" category="cell">檔案系統建立失敗</block>
+  <block id="61c92add34d163913b5b31eae6302cf3" category="cell">驗證基礎儲存設備健全狀況</block>
+  <block id="b6f32473834007a410d5abddd5f177f8" category="cell">健全狀況檢查降級</block>
+  <block id="c285fdd035eeb8fc83856000cb9c0dd6" category="cell">ec2:AuthorizeSecurityGroupEgress / ec2:AuthorizeSecurityGroupIngress</block>
+  <block id="f88b006360d3a818966f84f1a48cef2b" category="cell">設定 ONTAP 存取的安全性群組規則</block>
+  <block id="019a7e154e0d017cf041ac3bea3d683b" category="cell">網路規則未套用</block>
+  <block id="1b83f78839e2aa92852e3c3d54d1c9ca" category="cell">ec2:RevokeSecurityGroupEgress / ec2:RevokeSecurityGroupIngress</block>
+  <block id="5a8a6f2066c5b040adad4a0704399cf0" category="cell">刪除時清理安全性群組規則</block>
+  <block id="0bf129bc06af30babee90ce8b1bba8a4" category="cell">陳舊的規則依然存在</block>
+  <block id="0a5a55ef86ce8d6a99addaac01429ff1" category="cell">在刪除檔案系統時移除安全性群組</block>
+  <block id="ce2e385c56a5fe4ee43ddce918ace3d0" category="cell">孤立的安全性群組</block>
+  <block id="129816675b3df3f0fe475cfb20d8f666" category="paragraph">資源範圍：安全性群組修改操作（授權、撤銷、刪除）僅限於標記的資源<block ref="ca26362c93e15a413626a4bafd6cc62f" prefix=" " category="inline-code"></block>。</block>
 </blocks>

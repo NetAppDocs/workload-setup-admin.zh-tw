@@ -481,6 +481,217 @@ NOTE: AWS GovCloud 不支援 AWS Cost Explorer，因此您不需要這些權限�
 ====
 
 
+==== 從儲存設備 IAM 原則中移除權限的影響
+
+基於安全性考量，您可能想要從儲存設備 IAM 原則中移除某些權限。下表說明從每個原則中移除權限的影響。
+
+.查看、規劃和分析權限
+[%collapsible]
+====
+[cols="2,3,3"]
+|===
+| 權限 | 目的 | 移除的影響 
+
+
+| fsx:DescribeFileSystems | 探索並顯示檔案系統組態 | 沒有可見的檔案系統 
+
+
+| FSX ： DescribeVolumes | 列出 Volume 及其屬性 | 未顯示 Volume 
+
+
+| FSX ： DescrubeStorageVirtualMachines | 列出儲存設備虛擬機器、協定、DNS 組態 | 未顯示 SVM 
+
+
+| FSX ： DescrubeBackups | 列出可用備份 | 備份資訊不可用 
+
+
+| FSX ： ListTagsForResource | 顯示資源標籤 | 標籤缺失 
+
+
+| fsx:DescribeSharedVpcConfigurations | 檢測共享的 VPC 部署 | 共享的 VPC 資訊無法取得 
+
+
+| fsx:DescribeS3AccessPointAttachments | 列出 Volume 上的 S3 存取點 | S3 存取點資訊缺失 
+
+
+| s3:GetAccessPoint | 取得 S3 存取點詳細資料 | 存取點詳細資料無法取得 
+
+
+| cloudswatch ： GetMetricData | 取得效能和容量計量 | 儀表板和圖表為空 
+
+
+| cloudwatch：GetMetricStatistics | 容量使用率監控 | 容量管理功能已停用 
+
+
+| EC2：資料說明 | 探索使用 FSx 儲存設備的運算工作負載 | 工作負載拓撲不完整 
+
+
+| EC2：減量磁碟區 | 用於儲存設備比較的 EBS Volume 探索 | 節省分析尚未完成 
+
+
+| EC2：取消功能Vpcs | 網路情境的 VPC 列舉 | VPC 選擇無法使用 
+
+
+| EC2：無資料子網路 | 子網路列舉用於放置決策 | 子網路選擇無法使用 
+
+
+| EC2：取消安全性群組 | 安全群組探索與驗證 | 安全性群組資訊遺失 
+
+
+| EC2：取消功能表 | 網路路由對應 | 路由資訊無法使用 
+
+
+| EC2：網路介面 | 網路介面探索 | 連線檢查降級 
+
+
+| elasticfilesystem:DescribeFileSystems | EFS 探索以進行移轉與節省分析 | EFS 不計入節省金額 
+
+
+| ce:獲取成本和使用情況 | 用於節省成本計算的成本資料 | 成本分析無法使用 
+
+
+| ce:GetTags | 成本分配標籤查詢 | 基於標籤的成本檢視失敗 
+|===
+資源範圍：所有資源(`*`）。這些是唯讀的 Describe/Get/List 動作。
+
+====
+.作業與修復權限
+[%collapsible]
+====
+操作和修復權限支援 Volume 生命週期、備份管理、S3 存取點、中繼資料目錄和 AI 驅動的事件分析。
+
+資源範圍：所有資源(`*`），但不包含 CloudTrail 基於標籤的操作 `netapp-fsxs3-metadata=journal`。
+
+
+NOTE: AI 推理在您的 AWS 帳戶中使用您的 Bedrock 推理設定檔執行。不會有任何資料傳送到您的帳戶之外以進行 AI 診斷。
+
+[cols="2,3,3"]
+|===
+| 權限 | 目的 | 移除的影響 
+
+
+| fsx:CreateVolume | 建立新 Volume | Volume 建立無法使用 
+
+
+| fsx：刪除卷 | 刪除 Volume | Volume 刪除無法使用 
+
+
+| fsx：更新檔案系統 | 修改處理量和儲存容量 | 檔案系統更新和自動容量管理已停用 
+
+
+| fsx：更新儲存虛擬機 | 修改 SVM 設定 | SVM 組態變更不可用 
+
+
+| fsx:UpdateVolume | 修改 Volume 大小、分層和 QoS | Volume 修改無法使用 
+
+
+| fsx:建立備份 | 建立隨需備份 | 無法手動建立備份 
+
+
+| fsx：從備份建立磁碟區 | 從備份還原 Volume | 無法從備份還原 
+
+
+| fsx：刪除備份 | 移除備份 | 備份刪除功能無法使用 
+
+
+| fsx:TagResource / fsx:UntagResource | 管理 FSx 資源標籤 | 標籤操作失敗 
+
+
+| fsx:CreateAndAttachS3AccessPoint | 在 Volume 上建立 S3 存取點 | S3 存取點建立不可用 
+
+
+| fsx:DetachAndDeleteS3AccessPoint | 從 Volume 中移除 S3 存取點 | S3 存取點移除功能無法使用 
+
+
+| s3:CreateAccessPoint / s3:DeleteAccessPoint | S3 存取點生命週期 | S3 存取點操作失敗 
+
+
+| s3:TagResource / s3:UntagResource / s3:ListTagsForResource | S3 資源標籤 | S3 標籤操作失敗 
+
+
+| s3:GetObjectTagging / s3:ListBucket | 查詢中繼資料目錄內容 | 中繼資料目錄查詢降級 
+
+
+| bedrock:InvokeModel / bedrock:InvokeModelWithResponseStream | 人工智慧驅動的分析與診斷 | AI 分析功能不可用 
+
+
+| bedrock:ListInferenceProfiles / bedrock:GetInferenceProfile | 列舉可用的 AI 模型 | 無法設定 AI 功能 
+
+
+| s3tables:CreateTableBucket / s3tables:CreateTable / s3tables:CreateNamespace | 建立中繼資料目錄結構 | 中繼資料目錄建立失敗 
+
+
+| s3tables:GetTable / s3tables:GetTableBucket / s3tables:GetNamespace / s3tables:GetTableMetadataLocation | 讀取中繼資料目錄組態 | 中繼資料目錄讀取失敗 
+
+
+| s3tables:PutTableData / s3tables:GetTableData | 寫入和讀取中繼資料目錄條目 | 中繼資料目錄操作失敗 
+
+
+| s3tables:ListTables / s3tables:ListNamespaces / s3tables:ListTableBuckets | 列舉中繼資料目錄物件 | 中繼資料目錄導覽失敗 
+
+
+| s3tables：UpdateTableMetadataLocation | 更新目錄中繼資料指標 | 目錄位置更新失敗 
+
+
+| s3tables:ListTagsForResource / s3tables:TagResource | 中繼資料目錄標記 | 目錄標籤操作失敗 
+
+
+| cloudtrail:PutEventSelectors / cloudtrail:GetEventSelectors | 中繼資料目錄變更日誌記錄 | 目錄日誌記錄不可用 
+|===
+====
+.檔案系統建立權限
+[%collapsible]
+====
+檔案系統建立權限允許配置與取消配置 FSx for ONTAP 檔案系統和儲存設備虛擬機器。
+
+[cols="2,3,3"]
+|===
+| 權限 | 目的 | 移除的影響 
+
+
+| fsx:CreateFileSystem | 配置新的 FSx for ONTAP 檔案系統 | 檔案系統建立不可用 
+
+
+| fsx：刪除檔案系統 | 刪除檔案系統 | 檔案系統刪除無法使用 
+
+
+| fsx:CreateStorageVirtualMachine | 建立儲存設備 VMs | SVM 建立不可用 
+
+
+| fsx：刪除儲存虛擬機 | 刪除儲存設備 VM | SVM 刪除功能無法使用 
+
+
+| fsx:TagResource / fsx:UntagResource | 建立過程中標記資源 | 已建立但未標記的資源 
+
+
+| 公里：建立授予 | 允許 FSx 使用您的 KMS 金鑰進行靜態加密 | 加密檔案系統建立失敗 
+
+
+| kms:DescribeKey / kms:ListKeys / kms:ListAliases | 列舉可供選擇的 KMS 金鑰 | KMS 金鑰選擇器為空 
+
+
+| IAM ： CreateServiceLinkedIn 角色 | 建立 FSx 服務相關角色（一次性） | 如果角色不存在，則首次檔案系統建立失敗 
+
+
+| ec2:CreateSecurityGroup / ec2:CreateTags | 為新檔案系統建立安全性群組 | 檔案系統建立失敗 
+
+
+| EC2 ： DescribeVolume 狀態 | 驗證基礎儲存設備健全狀況 | 健全狀況檢查降級 
+
+
+| ec2:AuthorizeSecurityGroupEgress / ec2:AuthorizeSecurityGroupIngress | 設定 ONTAP 存取的安全性群組規則 | 網路規則未套用 
+
+
+| ec2:RevokeSecurityGroupEgress / ec2:RevokeSecurityGroupIngress | 刪除時清理安全性群組規則 | 陳舊的規則依然存在 
+
+
+| EC2：刪除安全性群組 | 在刪除檔案系統時移除安全性群組 | 孤立的安全性群組 
+|===
+資源範圍：安全性群組修改操作（授權、撤銷、刪除）僅限於標記的資源 `AppCreator=NetappFSxWF`。
+
+====
+
+
 [[permissions-for-database-workloads]]
 === 資料庫工作負載的權限
 
